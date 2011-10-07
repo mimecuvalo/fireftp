@@ -1,0 +1,66 @@
+<!ENTITY title "Quản lí Tài khoản">
+<!ENTITY main "Chính">
+<!ENTITY connections "Kết nối">
+<!ENTITY advanced "Nâng cao">
+<!ENTITY maindetails "Chi tiết Chính">
+<!ENTITY id "ID">
+<!ENTITY account.label "Tên tài khoản:">
+<!ENTITY account.tip "Ví dụ: Site FTP của Tôi">
+<!ENTITY folder.label "Category:">
+<!ENTITY optional.label "(optional)">
+<!ENTITY host.label "Máy chủ:">
+<!ENTITY host.tip "Ví dụ: vi.mozdev.org">
+<!ENTITY login.label "Đăng nhập:">
+<!ENTITY password.label "Mật khẩu:">
+<!ENTITY anonymous.label "Vô danh">
+<!ENTITY connection "Kiểu kết nối">
+<!ENTITY port.label "Cổng:">
+<!ENTITY pasv.label "Chế độ Bị động">
+<!ENTITY security.label "Bảo mật">
+<!ENTITY none.label "Không">
+<!ENTITY authtls.label "TLS Xác minh (Tốt nhất)">
+<!ENTITY authssl.label "SSL Xác minh (Tốt hơn)">
+<!ENTITY implicit.label "SSL Ngầm (Tốt)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Key:">
+<!ENTITY pkbrowse.label "Browse...">
+<!ENTITY pkconvert.label "Convert...">
+<!ENTITY initialdir "Thư mục Đầu tiên">
+<!ENTITY download "Tùy chọn Tải xuống">
+<!ENTITY upload "Tùy chọn Tải lên">
+<!ENTITY localdir.label "Trong máy:">
+<!ENTITY remotedir.label "Từ xa:">
+<!ENTITY current.label "Dùng thư mục hiện tại">
+<!ENTITY treesync.label "Giữ cho thư mục đồng bộ khi đang duyệt">
+<!ENTITY webhost "Máy chủ web (dùng với tính năng &apos;Xem trên web&apos;)">
+<!ENTITY webhost.tip "Ví dụ: http://vi.mozdev.org">
+<!ENTITY prefix.label "Tiền tố:">
+<!ENTITY prefix.tip "Tiền tố được bỏ khỏi phần FTP của url, vd. /public_html">
+<!ENTITY caseleave.label "Giữ nguyên HOA-thường">
+<!ENTITY caselower.label "Chuyển sang chữ thường">
+<!ENTITY caseupper.label "Chuyển sang chữ HOA">
+<!ENTITY timezone.label "Timezone Offset">
+<!ENTITY hours.label "Hours:">
+<!ENTITY minutes.label "Minutes:">
+<!ENTITY notes.label "Notes">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "T">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "M">
+<!ENTITY login.access "n">
+<!ENTITY password.access "k">
+<!ENTITY anonymous.access "V">
+<!ENTITY pasv.access "h">
+<!ENTITY port.access "C">
+<!ENTITY security.access "B">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "o">
+<!ENTITY remotedir.access "a">
+<!ENTITY currentl.access "t">
+<!ENTITY currentr.access "m">
+<!ENTITY treesync.access "G">
+<!ENTITY webhost.access "M">
+<!ENTITY prefix.access "T">

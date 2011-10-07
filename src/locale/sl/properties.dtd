@@ -1,0 +1,31 @@
+<!ENTITY title "Lastnosti">
+<!ENTITY path "Pot:">
+<!ENTITY webpath "Spletna pot:">
+<!ENTITY size "Velikost:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Vsebuje:">
+<!ENTITY user "Uporabnik:">
+<!ENTITY groupl "Skupina:">
+<!ENTITY attr "Atributi:">
+<!ENTITY hash "Ustvari hashe:">
+<!ENTITY perm "Dovoljenja:">
+<!ENTITY reado "samo za branje">
+<!ENTITY hidden "skrito">
+<!ENTITY owner "Lastnik">
+<!ENTITY group "Skupina">
+<!ENTITY public "Javno">
+<!ENTITY read "Branje">
+<!ENTITY write "Pisanje">
+<!ENTITY exec "Izvrševanje">
+<!ENTITY manual "Ročno:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Lepljivo">
+<!ENTITY applyto "Uporabi za:">
+<!ENTITY thisprop "to mapo">
+<!ENTITY folderprop "vse vsebovane mape">
+<!ENTITY filesprop "vse vsebovane datoteke">
+<!ENTITY thumbnail "Prikaz sličic">
+<!ENTITY loading "Nalaganje ...">
+<!ENTITY view.label "Pogled">
+<!ENTITY view.accesskey "P">

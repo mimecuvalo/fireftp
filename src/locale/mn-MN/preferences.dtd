@@ -1,0 +1,73 @@
+<!ENTITY title "Тохиргоонууд">
+<!ENTITY asciiTitle "Файлын ASCII төрөл">
+<!ENTITY general.label "Ерөнхий">
+<!ENTITY messages.label "Мессежүүд">
+<!ENTITY welcome.label "Урилгын Мессеж харуулах">
+<!ENTITY error.label "Алдааны Мессеж харуулах">
+<!ENTITY sessions.label "Чуулган">
+<!ENTITY rememberp.label "Нууц үг санах">
+<!ENTITY rememberd.label "Байрлалыг санах">
+<!ENTITY fileview.label "Файлыг харах">
+<!ENTITY autorefresh.label "Автоматаар сэргээх">
+<!ENTITY refresh.tip "Өөрчилөлт орсны дараа (татаж авсан, оруулсан, нэр солисон г.м.) дахин сэргээнэ">
+<!ENTITY hidden.label "Нууцлагдсан файлуудыг харах">
+<!ENTITY bytesmode.label "Файлын хэмжээг байтаар харуулах">
+<!ENTITY interface.label "Харагдах байдал">
+<!ENTITY startup.label "FireFTP-г эхлүүлэх:">
+<!ENTITY windowopen.label "шинэ цонхонд">
+<!ENTITY tabopen.label "шинэ хавтасанд">
+<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY integrateftplnk.label "Firefox-д байгаа FTP-ийн холбоосуудыг FireFTP-г ашиглахаар тохируулах">
+<!ENTITY temppasvmode.label "Энэ холболтыг Идэвхигүй горимоор ашиглах">
+<!ENTITY open.label "Double-clicking/pressing enter:">
+<!ENTITY download.label "transfers a file">
+<!ENTITY exec.label "opens a file">
+<!ENTITY both.tip "Дотоод болон гадаад файлуудыг харуулах">
+<!ENTITY local.tip "Зөвхөн дотоод файлуудыг харуулах">
+<!ENTITY remote.tip "Зөвхөн гадаад файлуудыг харуулах">
+<!ENTITY logwindow.label "Лог">
+<!ENTITY logmode.label "Логыг үндсэн цонхонд харуулах">
+<!ENTITY logerrormode.label "Лог дээр зөвхөн алдааны мэдээлэлийг харуулах">
+<!ENTITY debug.label "Дебаг мэдээлэл харуулах">
+<!ENTITY connect.label "Холболтууд">
+<!ENTITY proxy.label "Прокси">
+<!ENTITY none.label "Байхгүй">
+<!ENTITY direct.label "Чиглэл">
+<!ENTITY host.label "Хост:">
+<!ENTITY port.label "Порт:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY concurrent.label "Concurrent Transfers">
+<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY recovery.label "Холболтыг сэргээх">
+<!ENTITY network.label "Сүлжээг хүлээх хугацаа (секундээр, 1-ээс 600)">
+<!ENTITY network.tip "Серверээс хариу хүлээх">
+<!ENTITY keepalivemode.label "Таны холболт идэвхигүй байгаа үед холболтыг хадгалах">
+<!ENTITY timeout.label "Холболт салсан үед дахин холбогдох">
+<!ENTITY retryd.label "Холболт сэргээх хугацаа(секундээр, 1 - 600)">
+<!ENTITY retryd.tip "Дахин холбогдох хүсэлт хоорондын хугацаа">
+<!ENTITY retrya.label "Дахин холбогдох хүсэлтийн тоо">
+<!ENTITY retrya.tip "Дахин холбогдох хүсэлтийн тоо">
+<!ENTITY downup.label "Татах/Оруулах">
+<!ENTITY transfercaption.label "Файл дамжуулахад ашигла:">
+<!ENTITY automatic.label "Автомат горим">
+<!ENTITY automatic.tip "&apos;Binary&apos; болон &apos;ASCII&apos; горимын хооронд автоматаар шилжих">
+<!ENTITY binary.label "Binary Горим">
+<!ENTITY ascii.label "ASCII Горим">
+<!ENTITY asciifiles.label "ASCII файлууд:">
+<!ENTITY asciifiles.tip "ASCII файлын өргөтгөлүүд">
+<!ENTITY add.label "Оруулах">
+<!ENTITY remove.label "Устгах">
+<!ENTITY extras.label "Extras (if enabled on server)">
+<!ENTITY usecompression.label "Use compression">
+<!ENTITY synctimestamps.label "Keep timestamps in sync">
+<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY duplicates.label "Давхардсан файлууд">
+<!ENTITY timer.label "Дарж хуулах цонхонд таймер ашиглахгүй">
+<!ENTITY nopromptmode.label "Шууд дарж хуулах">
+<!ENTITY credits.label "Оролцогчид">
+<!ENTITY thanks.label "Талархал:">
+<!ENTITY allothers.label "Алдаануудыг олж өгсөн бүх хүмүүст">
+<!ENTITY special.label "Хандив өргөсөн хүн бүрт баярлалаа!">

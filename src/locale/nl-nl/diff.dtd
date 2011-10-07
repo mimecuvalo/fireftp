@@ -1,0 +1,25 @@
+<!ENTITY title "Verschil tussen mappen">
+<!ENTITY file.label "Bestand">
+<!ENTITY reason.label "Reden">
+<!ENTITY action.label "Actie">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY nothing.label "Do Nothing">
+<!ENTITY defaults.label "Set Defaults">
+<!ENTITY local.label "For missing local files:">
+<!ENTITY remote.label "For missing remote files:">
+<!ENTITY diff.label "For different file sizes:">
+<!ENTITY newer.label "Voor nieuwere lokale bestanden:">
+<!ENTITY older.label "Voor nieuwere bestanden op de server:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Let op: Deze mogelijkheid vergelijkt niet de inhoud van de bestanden. Daarentegen wordt gekeken naar welke bestanden aan/afwezig zijn in de mappen en naar de groottes van de bestanden.">
+
+<!ENTITY delete.label     "Verwijderen">
+<!ENTITY lDelete.access   "e">
+<!ENTITY rDelete.access   "l">

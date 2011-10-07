@@ -1,0 +1,22 @@
+<!ENTITY title "Programi">
+<!ENTITY add.label "Dodaj">
+<!ENTITY remove.label "Ukloni">
+<!ENTITY extensions.label "Ekstenzije">
+<!ENTITY programs.label "Programi">
+<!ENTITY details.label "Detalji programa">
+<!ENTITY name.label "Naziv">
+<!ENTITY exec.label "Putanja">
+<!ENTITY browse.label "Pronađi">
+<!ENTITY args.label "Argumenti">
+<!ENTITY argshelp1.label "Ostavljeno prazno polje &apos;Argumenti&apos; će dovesti do postavljanja datoteke kao argumenta.">
+<!ENTITY argshelp2.label "U prilagođenim argumentima, koristite &#37;file&#37; da bi predstavili datoteku koja se prenosi.">
+<!ENTITY apply.label "Prihvati">
+<!ENTITY adde.accesskey "D">
+<!ENTITY removee.accesskey "U">
+<!ENTITY addp.accesskey "o">
+<!ENTITY removep.accesskey "k">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "r">
+<!ENTITY args.accesskey "g">
+<!ENTITY apply.accesskey "h">

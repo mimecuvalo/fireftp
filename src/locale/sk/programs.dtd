@@ -1,0 +1,22 @@
+<!ENTITY title "Programy">
+<!ENTITY add.label "Pridať">
+<!ENTITY remove.label "Odstrániť">
+<!ENTITY extensions.label "Prípony">
+<!ENTITY programs.label "Programy">
+<!ENTITY details.label "Detaily o programe">
+<!ENTITY name.label "Názov">
+<!ENTITY exec.label "Umiestnenie">
+<!ENTITY browse.label "Prehľadávať ">
+<!ENTITY args.label "Argumenty">
+<!ENTITY argshelp1.label "Ak nechcete použiť žiadne argumenty tak ponechajte pole prázdne.">
+<!ENTITY argshelp2.label "Ak zadávate argumenty, použite &#37;file&#37; na označenie prenášaného súboru.">
+<!ENTITY apply.label "Použiť">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "s">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "t">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "m">
+<!ENTITY browse.accesskey "P">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "u">

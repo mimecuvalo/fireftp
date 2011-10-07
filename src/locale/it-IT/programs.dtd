@@ -1,0 +1,22 @@
+<!ENTITY title "Programmi">
+<!ENTITY add.label "Aggiungi">
+<!ENTITY remove.label "Rimuovi">
+<!ENTITY extensions.label "Estensioni">
+<!ENTITY programs.label "Programmi">
+<!ENTITY details.label "Dettagli programma">
+<!ENTITY name.label "Nome">
+<!ENTITY exec.label "Percorso">
+<!ENTITY browse.label "Sfoglia">
+<!ENTITY args.label "Argomenti">
+<!ENTITY argshelp1.label "Lasciare vuoto il campo &apos;Argomenti&apos; farà sì che il file venga passato come argomento.">
+<!ENTITY argshelp2.label "Negli argomenti personalizzati, usare &#37;file&#37; per rappresentare il file da passare.">
+<!ENTITY apply.label "Applica">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "R">
+<!ENTITY addp.accesskey "u">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "S">
+<!ENTITY args.accesskey "g">
+<!ENTITY apply.accesskey "c">

@@ -1,0 +1,13 @@
+<!ENTITY title "Потвърждаване на презаписа">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Презапиши">
+<!ENTITY overwriteall.label "Презапиши всички">
+<!ENTITY skip.label "Пропусни">
+<!ENTITY skipall.label "Пропусни всички">
+<!ENTITY resume.label "Продължи">
+<!ENTITY overwrite.access "З">
+<!ENTITY overwriteall.access "в">
+<!ENTITY skip.access "П">
+<!ENTITY skipall.access "с">
+<!ENTITY resume.access "р">

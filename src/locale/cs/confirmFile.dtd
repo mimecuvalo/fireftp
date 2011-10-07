@@ -1,0 +1,13 @@
+<!ENTITY title "Potvrďte přepsání">
+<!ENTITY existing.label "Existující soubor:">
+<!ENTITY new.label "Nový soubor:">
+<!ENTITY overwrite.label "Přepsat">
+<!ENTITY overwriteall.label "Přepsat vše">
+<!ENTITY skip.label "Přeskočit">
+<!ENTITY skipall.label "Přeskočit vše">
+<!ENTITY resume.label "Navázat">
+<!ENTITY overwrite.access "P">
+<!ENTITY overwriteall.access "V">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "E">
+<!ENTITY resume.access "N">

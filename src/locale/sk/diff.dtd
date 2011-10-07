@@ -1,0 +1,24 @@
+<!ENTITY title "Porovnanie priečinkov">
+<!ENTITY file.label "Súbor">
+<!ENTITY reason.label "Dôvod">
+<!ENTITY action.label "Akcia">
+<!ENTITY download.label "Stiahnuť">
+<!ENTITY upload.label "Odoslať">
+<!ENTITY delete.label "Odstrániť">
+<!ENTITY nothing.label "Nič nevykonať">
+<!ENTITY defaults.label "Pôvodné nastavenia">
+<!ENTITY local.label "Chýbajúce lokálne súbory:">
+<!ENTITY remote.label "Chýbajúce vzdialené súbory:">
+<!ENTITY diff.label "Rozdielne veľkosti súborov:">
+<!ENTITY newer.label "Pre nové lokálne súbory:">
+<!ENTITY older.label "Pre nové vzdialené súbory:">
+<!ENTITY lDownload.access "S">
+<!ENTITY lDelete.access "d">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "O">
+<!ENTITY rDelete.access "d">
+<!ENTITY rNothing.access "v">
+<!ENTITY dDownload.access "h">
+<!ENTITY dUpload.access "d">
+<!ENTITY dNothing.access "e">
+<!ENTITY diff.note "Poznámka: Tento porovnávací nástroj zistí aktuálnosť zoznamu súborov.  Vlastne v zobrazených adresároch zisťuje, ktoré súbory sú prítomné a ktoré nie, pričom porovná aj ich veľkosti.">

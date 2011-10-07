@@ -1,0 +1,31 @@
+<!ENTITY title "Ezaugarriak">
+<!ENTITY path "Bidea:">
+<!ENTITY webpath "Web Bidea:">
+<!ENTITY size "Tamaina:">
+<!ENTITY date "Data:">
+<!ENTITY contains "Edukia:">
+<!ENTITY user "Erabiltzailea:">
+<!ENTITY groupl "Taldea:">
+<!ENTITY attr "Atributuak:">
+<!ENTITY hash "Hashak Sortu:">
+<!ENTITY perm "Baimenak:">
+<!ENTITY reado "Irakurtzeko-soilik">
+<!ENTITY hidden "Ezkutukoa">
+<!ENTITY owner "Jabeak">
+<!ENTITY group "Taldeak">
+<!ENTITY public "Guztiek">
+<!ENTITY read "Irakurri">
+<!ENTITY write "Idatzi">
+<!ENTITY exec "Abiarazi">
+<!ENTITY manual "Kodea:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Ezarri:">
+<!ENTITY thisprop "Karpeta honi">
+<!ENTITY folderprop "Barneko Karpetei">
+<!ENTITY filesprop "Barneko Fitxategiei">
+<!ENTITY thumbnail "Aurrebista">
+<!ENTITY loading "Eskuratzen...">
+<!ENTITY view.label "Ikusi">
+<!ENTITY view.accesskey "I">

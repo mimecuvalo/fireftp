@@ -1,0 +1,279 @@
+Index: chrome/content/mccoy.js
+===================================================================
+--- chrome/content/mccoy.js	(revision 9341)
++++ chrome/content/mccoy.js	(working copy)
+@@ -51,6 +51,9 @@
+ var gRDFUtils = null;
+ var gStrings = null;
+ 
++var containerUtils = Components.classes["@mozilla.org/rdf/container-utils;1"].
++			            getService(Components.interfaces.nsIRDFContainerUtils);
++
+ function EM_NS(prop)
+ {
+   return gRDF.GetResource(PREFIX_NS_EM + prop);
+@@ -96,6 +99,16 @@
+     return false;
+   },
+   
++  addToInstall : function(rdf, key) {
++    var mftRes = gRDF.GetResource("urn:mozilla:install-manifest");
++    var keyArc = EM_NS("updateKey");
++    var keyLiteral = gRDF.GetLiteral(key.exportPublicKey());
++    unassertAll(rdf, mftRes, keyArc);
++    rdf.Assert(mftRes, keyArc, keyLiteral, true);
++    rdf.Flush();
++    gRDF.UnregisterDataSource(rdf);
++  },
++  
+   doCommand: function(cmd)
+   {
+     if (this.isCommandEnabled(cmd)) {
+@@ -152,36 +165,28 @@
+           clipboard.copyString(gList.selectedItem.key.exportPublicKey());
+           break;
+         case "cmd_signupdate":
+-          var rdf = loadRDF("Select Update Manifest", "update.rdf");
++          var rdf = pickRDF("Select Update Manifest", "update.rdf");
+           if (rdf) {
+             signUpdate(rdf, gList.selectedItem.key);
+-            rdf.Flush();
+-            gRDF.UnregisterDataSource(rdf);
+           }
+           break;
+         case "cmd_addtoinstall":
+-          var rdf = loadRDF("Select Install Manifest", "install.rdf");
++          var rdf = pickRDF("Select Install Manifest", "install.rdf");
+           if (rdf) {
+-            var mftRes = gRDF.GetResource("urn:mozilla:install-manifest");
+-            var keyArc = EM_NS("updateKey");
+-            var key = gRDF.GetLiteral(gList.selectedItem.key.exportPublicKey());
+-            unassertAll(rdf, mftRes, keyArc);
+-            rdf.Assert(mftRes, keyArc, key, true);
+-            rdf.Flush();
+-            gRDF.UnregisterDataSource(rdf);
++            mainController.addToInstall(rdf, gList.selectedItem.key);
+           }
+           break;
+         case "cmd_verifykey":
+-          var rdf = loadRDF("Select Update Manifest", "update.rdf");
++          var rdf = pickRDF("Select Update Manifest", "update.rdf");
+           if (rdf) {
+             verifyUpdateManifest(rdf, gList.selectedItem.key);
+             gRDF.UnregisterDataSource(rdf);
+           }
+           break;
+         case "cmd_verifyinstall":
+-          var install = loadRDF("Select Install Manifest", "install.rdf");
++          var install = pickRDF("Select Install Manifest", "install.rdf");
+           if (install) {
+-            var update = loadRDF("Select Update Manifest", "update.rdf");
++            var update = pickRDF("Select Update Manifest", "update.rdf");
+             if (update) {
+               verufyFullUpdate(install, update);
+               gRDF.UnregisterDataSource(update);
+@@ -270,10 +275,10 @@
+ /**
+  * Loads and rdf file into a datasource
+  * @param title the title for the file picker dialog.
+- * @param filename the default filename for hte file picker dialog
++ * @param filename the default filename for the file picker dialog
+  * @returns an nsIRDFDataSource for the seelcted file or null if cancelled.
+  */
+-function loadRDF(title, filename)
++function pickRDF(title, filename)
+ {
+   var fp = Cc["@mozilla.org/filepicker;1"].
+            createInstance(Ci.nsIFilePicker);
+@@ -283,11 +288,28 @@
+   fp.filterIndex = 0;
+   fp.defaultString = filename;
+   if (fp.show() == Ci.nsIFilePicker.returnOK)
+-    return gRDF.GetDataSourceBlocking(fp.fileURL.spec)
+-               .QueryInterface(Ci.nsIRDFRemoteDataSource);
++    return loadRDFfromURL(fp.fileURL.spec);
+   return null;
+ }
+ 
++function loadRDFfromURL(fileURL) {
++//  alert (fileURL);
++  return gRDF.GetDataSourceBlocking(fileURL)
++               .QueryInterface(Ci.nsIRDFRemoteDataSource);
++}
++
++function loadRDFfromPath(path)
++{
++  var file = Components.classes["@mozilla.org/file/local;1"]
++                     .createInstance(Components.interfaces.nsILocalFile);
++  file.initWithPath(path);
++  var ios = Components.classes["@mozilla.org/network/io-service;1"]
++                    .getService(Components.interfaces.nsIIOService);
++  var fileHandler = ios.getProtocolHandler("file")
++	                     .QueryInterface(Components.interfaces.nsIFileProtocolHandler);
++  return loadRDFfromURL(fileHandler.getURLSpecFromFile(file));
++}
++
+ /**
+  * Removes any assertions with a given source and property.
+  * @param rdf the nsIRDFDataSource
+@@ -406,6 +428,8 @@
+     unassertAll(rdf, resource, EM_NS("signature"));
+     rdf.Assert(resource, EM_NS("signature"), signature, true);
+   }
++  rdf.Flush();
++  gRDF.UnregisterDataSource(rdf);
+ }
+ 
+ /**
+@@ -487,7 +511,7 @@
+   while (gList.lastChild)
+     gList.removeChild(gList.lastChild);
+ 
+-  var keyObjects = {};
++  mainController.keyObjects = {};
+   var keyNames = [];
+   
+   // Update the key hashes
+@@ -495,14 +519,14 @@
+   while (keys.hasMoreElements()) {
+     var key = keys.getNext().QueryInterface(Ci.nsIKeyPair);
+     var name = key.name.toLowerCase();
+-    keyObjects[name] = key;
++    mainController.keyObjects[name] = key;
+     keyNames.push(name);
+   }
+   keyNames.sort();
+   
+   // Generate the list
+   for (var i = 0; i < keyNames.length; i++) {
+-    key = keyObjects[keyNames[i]];
++    key = mainController.keyObjects[keyNames[i]];
+     var item = createItem(key);
+     gList.appendChild(item);
+   }
+@@ -553,4 +577,125 @@
+ 
+   // Build the initial key list
+   readKeys();
++
++  var cmdLine = window.arguments[0];
++  cmdLine = cmdLine.QueryInterface(Components.interfaces.nsICommandLine);
++  var command = cmdLine.handleFlagWithParam("command", false)
++  if (command)
++  {
++    switch (command) {
++      case "install" :
++        var keyName = cmdLine.handleFlagWithParam("key", false);
++        var installRDF = cmdLine.handleFlagWithParam("installRDF", false);
++        if (!installRDF) {
++          alert("installRDF not set");
++        } else if (!keyName) {
++          alert("key not set");
++        } else {
++          var key = mainController.keyObjects[keyName];
++	  var rdf = loadRDFfromPath(installRDF);
++	  if (!rdf) {
++	    alert(installRDF + " is not a valid RDF file");
++	  } else if (!key) {
++	    alert("No such key '" + keyName + "'");
++	  } else {
++            mainController.addToInstall(rdf, key);
++          }
++	}
++        break;
++      case "update" :
++        var keyName = cmdLine.handleFlagWithParam("key", false);
++        var updateRDF = cmdLine.handleFlagWithParam("updateRDF", false);
++        var xpiPath = cmdLine.handleFlagWithParam("xpi", false);
++        if (!updateRDF) {
++          alert("updateRDF not set");
++        } else if (!keyName) {
++          alert("key not set");
++        } else {
++          var key = mainController.keyObjects[keyName];
++	  var rdf = loadRDFfromPath(updateRDF);
++	  if (!rdf) {
++	    alert(updateRDF + " is not a valid RDF file");
++	  } else if (!key) {
++	    alert("No such key '" + keyName + "'");
++	  } else {
++	    if (xpiPath) {
++	      var hash = "sha256:" + generateHash(xpiPath);
++	      addHash(rdf, hash);
++	    }
++            signUpdate(rdf, key);
++          }
++	}
++        break;
++    }
++    quit(true);
++  }
++
+ }
++
++// This only really works if there is one addon in update.rdf 
++//  and all updateLinks point to the same xpi
++function addHash(rdf, hash) {
++  var addons = selectAddons(rdf);
++  var hashLiteral = gRDF.GetLiteral(hash);
++  for (var i = 0; i < addons.length; i++) {
++    var resource = addons[i];
++
++    var updatesResource = rdf.GetTarget(resource, EM_NS("updates"), true);
++    var updatesContainer = containerUtils.MakeSeq(rdf, updatesResource);
++    var children = updatesContainer.GetElements();
++    while (children.hasMoreElements()) {
++      var child = children.getNext();
++      if (child instanceof Components.interfaces.nsIRDFResource){
++	var targetApplication = rdf.GetTarget(child, EM_NS("targetApplication"), true);
++        unassertAll(rdf, targetApplication, EM_NS("updateHash"));
++        rdf.Assert(targetApplication, EM_NS("updateHash"), hashLiteral, true);
++      }
++    }
++
++  }
++  rdf.Flush();
++  gRDF.UnregisterDataSource(rdf);
++}
++
++// return the two-digit hexadecimal code for a byte
++function toHexString(charCode)
++{
++  return ("0" + charCode.toString(16)).slice(-2);
++}
++
++function generateHash(path) {
++  var f = Components.classes["@mozilla.org/file/local;1"]
++                  .createInstance(Components.interfaces.nsILocalFile);
++  f.initWithPath(path);
++  var istream = Components.classes["@mozilla.org/network/file-input-stream;1"]           
++                        .createInstance(Components.interfaces.nsIFileInputStream);
++  // open for reading
++  istream.init(f, 0x01, 0444, 0);
++  var ch = Components.classes["@mozilla.org/security/hash;1"]
++		   .createInstance(Components.interfaces.nsICryptoHash);
++  // we want to use the MD5 algorithm
++  ch.init(ch.SHA256);
++  // this tells updateFromStream to read the entire file
++  const PR_UINT32_MAX = 0xffffffff;
++  ch.updateFromStream(istream, PR_UINT32_MAX);
++  // pass false here to get binary data back
++  var hash = ch.finish(false);
++
++
++  // convert the binary hash data to a hex string.
++  return [toHexString(hash.charCodeAt(i)) for (i in hash)].join("");
++}
++
++function quit(aForceQuit)
++{
++  var appStartup = Components.classes['@mozilla.org/toolkit/app-startup;1'].
++    getService(Components.interfaces.nsIAppStartup);
++
++  // eAttemptQuit will try to close each XUL window, but the XUL window can cancel the quit
++  // process if there is unsaved data. eForceQuit will quit no matter what.
++  var quitSeverity = aForceQuit ? Components.interfaces.nsIAppStartup.eForceQuit :
++                                  Components.interfaces.nsIAppStartup.eAttemptQuit;
++  appStartup.quit(quitSeverity);
++}
++

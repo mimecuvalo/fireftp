@@ -1,0 +1,24 @@
+<!ENTITY title "Сравнение">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Причина">
+<!ENTITY action.label "Действие">
+<!ENTITY download.label "Сваляне">
+<!ENTITY upload.label "Качване">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Нищо">
+<!ENTITY defaults.label "По подразбиране">
+<!ENTITY local.label "За липсващи локално файлове:">
+<!ENTITY remote.label "За липсващи отсреща файлове:">
+<!ENTITY diff.label "За файлове с различни размери:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "С">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "Н">
+<!ENTITY rUpload.access "К">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "и">
+<!ENTITY dDownload.access "в">
+<!ENTITY dUpload.access "ч">
+<!ENTITY dNothing.access "щ">
+<!ENTITY diff.note "Бележка: Това сравнение не взема предвид съдържанието на файловете. Вместо това сравнява само наличието и размера на файловете.">

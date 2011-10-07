@@ -1,0 +1,31 @@
+<!ENTITY title "Properties">
+<!ENTITY path "Path:">
+<!ENTITY webpath "Web Path:">
+<!ENTITY size "Size:">
+<!ENTITY date "Date:">
+<!ENTITY contains "Contains:">
+<!ENTITY user "User:">
+<!ENTITY groupl "Group:">
+<!ENTITY attr "Attributes:">
+<!ENTITY hash "Hashes:">
+<!ENTITY perm "Permissions:">
+<!ENTITY reado "Read-only">
+<!ENTITY hidden "Hidden">
+<!ENTITY owner "Owner">
+<!ENTITY group "Group">
+<!ENTITY public "Public">
+<!ENTITY read "Read">
+<!ENTITY write "Write">
+<!ENTITY exec "Execute">
+<!ENTITY manual "Manual:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Apply to:">
+<!ENTITY thisprop "This folder">
+<!ENTITY folderprop "All Contained Folders">
+<!ENTITY filesprop "All Contained Files">
+<!ENTITY thumbnail "Thumbnail">
+<!ENTITY loading "Loading...">
+<!ENTITY view.label "View">
+<!ENTITY view.accesskey "V">

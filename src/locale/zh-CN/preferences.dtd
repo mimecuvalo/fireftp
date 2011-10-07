@@ -1,0 +1,73 @@
+<!ENTITY title "选项">
+<!ENTITY asciiTitle "ASCII文件类型">
+<!ENTITY general.label "常规">
+<!ENTITY messages.label "消息">
+<!ENTITY welcome.label "显示欢迎消息">
+<!ENTITY error.label "显示错误消息">
+<!ENTITY sessions.label "会话">
+<!ENTITY rememberp.label "记住密码">
+<!ENTITY rememberd.label "缓存目录列表">
+<!ENTITY fileview.label "文件查看">
+<!ENTITY autorefresh.label "自动刷新">
+<!ENTITY refresh.tip "远程视图改变后(当传输时)，刷新目录">
+<!ENTITY hidden.label "显示隐藏文件">
+<!ENTITY bytesmode.label "文件大小以 bytes 显示">
+<!ENTITY interface.label "界面">
+<!ENTITY startup.label "启动 FireFTP:">
+<!ENTITY windowopen.label "在新窗口中">
+<!ENTITY tabopen.label "在新标签页中">
+<!ENTITY groupopen.label "在窗口分组中">
+<!ENTITY integrateftplnk.label "自动使用FireFTP打开Firefox中的FTP链接">
+<!ENTITY temppasvmode.label "为这些连接使用被动模式">
+<!ENTITY open.label "双击鼠标/按下回车:">
+<!ENTITY download.label "传输文件">
+<!ENTITY exec.label "打开文件">
+<!ENTITY both.tip "同时显示本地及远端文件">
+<!ENTITY local.tip "仅显示本地文件">
+<!ENTITY remote.tip "仅显示远端文件">
+<!ENTITY logwindow.label "日志">
+<!ENTITY logmode.label "在主窗口中显示日志">
+<!ENTITY logerrormode.label "在日志中仅显示错误消息">
+<!ENTITY debug.label "显示调试信息">
+<!ENTITY connect.label "连接">
+<!ENTITY proxy.label "代理">
+<!ENTITY none.label "无">
+<!ENTITY direct.label "直接">
+<!ENTITY host.label "主机：">
+<!ENTITY port.label "端口：">
+<!ENTITY active.label "主动模式">
+<!ENTITY limitPorts.label "限定端口">
+<!ENTITY from.label "从:">
+<!ENTITY to.label "到:">
+<!ENTITY concurrent.label "并发传输">
+<!ENTITY simtransfers.label "最大并发传输(1-10)">
+<!ENTITY recovery.label "连接恢复">
+<!ENTITY network.label "网络超时 (单位：秒，介于 1 到 600 之间)">
+<!ENTITY network.tip "控制等待服务器响应的时间">
+<!ENTITY keepalivemode.label "空闲时保持连接状态激活">
+<!ENTITY timeout.label "如果断开，则尝试重新连接">
+<!ENTITY retryd.label "重试延时 (单位：秒，介于 1 到 600 之间)">
+<!ENTITY retryd.tip "尝试重新连接的间隔时间 (单位：秒)">
+<!ENTITY retrya.label "重试次数">
+<!ENTITY retrya.tip "已重试的次数">
+<!ENTITY downup.label "下载/上传">
+<!ENTITY transfercaption.label "传输文件时使用：">
+<!ENTITY automatic.label "自动模式">
+<!ENTITY automatic.tip "自动选择 &quot;二进制&quot;或 &quot;ASCII&quot;模式">
+<!ENTITY binary.label "二进制模式">
+<!ENTITY ascii.label "ASCII模式">
+<!ENTITY asciifiles.label "ASCII文件：">
+<!ENTITY asciifiles.tip "应被识别为 ASCII 文件的扩展名列表">
+<!ENTITY add.label "添加">
+<!ENTITY remove.label "删除">
+<!ENTITY extras.label "额外(如果服务器允许)">
+<!ENTITY usecompression.label "使用压缩">
+<!ENTITY synctimestamps.label "保持时间戳同步">
+<!ENTITY integritymode.label "检查文件传输完整性(XMD5, XSHA1)">
+<!ENTITY duplicates.label "文件重复">
+<!ENTITY timer.label "在覆盖对话框中禁用计时器">
+<!ENTITY nopromptmode.label "不要显示覆盖对话框，直接覆盖">
+<!ENTITY credits.label "鸣谢">
+<!ENTITY thanks.label "感谢：">
+<!ENTITY allothers.label "提交过错误报告及提供帮助的全部其他朋友">
+<!ENTITY special.label "特别感谢所有捐助者！">

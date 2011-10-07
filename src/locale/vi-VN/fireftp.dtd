@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Mở Liên Kết trong FireFTP">
+<!ENTITY viewFireFTP "Xem Trang Này trong FireFTP">
+<!ENTITY accountlist.label "(Chọn một tài khoản)">
+<!ENTITY edit.label "Chỉnh sửa...">
+<!ENTITY abort.label "Bỏ">
+<!ENTITY logtab.label "Lưu kí/Xếp hàng">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "X">
+<!ENTITY advanced.label "Công cụ">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Đồng bộ Thư mục...">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Lệnh tùy biến...">
+<!ENTITY import.label "Nhập...">
+<!ENTITY export.label "Xuất...">
+<!ENTITY preferencestab.label "Tùy chọn...">
+<!ENTITY diff.access "m">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "L">
+<!ENTITY import.access "N">
+<!ENTITY export.access "X">
+<!ENTITY prefbutton.access "y">
+<!ENTITY help.label "Trợ giúp">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Chuyển tới thư mục mẹ">
+<!ENTITY refresh.tip "Làm tươi Thư mục">
+<!ENTITY localpath.tip "Đường dẫn Trong máy">
+<!ENTITY remotepath.tip "Đường dẫn Từ xa">
+<!ENTITY browse.label "Duyệt">
+<!ENTITY change.label "Chuyển">
+<!ENTITY name.label "Tên">
+<!ENTITY size.label "Dung lượng">
+<!ENTITY date.label "Ngày">
+<!ENTITY type.label "Kiểu">
+<!ENTITY attr.label "Thuộc tính">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Thay đổi phương thức truyền tải (tự động khuyến nghị)">
+<!ENTITY bytes.tip "Byte đã tải / Tổng số byte">
+<!ENTITY timeela.tip "Thời gian Tổng cộng">
+<!ENTITY timerem.tip "Thời gian Còn lại">
+<!ENTITY download.tip "Tốc độ Truyền tải">
+<!ENTITY percent.tip "Tiến trình">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Tải lên">
+<!ENTITY download.label "Tải xuống">
+<!ENTITY open.label "Mở">
+<!ENTITY openwith.label "Mở bằng">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Xem trên Web">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Cắt">
+<!ENTITY copy.label "Chép">
+<!ENTITY paste.label "Dán">
+<!ENTITY makedir.label "Tạo thư mục">
+<!ENTITY makefile.label "Tạo tập tin">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "Xóa">
+<!ENTITY rename.label "Đổi tên">
+<!ENTITY properties.label "Thuộc tính">
+<!ENTITY rproperties.label "Thuộc tính (bao gồm nội dung)">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "S">
+<!ENTITY abort.access "B">
+<!ENTITY advanced.access "n">
+<!ENTITY helpbutton.access "r">
+<!ENTITY browsebutton.access "D">
+<!ENTITY changebutton.access "u">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "Và, <html:em>ha</html:em>, từ trong <html:em>bóng tối</html:em> chúng xuất hiện: một nơi trú ẩn của những kẻ tận trung sẵn sàng <html:em>yểm trợ</html:em> cho con quái thú được tái sinh trong mục tiêu <html:em>tái chiếm</html:em> vùng đất của nó.  Cùng nhau, chúng <html:em>mở rộng</html:em> sức mạnh của quái thú và <html:em>phát tán</html:em> tin tốt trên đường nó quay về.  Lần lượt từng tín đồ của <html:em>Mammon</html:em> đã được chuyển đổi và trái tim của họ đều <html:em>cháy đỏ rực</html:em>.">
+<!ENTITY mozilla.from "từ <html:strong>Quyển Sách của Mozilla</html:strong>, 8:2">

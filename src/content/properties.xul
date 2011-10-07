@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/platform.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fireftp/locale/properties.dtd">
+<dialog id             = "properties"
+        title          = "&title;"
+        width          = "600"
+        height         = "512"
+        xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html     = "http://www.w3.org/1999/xhtml"
+        persist        = "screenX screenY width height"
+        onload         = "init()"
+        buttons        = "accept, cancel"
+        ondialogaccept = "return doOK()"
+        ondialogcancel = "return true">
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/properties.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+
+  <grid flex="1" class="overflowBox">
+    <columns>
+      <column/>
+      <column flex="1"/>
+    </columns>
+    <rows>
+      <row                            align="center">
+        <box                          width="32" height="32">
+          <image     id="fileIcon"    width="32" height="32"/>
+        </box>
+        <textbox     id="name"        readonly="true" class="textfield"/>
+      </row>
+      <row           id="pathrow"     align="center">
+        <description                  value="&path;"/>
+        <textbox     id="path"        readonly="true" class="textfield"/>
+      </row>
+      <row           id="webpathrow"  align="center">
+        <description                  value="&webpath;"/>
+        <textbox     id="webpath"     readonly="true" class="textfield"/>
+      </row>
+      <row                            align="center">
+        <description                  value="&size;"/>
+        <textbox     id="size"        readonly="true" class="textfield"/>
+      </row>
+      <row           id="daterow"     align="center">
+        <description                  value="&date;"/>
+        <textbox     id="date"        readonly="true" class="textfield"/>
+      </row>
+      <row           id="containsrow" align="center">
+        <description                  value="&contains;"/>
+        <textbox     id="contains"    readonly="true" class="textfield"/>
+      </row>
+      <row           id="userrow"     align="center">
+        <description                  value="&user;"/>
+        <textbox     id="user"        readonly="true" class="textfield"/>
+      </row>
+      <row           id="grouprow"    align="center">
+        <description                  value="&groupl;"/>
+        <textbox     id="group"       readonly="true" class="textfield"/>
+      </row>
+      <row           id="attrrow"     align="center">
+        <description                  value="&attr;"/>
+        <hbox>
+          <checkbox  id="readonly"    label="&reado;"/>
+          <checkbox  id="hidden"      label="&hidden;"/>
+        </hbox>
+      </row>
+      <row id="permrow" align="center">
+        <description value="&perm;"/>
+        <hbox>
+          <groupbox>
+            <caption                       label="&owner;"/>
+            <checkbox   id="readowner"     label="&read;"/>
+            <checkbox   id="writeowner"    label="&write;"/>
+            <checkbox   id="execowner"     label="&exec;"/>
+            <checkbox   id="suid"          label="&suid;"/>
+          </groupbox>
+          <groupbox     class="paddingLeft">
+            <caption                       label="&group;"/>
+            <checkbox   id="readgroup"     label="&read;"/>
+            <checkbox   id="writegroup"    label="&write;"/>
+            <checkbox   id="execgroup"     label="&exec;"/>
+            <checkbox   id="guid"          label="&guid;"/>
+          </groupbox>
+          <groupbox     class="paddingLeft">
+            <caption                       label="&public;"/>
+            <checkbox   id="readpublic"    label="&read;"/>
+            <checkbox   id="writepublic"   label="&write;"/>
+            <checkbox   id="execpublic"    label="&exec;"/>
+            <checkbox   id="sticky"        label="&sticky;"/>
+          </groupbox>
+          <vbox         class="paddingLeft">
+            <label                         value="&manual;" control="manual"/>
+            <textbox    id="manual"        value=""         size="4"        maxlength="4"/>
+            <vbox       id="multipleprops">
+              <label                       value="&applyto;"/>
+              <checkbox id="thisprop"      label="&thisprop;"/>
+              <checkbox id="foldersprop"   label="&folderprop;"/>
+              <checkbox id="filesprop"     label="&filesprop;"/>
+            </vbox>
+          </vbox>
+        </hbox>
+      </row>
+      <row id="thumbrow" align="center">
+        <spacer />
+        <box pack="left">
+          <groupbox>
+            <caption label="&thumbnail;"/>
+            <vbox    pack="center"      class="paddingTop">
+              <hbox>
+                <box       id="imagebox">
+                  <browser id="thumbnail" width="150" height="150" src=""/>
+                </box>
+                <box           id="webbox">
+                  <html:span   id="loadinglabel">&loading;</html:span>
+                  <html:canvas id="canvas" width="188" height="150"/>
+                </box>
+              </hbox>
+              <box      pack="center"   class="paddingTop">
+                <button id="viewButton" label="&view.label;" accesskey="&view.accesskey;" oncommand="viewImage()"/>
+              </box>
+            </vbox>
+          </groupbox>
+        </box>
+      </row>
+      <row           id="hashrow"     align="center">
+        <description value="&hash;"   class="paddingRight" />
+        <hbox>
+          <description id="md5btn"    value="MD5"      class="textLink paddingRight" onclick="generateHashes('md5')"/>
+          <description id="sha1btn"   value="SHA1"     class="textLink paddingRight" onclick="generateHashes('sha1')"/>
+          <description id="sha256btn" value="SHA256"   class="textLink paddingRight" onclick="generateHashes('sha256')"/>
+          <description id="sha384btn" value="SHA384"   class="textLink paddingRight" onclick="generateHashes('sha384')"/>
+          <description id="sha512btn" value="SHA512"   class="textLink paddingRight" onclick="generateHashes('sha512')"/>
+        </hbox>
+      </row>
+      <row           id="md5row"      align="center"  collapsed="true">
+        <description                  value="MD5:"/>
+        <deck        id="md5deck">
+          <progressmeter id="md5meter" mode="undetermined" />
+          <textbox   id="md5"         readonly="true" class="textfield"/>
+        </deck>
+      </row>
+      <row           id="sha1row"     align="center"  collapsed="true">
+        <description                  value="SHA1:"/>
+        <deck        id="sha1deck">
+          <progressmeter id="sha1meter" mode="undetermined" />
+          <textbox   id="sha1"        readonly="true" class="textfield"/>
+        </deck>
+      </row>
+      <row           id="sha256row"   align="center"  collapsed="true">
+        <description                  value="SHA256:"/>
+        <deck        id="sha256deck">
+          <progressmeter id="sha256meter" mode="undetermined" />
+          <textbox   id="sha256"      readonly="true" class="textfield"/>
+        </deck>
+      </row>
+      <row           id="sha384row"   align="center"  collapsed="true">
+        <description                  value="SHA384:"/>
+        <deck        id="sha384deck">
+          <progressmeter id="sha384meter" mode="undetermined" />
+          <textbox   id="sha384"      readonly="true" class="textfield"/>
+        </deck>
+      </row>
+      <row           id="sha512row"   align="center"  collapsed="true">
+        <description                  value="SHA512:"/>
+        <deck        id="sha512deck">
+          <progressmeter id="sha512meter" mode="undetermined" />
+          <textbox   id="sha512"      readonly="true" class="textfield"/>
+        </deck>
+      </row>
+    </rows>
+  </grid>
+
+</dialog>

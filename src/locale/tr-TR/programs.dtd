@@ -1,0 +1,22 @@
+<!ENTITY title "Programlar">
+<!ENTITY add.label "Ekle">
+<!ENTITY remove.label "Kaldır">
+<!ENTITY extensions.label "Eklentiler">
+<!ENTITY programs.label "Programlar">
+<!ENTITY details.label "Program Ayrıntıları">
+<!ENTITY name.label "İsim">
+<!ENTITY exec.label "Konum">
+<!ENTITY browse.label "Gözat">
+<!ENTITY args.label "Parametreler">
+<!ENTITY argshelp1.label "&apos;Parametreler&apos; bölümünü boş bırakmak, varsayılan olarak argüman yerine dosyayı geçirecektir.">
+<!ENTITY argshelp2.label "Özel argumanlar bölümünde, geçirilen dosyayı temsilen &#37;dosya&#37; kullanınız.">
+<!ENTITY apply.label "Uygula">
+<!ENTITY adde.accesskey "E">
+<!ENTITY removee.accesskey "k">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "i">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "G">
+<!ENTITY args.accesskey "p">
+<!ENTITY apply.accesskey "u">

@@ -1,0 +1,31 @@
+<!ENTITY title "Propietats">
+<!ENTITY path "Ruta:">
+<!ENTITY webpath "Web Path:">
+<!ENTITY size "Tamany:">
+<!ENTITY date "Data:">
+<!ENTITY contains "Conté:">
+<!ENTITY user "Usuari:">
+<!ENTITY groupl "Grup:">
+<!ENTITY attr "Atributs:">
+<!ENTITY hash "Genera hashes:">
+<!ENTITY perm "Premisos:">
+<!ENTITY reado "Només lectura">
+<!ENTITY hidden "Amagat">
+<!ENTITY owner "Propietari">
+<!ENTITY group "Grup">
+<!ENTITY public "Públic">
+<!ENTITY read "Llegir">
+<!ENTITY write "Escriure">
+<!ENTITY exec "Executar">
+<!ENTITY manual "Manual:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "A capçelera">
+<!ENTITY applyto "Aplicar a:">
+<!ENTITY thisprop "Aquesta carpeta">
+<!ENTITY folderprop "Totes les carpetes incloses">
+<!ENTITY filesprop "Tots els arxius inclosos">
+<!ENTITY thumbnail "Imatge reduïda">
+<!ENTITY loading "Carregant...">
+<!ENTITY view.label "Veure">
+<!ENTITY view.accesskey "V">

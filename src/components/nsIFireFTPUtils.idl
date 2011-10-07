@@ -1,0 +1,15 @@
+#include "nsISupports.idl"
+#include "nsILocalFile.idl"
+#include "nsIZipReader.idl"
+
+[scriptable, uuid(42bd5782-5c3e-11dc-8314-0800200c9a66)]
+interface nsIFireFTPUtils : nsISupports {
+  attribute boolean hiddenMode;
+
+  void   getRecursiveFolderData (in nsILocalFile dir,   in nsISupports  recursiveFolderData);
+  string generateHash           (in nsILocalFile file,  in string       hash);
+  string removeFile             (in nsILocalFile file);
+  string extract                (in nsIZipReader zip,   in string       entry, in nsILocalFile destFolder);
+  string cutCopy                (in boolean      isCut, in nsILocalFile file,  in nsILocalFile newFile, in nsILocalFile newDir, in string newName);
+  string getFileList            (in nsILocalFile dir,   in nsISupports  files);
+};

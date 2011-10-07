@@ -1,0 +1,22 @@
+<!ENTITY title "תוכניות">
+<!ENTITY add.label "הוסף">
+<!ENTITY remove.label "הסר">
+<!ENTITY extensions.label "תוספות">
+<!ENTITY programs.label "תוכניות">
+<!ENTITY details.label "פרטי תוכנה">
+<!ENTITY name.label "שם">
+<!ENTITY exec.label "מיקום">
+<!ENTITY browse.label "סייר">
+<!ENTITY args.label "ארגומנטים">
+<!ENTITY argshelp1.label "השארת השדה &apos;ארגומנטים&apos; ריק יעבור על הקובץ כארגומנט כברירת מחדל.">
+<!ENTITY argshelp2.label "בארגומנטים מוגדרים אישית, השתמש ב-&#37;קובץ&#37; על מנת לייצג את הקובץ שעליו תעבור.">
+<!ENTITY apply.label "החל">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

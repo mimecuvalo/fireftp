@@ -1,0 +1,24 @@
+<!ENTITY title "Diferencias entre directorios">
+<!ENTITY file.label "Archivo">
+<!ENTITY reason.label "Motivo">
+<!ENTITY action.label "Acción">
+<!ENTITY download.label "Descargar">
+<!ENTITY upload.label "Subir">
+<!ENTITY delete.label "Eliminar">
+<!ENTITY nothing.label "No hacer nada">
+<!ENTITY defaults.label "Cambiar selección">
+<!ENTITY local.label "Para archivos locales faltantes:">
+<!ENTITY remote.label "Para archivos remotos faltantes:">
+<!ENTITY diff.label "Para archivos con tamaño diferente:">
+<!ENTITY newer.label "Para archivos locales más recientes:">
+<!ENTITY older.label "Para archivos remotos más recientes:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "E">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "S">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "h">
+<!ENTITY dDownload.access "r">
+<!ENTITY dUpload.access "b">
+<!ENTITY dNothing.access "o">
+<!ENTITY diff.note "Nota: la utilidad de comparación de directorios realmente no compara el contenido de los archivos. En su lugar, mira los archivos que están o no presentes en los directorios comparados y las diferencias de tamaño de los archivos. La fecha y hora se compara si está activada la preferencia de &quot;Mantener sincronizadas fecha y hora&quot;.">

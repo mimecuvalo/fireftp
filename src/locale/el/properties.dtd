@@ -1,0 +1,31 @@
+<!ENTITY title "Ιδιότητες">
+<!ENTITY path "Διαδρομή:">
+<!ENTITY webpath "Διαδρομή ιστού:">
+<!ENTITY size "Μέγεθος:">
+<!ENTITY date "Ημερομηνία:">
+<!ENTITY contains "Περιέχει:">
+<!ENTITY user "Χρήστης:">
+<!ENTITY groupl "Ομάδα:">
+<!ENTITY attr "Ιδιότητες:">
+<!ENTITY hash "Hashes:">
+<!ENTITY perm "Δικαιώματα:">
+<!ENTITY reado "Ανάγνωσης μόνο">
+<!ENTITY hidden "Κρυφό">
+<!ENTITY owner "Ιδιοκτήτης">
+<!ENTITY group "Ομάδα">
+<!ENTITY public "Δημόσιο">
+<!ENTITY read "Ανάγνωση">
+<!ENTITY write "Εγγραφή">
+<!ENTITY exec "Εκτέλεση">
+<!ENTITY manual "Μη αυτόματο:">
+<!ENTITY suid "Ορισμός αναγνωριστικού για τον χρήστη (SUID)">
+<!ENTITY guid "Ορισμός αναγνωριστικού για την ομάδα (GUID)">
+<!ENTITY sticky "Κολλώδες">
+<!ENTITY applyto "Εφαρμογή σε:">
+<!ENTITY thisprop "Αυτός ο κατάλογος">
+<!ENTITY folderprop "Όλοι οι περιεχόμενοι κατάλογοι">
+<!ENTITY filesprop "Όλα τα περιεχόμενα αρχεία">
+<!ENTITY thumbnail "Εικόνα προεπισκόπησης">
+<!ENTITY loading "Φόρτωση...">
+<!ENTITY view.label "Προβολή">
+<!ENTITY view.accesskey "ο">

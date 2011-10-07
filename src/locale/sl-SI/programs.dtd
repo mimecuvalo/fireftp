@@ -1,0 +1,22 @@
+<!ENTITY title "Programi">
+<!ENTITY add.label "Dodaj">
+<!ENTITY remove.label "Odstrani">
+<!ENTITY extensions.label "Razširitve">
+<!ENTITY programs.label "Programi">
+<!ENTITY details.label "Podrobnosti o programu">
+<!ENTITY name.label "Ime">
+<!ENTITY exec.label "Pot">
+<!ENTITY browse.label "Prebrskaj">
+<!ENTITY args.label "Argumenti">
+<!ENTITY argshelp1.label "Če pustite polje &apos;Argumenti&apos; prazno, bo kot privzeta možnost programu podana datoteka.">
+<!ENTITY argshelp2.label "V argumentih po meri uporabite &#37;datoteka&#37; za poimenovanje datoteke, podane programu.">
+<!ENTITY apply.label "Uporabi">
+<!ENTITY adde.accesskey "D">
+<!ENTITY removee.accesskey "O">
+<!ENTITY addp.accesskey "j">
+<!ENTITY removep.accesskey "s">
+<!ENTITY name.accesskey "I">
+<!ENTITY exec.accesskey "Z">
+<!ENTITY browse.accesskey "P">
+<!ENTITY args.accesskey "A">
+<!ENTITY apply.accesskey "p">

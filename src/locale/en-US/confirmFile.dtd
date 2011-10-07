@@ -1,0 +1,16 @@
+<!ENTITY title                "Confirm Overwrite">
+
+<!ENTITY existing.label       "Existing File:">
+<!ENTITY new.label            "New File:">
+
+<!ENTITY overwrite.label      "Overwrite">
+<!ENTITY overwriteall.label   "Overwrite All">
+<!ENTITY skip.label           "Skip">
+<!ENTITY skipall.label        "Skip All">
+<!ENTITY resume.label         "Resume">
+
+<!ENTITY overwrite.access     "O">
+<!ENTITY overwriteall.access  "A">
+<!ENTITY skip.access          "S">
+<!ENTITY skipall.access       "K">
+<!ENTITY resume.access        "R">

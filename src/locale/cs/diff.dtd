@@ -1,0 +1,24 @@
+<!ENTITY title "Synchronizovat adresáře">
+<!ENTITY file.label "Soubor">
+<!ENTITY reason.label "Důvod">
+<!ENTITY action.label "Akce">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY delete.label "Smazat">
+<!ENTITY nothing.label "Nedělat nic">
+<!ENTITY defaults.label "Nastavit výchozí">
+<!ENTITY local.label "Pro chybějící lokální soubory:">
+<!ENTITY remote.label "Pro chybějící vzdálené soubory:">
+<!ENTITY diff.label "Pro soubory rozdílné velikosti:">
+<!ENTITY newer.label "Pro novější místní soubory:">
+<!ENTITY older.label "Pro novější vzdálené soubory:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "e">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "l">
+<!ENTITY diff.note "Poznánka: Tato pomůcka ve skutečnosti neporovnává obsah souborů. Namísto toho sleduje, které soubory existují a které ne, a porovnává jejich velikosti.">

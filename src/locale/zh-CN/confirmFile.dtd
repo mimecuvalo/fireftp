@@ -1,0 +1,13 @@
+<!ENTITY title "确认覆盖">
+<!ENTITY existing.label "已存在文件:">
+<!ENTITY new.label "新文件:">
+<!ENTITY overwrite.label "覆盖">
+<!ENTITY overwriteall.label "覆盖全部">
+<!ENTITY skip.label "跳过">
+<!ENTITY skipall.label "跳过全部">
+<!ENTITY resume.label "续传">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

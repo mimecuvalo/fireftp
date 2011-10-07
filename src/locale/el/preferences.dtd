@@ -1,0 +1,73 @@
+<!ENTITY title "Επιλογές">
+<!ENTITY asciiTitle "Τύποι αρχείων ASCII">
+<!ENTITY general.label "Γενικά">
+<!ENTITY messages.label "Μηνύματα">
+<!ENTITY welcome.label "Προβολή μηνύματος καλωσορίσματος">
+<!ENTITY error.label "Προβολή μηνυμάτων σφάλματος">
+<!ENTITY sessions.label "Συνεδρίες">
+<!ENTITY rememberp.label "Διατήρηση κωδικών πρόσβασης">
+<!ENTITY rememberd.label "Διατήρηση της λίστας του καταλόγου">
+<!ENTITY fileview.label "Προβολή αρχείων">
+<!ENTITY autorefresh.label "Αυτόματη ανανέωση">
+<!ENTITY refresh.tip "Όταν αλλάζει η προβολή  απομακρυσμένου καταλόγου (λόγω μεταφοράς) να γίνεται ανανέωση του καταλόγου">
+<!ENTITY hidden.label "Εμφάνιση κρυφών αρχείων">
+<!ENTITY bytesmode.label "Εμφάνιση του μεγέθους αρχείων σε byte">
+<!ENTITY interface.label "Διασύνδεση χρήστη">
+<!ENTITY startup.label "Εκκίνηση FireFTP:">
+<!ENTITY windowopen.label "σε νέο παράθυρο">
+<!ENTITY tabopen.label "σε νέα καρτέλα">
+<!ENTITY groupopen.label "σε ομάδα παραθύρων">
+<!ENTITY integrateftplnk.label "Αυτόματη χρήση του FireFTP για δεσμούς FTP στον FireFox">
+<!ENTITY temppasvmode.label "Χρήση παθητικής κατάστασης λειτουργίας για αυτές τις συνδέσεις">
+<!ENTITY open.label "Το διπλό κλικ/enter:">
+<!ENTITY download.label "Μεταφέρει ένα αρχείο">
+<!ENTITY exec.label "Ανοίγει ένα αρχείο">
+<!ENTITY both.tip "Προβολή τοπικών και απομακρυσμένων αρχείων">
+<!ENTITY local.tip "Προβολή μόνο τοπικών αρχείων">
+<!ENTITY remote.tip "Προβολή μόνο απομακρυσμένων αρχείων">
+<!ENTITY logwindow.label "Καταγραφή ιστορικού">
+<!ENTITY logmode.label "Προβολή του ιστορικού στο βασικό παράθυρο">
+<!ENTITY logerrormode.label "Προβολή μόνο των σφαλμάτων στο ιστορικό">
+<!ENTITY debug.label "Προβολή πληροφοριών αποσφαλμάτωσης">
+<!ENTITY connect.label "Συνδέσεις">
+<!ENTITY proxy.label "Διαμεσολαβητής">
+<!ENTITY none.label "Χωρίς">
+<!ENTITY direct.label "Απευθείας">
+<!ENTITY host.label "Κεντρικός υπολογιστής:">
+<!ENTITY port.label "Θύρα:">
+<!ENTITY active.label "Ενεργή κατάσταση">
+<!ENTITY limitPorts.label "Περιορισμός θυρών">
+<!ENTITY from.label "Από:">
+<!ENTITY to.label "Προς:">
+<!ENTITY concurrent.label "Ταυτόχρονες μεταφορές">
+<!ENTITY simtransfers.label "Μέγιστος αριθμός ταυτόχρονων μεταφορών (1-10)">
+<!ENTITY recovery.label "Αποκατάσταση σύνδεσης">
+<!ENTITY network.label "Λήξη χρόνου αναμονής δικτύου (σε δευτερόλεπτα, μεταξύ 1 και 600)">
+<!ENTITY network.tip "Ελέγχει τον χρόνο αναμονής ανταπόκρισης από το διακομιστή">
+<!ENTITY keepalivemode.label "Διατήρηση σύνδεσης ακόμα και αν δεν είναι ενεργή">
+<!ENTITY timeout.label "Σε περίπτωση αποσύνδεσης να γίνει προσπάθεια για επανασύνδεση">
+<!ENTITY retryd.label "Μεσοδιάστημα μεταξύ προσπαθειών (σε δευτερόλεπτα, μεταξύ 1 και 600)">
+<!ENTITY retryd.tip "Δευτερόλεπτα μεταξύ των προσπαθειών επανασύνδεσης">
+<!ENTITY retrya.label "Προσπάθειες επανασύνδεσης">
+<!ENTITY retrya.tip "Αριθμός των προσπαθειών που θα γίνουν">
+<!ENTITY downup.label "Λήψη/Αποστολή">
+<!ENTITY transfercaption.label "Όταν μεταφέρονται αρχεία να γίνεται χρήση:">
+<!ENTITY automatic.label "Αυτόματη κατάσταση λειτουργίας">
+<!ENTITY automatic.tip "Αυτόματη επιλογή μεταξύ «Binary» και «ASCII» κατάστασης λειτουργίας">
+<!ENTITY binary.label "Κατάσταση λειτουργίας Binary">
+<!ENTITY ascii.label "Κατάσταση λειτουργίας ASCII">
+<!ENTITY asciifiles.label "Αρχεία ASCII:">
+<!ENTITY asciifiles.tip "Λίστα με επεκτάσεις αρχείων που θα αναγνωρίζονται σαν ASCII">
+<!ENTITY add.label "Προσθήκη">
+<!ENTITY remove.label "Αφαίρεση">
+<!ENTITY extras.label "Πρόσθετα (αν είναι ενεργά στο διακομιστή)">
+<!ENTITY usecompression.label "Χρήση συμπίεσης">
+<!ENTITY synctimestamps.label "Συγχρονισμός χρονοσήμανσης">
+<!ENTITY integritymode.label "Έλεγχος ακεραιότητας μεταφορών αρχείων (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Διπλότυπα αρχεία">
+<!ENTITY timer.label "Απενεργοποίηση χρονομετρητή για το διάλογο αντικατάστασης">
+<!ENTITY nopromptmode.label "Να γίνεται αντικατάσταση χωρίς να εμφανίζεται ο διάλογος αντικατάστασης">
+<!ENTITY credits.label "Μνεία">
+<!ENTITY thanks.label "Ευχαριστούμε:">
+<!ENTITY allothers.label "Όλους όσους μας βοήθησαν και επισήμαναν σφάλματα">
+<!ENTITY special.label "Ειδικές ευχαριστίες σε όλους όσους κατέβαλαν δωρεές!">

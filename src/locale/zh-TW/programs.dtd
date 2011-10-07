@@ -1,0 +1,22 @@
+<!ENTITY title "程式">
+<!ENTITY add.label "新增">
+<!ENTITY remove.label "移除">
+<!ENTITY extensions.label "擴充套件">
+<!ENTITY programs.label "程式">
+<!ENTITY details.label "程式內容">
+<!ENTITY name.label "名稱">
+<!ENTITY exec.label "路徑">
+<!ENTITY browse.label "瀏覽">
+<!ENTITY args.label "選項">
+<!ENTITY argshelp1.label "留空 &apos;選項&apos; 欄會預設為傳送檔案.">
+<!ENTITY argshelp2.label "在自定選項中, 請使用 &#37;file&#37; 去設定要傳送的檔案.">
+<!ENTITY apply.label "套用">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

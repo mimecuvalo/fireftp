@@ -1,0 +1,25 @@
+<!ENTITY title "Διαφορές καταλόγου">
+<!ENTITY file.label "Αρχείο">
+<!ENTITY reason.label "Αιτία">
+<!ENTITY action.label "Ενέργεια">
+<!ENTITY download.label "Λήψη">
+<!ENTITY upload.label "Αποστολή">
+<!ENTITY nothing.label "Καμία ενέργεια">
+<!ENTITY defaults.label "Μαζική αλλαγή">
+<!ENTITY local.label "Για τοπικά αρχεία που δεν υπάρχουν:">
+<!ENTITY remote.label "Για απομακρυσμένα αρχεία που δεν υπάρχουν:">
+<!ENTITY diff.label "Για διαφορετικό μέγεθος αρχείων:">
+<!ENTITY newer.label "Για νεώτερα τοπικά αρχεία:">
+<!ENTITY older.label "Για νεώτερα απομακρυσμένα αρχεία">
+<!ENTITY lDownload.access "Λ">
+<!ENTITY lNothing.access "Κ">
+<!ENTITY rUpload.access "Α">
+<!ENTITY rNothing.access "μ">
+<!ENTITY dDownload.access "η">
+<!ENTITY dUpload.access "π">
+<!ENTITY dNothing.access "μ">
+<!ENTITY diff.note "Σημείωση: Η λειτουργία &quot;Διαφορές καταλόγων&quot; δεν συγκρίνει το περιεχόμενο των αρχείων. Εξετάζει ποια αρχεία υπάρχουν ή όχι στους καταλόγους που συγκρίνονται καθώς και το μέγεθος των αρχείων αυτών. Έλεγχος χρονοσήμανσης γίνεται εάν η επιλογή «Συγχρονισμός χρονοσήμανσης» είναι ενεργοποιημένη.">
+
+<!ENTITY delete.label     "Διαγραφή">
+<!ENTITY lDelete.access   "ι">
+<!ENTITY rDelete.access   "α">

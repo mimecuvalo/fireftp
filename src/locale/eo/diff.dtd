@@ -1,0 +1,24 @@
+<!ENTITY title "Sinkronigi dosierujojn">
+<!ENTITY file.label "Dosiero">
+<!ENTITY reason.label "Kaŭzo">
+<!ENTITY action.label "Ago">
+<!ENTITY download.label "Elŝuti">
+<!ENTITY upload.label "Alŝuti">
+<!ENTITY delete.label "Forviŝi">
+<!ENTITY nothing.label "Fari nenion">
+<!ENTITY defaults.label "Ŝangi elektaĵon">
+<!ENTITY local.label "Por mankantaj lokaj dosieroj:">
+<!ENTITY remote.label "Por manakantaj foraj dosieroj:">
+<!ENTITY diff.label "Por aliaj dosiergrandoj:">
+<!ENTITY newer.label "Por pli novaj lokaj dosieroj:">
+<!ENTITY older.label "Por pli novaj foraj dosieroj:">
+<!ENTITY lDownload.access "E">
+<!ENTITY lDelete.access "v">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "A">
+<!ENTITY rDelete.access "t">
+<!ENTITY rNothing.access "e">
+<!ENTITY dDownload.access "l">
+<!ENTITY dUpload.access "u">
+<!ENTITY dNothing.access "i">
+<!ENTITY diff.note "Atentu: Ĉi tiu funkcio ne komparas dosierenhavon, sed inspektas, kiuj dosieroj ĉeestas aŭ forestas en la dosierujoj, kiuj estu komparataj kaj ankaŭ, kiel la dosiergrandoj diferencas.  Tempstampoj estas komparataj, se la agordo 'Teni tempstampojn sinkronaj' estas ebligita.">

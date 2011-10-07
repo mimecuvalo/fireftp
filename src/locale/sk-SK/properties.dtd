@@ -1,0 +1,31 @@
+<!ENTITY title "Vlastnosti">
+<!ENTITY path "Umiestnenie:">
+<!ENTITY webpath "Miesto na webe:">
+<!ENTITY size "Veľkosť:">
+<!ENTITY date "Dátum:">
+<!ENTITY contains "Obsahuje:">
+<!ENTITY user "Používateľ:">
+<!ENTITY groupl "Skupina:">
+<!ENTITY attr "Atribúty:">
+<!ENTITY hash "Vytvoriť hash:">
+<!ENTITY perm "Oprávnenia:">
+<!ENTITY reado "Iba na čítanie">
+<!ENTITY hidden "Skrytý">
+<!ENTITY owner "Vlastník">
+<!ENTITY group "Skupina">
+<!ENTITY public "Verejný">
+<!ENTITY read "Čítanie">
+<!ENTITY write "Zápis">
+<!ENTITY exec "Spustenie">
+<!ENTITY manual "Ručne:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Použiť na:">
+<!ENTITY thisprop "Tento priečinok">
+<!ENTITY folderprop "Všetky podpriečinky">
+<!ENTITY filesprop "Všetky podsúbory">
+<!ENTITY thumbnail "Miniatúra">
+<!ENTITY loading "Načítava sa...">
+<!ENTITY view.label "Zobraziť">
+<!ENTITY view.accesskey "Z">

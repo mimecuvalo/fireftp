@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "FireFTP -д байгаа холбоосыг нээх">
+<!ENTITY viewFireFTP "Энэ хуудасыг FireFTP-д харах">
+<!ENTITY accountlist.label "(Бүртгэлийг сонгох)">
+<!ENTITY edit.label "Засварлах...">
+<!ENTITY abort.label "Болих">
+<!ENTITY logtab.label "Лог">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Нэмэлт">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Хавтаснуудыг харьцуулах">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Сонгох">
+<!ENTITY import.label "Оруулах...">
+<!ENTITY export.label "Гаргах...">
+<!ENTITY preferencestab.label "Тохиргоо">
+<!ENTITY diff.access "S">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "C">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Help">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Change to parent directory">
+<!ENTITY refresh.tip "Refresh Directory">
+<!ENTITY localpath.tip "Local Path">
+<!ENTITY remotepath.tip "Remote Path">
+<!ENTITY browse.label "Харах">
+<!ENTITY change.label "Солих">
+<!ENTITY name.label "Нэр">
+<!ENTITY size.label "Хэмжээ">
+<!ENTITY date.label "Огноо">
+<!ENTITY type.label "Төрөл">
+<!ENTITY attr.label "Атрибут">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Дамжуулах арга (auto-г Санал болгож байна)">
+<!ENTITY bytes.tip "Татаж авсан байт / Нийт байт">
+<!ENTITY timeela.tip "Өнгөрсөн хугацаа">
+<!ENTITY timerem.tip "Үлдсэн хугацаа">
+<!ENTITY download.tip "Татах хурд">
+<!ENTITY percent.tip "Татсан хувь">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Оруулах">
+<!ENTITY download.label "Татар авах">
+<!ENTITY open.label "Нээх">
+<!ENTITY openwith.label "Үүгээр нээ">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Вебээр харах">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Огтлох">
+<!ENTITY copy.label "Хуулах">
+<!ENTITY paste.label "Буулгах">
+<!ENTITY makedir.label "Хавтас үүсгэх">
+<!ENTITY makefile.label "Файл үүсгэх">
+<!ENTITY symlink.label "Холбоос үүсгэх">
+<!ENTITY delete.label "Устгах">
+<!ENTITY rename.label "Нэр солих">
+<!ENTITY properties.label "Шинж чанарууд">
+<!ENTITY rproperties.label "Рекурсив шинж чанар">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "E">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "n">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>lo</html:em>, from the <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>darkness</html:em> they emerged: a host of the faithful to <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>aide</html:em> the reborn beast in its quest to <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>reclaim</html:em> the land.  Together they <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>extended</html:em> the power of the beast and <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>Mammon</html:em> were converted and their hearts were set <html:em style=&apos;font-size:1.3em;line-height:0;&apos;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

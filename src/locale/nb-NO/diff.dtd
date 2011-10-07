@@ -1,0 +1,24 @@
+<!ENTITY title "Mappesammenligning">
+<!ENTITY file.label "Fil">
+<!ENTITY reason.label "Årsak">
+<!ENTITY action.label "Handling">
+<!ENTITY download.label "Nedlast">
+<!ENTITY upload.label "Opplast">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Ingen handling">
+<!ENTITY defaults.label "Standard">
+<!ENTITY local.label "For filer som mangler lokalt:">
+<!ENTITY remote.label "For filer som mangler eksternt:">
+<!ENTITY diff.label "For forskjellig filstørrelse:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "N">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "I">
+<!ENTITY rUpload.access "O">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "h">
+<!ENTITY dDownload.access "e">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "a">
+<!ENTITY diff.note "Merk: Denne sammenligningsfunksjonen sjekker ikke innhold i filene, men ser kun på hvilke filer som finnes eller ikke i de mapper som sjekkers. Størrelse kan også sjekkes.">

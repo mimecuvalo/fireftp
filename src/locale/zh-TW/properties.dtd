@@ -1,0 +1,31 @@
+<!ENTITY title "內容">
+<!ENTITY path "路徑:">
+<!ENTITY webpath "Web Path:">
+<!ENTITY size "大小:">
+<!ENTITY date "日期:">
+<!ENTITY contains "包含:">
+<!ENTITY user "用戶:">
+<!ENTITY groupl "群組:">
+<!ENTITY attr "類型:">
+<!ENTITY hash "Generate Hashes:">
+<!ENTITY perm "權限:">
+<!ENTITY reado "唯讀">
+<!ENTITY hidden "隱藏">
+<!ENTITY owner "擁有者">
+<!ENTITY group "群組">
+<!ENTITY public "公用">
+<!ENTITY read "讀取">
+<!ENTITY write "寫入">
+<!ENTITY exec "執行">
+<!ENTITY manual "手動:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "相黏模式">
+<!ENTITY applyto "修改到:">
+<!ENTITY thisprop "這個資料夾">
+<!ENTITY folderprop "所有包含的資料夾">
+<!ENTITY filesprop "所有包含的檔案">
+<!ENTITY thumbnail "縮圖">
+<!ENTITY loading "讀取中...">
+<!ENTITY view.label "檢視">
+<!ENTITY view.accesskey "V">

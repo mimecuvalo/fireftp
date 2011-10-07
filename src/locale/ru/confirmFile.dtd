@@ -1,0 +1,13 @@
+<!ENTITY title "Подтвердите перезапись">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Перезаписать">
+<!ENTITY overwriteall.label "Перезаписать все">
+<!ENTITY skip.label "Пропустить">
+<!ENTITY skipall.label "Пропустить все">
+<!ENTITY resume.label "Продолжить">
+<!ENTITY overwrite.access "П">
+<!ENTITY overwriteall.access "в">
+<!ENTITY skip.access "и">
+<!ENTITY skipall.access "т">
+<!ENTITY resume.access "д">

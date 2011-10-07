@@ -1,0 +1,25 @@
+<!ENTITY title "Comparaison de répertoires">
+<!ENTITY file.label "Fichier">
+<!ENTITY reason.label "Raison">
+<!ENTITY action.label "Action">
+<!ENTITY download.label "Télécharger">
+<!ENTITY upload.label "Envoyer">
+<!ENTITY nothing.label "Ne rien faire">
+<!ENTITY defaults.label "Régler les options par défaut">
+<!ENTITY local.label "Pour les fichiers locaux manquants :">
+<!ENTITY remote.label "Pour les fichiers distants manquants :">
+<!ENTITY diff.label "Pour des tailles de fichier différentes :">
+<!ENTITY newer.label "Pour les nouveaux fichiers locaux :">
+<!ENTITY older.label "Pour les nouveaux fichiers distants :">
+<!ENTITY lDownload.access "T">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "E">
+<!ENTITY rNothing.access "r">
+<!ENTITY dDownload.access "l">
+<!ENTITY dUpload.access "n">
+<!ENTITY dNothing.access "f">
+<!ENTITY diff.note "Remarque : Cette comparaison de répertoires ne consiste pas vraiment à vérifier le contenu des fichiers, mais à trouver les fichiers présents ou non dans le répertoire et à détecter des différences de taille. L&apos;horodatage est comparé si l&apos;option &apos;Synchroniser l&apos;horodatage&apos; a été activée.">
+
+<!ENTITY delete.label     "Supprimer">
+<!ENTITY lDelete.access   "S">
+<!ENTITY rDelete.access   "p">

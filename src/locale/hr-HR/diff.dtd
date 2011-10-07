@@ -1,0 +1,24 @@
+<!ENTITY title "Usporedba direktorija">
+<!ENTITY file.label "Datoteka">
+<!ENTITY reason.label "Razlog">
+<!ENTITY action.label "Radnja">
+<!ENTITY download.label "Preuzimanje">
+<!ENTITY upload.label "Otprema">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Ništa ne radi">
+<!ENTITY defaults.label "Promijeni izbor">
+<!ENTITY local.label "Za lokalne datoteke koje nedostaju:">
+<!ENTITY remote.label "Za udaljene datoteke koje nedostaju:">
+<!ENTITY diff.label "Za različite veličine datoteka:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "P">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "O">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "i">
+<!ENTITY dDownload.access "r">
+<!ENTITY dUpload.access "t">
+<!ENTITY dNothing.access "a">
+<!ENTITY diff.note "Napomena: Ova osobina uspoređivanja zapravo ne uspoređuje sadržaj datoteka. Nego, uspoređuje koje su datoteke u direktorijima prisutne a koje nisu i također uspoređuje veličinu datoteka.">

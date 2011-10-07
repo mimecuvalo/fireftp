@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:creator>Mime &#268;uvalo</em:creator>
+    <em:contributor>Devin Pohly</em:contributor>
+    <em:contributor>Scott Bentley</em:contributor>
+    <em:description>FTP client for Mozilla Firefox.</em:description>
+    <em:homepageURL>http://fireftp.mozdev.org</em:homepageURL>
+    <em:name>FireFTP</em:name>
+    <em:version>__VERSION__</em:version>
+    <em:id>{a7c6cf7f-112c-4500-a7ea-39801a327e5f}</em:id>
+    <em:file>
+      <Description about="urn:mozilla:extension:file:fireftp.jar">
+        <em:package>content/</em:package>
+        <em:locale>locale/__l10n__/</em:locale>
+        <em:skin>skin/</em:skin>
+      </Description>
+    </em:file>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>__MINVERSION__</em:minVersion>
+        <em:maxVersion>__MAXVERSION__</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:optionsURL>chrome://fireftp/content/preferences.xul</em:optionsURL>
+    <em:iconURL>chrome://fireftp/skin/icons/logo32.png</em:iconURL>
+    <em:updateURL>http://fireftp.mozdev.org/update___l10n__.rdf</em:updateURL>
+    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJxzrZEmFqv8jXt5LLgjCNGZDJbbkqs7cf6DGzgWvJbVX1QIm1LbFc5Grsi3zqNSRWbs3qyvZtKd0pSYARIm8xWp2uGBdHzmIQLLSxOYCm1oM8ceg+omMlYQloY3C5g8ujsg2WiYN3hYwcC4jHDBWXeOkAW4/Y/Pzpqv6I8bUkKQIDAQAB</em:updateKey>		
+  </Description>
+</RDF>

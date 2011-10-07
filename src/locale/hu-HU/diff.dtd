@@ -1,0 +1,24 @@
+<!ENTITY title "Könyvtár összehasonlítás">
+<!ENTITY file.label "Fájl">
+<!ENTITY reason.label "Oka">
+<!ENTITY action.label "Művelet">
+<!ENTITY download.label "Letöltés">
+<!ENTITY upload.label "Feltöltés">
+<!ENTITY delete.label "Törlés">
+<!ENTITY nothing.label "Ne csináljon semmit">
+<!ENTITY defaults.label "Alapértelmezés beállítása">
+<!ENTITY local.label "Hiányzó helyi fájlokhoz:">
+<!ENTITY remote.label "Hiányzó távoli fájlokhoz:">
+<!ENTITY diff.label "Különböző fájlméretekhez:">
+<!ENTITY newer.label "Újabb helyi fájl:">
+<!ENTITY older.label "Újabb távoli fájl:">
+<!ENTITY lDownload.access "L">
+<!ENTITY lDelete.access "l">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "F">
+<!ENTITY rDelete.access "r">
+<!ENTITY rNothing.access "s">
+<!ENTITY dDownload.access "e">
+<!ENTITY dUpload.access "l">
+<!ENTITY dNothing.access "m">
+<!ENTITY diff.note "Megjegyzés: A könyvtár összehasonlítása művelet nem hasonlítja össze a fájlok tartalmát, mindössze a fájlok létezését és nem létezését figyeli az összehasonlított könyvtárakban, valamint a fájlok méretét veti össze a könyvtárakban.">

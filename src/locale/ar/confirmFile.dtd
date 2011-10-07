@@ -1,0 +1,13 @@
+<!ENTITY title "تأكيد الكتابة">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "الكتابة">
+<!ENTITY overwriteall.label "أكتب الجميع">
+<!ENTITY skip.label "تجاوز">
+<!ENTITY skipall.label "تجاوز الكل">
+<!ENTITY resume.label "الملخّص">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

@@ -1,0 +1,25 @@
+<!ENTITY title "Параўнаньне каталёгаў">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Стан">
+<!ENTITY action.label "Дзеяньне">
+<!ENTITY download.label "Загрузка">
+<!ENTITY upload.label "Адпраўка">
+<!ENTITY nothing.label "Прастойвае">
+<!ENTITY defaults.label "Масавая зьмена">
+<!ENTITY local.label "Для няісных лякальных файлаў:">
+<!ENTITY remote.label "Для няісных аддаленых файлаў:">
+<!ENTITY diff.label "Для файлаў рознага памеру:">
+<!ENTITY newer.label "Для новых лякальных файлаў:">
+<!ENTITY older.label "Для новых аддаленых файлаў:">
+<!ENTITY lDownload.access "у">
+<!ENTITY lNothing.access "П">
+<!ENTITY rUpload.access "А">
+<!ENTITY rNothing.access "р">
+<!ENTITY dDownload.access "З">
+<!ENTITY dUpload.access "т">
+<!ENTITY dNothing.access "з">
+<!ENTITY diff.note "Нататка: Гэтая функцыя насамрэч не параўноўвае зьмесціва.  Правяраецца толькі наяўнасць або адсутнасць файлаў у каталёгах, а таксама адрозьненьні ў памерах.">
+
+<!ENTITY delete.label     "Выдаліць">
+<!ENTITY lDelete.access   "В">
+<!ENTITY rDelete.access   "ь">

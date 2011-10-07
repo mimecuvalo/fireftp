@@ -1,0 +1,72 @@
+<!ENTITY title "Préférences">
+<!ENTITY asciiTitle "Types de fichier ASCII">
+<!ENTITY general.label "Générales">
+<!ENTITY messages.label "Messages">
+<!ENTITY welcome.label "Afficher le message d&apos;accueil">
+<!ENTITY error.label "Afficher les messages d&apos;erreur">
+<!ENTITY sessions.label "Sessions">
+<!ENTITY rememberp.label "Mémoriser les mots de passe">
+<!ENTITY rememberd.label "Mémoriser les listes de répertoires">
+<!ENTITY fileview.label "Gestionnaire de fichiers">
+<!ENTITY autorefresh.label "Actualisation automatique">
+<!ENTITY refresh.tip "Après modification de la liste distante (lors du transfert), actualiser le répertoire">
+<!ENTITY hidden.label "Afficher les fichiers cachés">
+<!ENTITY bytesmode.label "Afficher les tailles de fichiers en octets">
+<!ENTITY interface.label "Interface">
+<!ENTITY startup.label "Démarrage de FireFTP :">
+<!ENTITY windowopen.label "Ouvrir dans une nouvelle fenêtre">
+<!ENTITY tabopen.label "Ouvrir dans un nouvel onglet">
+<!ENTITY integrateftplnk.label "Faire en sorte que les liens FTP dans Firefox utilisent automatiquement FireFTP">
+<!ENTITY temppasvmode.label "Utiliser le mode passif pour ces connexions">
+<!ENTITY open.label "Double-clic / appui sur la touche &apos;Entrée&apos; :">
+<!ENTITY download.label "transfère le fichier">
+<!ENTITY exec.label "ouvre le fichier">
+<!ENTITY both.tip "Afficher les fichiers locaux et les fichiers distants">
+<!ENTITY local.tip "Afficher seulement les fichiers locaux">
+<!ENTITY remote.tip "Afficher seulement les fichiers distants">
+<!ENTITY logwindow.label "Journal">
+<!ENTITY logmode.label "Afficher le journal dans la fenêtre principale">
+<!ENTITY logerrormode.label "Ne montrer que les erreurs dans le journal">
+<!ENTITY debug.label "Afficher les informations de débogage dans le journal">
+<!ENTITY connect.label "Connexions">
+<!ENTITY proxy.label "Réglages du Proxy">
+<!ENTITY none.label "Aucun">
+<!ENTITY direct.label "Direct">
+<!ENTITY host.label "Hôte :">
+<!ENTITY port.label "Port :">
+<!ENTITY active.label "Mode actif">
+<!ENTITY limitPorts.label "Ports limites">
+<!ENTITY from.label "De :">
+<!ENTITY to.label "À :">
+<!ENTITY concurrent.label "Transferts simultanés">
+<!ENTITY simtransfers.label "Nombre maximum de transferts simultanés (1-10)">
+<!ENTITY recovery.label "Rétablissement de connexion">
+<!ENTITY network.label "Temps d&apos;attente (de 1 à 600 secondes)">
+<!ENTITY network.tip "Détermine le délai d&apos;attente pour une réponse du serveur">
+<!ENTITY keepalivemode.label "Rester connecté même si en arrière-plan">
+<!ENTITY timeout.label "Si déconnecté, essayer de se reconnecter">
+<!ENTITY retryd.label "Délai entre deux tentatives (de 1 à 600 secondes)">
+<!ENTITY retryd.tip "Nombre de secondes entre chaque tentative de reconnexion">
+<!ENTITY retrya.label "Nombre de tentatives">
+<!ENTITY retrya.tip "Nombre de tentatives à effectuer">
+<!ENTITY downup.label "Téléchargements / envois">
+<!ENTITY transfercaption.label "Pendant le transfert de fichiers, utiliser :">
+<!ENTITY automatic.label "Le mode automatique">
+<!ENTITY automatic.tip "Choisir automatiquement entre modes &apos;binaire&apos; et &apos;ASCII&apos;">
+<!ENTITY binary.label "Le mode binaire">
+<!ENTITY ascii.label "Le mode ASCII">
+<!ENTITY asciifiles.label "Fichiers ASCII :">
+<!ENTITY asciifiles.tip "Liste des extensions de fichiers devant être reconnus comme fichiers ASCII">
+<!ENTITY add.label "Ajouter">
+<!ENTITY remove.label "Supprimer">
+<!ENTITY extras.label "Outils supplémentaires (si activés sur le serveur)">
+<!ENTITY usecompression.label "Utiliser la compression">
+<!ENTITY synctimestamps.label "Synchroniser les horodatages">
+<!ENTITY integritymode.label "Vérifier l&apos;intégrité des transferts de fichiers (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Fichiers en doublon">
+<!ENTITY timer.label "Désactiver le compte à rebours dans la boîte de dialogue de remplacement">
+<!ENTITY nopromptmode.label "Ne pas afficher la boîte de dialogue de remplacement, écraser directement">
+<!ENTITY credits.label "Remerciements">
+<!ENTITY thanks.label "Merci à :">
+<!ENTITY allothers.label "Tous les autres qui m&apos;ont aidé et ont signalé des bogues">
+<!ENTITY special.label "Remerciement particulier à tous ceux qui ont fait un don !">

@@ -1,0 +1,22 @@
+<!ENTITY title "Програми">
+<!ENTITY add.label "Додати">
+<!ENTITY remove.label "Видалити">
+<!ENTITY extensions.label "Розширення">
+<!ENTITY programs.label "Програми">
+<!ENTITY details.label "Деталі програм">
+<!ENTITY name.label "Ім&apos;я">
+<!ENTITY exec.label "Шлях">
+<!ENTITY browse.label "Пошук">
+<!ENTITY args.label "Параметри">
+<!ENTITY argshelp1.label "Залишаючи поле &apos;Параметри&apos; порожнім, ви передаєте параметром сам файл">
+<!ENTITY argshelp2.label "У власних параметрах використовуйте &#37;file&#37; для представлення вашого файла">
+<!ENTITY apply.label "Застосувати">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

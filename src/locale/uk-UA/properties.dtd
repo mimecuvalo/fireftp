@@ -1,0 +1,31 @@
+<!ENTITY title "Властивості">
+<!ENTITY path "Шлях:">
+<!ENTITY webpath "Веб-адреса:">
+<!ENTITY size "Розмір:">
+<!ENTITY date "Дата:">
+<!ENTITY contains "Містить:">
+<!ENTITY user "Користувач:">
+<!ENTITY groupl "Грапа:">
+<!ENTITY attr "Властивості:">
+<!ENTITY hash "Хеш:">
+<!ENTITY perm "Права:">
+<!ENTITY reado "Лише для читання">
+<!ENTITY hidden "Прихований">
+<!ENTITY owner "Власник">
+<!ENTITY group "Група">
+<!ENTITY public "Доступний всім">
+<!ENTITY read "Читання">
+<!ENTITY write "Запис">
+<!ENTITY exec "Виконання">
+<!ENTITY manual "Руками:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Незрозумілий">
+<!ENTITY applyto "Затосувати до:">
+<!ENTITY thisprop "Цієї теки">
+<!ENTITY folderprop "Всіх підтек">
+<!ENTITY filesprop "Всіх файлів всередині">
+<!ENTITY thumbnail "Зображення">
+<!ENTITY loading "Завантаження...">
+<!ENTITY view.label "Перегляд">
+<!ENTITY view.accesskey "V">

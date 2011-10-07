@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fireftp/locale/confirmFile.dtd">
+<dialog id             = "confirmFile4"
+        title          = "&title;"
+        xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        persist        = "screenX screenY"
+        buttons        = "accept, cancel"
+        ondialogaccept = "answer(1);"
+        ondialogcancel = "answer(3);"
+        onload         = "init()">
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/confirmFile.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+
+  <vbox flex="1" align="center">
+    <description id="question"  value="" class="paddingTop" crop="start"/>
+    <hbox id="fileBox">
+      <vbox class="paddingRight">
+        <label value="&existing.label;"/>
+        <hbox>
+          <box     align="center"   width="32" height="32">
+            <image id="efileIcon"   width="32" height="32"/>
+          </box>
+          <vbox>
+            <label id="esize"/>
+            <label id="edate"/>
+          </vbox>
+        </hbox>
+      </vbox>
+      <vbox class="paddingLeft">
+        <label value="&new.label;"/>
+        <hbox>
+          <box     align="center"   width="32" height="32">
+            <image id="nfileIcon"   width="32" height="32"/>
+          </box>
+          <vbox>
+            <label id="nsize"/>
+            <label id="ndate"/>
+          </vbox>
+        </hbox>
+      </vbox>
+    </hbox>
+    <hbox align="center" class="paddingTop">
+      <button id="overwrite"    label="&overwrite.label;"    accesskey="&overwrite.access;"    dlgtype="accept"/>
+      <button id="overwriteall" label="&overwriteall.label;" accesskey="&overwriteall.access;" oncommand="answer(2)"/>
+      <button id="skip"         label="&skip.label;"         accesskey="&skip.access;"         dlgtype="cancel"/>
+      <button id="skipall"      label="&skipall.label;"      accesskey="&skipall.access;"      oncommand="answer(5)"/>
+      <button id="resume"       label="&resume.label;"       accesskey="&resume.access;"       oncommand="answer(4)"/>
+    </hbox>
+    <description id="timeout" value=""/>
+  </vbox>
+
+</dialog>

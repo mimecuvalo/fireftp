@@ -1,0 +1,22 @@
+<!ENTITY title "Programas">
+<!ENTITY add.label "Añadir">
+<!ENTITY remove.label "Eliminar">
+<!ENTITY extensions.label "Extensiones">
+<!ENTITY programs.label "Programas">
+<!ENTITY details.label "Detalles del programa">
+<!ENTITY name.label "Nombre">
+<!ENTITY exec.label "Ruta">
+<!ENTITY browse.label "Examinar">
+<!ENTITY args.label "Argumentos">
+<!ENTITY argshelp1.label "Dejar el campo &apos;Argumentos&apos; en blanco dejará como predeterminado pasar el fichero como un argumento.">
+<!ENTITY argshelp2.label "En argumentos personalizados, usar &#37;file&#37; para representar el fichero que se pase. ">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

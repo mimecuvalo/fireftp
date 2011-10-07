@@ -1,0 +1,13 @@
+<!ENTITY title "Üzerine Yazmayı Onaylat">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Üzerine Yaz">
+<!ENTITY overwriteall.label "Hepsinin Üzerine Yaz">
+<!ENTITY skip.label "Atla">
+<!ENTITY skipall.label "Hepsini Atla">
+<!ENTITY resume.label "Devam Ettir">
+<!ENTITY overwrite.access "Ü">
+<!ENTITY overwriteall.access "H">
+<!ENTITY skip.access "A">
+<!ENTITY skipall.access "S">
+<!ENTITY resume.access "D">

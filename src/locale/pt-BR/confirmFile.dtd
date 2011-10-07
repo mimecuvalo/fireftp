@@ -1,0 +1,13 @@
+<!ENTITY title "Confirmar substituição">
+<!ENTITY existing.label "Arquivo existente:">
+<!ENTITY new.label "Novo arquivo:">
+<!ENTITY overwrite.label "Substituir">
+<!ENTITY overwriteall.label "Substituir todos">
+<!ENTITY skip.label "Ignorar">
+<!ENTITY skipall.label "Ignorar todos">
+<!ENTITY resume.label "Continuar">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "t">
+<!ENTITY skip.access "I">
+<!ENTITY skipall.access "n">
+<!ENTITY resume.access "C">

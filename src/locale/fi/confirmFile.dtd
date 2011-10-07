@@ -1,0 +1,13 @@
+<!ENTITY title "Vahvista ylikirjoitus">
+<!ENTITY existing.label "Nykyinen tiedosto:">
+<!ENTITY new.label "Uusi tiedosto:">
+<!ENTITY overwrite.label "Ylikirjoita">
+<!ENTITY overwriteall.label "Ylikirjoita kaikki">
+<!ENTITY skip.label "Ohita">
+<!ENTITY skipall.label "Ohita kaikki">
+<!ENTITY resume.label "Jatka">
+<!ENTITY overwrite.access "Y">
+<!ENTITY overwriteall.access "l">
+<!ENTITY skip.access "O">
+<!ENTITY skipall.access "h">
+<!ENTITY resume.access "J">

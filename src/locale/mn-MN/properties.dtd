@@ -1,0 +1,31 @@
+<!ENTITY title "Шинжүүд">
+<!ENTITY path "Зам:">
+<!ENTITY webpath "Вебийн зам:">
+<!ENTITY size "Хэмжээ:">
+<!ENTITY date "Огноо:">
+<!ENTITY contains "Агуулга:">
+<!ENTITY user "Хэрэглэгч:">
+<!ENTITY groupl "Бүлэг:">
+<!ENTITY attr "Шинж тэмдэгүүд:">
+<!ENTITY hash "Хаш үүсгэх:">
+<!ENTITY perm "Зөвшөөрөлүүд:">
+<!ENTITY reado "Зөвхөн уншихаар">
+<!ENTITY hidden "Нууцлагдсан">
+<!ENTITY owner "Эзэмшигч">
+<!ENTITY group "Бүлэг">
+<!ENTITY public "Нийтийн">
+<!ENTITY read "Унших">
+<!ENTITY write "Бичих">
+<!ENTITY exec "Ажиллуулах">
+<!ENTITY manual "Гарын авлага:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Наалдамхай">
+<!ENTITY applyto "Хэрэглэх:">
+<!ENTITY thisprop "Энэ хавтас">
+<!ENTITY folderprop "Агуулж байгаа бүх хавтаснууд">
+<!ENTITY filesprop "Агуулж байгаа бүх файлууд">
+<!ENTITY thumbnail "Жижиг зураг">
+<!ENTITY loading "Ачааллаж байна...">
+<!ENTITY view.label "Харах">
+<!ENTITY view.accesskey "V">

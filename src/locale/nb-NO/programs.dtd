@@ -1,0 +1,22 @@
+<!ENTITY title "Programmer">
+<!ENTITY add.label "Legg til">
+<!ENTITY remove.label "Fjern">
+<!ENTITY extensions.label "Filtype">
+<!ENTITY programs.label "Programmer">
+<!ENTITY details.label "Programinformasjon">
+<!ENTITY name.label "Navn">
+<!ENTITY exec.label "Bane">
+<!ENTITY browse.label "Bla gjennom...">
+<!ENTITY args.label "Argumenter">
+<!ENTITY argshelp1.label "La &apos;Argumenter&apos;-feltet være tomt for å la filen brukes som standardargument.">
+<!ENTITY argshelp2.label "I tilpassede argumenter bruk &#37;filnavn&#37; for å benytte filnavn som argument.">
+<!ENTITY apply.label "Bruk">
+<!ENTITY adde.accesskey "L">
+<!ENTITY removee.accesskey "F">
+<!ENTITY addp.accesskey "e">
+<!ENTITY removep.accesskey "n">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "B">
+<!ENTITY browse.accesskey "G">
+<!ENTITY args.accesskey "A">
+<!ENTITY apply.accesskey "B">

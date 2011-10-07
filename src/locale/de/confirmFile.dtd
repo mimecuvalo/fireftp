@@ -1,0 +1,13 @@
+<!ENTITY title "Überschreiben bestätigen">
+<!ENTITY existing.label "Bestehende Datei:">
+<!ENTITY new.label "Neue Datei:">
+<!ENTITY overwrite.label "Überschreiben">
+<!ENTITY overwriteall.label "Alle überschreiben">
+<!ENTITY skip.label "Überspringen">
+<!ENTITY skipall.label "Alle überspringen">
+<!ENTITY resume.label "Fortsetzen">
+<!ENTITY overwrite.access "b">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "s">
+<!ENTITY skipall.access "l">
+<!ENTITY resume.access "F">

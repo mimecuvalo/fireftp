@@ -1,0 +1,31 @@
+<!ENTITY title "מאפיינים">
+<!ENTITY path "מיקום:">
+<!ENTITY webpath "מיקום ברשת:">
+<!ENTITY size "גודל:">
+<!ENTITY date "תאריך:">
+<!ENTITY contains "מכיל:">
+<!ENTITY user "משתמש:">
+<!ENTITY groupl "קבוצה:">
+<!ENTITY attr "תכונות:">
+<!ENTITY hash "יצר האשים:">
+<!ENTITY perm "הרשאות">
+<!ENTITY reado "קריאה בלבד">
+<!ENTITY hidden "מוסתר">
+<!ENTITY owner "בעלים">
+<!ENTITY group "קבוצה">
+<!ENTITY public "ציבורי">
+<!ENTITY read "קריאה">
+<!ENTITY write "כתיבה">
+<!ENTITY exec "הפעלה">
+<!ENTITY manual "ידנית:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "דביק">
+<!ENTITY applyto "החל על:">
+<!ENTITY thisprop "תיקיה זו">
+<!ENTITY folderprop "כל התיקיות המוכללות">
+<!ENTITY filesprop "כל הקבצים המוכללים">
+<!ENTITY thumbnail "תצוגה מקדימה">
+<!ENTITY loading "טוען...">
+<!ENTITY view.label "תצוגה">
+<!ENTITY view.accesskey "V">

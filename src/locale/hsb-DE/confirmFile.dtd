@@ -1,0 +1,13 @@
+<!ENTITY title "Přepisanje wobkrućić">
+<!ENTITY existing.label "Eksistowaca dataja:">
+<!ENTITY new.label "Nowa dataja:">
+<!ENTITY overwrite.label "Přepisać">
+<!ENTITY overwriteall.label "Wšitko přepisać">
+<!ENTITY skip.label "Přeskočić">
+<!ENTITY skipall.label "Wšě přeskočić">
+<!ENTITY resume.label "Pokročować">
+<!ENTITY overwrite.access "P">
+<!ENTITY overwriteall.access "S">
+<!ENTITY skip.access "K">
+<!ENTITY skipall.access "S">
+<!ENTITY resume.access "O">

@@ -1,0 +1,31 @@
+<!ENTITY title "Proprietăți">
+<!ENTITY path "Cale:">
+<!ENTITY webpath "Cale web:">
+<!ENTITY size "Dimensiune:">
+<!ENTITY date "Dată:">
+<!ENTITY contains "Conținut:">
+<!ENTITY user "Utilizator:">
+<!ENTITY groupl "Grup:">
+<!ENTITY attr "Atribute:">
+<!ENTITY hash "Sume hash:">
+<!ENTITY perm "Permisiuni:">
+<!ENTITY reado "Doar în-citire">
+<!ENTITY hidden "Ascuns">
+<!ENTITY owner "Proprietar">
+<!ENTITY group "Grup">
+<!ENTITY public "Public">
+<!ENTITY read "Citire">
+<!ENTITY write "Scriere">
+<!ENTITY exec "Executare">
+<!ENTITY manual "Cod permisiuni:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Sticky bit">
+<!ENTITY applyto "Se aplică pentru:">
+<!ENTITY thisprop "Acest dosar">
+<!ENTITY folderprop "Toate dosarele conținute">
+<!ENTITY filesprop "Toate fișierele conținute">
+<!ENTITY thumbnail "Miniatură">
+<!ENTITY loading "Încărcare…">
+<!ENTITY view.label "Vizualizează">
+<!ENTITY view.accesskey "V">

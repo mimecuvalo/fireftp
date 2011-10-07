@@ -1,0 +1,66 @@
+<!ENTITY title "帐户管理器">
+<!ENTITY main "主要">
+<!ENTITY connections "连接">
+<!ENTITY advanced "高级">
+<!ENTITY maindetails "主要细节">
+<!ENTITY id "ID">
+<!ENTITY account.label "帐户名称：">
+<!ENTITY account.tip "示例：我的 FTP 站点">
+<!ENTITY folder.label "分类：">
+<!ENTITY optional.label "(可选)">
+<!ENTITY host.label "主机：">
+<!ENTITY host.tip "示例：ftp.debian.org">
+<!ENTITY login.label "用户名：">
+<!ENTITY password.label "密码：">
+<!ENTITY anonymous.label "匿名">
+<!ENTITY connection "连接类型">
+<!ENTITY port.label "端口：">
+<!ENTITY pasv.label "被动模式">
+<!ENTITY security.label "安全：">
+<!ENTITY none.label "无">
+<!ENTITY authtls.label "Auth TLS (最好)">
+<!ENTITY authssl.label "Auth SSL (较好)">
+<!ENTITY implicit.label "Implicit SSL (好)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "密匙：">
+<!ENTITY pkbrowse.label "浏览…">
+<!ENTITY pkconvert.label "转换…">
+<!ENTITY initialdir "初始目录">
+<!ENTITY download "下载选项">
+<!ENTITY upload "上传选项">
+<!ENTITY localdir.label "本地：">
+<!ENTITY remotedir.label "远端：">
+<!ENTITY current.label "使用当前目录">
+<!ENTITY treesync.label "浏览时保持目录同步">
+<!ENTITY webhost "Web主机 (&quot;以web方式查看时&quot;使用)">
+<!ENTITY webhost.tip "示例：http://www.example.com">
+<!ENTITY prefix.label "前缀：">
+<!ENTITY prefix.tip "URL中FTP部分要移除的前缀，例如：/public_html">
+<!ENTITY caseleave.label "保持字母大小写不变">
+<!ENTITY caselower.label "转换成小写字母">
+<!ENTITY caseupper.label "转换成大写字母">
+<!ENTITY timezone.label "时区偏移">
+<!ENTITY hours.label "小时：">
+<!ENTITY minutes.label "分钟">
+<!ENTITY notes.label "注释">
+<!ENTITY encoding.label "服务器编码">
+<!ENTITY charset.label "字符集：">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

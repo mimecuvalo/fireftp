@@ -1,0 +1,13 @@
+<!ENTITY title "Potvrdi prepisivanje">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Prepiši">
+<!ENTITY overwriteall.label "Sve prepiši">
+<!ENTITY skip.label "Preskoći">
+<!ENTITY skipall.label "Sve preskoći">
+<!ENTITY resume.label "Nastavi">
+<!ENTITY overwrite.access "P">
+<!ENTITY overwriteall.access "S">
+<!ENTITY skip.access "r">
+<!ENTITY skipall.access "v">
+<!ENTITY resume.access "N">

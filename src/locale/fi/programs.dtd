@@ -1,0 +1,22 @@
+<!ENTITY title "Ohjelmat">
+<!ENTITY add.label "Lisää">
+<!ENTITY remove.label "Poista">
+<!ENTITY extensions.label "Laajennukset">
+<!ENTITY programs.label "Ohjelmat">
+<!ENTITY details.label "Ohjelman tiedot">
+<!ENTITY name.label "Nimi">
+<!ENTITY exec.label "Polku">
+<!ENTITY browse.label "Selaa">
+<!ENTITY args.label "Parametrit">
+<!ENTITY argshelp1.label "Jättämällä &apos;Parametrit&apos; kentän tyhjäksi, tiedostoa käytetään oletusparametrina.">
+<!ENTITY argshelp2.label "Käytä &#37;file&#37; -tunnistetta kuvaamaan käytettävää tiedostoa erikoiskomennoissa.">
+<!ENTITY apply.label "Käytä">
+<!ENTITY adde.accesskey "L">
+<!ENTITY removee.accesskey "P">
+<!ENTITY addp.accesskey "i">
+<!ENTITY removep.accesskey "o">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "S">
+<!ENTITY args.accesskey "a">
+<!ENTITY apply.accesskey "K">

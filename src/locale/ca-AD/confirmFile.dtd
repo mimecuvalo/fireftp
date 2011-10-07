@@ -1,0 +1,13 @@
+<!ENTITY title "Confirma sobreescriptura">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Sobreescriptura">
+<!ENTITY overwriteall.label "Sobreescriu-ho tot">
+<!ENTITY skip.label "Ignora">
+<!ENTITY skipall.label "Ignora-ho tot">
+<!ENTITY resume.label "Continua">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "t">
+<!ENTITY skip.access "O">
+<!ENTITY skipall.access "a">
+<!ENTITY resume.access "R">

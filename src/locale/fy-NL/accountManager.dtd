@@ -1,0 +1,66 @@
+<!ENTITY title "Behear fan accounts">
+<!ENTITY main "Algemien">
+<!ENTITY connections "Ferbining">
+<!ENTITY advanced "Avansearre">
+<!ENTITY maindetails "Algemiene ynstellings">
+<!ENTITY id "ID">
+<!ENTITY account.label "Namme akkount:">
+<!ENTITY account.tip "Foarbyld: Myn FTP-stee">
+<!ENTITY folder.label "Category:">
+<!ENTITY optional.label "(optional)">
+<!ENTITY host.label "Tsjinner:">
+<!ENTITY host.tip "Foarbyld: ftp.debian.org">
+<!ENTITY login.label "Brûkersnamme:">
+<!ENTITY password.label "Wachtwurd:">
+<!ENTITY anonymous.label "Anoniem">
+<!ENTITY connection "Soarte ferbining">
+<!ENTITY port.label "Poarte:">
+<!ENTITY pasv.label "Passief">
+<!ENTITY security.label "Befeiliging">
+<!ENTITY none.label "Gjin">
+<!ENTITY authtls.label "Auth TLS (Bêste)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implisiete SSL (Goed)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Key:">
+<!ENTITY pkbrowse.label "Browse...">
+<!ENTITY pkconvert.label "Convert...">
+<!ENTITY initialdir "Begjin-map">
+<!ENTITY download "Ynstellings foar ynladen">
+<!ENTITY upload "Ynstellings foar opladen">
+<!ENTITY localdir.label "Lokaal:">
+<!ENTITY remotedir.label "Op tsjinner:">
+<!ENTITY current.label "Use Current">
+<!ENTITY treesync.label "Hâld mappen gelyk">
+<!ENTITY webhost "Webtsjinner (brûkt troch de &apos;Online besjen&apos;-mooglikheid)">
+<!ENTITY webhost.tip "Foarbyld: http://www.foarbyld.nl">
+<!ENTITY prefix.label "Prefiks:">
+<!ENTITY prefix.tip "Part dat fuortsmiten wurde moat fan FTP-part fan it adres, byg. /public_html">
+<!ENTITY caseleave.label "Sa litte">
+<!ENTITY caselower.label "Omsette nei lytse letters">
+<!ENTITY caseupper.label "Omsette nei HAADLETTERS">
+<!ENTITY timezone.label "Timezone Offset">
+<!ENTITY hours.label "Hours:">
+<!ENTITY minutes.label "Minutes:">
+<!ENTITY notes.label "Notes">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "S">
+<!ENTITY login.access "G">
+<!ENTITY password.access "W">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "P">
+<!ENTITY port.access "o">
+<!ENTITY security.access "B">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "e">
+<!ENTITY currentl.access "H">
+<!ENTITY currentr.access "g">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "S">
+<!ENTITY prefix.access "V">

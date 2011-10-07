@@ -1,0 +1,31 @@
+<!ENTITY title "Egenskaber">
+<!ENTITY path "Sti:">
+<!ENTITY webpath "Web-sti:">
+<!ENTITY size "Størrelse:">
+<!ENTITY date "Dato:">
+<!ENTITY contains "Indeholder:">
+<!ENTITY user "Bruger:">
+<!ENTITY groupl "Gruppe:">
+<!ENTITY attr "Attributter:">
+<!ENTITY hash "Generér hashes:">
+<!ENTITY perm "Rettigheder:">
+<!ENTITY reado "Skrivebeskyttet">
+<!ENTITY hidden "Skjult">
+<!ENTITY owner "Ejer">
+<!ENTITY group "Gruppe">
+<!ENTITY public "Offentlig">
+<!ENTITY read "Læs">
+<!ENTITY write "Skriv">
+<!ENTITY exec "Kør">
+<!ENTITY manual "Manuel:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Gælder for:">
+<!ENTITY thisprop "Denne mappe">
+<!ENTITY folderprop "Alle indeholdte mapper">
+<!ENTITY filesprop "Alle indeholdte filer">
+<!ENTITY thumbnail "Miniature">
+<!ENTITY loading "Indlæser...">
+<!ENTITY view.label "Vis">
+<!ENTITY view.accesskey "V">

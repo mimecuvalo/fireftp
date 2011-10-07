@@ -1,0 +1,66 @@
+<!ENTITY title "アカウントの管理">
+<!ENTITY main "メイン">
+<!ENTITY connections "接続">
+<!ENTITY advanced "詳細設定">
+<!ENTITY maindetails "詳細">
+<!ENTITY id "ID">
+<!ENTITY account.label "表示名:">
+<!ENTITY account.tip "例: My FTP Site">
+<!ENTITY folder.label "Category:">
+<!ENTITY optional.label "(オプション)">
+<!ENTITY host.label "ホスト:">
+<!ENTITY host.tip "例: ftp.debian.org">
+<!ENTITY login.label "ユーザー名:">
+<!ENTITY password.label "パスワード:">
+<!ENTITY anonymous.label "Anonymous">
+<!ENTITY connection "接続方式">
+<!ENTITY port.label "ポート:">
+<!ENTITY pasv.label "パッシブモード">
+<!ENTITY security.label "セキュリティ">
+<!ENTITY none.label "なし">
+<!ENTITY authtls.label "Auth TLS (Best)">
+<!ENTITY authssl.label "Auth SSL (Better)">
+<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Key:">
+<!ENTITY pkbrowse.label "Browse...">
+<!ENTITY pkconvert.label "Convert...">
+<!ENTITY initialdir "起動時の表示ディレクトリ">
+<!ENTITY download "ダウンロード オプション">
+<!ENTITY upload "アップロード オプション">
+<!ENTITY localdir.label "ローカル:">
+<!ENTITY remotedir.label "リモート:">
+<!ENTITY current.label "現在を使用">
+<!ENTITY treesync.label "常にディレクトリを同期">
+<!ENTITY webhost "ウェブホスト ('ウェブで表示' 機能で使用します)">
+<!ENTITY webhost.tip "例: http://www.example.com">
+<!ENTITY prefix.label "接頭辞:">
+<!ENTITY prefix.tip "URL の FTP パート内にある接頭辞を削除します。例えば /public_html">
+<!ENTITY caseleave.label "無変換">
+<!ENTITY caselower.label "小文字に変換">
+<!ENTITY caseupper.label "大文字に変換">
+<!ENTITY timezone.label "Timezone Offset">
+<!ENTITY hours.label "Hours:">
+<!ENTITY minutes.label "Minutes:">
+<!ENTITY notes.label "Notes">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

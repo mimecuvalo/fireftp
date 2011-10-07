@@ -1,0 +1,31 @@
+<!ENTITY title "Tulajdonságok">
+<!ENTITY path "Útvonal:">
+<!ENTITY webpath "Web útvonal:">
+<!ENTITY size "Méret:">
+<!ENTITY date "Dátum:">
+<!ENTITY contains "Tartalmazza:">
+<!ENTITY user "Felhasználó:">
+<!ENTITY groupl "Csoport:">
+<!ENTITY attr "Attribútumok:">
+<!ENTITY hash "Hashek létrehozása:">
+<!ENTITY perm "Engedélyek:">
+<!ENTITY reado "Írásvédett">
+<!ENTITY hidden "Rejtett">
+<!ENTITY owner "Tulajdonos">
+<!ENTITY group "Csoport">
+<!ENTITY public "Közös">
+<!ENTITY read "Olvasható">
+<!ENTITY write "Írható">
+<!ENTITY exec "Végrehajtható">
+<!ENTITY manual "Kézileg:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Ragadós">
+<!ENTITY applyto "Alkalmazás erre:">
+<!ENTITY thisprop "Aktuális könyvtár">
+<!ENTITY folderprop "Összes alkönyvtár">
+<!ENTITY filesprop "Összes fájl">
+<!ENTITY thumbnail "Miniatűrök">
+<!ENTITY loading "Betöltés…">
+<!ENTITY view.label "Megtekintés">
+<!ENTITY view.accesskey "M">

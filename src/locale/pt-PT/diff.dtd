@@ -1,0 +1,24 @@
+<!ENTITY title "Sincronizar Directorias">
+<!ENTITY file.label "Ficheiro">
+<!ENTITY reason.label "Razão">
+<!ENTITY action.label "Acção">
+<!ENTITY download.label "Transferir">
+<!ENTITY upload.label "Carregar">
+<!ENTITY delete.label "Eliminar">
+<!ENTITY nothing.label "Não fazer nada">
+<!ENTITY defaults.label "Pré-definições">
+<!ENTITY local.label "Para os ficheiros que faltam localmente:">
+<!ENTITY remote.label "Para os ficheiros que faltam remotamente:">
+<!ENTITY diff.label "Para tamanhos de ficheiro diferentes:">
+<!ENTITY newer.label "Para ficheiros locais recentes:">
+<!ENTITY older.label "Para ficheiros remotos recentes:">
+<!ENTITY lDownload.access "T">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "C">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Nota: Esta opção não compara o conteúdo do ficheiro. Ela só verifica os ficheiros que existem e não existem nas directorias e que diferem em tamanho.  Os Timestamps são comparados se a opção &apos;Manter timestamps em sinc&apos; estiver activa.">

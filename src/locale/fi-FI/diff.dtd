@@ -1,0 +1,25 @@
+<!ENTITY title "Hakemiston vertailu">
+<!ENTITY file.label "Tiedosto">
+<!ENTITY reason.label "Syy">
+<!ENTITY action.label "Toiminto">
+<!ENTITY download.label "Lataus">
+<!ENTITY upload.label "Lähetys">
+<!ENTITY nothing.label "Ei mikään">
+<!ENTITY defaults.label "Massa muutos">
+<!ENTITY local.label "Puuttuville paikallisille tiedostoille:">
+<!ENTITY remote.label "Puuttuville etätiedostoille:">
+<!ENTITY diff.label "Erikokoisille tiedostoille:">
+<!ENTITY newer.label "Uudemmille paikallistiedostoille:">
+<!ENTITY older.label "Uudemmille etätiedostoille:">
+<!ENTITY lDownload.access "L">
+<!ENTITY lNothing.access "E">
+<!ENTITY rUpload.access "L">
+<!ENTITY rNothing.access "m">
+<!ENTITY dDownload.access "a">
+<!ENTITY dUpload.access "ä">
+<!ENTITY dNothing.access "t">
+<!ENTITY diff.note "Huomaa, ettei vertailuominaisuus tarkastele tiedostojen sisältöä. Ominaisuus tarkastelee vain tiedostojen olemassaoloa ja niiden kokoa. Aikaleimoja vertaillaan jos &apos;Pidä aikaleimat tahdistettuna&apos; asetus on käytössä.">
+
+<!ENTITY delete.label     "Poista">
+<!ENTITY lDelete.access   "P">
+<!ENTITY rDelete.access   "s">

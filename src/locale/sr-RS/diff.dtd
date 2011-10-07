@@ -1,0 +1,24 @@
+<!ENTITY title "Усклађивање фасцикли">
+<!ENTITY file.label "Датотека">
+<!ENTITY reason.label "Разлог">
+<!ENTITY action.label "Радња">
+<!ENTITY download.label "Преузимање">
+<!ENTITY upload.label "Отпремање">
+<!ENTITY delete.label "Избриши">
+<!ENTITY nothing.label "Ништа не ради">
+<!ENTITY defaults.label "Промени изабрано">
+<!ENTITY local.label "За локалне датотеке које недостају:">
+<!ENTITY remote.label "За удаљене датотеке које недостају:">
+<!ENTITY diff.label "За различите величине датотека:">
+<!ENTITY newer.label "За новије локалне датотеке:">
+<!ENTITY older.label "За новије даљинске датотеке:">
+<!ENTITY lDownload.access "П">
+<!ENTITY lDelete.access "И">
+<!ENTITY lNothing.access "Н">
+<!ENTITY rUpload.access "О">
+<!ENTITY rDelete.access "И">
+<!ENTITY rNothing.access "Н">
+<!ENTITY dDownload.access "п">
+<!ENTITY dUpload.access "о">
+<!ENTITY dNothing.access "н">
+<!ENTITY diff.note "Напомена: ова могућност поређења заправо не пореди садржај датотека. Уместо тога, пореди које су датотеке у директоријима присутне, а које нису. Такође, пореди и величине датотека.">

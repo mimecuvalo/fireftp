@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Адкрыць спасылку ў FireFTP">
+<!ENTITY viewFireFTP "Глядзець старонку ў FireFTP">
+<!ENTITY accountlist.label "(Вылучыць рахунак)">
+<!ENTITY edit.label "Зьмяніць...">
+<!ENTITY abort.label "Стоп">
+<!ENTITY logtab.label "Рапарт">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "Р">
+<!ENTITY advanced.label "Дадаткова">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Параўнаць каталёгі">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Карыстальніцкая каманда">
+<!ENTITY import.label "Імпарт...">
+<!ENTITY export.label "Экспарт...">
+<!ENTITY preferencestab.label "Наладкі...">
+<!ENTITY diff.access "р">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "я">
+<!ENTITY import.access "м">
+<!ENTITY export.access "Э">
+<!ENTITY prefbutton.access "Н">
+<!ENTITY help.label "Дапамога">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "На ўзровень вышэй">
+<!ENTITY refresh.tip "Абнавіць">
+<!ENTITY localpath.tip "Лякальны адрас">
+<!ENTITY remotepath.tip "Аддалены адрас">
+<!ENTITY browse.label "Агляд">
+<!ENTITY change.label "Перайсьці">
+<!ENTITY name.label "Імя">
+<!ENTITY size.label "Памер">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тып">
+<!ENTITY attr.label "Атрыбуты">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Зьмяніць мэтад перадачы (рэкамэндуецца &apos;&apos;auto&apos;&apos;)">
+<!ENTITY bytes.tip "Байт Загружана / Агулам Байт">
+<!ENTITY timeela.tip "Прайшло часу">
+<!ENTITY timerem.tip "Засталося часу">
+<!ENTITY download.tip "Хуткасьць загрузкі">
+<!ENTITY percent.tip "Адсоткаў выканана">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Перадаць">
+<!ENTITY download.label "Загрузіць">
+<!ENTITY open.label "Адкрыць">
+<!ENTITY openwith.label "Адкрыць з дапамогаю">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Глядзець у Web">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Выразаць">
+<!ENTITY copy.label "Капіяваць">
+<!ENTITY paste.label "Уставіць">
+<!ENTITY makedir.label "Стварыць тэчку">
+<!ENTITY makefile.label "Стварыць файл">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "Выдаліць">
+<!ENTITY rename.label "Перайменаваць">
+<!ENTITY properties.label "Уласьцівасьці">
+<!ENTITY rproperties.label "Рэкурсыўныя Ўласцівасьці">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "І">
+<!ENTITY abort.access "т">
+<!ENTITY advanced.access "п">
+<!ENTITY helpbutton.access "щ">
+<!ENTITY browsebutton.access "А">
+<!ENTITY changebutton.access "й">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

@@ -1,0 +1,13 @@
+<!ENTITY title "確認覆寫">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "覆寫">
+<!ENTITY overwriteall.label "全部覆寫">
+<!ENTITY skip.label "跳過">
+<!ENTITY skipall.label "全部跳過">
+<!ENTITY resume.label "繼續">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

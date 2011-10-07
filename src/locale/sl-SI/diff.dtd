@@ -1,0 +1,25 @@
+<!ENTITY title "Razlika v mapah">
+<!ENTITY file.label "Datoteka">
+<!ENTITY reason.label "Razlog">
+<!ENTITY action.label "Dejanje">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY nothing.label "Do Nothing">
+<!ENTITY defaults.label "Set Defaults">
+<!ENTITY local.label "For missing local files:">
+<!ENTITY remote.label "For missing remote files:">
+<!ENTITY diff.label "For different file sizes:">
+<!ENTITY newer.label "Za novejše krajevne datoteke:">
+<!ENTITY older.label "Za novejše oddaljene datoteke:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Opomba: ta opis razlike v resnici ne primerja vsebin datotek. Namesto tega preveri prisotne datoteke v primerjanih mapah in njihove velikosti.">
+
+<!ENTITY delete.label     "Izbriši">
+<!ENTITY lDelete.access   "I">
+<!ENTITY rDelete.access   "z">

@@ -1,0 +1,24 @@
+<!ENTITY title "Kausta Diff">
+<!ENTITY file.label "Fail">
+<!ENTITY reason.label "Põhjus">
+<!ENTITY action.label "Tegevus">
+<!ENTITY download.label "Lae Alla">
+<!ENTITY upload.label "Lae Üles">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Ära tee midagi">
+<!ENTITY defaults.label "Seadista Tavaliseks">
+<!ENTITY local.label "Kadunud lokaalsete failide jaoks:">
+<!ENTITY remote.label "Kadunud kaugete failide jaoks:">
+<!ENTITY diff.label "Erinevate failisuuruste jaoks:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Märge: Diffingu seade tegelikult ei võrdle faili sisu. Pigem see näitab mis failid on praegused või mitte kaustades olles võrreldav ja ka erinevate faili suurustega.">

@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Verwijzing in FireFTP openen">
+<!ENTITY viewFireFTP "Deze pagina in FireFTP bekijken">
+<!ENTITY accountlist.label "(Een account kiezen)">
+<!ENTITY edit.label "Bewerk">
+<!ENTITY abort.label "Annuleren">
+<!ENTITY logtab.label "Log/Wachtrij">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Wachtrij">
+<!ENTITY search.access "Z">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "Geavanceerd">
+<!ENTITY search.label "Zoek/Filter">
+<!ENTITY diff.label "Mappen vergelijken">
+<!ENTITY recdiff.label "Synchroniseer Mappen &amp; Submappen…">
+<!ENTITY custom.label "Aangepast commando…">
+<!ENTITY import.label "Importeren…">
+<!ENTITY export.label "Exporteren…">
+<!ENTITY preferencestab.label "Voorkeuren">
+<!ENTITY diff.access "v">
+<!ENTITY recdiff.access "M">
+<!ENTITY custom.access "a">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "Help">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Ga naar bovenliggende map">
+<!ENTITY refresh.tip "Map vernieuwen">
+<!ENTITY localpath.tip "Lokaal pad">
+<!ENTITY remotepath.tip "Pad op server">
+<!ENTITY browse.label "Bladeren">
+<!ENTITY change.label "Veranderen">
+<!ENTITY name.label "Naam">
+<!ENTITY size.label "Grootte">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Attributen">
+<!ENTITY source.label "Bron">
+<!ENTITY dest.label "Doel">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Probeer opnieuw">
+<!ENTITY cancel.label "Annuleer">
+<!ENTITY cancelAll.label "Annuleer alles">
+<!ENTITY type.tip "Transfermethode veranderen (auto aangeraden)">
+<!ENTITY bytes.tip "Gedownloade bytes / Totaal aantal bytes">
+<!ENTITY timeela.tip "Verstreken tijd">
+<!ENTITY timerem.tip "Resterende tijd">
+<!ENTITY download.tip "Downloadsnelheid">
+<!ENTITY percent.tip "Percentage voltooid">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binair">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open bovenliggende Map">
+<!ENTITY upload.label "Uploaden">
+<!ENTITY download.label "Downloaden">
+<!ENTITY open.label "Openen">
+<!ENTITY openwith.label "Openen met">
+<!ENTITY extractHere.label "Pak uit naar hier">
+<!ENTITY extractTo.label "Pak uit naar map">
+<!ENTITY viewweb.label "Online bekijken">
+<!ENTITY copyUrl.label "Kopieer URL">
+<!ENTITY copyUrlLogin.label "FTP met inloggen">
+<!ENTITY cut.label "Knippen">
+<!ENTITY copy.label "Kopiëren">
+<!ENTITY paste.label "Plakken">
+<!ENTITY makedir.label "Map aanmaken">
+<!ENTITY makefile.label "Bestand aanmaken">
+<!ENTITY symlink.label "Creëer Symlink">
+<!ENTITY delete.label "Verwijderen">
+<!ENTITY rename.label "Hernoemen">
+<!ENTITY properties.label "Eigenschappen">
+<!ENTITY rproperties.label "Recursieve eigenschappen">
+<!ENTITY searchButton.label "Zoek">
+<!ENTITY searchLocal.label "Lokaal">
+<!ENTITY searchRemote.label "Server">
+<!ENTITY searchOptions.label "Opties">
+<!ENTITY searchFrom.label "Van:">
+<!ENTITY searchTo.label "Naar:">
+<!ENTITY searchSubdir.label "Kijk in submappen">
+<!ENTITY searchMatch.label "Hoofdlettergevoelig">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specificeer datums">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "H">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "w">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "G">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "V">
+<!ENTITY searchButton.access "Z">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "S">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "En, <html:em>lo</html:em>, ze verschenen vanuit de <html:em>schaduw</html:em>: een groep getrouwen <html:em>hielpen</html:em> het herboren beest in zijn queeste om het land <html:em>terug te winnen</html:em>. Samen <html:em>vergrootten</html:em> ze de kracht van het beest en <html:em>spreidden</html:em> ze het goede nieuws van zijn terugkomst. Een voor een werden de volgelingen van <html:em>Mammon</html:em> bekeert en werden hun harten omhuld door <html:em>vuur</html:em>.">
+<!ENTITY mozilla.from "van <html:strong>Het boek van Mozilla</html:strong>, 8:2">

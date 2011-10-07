@@ -1,0 +1,25 @@
+<!ENTITY title "Sammenlign mapper">
+<!ENTITY file.label "Fil">
+<!ENTITY reason.label "Årsag">
+<!ENTITY action.label "Handling">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY nothing.label "Gør intet">
+<!ENTITY defaults.label "Sæt standard">
+<!ENTITY local.label "For manglende lokale filer:">
+<!ENTITY remote.label "For manglende værts filer:">
+<!ENTITY diff.label "For forskellige filstørrelser:">
+<!ENTITY newer.label "For nyere lokale filer:">
+<!ENTITY older.label "For nyere værts filer:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "D">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "G">
+<!ENTITY diff.note "Note: Mappe sammenligning er ikke en egentlig sammenligning af filers indhold. Derimod tjekkes det om en fil findes i den aktuelle mappe og om filen har samme størrelse som den lokale fil.">
+
+<!ENTITY delete.label     "Slet">
+<!ENTITY lDelete.access   "S">
+<!ENTITY rDelete.access   "l">

@@ -1,0 +1,24 @@
+<!ENTITY title "Сравнение каталогов">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Состояние">
+<!ENTITY action.label "Действие">
+<!ENTITY download.label "Загрузка">
+<!ENTITY upload.label "Отправка">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Простаивает">
+<!ENTITY defaults.label "Массовое изменение">
+<!ENTITY local.label "Пропускать локальные файлы:">
+<!ENTITY remote.label "Пропускать удаленные файлы:">
+<!ENTITY diff.label "Для файлов разного размера:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "у">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "П">
+<!ENTITY rUpload.access "О">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "о">
+<!ENTITY dDownload.access "З">
+<!ENTITY dUpload.access "т">
+<!ENTITY dNothing.access "с">
+<!ENTITY diff.note "Примечание: Эта функция не сравнивает содержимое.  Проверяется только наличие или отсутствие файлов в сравниваемых каталогах, а также различия в размерах.">

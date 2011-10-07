@@ -1,0 +1,13 @@
+<!ENTITY title "Επιβεβαίωση αντικατάστασης">
+<!ENTITY existing.label "Υπάρχον αρχείο:">
+<!ENTITY new.label "Νέο αρχείο:">
+<!ENTITY overwrite.label "Αντικατάσταση">
+<!ENTITY overwriteall.label "Αντικατάσταση όλων">
+<!ENTITY skip.label "Παράβλεψη">
+<!ENTITY skipall.label "Παράβλεψη όλων">
+<!ENTITY resume.label "Συνέχιση">
+<!ENTITY overwrite.access "α">
+<!ENTITY overwriteall.access "λ">
+<!ENTITY skip.access "β">
+<!ENTITY skipall.access "ω">
+<!ENTITY resume.access "σ">

@@ -1,0 +1,24 @@
+<!ENTITY title "Direktorien Ezberdintasunak">
+<!ENTITY file.label "Fitxategia">
+<!ENTITY reason.label "Kausa">
+<!ENTITY action.label "Ekintza">
+<!ENTITY download.label "Jaitsi">
+<!ENTITY upload.label "Igo">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Ez Egin Ezer">
+<!ENTITY defaults.label "Ezarri Lehenetsiak">
+<!ENTITY local.label "Falta diren fitxategi lokalak:">
+<!ENTITY remote.label "Falta diren urruneko fitxategiak:">
+<!ENTITY diff.label "Fitxategi tamaina ezberdinak:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "J">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "E">
+<!ENTITY rUpload.access "I">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "z">
+<!ENTITY dDownload.access "a">
+<!ENTITY dUpload.access "g">
+<!ENTITY dNothing.access "r">
+<!ENTITY diff.note "Oharra: Ezberdintasunak bilatzeko aukera honek ez du fitxategien edukia alderatzen. Egiten duena da alderatutako direktorioetan zein fitxategi dauden eta zein ez ikusi eta fitxategi tamainak alderatzea da.">

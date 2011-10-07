@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <title></title>
+    <link rel="stylesheet" href="chrome://global/skin/global.css" type="text/css" media="screen" >
+    <style type="text/css">
+      div {
+        font                : 8pt verdana, arial, sans-serif;
+      }
+
+      .error {
+        color               : red;
+        font-weight         : bold;
+      }
+
+      .orange {
+        color               : orange;
+        font-weight         : bold;
+      }
+
+      .debug {
+        color               : black;
+        font                : 9pt courier new;
+      }
+
+      .blue {
+        color               : blue;
+        font-weight         : bold;
+      }
+
+      .input {
+        color               : green;
+      }
+
+      .output {
+        color               : blue;
+      }
+
+      #opening span, #opening img {
+        vertical-align      : middle;
+      }
+    </style>
+  </head>
+
+  <body onmousemove = "document.getElementById('mouseY').innerHTML       =  event.screenY;"
+        onmousedown = "document.getElementById('mousePressed').innerHTML = 'true'"
+        onmouseup   = "document.getElementById('mousePressed').innerHTML = 'false'">
+    <span id="mousePressed" style="display: none">false</span>
+    <span id="mouseY"       style="display: none"></span>
+  </body>
+</html>

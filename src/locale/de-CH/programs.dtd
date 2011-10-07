@@ -1,0 +1,22 @@
+<!ENTITY title "Programme">
+<!ENTITY add.label "Hinzufügen">
+<!ENTITY remove.label "Entfernen">
+<!ENTITY extensions.label "Erweiterungen">
+<!ENTITY programs.label "Programme">
+<!ENTITY details.label "Programm Details">
+<!ENTITY name.label "Name">
+<!ENTITY exec.label "Pfad">
+<!ENTITY browse.label "Durchsuchen">
+<!ENTITY args.label "Parameter">
+<!ENTITY argshelp1.label "Wenn das &apos;Parameter&apos; Feld leer ist, wird die Standartmethode benutzt um die Datei im Programm zu öffnen.">
+<!ENTITY argshelp2.label "Für eigene Parameter &#37;file&#37; benützen für die Dateiübermittlung.">
+<!ENTITY apply.label "Anwenden">
+<!ENTITY adde.accesskey "H">
+<!ENTITY removee.accesskey "E">
+<!ENTITY addp.accesskey "i">
+<!ENTITY removep.accesskey "n">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "D">
+<!ENTITY args.accesskey "a">
+<!ENTITY apply.accesskey "A">

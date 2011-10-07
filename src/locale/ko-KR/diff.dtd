@@ -1,0 +1,24 @@
+<!ENTITY title "디렉토리 비교">
+<!ENTITY file.label "파일">
+<!ENTITY reason.label "원인">
+<!ENTITY action.label "동작">
+<!ENTITY download.label "다운로드">
+<!ENTITY upload.label "업로드">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "아무것도 안 함">
+<!ENTITY defaults.label "기본값으로 설정">
+<!ENTITY local.label "일치하지 않는 로컬 파일을 위한 설정:">
+<!ENTITY remote.label "일치하지 않는 리모트 파일을 위한 설정:">
+<!ENTITY diff.label "크기가 다른 파일을 위한 설정:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "알림: 이 기능은 실제로 파일의 내용을 비교하지는 않습니다. 단지 비교하는 디렉토리 내의 파일의 존재 및 크기를 비교합니다.">

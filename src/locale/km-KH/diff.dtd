@@ -1,0 +1,24 @@
+<!ENTITY title "ថត Diff">
+<!ENTITY file.label "ឯកសារ">
+<!ENTITY reason.label "ហេតុ">
+<!ENTITY action.label "អំពើ">
+<!ENTITY download.label "ទាញយក">
+<!ENTITY upload.label "ផ្ទុកឡើង">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "មិនធ្វើអ្វីទាំងអស់">
+<!ENTITY defaults.label "កំណត់ជាលំនាំដើម">
+<!ENTITY local.label "សម្រាប់ឯកសារមូលដ្ឋានដែលបាត់:">
+<!ENTITY remote.label "សម្រាប់ឯកសារពីចម្ងាយដែលបាត់:">
+<!ENTITY diff.label "សម្រាប់ទំហំឯកសារដែលខុសគ្នា:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Note: This diffing feature does not actually compare file content.  Rather it looks at which files are present or not present in the directories being compared and also at differing file sizes.  Timestamps are compared if the 'Keep timestamps in sync' preference is enabled.">

@@ -1,0 +1,13 @@
+<!ENTITY title "Потврдите преписивање">
+<!ENTITY existing.label "Постојећа датотека:">
+<!ENTITY new.label "Нова датотека:">
+<!ENTITY overwrite.label "Препиши">
+<!ENTITY overwriteall.label "Све препиши">
+<!ENTITY skip.label "Прескочи">
+<!ENTITY skipall.label "Све прескочи">
+<!ENTITY resume.label "Настави">
+<!ENTITY overwrite.access "П">
+<!ENTITY overwriteall.access "С">
+<!ENTITY skip.access "С">
+<!ENTITY skipall.access "П">
+<!ENTITY resume.access "Н">

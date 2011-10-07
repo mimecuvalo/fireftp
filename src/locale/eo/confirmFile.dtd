@@ -1,0 +1,13 @@
+<!ENTITY title "Konfirmi superskribadon">
+<!ENTITY existing.label "Ekzistanta dosiero:">
+<!ENTITY new.label "Nova dosiero:">
+<!ENTITY overwrite.label "Superskribi">
+<!ENTITY overwriteall.label "Superskribi ĉion">
+<!ENTITY skip.label "Transsalti">
+<!ENTITY skipall.label "Transsalti ĉion">
+<!ENTITY resume.label "Daŭrigi">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "U">
+<!ENTITY skip.access "T">
+<!ENTITY skipall.access "L">
+<!ENTITY resume.access "D">

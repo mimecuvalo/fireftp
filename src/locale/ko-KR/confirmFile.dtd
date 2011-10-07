@@ -1,0 +1,13 @@
+<!ENTITY title "덮어쓰기 확인">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "덮어쓰기">
+<!ENTITY overwriteall.label "모두 덮어쓰기">
+<!ENTITY skip.label "건너뛰기">
+<!ENTITY skipall.label "모두 건너뛰기">
+<!ENTITY resume.label "이어쓰기/받기">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

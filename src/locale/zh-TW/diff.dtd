@@ -1,0 +1,24 @@
+<!ENTITY title "資料夾比較">
+<!ENTITY file.label "檔案">
+<!ENTITY reason.label "原因">
+<!ENTITY action.label "動作">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Do Nothing">
+<!ENTITY defaults.label "Set Defaults">
+<!ENTITY local.label "For missing local files:">
+<!ENTITY remote.label "For missing remote files:">
+<!ENTITY diff.label "For different file sizes:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "注意: 這個 &apos;資料夾比較&apos; 功能不是比較檔案內容. 本功能只會比較有關檔案是否存在, 或是比較兩者的檔案大小是否相同.">

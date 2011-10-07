@@ -1,0 +1,13 @@
+<!ENTITY title "Дарж хуулахыг баталгаажуулна уу">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Дарж хуул">
+<!ENTITY overwriteall.label "Бүгдийг нь дарж хуул">
+<!ENTITY skip.label "Алгасах">
+<!ENTITY skipall.label "Бүгдийг нь алгасах">
+<!ENTITY resume.label "Үргэлжлүүлэх">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

@@ -1,0 +1,73 @@
+<!ENTITY title "Opcioj">
+<!ENTITY asciiTitle "Tipoj de ASCII-dosieroj">
+<!ENTITY general.label "Ĝenerala">
+<!ENTITY messages.label "Mesaĝoj">
+<!ENTITY welcome.label "Montri salutmesaĝon">
+<!ENTITY error.label "Montri erarmesaĝojn">
+<!ENTITY sessions.label "Sesioj">
+<!ENTITY rememberp.label "Rememori pasvortojn">
+<!ENTITY rememberd.label "Kaŝmemorigi dosierujajn listojn">
+<!ENTITY fileview.label "Dosiervido">
+<!ENTITY autorefresh.label "Aŭtomate aktualigi">
+<!ENTITY refresh.tip "Aktualigi dosierujon post ŝanĝado de fora vido (dum transigo)">
+<!ENTITY hidden.label "Montri kaŝitajn dosierojn">
+<!ENTITY bytesmode.label "Vidigi nombron de bajtoj por dosiergrandoj">
+<!ENTITY interface.label "Interfaco">
+<!ENTITY startup.label "Startigi FireFTP:">
+<!ENTITY windowopen.label "en nova fenestro">
+<!ENTITY tabopen.label "en nova langeto">
+<!ENTITY groupopen.label "en fenestra grupo">
+<!ENTITY integrateftplnk.label "Agordi FTP-ligilojn en Firefox por aŭtmata uzado de FireFTP">
+<!ENTITY temppasvmode.label "Uzi pasivan reĝimon por ĉi tiuj konektoj">
+<!ENTITY open.label "Duobla klako/premado de la eniga klavo:">
+<!ENTITY download.label "transigas dosieron">
+<!ENTITY exec.label "malfermas dosieron">
+<!ENTITY both.tip "Montras lokajn kaj forajn dosierojn">
+<!ENTITY local.tip "Montras nur lokajn dosierojn">
+<!ENTITY remote.tip "Montras nur forajn dosierojn">
+<!ENTITY logwindow.label "Protokolo">
+<!ENTITY logmode.label "Montri protokolon en ĉefa fenestro">
+<!ENTITY logerrormode.label "Montri nur erarojn en protokolo">
+<!ENTITY debug.label "Montri informojn pri la serĉado de eraroj">
+<!ENTITY connect.label "Konektoj">
+<!ENTITY proxy.label "Prokurilo">
+<!ENTITY none.label "Neniu">
+<!ENTITY direct.label "Rekta">
+<!ENTITY host.label "Gastiga komputilo:">
+<!ENTITY port.label "Pordo:">
+<!ENTITY active.label "Aktiva reĝimo">
+<!ENTITY limitPorts.label "Limigi pordojn:">
+<!ENTITY from.label "De:">
+<!ENTITY to.label "Al:">
+<!ENTITY concurrent.label "Samtempaj transigoj">
+<!ENTITY simtransfers.label "Maksimuma nombro de simultanaj transigoj (1-10)">
+<!ENTITY recovery.label "Konektoriparado">
+<!ENTITY network.label "Reta tempolimo (en sekundoj, inter 1 kaj 600)">
+<!ENTITY network.tip "Indikas, kiel longe estu atendate respondon el la servilo">
+<!ENTITY keepalivemode.label "Konservi konektom dum neaktiveco">
+<!ENTITY timeout.label "Denove konekti post malnonekto">
+<!ENTITY retryd.label "Tempintervaloj inter konektoprovoj (en sekundoj, inter 1 kaj 600)">
+<!ENTITY retryd.tip "Sekundoj inter konektoprovoj">
+<!ENTITY retrya.label "Konektoprovoj">
+<!ENTITY retrya.tip "Maksimuma nombro de konektoprovoj">
+<!ENTITY downup.label "Elŝutoj/Alŝutoj">
+<!ENTITY transfercaption.label "Transigante dosierojn, uzu:">
+<!ENTITY automatic.label "Aŭtomatan reĝimon">
+<!ENTITY automatic.tip "Aŭtomate elekti inter 'binara' reĝimo kaj 'ASCII'-reĝimo">
+<!ENTITY binary.label "Binaran reĝimon">
+<!ENTITY ascii.label "ASCII-reĝimon">
+<!ENTITY asciifiles.label "ASCII-dosieroj:">
+<!ENTITY asciifiles.tip "Listo de dosiertipoj, kiuj estu ekkonataj kiel ASCII-dosieroj">
+<!ENTITY add.label "Aldoni">
+<!ENTITY remove.label "Forigi">
+<!ENTITY extras.label "Ekstraĵoj (se tio estas ebligita sur servilo)">
+<!ENTITY usecompression.label "Uzi kompaktigon">
+<!ENTITY synctimestamps.label "Teni tempstampojn sinkronaj">
+<!ENTITY integritymode.label "Kontroli integrecon de dosiertransigoj (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Dosierduplikatoj">
+<!ENTITY timer.label "Malebligi tempmezurilon en la anstataŭiga dialogo">
+<!ENTITY nopromptmode.label "Ne vidigi anstataŭigan dialogon, simple anstataŭigi">
+<!ENTITY credits.label "Dankesprimoj">
+<!ENTITY thanks.label "Dankon:">
+<!ENTITY allothers.label "Ĉiuj aliaj, kiuj informis pri cimoj kaj helpis">
+<!ENTITY special.label "Specialan dankon al ĉiuj, kiuj donacas!">

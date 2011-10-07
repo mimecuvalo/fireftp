@@ -1,0 +1,22 @@
+<!ENTITY title "Programmid">
+<!ENTITY add.label "Lisa">
+<!ENTITY remove.label "Eemalda">
+<!ENTITY extensions.label "Laiendused">
+<!ENTITY programs.label "Programmid">
+<!ENTITY details.label "Programmi detailid">
+<!ENTITY name.label "Nimi">
+<!ENTITY exec.label "Rada">
+<!ENTITY browse.label "Brausi">
+<!ENTITY args.label "Argumendid">
+<!ENTITY argshelp1.label "Kui jätad 'Argumentide' rea tühjaks jätab faili argumendina">
+<!ENTITY argshelp2.label "Muudetud argumentides kasuta &#37;file&#37; et esindada faili olemaks kaudunud.">
+<!ENTITY apply.label "Rakenda">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

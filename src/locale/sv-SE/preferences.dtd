@@ -1,0 +1,73 @@
+<!ENTITY title "Inställningar">
+<!ENTITY asciiTitle "Filtyp ASCII">
+<!ENTITY general.label "Allmänt">
+<!ENTITY messages.label "Meddelande">
+<!ENTITY welcome.label "Visa välkomstmeddelande">
+<!ENTITY error.label "Visa felmeddelande">
+<!ENTITY sessions.label "Sessioner">
+<!ENTITY rememberp.label "Kom ihåg lösenord">
+<!ENTITY rememberd.label "Kom ihåg trädstruktur">
+<!ENTITY fileview.label "Filvisning">
+<!ENTITY autorefresh.label "Autouppdatera">
+<!ENTITY refresh.tip "Återladda trädstrukturen då fjärrsidan utseende ändras (vid uppladdning, ändring av namn, etc.)">
+<!ENTITY hidden.label "Visa dolda filer">
+<!ENTITY bytesmode.label "Visa antal bytes i filstorlek">
+<!ENTITY interface.label "Gränssnitt">
+<!ENTITY startup.label "Starta FireFTP:">
+<!ENTITY windowopen.label "i nytt fönster">
+<!ENTITY tabopen.label "i ny flik">
+<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY integrateftplnk.label "Ställ in FTP-länkar att automatiskt öppnas i FireFTP">
+<!ENTITY temppasvmode.label "Använd &apos;Passivt läge&apos; för dessa anslutningar">
+<!ENTITY open.label "Double-clicking/pressing enter:">
+<!ENTITY download.label "transfers a file">
+<!ENTITY exec.label "opens a file">
+<!ENTITY both.tip "Visa både lokal och fjärrsida">
+<!ENTITY local.tip "Visar endast lokala filer">
+<!ENTITY remote.tip "Visar endast fjärrsidans filer">
+<!ENTITY logwindow.label "Logg">
+<!ENTITY logmode.label "Visa logg i huvudfönstret">
+<!ENTITY logerrormode.label "Visa endast felmeddelanden i loggen">
+<!ENTITY debug.label "Visa information för felsökning">
+<!ENTITY connect.label "Anslutningar">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Ingen">
+<!ENTITY direct.label "Direkt">
+<!ENTITY host.label "Värd:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY concurrent.label "Concurrent Transfers">
+<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY recovery.label "Återställ anslutning">
+<!ENTITY network.label "Nätverk tidsutlösning (i sekunder, mellan 1 och 600)">
+<!ENTITY network.tip "Bestämmer väntetid för svar från server">
+<!ENTITY keepalivemode.label "Håll anslutningen vid liv även vid inaktivitet">
+<!ENTITY timeout.label "Om nedkopplad, försök att återansluta">
+<!ENTITY retryd.label "Fördröjning innan återförsök (i sekunder, mellan 1 och 600)">
+<!ENTITY retryd.tip "Sekunder mellan återanslutningsförsöken">
+<!ENTITY retrya.label "Återförsök">
+<!ENTITY retrya.tip "Antal återförsök som skall göras">
+<!ENTITY downup.label "Nerladdning/Uppladdning">
+<!ENTITY transfercaption.label "Vid filöverföring använd:">
+<!ENTITY automatic.label "Automatiskt läge:">
+<!ENTITY automatic.tip "Väljer automatiskt mellan &apos;Binary och ASCII&apos;">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY asciifiles.label "ASCII-filer:">
+<!ENTITY asciifiles.tip "Lista på filändelser som ska hanteras som ASCII-filer">
+<!ENTITY add.label "Lägg till">
+<!ENTITY remove.label "Ta bort">
+<!ENTITY extras.label "Extras (if enabled on server)">
+<!ENTITY usecompression.label "Use compression">
+<!ENTITY synctimestamps.label "Keep timestamps in sync">
+<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY duplicates.label "Dubblett">
+<!ENTITY timer.label "Använd inte timer i dialogen &apos;Skriv över&apos;">
+<!ENTITY nopromptmode.label "Varna inte vid dialogen &apos;Skriv över&apos;">
+<!ENTITY credits.label "Tack till">
+<!ENTITY thanks.label "Tack:">
+<!ENTITY allothers.label "Alla andra som rapporterat buggar och som hjälpt till">
+<!ENTITY special.label "Extra tack till alla som donerat!">

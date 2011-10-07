@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Άνοιγμα δεσμού με το FireFTP">
+<!ENTITY viewFireFTP "Εμφάνιση της σελίδας με το FireFTP">
+<!ENTITY accountlist.label "(Επιλογή λογαριασμού)">
+<!ENTITY edit.label "Επεξεργασία...">
+<!ENTITY abort.label "Εγκατάλειψη">
+<!ENTITY logtab.label "Καταγραφή ιστορικού/ουρά αναμονής">
+<!ENTITY ltab.label "Καταγραφή ιστορικού">
+<!ENTITY qtab.label "Ουρά αναμονής">
+<!ENTITY search.access "α">
+<!ENTITY logbutton.access "τ">
+<!ENTITY advanced.label "Εργαλεία">
+<!ENTITY search.label "Αναζήτηση/φίλτρο">
+<!ENTITY diff.label "Συγχρονισμός καταλόγων...">
+<!ENTITY recdiff.label "Συγχρονισμός καταλόγων &amp; υποκαταλόγων...">
+<!ENTITY custom.label "Προσαρμοσμένη εντολή...">
+<!ENTITY import.label "Εισαγωγή...">
+<!ENTITY export.label "Εξαγωγή...">
+<!ENTITY preferencestab.label "Επιλογές...">
+<!ENTITY diff.access "χ">
+<!ENTITY recdiff.access "υ">
+<!ENTITY custom.access "η">
+<!ENTITY import.access "ι">
+<!ENTITY export.access "ξ">
+<!ENTITY prefbutton.access "π">
+<!ENTITY help.label "Βοήθεια">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Μετάβαση στο γονικό κατάλογο">
+<!ENTITY refresh.tip "Ανανέωση καταλόγου">
+<!ENTITY localpath.tip "Τοπική διαδρομή">
+<!ENTITY remotepath.tip "Απομακρυσμένη διαδρομή">
+<!ENTITY browse.label "Εντοπισμός">
+<!ENTITY change.label "Αλλαγή">
+<!ENTITY name.label "Όνομα">
+<!ENTITY size.label "Μέγεθος">
+<!ENTITY date.label "Ημερομηνία">
+<!ENTITY type.label "Τύπος">
+<!ENTITY attr.label "Ιδιότητες">
+<!ENTITY source.label "Πηγή">
+<!ENTITY dest.label "Προορισμός">
+<!ENTITY bytes.label "Byte">
+<!ENTITY status.label "Κατάσταση">
+<!ENTITY retry.label "Επανάληψη">
+<!ENTITY cancel.label "Ακύρωση">
+<!ENTITY cancelAll.label "Ακύρωση όλων">
+<!ENTITY type.tip "Αλλαγή μεθόδου μεταφοράς (συνιστάται η αυτόματη)">
+<!ENTITY bytes.tip "Byte που έχουν ληφθεί / συνολικά Byte">
+<!ENTITY timeela.tip "Χρόνος που διανύθηκε">
+<!ENTITY timerem.tip "Χρόνος που απομένει">
+<!ENTITY download.tip "Ρυθμός μεταφοράς">
+<!ENTITY percent.tip "Πρόοδος">
+<!ENTITY auto.label "Αυτόματο">
+<!ENTITY binary.label "Δυαδικό">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Άνοιγμα περιέχοντος καταλόγου">
+<!ENTITY upload.label "Αποστολή">
+<!ENTITY download.label "Λήψη">
+<!ENTITY open.label "Άνοιγμα">
+<!ENTITY openwith.label "Άνοιγμα με">
+<!ENTITY extractHere.label "Αποσυμπίεση εδώ">
+<!ENTITY extractTo.label "Αποσυμπίεση σε κατάλογο">
+<!ENTITY viewweb.label "Προβολή στον Ιστό">
+<!ENTITY copyUrl.label "Αντιγραφή URL">
+<!ENTITY copyUrlLogin.label "FTP με σύνδεση">
+<!ENTITY cut.label "Αποκοπή">
+<!ENTITY copy.label "Αντιγραφή">
+<!ENTITY paste.label "Επικόλληση">
+<!ENTITY makedir.label "Δημιουργία καταλόγου">
+<!ENTITY makefile.label "Δημιουργία αρχείου">
+<!ENTITY symlink.label "Δημιουργία συμβολικού δεσμού">
+<!ENTITY delete.label "Διαγραφή">
+<!ENTITY rename.label "Μετονομασία">
+<!ENTITY properties.label "Ιδιότητες">
+<!ENTITY rproperties.label "Ιδιότητες (και του περιεχόμενου)">
+<!ENTITY searchButton.label "Αναζήτηση">
+<!ENTITY searchLocal.label "Τοπική">
+<!ENTITY searchRemote.label "Απομακρυσμένη">
+<!ENTITY searchOptions.label "Επιλογές">
+<!ENTITY searchFrom.label "Από:">
+<!ENTITY searchTo.label "Προς:">
+<!ENTITY searchSubdir.label "Αναζήτηση σε υποκαταλόγους">
+<!ENTITY searchMatch.label "Συμφωνία πεζών-κεφαλαίων">
+<!ENTITY searchRegexp.label "Κανονική έκφραση">
+<!ENTITY searchDates.label "Καθορισμός ημερομηνιών">
+<!ENTITY searchSubdir.access "υ">
+<!ENTITY searchMatch.access "π">
+<!ENTITY searchRegexp.access "κ">
+<!ENTITY searchDates.access "ο">
+<!ENTITY edit.access "ξ">
+<!ENTITY abort.access "γ">
+<!ENTITY advanced.access "ρ">
+<!ENTITY helpbutton.access "θ">
+<!ENTITY browsebutton.access "ν">
+<!ENTITY changebutton.access "λ">
+<!ENTITY searchButton.access "ν">
+<!ENTITY searchLocal.access "π">
+<!ENTITY searchRemote.access "σ">
+<!ENTITY searchOptions.access "π">
+<!ENTITY mozilla.quote "And, <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>lo</html:em>, from the <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>reclaim</html:em> the land. Together they <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>extended</html:em> the power of the beast and <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>spread</html:em> the good news of its return. One by one the followers of <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;;;;font-size:1.3em;line-height:0;';;;;;;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

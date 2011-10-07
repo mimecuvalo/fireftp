@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fireftp/locale/preferences.dtd">
+<dialog id             = "asciiFiles2"
+        title          = "&asciiTitle;"
+        persist        = "screenX screenY"
+        xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons        = "accept, cancel"
+        onload         = "readPreferences()"
+        ondialogaccept = "return savePreferences();">
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/asciiFiles.js"/>
+
+  <label value="&asciifiles.label;" control="asciifiles" tooltiptext="&asciifiles.tip;"/>
+  <hbox>
+    <listbox id="asciilist" rows="5"/>
+    <vbox pack="center">
+      <button label="&add.label;"    oncommand="addType()"/>
+      <button label="&remove.label;" oncommand="removeType()"/>
+    </vbox>
+  </hbox>
+
+</dialog>

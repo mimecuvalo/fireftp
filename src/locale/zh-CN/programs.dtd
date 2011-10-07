@@ -1,0 +1,22 @@
+<!ENTITY title "程序">
+<!ENTITY add.label "添加">
+<!ENTITY remove.label "删除">
+<!ENTITY extensions.label "扩展">
+<!ENTITY programs.label "程序">
+<!ENTITY details.label "程序细节">
+<!ENTITY name.label "名称">
+<!ENTITY exec.label "路径">
+<!ENTITY browse.label "浏览">
+<!ENTITY args.label "参数">
+<!ENTITY argshelp1.label "[参数] 栏留空则默认将文件传递为一个参数。">
+<!ENTITY argshelp2.label "自定义参数时，使用 &#37;file&#37; 代表传递的文件。">
+<!ENTITY apply.label "应用">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "P">

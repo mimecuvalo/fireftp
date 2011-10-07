@@ -1,0 +1,24 @@
+<!ENTITY title "Comparar directorios">
+<!ENTITY file.label "Ficheiro">
+<!ENTITY reason.label "Razón">
+<!ENTITY action.label "Acción">
+<!ENTITY download.label "Descargar">
+<!ENTITY upload.label "Subir">
+<!ENTITY delete.label "Borrar">
+<!ENTITY nothing.label "Ningunha">
+<!ENTITY defaults.label "Cambiar almacenamento">
+<!ENTITY local.label "Acción para ficheiros locais non atopados:">
+<!ENTITY remote.label "Acción para ficheiros remotos non atopados:">
+<!ENTITY diff.label "Para ficheiros de tamaño diferente:">
+<!ENTITY newer.label "Para os ficheiros locais máis novos:">
+<!ENTITY older.label "Para os ficheiros remotos máis novos:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "S">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "i">
+<!ENTITY dDownload.access "e">
+<!ENTITY dUpload.access "u">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Nota: Esta opción non compara o contido dos ficheiros. O que fai é verificar que os ficheiros existen nos directorios e se hai diferencias de tamaño. As marcas de tempo son comparadas se a opción &apos;Sincronizar marca de tempo&apos; está activa.">

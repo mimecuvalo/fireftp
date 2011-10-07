@@ -1,0 +1,24 @@
+<!ENTITY title "Porównanie katalogów">
+<!ENTITY file.label "Plik">
+<!ENTITY reason.label "Rezultat">
+<!ENTITY action.label "Działanie">
+<!ENTITY download.label "Pobierz">
+<!ENTITY upload.label "Wyślij">
+<!ENTITY delete.label "Usuń">
+<!ENTITY nothing.label "Brak działania">
+<!ENTITY defaults.label "Ustaw domyślne działanie">
+<!ENTITY local.label "Brakujące lokalne pliki:">
+<!ENTITY remote.label "Brakujące zdalne pliki:">
+<!ENTITY diff.label "Pliki o różnej wielkości:">
+<!ENTITY newer.label "Nowsze pliki lokalne:">
+<!ENTITY older.label "Nowsze pliki zdalne:">
+<!ENTITY lDownload.access "P">
+<!ENTITY lDelete.access "U">
+<!ENTITY lNothing.access "B">
+<!ENTITY rUpload.access "W">
+<!ENTITY rDelete.access "s">
+<!ENTITY rNothing.access "R">
+<!ENTITY dDownload.access "O">
+<!ENTITY dUpload.access "Y">
+<!ENTITY dNothing.access "A">
+<!ENTITY diff.note "Informacja: Obecnie opcja sprawdzania nie porównuje zawartości plików, sprawdza jedynie, które pliki są, czy nie są obecne w porównywanych katalogach oraz porównuje ich wielkość. Znaczniki czasu są porównywane, jeśli jest włączona funkcja &quot;Utrzymuj znaczniki czasu w synchronizacji&quot;">

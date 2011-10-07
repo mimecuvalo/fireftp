@@ -1,0 +1,24 @@
+<!ENTITY title "Ferskil tusken mappen">
+<!ENTITY file.label "Bestân">
+<!ENTITY reason.label "Reden">
+<!ENTITY action.label "Aksje">
+<!ENTITY download.label "Ynlade">
+<!ENTITY upload.label "Oplade">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Neat Dwaan">
+<!ENTITY defaults.label "Set standerts">
+<!ENTITY local.label "Foar missende lokale bestannen:">
+<!ENTITY remote.label "Foar missende fiere bestannen:">
+<!ENTITY diff.label "Foar ferskate bestânsgruttes:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "Y">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "O">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "s">
+<!ENTITY diff.note "Let op: Dizze mooglikheid fergelykt net de ynhâld fan de bestannen. Der wurdt sjoen nei hokker bestannen oan/ôfwêzig binne yn de mappen en nei de gruttes fan de bestannen.">

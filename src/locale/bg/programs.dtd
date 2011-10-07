@@ -1,0 +1,22 @@
+<!ENTITY title "Програми">
+<!ENTITY add.label "Добави">
+<!ENTITY remove.label "Премахни">
+<!ENTITY extensions.label "Разширения">
+<!ENTITY programs.label "Програми">
+<!ENTITY details.label "Детайли">
+<!ENTITY name.label "Име">
+<!ENTITY exec.label "Път">
+<!ENTITY browse.label "Прелистване">
+<!ENTITY args.label "Аргументи">
+<!ENTITY argshelp1.label "Ако оставите полето &apos;Аргументи&apos; празно, файлът ще бъдат предаден като аргумент.">
+<!ENTITY argshelp2.label "За потребителски аргументи използвайте &#37;file&#37; за файла.">
+<!ENTITY apply.label "Приложи">
+<!ENTITY adde.accesskey "Д">
+<!ENTITY removee.accesskey "П">
+<!ENTITY addp.accesskey "о">
+<!ENTITY removep.accesskey "р">
+<!ENTITY name.accesskey "И">
+<!ENTITY exec.accesskey "т">
+<!ENTITY browse.accesskey "е">
+<!ENTITY args.accesskey "А">
+<!ENTITY apply.accesskey "ж">

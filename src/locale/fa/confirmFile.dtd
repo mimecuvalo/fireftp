@@ -1,0 +1,13 @@
+<!ENTITY title "تایید بازنویسی">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "بازنویسی">
+<!ENTITY overwriteall.label "بازنویسی کردن همه">
+<!ENTITY skip.label "پرش">
+<!ENTITY skipall.label "پرش برای همه">
+<!ENTITY resume.label "ادامه">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

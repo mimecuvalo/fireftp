@@ -1,0 +1,31 @@
+<!ENTITY title "Egenskaper">
+<!ENTITY path "Sökväg:">
+<!ENTITY webpath "Internetadress:">
+<!ENTITY size "Storlek:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Innehåller:">
+<!ENTITY user "Användare:">
+<!ENTITY groupl "Grupp:">
+<!ENTITY attr "Egenskaper:">
+<!ENTITY hash "Generera checksumma:">
+<!ENTITY perm "Rättigheter:">
+<!ENTITY reado "Skrivskyddad">
+<!ENTITY hidden "Dold">
+<!ENTITY owner "Ägare">
+<!ENTITY group "Grupp">
+<!ENTITY public "Offentlig">
+<!ENTITY read "Läsa">
+<!ENTITY write "Skriva">
+<!ENTITY exec "Exekvera">
+<!ENTITY manual "Manuell:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Klistrig">
+<!ENTITY applyto "Gäller:">
+<!ENTITY thisprop "Denna mapp">
+<!ENTITY folderprop "Alla innefattade mappar">
+<!ENTITY filesprop "Alla innefattade filer">
+<!ENTITY thumbnail "Miniatyr">
+<!ENTITY loading "Laddar...">
+<!ENTITY view.label "Visa">
+<!ENTITY view.accesskey "s">

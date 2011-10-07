@@ -1,0 +1,13 @@
+<!ENTITY title "Bekräfta överskrivning">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Skriv över">
+<!ENTITY overwriteall.label "Skriv över alla">
+<!ENTITY skip.label "Hoppa över">
+<!ENTITY skipall.label "Hoppa över alla">
+<!ENTITY resume.label "Återuppta">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "a">
+<!ENTITY skip.access "H">
+<!ENTITY skipall.access "l">
+<!ENTITY resume.access "Å">

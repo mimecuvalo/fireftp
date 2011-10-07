@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE dialog [
+<!ENTITY % acctDTD SYSTEM "chrome://fireftp/locale/accountManager.dtd" >
+%acctDTD;
+<!ENTITY % charsetDTD SYSTEM "chrome://global/locale/charsetOverlay.dtd" >
+%charsetDTD;
+]>
+<!-- Careful: if the id of the dialog is updated you have to update accountManager.js -->
+<dialog id             = "accountManager8"
+        title          = "&title;"
+        xmlns:rdf      = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        persist        = "screenX screenY"
+        onload         = "init()"
+        buttons        = "extra2, accept, cancel"
+        ondialogaccept = "return doOk()"
+        ondialogcancel = "return doCancel()">
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/fileSort.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/log.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localFile.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/accountManager.js"/>
+
+  <tabbox id="tabbox" flex="1">
+    <tabs>
+      <tab label="&main;"/>
+      <tab label="&connections;"/>
+      <tab label="&advanced;"/>
+    </tabs>
+    <tabpanels flex="1">
+      <tabpanel id="maintab" orient="vertical">
+        <groupbox>
+          <caption label="&maindetails;"/>
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row id="accountrow" align="center">
+                <label   value="&account.label;" accesskey="&account.access;" control="account" tooltiptext="&account.tip;"/>
+                <hbox flex="1" align="center">
+                  <textbox  id="account" flex="1"   tooltiptext="&account.tip;"  class="required"  onfocus="autoAccountDisable()"/>
+                  <label    value="&folder.label;"  accesskey="&folder.access;"  control="folder"/>
+                  <menulist id="folder"  flex="1"   placeholder="&optional.label;" editable="true"/>
+                </hbox>
+              </row>
+              <row align="center">
+                <label   value="&host.label;"    accesskey="&host.access;"    control="host"    tooltiptext="&host.tip;"/>
+                <textbox id="host"    flex="1"   tooltiptext="&host.tip;"     class="required"  onkeyup="autoAccount()"/>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+
+        <groupbox class="paddingTop">
+          <caption label="&id;"/>
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row align="center">
+                <label   value="&login.label;"    accesskey="&login.access;"    control="login"/>
+                <textbox id="login"/>
+              </row>
+              <row align="center">
+                <label   value="&password.label;" accesskey="&password.access;" control="password"/>
+                <textbox id="password" type="password"/>
+              </row>
+              <row>
+                <spacer/>
+                <hbox>
+                  <spacer flex="1"/>
+                  <checkbox id="anonymous" label="&anonymous.label;" accesskey="&anonymous.access;" oncommand="anonymousChange()"/>
+                </hbox>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+      </tabpanel>
+
+      <tabpanel id="connections" orient="vertical">
+        <groupbox>
+          <caption label="&connection;"/>
+          <hbox>
+            <checkbox id="pasvmode" label="&pasv.label;" accesskey="&pasv.access;" oncommand="onPassiveChange()"/>
+            <spacer flex="1"/>
+            <checkbox id="ipmode" label="IPv6" accesskey="I"/>
+          </hbox>
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row align="center">
+                <label    value="&security.label;" accesskey="&security.access;" control="security"/>
+                <hbox align="center">
+                  <menulist id="security" flex="1" oncommand="onSecurityChange()">
+                    <menupopup>
+                      <menuitem label="&none.label;"     value="" selected="true"/>
+                      <menuseparator/>
+                      <menuitem label="&authtls.label;"  value="authtls"/>
+                      <menuitem label="&authssl.label;"  value="authssl"/>
+                      <menuitem label="&implicit.label;" value="ssl"/>
+                      <menuseparator/>
+                      <menuitem label="&sftp.label;"     value="sftp" id="sftp"/>
+                    </menupopup>
+                  </menulist>
+                  <label   id="portlbl" value="&port.label;" accesskey="&port.access;" control="port"/>
+                  <textbox id="port" size="5" type="number" min="0" max="65535" increment="1" hidespinbuttons="true"/>
+                </hbox>
+              </row>
+              <row align="center">
+                <label   id="privatekeylbl" value="&privatekey.label;" accesskey="&privatekey.access;" control="privatekey"/>
+                <hbox align="center">
+                  <textbox id="privatekey"    flex="1"/>
+                  <button  id="privatekeyBrowse"     label="&pkbrowse.label;"  accesskey="&pkbrowse.access;"  oncommand="privateKeyBrowse()"/>
+                </hbox>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+
+        <groupbox class="paddingTop">
+          <caption label="&initialdir;"/>
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row align="center">
+                <label value="&localdir.label;" accesskey="&localdir.access;" control="localdir"/>
+                <hbox>
+                  <textbox id="localdir" flex="1"  oninput="initialDirChange()"/>
+                  <button  id="localdirButton"     label="&current.label;" accesskey="&currentl.access;" oncommand="useCurrentLocal()"/>
+                </hbox>
+              </row>
+              <row align="center">
+                <label value="&remotedir.label;" accesskey="&remotedir.access;" control="remotedir"/>
+                <hbox>
+                  <textbox id="remotedir" flex="1" oninput="initialDirChange()"/>
+                  <button  id="remotedirButton"    label="&current.label;" accesskey="&currentr.access;" oncommand="useCurrentRemote()"/>
+                </hbox>
+              </row>
+              <row>
+                <spacer/>
+                <hbox>
+                  <spacer flex="1"/>
+                  <checkbox id="treesync" label="&treesync.label;" accesskey="&treesync.access;"/>
+                </hbox>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+      </tabpanel>
+
+      <tabpanel id="advancedtab" orient="vertical">
+        <groupbox>
+          <caption label="&webhost;"/>
+          <grid flex="1">
+            <columns>
+              <column/>
+              <column flex="1"/>
+            </columns>
+            <rows>
+              <row align="center">
+                <label   value="&host.label;"   accesskey="&webhost.access;" control="webhost" tooltiptext="&webhost.tip;"/>
+                <textbox id="webhost" flex="1"  tooltiptext="&webhost.tip;"/>
+              </row>
+              <row align="center">
+                <label   value="&prefix.label;" accesskey="&prefix.access;"  control="prefix"  tooltiptext="&prefix.tip;"/>
+                <textbox id="prefix" flex="1"   tooltiptext="&prefix.tip;"/>
+              </row>
+            </rows>
+          </grid>
+        </groupbox>
+
+        <hbox>
+          <groupbox>
+            <caption label="&timezone.label;"/>
+            <hbox align="center">
+              <label   value="&hours.label;" control="timezoneHours"/>
+              <textbox id="timezoneHours"   size="3" type="number" min="-24" max="24" increment="1"/>
+              <label   value="&minutes.label;" control="timezoneMinutes"/>
+              <textbox id="timezoneMinutes" size="3" type="number" min="-59" max="59" increment="1"/>
+            </hbox>
+          </groupbox>
+
+          <groupbox orient="horizontal" align="center" flex="1">
+            <caption label="&encoding.label;"/>
+            <label   value="&charset.label;" control="encoding"/>
+            <button id           = "encoding"
+                    type         = "menu"
+                    label        = "UTF-8"
+                    datasources  = "rdf:charset-menu"
+                    ref          = "NC:BrowserCharsetMenuRoot"
+                    onpopupshown = "createMenu('more-menu');"
+                    oncommand    = "chooseCharset(event)">   <!-- modified from browser.xul -->
+              <menupopup>
+                <menu label="&charsetMenuMore1.label;" accesskey="&charsetMenuMore1.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore1CharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+                <menu label="&charsetMenuMore2.label;" accesskey="&charsetMenuMore2.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore2CharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+                <menu label="&charsetMenuMore3.label;" accesskey="&charsetMenuMore3.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore3CharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+                <menu label="&charsetMenuMore4.label;" accesskey="&charsetMenuMore4.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore4CharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+                <menu label="&charsetMenuMore5.label;" accesskey="&charsetMenuMore5.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore5CharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+                <menu label="&charsetMenuUnicode.label;" accesskey="&charsetMenuUnicode.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserUnicodeCharsetMenuRoot">
+                  <template>
+                    <rule>
+                      <menupopup>
+                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
+                      </menupopup>
+                    </rule>
+                  </template>
+                  <menupopup>
+                  </menupopup>
+                </menu>
+              </menupopup>
+            </button>
+          </groupbox>
+        </hbox>
+
+        <groupbox>
+          <caption label="&notes.label;"/>
+          <textbox id="notes" multiline="true" rows="3"/>
+        </groupbox>
+
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+
+</dialog>

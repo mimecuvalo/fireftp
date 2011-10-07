@@ -1,0 +1,31 @@
+<!ENTITY title "الخصائص">
+<!ENTITY path "المسار :">
+<!ENTITY webpath "Web Path:">
+<!ENTITY size "الحجم :">
+<!ENTITY date "التاريخ:">
+<!ENTITY contains "يحتوي على :">
+<!ENTITY user "المستخدم:">
+<!ENTITY groupl "المجموعة:">
+<!ENTITY attr "السمات:">
+<!ENTITY hash "Generate Hashes:">
+<!ENTITY perm "الصلاحيات:">
+<!ENTITY reado "قراءة فقط">
+<!ENTITY hidden "مخفي">
+<!ENTITY owner "المالك">
+<!ENTITY group "المجموعة">
+<!ENTITY public "عام">
+<!ENTITY read "قراءة">
+<!ENTITY write "كتابة">
+<!ENTITY exec "تنفيذ">
+<!ENTITY manual "يدوي:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "تطبيق على:">
+<!ENTITY thisprop "هذا المجلد">
+<!ENTITY folderprop "All Contained Folders">
+<!ENTITY filesprop "All Contained Files">
+<!ENTITY thumbnail "صورة مصغرة">
+<!ENTITY loading "تحميل...">
+<!ENTITY view.label "عرض">
+<!ENTITY view.accesskey "V">

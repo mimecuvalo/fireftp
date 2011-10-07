@@ -1,0 +1,13 @@
+<!ENTITY title "Wybierz działanie">
+<!ENTITY existing.label "Istniejący plik:">
+<!ENTITY new.label "Nowy plik:">
+<!ENTITY overwrite.label "Nadpisz">
+<!ENTITY overwriteall.label "Nadpisz wszystkie">
+<!ENTITY skip.label "Pomiń">
+<!ENTITY skipall.label "Pomiń wszystkie">
+<!ENTITY resume.label "Ponów">
+<!ENTITY overwrite.access "N">
+<!ENTITY overwriteall.access "w">
+<!ENTITY skip.access "P">
+<!ENTITY skipall.access "o">
+<!ENTITY resume.access "P">

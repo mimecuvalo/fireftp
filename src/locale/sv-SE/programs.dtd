@@ -1,0 +1,22 @@
+<!ENTITY title "Program">
+<!ENTITY add.label "Lägg till">
+<!ENTITY remove.label "Ta bort">
+<!ENTITY extensions.label "Filtyp">
+<!ENTITY programs.label "Program">
+<!ENTITY details.label "Programinformation">
+<!ENTITY name.label "Namn">
+<!ENTITY exec.label "Sökväg">
+<!ENTITY browse.label "Bläddra">
+<!ENTITY args.label "Värde">
+<!ENTITY argshelp1.label "Om fältet &apos;Värde&apos; lämnas blankt, kommer standardvärde sättas till  överföring av filen.">
+<!ENTITY argshelp2.label "I användardefinierade värden, använd &#37;file&#37; för att representera filen som överförs.">
+<!ENTITY apply.label "Verkställ">
+<!ENTITY adde.accesskey "L">
+<!ENTITY removee.accesskey "T">
+<!ENTITY addp.accesskey "t">
+<!ENTITY removep.accesskey "a">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "S">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "ä">
+<!ENTITY apply.accesskey "V">

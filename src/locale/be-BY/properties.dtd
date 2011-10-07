@@ -1,0 +1,31 @@
+<!ENTITY title "Уласьцівасьці">
+<!ENTITY path "Шлях:">
+<!ENTITY webpath "Адрас:">
+<!ENTITY size "Памер:">
+<!ENTITY date "Дата:">
+<!ENTITY contains "Зьмесьціва:">
+<!ENTITY user "Карыстальнік:">
+<!ENTITY groupl "Група:">
+<!ENTITY attr "Атрыбуты:">
+<!ENTITY hash "Стварыць хэшы:">
+<!ENTITY perm "Дазволы:">
+<!ENTITY reado "Толькі чытаньне">
+<!ENTITY hidden "Схаваны">
+<!ENTITY owner "Уладальнік">
+<!ENTITY group "Група">
+<!ENTITY public "Агульныя">
+<!ENTITY read "Чытаньне">
+<!ENTITY write "Запіс">
+<!ENTITY exec "Выканальны">
+<!ENTITY manual "Уручную:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Ужыць для:">
+<!ENTITY thisprop "Гэтае тэчкі">
+<!ENTITY folderprop "Усіх тэчкаў">
+<!ENTITY filesprop "Усіх файлаў">
+<!ENTITY thumbnail "Мініятура">
+<!ENTITY loading "Загружаецца...">
+<!ENTITY view.label "Прагляд">
+<!ENTITY view.accesskey "П">

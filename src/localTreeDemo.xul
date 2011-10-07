@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://fireftp/locale/fireftp.dtd">
+<window id            = "fireftp-main-window"
+        width         = "800"
+        height        = "600"
+        orient        = "vertical"
+        xmlns         = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onmousemove   = "treeHighlighter.mouseMove(event)"
+        onmousedown   = "treeHighlighter.mouseDown(event)"
+        onmouseup     = "treeHighlighter.mouseUp  (event)"
+        ondraggesture = "nsDragAndDrop.startDrag  (event, dragObserver)"
+        ondragover    = "nsDragAndDrop.dragOver   (event, dragObserver)"
+        ondrop        = "nsDragAndDrop.drop       (event, dragObserver)"
+        onload        = "localTreeDemo()">
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/globals.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/dragDrop.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/fileSort.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/log.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/preferences.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/programs.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/treeHighlighter.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localFile.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localTree.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localDirTree.js"/>
+
+  <script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js"/>
+  <script>
+    function localTreeDemo() {
+      gStrbundle             = $("strings");
+      gLocalPath             = $('localpath');
+      gLocalTree             = $('localtree');
+      gLocalDirTree          = $('localdirtree');
+      gLocalTreeChildren     = $('localtreechildren');
+      gLocalDirTreeChildren  = $('localdirtreechildren');
+      gLocalTree.view        = localTree;
+      gLocalDirTree.view     = localDirTree;
+
+      gProfileDir            = Components.classes["@mozilla.org/file/directory_service;1"].createInstance(Components.interfaces.nsIProperties)
+                                         .get("ProfD", Components.interfaces.nsILocalFile);
+      gAtomService           = Components.classes["@mozilla.org/atom-service;1"].getService            (Components.interfaces.nsIAtomService);
+      gIos                   = Components.classes["@mozilla.org/network/io-service;1"].getService      (Components.interfaces.nsIIOService);
+      gPrefsService          = Components.classes["@mozilla.org/preferences-service;1"].getService     (Components.interfaces.nsIPrefService);
+      gFireFTPUtils          = Components.classes['@nightlight.ws/fireftputils;1'].getService          (Components.interfaces.nsIFireFTPUtils);
+      gFormHistory           = Components.classes["@mozilla.org/satchel/form-history;1"].getService    (Components.interfaces.nsIFormHistory ?
+                                                                                                        Components.interfaces.nsIFormHistory :
+                                                                                                        Components.interfaces.nsIFormHistory2);
+
+      gPrefs                 = gPrefsService.getBranch("fireftp.");
+      gPlatform              = getPlatform();
+
+
+      gMonths                = gStrbundle.getString("months").split("|");
+      gLocalPath.value       = gPrefs.getComplexValue("folder", Components.interfaces.nsISupportsString).data;
+
+
+      treeHighlighter.valid  = new Array({ tree: gLocalTree,  children: gLocalTreeChildren,  column: "localname"  });
+
+
+      localDirTree.changeDir(gLocalPath.value);
+
+
+      //setTimeout(doResizeHack, 0);
+    }
+  </script>
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <commandset>
+    <command id="cmd_dummy"      oncommand="return;"/>
+  </commandset>
+
+  <keyset>
+    <key id="key_transfer"      command="cmd_dummy"    keycode="VK_ENTER"/>
+    <key id="key_open"          command="cmd_dummy"    key="O" modifiers="accel"/>
+    <key id="key_url"           command="cmd_dummy"    key="U" modifiers="accel"/>
+    <key id="key_cut"           command="cmd_dummy"    key="X" modifiers="accel"/>
+    <key id="key_copy"          command="cmd_dummy"    key="C" modifiers="accel"/>
+    <key id="key_paste"         command="cmd_dummy"    key="V" modifiers="accel"/>
+    <key id="key_dir"           command="cmd_dummy"    key="D" modifiers="accel"/>
+    <key id="key_file"          command="cmd_dummy"    key="N" modifiers="accel"/>
+    <key id="key_remove"        command="cmd_dummy"    keycode="VK_DELETE"/>
+    <key id="key_rename"        command="cmd_dummy"    keycode="VK_F2"/>
+    <key id="key_properties"    command="cmd_dummy"    key="P" modifiers="accel"/>
+  </keyset>
+
+  <!-- :::::::::::::::::::::::::::::: context menus :::::::::::::::::::::::::::::: -->
+
+  <popupset>
+    <menupopup id="localmenu" onpopupshowing="localTree.createContextMenu()">
+      <menuitem oncommand="localTree.openContainingFolder();"   label="&openContaining.label;"                                      id="localOpenCont"/>
+      <menuseparator                                                                                                                id="localOpenContSep"/>
+      <menuitem oncommand="new transfer().start(false);"        label="&upload.label;"              key="key_transfer"              id="localUpload"/>
+      <menuitem oncommand="localTree.launch()"                  label="&open.label;"                key="key_open"                  id="localOpen"/>
+      <menu label="&openwith.label;"                                                                                                id="localOpenWith">
+        <menupopup id="openWithMenu">
+        </menupopup>
+      </menu>
+      <menuitem oncommand="localTree.extract(false)"            label="&extractHere.label;"                                         id="extractHereContext"/>
+      <menuitem oncommand="localTree.extract(true)"             label="&extractTo.label;"                                           id="extractToContext"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.cut()"                     label="&cut.label;"                 key="key_cut"                   id="localCutContext"/>
+      <menuitem oncommand="localTree.copy()"                    label="&copy.label;"                key="key_copy"                  id="localCopyContext"/>
+      <menuitem oncommand="localTree.paste()"                   label="&paste.label;"               key="key_paste" disabled="true" id="localPasteContext"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.create(true)"              label="&makedir.label;"             key="key_dir"                   id="localCreateDir"/>
+      <menuitem oncommand="localTree.create(false)"             label="&makefile.label;"            key="key_file"                  id="localCreateFile"/>
+      <menuitem oncommand="localTree.remove()"                  label="&delete.label;"              key="key_remove"/>
+      <menuitem oncommand="localTree.rename()"                  label="&rename.label;"              key="key_rename"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.showProperties(false)"     label="&properties.label;"          key="key_properties"/>
+      <menuitem oncommand="localTree.showProperties(true)"      label="&rproperties.label;"                                         id="localRecursiveProperties"/>
+    </menupopup>
+  </popupset>
+
+  <vbox id="localview" flex="1">
+
+    <!-- :::::::::::::::::::::::::::::: local toolbar :::::::::::::::::::::::::::::: -->
+
+    <toolbar id="localtoolbar">
+      <toolbarbutton class="upButton"      oncommand="localDirTree.cdup()"            tooltiptext="&parentdir.tip;"/>
+      <toolbarbutton class="refreshButton" oncommand="localTree.refresh(false, true)" tooltiptext="&refresh.tip;"/>
+      <textbox id                      = "localpath"
+               flex                    = "1"
+               tooltiptext             = "&localpath.tip;"
+               onfocus                 = "onLocalPathFocus(event)"
+               onblur                  = "onLocalPathBlur(event)"
+               onkeypress              = "if (event.keyCode == 13) localDirTree.changeDir(this.value)"
+               ontextentered           = "localDirTree.changeDir(this.value)"
+               type                    = "autocomplete"
+               tabscrolling            = "true"
+               enablehistory           = "true"
+               autocompletepopup       = "PopupAutoComplete"
+               autocompletesearch      = "form-history"
+               autocompletesearchparam = "localpath"/>
+      <toolbarbutton label="&browse.label;" oncommand="browseLocal()" accesskey="&browsebutton.access;"/>
+    </toolbar>
+
+    <!-- :::::::::::::::::::::::::::::: local file view :::::::::::::::::::::::::::::: -->
+
+    <hbox   width="1" flex="1" onmouseover="localTree.mouseOver(event)">
+      <tree id="localdirtree"  class="plain" flex="1" hidecolumnpicker="true" persist="collapsed"
+            onkeypress="localDirTree.keyPress(event)"
+            onselect  ="localDirTree.select(event)"
+            onclick   ="localDirTree.click(event)">
+        <treecols>
+          <treecol    id="localdirname" flex="1" primary="true" persist="width ordinal hidden"/>
+        </treecols>
+        <treechildren id="localdirtreechildren" class="dirTree" context="localdirmenu"/>
+      </tree>
+      <splitter id="localsplitter" persist="state" collapse="before">
+        <grippy/>
+      </splitter>
+      <tree        id="localtree" class="plain" flex="2" enableColumnDrag="true" onkeypress="localTree.keyPress(event)" editable="true">
+        <treecols>
+          <treecol id="localname" label="&name.label;" flex="2" persist="width ordinal hidden sortDirection" sortDirection="ascending"/>
+          <splitter                class="tree-splitter"/>
+          <treecol id="localsize" label="&size.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+          <splitter                class="tree-splitter"/>
+          <treecol id="localtype" label="&type.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+          <splitter                class="tree-splitter"/>
+          <treecol id="localdate" label="&date.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+          <splitter                class="tree-splitter"/>
+          <treecol id="localattr" label="&attr.label;" flex="1" persist="width ordinal hidden sortDirection" hidden="true"/>
+        </treecols>
+        <treechildren id="localtreechildren" class="fileTree" context="localmenu"
+                      ondblclick="localTree.dblClick(event)"
+                      onclick   ="localTree.click(event)"/>
+      </tree>
+    </hbox>
+  </vbox>
+  <statusbar>
+    <statusbarpanel  id="statustxt"       label="FireFTP"             flex="1"/>
+  </statusbar>
+</window>

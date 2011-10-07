@@ -1,0 +1,13 @@
+<!ENTITY title "Confirmar sobrescribir">
+<!ENTITY existing.label "Ficheiro existente:">
+<!ENTITY new.label "Novo ficheiro:">
+<!ENTITY overwrite.label "Sobrescribir">
+<!ENTITY overwriteall.label "Sobrescribir todo">
+<!ENTITY skip.label "Omitir">
+<!ENTITY skipall.label "Omitir todos">
+<!ENTITY resume.label "Reanudar">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "t">
+<!ENTITY skip.access "O">
+<!ENTITY skipall.access "m">
+<!ENTITY resume.access "R">

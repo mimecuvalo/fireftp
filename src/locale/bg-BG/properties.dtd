@@ -1,0 +1,31 @@
+<!ENTITY title "Свойства">
+<!ENTITY path "Път:">
+<!ENTITY webpath "Уеб път:">
+<!ENTITY size "Размер:">
+<!ENTITY date "Дата:">
+<!ENTITY contains "Съдържа:">
+<!ENTITY user "Потребител:">
+<!ENTITY groupl "Група:">
+<!ENTITY attr "Атрибути:">
+<!ENTITY hash "Хешове:">
+<!ENTITY perm "Разрешения:">
+<!ENTITY reado "Само за четене">
+<!ENTITY hidden "Скрит">
+<!ENTITY owner "Собственик">
+<!ENTITY group "Група">
+<!ENTITY public "Обществен">
+<!ENTITY read "Четене">
+<!ENTITY write "Писане">
+<!ENTITY exec "Изпълнение">
+<!ENTITY manual "Ръчно:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Текст">
+<!ENTITY applyto "Прилагане за:">
+<!ENTITY thisprop "Тази папка">
+<!ENTITY folderprop "Всички съдържани папки">
+<!ENTITY filesprop "Всички съдържани файлове">
+<!ENTITY thumbnail "Миникартинка">
+<!ENTITY loading "Зареждане ...">
+<!ENTITY view.label "Изглед">
+<!ENTITY view.accesskey "V">

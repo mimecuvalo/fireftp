@@ -1,0 +1,13 @@
+<!ENTITY title "Overschrijven bevestigen">
+<!ENTITY existing.label "Bestaand bestand:">
+<!ENTITY new.label "Nieuw bestand:">
+<!ENTITY overwrite.label "Overschrijven">
+<!ENTITY overwriteall.label "Alles overschrijven">
+<!ENTITY skip.label "Overslaan">
+<!ENTITY skipall.label "Alles overslaan">
+<!ENTITY resume.label "Hervatten">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "s">
+<!ENTITY skipall.access "l">
+<!ENTITY resume.access "D">

@@ -1,0 +1,13 @@
+<!ENTITY title "Bekreft erstatning">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Erstatt">
+<!ENTITY overwriteall.label "Erstatt alle">
+<!ENTITY skip.label "Hopp over">
+<!ENTITY skipall.label "Hopp over alle">
+<!ENTITY resume.label "Fortsett">
+<!ENTITY overwrite.access "E">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "H">
+<!ENTITY skipall.access "O">
+<!ENTITY resume.access "F">

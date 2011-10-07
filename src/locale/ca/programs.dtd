@@ -1,0 +1,22 @@
+<!ENTITY title "Programes">
+<!ENTITY add.label "Afegir">
+<!ENTITY remove.label "Eliminar">
+<!ENTITY extensions.label "Extensions">
+<!ENTITY programs.label "Programes">
+<!ENTITY details.label "Detalls del programa">
+<!ENTITY name.label "Nom">
+<!ENTITY exec.label "Ruta">
+<!ENTITY browse.label "Explorar">
+<!ENTITY args.label "Arguments">
+<!ENTITY argshelp1.label "Si deixa el camp &apos;Arguments&apos; en blanc, per defecte es passarà l&apos; arxiu com argument.">
+<!ENTITY argshelp2.label "En arguments personalitzats faci servir &#37;file&#37; per a representar l&apos; arxiu a passar com argument.">
+<!ENTITY apply.label "Aplicar">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "E">
+<!ENTITY addp.accesskey "f">
+<!ENTITY removep.accesskey "l">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "x">
+<!ENTITY browse.accesskey "v">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

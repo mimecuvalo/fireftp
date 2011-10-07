@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "فتح الوصلة في FireFTP">
+<!ENTITY viewFireFTP "عرض هذه الصفحة في FireFTP">
+<!ENTITY accountlist.label "(إختر حساب)">
+<!ENTITY edit.label "تحرير...">
+<!ENTITY abort.label "ايقاف">
+<!ENTITY logtab.label "سجل">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "G">
+<!ENTITY advanced.label "تقدم">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "دليل معرفة الاختلاف">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "عادي">
+<!ENTITY import.label "إستيراد...">
+<!ENTITY export.label "تصدير...">
+<!ENTITY preferencestab.label "تفضيلات">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "C">
+<!ENTITY import.access "I">
+<!ENTITY export.access "X">
+<!ENTITY prefbutton.access "R">
+<!ENTITY help.label "مساعدة">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "تغيير الدليل الأم">
+<!ENTITY refresh.tip "تحديث الدليل">
+<!ENTITY localpath.tip "المسار المحلي">
+<!ENTITY remotepath.tip "احذف المسار">
+<!ENTITY browse.label "تصفح">
+<!ENTITY change.label "تغيير">
+<!ENTITY name.label "الاسم">
+<!ENTITY size.label "الحجم">
+<!ENTITY date.label "التاريخ">
+<!ENTITY type.label "النوع">
+<!ENTITY attr.label "الصّفات">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "تغيير طريقة الإنتقالات">
+<!ENTITY bytes.tip "بايت التنزيل/مجموع البايت">
+<!ENTITY timeela.tip "الوقت المنقضي">
+<!ENTITY timerem.tip "الوقت المتبقي">
+<!ENTITY download.tip "نسبة التنزيل">
+<!ENTITY percent.tip "إكتمال ٪">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "رفع">
+<!ENTITY download.label "تنزيل">
+<!ENTITY open.label "فتح">
+<!ENTITY openwith.label "فتح بواسطة">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "شاهد في الويب">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "قص">
+<!ENTITY copy.label "نسخ">
+<!ENTITY paste.label "لصق">
+<!ENTITY makedir.label "ملف جديد">
+<!ENTITY makefile.label "مستند جديد">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "حذف">
+<!ENTITY rename.label "إعادة التسمية">
+<!ENTITY properties.label "خصائص">
+<!ENTITY rproperties.label "تكرار خصائص">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "E">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "V">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "e">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "و, <html:em>الصغرى</html:em>, من<html:em>سرية</html:em>:إستضافة من المخلص الى ظهورها<html:em>مساعدة</html:em> الحيوان من جديد في بحثه عن<html:em>إسترد</html:em>الارض. معا<html:em>ممدود</html:em>قوة الحيوان و<html:em>منشور</html:em> الخبر السار عند عودتها. الواحد تلو الواحد باتباع<html:em>الجشع</html:em> حولت قلوبهم وضعت<html:em>ملتهب</html:em>.">
+<!ENTITY mozilla.from "من<html:strong>كتاب موزيلا</html:strong>, 8:2">

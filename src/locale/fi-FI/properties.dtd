@@ -1,0 +1,31 @@
+<!ENTITY title "Ominaisuudet">
+<!ENTITY path "Polku:">
+<!ENTITY webpath "Verkkopolku:">
+<!ENTITY size "Koko:">
+<!ENTITY date "Päivämäärä:">
+<!ENTITY contains "Sisältää:">
+<!ENTITY user "Käyttäjä:">
+<!ENTITY groupl "Ryhmä:">
+<!ENTITY attr "Ominaisuudet:">
+<!ENTITY hash "Lue tarkastussummat:">
+<!ENTITY perm "Oikeudet:">
+<!ENTITY reado "Vain lukuoikeus">
+<!ENTITY hidden "Piilotettu">
+<!ENTITY owner "Omistaja">
+<!ENTITY group "Ryhmä">
+<!ENTITY public "Julkinen">
+<!ENTITY read "Luku">
+<!ENTITY write "Kirjoitus">
+<!ENTITY exec "Suoritus">
+<!ENTITY manual "Manuaalinen:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Pysyvä">
+<!ENTITY applyto "Käytä:">
+<!ENTITY thisprop "Tämä kansio">
+<!ENTITY folderprop "Kaikki kansiot">
+<!ENTITY filesprop "Kaikki tiedostot">
+<!ENTITY thumbnail "Ikoni">
+<!ENTITY loading "Lataa...">
+<!ENTITY view.label "Näytä">
+<!ENTITY view.accesskey "N">

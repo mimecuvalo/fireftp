@@ -1,0 +1,13 @@
+<!ENTITY title "Bekræft overskrivning">
+<!ENTITY existing.label "Eksisterende fil:">
+<!ENTITY new.label "Ny fil:">
+<!ENTITY overwrite.label "Overskriv">
+<!ENTITY overwriteall.label "Overskriv alle">
+<!ENTITY skip.label "Spring over">
+<!ENTITY skipall.label "Spring alle over">
+<!ENTITY resume.label "Genoptag">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "v">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "P">
+<!ENTITY resume.access "G">

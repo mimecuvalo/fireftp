@@ -1,0 +1,22 @@
+<!ENTITY title "Programy">
+<!ENTITY add.label "Dodaj">
+<!ENTITY remove.label "Usuń">
+<!ENTITY extensions.label "Rozszerzenia">
+<!ENTITY programs.label "Programy">
+<!ENTITY details.label "Szczegóły programu">
+<!ENTITY name.label "Nazwa">
+<!ENTITY exec.label "Ścieżka">
+<!ENTITY browse.label "Przeglądaj">
+<!ENTITY args.label "Zmienne">
+<!ENTITY argshelp1.label "Pozostawienie pola &quot;Zmienne&quot; niewypełnionym będzie oznaczało, że plik będzie traktowany jak zmienna niezależna.">
+<!ENTITY argshelp2.label "W zmiennych użytkownika użyj &#37;plik&#37;, aby przedstawiać przekazywany plik.">
+<!ENTITY apply.label "Zastosuj">
+<!ENTITY adde.accesskey "D">
+<!ENTITY removee.accesskey "U">
+<!ENTITY addp.accesskey "O">
+<!ENTITY removep.accesskey "S">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "K">
+<!ENTITY browse.accesskey "S">
+<!ENTITY args.accesskey "M">
+<!ENTITY apply.accesskey "Z">

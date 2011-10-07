@@ -1,0 +1,31 @@
+<!ENTITY title "속성">
+<!ENTITY path "경로:">
+<!ENTITY webpath "웹 경로:">
+<!ENTITY size "크기:">
+<!ENTITY date "날짜:">
+<!ENTITY contains "포함:">
+<!ENTITY user "사용자:">
+<!ENTITY groupl "그룹:">
+<!ENTITY attr "속성:">
+<!ENTITY hash "해시 생성:">
+<!ENTITY perm "권한:">
+<!ENTITY reado "읽기만">
+<!ENTITY hidden "숨김">
+<!ENTITY owner "소유자">
+<!ENTITY group "그룹">
+<!ENTITY public "공개">
+<!ENTITY read "읽기">
+<!ENTITY write "쓰기">
+<!ENTITY exec "실행">
+<!ENTITY manual "수동:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "난처">
+<!ENTITY applyto "다음에 적용:">
+<!ENTITY thisprop "이 폴더">
+<!ENTITY folderprop "포함된 모든 폴더">
+<!ENTITY filesprop "포함된 모든 파일">
+<!ENTITY thumbnail "썸네일">
+<!ENTITY loading "로드 중...">
+<!ENTITY view.label "보기">
+<!ENTITY view.accesskey "V">

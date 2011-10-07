@@ -1,0 +1,24 @@
+<!ENTITY title "Katalog-differens">
+<!ENTITY file.label "Fil">
+<!ENTITY reason.label "Anledning">
+<!ENTITY action.label "Åtgärd">
+<!ENTITY download.label "Ladda ner">
+<!ENTITY upload.label "Ladda upp">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Gör inget">
+<!ENTITY defaults.label "Ange grundinställning">
+<!ENTITY local.label "För felande lokal-filer:">
+<!ENTITY remote.label "För felande fjärr-filer :">
+<!ENTITY diff.label "För olika filstorlekar:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "n">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "i">
+<!ENTITY rUpload.access "u">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "n">
+<!ENTITY dDownload.access "n">
+<!ENTITY dUpload.access "u">
+<!ENTITY dNothing.access "i">
+<!ENTITY diff.note "OBS: Denna differenskontroll jämför inte det aktuella innehållet i filerna. Den jämför istället vilka filer som finns och inte finns i de mappar som jämförs, samt differens i filernas storlek.">

@@ -1,0 +1,24 @@
+<!ENTITY title "同步目录">
+<!ENTITY file.label "文件">
+<!ENTITY reason.label "原因">
+<!ENTITY action.label "动作">
+<!ENTITY download.label "下载">
+<!ENTITY upload.label "上传">
+<!ENTITY delete.label "删除">
+<!ENTITY nothing.label "无动作">
+<!ENTITY defaults.label "改变所选">
+<!ENTITY local.label "对缺失的本地文件：">
+<!ENTITY remote.label "对缺失的远端文件：">
+<!ENTITY diff.label "对不同的文件大小：">
+<!ENTITY newer.label "对于较新的本地文件:">
+<!ENTITY older.label "对于较新的远程文件:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "提示：此差异比较的功能并非实际进行文件内容比较。确切地说，它在待比较的目录中检查有哪些文件出现或不出现，并检查文件大小的不同。如果 &quot;同步时间戳&quot; 首选项开启，也会进行时间戳的比较。">

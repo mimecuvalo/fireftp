@@ -1,0 +1,66 @@
+<!ENTITY title "Beheren van accounts">
+<!ENTITY main "Algemeen">
+<!ENTITY connections "Verbinding">
+<!ENTITY advanced "Geavanceerd">
+<!ENTITY maindetails "Algemene instellingen">
+<!ENTITY id "ID">
+<!ENTITY account.label "Accountnaam:">
+<!ENTITY account.tip "Voorbeeld: Mijn FTP-site">
+<!ENTITY folder.label "Categorie:">
+<!ENTITY optional.label "(optioneel)">
+<!ENTITY host.label "Server:">
+<!ENTITY host.tip "Voorbeeld: ftp.debian.org">
+<!ENTITY login.label "Gebruikersnaam:">
+<!ENTITY password.label "Wachtwoord:">
+<!ENTITY anonymous.label "Anoniem">
+<!ENTITY connection "Verbindingstype">
+<!ENTITY port.label "Poort:">
+<!ENTITY pasv.label "Passieve modus">
+<!ENTITY security.label "Beveiliging:">
+<!ENTITY none.label "Geen">
+<!ENTITY authtls.label "Auth TLS (Beste)">
+<!ENTITY authssl.label "Auth SSL (Beter)">
+<!ENTITY implicit.label "Impliciete SSL (Goed)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Sleutel:">
+<!ENTITY pkbrowse.label "Bladeren…">
+<!ENTITY pkconvert.label "Omzetten…">
+<!ENTITY initialdir "Beginmap">
+<!ENTITY download "Instellingen voor downloaden">
+<!ENTITY upload "Instellingen voor uploaden">
+<!ENTITY localdir.label "Lokaal:">
+<!ENTITY remotedir.label "Op server:">
+<!ENTITY current.label "Huidige gebruiken">
+<!ENTITY treesync.label "Mappen gesynchroniseerd houden tijdens navigatie">
+<!ENTITY webhost "Webserver (gebruikt door de 'Online bekijken'-mogelijkheid)">
+<!ENTITY webhost.tip "Voorbeeld: http://www.voorbeeld.com">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Te verwijderen prefix van het FTP-deel van de URL, bijv. /public_html">
+<!ENTITY caseleave.label "Lettergrootte ongewijzigd houden">
+<!ENTITY caselower.label "Omzetten naar kleine letters">
+<!ENTITY caseupper.label "Omzetten naar hoofdletters">
+<!ENTITY timezone.label "Tijdzone verschil">
+<!ENTITY hours.label "Uren:">
+<!ENTITY minutes.label "Minuten:">
+<!ENTITY notes.label "Nota's">
+<!ENTITY encoding.label "Server encodering">
+<!ENTITY charset.label "Karakterset:">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "S">
+<!ENTITY login.access "G">
+<!ENTITY password.access "W">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "P">
+<!ENTITY port.access "o">
+<!ENTITY security.access "B">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "O">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "e">
+<!ENTITY currentl.access "H">
+<!ENTITY currentr.access "g">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "S">
+<!ENTITY prefix.access "x">

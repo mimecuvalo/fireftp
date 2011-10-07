@@ -1,0 +1,66 @@
+<!ENTITY title "Бүртгэлийн зохион байгуулагч">
+<!ENTITY main "Үндсэн">
+<!ENTITY connections "Холболт">
+<!ENTITY advanced "Нэмэлт">
+<!ENTITY maindetails "Үндсэн дэлгэрэнгүй">
+<!ENTITY id "ID">
+<!ENTITY account.label "Бүртгэлийн нэр:">
+<!ENTITY account.tip "Жишээ нв: Миний FTP хуудас">
+<!ENTITY folder.label "Ангилал:">
+<!ENTITY optional.label "(Сонгох)">
+<!ENTITY host.label "Хост:">
+<!ENTITY host.tip "Жишээ нь: ftp.debian.org">
+<!ENTITY login.label "Нэр:">
+<!ENTITY password.label "Нууц үг:">
+<!ENTITY anonymous.label "Нэрогүй">
+<!ENTITY connection "Холболтын төрөл">
+<!ENTITY port.label "Порт:">
+<!ENTITY pasv.label "Идэвхигүй горим">
+<!ENTITY security.label "Нууцлал">
+<!ENTITY none.label "Байхгүй">
+<!ENTITY authtls.label "TLS эрх (Маш сайн)">
+<!ENTITY authssl.label "SSL эрх (Сайн)">
+<!ENTITY implicit.label "Далдлагдсан SSL эрх (Сайн)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Private Key:">
+<!ENTITY pkbrowse.label "Browse...">
+<!ENTITY pkconvert.label "Convert...">
+<!ENTITY initialdir "Эхлэх хавтас">
+<!ENTITY download "Татаж авах тохиргоонууд">
+<!ENTITY upload "Оруулах">
+<!ENTITY localdir.label "Дотоод:">
+<!ENTITY remotedir.label "Гадаад:">
+<!ENTITY current.label "Одоо байгааг ашигла">
+<!ENTITY treesync.label "Хавтаснуудыг хадгалах">
+<!ENTITY webhost "Веб сервер('-тэй ашигла. Вебээс харна уу' )">
+<!ENTITY webhost.tip "Жишээ нь: http://www.example.com">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Prefix to remove of the FTP part of the url, e.g. /public_html">
+<!ENTITY caseleave.label "Leave case alone">
+<!ENTITY caselower.label "Жижиг үсэг болгох">
+<!ENTITY caseupper.label "Том үсэг болгох">
+<!ENTITY timezone.label "Timezone Offset">
+<!ENTITY hours.label "Hours:">
+<!ENTITY minutes.label "Minutes:">
+<!ENTITY notes.label "Notes">
+<!ENTITY encoding.label "Server Encoding">
+<!ENTITY charset.label "Character Set:">
+<!ENTITY account.access "A">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "H">
+<!ENTITY login.access "G">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "o">
+<!ENTITY security.access "S">
+<!ENTITY privatekey.access "i">
+<!ENTITY pkbrowse.access "B">
+<!ENTITY pkconvert.access "S">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "R">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "y">
+<!ENTITY webhost.access "t">
+<!ENTITY prefix.access "x">

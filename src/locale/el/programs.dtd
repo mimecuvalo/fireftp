@@ -1,0 +1,22 @@
+<!ENTITY title "Προγράμματα">
+<!ENTITY add.label "Προσθήκη">
+<!ENTITY remove.label "Αφαίρεση">
+<!ENTITY extensions.label "Επεκτάσεις">
+<!ENTITY programs.label "Προγράμματα">
+<!ENTITY details.label "Λεπτομέρειες προγράμματος">
+<!ENTITY name.label "Όνομα">
+<!ENTITY exec.label "Διαδρομή">
+<!ENTITY browse.label "Εντοπισμός">
+<!ENTITY args.label "Ορίσματα">
+<!ENTITY argshelp1.label "Αν το πεδίο &quot;Ορίσματα&quot; είναι κενό, το FireFTP θα δέχεται σαν όρισμα το αρχείο.">
+<!ENTITY argshelp2.label "Στα προσαρμοσμένα ορίσματα χρησιμοποιείστε το &#37;file&#37; σαν μεταβλητή για το αρχείο που θα περάσετε.">
+<!ENTITY apply.label "Εφαρμογή">
+<!ENTITY adde.accesskey "θ">
+<!ENTITY removee.accesskey "φ">
+<!ENTITY addp.accesskey "ρ">
+<!ENTITY removep.accesskey "σ">
+<!ENTITY name.accesskey "ο">
+<!ENTITY exec.accesskey "δ">
+<!ENTITY browse.accesskey "ν">
+<!ENTITY args.accesskey "μ">
+<!ENTITY apply.accesskey "γ">

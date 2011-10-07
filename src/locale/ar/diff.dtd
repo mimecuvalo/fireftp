@@ -1,0 +1,24 @@
+<!ENTITY title "أدلة معرفة الاختلاف">
+<!ENTITY file.label "ملف">
+<!ENTITY reason.label "السبب">
+<!ENTITY action.label "الحركة">
+<!ENTITY download.label "تنزيل">
+<!ENTITY upload.label "رفع">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "لا تفعل شيئا">
+<!ENTITY defaults.label "كتلة التغيير">
+<!ENTITY local.label "لملفات المفقودين المحلية :">
+<!ENTITY remote.label "لملفات المفقودين بعد :">
+<!ENTITY diff.label "الملف المختلف الاحجام :">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Note: This diffing feature does not actually compare file content.  Rather it looks at which files are present or not present in the directories being compared and also at differing file sizes.  Timestamps are compared if the 'Keep timestamps in sync' preference is enabled.">

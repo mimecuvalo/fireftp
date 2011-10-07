@@ -1,0 +1,21 @@
+<!ENTITY title  "คุณสมบัติ">
+
+<!ENTITY path  "ที่อยู่:">
+<!ENTITY size  "ขนาด:">
+<!ENTITY date  "วันที่:">
+<!ENTITY user  "ผู้ใช้:">
+<!ENTITY groupl  "กลุ่ม:">
+<!ENTITY attr  "คุณลักษณะ:">
+<!ENTITY perm  "อนุญาตให้:">
+<!ENTITY reado  "อ่าน-เท่านั้น">
+<!ENTITY hidden  "ซ่อน">
+<!ENTITY owner  "ตัวเอง">
+<!ENTITY group  "กลุ่ม">
+<!ENTITY public  "สาธารณะ">
+<!ENTITY read  "อ่าน">
+<!ENTITY write  "เขียน">
+<!ENTITY exec  "จัดการ">
+<!ENTITY manual  "chmod:">
+<!ENTITY suid  "SUID">
+<!ENTITY guid  "GUID">
+<!ENTITY sticky  "Sticky">

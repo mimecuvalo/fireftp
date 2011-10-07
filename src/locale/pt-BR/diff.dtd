@@ -1,0 +1,24 @@
+<!ENTITY title "Sincronizar pastas">
+<!ENTITY file.label "Arquivo">
+<!ENTITY reason.label "Motivo">
+<!ENTITY action.label "Ação">
+<!ENTITY download.label "Baixar">
+<!ENTITY upload.label "Enviar">
+<!ENTITY delete.label "Apagar">
+<!ENTITY nothing.label "Não fazer nada">
+<!ENTITY defaults.label "Trocar seleção">
+<!ENTITY local.label "Para arquivos locais que faltam:">
+<!ENTITY remote.label "Para arquivos remotos que faltam:">
+<!ENTITY diff.label "Para arquivos de tamanhos diferentes:">
+<!ENTITY newer.label "Para arquivos locais mais novos:">
+<!ENTITY older.label "Para arquivos remotos mais novos:">
+<!ENTITY lDownload.access "B">
+<!ENTITY lDelete.access "l">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "E">
+<!ENTITY rDelete.access "r">
+<!ENTITY rNothing.access "d">
+<!ENTITY dDownload.access "x">
+<!ENTITY dUpload.access "v">
+<!ENTITY dNothing.access "z">
+<!ENTITY diff.note "Nota: Esta opção não compara o conteúdo dos arquivos. Apenas verifica quais arquivos estão ou não presentes nas pastas comparadas e também diferenças nos tamanhos. Datas são comparadas apenas se a opção &quot;Manter datas sincronizadas&quot; estiver habilitada.">

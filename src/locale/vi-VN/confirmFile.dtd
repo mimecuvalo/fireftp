@@ -1,0 +1,13 @@
+<!ENTITY title "Xác nhận Ghi đè">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Ghi đè">
+<!ENTITY overwriteall.label "Ghi đè Toàn bộ">
+<!ENTITY skip.label "Bỏ qua">
+<!ENTITY skipall.label "Bỏ qua Toàn bộ">
+<!ENTITY resume.label "Tiếp tục">
+<!ENTITY overwrite.access "G">
+<!ENTITY overwriteall.access "b">
+<!ENTITY skip.access "B">
+<!ENTITY skipall.access "q">
+<!ENTITY resume.access "T">

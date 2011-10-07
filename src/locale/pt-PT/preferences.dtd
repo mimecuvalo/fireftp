@@ -1,0 +1,420 @@
+<!ENTITY title "Preferências">
+<!ENTITY asciiTitle "Tipo de Ficheiros ASCII">
+<!ENTITY general.label "Geral">
+<!ENTITY messages.label "Mensagens">
+<!ENTITY welcome.label "Mostrar Mensagem de Boas Vindas">
+<!ENTITY error.label "Mostrar Mensagens de Erro">
+<!ENTITY sessions.label "Sessões">
+<!ENTITY rememberp.label "Lembrar Senhas">
+<!ENTITY rememberd.label "Lembrar Listagens de Pastas">
+<!ENTITY fileview.label "Ver Ficheiro">
+<!ENTITY autorefresh.label "Auto-Actualização">
+<!ENTITY refresh.tip "Depois de alterado o estado de conteúdos remotos (por carregamento, renomeação, etc.), actualizar a listagem da pasta">
+<!ENTITY hidden.label "Mostrar Ficheiros Escondidos">
+<!ENTITY bytesmode.label "Mostrar o numero de bytes para o tamanho dos ficheiros">
+<!ENTITY interface.label "Interface">
+<!ENTITY startup.label "Iniciar FireFTP:">
+<!ENTITY windowopen.label "numa nova janela">
+<!ENTITY tabopen.label "num novo Separador">
+<!ENTITY groupopen.label "num agrupamento de janelas">
+<!ENTITY integrateftplnk.label "Configure os endereços FTP no Firefox para usar o FireFTP automaticamente">
+<!ENTITY temppasvmode.label "Usar o modo Passivo para estas ligações">
+<!ENTITY open.label "Duplo-clique/ pressionar em enter:">
+<!ENTITY download.label "transfere um ficheiro">
+<!ENTITY exec.label "abre um ficheiro">
+<!ENTITY both.tip "Mostra os ficheiros locais e remotos">
+<!ENTITY local.tip "Mostra apenas ficheiros locais">
+<!ENTITY remote.tip "Mostra apenas ficheiros remotos">
+<!ENTITY logwindow.label "Registo">
+<!ENTITY logmode.label "Mostrar relatório na janela principal">
+<!ENTITY logerrormode.label "Mostrar os erros só no registo">
+<!ENTITY debug.label "Mostrar Informação de Debug no Relatório">
+<!ENTITY connect.label "Ligações">
+<!ENTITY proxy.label "Parâmetros do Proxy">
+<!ENTITY none.label "Nenhum">
+<!ENTITY direct.label "Directo">
+<!ENTITY host.label "Servidor:">
+<!ENTITY port.label "Porta">
+<!ENTITY active.label "Modo activo">
+<!ENTITY limitPorts.label "Limita portas">
+<!ENTITY from.label "De:">
+<!ENTITY to.label "Para:">
+<!ENTITY concurrent.label "Transferências simultâneas">
+<!ENTITY simtransfers.label "Transferências simultâneas máx. (1-10)">
+<!ENTITY recovery.label "Recuperação da ligação">
+<!ENTITY network.label "Tempo de Espera(expirado) da Rede">
+<!ENTITY network.tip "Controla o tempo de espera por uma resposta do servidor">
+<!ENTITY keepalivemode.label "Manter a ligação mesmo que esteja sem utilização">
+<!ENTITY timeout.label "Se desligado, tentar ligar-se">
+<!ENTITY retryd.label "Intervalo entre tentativas (em segundos, entre 1 e 600)">
+<!ENTITY retryd.tip "Nº de segundos entre tentativas de ligação">
+<!ENTITY retrya.label "Num. de tentativas">
+<!ENTITY retrya.tip "Num. de tentativas a fazer">
+<!ENTITY downup.label "Transferências/Carregamentos">
+<!ENTITY transfercaption.label "Quando transferir ficheiros usar:">
+<!ENTITY automatic.label "Modo Automático">
+<!ENTITY automatic.tip "Escolhe automaticamente entre modo &apos;Binário&apos; e &apos;ASCII&apos;">
+<!ENTITY binary.label "Modo Binário">
+<!ENTITY ascii.label "Modo ASCII">
+<!ENTITY asciifiles.label "Ficheiros ASCII:">
+<!ENTITY asciifiles.tip "Lista de extensões, separadas por vírgulas, que devem ser reconhecidas como ficheiros ASCII">
+<!ENTITY add.label "Adicionar">
+<!ENTITY remove.label "Remover">
+<!ENTITY extras.label "Extras (se activado no servidor)">
+<!ENTITY usecompression.label "Usar compressão">
+<!ENTITY synctimestamps.label "Manter timestamps em sincronia">
+<!ENTITY integritymode.label "Verificar a integridade da transferência de ficheiros (XMD5, XSHA1)
+
+
+
+
+
+
+Showing terms 1-50 ...
+
+
+
+		 
+
+	
+
+Top! 	
+
+© 2011 BabelZilla
+
+Joomla! is Free Software released under the GNU/GPL License.
+
+Powered by Joomla!
+
+	Top!
+
+	
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Par
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Us
+
+Manter timestamps em sincronia
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Verificar a integridade da transferência de ficheiros
+
+transfere um ficheiro
+
+abre um ficheiro
+
+Modo activo
+
+Limita portas
+
+De:
+
+Para:
+
+Transferências simultâneas
+
+Transferências simultâneas máx. (1-10)
+
+Extras (se activado no servidor)
+
+Usar compressão
+
+Manter timestamps em sincronia">
+<!ENTITY duplicates.label "Ficheiros duplicados">
+<!ENTITY timer.label "Desligar Temporizador na Confirmação de Sobreposição">
+<!ENTITY nopromptmode.label "Não mostrar a janela de sobreposição, simplesmente sobrepor">
+<!ENTITY credits.label "Créditos">
+<!ENTITY thanks.label "Agradecimentos:">
+<!ENTITY allothers.label "Todos os outros que submeteram os bugs e ajudaram">
+<!ENTITY special.label "Agradecimentos especiais a que doou!">

@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Otwórz odnośnik w FireFTP">
+<!ENTITY viewFireFTP "Zobacz tę stronę w FireFTP">
+<!ENTITY accountlist.label "Wybierz konto">
+<!ENTITY edit.label "Edytuj">
+<!ENTITY abort.label "Usuń">
+<!ENTITY logtab.label "Dziennik/Kolejka">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "z">
+<!ENTITY advanced.label "Narzędzia">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Porównaj katalogi">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Polecenia użytkownika">
+<!ENTITY import.label "Import…">
+<!ENTITY export.label "Eksport…">
+<!ENTITY preferencestab.label "Ustawienia…">
+<!ENTITY diff.access "N">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "P">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY prefbutton.access "U">
+<!ENTITY help.label "Pomoc">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Przejdź do katalogu wyższego poziomu">
+<!ENTITY refresh.tip "Odśwież katalog">
+<!ENTITY localpath.tip "Ścieżka lokalna">
+<!ENTITY remotepath.tip "Ścieżka zdalna">
+<!ENTITY browse.label "Przeglądaj">
+<!ENTITY change.label "Zmień">
+<!ENTITY name.label "Nazwa">
+<!ENTITY size.label "Wielkość">
+<!ENTITY date.label "Data">
+<!ENTITY type.label "Typ">
+<!ENTITY attr.label "Atrybuty">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Zmień metodę transferu (auto - zalecane)">
+<!ENTITY bytes.tip "Pobrane bajty / Wszystkie bajty">
+<!ENTITY timeela.tip "Czas pobierania">
+<!ENTITY timerem.tip "Pozostały czas">
+<!ENTITY download.tip "Prędkość pobierania">
+<!ENTITY percent.tip "Procent wykonania">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Wyślij">
+<!ENTITY download.label "Pobierz">
+<!ENTITY open.label "Otwórz">
+<!ENTITY openwith.label "Otwórz za pomocą">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Zobacz w internecie">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Wytnij">
+<!ENTITY copy.label "Kopiuj">
+<!ENTITY paste.label "Wstaw">
+<!ENTITY makedir.label "Utwórz katalog">
+<!ENTITY makefile.label "Utwórz plik">
+<!ENTITY symlink.label "Utwórz dowiązanie symboliczne">
+<!ENTITY delete.label "Usuń">
+<!ENTITY rename.label "Zmień nazwę">
+<!ENTITY properties.label "Właściwości">
+<!ENTITY rproperties.label "Właściwości (zawierają zawartość)">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "E">
+<!ENTITY abort.access "U">
+<!ENTITY advanced.access "N">
+<!ENTITY helpbutton.access "P">
+<!ENTITY browsebutton.access "P">
+<!ENTITY changebutton.access "Z">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>lo</html:em>, from the <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>reclaim</html:em> the land.  Together they <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>extended</html:em> the power of the beast and <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>aflame</html:em>.">
+<!ENTITY mozilla.from "z<html:strong>Księgi Mozilli</html:strong>, 8:2">

@@ -1,0 +1,22 @@
+<!ENTITY title "Programmer">
+<!ENTITY add.label "Tilføj">
+<!ENTITY remove.label "Fjern">
+<!ENTITY extensions.label "Filendelser">
+<!ENTITY programs.label "Programmer">
+<!ENTITY details.label "Programdetaljer">
+<!ENTITY name.label "Navn">
+<!ENTITY exec.label "Sti">
+<!ENTITY browse.label "Gennemse">
+<!ENTITY args.label "Parametre">
+<!ENTITY argshelp1.label "Hvis feltet 'Parametre' ikke udfyldes, anvendes filnavnet som parameter.">
+<!ENTITY argshelp2.label "Hvis du udfylder feltet parametre, kan du bruge &#37;file&#37; til at få indsat filnavnet på den valgte fil.">
+<!ENTITY apply.label "Anvend">
+<!ENTITY adde.accesskey "T">
+<!ENTITY removee.accesskey "F">
+<!ENTITY addp.accesskey "ø">
+<!ENTITY removep.accesskey "r">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "S">
+<!ENTITY browse.accesskey "G">
+<!ENTITY args.accesskey "P">
+<!ENTITY apply.accesskey "A">

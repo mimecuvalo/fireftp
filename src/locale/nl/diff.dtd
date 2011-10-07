@@ -1,0 +1,24 @@
+<!ENTITY title "Mappen synchroniseren">
+<!ENTITY file.label "Bestand">
+<!ENTITY reason.label "Reden">
+<!ENTITY action.label "Actie">
+<!ENTITY download.label "Downloaden">
+<!ENTITY upload.label "Uploaden">
+<!ENTITY delete.label "Verwijderen">
+<!ENTITY nothing.label "Niets doen">
+<!ENTITY defaults.label "Selectie wijzigen">
+<!ENTITY local.label "Voor ontbrekende lokale bestanden:">
+<!ENTITY remote.label "Voor ontbrekende bestanden op server:">
+<!ENTITY diff.label "Voor afwijkende bestandsgroottes:">
+<!ENTITY newer.label "Voor nieuwere lokale bestanden:">
+<!ENTITY older.label "Voor nieuwere bestanden op server:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Let op: Deze functie vergelijkt niet de inhoud van de bestanden. Er wordt gekeken naar welke bestanden aanwezig zijn in de mappen en naar de groottes van de bestanden. Bestandsdata worden vergeleken als de optie ‘Bestandsdata synchroon houden’ geselecteerd is.">

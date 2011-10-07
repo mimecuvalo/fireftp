@@ -1,0 +1,24 @@
+<!ENTITY title "שינוי בין התיקיות">
+<!ENTITY file.label "קובץ">
+<!ENTITY reason.label "סיבה">
+<!ENTITY action.label "פעולה">
+<!ENTITY download.label "הורדה">
+<!ENTITY upload.label "העלאה">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "אל תעשה דבר">
+<!ENTITY defaults.label "הגדר ברירות מחדל">
+<!ENTITY local.label "עבור קבצים מקומיים שחסרים:">
+<!ENTITY remote.label "עבור קבצים מרוחקים שחסרים:">
+<!ENTITY diff.label "עבור גדלי קבצים שונים:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "הערה: אפשרות ניטור השינויים לא משווה את תכני הקבצים. במקום זאת בודקת אילו קבצים נוכחים ואילו לא בתוך התיקיות וגם משווה בין גדלי הקבצים.">

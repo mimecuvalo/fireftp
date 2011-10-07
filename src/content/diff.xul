@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fireftp/locale/diff.dtd">
+<dialog id             = "diff3"
+        title          = "&title;"
+        width          = "850"
+        height         = "500"
+				persist        = "screenX screenY width height"
+        xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons        = "accept, cancel"
+        onload         = "init()"
+        ondialogaccept = "return parseList();">
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/diff.js"/>
+
+  <tree id="diffTree" flex="1" class="plain"
+        onselect="if (this.view.selection.count) this.view.selection.clearSelection()">
+    <treecols>
+      <treecol id="file"      label="&file.label;"     flex="5" persist="width ordinal hidden sortDirection" />
+      <splitter                class="tree-splitter"/>
+      <treecol id="reason"    label="&reason.label;"   flex="5" persist="width ordinal hidden sortDirection" />
+      <splitter                class="tree-splitter"/>
+      <treecol id="download"  label="&download.label;" flex="1" persist="width ordinal hidden sortDirection" type="checkbox"/>
+      <splitter                class="tree-splitter"/>
+      <treecol id="upload"    label="&upload.label;"   flex="1" persist="width ordinal hidden sortDirection" type="checkbox"/>
+      <splitter                class="tree-splitter"/>
+      <treecol id="delete"    label="&delete.label;"   flex="1" persist="width ordinal hidden sortDirection" type="checkbox"/>
+      <splitter                class="tree-splitter"/>
+      <treecol id="nothing"   label="&nothing.label;"  flex="1" persist="width ordinal hidden sortDirection" type="checkbox"/>
+    </treecols>
+
+    <treechildren id="main" class="fileTree" onmousedown="mouseDown(event)"/>
+  </tree>
+
+  <groupbox align="right">
+    <caption label="&defaults.label;"/>
+    <grid>
+      <columns>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+      </columns>
+      <rows id="main">
+        <row align="center" id="localRow">
+          <label  value="&local.label;"/>
+          <button label="&download.label;" accesskey="&lDownload.access;" oncommand="setDefault(0, 'local',   'download')"/>
+          <spacer />
+          <button label="&delete.label;"   accesskey="&lDelete.access;"   oncommand="setDefault(0, 'local',   'delete')"/>
+          <button label="&nothing.label;"  accesskey="&lNothing.access;"  oncommand="setDefault(0, 'local',   'nothing')"/>
+        </row>
+        <row align="center" id="remoteRow">
+          <label  value="&remote.label;"/>
+          <spacer />
+          <button label="&upload.label;"   accesskey="&rUpload.access;"   oncommand="setDefault(1, 'remote',  'upload')"/>
+          <button label="&delete.label;"   accesskey="&rDelete.access;"   oncommand="setDefault(1, 'remote',  'delete')"/>
+          <button label="&nothing.label;"  accesskey="&rNothing.access;"  oncommand="setDefault(1, 'remote',  'nothing')"/>
+        </row>
+        <row align="center" id="diffRow">
+          <label  value="&diff.label;"/>
+          <button label="&download.label;" accesskey="&dDownload.access;" oncommand="setDefault(2, 'diff',    'download')"/>
+          <button label="&upload.label;"   accesskey="&dUpload.access;"   oncommand="setDefault(2, 'diff',    'upload')"/>
+					<spacer />
+          <button label="&nothing.label;"  accesskey="&dNothing.access;"  oncommand="setDefault(2, 'diff',    'nothing')"/>
+        </row>
+        <row align="center" id="newerRow">
+          <label  value="&newer.label;"/>
+          <button label="&download.label;"                                oncommand="setDefault(3, 'newer',   'download')"/>
+          <button label="&upload.label;"                                  oncommand="setDefault(3, 'newer',   'upload')"/>
+					<spacer />
+          <button label="&nothing.label;"                                 oncommand="setDefault(3, 'newer',   'nothing')"/>
+        </row>
+        <row align="center" id="olderRow">
+          <label  value="&older.label;"/>
+          <button label="&download.label;"                                oncommand="setDefault(4, 'older',   'download')"/>
+          <button label="&upload.label;"                                  oncommand="setDefault(4, 'older',   'upload')"/>
+					<spacer />
+          <button label="&nothing.label;"                                 oncommand="setDefault(4, 'older',   'nothing')"/>
+        </row>
+      </rows>
+    </grid>
+  </groupbox>
+
+  <description>&diff.note;</description>
+
+</dialog>

@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "פתח את הקישור ב-FireFTP">
+<!ENTITY viewFireFTP "הצג דף זה ב-FireFTP">
+<!ENTITY accountlist.label "(בחר חשבון)">
+<!ENTITY edit.label "ערוך...">
+<!ENTITY abort.label "ביטול">
+<!ENTITY logtab.label "דוח">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "g">
+<!ENTITY advanced.label "מתקדם">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "שינוי בין התיקיות">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "מוגדר אישית">
+<!ENTITY import.label "ייבא...">
+<!ENTITY export.label "ייצא...">
+<!ENTITY preferencestab.label "העדפות">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "C">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "עזרה">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "שנה לתיקיה הראשית">
+<!ENTITY refresh.tip "רענן תיקיה">
+<!ENTITY localpath.tip "תיקיה מקומית">
+<!ENTITY remotepath.tip "תיקיה מרוחקת">
+<!ENTITY browse.label "סייר">
+<!ENTITY change.label "שנה">
+<!ENTITY name.label "שם">
+<!ENTITY size.label "גודל">
+<!ENTITY date.label "תאריך">
+<!ENTITY type.label "סוג">
+<!ENTITY attr.label "תכונות">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "שנה את שיטת ההעברות (אוטומטית מומלץ)">
+<!ENTITY bytes.tip "בתים שהורדו / בתים סה&quot;כ">
+<!ENTITY timeela.tip "זמן שעבר">
+<!ENTITY timerem.tip "זמן שנותר">
+<!ENTITY download.tip "קצב הורדה">
+<!ENTITY percent.tip "אחוז שהושלם">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "העלאה">
+<!ENTITY download.label "הורדה">
+<!ENTITY open.label "פתיחה">
+<!ENTITY openwith.label "פתיחה באמצעות">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "הצג ברשת">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "גזור">
+<!ENTITY copy.label "העתק">
+<!ENTITY paste.label "הדבר">
+<!ENTITY makedir.label "צור תיקיה">
+<!ENTITY makefile.label "צור קובץ">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "מחק">
+<!ENTITY rename.label "שנה שם">
+<!ENTITY properties.label "מאפיינים">
+<!ENTITY rproperties.label "מאפיינים רקורסיביים">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "E">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "B">
+<!ENTITY changebutton.access "e">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em style=';;;font-size:1.3em;line-height:0;';;;>lo</html:em>, from the <html:em style=';;;font-size:1.3em;line-height:0;';;;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;;font-size:1.3em;line-height:0;';;;>aide</html:em> the reborn beast in its quest to <html:em style=';;;font-size:1.3em;line-height:0;';;;>reclaim</html:em> the land. Together they <html:em style=';;;font-size:1.3em;line-height:0;';;;>extended</html:em> the power of the beast and <html:em style=';;;font-size:1.3em;line-height:0;';;;>spread</html:em> the good news of its return. One by one the followers of <html:em style=';;;font-size:1.3em;line-height:0;';;;>Mammon</html:em> were converted and their hearts were set <html:em style=';;;font-size:1.3em;line-height:0;';;;>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

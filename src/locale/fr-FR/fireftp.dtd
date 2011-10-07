@@ -1,0 +1,100 @@
+<!ENTITY openFireFTP "Ouvrir le lien dans FireFTP">
+<!ENTITY viewFireFTP "Voir cette page dans FireFTP">
+<!ENTITY accountlist.label "(Choisir un compte)">
+<!ENTITY edit.label "Éditer…">
+<!ENTITY abort.label "Annuler">
+<!ENTITY logtab.label "Journal / file">
+<!ENTITY ltab.label "Journal">
+<!ENTITY qtab.label "File d&apos;attente">
+<!ENTITY search.access "f">
+<!ENTITY logbutton.access "J">
+<!ENTITY advanced.label "Outils">
+<!ENTITY search.label "Chercher / filtrer">
+<!ENTITY diff.label "Comparaison de répertoires…">
+<!ENTITY recdiff.label "Comparaison de répertoires et de sous-répertoires…">
+<!ENTITY custom.label "Commande personnalisée…">
+<!ENTITY import.label "Importer…">
+<!ENTITY export.label "Exporter…">
+<!ENTITY preferencestab.label "Options…">
+<!ENTITY diff.access "c">
+<!ENTITY recdiff.access "r">
+<!ENTITY custom.access "o">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY prefbutton.access "P">
+<!ENTITY help.label "Aide">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Atteindre le répertoire parent">
+<!ENTITY refresh.tip "Actualiser le répertoire">
+<!ENTITY localpath.tip "Chemin local">
+<!ENTITY remotepath.tip "Chemin distant">
+<!ENTITY browse.label "Parcourir">
+<!ENTITY change.label "Changer">
+<!ENTITY name.label "Nom">
+<!ENTITY size.label "Taille">
+<!ENTITY date.label "Date">
+<!ENTITY type.label "Type">
+<!ENTITY attr.label "Attributs">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Octets">
+<!ENTITY status.label "État">
+<!ENTITY retry.label "Réessayer">
+<!ENTITY cancel.label "Annuler">
+<!ENTITY cancelAll.label "Tout annuler">
+<!ENTITY type.tip "Modifier la méthode de transfert («auto» recommandé)">
+<!ENTITY bytes.tip "Octets téléchargés / octets totaux">
+<!ENTITY timeela.tip "Temps écoulé">
+<!ENTITY timerem.tip "Temps restant">
+<!ENTITY download.tip "Vitesse de transfert">
+<!ENTITY percent.tip "Progression">
+<!ENTITY openContaining.label "Ouvrir le dossier parent">
+<!ENTITY upload.label "Envoyer">
+<!ENTITY download.label "Télécharger">
+<!ENTITY open.label "Ouvrir">
+<!ENTITY openwith.label "Ouvrir avec">
+<!ENTITY extractHere.label "Extraire ici">
+<!ENTITY extractTo.label "Extraire vers le dossier">
+<!ENTITY viewweb.label "Voir sur le Web">
+<!ENTITY copyUrl.label "Copier l&apos;URL">
+<!ENTITY copyUrlLogin.label "FTP avec connexion">
+<!ENTITY cut.label "Couper">
+<!ENTITY copy.label "Copier">
+<!ENTITY paste.label "Coller">
+<!ENTITY makedir.label "Créer un répertoire">
+<!ENTITY makefile.label "Créer un fichier">
+<!ENTITY delete.label "Supprimer">
+<!ENTITY rename.label "Renommer">
+<!ENTITY properties.label "Propriétés">
+<!ENTITY rproperties.label "Propriétés récursives">
+<!ENTITY searchButton.label "Chercher">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Distant">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "De :">
+<!ENTITY searchTo.label "À :">
+<!ENTITY searchSubdir.label "Chercher dans les sous-répertoires">
+<!ENTITY searchMatch.label "Respecter la casse">
+<!ENTITY searchRegexp.label "Expression régulière">
+<!ENTITY searchDates.label "Indiquer les dates">
+<!ENTITY searchSubdir.access "C">
+<!ENTITY searchMatch.access "R">
+<!ENTITY searchRegexp.access "E">
+<!ENTITY searchDates.access "I">
+<!ENTITY edit.access "d">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "O">
+<!ENTITY helpbutton.access "i">
+<!ENTITY browsebutton.access "P">
+<!ENTITY changebutton.access "n">
+<!ENTITY searchButton.access "h">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "D">
+<!ENTITY searchOptions.access "t">
+<!ENTITY mozilla.quote "Et <html:em>voilà</html:em> que des <html:em>ténèbres</html:em> ils surgirent : une foule de fidèles pour <html:em>assister</html:em> la bête renaissante dans sa quête pour <html:em>reconquérir</html:em> la terre. Ensemble ils <html:em>accrurent</html:em> le pouvoir de la bête et <html:em>annoncèrent</html:em> la bonne nouvelle de son retour. Un à un les adeptes de <html:em>Mammon</html:em> furent convertis et leurs cœurs devinrent <html:em>ardents</html:em>.">
+<!ENTITY mozilla.from "d&apos;après <html:strong>Le Livre de Mozilla</html:strong>, 8:2">
+
+<!ENTITY auto.label           "Auto">
+<!ENTITY binary.label         "Binaire">
+<!ENTITY ascii.label          "ASCII">
+

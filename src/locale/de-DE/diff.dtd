@@ -1,0 +1,25 @@
+<!ENTITY title "Ordnerliste vergleichen">
+<!ENTITY file.label "Datei">
+<!ENTITY reason.label "Beschreibung">
+<!ENTITY action.label "Aktion">
+<!ENTITY download.label "Herunterladen">
+<!ENTITY upload.label "Hochladen">
+<!ENTITY nothing.label "Keine Aktion">
+<!ENTITY defaults.label "Als Standard festlegen">
+<!ENTITY local.label "Für nicht vorhandene lokale Dateien:">
+<!ENTITY remote.label "Für nicht vorhandene entfernte Dateien:">
+<!ENTITY diff.label "Für Unterschiede in den Dateigrößen:">
+<!ENTITY newer.label "Für aktuellere lokale Dateien:">
+<!ENTITY older.label "Für aktuellere entfernte Dateien:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lNothing.access "K">
+<!ENTITY rUpload.access "H">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "u">
+<!ENTITY dUpload.access "c">
+<!ENTITY dNothing.access "A">
+<!ENTITY diff.note "Hinweis: Diese Funktion vergleicht Dateien nicht anhand ihres Inhalts, sondern danach, welche Dateien in den zu vergleichenden Listen vorhanden sind und ob Unterschiede in der Dateigröße vorliegen.">
+
+<!ENTITY delete.label     "Löschen">
+<!ENTITY lDelete.access   "L">
+<!ENTITY rDelete.access   "ö">

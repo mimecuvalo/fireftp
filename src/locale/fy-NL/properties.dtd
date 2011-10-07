@@ -1,0 +1,31 @@
+<!ENTITY title "Eigenskippen">
+<!ENTITY path "Boarne:">
+<!ENTITY webpath "Webstee:">
+<!ENTITY size "Grutte:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Befettet:">
+<!ENTITY user "Brûker:">
+<!ENTITY groupl "Groep:">
+<!ENTITY attr "Attributen:">
+<!ENTITY hash "Hashkoades generearje:">
+<!ENTITY perm "Tastimming:">
+<!ENTITY reado "Allinnich-lêze">
+<!ENTITY hidden "Ferstopje">
+<!ENTITY owner "Eigner">
+<!ENTITY group "Groep">
+<!ENTITY public "Publyk">
+<!ENTITY read "Lêze">
+<!ENTITY write "Skriuwe">
+<!ENTITY exec "Utfiere">
+<!ENTITY manual "Hânmjittich:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Tapasse op:">
+<!ENTITY thisprop "Dizze map">
+<!ENTITY folderprop "Alle ûnderlizzende mappen">
+<!ENTITY filesprop "Alle ûnderlizzende bestannen">
+<!ENTITY thumbnail "Foarbyld">
+<!ENTITY loading "Ynlade...">
+<!ENTITY view.label "Besjen">
+<!ENTITY view.accesskey "B">

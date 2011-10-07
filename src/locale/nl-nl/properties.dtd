@@ -1,0 +1,31 @@
+<!ENTITY title "Eigenschappen">
+<!ENTITY path "Bron:">
+<!ENTITY webpath "Online adres:">
+<!ENTITY size "Grootte:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Bevat:">
+<!ENTITY user "Gebruiker:">
+<!ENTITY groupl "Groep:">
+<!ENTITY attr "Attributen:">
+<!ENTITY hash "Hashcodes genereren:">
+<!ENTITY perm "Toelatingen:">
+<!ENTITY reado "Alleen-lezen">
+<!ENTITY hidden "Verborgen">
+<!ENTITY owner "Eigenaar">
+<!ENTITY group "Groep">
+<!ENTITY public "Publiek">
+<!ENTITY read "Lezen">
+<!ENTITY write "Schrijven">
+<!ENTITY exec "Uitvoeren">
+<!ENTITY manual "Handmatig:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Toepassen op:">
+<!ENTITY thisprop "Deze map">
+<!ENTITY folderprop "Alle onderliggende mappen">
+<!ENTITY filesprop "Alle onderliggende bestanden">
+<!ENTITY thumbnail "Voorbeeld">
+<!ENTITY loading "Inladen...">
+<!ENTITY view.label "Bekijken">
+<!ENTITY view.accesskey "B">

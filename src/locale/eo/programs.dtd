@@ -1,0 +1,22 @@
+<!ENTITY title "Programoj">
+<!ENTITY add.label "Aldoni">
+<!ENTITY remove.label "Forigi">
+<!ENTITY extensions.label "Etendaĵoj">
+<!ENTITY programs.label "Programoj">
+<!ENTITY details.label "Programdetaloj">
+<!ENTITY name.label "Nomo">
+<!ENTITY exec.label "Vojo">
+<!ENTITY browse.label "Foliumi">
+<!ENTITY args.label "Argumentoj">
+<!ENTITY argshelp1.label "Kiam la kampo 'Argumentoj'  estas malplena, la dosiero mem estas transdonata kiel argumento.">
+<!ENTITY argshelp2.label "Uzu &#37;file&#37; en viaj argumentoj por reprezenti la dosieron, kiu estu transdonata.">
+<!ENTITY apply.label "Apliki">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "o">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "r">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "V">
+<!ENTITY browse.accesskey "F">
+<!ENTITY args.accesskey "u">
+<!ENTITY apply.accesskey "l">

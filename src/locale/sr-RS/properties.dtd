@@ -1,0 +1,31 @@
+<!ENTITY title "Својства">
+<!ENTITY path "Путања:">
+<!ENTITY webpath "Веб путања:">
+<!ENTITY size "Величина:">
+<!ENTITY date "Датум:">
+<!ENTITY contains "Садржи:">
+<!ENTITY user "Корисник:">
+<!ENTITY groupl "Група:">
+<!ENTITY attr "Атрибути:">
+<!ENTITY hash "Hash запис:">
+<!ENTITY perm "Дозволе:">
+<!ENTITY reado "Само за читање">
+<!ENTITY hidden "Сакривено">
+<!ENTITY owner "Власник">
+<!ENTITY group "Група">
+<!ENTITY public "Јавно">
+<!ENTITY read "Читање">
+<!ENTITY write "Писање">
+<!ENTITY exec "Извршавање">
+<!ENTITY manual "Ручно:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Налепнице">
+<!ENTITY applyto "Примени на:">
+<!ENTITY thisprop "Ову фасциклу">
+<!ENTITY folderprop "Све садржане фасцикле">
+<!ENTITY filesprop "Све садржане датотеке">
+<!ENTITY thumbnail "Сличица">
+<!ENTITY loading "Учитавање…">
+<!ENTITY view.label "Приказ">
+<!ENTITY view.accesskey "П">

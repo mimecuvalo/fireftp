@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/platform.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://fireftp/locale/fireftp.dtd">
+<window id            = "fireftp-main-window"
+        title         = "FireFTP"
+        width         = "800"
+        height        = "600"
+        orient        = "vertical"
+        xmlns         = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html    = "http://www.w3.org/1999/xhtml"
+        persist       = "width height screenX screenY sizemode"
+        onmousemove   = "treeHighlighter.mouseMove(event)"
+        onmousedown   = "treeHighlighter.mouseDown(event)"
+        onmouseup     = "treeHighlighter.mouseUp  (event)"
+        ondraggesture = "nsDragAndDrop.startDrag  (event, dragObserver)"
+        ondragover    = "nsDragAndDrop.dragOver   (event, dragObserver)"
+        ondrop        = "nsDragAndDrop.drop       (event, dragObserver)"
+        onload        = "startup()"
+        onunload      = "unload()"
+        onresize      = "doResizeReverseHack()"
+        disablefastfind="true">
+
+  <html:link rel="icon" href="chrome://fireftp/skin/icons/logo.png" style="display:none"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/globals.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/baseProtocol.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/controlSocket.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/dataSocket.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/ftpController.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/baseObserver.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/ftpObserver.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/fxp.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/fxpObserver.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/transfer.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/transferObserver.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/ssh2.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/ssh2Observer.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/crypto.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Cipher/AES.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Cipher/Blowfish.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Cipher/DES3.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Cipher/ARC4.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Hash/baseHash.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Hash/SHA.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Hash/SHA256.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Hash/MD5.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Hash/HMAC.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/PublicKey/RSA.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/PublicKey/DSA.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/_UserFriendlyRNG.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/Fortuna/SHAd256.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaAccumulator.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/Fortuna/FortunaGenerator.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/OSRNG/nt.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Random/OSRNG/posix.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/crypto/Util/randpool.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/python_shim.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/BigInteger.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/agent.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/auth_handler.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/ber.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/channel.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/client.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/compress.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/dsskey.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/file.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/hostkeys.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/kex_gex.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/kex_group1.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/message.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/packet.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/pkey.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/primes.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/rsakey.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/sftp_attr.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/sftp_client.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/sftp_file.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/sftp.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/ssh_exception.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/transport.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/util.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/connection/paramikojs/win_pageant.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/diff.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/dragDrop.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/fileSort.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/loadUnload.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/log.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/preferences.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/programs.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/queueTree.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/search.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/sessionsPasswords.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/treeHighlighter.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/treeSync.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/UIUpdate.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localFile.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localTree.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/local/localDirTree.js"/>
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/remote/remoteTree.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/remote/remoteDirTree.js"/>
+
+  <script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js"/>
+
+  <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
+
+  <commandset>
+    <command id="cmd_connect"    oncommand="connect()"/>
+    <command id="cmd_disconnect" oncommand="disconnect()"/>
+    <command id="cmd_search"     oncommand="showSearch(true)"/>
+    <command id="cmd_dummy"      oncommand="return;"/>
+  </commandset>
+
+  <keyset>
+    <key id="key_transfer"      command="cmd_dummy"    keycode="VK_ENTER"/>
+    <key id="key_open"          command="cmd_dummy"    key="O" modifiers="accel"/>
+    <key id="key_url"           command="cmd_dummy"    key="U" modifiers="accel"/>
+    <key id="key_cut"           command="cmd_dummy"    key="X" modifiers="accel"/>
+    <key id="key_copy"          command="cmd_dummy"    key="C" modifiers="accel"/>
+    <key id="key_paste"         command="cmd_dummy"    key="V" modifiers="accel"/>
+    <key id="key_dir"           command="cmd_dummy"    key="D" modifiers="accel"/>
+    <key id="key_file"          command="cmd_dummy"    key="N" modifiers="accel"/>
+    <key id="key_remove"        command="cmd_dummy"    keycode="VK_DELETE"/>
+    <key id="key_rename"        command="cmd_dummy"    keycode="VK_F2"/>
+    <key id="key_properties"    command="cmd_dummy"    key="P" modifiers="accel"/>
+    <key id="key_search"        command="cmd_search"   key="F" modifiers="accel"/>
+  </keyset>
+
+  <!-- :::::::::::::::::::::::::::::: context menus :::::::::::::::::::::::::::::: -->
+
+  <popupset>
+    <menupopup id="localmenu" onpopupshowing="localTree.createContextMenu()">
+      <menuitem oncommand="localTree.openContainingFolder();"   label="&openContaining.label;"                                      id="localOpenCont"/>
+      <menuseparator                                                                                                                id="localOpenContSep"/>
+      <menuitem oncommand="new transfer().start(false);"        label="&upload.label;"              key="key_transfer"              id="localUpload"/>
+      <menuitem oncommand="localTree.launch()"                  label="&open.label;"                key="key_open"                  id="localOpen"/>
+      <menu label="&openwith.label;"                                                                                                id="localOpenWith">
+        <menupopup id="openWithMenu">
+        </menupopup>
+      </menu>
+      <menuitem oncommand="localTree.extract(false)"            label="&extractHere.label;"                                         id="extractHereContext"/>
+      <menuitem oncommand="localTree.extract(true)"             label="&extractTo.label;"                                           id="extractToContext"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.cut()"                     label="&cut.label;"                 key="key_cut"                   id="localCutContext"/>
+      <menuitem oncommand="localTree.copy()"                    label="&copy.label;"                key="key_copy"                  id="localCopyContext"/>
+      <menuitem oncommand="localTree.paste()"                   label="&paste.label;"               key="key_paste" disabled="true" id="localPasteContext"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.create(true)"              label="&makedir.label;"             key="key_dir"                   id="localCreateDir"/>
+      <menuitem oncommand="localTree.create(false)"             label="&makefile.label;"            key="key_file"                  id="localCreateFile"/>
+      <menuitem oncommand="localTree.remove()"                  label="&delete.label;"              key="key_remove"/>
+      <menuitem oncommand="localTree.rename()"                  label="&rename.label;"              key="key_rename"/>
+      <menuseparator/>
+      <menuitem oncommand="localTree.showProperties(false)"     label="&properties.label;"          key="key_properties"/>
+      <menuitem oncommand="localTree.showProperties(true)"      label="&rproperties.label;"                                         id="localRecursiveProperties"/>
+    </menupopup>
+    <menupopup id="remotemenu" onpopupshowing="remoteTree.createContextMenu()">
+      <menuitem oncommand="remoteTree.openContainingFolder();"  label="&openContaining.label;"                                      id="remoteOpenCont"/>
+      <menuseparator                                                                                                                id="remoteOpenContSep"/>
+      <menuitem oncommand="new transfer().start(true)"          label="&download.label;"            key="key_transfer"              id="remoteDownload"/>
+      <menuitem oncommand="remoteTree.launch()"                 label="&open.label;"                key="key_open"                  id="remoteOpen"/>
+      <menu label="&openwith.label;"                                                                                                id="remoteOpenWith">
+        <menupopup id="remoteOpenWithMenu">
+        </menupopup>
+      </menu>
+      <menuseparator/>
+      <menuitem oncommand="remoteTree.viewOnTheWeb()"           label="&viewweb.label;"                                             id="remoteWeb"/>
+      <menu label="&copyUrl.label;"                                                                                                 id="remoteCopyUrl">
+        <menupopup>
+          <menuitem oncommand="remoteTree.copyUrl(true)"        label="HTTP"                        key="key_url"/>
+          <menuitem oncommand="remoteTree.copyUrl(false)"       label="FTP"/>
+          <menuitem oncommand="remoteTree.copyUrl(false, true)" label="&copyUrlLogin.label;"/>
+        </menupopup>
+      </menu>
+      <menu label="FXP"                                                                                                             id="remoteFXP">
+        <menupopup id="remoteFXPMenu">
+        </menupopup>
+      </menu>
+      <menuseparator/>
+      <menuitem oncommand="remoteTree.cut()"                    label="&cut.label;"                 key="key_cut"                   id="remoteCutContext"/>
+      <menuitem oncommand="remoteTree.paste()"                  label="&paste.label;"               key="key_paste" disabled="true" id="remotePasteContext"/>
+      <menuseparator/>
+      <menuitem oncommand="remoteTree.create(true)"             label="&makedir.label;"             key="key_dir"                   id="remoteCreateDir"/>
+      <menuitem oncommand="remoteTree.create(false)"            label="&makefile.label;"            key="key_file"                  id="remoteCreateFile"/>
+      <menuitem oncommand="remoteTree.create(false, true)"      label="&symlink.label;"                                             id="remoteCreateSymlink"/>
+      <menuitem oncommand="remoteTree.remove()"                 label="&delete.label;"              key="key_remove"                id="remoteRemove"/>
+      <menuitem oncommand="remoteTree.rename()"                 label="&rename.label;"              key="key_rename"                id="remoteRename"/>
+      <menuseparator/>
+      <menuitem oncommand="remoteTree.showProperties(false)"    label="&properties.label;"          key="key_properties"            id="remoteProperties"/>
+      <menuitem oncommand="remoteTree.showProperties(true)"     label="&rproperties.label;"                                         id="remoteRecursiveProperties"/>
+    </menupopup>
+    <menupopup id="queuemenu" onpopupshowing="queueTree.createContextMenu()">
+      <menuitem oncommand="queueTree.retry();"                  label="&retry.label;"                                               id="queueRetry"/>
+      <menuitem oncommand="queueTree.cancel();"                 label="&cancel.label;"              key="key_remove"                id="queueCancel"/>
+      <menuseparator/>
+      <menuitem oncommand="doAbort()"                           label="&cancelAll.label;"                                           id="queueCancelAll"/>
+    </menupopup>
+    <menupopup id="advancedpopup"       position="after_start" onpopupshowing="toolsPopupMenu()">
+      <menuitem oncommand="showSearch(true)"                    label="&search.label;"              accesskey="&search.access;"     id="searchMenuItem" key="key_search"/>
+      <menuseparator/>
+      <menuitem oncommand="diff(false)"                         label="&diff.label;"                accesskey="&diff.access;"       id="diffMenuItem"/>
+      <menuitem oncommand="diff(true)"                          label="&recdiff.label;"             accesskey="&recdiff.access;"    id="recDiffMenuItem"/>
+      <menuseparator/>
+      <menuitem oncommand="custom()"                            label="&custom.label;"              accesskey="&custom.access;"     id="customMenuItem"/>
+      <menuseparator/>
+      <menuitem oncommand="importSites()"                       label="&import.label;"              accesskey="&import.access;"     id="importMenuItem"/>
+      <menuitem oncommand="exportSites()"                       label="&export.label;"              accesskey="&export.access;"     id="exportMenuItem"/>
+      <menuseparator/>
+      <menuitem oncommand="showPreferences()"                   label="&preferencestab.label;"      accesskey="&prefbutton.access;" id="prefbutton"/>
+    </menupopup>
+    <menupopup id="searchpopup"       position="before_start">
+      <menuitem oncommand="showSearchDates()" type="checkbox"   label="&searchDates.label;"         accesskey="&searchDates.access;"  id="searchDates"      persist="checked"/>
+      <menuitem type="checkbox"                                 label="&searchRegexp.label;"        accesskey="&searchRegexp.access;" id="searchRegExp"     persist="checked"/>
+      <menuitem type="checkbox"                                 label="&searchMatch.label;"         accesskey="&searchMatch.access;"  id="searchMatchCase"  persist="checked"/>
+      <menuitem type="checkbox"                                 label="&searchSubdir.label;"        accesskey="&searchSubdir.access;" id="searchSubdir"     persist="checked"/>
+    </menupopup>
+    <menupopup id="typepopup" position="before_start">
+      <menuitem type="checkbox" oncommand="onChangeType(0)"                     label="&auto.label;"    id="autoMode"    persist="checked"/>
+      <menuitem type="checkbox" oncommand="onChangeType(1)"                     label="&binary.label;"  id="binaryMode"  persist="checked"/>
+      <menuitem type="checkbox" oncommand="onChangeType(2)"                     label="&ascii.label;"   id="asciiMode"   persist="checked"/>
+    </menupopup>
+
+    <panel id="identity-popup" noautofocus="true" flip="both" position="bottomcenter topleft" type="arrow">
+      <hbox id="identity-popup-container" align="top">
+        <image id="identity-popup-icon"/>
+        <vbox id="identity-popup-content-box">
+          <description id="identity-popup-content-supplemental" class="identity-popup-description"/>
+          <description id="identity-popup-content-host" class="identity-popup-description"/>
+          <description id="identity-popup-content-verifier" class="identity-popup-description"/>
+          <hbox id="identity-popup-encryption" flex="1">
+            <vbox>
+              <image id="identity-popup-encryption-icon"/>
+            </vbox>
+            <description id="identity-popup-encryption-label" flex="1" class="identity-popup-description"/>
+          </hbox>
+        </vbox>
+      </hbox>
+    </panel>
+  </popupset>
+
+  <vbox flex="1">
+
+    <!-- :::::::::::::::::::::::::::::: main toolbar :::::::::::::::::::::::::::::: -->
+
+    <toolbar         id="main-toolbar"  align="center">
+      <toolbaritem   collapsed="true" id="folderItem">
+        <menulist    id="folder"                                                                       oncommand="onFolderChange(false, true)" width="175"/>
+      </toolbaritem>
+      <toolbaritem>
+        <menulist    id="account"       label="&accountlist.label;"    onclick="createAccount()"       oncommand="onAccountChange()" width="175"/>
+      </toolbaritem>
+      <toolbarbutton id="connectbutton"/>
+      <toolbarbutton id="editMenuItem"  label="&edit.label;"           accesskey="&edit.access;"       oncommand="editSite()"/>
+      <toolbarbutton id="abortbutton"   label="&abort.label;"          accesskey="&abort.access;"      oncommand="doAbort()"/>
+      <toolbarspacer flex="1"/>
+      <toolbarbutton id="logbutton"     label="&logtab.label;"         accesskey="&logbutton.access;"  oncommand="showLog()" type="checkbox" persist="checked"  autoCheck="false" />
+      <toolbarbutton id="advmenu"       label="&advanced.label;"       accesskey="&advanced.access;"   popup="advancedpopup"/>
+      <toolbarbutton id="helpbutton"    label="&help.label;"           accesskey="&helpbutton.access;"
+                     oncommand="runInFirefox('&help.url;')"/>
+    </toolbar>
+
+    <box flex="10">
+      <vbox id="localview" flex="1">
+
+        <!-- :::::::::::::::::::::::::::::: local toolbar :::::::::::::::::::::::::::::: -->
+
+        <toolbar id="localtoolbar">
+          <toolbarbutton class="upButton"      oncommand="localDirTree.cdup()"            tooltiptext="&parentdir.tip;"/>
+          <toolbarbutton class="refreshButton" oncommand="localTree.refresh(false, true)" tooltiptext="&refresh.tip;"/>
+          <textbox id                      = "localpath"
+                   flex                    = "1"
+                   tooltiptext             = "&localpath.tip;"
+                   onfocus                 = "onLocalPathFocus(event)"
+                   onblur                  = "onLocalPathBlur(event)"
+                   onkeypress              = "if (event.keyCode == 13) localDirTree.changeDir(this.value)"
+                   ontextentered           = "localDirTree.changeDir(this.value)"
+                   type                    = "autocomplete"
+                   tabscrolling            = "true"
+                   enablehistory           = "true"
+                   autocompletepopup       = "PopupAutoComplete"
+                   autocompletesearch      = "form-history"
+                   autocompletesearchparam = "localpath"/>
+          <toolbarbutton label="&browse.label;" oncommand="browseLocal()" accesskey="&browsebutton.access;"/>
+        </toolbar>
+
+        <!-- :::::::::::::::::::::::::::::: local file view :::::::::::::::::::::::::::::: -->
+
+        <hbox   width="1" flex="1" onmouseover="localTree.mouseOver(event)">
+          <tree id="localdirtree"  class="plain" flex="1" hidecolumnpicker="true" persist="collapsed"
+                onkeypress="localDirTree.keyPress(event)"
+                onselect  ="localDirTree.select(event)"
+                onclick   ="localDirTree.click(event)">
+            <treecols>
+              <treecol    id="localdirname" flex="1" primary="true" persist="width ordinal hidden"/>
+            </treecols>
+            <treechildren id="localdirtreechildren" class="dirTree" context="localdirmenu"/>
+          </tree>
+          <splitter id="localsplitter" persist="state" collapse="before">
+            <grippy/>
+          </splitter>
+          <tree        id="localtree" class="plain" flex="2" enableColumnDrag="true" onkeypress="localTree.keyPress(event)" editable="true">
+            <treecols>
+              <treecol id="localname" label="&name.label;" flex="2" persist="width ordinal hidden sortDirection" sortDirection="ascending"/>
+              <splitter                class="tree-splitter"/>
+              <treecol id="localsize" label="&size.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                class="tree-splitter"/>
+              <treecol id="localtype" label="&type.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                class="tree-splitter"/>
+              <treecol id="localdate" label="&date.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                class="tree-splitter"/>
+              <treecol id="localattr" label="&attr.label;" flex="1" persist="width ordinal hidden sortDirection" hidden="true"/>
+            </treecols>
+            <treechildren id="localtreechildren" class="fileTree" context="localmenu"
+                          ondblclick="localTree.dblClick(event)"
+                          onclick   ="localTree.click(event)"/>
+          </tree>
+        </hbox>
+      </vbox>
+
+      <splitter   id="leftsplitter"   collapse="before" resizebefore="closest" resizeafter="farthest" oncommand="setInterfaceMode()">
+        <grippy/>
+      </splitter>
+      <vbox       pack="center">
+        <box      id="retrbutton">
+          <button id="retrieveButton" oncommand="new transfer().start(true)"  tooltiptext="&download.label;"/>
+        </box>
+        <box      id="storbutton">
+          <button id="storeButton"    oncommand="new transfer().start(false)" tooltiptext="&upload.label;"/>
+        </box>
+      </vbox>
+      <splitter   id="rightsplitter"  collapse="after" resizebefore="farthest" resizeafter="closest" oncommand="setInterfaceMode()">
+        <grippy/>
+      </splitter>
+
+      <vbox id="remoteview" flex="1">
+
+        <!-- :::::::::::::::::::::::::::::: remote toolbar :::::::::::::::::::::::::::::: -->
+
+        <toolbar>
+          <toolbarbutton id="remoteUpButton"      class="upButton"      oncommand="remoteDirTree.cdup()" tooltiptext="&parentdir.tip;"/>
+          <toolbarbutton id="remoteRefreshButton" class="refreshButton" oncommand="remoteTree.refresh()" tooltiptext="&refresh.tip;"/>
+          <textbox id                      = "remotepath"
+                   value                   = "/"
+                   flex                    = "1"
+                   tooltiptext             = "&remotepath.tip;"
+                   onfocus                 = "onRemotePathFocus(event)"
+                   onblur                  = "onRemotePathBlur(event)"
+                   onkeypress              = "if (event.keyCode == 13) remoteDirTree.changeDir(this.value)"
+                   ontextentered           = "remoteDirTree.changeDir(this.value)"
+                   type                    = "autocomplete"
+                   tabscrolling            = "true"
+                   enablehistory           = "true"
+                   autocompletepopup       = "PopupAutoComplete"
+                   autocompletesearch      = "form-history"
+                   autocompletesearchparam = "remotepath">
+            <box id="identity-box" align="center" popup="identity-popup">
+              <deck id="page-proxy-deck">
+                <image id="page-proxy-button"/>
+                <image id="page-proxy-favicon" validate="never"
+                       onload="this.parentNode.selectedIndex = 1; event.stopPropagation();"
+                       onerror="this.removeAttribute('src'); this.parentNode.selectedIndex = 0;"/>
+              </deck>
+            </box>
+          </textbox>
+          <toolbarbutton id="remoteChangeButton" label="&change.label;" oncommand="remoteDirTree.changeDir(gRemotePath.value)" accesskey="&changebutton.access;"/>
+        </toolbar>
+
+        <!-- :::::::::::::::::::::::::::::: remote file view :::::::::::::::::::::::::::::: -->
+
+        <hbox   width="1" flex="1" onmouseover="remoteTree.mouseOver(event)">
+          <tree id="remotedirtree" class="plain" flex="1" hidecolumnpicker="true" persist="collapsed"
+                onkeypress="remoteDirTree.keyPress(event)"
+                onselect  ="remoteDirTree.select(event)"
+                onclick   ="remoteDirTree.click(event)">
+            <treecols>
+              <treecol    id="remotedirname" flex="1" primary="true" persist="width ordinal hidden"/>
+            </treecols>
+            <treechildren id="remotedirtreechildren" class="dirTree" context="remotedirmenu"/>
+          </tree>
+          <splitter id="remotesplitter" collapse="before" persist="state">
+            <grippy/>
+          </splitter>
+          <tree        id="remotetree" class="plain" flex="2" enableColumnDrag="true" onkeypress="remoteTree.keyPress(event)" editable="true">
+            <treecols>
+              <treecol id="remotename" label="&name.label;" flex="2" persist="width ordinal hidden sortDirection" sortDirection="ascending"/>
+              <splitter                 class="tree-splitter"/>
+              <treecol id="remotesize" label="&size.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                 class="tree-splitter"/>
+              <treecol id="remotetype" label="&type.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                 class="tree-splitter"/>
+              <treecol id="remotedate" label="&date.label;" flex="1" persist="width ordinal hidden sortDirection"/>
+              <splitter                 class="tree-splitter"/>
+              <treecol id="remoteattr" label="&attr.label;" flex="1" persist="width ordinal hidden sortDirection" hidden="true"/>
+            </treecols>
+            <treechildren id="remotetreechildren" class="fileTree" context="remotemenu"
+                          ondblclick="remoteTree.dblClick(event)"
+                          onclick   ="remoteTree.click(event)"/>
+          </tree>
+        </hbox>
+      </vbox>
+    </box>
+
+    <!-- :::::::::::::::::::::::::::::: log/queue :::::::::::::::::::::::::::::: -->
+
+    <splitter id="logsplitter" collapse="after" resizebefore="closest" onmousedown="checkLogMouseDown()" onmouseup="checkLogCollapsed()">
+      <grippy onmouseup="setTimeout(checkLogCollapsed,0)"/>
+    </splitter>
+    <tabbox        id="logqueue" height="150" persist="height">
+      <tabpanels   id="lqtabs"   flex="1">
+        <tabpanel  flex="1">
+          <browser type="content" id="cmdlog" src="chrome://fireftp/content/blank.html" flex="1" persist="height"/>
+        </tabpanel>
+        <tabpanel flex="1">
+          <tree        id="queuetree" class="plain" flex="1" enableColumnDrag="true" onkeypress="queueTree.keyPress(event)">
+            <treecols>
+              <treecol id="queuesource"  label="&source.label;" flex="10" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuedest"    label="&dest.label;"   flex="10" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuebytes"   label="&bytes.label;"  flex="10" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuepercent" label="&percent.tip;"  flex="3" persist="width ordinal hidden" type="progressmeter"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queueela"     label="&timeela.tip;"  flex="1" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuerem"     label="&timerem.tip;"  flex="1" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuerate"    label="&download.tip;" flex="1" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuetype"    label="&type.label;"   flex="1" persist="width ordinal hidden"/>
+              <splitter                   class="tree-splitter"/>
+              <treecol id="queuestatus"  label="&status.label;" flex="1" persist="width ordinal hidden"/>
+            </treecols>
+            <treechildren id="queuetreechildren" class="fileTree" context="queuemenu"/>
+          </tree>
+        </tabpanel>
+      </tabpanels>
+      <tabs  class="tabs-bottom" id="logQueueTabs" onclick="logQueueMode()" onkeypress="logQueueMode()">
+        <tab class="tab-bottom" label="&ltab.label;"/>
+        <tab class="tab-bottom" label="&qtab.label;"/>
+      </tabs>
+    </tabbox>
+
+  </vbox>
+
+  <!-- :::::::::::::::::::::::::::::: search toolbar :::::::::::::::::::::::::::::: -->
+
+  <toolbar      id="searchToolbar"  align="center" collapsed="true">
+    <toolbarbutton id="searchClosebutton" oncommand="showSearch(false);"/>
+    <hbox id="searchContainer">
+      <textbox  id="searchFile"        onkeypress="if (event.keyCode == 27) showSearch(false); else if (event.keyCode == 13) searchWrapper()"/>
+    </hbox>
+    <button     id="searchButton"      label="&searchButton.label;"  accesskey="&searchButton.access;"  oncommand="searchWrapper()" />
+    <radiogroup id="searchWhich" orient="horizontal" onselect="searchSelectType()">
+      <radio    id="searchLocal"       label="&searchLocal.label;"   accesskey="&searchLocal.access;"   persist="selected"/>
+      <radio    id="searchRemote"      label="&searchRemote.label;"  accesskey="&searchRemote.access;"  persist="selected"/>
+    </radiogroup>
+    <button     id="searchMenu"        label="&searchOptions.label;" accesskey="&searchOptions.access;" popup="searchpopup"/>
+    <hbox       id="searchDateBox" align="center">
+      <label      value="&searchFrom.label;" control="searchDateFrom"/>
+      <datepicker id="searchDateFrom"    type="popup"/>
+      <label      value="&searchTo.label;"   control="searchDateTo"/>
+      <datepicker id="searchDateTo"      type="popup"/>
+    </hbox>
+    <image      id="searchStatusIcon"/>
+    <label      id="searchStatus"/>
+  </toolbar>
+
+  <!-- :::::::::::::::::::::::::::::: status bar :::::::::::::::::::::::::::::: -->
+
+  <statusbar>
+    <statusbarpanel  id="statustxt"       label="FireFTP"             flex="1"/>
+    <statusbarpanel  id="statusbytes"/>
+    <statusbarpanel  id="statustype"      tooltiptext="&type.tip;"    popup="typepopup"/>
+    <statusbarpanel  id="statuselapsed"   tooltiptext="&timeela.tip;"/>
+    <statusbarpanel  id="statusremaining" tooltiptext="&timerem.tip;"/>
+    <statusbarpanel  id="statusrate"      tooltiptext="&download.tip;"/>
+    <statusbarpanel  id="statusmeterpanel">
+      <progressmeter id="statusmeter"     tooltiptext="&percent.tip;" mode="normal" />
+    </statusbarpanel>
+  </statusbar>
+
+</window>

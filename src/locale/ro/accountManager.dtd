@@ -1,0 +1,66 @@
+<!ENTITY title "Gestionar de conturi">
+<!ENTITY main "General">
+<!ENTITY connections "Conexiune">
+<!ENTITY advanced "Complex">
+<!ENTITY maindetails "Informații principale">
+<!ENTITY id "Identificare">
+<!ENTITY account.label "Denumire cont:">
+<!ENTITY account.tip "Exemplu: Saitul meu FTP">
+<!ENTITY folder.label "Categorie:">
+<!ENTITY optional.label "(opțional)">
+<!ENTITY host.label "Server:">
+<!ENTITY host.tip "Exemplu: ftp.mozilla.org">
+<!ENTITY login.label "Utilizator:">
+<!ENTITY password.label "Parolă:">
+<!ENTITY anonymous.label "Anonim">
+<!ENTITY connection "Tip conexiune">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Mod pasiv">
+<!ENTITY security.label "Securitate:">
+<!ENTITY none.label "Niciuna">
+<!ENTITY authtls.label "Autentificare TLS (cea mai bună)">
+<!ENTITY authssl.label "Autentificare SSL explicită (mai bună)">
+<!ENTITY implicit.label "Autentificare SSL implicită (bună)">
+<!ENTITY sftp.label "Secure FTP">
+<!ENTITY privatekey.label "Cheie privată:">
+<!ENTITY pkbrowse.label "Răsfoiește...">
+<!ENTITY pkconvert.label "Convertește...">
+<!ENTITY initialdir "Dosare inițiale">
+<!ENTITY download "Opțiuni de descărcare">
+<!ENTITY upload "Opțiuni de încărcare">
+<!ENTITY localdir.label "Local:">
+<!ENTITY remotedir.label "La distanță:">
+<!ENTITY current.label "Dosarul curent">
+<!ENTITY treesync.label "Menține sincronizarea dosarelor în timpul navigării">
+<!ENTITY webhost "Adresă web (folosită cu facilitatea &quot;Vezi pe web&quot;)">
+<!ENTITY webhost.tip "Exemplu: http://www.exemplu.ro">
+<!ENTITY prefix.label "Prefix:">
+<!ENTITY prefix.tip "Prefixul care se elimină din partea FTP a adresei, ex: /public_html">
+<!ENTITY caseleave.label "Nu transforma caracterele">
+<!ENTITY caselower.label "Transformă în minuscule">
+<!ENTITY caseupper.label "Transformă în majuscule">
+<!ENTITY timezone.label "Diferență de fus orar">
+<!ENTITY hours.label "Ore:">
+<!ENTITY minutes.label "Minute:">
+<!ENTITY notes.label "Notițe">
+<!ENTITY encoding.label "Codare server">
+<!ENTITY charset.label "Set de caractere:">
+<!ENTITY account.access "c">
+<!ENTITY folder.access "t">
+<!ENTITY host.access "S">
+<!ENTITY login.access "U">
+<!ENTITY password.access "P">
+<!ENTITY anonymous.access "A">
+<!ENTITY pasv.access "v">
+<!ENTITY port.access "P">
+<!ENTITY security.access "S">
+<!ENTITY privatekey.access "h">
+<!ENTITY pkbrowse.access "R">
+<!ENTITY pkconvert.access "o">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "d">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "M">
+<!ENTITY webhost.access "S">
+<!ENTITY prefix.access "x">

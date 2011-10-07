@@ -1,0 +1,31 @@
+<!ENTITY title "Thuộc tính">
+<!ENTITY path "Đường dẫn:">
+<!ENTITY webpath "Đường dẫn web:">
+<!ENTITY size "Dung lượng:">
+<!ENTITY date "Ngày:">
+<!ENTITY contains "Chứa:">
+<!ENTITY user "Người dùng:">
+<!ENTITY groupl "Nhóm:">
+<!ENTITY attr "Tính chất:">
+<!ENTITY hash "Tạo mã băm:">
+<!ENTITY perm "Quyền:">
+<!ENTITY reado "Chỉ đọc">
+<!ENTITY hidden "Ẩn">
+<!ENTITY owner "Chủ">
+<!ENTITY group "Nhóm">
+<!ENTITY public "Công cộng">
+<!ENTITY read "Đọc">
+<!ENTITY write "Ghi">
+<!ENTITY exec "Thực thi">
+<!ENTITY manual "Thủ công:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Dính">
+<!ENTITY applyto "Áp dụng cho:">
+<!ENTITY thisprop "Thư mục này">
+<!ENTITY folderprop "Mọi thư mục">
+<!ENTITY filesprop "Mọi tập tin">
+<!ENTITY thumbnail "Hình thu nhỏ">
+<!ENTITY loading "Đang tải...">
+<!ENTITY view.label "Xem">
+<!ENTITY view.accesskey "X">

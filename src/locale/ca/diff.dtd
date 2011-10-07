@@ -1,0 +1,24 @@
+<!ENTITY title "Comparació de carpetes">
+<!ENTITY file.label "Fitxer">
+<!ENTITY reason.label "Raó">
+<!ENTITY action.label "Acció">
+<!ENTITY download.label "Descarrega">
+<!ENTITY upload.label "Upload">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "No facis res">
+<!ENTITY defaults.label "Set Defaults">
+<!ENTITY local.label "For missing local files:">
+<!ENTITY remote.label "For missing remote files:">
+<!ENTITY diff.label "For different file sizes:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Nota: La utilitat DIF (comparació de carpetes) no compara el contingut dels fitxers, només compara els fitxers existents i els inexistents a les carpetes que són comparades, i també compara les diferències de mida entre fitxers.">

@@ -1,0 +1,66 @@
+<!ENTITY title "Профил мениджър">
+<!ENTITY main "Основен">
+<!ENTITY connections "Връзка">
+<!ENTITY advanced "Разширени">
+<!ENTITY maindetails "Основни детайли">
+<!ENTITY id "ID">
+<!ENTITY account.label "Име на профила:">
+<!ENTITY account.tip "Пример: Моят FTP сайт">
+<!ENTITY folder.label "Категория:">
+<!ENTITY optional.label "(по избор)">
+<!ENTITY host.label "Хост:">
+<!ENTITY host.tip "Пример: ftp.debian.org">
+<!ENTITY login.label "Потребител:">
+<!ENTITY password.label "Парола:">
+<!ENTITY anonymous.label "Анонимен">
+<!ENTITY connection "Тип на връзката">
+<!ENTITY port.label "Порт:">
+<!ENTITY pasv.label "Пасивен режим">
+<!ENTITY security.label "Сигурност:">
+<!ENTITY none.label "Няма">
+<!ENTITY authtls.label "Удостоверено TLS (най-добра)">
+<!ENTITY authssl.label "Удостоверено SSL (по-добра)">
+<!ENTITY implicit.label "Неявно SSL (добра)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Частен ключ:">
+<!ENTITY pkbrowse.label "Преглед…">
+<!ENTITY pkconvert.label "Конвертиране…">
+<!ENTITY initialdir "Първоначални директории">
+<!ENTITY download "Опции за сваляне">
+<!ENTITY upload "Опции за качване">
+<!ENTITY localdir.label "Локална:">
+<!ENTITY remotedir.label "Отдалечена:">
+<!ENTITY current.label "Използване на настоящ">
+<!ENTITY treesync.label "Поддържане на директориите в синхрон по време на навигацията">
+<!ENTITY webhost "Мрежов хост (за използване с функцията &quot;Преглед в мрежата&quot;)">
+<!ENTITY webhost.tip "Пример: http://www.example.com">
+<!ENTITY prefix.label "Префикс:">
+<!ENTITY prefix.tip "Префикс за премахване на FTP частта от URL, например / public_html">
+<!ENTITY caseleave.label "Без промяна в регистъра на буквите">
+<!ENTITY caselower.label "Конвертиране към малки букви">
+<!ENTITY caseupper.label "Конвертиране към главни букви">
+<!ENTITY timezone.label "Отместване на часовата зона">
+<!ENTITY hours.label "Часа:">
+<!ENTITY minutes.label "Минути:">
+<!ENTITY notes.label "Бележки">
+<!ENTITY encoding.label "Кодиране на сървъра">
+<!ENTITY charset.label "Набор от знаци:">
+<!ENTITY account.access "И">
+<!ENTITY folder.access "К">
+<!ENTITY host.access "Х">
+<!ENTITY login.access "б">
+<!ENTITY password.access "П">
+<!ENTITY anonymous.access "А">
+<!ENTITY pasv.access "ж">
+<!ENTITY port.access "о">
+<!ENTITY security.access "С">
+<!ENTITY privatekey.access "Ч">
+<!ENTITY pkbrowse.access "р">
+<!ENTITY pkconvert.access "К">
+<!ENTITY localdir.access "Л">
+<!ENTITY remotedir.access "О">
+<!ENTITY currentl.access "c">
+<!ENTITY currentr.access "н">
+<!ENTITY treesync.access "а">
+<!ENTITY webhost.access "т">
+<!ENTITY prefix.access "ф">

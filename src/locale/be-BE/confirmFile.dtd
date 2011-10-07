@@ -1,0 +1,11 @@
+﻿<!ENTITY title "Пацвердзіце перазапіс">
+<!ENTITY overwrite.label "Перазапісаць">
+<!ENTITY overwriteall.label "Перазапісаць усё">
+<!ENTITY skip.label "Прапусціць">
+<!ENTITY skipall.label "Прапусціць усё">
+<!ENTITY resume.label "Працягнуць">
+<!ENTITY overwrite.access "П">
+<!ENTITY overwriteall.access "у">
+<!ENTITY skip.access "і">
+<!ENTITY skipall.access "т">
+<!ENTITY resume.access "д">

@@ -1,0 +1,22 @@
+<!ENTITY title "Programs">
+<!ENTITY add.label "Add">
+<!ENTITY remove.label "Remove">
+<!ENTITY extensions.label "Extensions">
+<!ENTITY programs.label "Programs">
+<!ENTITY details.label "Program Details">
+<!ENTITY name.label "Name">
+<!ENTITY exec.label "Path">
+<!ENTITY browse.label "Browse">
+<!ENTITY args.label "Arguments">
+<!ENTITY argshelp1.label "Leaving the 'Arguments' field blank will default to passing the file as an argument.">
+<!ENTITY argshelp2.label "In custom arguments, use &#37;file&#37; to represent the file being passed.">
+<!ENTITY apply.label "Apply">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

@@ -1,0 +1,22 @@
+<!ENTITY title "アプリケーション">
+<!ENTITY add.label "追加">
+<!ENTITY remove.label "削除">
+<!ENTITY extensions.label "拡張子">
+<!ENTITY programs.label "アプリケーション">
+<!ENTITY details.label "アプリケーションの詳細">
+<!ENTITY name.label "名前">
+<!ENTITY exec.label "パス">
+<!ENTITY browse.label "参照">
+<!ENTITY args.label "引数">
+<!ENTITY argshelp1.label "&apos;引数&apos; の項目が空白の場合、デフォルトでファイルを渡します。">
+<!ENTITY argshelp2.label "引数をカスタマイズする場合は &#37;file&#37; と入力することでファイルを渡します。">
+<!ENTITY apply.label "適用">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

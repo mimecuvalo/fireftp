@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Link megnyitása a FireFTP-ben">
+<!ENTITY viewFireFTP "Az oldal megtekintése a FireFTP-ben">
+<!ENTITY accountlist.label "(Válasszon egy Kedvenc helyet)">
+<!ENTITY edit.label "Szerkesztés…">
+<!ENTITY abort.label "Megszakítás">
+<!ENTITY logtab.label "Napló/Sor">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "B">
+<!ENTITY advanced.label "Haladó">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Könyvtár összehasonlítás">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Egyedi…">
+<!ENTITY import.label "Importálás…">
+<!ENTITY export.label "Exportálás…">
+<!ENTITY preferencestab.label "Beállítások">
+<!ENTITY diff.access "K">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "E">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "B">
+<!ENTITY help.label "Súgó">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Visszalépés a szülőkönyvtárba">
+<!ENTITY refresh.tip "Könyvtár-lista frissítése">
+<!ENTITY localpath.tip "Helyi útvonal">
+<!ENTITY remotepath.tip "Távoli útvonal">
+<!ENTITY browse.label "Tallózás">
+<!ENTITY change.label "Ugrás">
+<!ENTITY name.label "Név">
+<!ENTITY size.label "Méret">
+<!ENTITY date.label "Dátum">
+<!ENTITY type.label "Típus">
+<!ENTITY attr.label "Attribútumok">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Az adatátviteli eljárás megváltoztatása (ajánlott: automatikus)">
+<!ENTITY bytes.tip "Bájt letöltve / Bájt összesen">
+<!ENTITY timeela.tip "Eltelt idő">
+<!ENTITY timerem.tip "Hátralévő idő">
+<!ENTITY download.tip "Letöltési arány">
+<!ENTITY percent.tip "Százalék kész">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Feltöltés">
+<!ENTITY download.label "Letöltés">
+<!ENTITY open.label "Megnyitás">
+<!ENTITY openwith.label "Megnyitás mással">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Megtekintés a Weben">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Kivágás">
+<!ENTITY copy.label "Másolás">
+<!ENTITY paste.label "Beillesztés">
+<!ENTITY makedir.label "Könyvtár létrehozása">
+<!ENTITY makefile.label "Fájl létrehozása">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "Törlés">
+<!ENTITY rename.label "Átnevezés">
+<!ENTITY properties.label "Tulajdonságok">
+<!ENTITY rproperties.label "Rekurzív beállítások">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "S">
+<!ENTITY abort.access "M">
+<!ENTITY advanced.access "H">
+<!ENTITY helpbutton.access "S">
+<!ENTITY browsebutton.access "T">
+<!ENTITY changebutton.access "g">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "És <html:em>íme</html:em>, a <html:em>sötétségből</html:em> előtűnnek hűséges szolgái, hogy <html:em>segítsék</html:em> a fenevad újjászületését, megkeresvén a világ <html:em>visszahódításának</html:em> útját. Együttesen, összefogva Ők azok, akik <html:em>kiterjesztik</html:em> a fenevad erejét és <html:em>elterjesztik</html:em> az Ő visszatértének jó hírét. És a <html:em>Mammon</html:em> követői egyenként mind megtértek, s szívüket <html:em>lángok</html:em> tisztítják meg.">
+<!ENTITY mozilla.from "<html:strong>Mozilla könyve</html:strong>, 8:2">

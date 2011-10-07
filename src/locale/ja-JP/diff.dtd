@@ -1,0 +1,24 @@
+<!ENTITY title "ディレクトリの差分">
+<!ENTITY file.label "ファイル">
+<!ENTITY reason.label "状態">
+<!ENTITY action.label "動作">
+<!ENTITY download.label "ダウンロード">
+<!ENTITY upload.label "アップロード">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "無視">
+<!ENTITY defaults.label "初期設定">
+<!ENTITY local.label "ローカル側に存在しない時:">
+<!ENTITY remote.label "リモート側に存在しない時:">
+<!ENTITY diff.label "ファイルサイズに違いがある時:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "注意: この差分チェックではファイルの内容までは比較しません。この差分チェックはディレクトリ内にファイルが存在するかしないかを比較し、その上でファイルサイズが異なっていないかを確認します。">

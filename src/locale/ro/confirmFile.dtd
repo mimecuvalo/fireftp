@@ -1,0 +1,13 @@
+<!ENTITY title "Confirmare înlocuire">
+<!ENTITY existing.label "Fișier existent:">
+<!ENTITY new.label "Fișier nou:">
+<!ENTITY overwrite.label "Înlocuiește">
+<!ENTITY overwriteall.label "Înlocuiește total">
+<!ENTITY skip.label "Ignoră">
+<!ENTITY skipall.label "Ignoră total">
+<!ENTITY resume.label "Reia">
+<!ENTITY overwrite.access "l">
+<!ENTITY overwriteall.access "a">
+<!ENTITY skip.access "I">
+<!ENTITY skipall.access "t">
+<!ENTITY resume.access "R">

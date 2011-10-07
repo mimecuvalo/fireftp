@@ -1,0 +1,24 @@
+<!ENTITY title "Порівняти теки">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Причина">
+<!ENTITY action.label "Дія">
+<!ENTITY download.label "Завантажити">
+<!ENTITY upload.label "Передати">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Не робити нічого">
+<!ENTITY defaults.label "Масова заміна">
+<!ENTITY local.label "Для відсутніх локальних файлів">
+<!ENTITY remote.label "Для відсутніх мережевих файлів">
+<!ENTITY diff.label "Якщо різняться розмірами">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Увага: Ця можливість насправді не порівнює вміст файлів. Вона перевіряє їх присутність в теках і різницю в розмірах. Час створення перевіряється якщо це дозволено у налаштуваннях.">

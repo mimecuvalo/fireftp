@@ -1,0 +1,31 @@
+<!ENTITY title "Özellikler">
+<!ENTITY path "Konum:">
+<!ENTITY webpath "Web Konumu:">
+<!ENTITY size "Boyut:">
+<!ENTITY date "Tarih:">
+<!ENTITY contains "İçerik:">
+<!ENTITY user "Kullanıcı:">
+<!ENTITY groupl "Grup:">
+<!ENTITY attr "Nitelikler:">
+<!ENTITY hash "Hash Oluştur:">
+<!ENTITY perm "İzinler:">
+<!ENTITY reado "Salt-okunur">
+<!ENTITY hidden "Gizli">
+<!ENTITY owner "Sahip">
+<!ENTITY group "Grubu">
+<!ENTITY public "Umumi">
+<!ENTITY read "Okunabilir">
+<!ENTITY write "Yazılabilir">
+<!ENTITY exec "Çalıştırılabilir">
+<!ENTITY manual "Ek:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Hatırlatma panosu">
+<!ENTITY applyto "Şunlara uygula:">
+<!ENTITY thisprop "Bu klasör">
+<!ENTITY folderprop "İçerilen Tüm Klasörler">
+<!ENTITY filesprop "İçerilen Tüm Dosyalar">
+<!ENTITY thumbnail "Küçük Resimler">
+<!ENTITY loading "Yükleniyor...">
+<!ENTITY view.label "Göster">
+<!ENTITY view.accesskey "G">

@@ -1,0 +1,25 @@
+<!ENTITY title "Ordner Synchronisieren">
+<!ENTITY file.label "Datei">
+<!ENTITY reason.label "Grund">
+<!ENTITY action.label "Aktion">
+<!ENTITY download.label "Herunterladen">
+<!ENTITY upload.label "Hochladen">
+<!ENTITY nothing.label "Nichts tun">
+<!ENTITY defaults.label "Auswahl ändern">
+<!ENTITY local.label "Für fehlende lokale Dateien:">
+<!ENTITY remote.label "Für fehlende Dateien auf dem Server:">
+<!ENTITY diff.label "Für verschiedene Dateigrössen:">
+<!ENTITY newer.label "Für neuere lokale Dateien:">
+<!ENTITY older.label "für neuere Dateien auf dem Server:">
+<!ENTITY lDownload.access "H">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "H">
+<!ENTITY rNothing.access "i">
+<!ENTITY dDownload.access "e">
+<!ENTITY dUpload.access "o">
+<!ENTITY dNothing.access "c">
+<!ENTITY diff.note "Notiz: Die Vergleichsfunktion kann momentan den Dateiinhalt nicht vergleichen. Sie schaut nur ob eine Datei in einem Ordner ist oder nicht und vergleicht die Dateigrössen. Zeitstempel werden verglichen, wenn die &apos;Zeitstempel Synchronisieren&apos; Option aktiviert ist.">
+
+<!ENTITY delete.label     "Löschen">
+<!ENTITY lDelete.access   "s">
+<!ENTITY rDelete.access   "ö">

@@ -1,0 +1,13 @@
+<!ENTITY title "Confirmar Sobreposição">
+<!ENTITY existing.label "Ficheiro existente:">
+<!ENTITY new.label "Novo ficheiro:">
+<!ENTITY overwrite.label "Sobrepor">
+<!ENTITY overwriteall.label "Sobrepor tudo">
+<!ENTITY skip.label "Saltar">
+<!ENTITY skipall.label "Saltar tudo">
+<!ENTITY resume.label "Resumir">
+<!ENTITY overwrite.access "S">
+<!ENTITY overwriteall.access "t">
+<!ENTITY skip.access "a">
+<!ENTITY skipall.access "l">
+<!ENTITY resume.access "R">

@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Malfermi ligilon en FireFTP">
+<!ENTITY viewFireFTP "Vidigi ĉi tiun paĝon en FireFTP">
+<!ENTITY accountlist.label "(Elekti konton)">
+<!ENTITY edit.label "Redakti">
+<!ENTITY abort.label "Ĉesigi">
+<!ENTITY logtab.label "Protokolo/Atendovico">
+<!ENTITY ltab.label "Protokolo">
+<!ENTITY qtab.label "Atendovico">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "P">
+<!ENTITY advanced.label "Iloj">
+<!ENTITY search.label "Serĉi/Filtri">
+<!ENTITY diff.label "Sinkronigi dosierujojn…">
+<!ENTITY recdiff.label "Sinkronigi dosierujojn kaj subdosierujojn…">
+<!ENTITY custom.label "Propra komando…">
+<!ENTITY import.label "Importi…">
+<!ENTITY export.label "Eksporti…">
+<!ENTITY preferencestab.label "Opcioj…">
+<!ENTITY diff.access "S">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "P">
+<!ENTITY import.access "I">
+<!ENTITY export.access "k">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Helpo">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Iri al supera dosierujo">
+<!ENTITY refresh.tip "Aktualigi dosierujon">
+<!ENTITY localpath.tip "Loka vojo">
+<!ENTITY remotepath.tip "Fora vojo">
+<!ENTITY browse.label "Foliumi">
+<!ENTITY change.label "Ŝanĝi">
+<!ENTITY name.label "Nomo">
+<!ENTITY size.label "Grandeco">
+<!ENTITY date.label "Dato">
+<!ENTITY type.label "Tipo">
+<!ENTITY attr.label "Atributoj">
+<!ENTITY source.label "Fonto">
+<!ENTITY dest.label "Celo">
+<!ENTITY bytes.label "Bajtoj">
+<!ENTITY status.label "Stato">
+<!ENTITY retry.label "Denove provi">
+<!ENTITY cancel.label "Nuligi">
+<!ENTITY cancelAll.label "Nuligi ĉiujn">
+<!ENTITY type.tip "Ŝangi metodon de transigo (aŭtomata rekomendata)">
+<!ENTITY bytes.tip "Elŝutitaj bajtoj/Bajtoj entute">
+<!ENTITY timeela.tip "Pasinta tempo">
+<!ENTITY timerem.tip "Restanta tempo">
+<!ENTITY download.tip "Transigrapido">
+<!ENTITY percent.tip "Plenumo">
+<!ENTITY auto.label "Aŭtomate identigi">
+<!ENTITY binary.label "Binara">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Malfermi inkluzivitan dosierujon">
+<!ENTITY upload.label "Alŝuti">
+<!ENTITY download.label "Elŝuti">
+<!ENTITY open.label "Malfermi">
+<!ENTITY openwith.label "Malfermi per">
+<!ENTITY extractHere.label "Elpaki ĉi tie">
+<!ENTITY extractTo.label "Elpaki al dosierujo">
+<!ENTITY viewweb.label "Rigardi en la retejo">
+<!ENTITY copyUrl.label "Kopii URL">
+<!ENTITY copyUrlLogin.label "FTP kun ensalutado">
+<!ENTITY cut.label "Eltranĉi">
+<!ENTITY copy.label "Kopii">
+<!ENTITY paste.label "Alglui">
+<!ENTITY makedir.label "Krei dosierujon">
+<!ENTITY makefile.label "Krei dosieron">
+<!ENTITY symlink.label "Krei simbolan ligilon">
+<!ENTITY delete.label "Forviŝi">
+<!ENTITY rename.label "Renomi">
+<!ENTITY properties.label "Ecoj">
+<!ENTITY rproperties.label "Ecoj (inkl. enhavo)">
+<!ENTITY searchButton.label "Serĉi">
+<!ENTITY searchLocal.label "Loka">
+<!ENTITY searchRemote.label "Fora">
+<!ENTITY searchOptions.label "Opcioj">
+<!ENTITY searchFrom.label "De:">
+<!ENTITY searchTo.label "Al:">
+<!ENTITY searchSubdir.label "Serĉi en subdosierujoj">
+<!ENTITY searchMatch.label "Atenti usklecon">
+<!ENTITY searchRegexp.label "Regula esprimo">
+<!ENTITY searchDates.label "Specifi datojn">
+<!ENTITY searchSubdir.access "c">
+<!ENTITY searchMatch.access "u">
+<!ENTITY searchRegexp.access "e">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "R">
+<!ENTITY abort.access "E">
+<!ENTITY advanced.access "I">
+<!ENTITY helpbutton.access "H">
+<!ENTITY browsebutton.access "F">
+<!ENTITY changebutton.access "n">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

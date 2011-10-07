@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Otvori vezu s FireFTP">
+<!ENTITY viewFireFTP "Pogledaj ovu stranicu s FireFTP">
+<!ENTITY accountlist.label "(Izaberi račun)">
+<!ENTITY edit.label "Uredi...">
+<!ENTITY abort.label "Prekini">
+<!ENTITY logtab.label "Zapis/Red Poslova">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Queue">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "R">
+<!ENTITY advanced.label "Alati">
+<!ENTITY search.label "Search/Filter">
+<!ENTITY diff.label "Sinkroniziraj Direktorije">
+<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY custom.label "Prilagođeno">
+<!ENTITY import.label "Uvezi...">
+<!ENTITY export.label "Izvezi...">
+<!ENTITY preferencestab.label "Postavke">
+<!ENTITY diff.access "S">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "P">
+<!ENTITY import.access "U">
+<!ENTITY export.access "o">
+<!ENTITY prefbutton.access "t">
+<!ENTITY help.label "Pomoć">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Vrati u ishodišni direktorij">
+<!ENTITY refresh.tip "Osvježi direktorij">
+<!ENTITY localpath.tip "Lokalna putanja">
+<!ENTITY remotepath.tip "Udaljena putanja">
+<!ENTITY browse.label "Pronađi">
+<!ENTITY change.label "Promijeni">
+<!ENTITY name.label "Naziv">
+<!ENTITY size.label "Veličina">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Tip">
+<!ENTITY attr.label "Atributi">
+<!ENTITY source.label "Source">
+<!ENTITY dest.label "Destination">
+<!ENTITY bytes.label "Bytes">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Retry">
+<!ENTITY cancel.label "Cancel">
+<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY type.tip "Promijenu način prijenosa (preporučeno automatski)">
+<!ENTITY bytes.tip "Byte-a Preuzeto / Ukupno byte-a">
+<!ENTITY timeela.tip "Proteklo vrijeme">
+<!ENTITY timerem.tip "Preostalo vrijeme">
+<!ENTITY download.tip "Brzina prijenosa">
+<!ENTITY percent.tip "Završeno posto">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binary">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY upload.label "Otprema">
+<!ENTITY download.label "Preuzimanje">
+<!ENTITY open.label "Otvori">
+<!ENTITY openwith.label "Otvori sa">
+<!ENTITY extractHere.label "Extract Here">
+<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY viewweb.label "Pogledaj na webu">
+<!ENTITY copyUrl.label "Copy URL">
+<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY cut.label "Izreži">
+<!ENTITY copy.label "Kopiraj">
+<!ENTITY paste.label "Zalijepi">
+<!ENTITY makedir.label "Napravi direktorij">
+<!ENTITY makefile.label "Napravi datoteku">
+<!ENTITY symlink.label "Napravi symlink">
+<!ENTITY delete.label "Obriši">
+<!ENTITY rename.label "Preimenuj">
+<!ENTITY properties.label "Svojstva">
+<!ENTITY rproperties.label "Svojstva (uključujući sadržaji)">
+<!ENTITY searchButton.label "Search">
+<!ENTITY searchLocal.label "Local">
+<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchOptions.label "Options">
+<!ENTITY searchFrom.label "From:">
+<!ENTITY searchTo.label "To:">
+<!ENTITY searchSubdir.label "Look in subdirectories">
+<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchRegexp.label "Regular expression">
+<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "U">
+<!ENTITY abort.access "P">
+<!ENTITY advanced.access "A">
+<!ENTITY helpbutton.access "o">
+<!ENTITY browsebutton.access "r">
+<!ENTITY changebutton.access "m">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "I, <html:em style=';;font-size:1.3em;line-height:0;';;>lo</html:em>, iz <html:em style=';;font-size:1.3em;line-height:0;';;>mraka</html:em> su izronili: vojska vjernika da <html:em style=';;font-size:1.3em;line-height:0;';;>pomogne</html:em> ponovno rođenoj zvijeri u njezinom nastojanju <html:em style=';;font-size:1.3em;line-height:0;';;>ponovnog</html:em> preuzimanja zemlje.  Zajedno su <html:em style=';;font-size:1.3em;line-height:0;';;>povećali</html:em> snagu zvijeri i <html:em style=';;font-size:1.3em;line-height:0;';;>proširili</html:em> dobre vijesti o njezinom povratku.  Jedan po jedan sljedbenici <html:em style=';;font-size:1.3em;line-height:0;';;>Mammona</html:em> su obraćeni i njihova srca su u <html:em style=';;font-size:1.3em;line-height:0;';;>plamenu</html:em>.">
+<!ENTITY mozilla.from "iz <html:strong>Knjige o Mozilli</html:strong>, 8:2">

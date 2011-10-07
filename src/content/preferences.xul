@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/global.css"   type="text/css"?>
+<?xml-stylesheet href="chrome://fireftp/skin/fireftp.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://fireftp/locale/preferences.dtd">
+<prefwindow id             = "fireftpPreferences3"
+            title          = "&title;"
+            type           = "prefwindow"
+            persist        = "screenX screenY"
+            xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            buttons        = "accept, cancel"
+            onload         = "readPreferences()"
+            ondialogaccept = "return true">
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/common.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/globals.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/misc.js"/>
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/dialogs/preferences.js"/>
+
+  <prefpane id="myPane">
+    <preferences>
+      <preference id="welcomemodepref"        name="fireftp.welcomemode"       type="bool"/>
+      <preference id="errormodepref"          name="fireftp.errormode"         type="bool"/>
+      <preference id="refreshmodepref"        name="fireftp.refreshmode"       type="bool"/>
+      <preference id="passwordmodepref"       name="fireftp.passwordmode"      type="bool"/>
+      <preference id="sessionsmodepref"       name="fireftp.sessionsmode"      type="bool"/>
+      <preference id="hiddenmodepref"         name="fireftp.hiddenmode"        type="bool"/>
+      <preference id="openmodepref"           name="fireftp.openmode"          type="int"/>
+      <preference id="networkpref"            name="fireftp.network"           type="int"/>
+      <preference id="timeoutmodepref"        name="fireftp.timeoutmode"       type="bool"/>
+      <preference id="retrypref"              name="fireftp.retry"             type="int"/>
+      <preference id="attemptspref"           name="fireftp.attempts"          type="int"/>
+      <preference id="destructmodepref"       name="fireftp.destructmode"      type="bool"/>
+      <preference id="filemodepref"           name="fireftp.filemode"          type="int"/>
+      <preference id="asciifilespref"         name="fireftp.asciifiles"        type="unichar"/>
+      <preference id="loadmodepref"           name="fireftp.loadmode"          type="int"/>
+      <preference id="logmodepref"            name="fireftp.logmode"           type="bool"/>
+      <preference id="debugmodepref"          name="fireftp.debugmode"         type="bool"/>
+      <preference id="bytespref"              name="fireftp.bytesmode"         type="bool"/>
+      <preference id="nopromptpref"           name="fireftp.nopromptmode"      type="bool"/>
+      <preference id="logerrormodepref"       name="fireftp.logerrormode"      type="bool"/>
+      <preference id="keepalivemodepref"      name="fireftp.keepalivemode"     type="bool"/>
+      <preference id="proxytypepref"          name="fireftp.proxytype"         type="string"/>
+      <preference id="proxyhostpref"          name="fireftp.proxyhost"         type="unichar"/>
+      <preference id="proxyportpref"          name="fireftp.proxyport"         type="int"/>
+      <preference id="integrateftplinkspref"  name="fireftp.integrateftplinks" type="bool"/>
+      <preference id="temppasvmodepref"       name="fireftp.temppasvmode"      type="bool"/>
+      <preference id="activeportmodepref"     name="fireftp.activeportmode"    type="bool"/>
+      <preference id="activelowportpref"      name="fireftp.activelow"         type="int"/>
+      <preference id="activehighportpref"     name="fireftp.activehigh"        type="int"/>
+      <preference id="timestampsmodepref"     name="fireftp.timestampsmode"    type="bool"/>
+      <preference id="compressmodepref"       name="fireftp.compressmode"      type="bool"/>
+      <preference id="integritymodepref"      name="fireftp.integritymode"     type="bool"/>
+      <preference id="concurrentpref"         name="fireftp.concurrent"        type="int"/>
+    </preferences>
+
+    <tabbox flex="1">
+      <tabs>
+        <tab label="&general.label;"/>
+        <tab label="&interface.label;"/>
+        <tab label="&connect.label;"/>
+        <tab label="&downup.label;"/>
+        <tab label="&credits.label;"/>
+      </tabs>
+      <tabpanels flex="1">
+
+        <!-- :::::::::::::::::::::::::::::: general :::::::::::::::::::::::::::::: -->
+
+        <tabpanel id="generaltab" orient="vertical">
+          <groupbox>
+            <caption label="&messages.label;"/>
+            <hbox align="start">
+              <checkbox id="welcomemode"  preference="welcomemodepref"  label="&welcome.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="errormode"    preference="errormodepref"    label="&error.label;"/>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&sessions.label;"/>
+            <hbox align="start">
+              <checkbox id="passwordmode" preference="passwordmodepref" label="&rememberp.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="sessionsmode" preference="sessionsmodepref" label="&rememberd.label;"/>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&fileview.label;"/>
+            <hbox align="start">
+              <checkbox id="refreshmode"  preference="refreshmodepref"  label="&autorefresh.label;" tooltiptext="&refresh.tip;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="hiddenmode"   preference="hiddenmodepref"   label="&hidden.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="bytesmode"    preference="bytespref"        label="&bytesmode.label;"/>
+            </hbox>
+          </groupbox>
+        </tabpanel>
+
+        <!-- :::::::::::::::::::::::::::::: interface :::::::::::::::::::::::::::::: -->
+
+        <tabpanel id="interfacetab" orient="vertical">
+          <groupbox>
+            <caption label="&startup.label;"/>
+            <radiogroup id="loadmode" preference="loadmodepref">
+              <radio label="&windowopen.label;" value="2"/>
+              <radio label="&tabopen.label;"    value="1"/>
+              <radio label="&groupopen.label;"  value="0"/>
+            </radiogroup>
+            <spacer style="height:5px"/>
+            <hbox align="start">
+              <checkbox preference="integrateftplinkspref" id="integrateftplinks" label="&integrateftplnk.label;" oncommand="integrateChange()"/>
+            </hbox>
+            <hbox align="center" class="indent">
+              <checkbox preference="temppasvmodepref"      id="temppasvmode"      label="&temppasvmode.label;"/>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&open.label;"/>
+            <radiogroup id="openmode"  preference="openmodepref">
+              <radio label="&download.label;" value="0"/>
+              <radio label="&exec.label;"     value="1"/>
+            </radiogroup>
+          </groupbox>
+          <groupbox>
+            <caption label="&logwindow.label;"/>
+            <hbox align="start">
+              <checkbox id="logmode"      preference="logmodepref"      label="&logmode.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="logerrormode" preference="logerrormodepref" label="&logerrormode.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="debugmode"    preference="debugmodepref"    label="&debug.label;"/>
+            </hbox>
+          </groupbox>
+        </tabpanel>
+
+        <!-- :::::::::::::::::::::::::::::: connect :::::::::::::::::::::::::::::: -->
+
+        <tabpanel id="connecttab" orient="vertical">
+          <groupbox>
+            <caption label="&proxy.label;"/>
+            <hbox align="center">
+              <menulist id="proxytype" preference="proxytypepref" oncommand="proxyChange()">
+                <menupopup>
+                  <menuitem label="&none.label;"   value="" selected="true"/>
+                  <menuseparator/>
+                  <menuitem label="HTTP"           value="http"/>
+                  <menuitem label="SOCKS 4"        value="socks4"/>
+                  <menuitem label="SOCKS 5"        value="socks"/>
+                  <menuitem label="&direct.label;" value="direct"/>
+                </menupopup>
+              </menulist>
+              <label     id="proxyhostlabel" value="&host.label;" control="proxyhost"/>
+              <vbox>
+                <textbox id="proxyhost"      preference="proxyhostpref"/>
+              </vbox>
+              <label     id="proxyportlabel" value="&port.label;" control="proxyport"/>
+              <vbox>
+                <textbox id="proxyport"      preference="proxyportpref" size="5" type="number" min="0" max="65535" increment="1" hidespinbuttons="true"/>
+              </vbox>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&active.label;"/>
+            <hbox align="center">
+              <vbox>
+                <checkbox  id="activeportmode"    preference="activeportmodepref" label="&limitPorts.label;" oncommand="activePortChange()"/>
+              </vbox>
+              <label     id="activelowportlabel"  value="&from.label;" control="activelowport"/>
+              <vbox>
+                <textbox id="activelowport"       preference="activelowportpref"  size="5" type="number" min="0" max="65535" increment="1" hidespinbuttons="true"/>
+              </vbox>
+              <label     id="activehighportlabel" value="&to.label;"   control="activehighport"/>
+              <vbox>
+                <textbox id="activehighport"      preference="activehighportpref" size="5" type="number" min="0" max="65535" increment="1" hidespinbuttons="true"/>
+              </vbox>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&concurrent.label;"/>
+            <hbox align="center">
+              <label id="concurrentlabel" value="&simtransfers.label;" control="concurrent"/>
+              <vbox>
+                <textbox id="concurrent" preference="concurrentpref" size="3" type="number" min="1" max="10" increment="1"/>
+              </vbox>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&recovery.label;"/>
+            <hbox align="center">
+              <label id="networklabel" value="&network.label;" control="network"
+                    tooltiptext="&network.tip;"/>
+              <vbox>
+                <textbox id="network"       preference="networkpref" size="3" type="number" min="1" max="600" increment="1" hidespinbuttons="true"/>
+              </vbox>
+            </hbox>
+            <hbox align="start">
+              <checkbox  id="keepalivemode" preference="keepalivemodepref" label="&keepalivemode.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox  id="timeoutmode"   preference="timeoutmodepref"   label="&timeout.label;" oncommand="timeoutChange()"/>
+            </hbox>
+            <vbox>
+              <hbox align="center" class="indent">
+                <label   id="retrylabel"    value="&retryd.label;" control="retry" tooltiptext="&retryd.tip;"/>
+                <textbox id="retry"         preference="retrypref" size="3" type="number" min="1" max="600" increment="1" hidespinbuttons="true"/>
+              </hbox>
+              <hbox align="center" class="indent">
+                <label   id="attemptslabel" value="&retrya.label;"    control="attempts" tooltiptext="&retrya.tip;"/>
+                <textbox id="attempts"      preference="attemptspref" size="3" type="number" min="1" increment="1" hidespinbuttons="true"/>
+              </hbox>
+            </vbox>
+          </groupbox>
+        </tabpanel>
+
+        <!-- :::::::::::::::::::::::::::::: down/uploads :::::::::::::::::::::::::::::: -->
+
+        <tabpanel id="downuptab" orient="vertical">
+          <groupbox>
+            <caption label="&transfercaption.label;"/>
+            <hbox>
+              <vbox>
+                <radiogroup id="filemode" preference="filemodepref" onselect="filemodeChange()">
+                  <radio label="&automatic.label;" value="0" tooltiptext="&automatic.tip;"/>
+                  <radio label="&binary.label;"    value="1"/>
+                  <radio label="&ascii.label;"     value="2"/>
+                </radiogroup>
+              </vbox>
+              <vbox flex="1" pack="top">
+                <button id="asciibutton"     oncommand="openDialog('asciiFiles.xul', '', 'centerscreen,chrome,modal=yes,dialog=yes,resizable=yes')"
+                        label="&asciiTitle;" tooltiptext="&asciifiles.tip;"/>
+              </vbox>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&duplicates.label;"/>
+            <hbox align="start">
+              <checkbox id="destructmode" preference="destructmodepref" label="&timer.label;"/>
+            </hbox>
+            <hbox align="start">
+              <checkbox id="nopromptmode" preference="nopromptpref"     label="&nopromptmode.label;"/>
+            </hbox>
+          </groupbox>
+          <groupbox>
+            <caption label="&extras.label;"/>
+            <hbox align="center">
+              <vbox>
+                <checkbox  id="compressmode"    preference="compressmodepref"   label="&usecompression.label;"/>
+              </vbox>
+            </hbox>
+            <hbox align="center">
+              <vbox>
+                <checkbox  id="timestampsmode"  preference="timestampsmodepref" label="&synctimestamps.label;"/>
+              </vbox>
+            </hbox>
+            <hbox align="center">
+              <vbox>
+                <checkbox  id="integritymode"   preference="integritymodepref"  label="&integritymode.label;"/>
+              </vbox>
+            </hbox>
+          </groupbox>
+        </tabpanel>
+
+        <!-- :::::::::::::::::::::::::::::: credits :::::::::::::::::::::::::::::: -->
+
+        <tabpanel id="creditstab" orient="vertical">
+          <hbox pack="center">
+            <label id="version" value="FireFTP 0.9999999999999   "/>
+            <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nightlight.ws')"  class="textLink"/>
+          </hbox>
+          <box pack="center">
+            <label value="http://fireftp.mozdev.org" onclick="runInFirefox('http://fireftp.mozdev.org')" class="textLink"/>
+          </box>
+          <label class="paddingTop boldText" value="&thanks.label;"/>
+          <listbox rows="10">
+            <listitem label="3ARRANO (Eskerrik asko, Milesker!)"/>
+            <listitem label="Erik Anderson"/>
+            <listitem label="BatBat (Merci!)"/>
+            <listitem label="Scott Bentley (many thanks!)"/>
+            <listitem label="Dan Boneh (for AES code)"/>
+            <listitem label="Paolo Borla (Grazie!)"/>
+            <listitem label="Jed Brown"/>
+            <listitem label="Patrick Brunschwig (for help on IPC)"/>
+            <listitem label="CanceleratoR (Tesekkurler)"/>
+            <listitem label="ccpp0 (i18n rock*)"/>
+            <listitem label="Abel Chaouqi (Merci!)"/>
+            <listitem label="Jason Clark"/>
+            <listitem label="Closure Library Authors (for arc4 code)"/>
+            <listitem label="DakSrbija (Hvala!)"/>
+            <listitem label="damufo (Gracias!)"/>
+            <listitem label="Darehanl (고맙습니다!)"/>
+            <listitem label="Declan (謝謝!)"/>
+            <listitem label="Devin Pohly (a million thanks!)"/>
+            <listitem label="Tomasz Dominikowski (Dziekuje!)"/>
+            <listitem label="Edgar (Gracias!)"/>
+            <listitem label="Elric Erekose"/>
+            <listitem label="Daniel Muñiz Fontoira (Grazas!)"/>
+            <listitem label="Ze Francisco (Obrigado!)"/>
+            <listitem label="freaktechnik (Dankeschön!)"/>
+            <listitem label="Fux (Danke!)"/>
+            <listitem label="Hendrik Gebhardt (Danke!)"/>
+            <listitem label="gezmen (Te&#351;ekk&#252;rler!)"/>
+            <listitem label="Mike Hamburg (for AES code)"/>
+            <listitem label="Alfons Van Hees (Dank u!)"/>
+            <listitem label="helge4 (Tack!)"/>
+            <listitem label="Angel Herr&#225;ez (Gracias!)"/>
+            <listitem label="Bob Henson"/>
+            <listitem label="Petr Hlávka"/>
+            <listitem label="iacchi (Grazie!)"/>
+            <listitem label="Iacopo Benesperi (Grazie!)"/>
+            <listitem label="isn (Спасибо!)"/>
+            <listitem label="Mikkel Jensen (Tak!)"/>
+            <listitem label="Joergen (Tak!)"/>
+            <listitem label="jojaba (Merci!)"/>
+            <listitem label="Erkan Kaplan (Te&#351;ekk&#252;rler!)"/>
+            <listitem label="Kohsuke Kawaguchi (for .ppk file porting)" />
+            <listitem label="Tan Chew Keong (thanks for security advice!)"/>
+            <listitem label="Sergiy Khoruzhin (thanks!)"/>
+            <listitem label="kneekoo (Mulțumesc!)"/>
+            <listitem label="Michael Kraft (all hail!)"/>
+            <listitem label="Andrew M. Kuchling (for pycrypto work)"/>
+            <listitem label="Jacinto Leal (Gracias!)"/>
+            <listitem label="Robin Leffmann (for blowfish code)"/>
+            <listitem label="Dwayne C. Litzenberger (for the outstanding pycrypto library)" />
+            <listitem label="lloco (Obrigado!)"/>
+            <listitem label="loveleeyoungae (Cám ơn!)"/>
+            <listitem label="Hrvoje Majer (krcko) (Hvala!)"/>
+            <listitem label="Pedro Marques (Obrigado!)"/>
+            <listitem label="Norah Marinkovic (ありがとう!)"/>
+            <listitem label="miles (Hvala!)"/>
+            <listitem label="milupo (Danke!)"/>
+            <listitem label="Mook (for help on IPC)"/>
+            <listitem label="moZes (Tanke!)"/>
+            <listitem label="Xavier Mor-Mur (Gràcies!)"/>
+            <listitem label="Mark Moraes (for pycrypto work)"/>
+            <listitem label="Sol Neckels (thanks!)"/>
+            <listitem label="nico@nc (Merci!)"/>
+            <listitem label="Sumito_Oda (ありがとう!)"/>
+            <listitem label="OMNIpotus"/>
+            <listitem label="Sunjae Park (너를 감사하십시요!)"/>
+            <listitem label="Pedsann (Obrigado!)"/>
+            <listitem label="Petertc (謝謝!)"/>
+            <listitem label="Robey Pointer (for the paramiko library - I stand on the shoulders of giants)"/>
+            <listitem label="Reza_NA (ممنونم!)"/>
+            <listitem label="Rickcart (謝謝!)"/>
+            <listitem label="Ritargatan (Jag tackar!)"/>
+            <listitem label="Javi Romero (Gracias!)"/>
+            <listitem label="Branislav Rozbora (D'akujem!)"/>
+            <listitem label="Jesadavut Saengsawang (Khop Khun Mak!)"/>
+            <listitem label="Will Schleter"/>
+            <listitem label="Sergeys (Спасибо!)"/>
+            <listitem label="sikander (Blagodarya!)"/>
+            <listitem label="Marco Simonetti (Grazie!)"/>
+            <listitem label="Alex Sirota"/>
+            <listitem label="Sampan Sittiwantana (Khop Khun Mak!)"/>
+            <listitem label="Benjamin Smedberg (for help on IPC)"/>
+            <listitem label="smg (Te&#351;ekk&#252;rler!)"/>
+            <listitem label="Martin Srebotnjak (Hvala!)"/>
+            <listitem label="Emily Stark (for AES code)"/>
+            <listitem label="Tyler Sticka (for the fantastic logo!)"/>
+            <listitem label="Phil Summers"/>
+            <listitem label="Kálmán Szalai (Köszönöm!)"/>
+            <listitem label="Simon Tatham (for a brilliant SFTP client!)"/>
+            <listitem label="Team erweiterungen.de (Danke!)"/>
+            <listitem label="Paul Tero (for DES3 code)"/>
+            <listitem label="urko (Gracias!)"/>
+            <listitem label="Aigar Vals (Täname!)"/>
+            <listitem label="Momchil Valkov (Merci, Blagodaria!)"/>
+            <listitem label="V@no"/>
+            <listitem label="Nick Vidal (Obrigado!)"/>
+            <listitem label="Ladislav Vykukal (D&#283;kuji!)"/>
+            <listitem label="Martijn Weisbeek (Dank u!)"/>
+            <listitem label="Tom Wu (for the BigInteger library)"/>
+            <listitem label="x10firefox (Dankie!)"/>
+            <listitem label="Shixin Zeng (谢谢!)"/>
+            <listitem label="ZuGro (Gracias!)"/>
+            <listitem label="Leszek(teo) &#379;yczkowski (Dziekuje!)"/>
+            <listitem label="MozDev Group, Inc. (you guys rock!)"/>
+            <listitem label="&allothers.label;"/>
+            <listitem label="&special.label;"/>
+          </listbox>
+        </tabpanel>
+      </tabpanels>
+    </tabbox>
+
+  </prefpane>
+</prefwindow>

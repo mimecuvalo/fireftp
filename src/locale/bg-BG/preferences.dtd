@@ -1,0 +1,73 @@
+<!ENTITY title "Опции">
+<!ENTITY asciiTitle "ASCII файлови типове">
+<!ENTITY general.label "Основни">
+<!ENTITY messages.label "Съобщения">
+<!ENTITY welcome.label "Показване на приветствен екран">
+<!ENTITY error.label "Показване на съобщения с грешки">
+<!ENTITY sessions.label "Сесии">
+<!ENTITY rememberp.label "Запомняне на паролата">
+<!ENTITY rememberd.label "Запомняне на директориите">
+<!ENTITY fileview.label "Файлов изглед">
+<!ENTITY autorefresh.label "Авто-обновяване">
+<!ENTITY refresh.tip "After the remote view is changed (when transferring), refresh the directory">
+<!ENTITY hidden.label "Показване на скритите файлове">
+<!ENTITY bytesmode.label "Показване на размера на файловете в байтове">
+<!ENTITY interface.label "Интерфейс">
+<!ENTITY startup.label "Стартиране на FireFTP:">
+<!ENTITY windowopen.label "в нов прозорец">
+<!ENTITY tabopen.label "в нов подпрозорец">
+<!ENTITY groupopen.label "групиране в прозорец">
+<!ENTITY integrateftplnk.label "Configure FTP links in Firefox to automatically use FireFTP">
+<!ENTITY temppasvmode.label "Използване на пасивен режим за тези връзки">
+<!ENTITY open.label "Двоен клик/натискане на ENTER:">
+<!ENTITY download.label "прехвърля файл">
+<!ENTITY exec.label "отваря файл">
+<!ENTITY both.tip "Показва и локални и отдалечени файлове">
+<!ENTITY local.tip "Показва само локални файлове">
+<!ENTITY remote.tip "Показва само на отдалечени файлове">
+<!ENTITY logwindow.label "Дневник">
+<!ENTITY logmode.label "Показване на дневника в главния прозорец">
+<!ENTITY logerrormode.label "Показване само на грешки в дневника">
+<!ENTITY debug.label "Показване на информацията за отстраняване на грешки">
+<!ENTITY connect.label "Връзки">
+<!ENTITY proxy.label "Сървър-посредник">
+<!ENTITY none.label "Няма">
+<!ENTITY direct.label "Директен">
+<!ENTITY host.label "Хост:">
+<!ENTITY port.label "Порт:">
+<!ENTITY active.label "Активен режим">
+<!ENTITY limitPorts.label "Лимит на портовете">
+<!ENTITY from.label "От:">
+<!ENTITY to.label "До:">
+<!ENTITY concurrent.label "Едновременни трансфери">
+<!ENTITY simtransfers.label "Макс. едновременни трансфери (1-10)">
+<!ENTITY recovery.label "Възстановяване на връзката">
+<!ENTITY network.label "Изчакване на мрежата (в секунди, между 1 и 600)">
+<!ENTITY network.tip "Контролира, колко дълго да се изчаква за отговор от сървъра">
+<!ENTITY keepalivemode.label "Поддържане на връзката жива, при липса на активност">
+<!ENTITY timeout.label "При изключване, опит за свързване отново">
+<!ENTITY retryd.label "Закъснение при повторен опит (в секунди, между 1 и 600)">
+<!ENTITY retryd.tip "Секунди между опитите за повторно свързване">
+<!ENTITY retrya.label "Повторни опити">
+<!ENTITY retrya.tip "Брой на опитите, които да се направят">
+<!ENTITY downup.label "Сваляне/Качване">
+<!ENTITY transfercaption.label "При прехвърляне на файлове да се използва:">
+<!ENTITY automatic.label "Автоматичен режим">
+<!ENTITY automatic.tip "Автоматично да се избира между &quot;Двоичен&quot; и &quot;ASCII&quot; режим">
+<!ENTITY binary.label "Двоичен режим">
+<!ENTITY ascii.label "ASCII режим">
+<!ENTITY asciifiles.label "ASCII файлове:">
+<!ENTITY asciifiles.tip "Списък на файловите разширения, които да бъдат разпознати като ASCII файлове">
+<!ENTITY add.label "Добавяне">
+<!ENTITY remove.label "Премахване">
+<!ENTITY extras.label "Екстри (ако са разрешени на сървъра)">
+<!ENTITY usecompression.label "Използване на компресия">
+<!ENTITY synctimestamps.label "Поддържане на времевите отпечатъци в синхрон">
+<!ENTITY integritymode.label "Проверка на целостта на файловите трансфери (XMD5, XSHA1)">
+<!ENTITY duplicates.label "Файлове дубликати">
+<!ENTITY timer.label "Изключване на таймера в диалога за презаписване">
+<!ENTITY nopromptmode.label "Да не се показва диалога за презаписване, просто да се презапише">
+<!ENTITY credits.label "Заслуги">
+<!ENTITY thanks.label "Благодаря на:">
+<!ENTITY allothers.label "Всички останали, които са подали бъгове и са помогнали">
+<!ENTITY special.label "Специални благодарности на всички, които даряват!">

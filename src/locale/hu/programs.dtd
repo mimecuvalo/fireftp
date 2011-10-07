@@ -1,0 +1,22 @@
+<!ENTITY title "Programok">
+<!ENTITY add.label "Hozzáadás">
+<!ENTITY remove.label "Eltávolítás">
+<!ENTITY extensions.label "Kiterjesztések">
+<!ENTITY programs.label "Programok">
+<!ENTITY details.label "Programleírás">
+<!ENTITY name.label "Név">
+<!ENTITY exec.label "Elérési út">
+<!ENTITY browse.label "Tallózás">
+<!ENTITY args.label "Paraméterek">
+<!ENTITY argshelp1.label "A „Paraméterek” mező üresen hagyásával csak a fájlnév kerül átadásra paraméterként.">
+<!ENTITY argshelp2.label "Egyedi paramétereknél a &#37;file&#37; kifejezés használatával adhatja át a fájlnevet.">
+<!ENTITY apply.label "Alkalmaz">
+<!ENTITY adde.accesskey "H">
+<!ENTITY removee.accesskey "E">
+<!ENTITY addp.accesskey "z">
+<!ENTITY removep.accesskey "l">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "r">
+<!ENTITY browse.accesskey "T">
+<!ENTITY args.accesskey "P">
+<!ENTITY apply.accesskey "A">

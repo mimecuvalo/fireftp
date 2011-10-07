@@ -1,0 +1,22 @@
+<!ENTITY title "البرامج">
+<!ENTITY add.label "أضف">
+<!ENTITY remove.label "إحذف">
+<!ENTITY extensions.label "الإمتدادات">
+<!ENTITY programs.label "البرامج">
+<!ENTITY details.label "تفاصيل البرنامج">
+<!ENTITY name.label "الإسم">
+<!ENTITY exec.label "المسار">
+<!ENTITY browse.label "إستعراض">
+<!ENTITY args.label "النقاشات">
+<!ENTITY argshelp1.label "ترك الحجج الميدانية بيضاء وتقصير المرور للملف كحجةٍ.">
+<!ENTITY argshelp2.label "استخدم &amp;#37، ملف &amp;#37 ،لتمثيل الملف الفائت.">
+<!ENTITY apply.label "تأكيد">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

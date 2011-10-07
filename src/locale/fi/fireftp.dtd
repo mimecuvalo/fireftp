@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Avaa linkki FireFTP:ssä">
+<!ENTITY viewFireFTP "Näytä tämä sivu FireFTP:ssä">
+<!ENTITY accountlist.label "(Valitse tili)">
+<!ENTITY edit.label "Muokkaa...">
+<!ENTITY abort.label "Keskeytä">
+<!ENTITY logtab.label "Loki">
+<!ENTITY ltab.label "Loki">
+<!ENTITY qtab.label "Jono">
+<!ENTITY search.access "S">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Lisäasetukset">
+<!ENTITY search.label "Etsi/suodata">
+<!ENTITY diff.label "Hakemiston vertailu">
+<!ENTITY recdiff.label "Synkronoi hakemistot ja alihakemistot...">
+<!ENTITY custom.label "Omat">
+<!ENTITY import.label "Tuo...">
+<!ENTITY export.label "Vie...">
+<!ENTITY preferencestab.label "Asetukset">
+<!ENTITY diff.access "e">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "O">
+<!ENTITY import.access "T">
+<!ENTITY export.access "V">
+<!ENTITY prefbutton.access "A">
+<!ENTITY help.label "Ohje">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Näytä ylähakemisto">
+<!ENTITY refresh.tip "Päivitä hakemisto">
+<!ENTITY localpath.tip "Paikallinen polku">
+<!ENTITY remotepath.tip "Etäpolku">
+<!ENTITY browse.label "Selaa">
+<!ENTITY change.label "Vaihda">
+<!ENTITY name.label "Nimi">
+<!ENTITY size.label "Koko">
+<!ENTITY date.label "Päivämäärä">
+<!ENTITY type.label "Tyyppi">
+<!ENTITY attr.label "Ominaisuudet">
+<!ENTITY source.label "Lähde">
+<!ENTITY dest.label "Kohde">
+<!ENTITY bytes.label "Tavuja">
+<!ENTITY status.label "Tila">
+<!ENTITY retry.label "Yritä uudelleen">
+<!ENTITY cancel.label "Peruuta">
+<!ENTITY cancelAll.label "Peruuta kaikki">
+<!ENTITY type.tip "Vaihda tiedonsiirtotapaa (automaattinen suositeltu)">
+<!ENTITY bytes.tip "Tavuja ladattu / Tavuja yhteensä">
+<!ENTITY timeela.tip "Aikaa kulunut">
+<!ENTITY timerem.tip "Aikaa jäljellä">
+<!ENTITY download.tip "Latausnopeus">
+<!ENTITY percent.tip "Prosenttia valmiina">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binaarinen">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Avaa kyseinen kansio">
+<!ENTITY upload.label "Lähetys">
+<!ENTITY download.label "Lataus">
+<!ENTITY open.label "Avaa">
+<!ENTITY openwith.label "Avaa ohjelmalla">
+<!ENTITY extractHere.label "Pura tänne">
+<!ENTITY extractTo.label "Pura kansioon">
+<!ENTITY viewweb.label "Näytä WWW:ssä">
+<!ENTITY copyUrl.label "Kopioi URL">
+<!ENTITY copyUrlLogin.label "FTP kirjautusmistiedoin">
+<!ENTITY cut.label "Leikkaa">
+<!ENTITY copy.label "Kopioi">
+<!ENTITY paste.label "Liitä">
+<!ENTITY makedir.label "Luo hakemisto">
+<!ENTITY makefile.label "Luo tiedosto">
+<!ENTITY symlink.label "Create Symlink">
+<!ENTITY delete.label "Poista">
+<!ENTITY rename.label "Nimeä uudelleen">
+<!ENTITY properties.label "Ominaisuudet">
+<!ENTITY rproperties.label "Toistuvat ominaisuudet">
+<!ENTITY searchButton.label "Etsi">
+<!ENTITY searchLocal.label "Paikallinen">
+<!ENTITY searchRemote.label "Etä">
+<!ENTITY searchOptions.label "Valinnat">
+<!ENTITY searchFrom.label "Mistä:">
+<!ENTITY searchTo.label "Minne:">
+<!ENTITY searchSubdir.label "Etsi alihakemistoista">
+<!ENTITY searchMatch.label "Sama kirjainkoko">
+<!ENTITY searchRegexp.label "Säännöllinen lauseke (regexp)">
+<!ENTITY searchDates.label "Määritä päivämäärät">
+<!ENTITY searchSubdir.access "s">
+<!ENTITY searchMatch.access "c">
+<!ENTITY searchRegexp.access "x">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "M">
+<!ENTITY abort.access "K">
+<!ENTITY advanced.access "i">
+<!ENTITY helpbutton.access "O">
+<!ENTITY browsebutton.access "S">
+<!ENTITY changebutton.access "V">
+<!ENTITY searchButton.access "S">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "R">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "Ja, <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>lo</html:em>, loputtomasta <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>piemydestä</html:em> he ilmestyivät: uudelleensyntyneelle pedolle uskollisen <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>aide</html:em> isäntä päämääränään <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>palauttaa haltuunsa</html:em> maa. Yhdessä he <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>laajensivat</html:em> pedon voimia ja <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>levittivät</html:em> hyvää uutista sen paluusta. Yksi kerrallaan mammonan <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>seuraajat</html:em> käännytettiin ja heidän sydämmensä <html:em style=';;;;font-size:1.3em;line-height:0;';;;;>sytytettiin</html:em>.">
+<!ENTITY mozilla.from "<html:strong>Mozillan kirjasta</html:strong>, 8:2">

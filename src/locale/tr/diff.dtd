@@ -1,0 +1,24 @@
+<!ENTITY title "Dizinleri Eşitle">
+<!ENTITY file.label "Dosya">
+<!ENTITY reason.label "Neden">
+<!ENTITY action.label "İşlem">
+<!ENTITY download.label "İndir">
+<!ENTITY upload.label "Karşıya Yükle">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Hiçbir Şey Yapma">
+<!ENTITY defaults.label "Seçimi Değiştir">
+<!ENTITY local.label "Eksik yerel dosyalar için:">
+<!ENTITY remote.label "Eksik uzak dosyalar için:">
+<!ENTITY diff.label "Farklı boyuttaki dosyalar için:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "İ">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "H">
+<!ENTITY rUpload.access "K">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "n">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Not: Farklılık özelliği dosyaları içerik bazında karşılaştırmaz. Daha ziyade karşılaştırılan klasörlerde dosyanın olup olmadığı ya da dosya boyutlarına bakar. &apos;Zaman damgalarını senkronize tut&apos; seçiliyse zaman damgaları da karşılaştırılır.">

@@ -1,0 +1,24 @@
+<!ENTITY title "Хавтаснуудыг харьцуулах">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Байдал">
+<!ENTITY action.label "Үйлдэл">
+<!ENTITY download.label "Татаж авах">
+<!ENTITY upload.label "Оруулах">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Юу ч биш">
+<!ENTITY defaults.label "Заяамал болгох">
+<!ENTITY local.label "Дотоод файлуудад:">
+<!ENTITY remote.label "Гадаад файлуудад:">
+<!ENTITY diff.label "Файлын хэмжээгээр:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Анхааруулга: Энэ хэрэгсэл файлуудын доторхыг жишдэггүй. Харин тухайн файл байгаа үгүйг мөн хэмжээг нь шалгадаг.">

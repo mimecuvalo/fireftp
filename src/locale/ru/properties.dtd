@@ -1,0 +1,31 @@
+<!ENTITY title "Свойства">
+<!ENTITY path "Путь:">
+<!ENTITY webpath "Адрес:">
+<!ENTITY size "Размер:">
+<!ENTITY date "Дата:">
+<!ENTITY contains "Содержимое:">
+<!ENTITY user "Пользователь:">
+<!ENTITY groupl "Группа:">
+<!ENTITY attr "Атрибуты:">
+<!ENTITY hash "Перемешать:">
+<!ENTITY perm "Разрешения:">
+<!ENTITY reado "Только чтение">
+<!ENTITY hidden "Скрытый">
+<!ENTITY owner "Владелец">
+<!ENTITY group "Группа">
+<!ENTITY public "Общие">
+<!ENTITY read "Чтение">
+<!ENTITY write "Запись">
+<!ENTITY exec "Выполнение">
+<!ENTITY manual "Вручную:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Применить для:">
+<!ENTITY thisprop "Этой папки">
+<!ENTITY folderprop "Всех папок">
+<!ENTITY filesprop "Всех файлов">
+<!ENTITY thumbnail "Миниатюра">
+<!ENTITY loading "Загружается...">
+<!ENTITY view.label "Просмотр">
+<!ENTITY view.accesskey "П">

@@ -1,0 +1,22 @@
+<!ENTITY title "Programe">
+<!ENTITY add.label "Adaugă">
+<!ENTITY remove.label "Șterge">
+<!ENTITY extensions.label "Extensii">
+<!ENTITY programs.label "Programe">
+<!ENTITY details.label "Informații despre program">
+<!ENTITY name.label "Denumire:">
+<!ENTITY exec.label "Cale:">
+<!ENTITY browse.label "Răsfoiește">
+<!ENTITY args.label "Parametri:">
+<!ENTITY argshelp1.label "Necompletând câmpul „Parametri”, se va considera fișierul ca parametru implicit.">
+<!ENTITY argshelp2.label "Pentru a referi fișierul ca parametru personalizat, folosiți descriptorul &#37;file&#37;.">
+<!ENTITY apply.label "Aplică">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "t">
+<!ENTITY addp.accesskey "g">
+<!ENTITY removep.accesskey "e">
+<!ENTITY name.accesskey "D">
+<!ENTITY exec.accesskey "C">
+<!ENTITY browse.accesskey "R">
+<!ENTITY args.accesskey "m">
+<!ENTITY apply.accesskey "p">

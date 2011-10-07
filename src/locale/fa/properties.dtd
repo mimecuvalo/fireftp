@@ -1,0 +1,31 @@
+<!ENTITY title "مشخصات">
+<!ENTITY path "مسیر:">
+<!ENTITY webpath "آدرس وب:">
+<!ENTITY size "اندازه:">
+<!ENTITY date "تاریخ:">
+<!ENTITY contains "شامل:">
+<!ENTITY user "کاربر:">
+<!ENTITY groupl "گروه:">
+<!ENTITY attr "ویژگی ها:">
+<!ENTITY hash "Generate Hashes:">
+<!ENTITY perm "مجوزها:">
+<!ENTITY reado "فقط خواندنی">
+<!ENTITY hidden "مخفی">
+<!ENTITY owner "مالک">
+<!ENTITY group "گروه">
+<!ENTITY public "عمومی">
+<!ENTITY read "خواندن">
+<!ENTITY write "نوشتن">
+<!ENTITY exec "اجرایی">
+<!ENTITY manual "راهنما:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "اعمال کردن بر:">
+<!ENTITY thisprop "این پوشه">
+<!ENTITY folderprop "تمام پوشه های زیر شاخه">
+<!ENTITY filesprop "تمام فایل های زیر شاخه">
+<!ENTITY thumbnail "Thumbnail">
+<!ENTITY loading "...در حال بارگذاری">
+<!ENTITY view.label "نمایش">
+<!ENTITY view.accesskey "V">

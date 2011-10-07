@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Отваряне на връзката в FireFTP">
+<!ENTITY viewFireFTP "Вижте тази страница в FireFTP">
+<!ENTITY accountlist.label "(Избор на профил)">
+<!ENTITY edit.label "Редактиране">
+<!ENTITY abort.label "Прекъсване">
+<!ENTITY logtab.label "Дневник/Опашка">
+<!ENTITY ltab.label "Дневник">
+<!ENTITY qtab.label "Опашка">
+<!ENTITY search.access "Т">
+<!ENTITY logbutton.access "Д">
+<!ENTITY advanced.label "Инструменти">
+<!ENTITY search.label "Търсене / Филтър">
+<!ENTITY diff.label "Синхронизация на директории…">
+<!ENTITY recdiff.label "Синхронизация на директории и поддиректории…">
+<!ENTITY custom.label "Потребителска команда…">
+<!ENTITY import.label "Внасяне…">
+<!ENTITY export.label "Изнасяне…">
+<!ENTITY preferencestab.label "Опции…">
+<!ENTITY diff.access "S">
+<!ENTITY recdiff.access "D">
+<!ENTITY custom.access "C">
+<!ENTITY import.access "I">
+<!ENTITY export.access "x">
+<!ENTITY prefbutton.access "O">
+<!ENTITY help.label "Помощ">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Отиване към по-горната директория">
+<!ENTITY refresh.tip "Обновяване на директорията">
+<!ENTITY localpath.tip "Локален път">
+<!ENTITY remotepath.tip "Отдалечен път">
+<!ENTITY browse.label "Преглед">
+<!ENTITY change.label "Промяна">
+<!ENTITY name.label "Име">
+<!ENTITY size.label "Размер">
+<!ENTITY date.label "Дата">
+<!ENTITY type.label "Тип">
+<!ENTITY attr.label "Атрибути">
+<!ENTITY source.label "Източник">
+<!ENTITY dest.label "Местоназначение">
+<!ENTITY bytes.label "Байта">
+<!ENTITY status.label "Състояние">
+<!ENTITY retry.label "Повторен опит">
+<!ENTITY cancel.label "Отмяна">
+<!ENTITY cancelAll.label "Отмяна на всички">
+<!ENTITY type.tip "Промяна на метода на трансферите (препоръчва се авто)">
+<!ENTITY bytes.tip "Свалени байта / Общо байта">
+<!ENTITY timeela.tip "Изминало време">
+<!ENTITY timerem.tip "Оставащо време">
+<!ENTITY download.tip "Скорост на пренос">
+<!ENTITY percent.tip "Напредък">
+<!ENTITY auto.label "Автоматично">
+<!ENTITY binary.label "Двоично">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Отваряне на съдържащата папка">
+<!ENTITY upload.label "Качване">
+<!ENTITY download.label "Сваляне">
+<!ENTITY open.label "Отваряне">
+<!ENTITY openwith.label "Отваряне с">
+<!ENTITY extractHere.label "Извличане тук">
+<!ENTITY extractTo.label "Извличане в папка">
+<!ENTITY viewweb.label "Преглед в мрежата">
+<!ENTITY copyUrl.label "Копиране на URL адреса">
+<!ENTITY copyUrlLogin.label "FTP с вход">
+<!ENTITY cut.label "Изрязване">
+<!ENTITY copy.label "Копиране">
+<!ENTITY paste.label "Поставяне">
+<!ENTITY makedir.label "Създаване на директория">
+<!ENTITY makefile.label "Създаване на файл">
+<!ENTITY symlink.label "Създаване на символна връзка">
+<!ENTITY delete.label "Изтриване">
+<!ENTITY rename.label "Преименуване">
+<!ENTITY properties.label "Свойства">
+<!ENTITY rproperties.label "Свойства (вкл. съдържание)">
+<!ENTITY searchButton.label "Търсене">
+<!ENTITY searchLocal.label "Локален">
+<!ENTITY searchRemote.label "Отдалечен">
+<!ENTITY searchOptions.label "Опции">
+<!ENTITY searchFrom.label "От:">
+<!ENTITY searchTo.label "До:">
+<!ENTITY searchSubdir.label "Търсене в поддиректории">
+<!ENTITY searchMatch.label "Със същия регистър">
+<!ENTITY searchRegexp.label "Регулярен израз">
+<!ENTITY searchDates.label "Посочете датите">
+<!ENTITY searchSubdir.access "п">
+<!ENTITY searchMatch.access "с">
+<!ENTITY searchRegexp.access "и">
+<!ENTITY searchDates.access "д">
+<!ENTITY edit.access "Р">
+<!ENTITY abort.access "р">
+<!ENTITY advanced.access "T">
+<!ENTITY helpbutton.access "щ">
+<!ENTITY browsebutton.access "д">
+<!ENTITY changebutton.access "n">
+<!ENTITY searchButton.access "Т">
+<!ENTITY searchLocal.access "Л">
+<!ENTITY searchRemote.access "т">
+<!ENTITY searchOptions.access "О">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

@@ -1,0 +1,22 @@
+<!ENTITY title "Programy">
+<!ENTITY add.label "Přidat">
+<!ENTITY remove.label "Odebrat">
+<!ENTITY extensions.label "Přípony">
+<!ENTITY programs.label "Programy">
+<!ENTITY details.label "Detaily programu">
+<!ENTITY name.label "Název">
+<!ENTITY exec.label "Cesta">
+<!ENTITY browse.label "Procházet">
+<!ENTITY args.label "Parametry">
+<!ENTITY argshelp1.label "Ponecháte-li pole &apos;Parametry&apos; prázdné, bude předán pouze název souboru.">
+<!ENTITY argshelp2.label "Při definici argumentů použijte &#37;file&#37; pro dosazení názvu souboru.">
+<!ENTITY apply.label "Použít">
+<!ENTITY adde.accesskey "P">
+<!ENTITY removee.accesskey "O">
+<!ENTITY addp.accesskey "i">
+<!ENTITY removep.accesskey "d">
+<!ENTITY name.accesskey "J">
+<!ENTITY exec.accesskey "S">
+<!ENTITY browse.accesskey "r">
+<!ENTITY args.accesskey "a">
+<!ENTITY apply.accesskey "u">

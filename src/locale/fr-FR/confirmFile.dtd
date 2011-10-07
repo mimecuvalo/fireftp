@@ -1,0 +1,13 @@
+<!ENTITY title "Confirmer le remplacement">
+<!ENTITY existing.label "Fichier existant :">
+<!ENTITY new.label "Nouveau fichier :">
+<!ENTITY overwrite.label "Remplacer">
+<!ENTITY overwriteall.label "Tout remplacer">
+<!ENTITY skip.label "Passer">
+<!ENTITY skipall.label "Tout passer">
+<!ENTITY resume.label "Reprendre">
+<!ENTITY overwrite.access "E">
+<!ENTITY overwriteall.access "c">
+<!ENTITY skip.access "P">
+<!ENTITY skipall.access "a">
+<!ENTITY resume.access "R">

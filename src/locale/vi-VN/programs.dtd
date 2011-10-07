@@ -1,0 +1,22 @@
+<!ENTITY title "Chương trình">
+<!ENTITY add.label "Thêm">
+<!ENTITY remove.label "Xóa">
+<!ENTITY extensions.label "Đuôi tập tin">
+<!ENTITY programs.label "Chương trình">
+<!ENTITY details.label "Chi tiết Chương trình">
+<!ENTITY name.label "Tên">
+<!ENTITY exec.label "Đường dẫn">
+<!ENTITY browse.label "Duyệt">
+<!ENTITY args.label "Tham số">
+<!ENTITY argshelp1.label "Để trống ô &apos;Tham số&apos; để dùng tập tin như một tham số.">
+<!ENTITY argshelp2.label "Với tham số tùy biến, dùng &#37;file&#37; để đại diện cho tập tin được đưa qua.">
+<!ENTITY apply.label "Áp dụng">
+<!ENTITY adde.accesskey "T">
+<!ENTITY removee.accesskey "X">
+<!ENTITY addp.accesskey "m">
+<!ENTITY removep.accesskey "a">
+<!ENTITY name.accesskey "n">
+<!ENTITY exec.accesskey "g">
+<!ENTITY browse.accesskey "y">
+<!ENTITY args.accesskey "a">
+<!ENTITY apply.accesskey "d">

@@ -1,0 +1,13 @@
+<!ENTITY title "អះអាងការសរសេរជាន់លើ">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "សរសេរជាន់លើ">
+<!ENTITY overwriteall.label "សរសេរជាន់លើទាំងអស់">
+<!ENTITY skip.label "រំលង">
+<!ENTITY skipall.label "រំលងទាំងអស់">
+<!ENTITY resume.label "ធ្វើបន្ត">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

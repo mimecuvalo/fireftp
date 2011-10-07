@@ -1,0 +1,13 @@
+<!ENTITY title "Felülírás jóváhagyása">
+<!ENTITY existing.label "Létező fájl:">
+<!ENTITY new.label "Új fájl:">
+<!ENTITY overwrite.label "Felülírás">
+<!ENTITY overwriteall.label "Összes felülírása">
+<!ENTITY skip.label "Kihagyás">
+<!ENTITY skipall.label "Összes kihagyása">
+<!ENTITY resume.label "Folytatás">
+<!ENTITY overwrite.access "F">
+<!ENTITY overwriteall.access "e">
+<!ENTITY skip.access "K">
+<!ENTITY skipall.access "i">
+<!ENTITY resume.access "l">

@@ -1,0 +1,31 @@
+<!ENTITY title "Vlastnosti">
+<!ENTITY path "Cesta:">
+<!ENTITY webpath "Webová cesta:">
+<!ENTITY size "Velikost:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Obsahuje:">
+<!ENTITY user "Uživatel:">
+<!ENTITY groupl "Skupina:">
+<!ENTITY attr "Atributy:">
+<!ENTITY hash "Generovat otisky:">
+<!ENTITY perm "Oprávnění:">
+<!ENTITY reado "Pouze čtení">
+<!ENTITY hidden "Skrytý">
+<!ENTITY owner "Vlastník">
+<!ENTITY group "Skupina">
+<!ENTITY public "Veřejný">
+<!ENTITY read "Čtení">
+<!ENTITY write "Zápis">
+<!ENTITY exec "Spuštění">
+<!ENTITY manual "Manual:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Sticky">
+<!ENTITY applyto "Použít na:">
+<!ENTITY thisprop "Tuto složku">
+<!ENTITY folderprop "Všechny obsažené složky">
+<!ENTITY filesprop "Všechny obsažené soubory">
+<!ENTITY thumbnail "Náhled">
+<!ENTITY loading "Načítám...">
+<!ENTITY view.label "Zobrazit">
+<!ENTITY view.accesskey "Z">

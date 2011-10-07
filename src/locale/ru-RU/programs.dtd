@@ -1,0 +1,22 @@
+<!ENTITY title "Программы">
+<!ENTITY add.label "Добавить">
+<!ENTITY remove.label "Удалить">
+<!ENTITY extensions.label "Расширения">
+<!ENTITY programs.label "Программы">
+<!ENTITY details.label "Детали программы">
+<!ENTITY name.label "Имя">
+<!ENTITY exec.label "Путь">
+<!ENTITY browse.label "Обзор">
+<!ENTITY args.label "Аргументы">
+<!ENTITY argshelp1.label "При пустом поле &apos;Аргументы&apos; в качестве аргумента будет использован данный файл.">
+<!ENTITY argshelp2.label "В аргументах используйте &#37;file&#37; для указания файла с которым будет запущена программа.">
+<!ENTITY apply.label "Применить">
+<!ENTITY adde.accesskey "Д">
+<!ENTITY removee.accesskey "У">
+<!ENTITY addp.accesskey "т">
+<!ENTITY removep.accesskey "д">
+<!ENTITY name.accesskey "И">
+<!ENTITY exec.accesskey "П">
+<!ENTITY browse.accesskey "О">
+<!ENTITY args.accesskey "А">
+<!ENTITY apply.accesskey "м">

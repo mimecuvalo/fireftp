@@ -1,0 +1,13 @@
+<!ENTITY title "Kinnita Üle Kirjutamist">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Kirjuta üle">
+<!ENTITY overwriteall.label "Kirjuta Kõik Üle">
+<!ENTITY skip.label "Jäta Vahele">
+<!ENTITY skipall.label "Jäta Kõik Vahele">
+<!ENTITY resume.label "Jätka">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

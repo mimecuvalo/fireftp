@@ -1,0 +1,31 @@
+<!ENTITY title "Ecoj">
+<!ENTITY path "Vojo:">
+<!ENTITY webpath "Retvojo:">
+<!ENTITY size "Grandeco:">
+<!ENTITY date "Dato:">
+<!ENTITY contains "Enhavas:">
+<!ENTITY user "Uzanto:">
+<!ENTITY groupl "Grupo:">
+<!ENTITY attr "Atributoj:">
+<!ENTITY hash "Haketoj:">
+<!ENTITY perm "Permesoj:">
+<!ENTITY reado "Nur legebla">
+<!ENTITY hidden "Kaŝita">
+<!ENTITY owner "Posedanto">
+<!ENTITY group "Grupo">
+<!ENTITY public "Publika">
+<!ENTITY read "Legi">
+<!ENTITY write "Skribi">
+<!ENTITY exec "Plenumi">
+<!ENTITY manual "Permana:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Fiksa">
+<!ENTITY applyto "Apliki al:">
+<!ENTITY thisprop "Ĉi tiu dosierujo">
+<!ENTITY folderprop "Ĉiuj enhavataj dosierujoj">
+<!ENTITY filesprop "Ĉiuj enhavataj dosieroj">
+<!ENTITY thumbnail "Miniaturo">
+<!ENTITY loading "Ŝarganta…">
+<!ENTITY view.label "Vido">
+<!ENTITY view.accesskey "V">

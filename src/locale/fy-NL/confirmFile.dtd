@@ -1,0 +1,13 @@
+<!ENTITY title "Oerskriuwe befestigje">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Oerskriuwe">
+<!ENTITY overwriteall.label "Alles oerskriuwe">
+<!ENTITY skip.label "Oerslaan">
+<!ENTITY skipall.label "Alles oerslaan">
+<!ENTITY resume.label "Trochgean">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "s">
+<!ENTITY skipall.access "l">
+<!ENTITY resume.access "D">

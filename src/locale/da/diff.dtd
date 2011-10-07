@@ -1,0 +1,24 @@
+<!ENTITY title "Sammenlign mapper">
+<!ENTITY file.label "Fil">
+<!ENTITY reason.label "Årsag">
+<!ENTITY action.label "Handling">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY delete.label "Slet">
+<!ENTITY nothing.label "Gør intet">
+<!ENTITY defaults.label "Sæt standard">
+<!ENTITY local.label "For manglende lokale filer:">
+<!ENTITY remote.label "For manglende værtsfiler:">
+<!ENTITY diff.label "For forskellige filstørrelser:">
+<!ENTITY newer.label "For nyere lokale filer:">
+<!ENTITY older.label "For nyere værtsfiler:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "S">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "D">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "G">
+<!ENTITY diff.note "Bemærk: Mappesammenligning er ikke en egentlig sammenligning af filers indhold. Derimod tjekkes det, om filerne findes i de mapper der sammenlignes, og om filerne har samme størrelse. Tidsstempler sammenlignes, hvis indstillingen 'Hold tidsstempler synkroniseret' er aktiveret.">

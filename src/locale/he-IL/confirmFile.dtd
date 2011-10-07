@@ -1,0 +1,13 @@
+<!ENTITY title "אישור שכתוב">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "שכתב">
+<!ENTITY overwriteall.label "שכתב הכל">
+<!ENTITY skip.label "דלג">
+<!ENTITY skipall.label "דלג על הכל">
+<!ENTITY resume.label "המשך">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

@@ -1,0 +1,24 @@
+<!ENTITY title "Đồng bộ Thư mục">
+<!ENTITY file.label "Tập tin">
+<!ENTITY reason.label "Lí do">
+<!ENTITY action.label "Thao tác">
+<!ENTITY download.label "Tải xuống">
+<!ENTITY upload.label "Tải lên">
+<!ENTITY delete.label "Delete">
+<!ENTITY nothing.label "Không làm gì">
+<!ENTITY defaults.label "Thay đổi Phần đã chọn">
+<!ENTITY local.label "Đối với các tập tin trong máy không có:">
+<!ENTITY remote.label "Đối với các tập tin ở xa không có:">
+<!ENTITY diff.label "Đối với dung lượng tập tin khác nhau:">
+<!ENTITY newer.label "For newer local files:">
+<!ENTITY older.label "For newer remote files:">
+<!ENTITY lDownload.access "T">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "K">
+<!ENTITY rUpload.access "l">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "h">
+<!ENTITY dDownload.access "x">
+<!ENTITY dUpload.access "n">
+<!ENTITY dNothing.access "g">
+<!ENTITY diff.note "Lưu ý: Tính năng đối chiếu này không thật sự so sánh nội dung tập tin. Thay vào đó, nó tìm những tập tin có hoặc không có trong các thư mục được đối chiếu và đồng thời tìm các tập tin có dung lượng khác nhau. Nhãn thời gian được so sánh nếu tuỳ chỉnh &apos;Giữ cho nhãn thời gian đồng bộ&apos; được bật.">

@@ -1,0 +1,31 @@
+<!ENTITY title "Propiedades">
+<!ENTITY path "Ruta:">
+<!ENTITY webpath "Ruta web:">
+<!ENTITY size "Tamaño:">
+<!ENTITY date "Fecha:">
+<!ENTITY contains "Contiene:">
+<!ENTITY user "Usuario:">
+<!ENTITY groupl "Grupo:">
+<!ENTITY attr "Atributos:">
+<!ENTITY hash "Generar hashes:">
+<!ENTITY perm "Permisos:">
+<!ENTITY reado "Sólo lectura">
+<!ENTITY hidden "Oculto">
+<!ENTITY owner "Propietario">
+<!ENTITY group "Grupo">
+<!ENTITY public "Público">
+<!ENTITY read "Lectura">
+<!ENTITY write "Escritura">
+<!ENTITY exec "Ejecución">
+<!ENTITY manual "Manual:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Fijo">
+<!ENTITY applyto "Aplicar a:">
+<!ENTITY thisprop "Este directorio">
+<!ENTITY folderprop "Todos los directorios incluidos">
+<!ENTITY filesprop "Todos los archivos incluidos">
+<!ENTITY thumbnail "Imagen reducida">
+<!ENTITY loading "Cargando…">
+<!ENTITY view.label "Ver">
+<!ENTITY view.accesskey "V">

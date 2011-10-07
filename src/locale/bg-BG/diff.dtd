@@ -1,0 +1,24 @@
+<!ENTITY title "Синхронизиране на директории">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Основание">
+<!ENTITY action.label "Действие">
+<!ENTITY download.label "Сваляне">
+<!ENTITY upload.label "Качване">
+<!ENTITY delete.label "Изтриване">
+<!ENTITY nothing.label "Да не се прави нищо">
+<!ENTITY defaults.label "Промяна на избора">
+<!ENTITY local.label "За липсващи локални файлове:">
+<!ENTITY remote.label "За липсващи отдалечени файлове:">
+<!ENTITY diff.label "За различните размери на файла:">
+<!ENTITY newer.label "За по-новите локални файлове:">
+<!ENTITY older.label "За по-новите отдалечени файлове:">
+<!ENTITY lDownload.access "С">
+<!ENTITY lDelete.access "И">
+<!ENTITY lNothing.access "н">
+<!ENTITY rUpload.access "К">
+<!ENTITY rDelete.access "з">
+<!ENTITY rNothing.access "щ">
+<!ENTITY dDownload.access "в">
+<!ENTITY dUpload.access "ч">
+<!ENTITY dNothing.access "и">
+<!ENTITY diff.note "Забележка: Чрез тази функция всъщност не се сравнява съдържанието на файла. Тя по-скоро проверява, кои файлове се намират или не в директориите, които се сравняват, а също и за различни размери на файла. Времевите отпечатъци се сравняват, ако опцията &quot;Поддържане на времевите отпечатъци в синхрон&quot; е разрешена.">

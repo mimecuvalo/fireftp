@@ -1,0 +1,13 @@
+<!ENTITY title "上書きの確認">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "上書き">
+<!ENTITY overwriteall.label "すべて上書き">
+<!ENTITY skip.label "無視">
+<!ENTITY skipall.label "すべて無視">
+<!ENTITY resume.label "レジューム">
+<!ENTITY overwrite.access "O">
+<!ENTITY overwriteall.access "A">
+<!ENTITY skip.access "S">
+<!ENTITY skipall.access "K">
+<!ENTITY resume.access "R">

@@ -1,0 +1,23 @@
+﻿<!ENTITY title "Параўнанне каталогаў">
+<!ENTITY file.label "Файл">
+<!ENTITY reason.label "Стан">
+<!ENTITY action.label "Дзеянне">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY nothing.label "Do Nothing">
+<!ENTITY defaults.label "Set Defaults">
+<!ENTITY local.label "For missing local files:">
+<!ENTITY remote.label "For missing remote files:">
+<!ENTITY diff.label "For different file sizes:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "p">
+<!ENTITY dNothing.access "h">
+<!ENTITY diff.note "Нататка: Гэтая функцыя не параўноўвае змесціва.  Правяраецца толькі наяўнасць або адсутнасць файлаў у параўноўваных каталогах, а таксама адрозненні ў памерах.">
+
+<!ENTITY delete.label     "Выдаліць">
+<!ENTITY lDelete.access   "e">
+<!ENTITY rDelete.access   "l">

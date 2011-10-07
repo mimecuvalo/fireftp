@@ -1,0 +1,22 @@
+<!ENTITY title "កម្មវិធី">
+<!ENTITY add.label "បន្ថែម">
+<!ENTITY remove.label "លុប">
+<!ENTITY extensions.label "ផ្នែកបន្ថែម">
+<!ENTITY programs.label "កម្មវិធី">
+<!ENTITY details.label "សេចក្តីលម្អិតរបស់កម្មវិធី">
+<!ENTITY name.label "ឈ្មោះ">
+<!ENTITY exec.label "ផ្លូវ">
+<!ENTITY browse.label "រកមើល">
+<!ENTITY args.label "អាគុយម៉ង់">
+<!ENTITY argshelp1.label "Leaving the &apos;Arguments&apos; field blank will default to passing the file as an argument.">
+<!ENTITY argshelp2.label "In custom arguments, use &#37;file&#37; to represent the file being passed.">
+<!ENTITY apply.label "អនុវត្ត">
+<!ENTITY adde.accesskey "A">
+<!ENTITY removee.accesskey "e">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "m">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "P">
+<!ENTITY browse.accesskey "B">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "p">

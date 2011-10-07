@@ -1,0 +1,22 @@
+<!ENTITY title "Programmes">
+<!ENTITY add.label "Ajouter">
+<!ENTITY remove.label "Retirer">
+<!ENTITY extensions.label "Extensions">
+<!ENTITY programs.label "Programmes">
+<!ENTITY details.label "Informations sur le programme">
+<!ENTITY name.label "Nom">
+<!ENTITY exec.label "Chemin">
+<!ENTITY browse.label "Parcourir">
+<!ENTITY args.label "Arguments">
+<!ENTITY argshelp1.label "Plutôt que de passer le fichier comme argument de la commande, par défaut le champ &apos;Arguments&apos; sera laissé vide.">
+<!ENTITY argshelp2.label "Dans les arguments personnalisés, utiliser &#37;file&#37; pour représenter le fichier à faire passer.">
+<!ENTITY apply.label "Appliquer">
+<!ENTITY adde.accesskey "j">
+<!ENTITY removee.accesskey "n">
+<!ENTITY addp.accesskey "o">
+<!ENTITY removep.accesskey "l">
+<!ENTITY name.accesskey "N">
+<!ENTITY exec.accesskey "C">
+<!ENTITY browse.accesskey "P">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "A">

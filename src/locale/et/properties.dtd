@@ -1,0 +1,31 @@
+<!ENTITY title "Attribuudid">
+<!ENTITY path "Rada:">
+<!ENTITY webpath "Veebi Rada:">
+<!ENTITY size "Suurus:">
+<!ENTITY date "Kuupäev:">
+<!ENTITY contains "Sisaldab:">
+<!ENTITY user "Kasutaja:">
+<!ENTITY groupl "Grupp:">
+<!ENTITY attr "Attribuudid:">
+<!ENTITY hash "Tee hakkimisi:">
+<!ENTITY perm "Tegevusload:">
+<!ENTITY reado "Ainult lugemiseks">
+<!ENTITY hidden "Peidus">
+<!ENTITY owner "Omanik">
+<!ENTITY group "Grupp">
+<!ENTITY public "Avalik">
+<!ENTITY read "Loe">
+<!ENTITY write "Kirjuta">
+<!ENTITY exec "Teosta">
+<!ENTITY manual "Manuaalne:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "GUID">
+<!ENTITY sticky "Kleepuv">
+<!ENTITY applyto "Rakenda:">
+<!ENTITY thisprop "See kaust">
+<!ENTITY folderprop "Kõik sisaldavad kaustad">
+<!ENTITY filesprop "Kõik sisaldavad failid">
+<!ENTITY thumbnail "Pisipilt">
+<!ENTITY loading "Laeb...">
+<!ENTITY view.label "Vaade">
+<!ENTITY view.accesskey "V">
