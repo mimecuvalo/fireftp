@@ -605,7 +605,7 @@ baseProtocol.prototype = {
 
     if (items.length) {                                                          // some ftp servers send 'count <number>' or 'total <number>' first
       var firstLine = items[0].toLowerCase();
-      if (firstLine.indexOf("count") == 0 || firstLine.indexOf("total") == 0 || firstLine.indexOf("Listing directory") || (!this.featMLSD && items[0].split(" ").filter(this.removeBlanks).length == 2)) {
+      if (firstLine.indexOf("count") == 0 || firstLine.indexOf("total") == 0 || firstLine.indexOf("listing directory") == 0 || (!this.featMLSD && items[0].split(" ").filter(this.removeBlanks).length == 2)) {
         items.shift();                                                           // could be in german or croatian or what have you
       }
     }

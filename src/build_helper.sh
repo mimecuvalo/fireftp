@@ -103,13 +103,13 @@ then
 		locale/zh-CN \
 		locale/zh-TW \
 		skin \
-		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp"
+		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp" "*/.git/*" "*.gitignore"
 else
 	zip -q -r9 chrome/fireftp.jar \
 		content \
 		locale/$FIREFTP_LANG \
 		skin \
-		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp"
+		-x "*/CVS/*" "*.in" "*.DS_Store" "*.swp" "*/.git/*" "*.gitignore"
 fi
 
 if [ $FIREFTP_LANG = "en-US" ]

@@ -3,21 +3,21 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAJUl5rHNt6LnLELNB8FsUPdwpE1eBwJwdjbFrigHFwa/a8uM0mp6SvQl4281I0bhdl9Y9J+x5em7EjHWh1s9TEbvLNGp7goOmWE1t6CM3B/080Hv0unvx1wyZ84xcZr8zSVcSuDH4u2EePWuamNkTCGYniOsl7eu5MBYBmPPmBbe">
-    <em:updates RDF:resource="rdf:#$m54E82"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAC4D1k6A7WWSkm49Tc8eFbzGCHeW4cOg39wCsrsGzqondNBe2hmgN4F8I1wzWoqSh21hBjZj47qPzsTNf4F4fEQB1aPAW3MVUUJVGogH7La6V4laVEn+5TlWCa9gz/ZBpwHlyXvHCku6aZ6nt1KfSMHqWzuLlQjU4k9E3cfirkBQ">
+    <em:updates RDF:resource="rdf:#$fMc5C2"/>
   </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.6"
-                   em:version="1.99.6"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAMPdGLbG5k7wMXax89Ay82mC17kL76sVMK+yjr4w5Rb/dFif6J9X8gVRfyMWDC2vCusPcWj2XO61Ut2Aniyz4ubCLfa5/ufpHVhBK1ONiGrN8JHLxAtrjONnB1Xh2zJaaSfmkXzILUWNAP3uA6sYSybxFg+MtZmaDUzXaDBfMZnh">
-    <em:targetApplication RDF:resource="rdf:#$p54E82"/>
+  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.7"
+                   em:version="1.99.7"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAJ59p90IOoX173Fd4v2HkXNe2gyenVsQyRckvbIWKa5xew0PVSay+x/gkZxW7C428lBp4+BlOMizOz6VCBx3tgTpQh01F4xeiVWPtHJ3+bB5ujFM7Xs5bmXIMCpr7d1FN5d9sHQxhzbRCo+pexFSbIrbLNlNj3P599Dbbl3Il5M8">
+    <em:targetApplication RDF:resource="rdf:#$iMc5C2"/>
   </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$m54E82">
-    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.6"/>
+  <RDF:Seq RDF:about="rdf:#$fMc5C2">
+    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.7"/>
   </RDF:Seq>
-  <Description RDF:about="rdf:#$p54E82"
+  <Description RDF:about="rdf:#$iMc5C2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
                    em:maxVersion="8.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:9cf6eafed81f0191e5497f64f2d6f88c" />
+                   em:updateHash="md5:c4388f71b03142d7ece72a81fa38ac9f" />
 </RDF:RDF>
