@@ -2,22 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAC4D1k6A7WWSkm49Tc8eFbzGCHeW4cOg39wCsrsGzqondNBe2hmgN4F8I1wzWoqSh21hBjZj47qPzsTNf4F4fEQB1aPAW3MVUUJVGogH7La6V4laVEn+5TlWCa9gz/ZBpwHlyXvHCku6aZ6nt1KfSMHqWzuLlQjU4k9E3cfirkBQ">
-    <em:updates RDF:resource="rdf:#$fMc5C2"/>
+  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0"
+                   em:version="2.0"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAJs4rwhhfUFlPd0MxfsxUwaoZg+lpLLX63QbWpTJRyUZ9UT3sylmD+eg0kwSc3pf//tSio2Zn4bdGdfy4q1S8C2x45qvYksEtC7/4VprJTPFklpbpfKQQd0unj6IlMVLIM8Q+qndEpxI7054oLcO8dnxsRW21Wdq/LtHGdsg2zxb">
+    <em:targetApplication RDF:resource="rdf:#$iqilq3"/>
   </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.7"
-                   em:version="1.99.7"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAJ59p90IOoX173Fd4v2HkXNe2gyenVsQyRckvbIWKa5xew0PVSay+x/gkZxW7C428lBp4+BlOMizOz6VCBx3tgTpQh01F4xeiVWPtHJ3+bB5ujFM7Xs5bmXIMCpr7d1FN5d9sHQxhzbRCo+pexFSbIrbLNlNj3P599Dbbl3Il5M8">
-    <em:targetApplication RDF:resource="rdf:#$iMc5C2"/>
-  </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$fMc5C2">
-    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:1.99.7"/>
+  <RDF:Seq RDF:about="rdf:#$fqilq3">
+    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0"/>
   </RDF:Seq>
-  <Description RDF:about="rdf:#$iMc5C2"
+  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAIYe4GLHoJrZFa83vRyf1wOsSlY9lkcMeFtFQcFjtqRwyFRb1AAJ9PglOtYqZi40rml5rfu6DWsJ09sAdu2NK22p0poFwcu7BRnk8n3t3WcduGv5H5XxQs3v9Kl2KcVAqOOkSGFXWOHHZw95BDmgNdLpXieGodnAHbE+S4yEh/RA">
+    <em:updates RDF:resource="rdf:#$fqilq3"/>
+  </RDF:Description>
+  <Description RDF:about="rdf:#$iqilq3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
-                   em:maxVersion="8.*"
+                   em:maxVersion="9.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:c4388f71b03142d7ece72a81fa38ac9f" />
+                   em:updateHash="md5:58086302b5ced56701069f0d21001f9f" />
 </RDF:RDF>

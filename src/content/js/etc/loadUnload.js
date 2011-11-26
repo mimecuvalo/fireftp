@@ -85,11 +85,11 @@ function startup() {
   localDirTree.changeDir(gLocalPath.value);
   loadPrograms();
 
-  var trht = 'http://www.youtube.com/watch?v=Uh_8j8k39y0';
+  var trht = 'http://www.youtube.com/watch?v=ekCvBztYs_A';
   appendLog("<span id='opening' style='line-height:16px'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://fireftp.mozdev.org/donate.html','FireFTP');\">"
       + "FireFTP</span> <span>" + gVersion
       + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + trht + "','trht');\">"
-      + "Young Folks</span>'"
+      + "Nature Boy</span>'"
       //+ " <img style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('"
       //+ trht + "','trht');\" src='chrome://fireftp/skin/icons/trht.png'/>"
       + " " + gStrbundle.getString("opening")

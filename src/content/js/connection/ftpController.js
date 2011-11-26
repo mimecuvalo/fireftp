@@ -6,7 +6,7 @@ function connect(noAccountChange, showPassDialog) {
   gStatusBarClear = false;
 
   for (var x = 0; x < gMaxCon; ++x) {
-    gConnections[x].host = gConnections[x].host.replace(/^ftp:\/*/, '');    // error checking - get rid of 'ftp://'
+    gConnections[x].host = gConnections[x].host.replace(/^ftp:\/*/i, '');    // error checking - get rid of 'ftp://'
 
     if (gConnections[x].host && gConnections[x].host.charAt(gConnections[x].host.length - 1) == '/') {
       gConnections[x].host = gConnections[x].host.substring(0, gConnections[x].host.length - 1);
