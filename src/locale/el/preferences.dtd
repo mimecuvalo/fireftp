@@ -16,7 +16,6 @@
 <!ENTITY startup.label "Εκκίνηση FireFTP:">
 <!ENTITY windowopen.label "σε νέο παράθυρο">
 <!ENTITY tabopen.label "σε νέα καρτέλα">
-<!ENTITY groupopen.label "σε ομάδα παραθύρων">
 <!ENTITY integrateftplnk.label "Αυτόματη χρήση του FireFTP για δεσμούς FTP στον FireFox">
 <!ENTITY temppasvmode.label "Χρήση παθητικής κατάστασης λειτουργίας για αυτές τις συνδέσεις">
 <!ENTITY open.label "Το διπλό κλικ/enter:">

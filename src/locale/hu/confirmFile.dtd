@@ -1,6 +1,6 @@
 <!ENTITY title "Felülírás jóváhagyása">
-<!ENTITY existing.label "Existing File:">
-<!ENTITY new.label "New File:">
+<!ENTITY existing.label "Létező fájl:">
+<!ENTITY new.label "Új fájl:">
 <!ENTITY overwrite.label "Felülírás">
 <!ENTITY overwriteall.label "Összes felülírása">
 <!ENTITY skip.label "Kihagyás">

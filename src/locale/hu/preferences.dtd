@@ -16,12 +16,11 @@
 <!ENTITY startup.label "FireFTP indítása:">
 <!ENTITY windowopen.label "Megnyitás új ablakban">
 <!ENTITY tabopen.label "Megnyitás új lapon">
-<!ENTITY groupopen.label "in a window grouping">
 <!ENTITY integrateftplnk.label "FTP linkek esetén a FireFTP automatikus használata">
 <!ENTITY temppasvmode.label "Passzív mód használata ezekhez a kapcsolatokhoz">
-<!ENTITY open.label "Double-clicking/pressing enter:">
-<!ENTITY download.label "transfers a file">
-<!ENTITY exec.label "opens a file">
+<!ENTITY open.label "Dupla kattintás/Enter leütése:">
+<!ENTITY download.label "átmásolja a fájlt">
+<!ENTITY exec.label "megnyitja a fájlt">
 <!ENTITY both.tip "Helyi és Távoli fájlok megjelenítése.">
 <!ENTITY local.tip "Csak a Helyi fájlok megjelenítése.">
 <!ENTITY remote.tip "Csak a Távoli fájlok megjelenítése.">
@@ -35,12 +34,12 @@
 <!ENTITY direct.label "Közvetlen">
 <!ENTITY host.label "Kiszolgáló:">
 <!ENTITY port.label "Port:">
-<!ENTITY active.label "Active Mode">
-<!ENTITY limitPorts.label "Limit ports">
-<!ENTITY from.label "From:">
-<!ENTITY to.label "To:">
-<!ENTITY concurrent.label "Concurrent Transfers">
-<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY active.label "Aktív mód">
+<!ENTITY limitPorts.label "Portok limitálása">
+<!ENTITY from.label "Innen:">
+<!ENTITY to.label "Ide:">
+<!ENTITY concurrent.label "Párhuzamos átvitelek">
+<!ENTITY simtransfers.label "Maximális párhuzamos átvitel (1-10)">
 <!ENTITY recovery.label "Kapcsolat helyreállítása">
 <!ENTITY network.label "Hálózati időtúllépés (másodpercben, 1 és 600 között)">
 <!ENTITY network.tip "A szerver válaszra várakozás maximális ideje.">
@@ -52,22 +51,22 @@
 <!ENTITY retrya.tip "A kapcsolódási kísérletek számát adja meg.">
 <!ENTITY downup.label "Letöltések/Feltöltések">
 <!ENTITY transfercaption.label "Fájlátvitelhez használja:">
-<!ENTITY automatic.label "Automatikus mód">
-<!ENTITY automatic.tip "Automatikusan kiválasztja a „Bináris” vagy „Szöveges” mód egyikét">
+<!ENTITY automatic.label "Automatikus Mód">
+<!ENTITY automatic.tip "Automatikusan kiválasztja a &apos;Bináris&apos; vagy &apos;Szöveges&apos; mód egyikét">
 <!ENTITY binary.label "Bináris Mód">
 <!ENTITY ascii.label "Szöveges Mód">
 <!ENTITY asciifiles.label "Szöveges fájlok:">
 <!ENTITY asciifiles.tip "Vesszővel elválasztott listája a szövegesként kezelendő fájlok kiterjesztésének.">
 <!ENTITY add.label "Hozzáadás">
 <!ENTITY remove.label "Eltávolítás">
-<!ENTITY extras.label "Extras (if enabled on server)">
-<!ENTITY usecompression.label "Use compression">
-<!ENTITY synctimestamps.label "Keep timestamps in sync">
-<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY extras.label "Extrák (ha a kiszolgáló támogatja)">
+<!ENTITY usecompression.label "Tömörítés használata">
+<!ENTITY synctimestamps.label "Időbélyegek szinkronizálása">
+<!ENTITY integritymode.label "Fájlátvitel hibamentességének ellenőrzése (XMD5, XSHA1)">
 <!ENTITY duplicates.label "Fájlduplikátumok">
 <!ENTITY timer.label "Visszaszámlálás tiltása a felülírási kérdéskor">
 <!ENTITY nopromptmode.label "Kérdés nélküli felülírás">
 <!ENTITY credits.label "Névjegy">
 <!ENTITY thanks.label "Köszönet:">
 <!ENTITY allothers.label "Köszönet mindenkinek, aki segített vagy hibát jelentett.">
-<!ENTITY special.label "Külön köszönet az összes támogatónak.">
+<!ENTITY special.label "Külön köszönet az összes támogatónak!">

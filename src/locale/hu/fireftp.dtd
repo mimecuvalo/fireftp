@@ -4,20 +4,20 @@
 <!ENTITY edit.label "Szerkesztés…">
 <!ENTITY abort.label "Megszakítás">
 <!ENTITY logtab.label "Napló/Sor">
-<!ENTITY ltab.label "Log">
-<!ENTITY qtab.label "Queue">
-<!ENTITY search.access "S">
-<!ENTITY logbutton.access "B">
+<!ENTITY ltab.label "Napló">
+<!ENTITY qtab.label "Sor">
+<!ENTITY search.access "K">
+<!ENTITY logbutton.access "N">
 <!ENTITY advanced.label "Haladó">
-<!ENTITY search.label "Search/Filter">
+<!ENTITY search.label "Keresés">
 <!ENTITY diff.label "Könyvtár összehasonlítás">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
-<!ENTITY custom.label "Egyedi…">
+<!ENTITY recdiff.label "Rekurzív könyvtár összehasonlítás">
+<!ENTITY custom.label "Egyedi">
 <!ENTITY import.label "Importálás…">
 <!ENTITY export.label "Exportálás…">
 <!ENTITY preferencestab.label "Beállítások">
 <!ENTITY diff.access "K">
-<!ENTITY recdiff.access "D">
+<!ENTITY recdiff.access "R">
 <!ENTITY custom.access "E">
 <!ENTITY import.access "I">
 <!ENTITY export.access "x">
@@ -35,65 +35,64 @@
 <!ENTITY date.label "Dátum">
 <!ENTITY type.label "Típus">
 <!ENTITY attr.label "Attribútumok">
-<!ENTITY source.label "Source">
-<!ENTITY dest.label "Destination">
-<!ENTITY bytes.label "Bytes">
-<!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY source.label "Forrás">
+<!ENTITY dest.label "Cél">
+<!ENTITY bytes.label "Bájt">
+<!ENTITY status.label "Állapot">
+<!ENTITY retry.label "Próbálkozás">
+<!ENTITY cancel.label "Megszakít">
+<!ENTITY cancelAll.label "Összes megszakítása">
 <!ENTITY type.tip "Az adatátviteli eljárás megváltoztatása (ajánlott: automatikus)">
 <!ENTITY bytes.tip "Bájt letöltve / Bájt összesen">
 <!ENTITY timeela.tip "Eltelt idő">
 <!ENTITY timerem.tip "Hátralévő idő">
 <!ENTITY download.tip "Letöltési arány">
 <!ENTITY percent.tip "Százalék kész">
-<!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binary">
-<!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY auto.label "Automata">
+<!ENTITY binary.label "Bináris">
+<!ENTITY ascii.label "Szöveges">
+<!ENTITY openContaining.label "Tartalmazó mappa megnyitása">
 <!ENTITY upload.label "Feltöltés">
 <!ENTITY download.label "Letöltés">
 <!ENTITY open.label "Megnyitás">
 <!ENTITY openwith.label "Megnyitás mással">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY extractHere.label "Kibontás ide">
+<!ENTITY extractTo.label "Kibontás mappába">
 <!ENTITY viewweb.label "Megtekintés a Weben">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY copyUrl.label "URL másolás">
+<!ENTITY copyUrlLogin.label "FTP belépéssel">
 <!ENTITY cut.label "Kivágás">
 <!ENTITY copy.label "Másolás">
 <!ENTITY paste.label "Beillesztés">
 <!ENTITY makedir.label "Könyvtár létrehozása">
 <!ENTITY makefile.label "Fájl létrehozása">
-<!ENTITY symlink.label "Create Symlink">
 <!ENTITY delete.label "Törlés">
 <!ENTITY rename.label "Átnevezés">
 <!ENTITY properties.label "Tulajdonságok">
 <!ENTITY rproperties.label "Rekurzív beállítások">
-<!ENTITY searchButton.label "Search">
-<!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
-<!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
-<!ENTITY searchSubdir.access "s">
-<!ENTITY searchMatch.access "c">
-<!ENTITY searchRegexp.access "x">
-<!ENTITY searchDates.access "d">
+<!ENTITY searchButton.label "Keresés">
+<!ENTITY searchLocal.label "Helyi">
+<!ENTITY searchRemote.label "Távoli">
+<!ENTITY searchOptions.label "Beállítások">
+<!ENTITY searchFrom.label "Ettől:">
+<!ENTITY searchTo.label "Eddig:">
+<!ENTITY searchSubdir.label "Keresés almappákban">
+<!ENTITY searchMatch.label "Kis- és nagybetű különbözik">
+<!ENTITY searchRegexp.label "Reguláris kifejezés">
+<!ENTITY searchDates.label "Dátumok megadása">
+<!ENTITY searchSubdir.access "m">
+<!ENTITY searchMatch.access "n">
+<!ENTITY searchRegexp.access "g">
+<!ENTITY searchDates.access "D">
 <!ENTITY edit.access "S">
 <!ENTITY abort.access "M">
 <!ENTITY advanced.access "H">
 <!ENTITY helpbutton.access "S">
 <!ENTITY browsebutton.access "T">
 <!ENTITY changebutton.access "g">
-<!ENTITY searchButton.access "S">
-<!ENTITY searchLocal.access "L">
-<!ENTITY searchRemote.access "R">
-<!ENTITY searchOptions.access "O">
+<!ENTITY searchButton.access "K">
+<!ENTITY searchLocal.access "H">
+<!ENTITY searchRemote.access "T">
+<!ENTITY searchOptions.access "B">
 <!ENTITY mozilla.quote "És <html:em>íme</html:em>, a <html:em>sötétségből</html:em> előtűnnek hűséges szolgái, hogy <html:em>segítsék</html:em> a fenevad újjászületését, megkeresvén a világ <html:em>visszahódításának</html:em> útját. Együttesen, összefogva Ők azok, akik <html:em>kiterjesztik</html:em> a fenevad erejét és <html:em>elterjesztik</html:em> az Ő visszatértének jó hírét. És a <html:em>Mammon</html:em> követői egyenként mind megtértek, s szívüket <html:em>lángok</html:em> tisztítják meg.">
 <!ENTITY mozilla.from "<html:strong>Mozilla könyve</html:strong>, 8:2">

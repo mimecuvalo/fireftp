@@ -6,8 +6,7 @@
 <!ENTITY id "Azonosító">
 <!ENTITY account.label "Név:">
 <!ENTITY account.tip "Például: Saját FTP helyem">
-<!ENTITY folder.label "Category:">
-<!ENTITY optional.label "(optional)">
+<!ENTITY folder.label "Kategória:">
 <!ENTITY host.label "Kiszolgáló:">
 <!ENTITY host.tip "Például: ftp.debian.org">
 <!ENTITY login.label "Felhasználónév:">
@@ -22,9 +21,9 @@
 <!ENTITY authssl.label "SSL hitelesítés (jobb)">
 <!ENTITY implicit.label "Implicit SSL (jó)">
 <!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Key:">
-<!ENTITY pkbrowse.label "Browse...">
-<!ENTITY pkconvert.label "Convert...">
+<!ENTITY privatekey.label "Privát kulcs:">
+<!ENTITY pkbrowse.label "Tallózás…">
+<!ENTITY pkconvert.label "Átalakítás…">
 <!ENTITY initialdir "Kezdőkönyvtárak">
 <!ENTITY download "Letöltési beállítások">
 <!ENTITY upload "Feltöltési beállítások">
@@ -39,14 +38,14 @@
 <!ENTITY caseleave.label "Nincs átalakítás">
 <!ENTITY caselower.label "Kisbetűssé alakítás">
 <!ENTITY caseupper.label "Nagybetüssé alakítás">
-<!ENTITY timezone.label "Timezone Offset">
-<!ENTITY hours.label "Hours:">
-<!ENTITY minutes.label "Minutes:">
-<!ENTITY notes.label "Notes">
-<!ENTITY encoding.label "Server Encoding">
-<!ENTITY charset.label "Character Set:">
+<!ENTITY timezone.label "Időzóna eltolás">
+<!ENTITY hours.label "Óra:">
+<!ENTITY minutes.label "Perc:">
+<!ENTITY notes.label "Megjegyzés">
+<!ENTITY encoding.label "Kiszolgáló karakterkódolása">
+<!ENTITY charset.label "Karakterkészlet:">
 <!ENTITY account.access "N">
-<!ENTITY folder.access "e">
+<!ENTITY folder.access "m">
 <!ENTITY host.access "i">
 <!ENTITY login.access "F">
 <!ENTITY password.access "J">
@@ -55,8 +54,8 @@
 <!ENTITY port.access "p">
 <!ENTITY security.access "B">
 <!ENTITY privatekey.access "i">
-<!ENTITY pkbrowse.access "B">
-<!ENTITY pkconvert.access "S">
+<!ENTITY pkbrowse.access "T">
+<!ENTITY pkconvert.access "T">
 <!ENTITY localdir.access "H">
 <!ENTITY remotedir.access "T">
 <!ENTITY currentl.access "t">

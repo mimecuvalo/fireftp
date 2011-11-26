@@ -7,7 +7,6 @@
 <!ENTITY account.label "Név:">
 <!ENTITY account.tip "Például: Saját FTP helyem">
 <!ENTITY folder.label "Kategória:">
-<!ENTITY optional.label "(optional)">
 <!ENTITY host.label "Kiszolgáló:">
 <!ENTITY host.tip "Például: ftp.debian.org">
 <!ENTITY login.label "Felhasználónév:">

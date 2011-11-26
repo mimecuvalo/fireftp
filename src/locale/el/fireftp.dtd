@@ -66,7 +66,6 @@
 <!ENTITY paste.label "Επικόλληση">
 <!ENTITY makedir.label "Δημιουργία καταλόγου">
 <!ENTITY makefile.label "Δημιουργία αρχείου">
-<!ENTITY symlink.label "Δημιουργία συμβολικού δεσμού">
 <!ENTITY delete.label "Διαγραφή">
 <!ENTITY rename.label "Μετονομασία">
 <!ENTITY properties.label "Ιδιότητες">
