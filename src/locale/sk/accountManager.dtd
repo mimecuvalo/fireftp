@@ -7,7 +7,7 @@
 <!ENTITY account.label "Názov účtu:">
 <!ENTITY account.tip "Príklad: Moje FTP">
 <!ENTITY folder.label "Kategória:">
-<!ENTITY optional.label "(optional)">
+<!ENTITY optional.label "(voliteľné)">
 <!ENTITY host.label "Server:">
 <!ENTITY host.tip "Príklad: ftp.debian.org">
 <!ENTITY login.label "Prihlasovacie meno:">

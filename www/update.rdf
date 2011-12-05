@@ -16,10 +16,10 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>4.0b1</em:minVersion>
-        <em:maxVersion>9.*</em:maxVersion>
+        <em:maxVersion>10.*</em:maxVersion>
         <em:updateLink>https://addons.mozilla.org/firefox/downloads/latest/684</em:updateLink>
         <em:updateHash>
-          md5:d58a0670b4ee18f82e94b082bdfb79ff
+          md5:390943cf42cdc74318bebc38860cfd30
         </em:updateHash>
       </Description>
     </em:targetApplication>

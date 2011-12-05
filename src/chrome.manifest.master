@@ -13,6 +13,7 @@ locale  fireftp ca-AD                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp cs                               jar:chrome/fireftp.jar!/locale/cs/
 locale  fireftp da                               jar:chrome/fireftp.jar!/locale/da/
 locale  fireftp de                               jar:chrome/fireftp.jar!/locale/de/
+locale  fireftp dsb-DE                           jar:chrome/fireftp.jar!/locale/dsb-DE/
 locale  fireftp el                               jar:chrome/fireftp.jar!/locale/el/
 locale  fireftp en-US                            jar:chrome/fireftp.jar!/locale/en-US/
 locale  fireftp eo                               jar:chrome/fireftp.jar!/locale/eo/
@@ -21,6 +22,7 @@ locale  fireftp es-CL                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp es-ES                            jar:chrome/fireftp.jar!/locale/es-ES/
 locale  fireftp es-MX                            jar:chrome/fireftp.jar!/locale/es-MX/
 locale  fireftp et                               jar:chrome/fireftp.jar!/locale/et/
+locale  fireftp eu                               jar:chrome/fireftp.jar!/locale/eu/
 locale  fireftp eu-ES                            jar:chrome/fireftp.jar!/locale/eu-ES/
 locale  fireftp fa                               jar:chrome/fireftp.jar!/locale/fa/
 locale  fireftp fi                               jar:chrome/fireftp.jar!/locale/fi/
@@ -34,6 +36,7 @@ locale  fireftp hsb-DE                           jar:chrome/fireftp.jar!/locale/
 locale  fireftp hu                               jar:chrome/fireftp.jar!/locale/hu/
 locale  fireftp hu-HU                            jar:chrome/fireftp.jar!/locale/hu-HU/
 locale  fireftp id                               jar:chrome/fireftp.jar!/locale/id/
+locale  fireftp it                               jar:chrome/fireftp.jar!/locale/it/
 locale  fireftp it-IT                            jar:chrome/fireftp.jar!/locale/it-IT/
 locale  fireftp ja-JP                            jar:chrome/fireftp.jar!/locale/ja-JP/
 locale  fireftp ka-GE                            jar:chrome/fireftp.jar!/locale/ka-GE/

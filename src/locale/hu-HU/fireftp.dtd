@@ -66,6 +66,7 @@
 <!ENTITY paste.label "Beillesztés">
 <!ENTITY makedir.label "Könyvtár létrehozása">
 <!ENTITY makefile.label "Fájl létrehozása">
+<!ENTITY symlink.label "Create Symlink">
 <!ENTITY delete.label "Törlés">
 <!ENTITY rename.label "Átnevezés">
 <!ENTITY properties.label "Tulajdonságok">

@@ -6,7 +6,7 @@
 <!ENTITY id "Ustawienia logowania">
 <!ENTITY account.label "Nazwa konta:">
 <!ENTITY account.tip "Np: Mój serwer FTP">
-<!ENTITY folder.label "Category:">
+<!ENTITY folder.label "Kategoria:">
 <!ENTITY optional.label "(opcjonalne)">
 <!ENTITY host.label "Serwer:">
 <!ENTITY host.tip "Np: ftp.debian.org">
@@ -22,9 +22,9 @@
 <!ENTITY authssl.label "Prot. SSL3 (b.dobry)">
 <!ENTITY implicit.label "Prot. SSL2 (dobry)">
 <!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Key:">
-<!ENTITY pkbrowse.label "Browse...">
-<!ENTITY pkconvert.label "Convert...">
+<!ENTITY privatekey.label "Klucz prywatny:">
+<!ENTITY pkbrowse.label "Przeglądaj…">
+<!ENTITY pkconvert.label "Konwertuj…">
 <!ENTITY initialdir "Katalogi początkowe">
 <!ENTITY download "Opcje pobierania">
 <!ENTITY upload "Opcje wysyłania">
@@ -39,12 +39,12 @@
 <!ENTITY caseleave.label "Pozostaw bez zmian">
 <!ENTITY caselower.label "Zamień na wielkie litery">
 <!ENTITY caseupper.label "Zamień na małe litery">
-<!ENTITY timezone.label "Timezone Offset">
-<!ENTITY hours.label "Hours:">
-<!ENTITY minutes.label "Minutes:">
+<!ENTITY timezone.label "Przesunięcie strefy czasowej">
+<!ENTITY hours.label "Godziny:">
+<!ENTITY minutes.label "Minuty:">
 <!ENTITY notes.label "Notes">
-<!ENTITY encoding.label "Server Encoding">
-<!ENTITY charset.label "Character Set:">
+<!ENTITY encoding.label "Kodowanie serwera">
+<!ENTITY charset.label "Zestaw znaków:">
 <!ENTITY account.access "N">
 <!ENTITY folder.access "e">
 <!ENTITY host.access "S">

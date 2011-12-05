@@ -1,0 +1,73 @@
+<!ENTITY title "Hobespenak">
+<!ENTITY asciiTitle "ASCII Fitxategi Motak">
+<!ENTITY general.label "Orokorra">
+<!ENTITY messages.label "Mezuak">
+<!ENTITY welcome.label "Erakutsi Ongietorri Mezua">
+<!ENTITY error.label "Erakutsi Akats Mezuak">
+<!ENTITY sessions.label "Saioak">
+<!ENTITY rememberp.label "Pasahitzak Gogoratu">
+<!ENTITY rememberd.label "Direktorioen Zerrendaketak Gogoratu">
+<!ENTITY fileview.label "Fitxategien Ikuskera">
+<!ENTITY autorefresh.label "Bakarrik Eguneratu">
+<!ENTITY refresh.tip "Urrunekoen leihoa aldatzean (igoerekin, berrizendatzean, etab.), eguneratu direktorioen zerrendaketa">
+<!ENTITY hidden.label "Ezkutuko Fitxategiak Erakutsi">
+<!ENTITY bytesmode.label "Erakutsi fitxategi tamainen byte kopurua">
+<!ENTITY interface.label "Interfazea">
+<!ENTITY startup.label "FireFTPren Hasiera:">
+<!ENTITY windowopen.label "Ireki leiho berrian">
+<!ENTITY tabopen.label "Ireki fitxa berrian">
+<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY integrateftplnk.label "Konfiguratu Firefoxeko FTP loturak automatikoki FireFTP erabiltzeko">
+<!ENTITY temppasvmode.label "Erabili Era Pasiboa koneksio hauentzat">
+<!ENTITY open.label "Double-clicking/pressing enter:">
+<!ENTITY download.label "transfers a file">
+<!ENTITY exec.label "opens a file">
+<!ENTITY both.tip "Fitxategi lokalak eta urrunekoak erakusten ditu">
+<!ENTITY local.tip "Fitxategi lokalak soilik erakusten ditu">
+<!ENTITY remote.tip "Urruneko fitxategiak soilik erakusten ditu">
+<!ENTITY logwindow.label "Loga">
+<!ENTITY logmode.label "Leiho nagusian loga erakutsi">
+<!ENTITY logerrormode.label "Logean akatsak soilik erakutsi">
+<!ENTITY debug.label "Debug Informazioa erakutsi">
+<!ENTITY connect.label "Koneksioak">
+<!ENTITY proxy.label "Proxya">
+<!ENTITY none.label "Bat ere ez">
+<!ENTITY direct.label "Zuzena">
+<!ENTITY host.label "Ostalaria:">
+<!ENTITY port.label "Ataka:">
+<!ENTITY active.label "Active Mode">
+<!ENTITY limitPorts.label "Limit ports">
+<!ENTITY from.label "From:">
+<!ENTITY to.label "To:">
+<!ENTITY concurrent.label "Concurrent Transfers">
+<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY recovery.label "Koneksioa Berreskuratzea">
+<!ENTITY network.label "Sareko Denbora-Muga (segundotan, 1 eta 600 artean)">
+<!ENTITY network.tip "Zerbitzariaren erantzunaren zain zenbat denboraz egon behar duen zehazten du">
+<!ENTITY keepalivemode.label "Koneksioa bizirik mantendu zu lanean ez bazaude ere">
+<!ENTITY timeout.label "Deskonektatuz gero, birkonektatzen saiatu">
+<!ENTITY retryd.label "Saiakerarako itxaron (segundotan, 1 eta 600 artean)">
+<!ENTITY retryd.tip "Birkonektatze ekinaldietarako itxaron beharreko segunduak">
+<!ENTITY retrya.label "Ekinaldiak">
+<!ENTITY retrya.tip "Egin beharreko ekinaldi kopurua">
+<!ENTITY downup.label "Jaitsierak/Igoerak">
+<!ENTITY transfercaption.label "Fitxategiak igortzerakoan erabili:">
+<!ENTITY automatic.label "Era Automatikoa">
+<!ENTITY automatic.tip "Automatikoki aukeratu era 'Bitarra' edo 'ASCII' era">
+<!ENTITY binary.label "Era Bitarra">
+<!ENTITY ascii.label "ASCII Era">
+<!ENTITY asciifiles.label "ASCII fitxategiak:">
+<!ENTITY asciifiles.tip "ASCII fitxategi gisa ezagutu beharko lirateken luzapenen zerrenda, kakotxez bananduta">
+<!ENTITY add.label "Gehitu">
+<!ENTITY remove.label "Kendu">
+<!ENTITY extras.label "Extras (if enabled on server)">
+<!ENTITY usecompression.label "Use compression">
+<!ENTITY synctimestamps.label "Keep timestamps in sync">
+<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY duplicates.label "Fitxategi Bikoiztuak">
+<!ENTITY timer.label "Ezgaitu denbora-muga gainidazteko galderan">
+<!ENTITY nopromptmode.label "Ez erakutsi gainidazteko galdera, zuzenean gainidatzi">
+<!ENTITY credits.label "Egileak">
+<!ENTITY thanks.label "Eskerrak:">
+<!ENTITY allothers.label "Akatsen berri eman edo lagundu duten beste guztiei">
+<!ENTITY special.label "Esker Bereziak dirulaguntza eman duten guztiei!">

@@ -55,6 +55,7 @@ then
 		locale/cs \
 		locale/da \
 		locale/de \
+		locale/dsb-DE \
 		locale/el \
 		locale/en-US \
 		locale/eo \
@@ -63,6 +64,7 @@ then
 		locale/es-ES \
 		locale/es-MX \
 		locale/et \
+		locale/eu \
 		locale/eu-ES \
 		locale/fa \
 		locale/fi \
@@ -76,6 +78,7 @@ then
 		locale/hu \
 		locale/hu-HU \
 		locale/id \
+		locale/it \
 		locale/it-IT \
 		locale/ja-JP \
 		locale/ka-GE \

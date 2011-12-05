@@ -1,0 +1,24 @@
+<!ENTITY title "Zapisy synchronizěrowaś">
+<!ENTITY file.label "Dataja">
+<!ENTITY reason.label "Pśicyna">
+<!ENTITY action.label "Akcija">
+<!ENTITY download.label "Ześěgnuś">
+<!ENTITY upload.label "Nagraś">
+<!ENTITY delete.label "Wulašowaś">
+<!ENTITY nothing.label "Nic njecyniś">
+<!ENTITY defaults.label "Wuběrk změniś">
+<!ENTITY local.label "Za felujuce lokalne dataje:">
+<!ENTITY remote.label "Za felujuce zdalone dataje:">
+<!ENTITY diff.label "Za rozdźělne datajowe wjelikosći:">
+<!ENTITY newer.label "Za nowše lokalne dataje:">
+<!ENTITY older.label "Za nowše zdalone dataje:">
+<!ENTITY lDownload.access "Z">
+<!ENTITY lDelete.access "u">
+<!ENTITY lNothing.access "c">
+<!ENTITY rUpload.access "N">
+<!ENTITY rDelete.access "l">
+<!ENTITY rNothing.access "i">
+<!ENTITY dDownload.access "e">
+<!ENTITY dUpload.access "a">
+<!ENTITY dNothing.access "y">
+<!ENTITY diff.note "Glědaj: Toś ta funkcija njepśirownujo datajowe wopśimjeśe, ale glěda za tym, kótare dataje w zapisach, kótarež maju se pśirownowaś,  eksistěruju abo njeeksistěruju a kak se datajowe wjelikosći rozeznawaju. Casowe kołki se pśirownuju, jolic nastajenje 'Casowe kołki synchrone wobźaržaś' jo zmóžnjone.">

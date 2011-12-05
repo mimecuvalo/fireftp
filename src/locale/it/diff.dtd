@@ -1,0 +1,24 @@
+<!ENTITY title "Sync cartelle">
+<!ENTITY file.label "File">
+<!ENTITY reason.label "Ragione">
+<!ENTITY action.label "Azione">
+<!ENTITY download.label "Download">
+<!ENTITY upload.label "Upload">
+<!ENTITY delete.label "Elimina">
+<!ENTITY nothing.label "Non fare niente">
+<!ENTITY defaults.label "Imposta predefiniti">
+<!ENTITY local.label "Per i file locali mancanti:">
+<!ENTITY remote.label "Per i file remoti mancanti:">
+<!ENTITY diff.label "Per dimensioni file diverse:">
+<!ENTITY newer.label "Se il file locale è più recente:">
+<!ENTITY older.label "Se il file remoto è più recente:">
+<!ENTITY lDownload.access "D">
+<!ENTITY lDelete.access "e">
+<!ENTITY lNothing.access "N">
+<!ENTITY rUpload.access "U">
+<!ENTITY rDelete.access "m">
+<!ENTITY rNothing.access "t">
+<!ENTITY dDownload.access "w">
+<!ENTITY dUpload.access "o">
+<!ENTITY dNothing.access "e">
+<!ENTITY diff.note "Nota: La funzione di confronto attualmente è limitata al controllo sull'esistenza dei file e delle cartelle e alla dimensione dei file, ma non esegue la comparazione del contenuto dei file. I timestamp vengono messi a confronto se viene attivata l'opzione 'Mantieni sincronizzati i timestamp'">

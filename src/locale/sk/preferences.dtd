@@ -13,10 +13,10 @@
 <!ENTITY hidden.label "Zobraziť skryté súbory">
 <!ENTITY bytesmode.label "Veľkosť súboru zobrazovať v bajtoch">
 <!ENTITY interface.label "Používateľské rozhranie">
-<!ENTITY startup.label "Spustenie FireFTP:">
-<!ENTITY windowopen.label "Otvoriť v novom okne">
-<!ENTITY tabopen.label "Otvoriť v novej karte">
-<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY startup.label "Spustiť FireFTP:">
+<!ENTITY windowopen.label "v novom okne">
+<!ENTITY tabopen.label "na novej karte">
+<!ENTITY groupopen.label "v skupine okien">
 <!ENTITY integrateftplnk.label "Konfigurovať FTP linky vo Firefoxe na automatické používanie FireFTP">
 <!ENTITY temppasvmode.label "Použiť pasívny režim pre tieto pripojenia">
 <!ENTITY open.label "Dvojité kliknutie/stlačenie tlačidla enter:">
@@ -48,9 +48,9 @@
 <!ENTITY timeout.label "Pri prerušení obnoviť pripojenie">
 <!ENTITY retryd.label "Oneskorené opakovanie">
 <!ENTITY retryd.tip "Čas na ďalší pokus (sekúnd)">
-<!ENTITY retrya.label "Počet pokusov">
-<!ENTITY retrya.tip "Počet pokusov">
-<!ENTITY downup.label "Sťahovanie / Odosielanie">
+<!ENTITY retrya.label "Počet pokusov opakovania">
+<!ENTITY retrya.tip "Počet opakovaní">
+<!ENTITY downup.label "Preberanie / Odosielanie">
 <!ENTITY transfercaption.label "Na prenos súborov použiť:">
 <!ENTITY automatic.label "Automatický režim">
 <!ENTITY automatic.tip "Automaticky rozhodne mezi 'Binárnym' a 'ASCII' režimom">

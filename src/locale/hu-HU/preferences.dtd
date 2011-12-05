@@ -16,6 +16,7 @@
 <!ENTITY startup.label "FireFTP indítása:">
 <!ENTITY windowopen.label "Megnyitás új ablakban">
 <!ENTITY tabopen.label "Megnyitás új lapon">
+<!ENTITY groupopen.label "in a window grouping">
 <!ENTITY integrateftplnk.label "FTP linkek esetén a FireFTP automatikus használata">
 <!ENTITY temppasvmode.label "Passzív mód használata ezekhez a kapcsolatokhoz">
 <!ENTITY open.label "Dupla kattintás/Enter leütése:">

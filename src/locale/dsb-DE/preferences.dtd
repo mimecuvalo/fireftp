@@ -1,0 +1,73 @@
+<!ENTITY title "Nastajenja">
+<!ENTITY asciiTitle "Typy ASCII-datajow">
+<!ENTITY general.label "Powšykne">
+<!ENTITY messages.label "Powěsći">
+<!ENTITY welcome.label "Pówitańsku powěźeńku pokazaś">
+<!ENTITY error.label "Zmólkowe powěźeńki pokazaś">
+<!ENTITY sessions.label "Pósejźenja">
+<!ENTITY rememberp.label "Gronidła se spomnjeś">
+<!ENTITY rememberd.label "Zapisowe lisćiny pufrowaś">
+<!ENTITY fileview.label "Datajowy naglěd">
+<!ENTITY autorefresh.label "Awtomatiski aktualizěrowaś">
+<!ENTITY refresh.tip "Pó změnjanju zdalonego naglěda (pśi pśenjasenju), zapis aktualizěrowaś">
+<!ENTITY hidden.label "Schowane dataje pokazaś">
+<!ENTITY bytesmode.label "Licbu bajtow za datajowe wjelikosći zwobrazniś">
+<!ENTITY interface.label "Pówjerch">
+<!ENTITY startup.label "FireFTP startowaś:">
+<!ENTITY windowopen.label "w nowem woknje">
+<!ENTITY tabopen.label "na nowem rejtarku">
+<!ENTITY groupopen.label "we woknowej kupce">
+<!ENTITY integrateftplnk.label "FTP-wótkaze w Firefoxu za awtomatiske wužywanje FireFTP konfigěrurowaś">
+<!ENTITY temppasvmode.label "Pasiwny modus za toś te zwiski wužywaś">
+<!ENTITY open.label "Pśi dwojnem kliknjenju/tłocenju wobkšuśeńskeje tasty:">
+<!ENTITY download.label "pśenosujo dataju">
+<!ENTITY exec.label "wócynja dataju">
+<!ENTITY both.tip "Pokazujo ako lokalne tak teke zdalone dataje">
+<!ENTITY local.tip "Pokazujo jano lokalne dataje">
+<!ENTITY remote.tip "Pokazujo jano zdalone dataje">
+<!ENTITY logwindow.label "Protokol">
+<!ENTITY logmode.label "Protokol w głownem woknj pokazaś">
+<!ENTITY logerrormode.label "Jano zmólki w protokolu pokazaś">
+<!ENTITY debug.label "Informacije wó pytanju za zmólkami pokazaś">
+<!ENTITY connect.label "Zwiski">
+<!ENTITY proxy.label "Proksy">
+<!ENTITY none.label "Žeden">
+<!ENTITY direct.label "Direktny">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Port:">
+<!ENTITY active.label "Aktiwny modus">
+<!ENTITY limitPorts.label "Porty wobgranicowaś">
+<!ENTITY from.label "Wót:">
+<!ENTITY to.label "Do:">
+<!ENTITY concurrent.label "Rownocasne pśenjasenja">
+<!ENTITY simtransfers.label "Maksimalna licba simultanych pśenjasenjow (1-10)">
+<!ENTITY recovery.label "Zwisk wótnowiś">
+<!ENTITY network.label "Casowe pśekšacenje (w sekundach, mjazy 1 a 600)">
+<!ENTITY network.tip "Podawa, kak dłujko jo trjeba na wótegrono serwera cakaś">
+<!ENTITY keepalivemode.label "Zwisk teke pśi inaktiwnosći wobchowaś">
+<!ENTITY timeout.label "Jolic zwězany, wopytaj zasego zwězaś">
+<!ENTITY retryd.label "Casowy interwal mjazy wopytami (w sekundach, mjazy 1 a 600)">
+<!ENTITY retryd.tip "Sekundy mjazy zwiskowymi wopytami">
+<!ENTITY retrya.label "Wopyty wóspjetowaś">
+<!ENTITY retrya.tip "Maksimalna licba wopytow">
+<!ENTITY downup.label "Ześěgnjenja/Nagraśa">
+<!ENTITY transfercaption.label "Modus za pśenjasenje datajow:">
+<!ENTITY automatic.label "Awtomatiski modus">
+<!ENTITY automatic.tip "Awotmatiski mjazy 'binarnym' a 'ASCII'-modusom wubraś">
+<!ENTITY binary.label "Binarny modus">
+<!ENTITY ascii.label "ASCII-modus">
+<!ENTITY asciifiles.label "ASCII-dataje:">
+<!ENTITY asciifiles.tip "Lisćina datajowych typow, kótarež maju se ako ASCII-dataje spóznaś">
+<!ENTITY add.label "Pśidaś">
+<!ENTITY remove.label "Wótwónoźeś">
+<!ENTITY extras.label "Dodawki(jolic na serwerje zmóžnjone)">
+<!ENTITY usecompression.label "Kompresiju wužywaś">
+<!ENTITY synctimestamps.label "Casowe kołki synchrone wobźaržaś">
+<!ENTITY integritymode.label "Integritu datajowych pśenjasenjow (XMD5, XSHA1) kontrolěrowaś">
+<!ENTITY duplicates.label "Datajowe duplikaty">
+<!ENTITY timer.label "Casoměr w pśepisańskem dialogu znjemóžniś">
+<!ENTITY nopromptmode.label "Pśepisański dialog njepokazaś, jadnorje pśepisaś">
+<!ENTITY credits.label "Źěkowanje">
+<!ENTITY thanks.label "Źěkujomy se:">
+<!ENTITY allothers.label "Wšykne druge, kótarež su programowe zmólki k wěsći dali a pomogli">
+<!ENTITY special.label "Wósebny źěk wšym, kótarez su pósćili!">

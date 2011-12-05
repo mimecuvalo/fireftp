@@ -28,6 +28,7 @@
           <em:locale>locale/ca-AD/</em:locale>
           <em:locale>locale/cs/</em:locale>
           <em:locale>locale/da/</em:locale>
+          <em:locale>locale/dsb-DE/</em:locale>
           <em:locale>locale/de/</em:locale>
           <em:locale>locale/el/</em:locale>
           <em:locale>locale/en-US/</em:locale>
@@ -37,6 +38,7 @@
           <em:locale>locale/es-ES/</em:locale>
           <em:locale>locale/es-MX/</em:locale>
           <em:locale>locale/et/</em:locale>
+          <em:locale>locale/eu/</em:locale>
           <em:locale>locale/eu-ES/</em:locale>
           <em:locale>locale/fa/</em:locale>
           <em:locale>locale/fi/</em:locale>
@@ -50,6 +52,7 @@
           <em:locale>locale/hu/</em:locale>
           <em:locale>locale/hu-HU/</em:locale>
           <em:locale>locale/id/</em:locale>
+          <em:locale>locale/it/</em:locale>
           <em:locale>locale/it-IT/</em:locale>
           <em:locale>locale/ja-JP/</em:locale>
           <em:locale>locale/ka-GE/</em:locale>
@@ -83,7 +86,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>4.0b1</em:minVersion>
-        <em:maxVersion>9.*</em:maxVersion>
+        <em:maxVersion>10.*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <em:optionsURL>chrome://fireftp/content/preferences.xul</em:optionsURL>

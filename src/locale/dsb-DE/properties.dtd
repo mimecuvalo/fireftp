@@ -1,0 +1,31 @@
+<!ENTITY title "Kakosći">
+<!ENTITY path "Sćažka:">
+<!ENTITY webpath "Websćažka:">
+<!ENTITY size "Wjelikosć:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Wopśimujo:">
+<!ENTITY user "Wužywaŕ:">
+<!ENTITY groupl "Kupka:">
+<!ENTITY attr "Atributy:">
+<!ENTITY hash "Hašowe gódnoty:">
+<!ENTITY perm "Pšawa:">
+<!ENTITY reado "Jano cytajobny">
+<!ENTITY hidden "Schowany">
+<!ENTITY owner "Wobsejźaŕ">
+<!ENTITY group "Kupka">
+<!ENTITY public "Zjawny">
+<!ENTITY read "Cytaś">
+<!ENTITY write "Pisaś">
+<!ENTITY exec "Wuwjasć">
+<!ENTITY manual "Manuelny:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Pśipněty">
+<!ENTITY applyto "Nałožyś na:">
+<!ENTITY thisprop "Toś ten zarědnik">
+<!ENTITY folderprop "Wšykne wopśimjone zarědniki">
+<!ENTITY filesprop "Wšykne wopśimjone dataje">
+<!ENTITY thumbnail "Pśeglědowy wobrazk">
+<!ENTITY loading "Zacytujo se...">
+<!ENTITY view.label "Naglěd">
+<!ENTITY view.accesskey "N">

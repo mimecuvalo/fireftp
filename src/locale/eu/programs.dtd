@@ -1,0 +1,22 @@
+<!ENTITY title "Programak">
+<!ENTITY add.label "Gehitu">
+<!ENTITY remove.label "Kendu">
+<!ENTITY extensions.label "Luzapenak">
+<!ENTITY programs.label "Programak">
+<!ENTITY details.label "Programaren Xehetasunak">
+<!ENTITY name.label "Izena">
+<!ENTITY exec.label "Bidea">
+<!ENTITY browse.label "Arakatu">
+<!ENTITY args.label "Argumentuak">
+<!ENTITY argshelp1.label "'Argumentuak' eremua hutsik uzten baduzu fitxategia argumentu gisa pasako du.">
+<!ENTITY argshelp2.label "Aurrezehazturiko argumentuetan, erabili &#37;file&#37; pasatu beharreko fitxategia izendatzeko.">
+<!ENTITY apply.label "Ezarri">
+<!ENTITY adde.accesskey "G">
+<!ENTITY removee.accesskey "K">
+<!ENTITY addp.accesskey "h">
+<!ENTITY removep.accesskey "n">
+<!ENTITY name.accesskey "I">
+<!ENTITY exec.accesskey "B">
+<!ENTITY browse.accesskey "A">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "E">

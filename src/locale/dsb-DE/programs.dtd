@@ -1,0 +1,22 @@
+<!ENTITY title "Programy">
+<!ENTITY add.label "Pśidaś">
+<!ENTITY remove.label "Wótwónoźeś">
+<!ENTITY extensions.label "Rozšyrjenja">
+<!ENTITY programs.label "Programy">
+<!ENTITY details.label "Programowe drobnostki">
+<!ENTITY name.label "Mě">
+<!ENTITY exec.label "Sćažka">
+<!ENTITY browse.label "Pśepytaś">
+<!ENTITY args.label "Argumenty">
+<!ENTITY argshelp1.label "Jolic wóstajaśo pólo 'Argumenty' prozne, buźo se dataja ako standardny argument pśepódawaś.">
+<!ENTITY argshelp2.label "Wužyjśo &#37;file&#37; w swójskich argumentach, aby wy dataju wóznamjenił, kótaraž ma se pśepódaś.">
+<!ENTITY apply.label "Nałožyś">
+<!ENTITY adde.accesskey "P">
+<!ENTITY removee.accesskey "w">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "t">
+<!ENTITY name.accesskey "M">
+<!ENTITY exec.accesskey "S">
+<!ENTITY browse.accesskey "e">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "N">

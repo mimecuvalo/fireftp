@@ -1,0 +1,13 @@
+<!ENTITY title "Berretsi Gainidazketa">
+<!ENTITY existing.label "Existing File:">
+<!ENTITY new.label "New File:">
+<!ENTITY overwrite.label "Gainidatzi">
+<!ENTITY overwriteall.label "Gainidatzi Dena">
+<!ENTITY skip.label "Ihes">
+<!ENTITY skipall.label "Ihes Beti">
+<!ENTITY resume.label "Berrekin">
+<!ENTITY overwrite.access "G">
+<!ENTITY overwriteall.access "D">
+<!ENTITY skip.access "I">
+<!ENTITY skipall.access "h">
+<!ENTITY resume.access "B">

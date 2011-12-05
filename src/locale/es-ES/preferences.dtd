@@ -16,7 +16,7 @@
 <!ENTITY startup.label "Iniciar FireFTP:">
 <!ENTITY windowopen.label "en una ventana nueva">
 <!ENTITY tabopen.label "en una pestaña nueva">
-<!ENTITY groupopen.label "en un nuevo grupo de ventanas">
+<!ENTITY groupopen.label "en un grupo de ventanas">
 <!ENTITY integrateftplnk.label "Configurar Firefox para usar automáticamente FireFTP en enlaces FTP.">
 <!ENTITY temppasvmode.label "Usar modo pasivo para estas conexiones">
 <!ENTITY open.label "Doble clic / pulsar intro:">

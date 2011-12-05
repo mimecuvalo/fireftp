@@ -43,7 +43,7 @@
 <!ENTITY cancel.label "Zrušiť">
 <!ENTITY cancelAll.label "Zrušiť všetko">
 <!ENTITY type.tip "Zmeniť metódu prenosu (auto doporučené)">
-<!ENTITY bytes.tip "Bajtov stiahnutých / Ceľkovo bajtov">
+<!ENTITY bytes.tip "Bajtov stiahnutých / Celkovo bajtov">
 <!ENTITY timeela.tip "Vypršalo">
 <!ENTITY timerem.tip "Ostáva">
 <!ENTITY download.tip "Rýchlosť">
@@ -66,7 +66,7 @@
 <!ENTITY paste.label "Prilepiť">
 <!ENTITY makedir.label "Vytvoriť adresár">
 <!ENTITY makefile.label "Vytvoriť súbor">
-<!ENTITY symlink.label "Create Symlink">
+<!ENTITY symlink.label "Vytvoriť Symlink">
 <!ENTITY delete.label "Odstrániť">
 <!ENTITY rename.label "Premenovať">
 <!ENTITY properties.label "Vlastnosti">

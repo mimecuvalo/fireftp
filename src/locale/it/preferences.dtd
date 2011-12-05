@@ -1,0 +1,73 @@
+<!ENTITY title "Preferenze">
+<!ENTITY asciiTitle "Tipi di file ASCII">
+<!ENTITY general.label "Generale">
+<!ENTITY messages.label "Messaggi">
+<!ENTITY welcome.label "Visualizza messaggio di benvenuto">
+<!ENTITY error.label "Visualizza messaggi di errore">
+<!ENTITY sessions.label "Sessioni">
+<!ENTITY rememberp.label "Ricorda password">
+<!ENTITY rememberd.label "Ricorda elenco delle cartelle">
+<!ENTITY fileview.label "Visualizzazione file">
+<!ENTITY autorefresh.label "Aggiornamento automatico">
+<!ENTITY refresh.tip "Quando cambia la visualizzazione remota (dopo operazioni di caricamento, rinomina, ecc.), aggiorna l&apos;elenco delle cartelle">
+<!ENTITY hidden.label "Visualizza i file nascosti">
+<!ENTITY bytesmode.label "Visualizza la dimensione dei file in byte">
+<!ENTITY interface.label "Interfaccia">
+<!ENTITY startup.label "Avvia FireFTP:">
+<!ENTITY windowopen.label "in una nuova finestra">
+<!ENTITY tabopen.label "in una nuova scheda">
+<!ENTITY groupopen.label "in un raggruppamento di finestre">
+<!ENTITY integrateftplnk.label "Configura Firefox in modo da aprire i collegamenti FTP con FireFTP">
+<!ENTITY temppasvmode.label "Utilizza la modalità passiva per queste connessioni">
+<!ENTITY open.label "Doppio clic/Invio:">
+<!ENTITY download.label "trasferisce un file">
+<!ENTITY exec.label "apre un file">
+<!ENTITY both.tip "Visualizza sia i file locali che quelli remoti">
+<!ENTITY local.tip "Visualizza solamente i file locali">
+<!ENTITY remote.tip "Visualizza solamente i file remoti">
+<!ENTITY logwindow.label "Log">
+<!ENTITY logmode.label "Visualizza il log nella finestra principale">
+<!ENTITY logerrormode.label "Visualizza solo gli errori">
+<!ENTITY debug.label "Visualizza le informazioni di debug">
+<!ENTITY connect.label "Connessioni">
+<!ENTITY proxy.label "Proxy">
+<!ENTITY none.label "Nessuno">
+<!ENTITY direct.label "Diretto">
+<!ENTITY host.label "Host:">
+<!ENTITY port.label "Porta:">
+<!ENTITY active.label "Modo attivo">
+<!ENTITY limitPorts.label "Limita porte">
+<!ENTITY from.label "Da:">
+<!ENTITY to.label "A:">
+<!ENTITY concurrent.label "Trasferimenti contemporanei">
+<!ENTITY simtransfers.label "Trasferimenti contemporanei massimi (1-10)">
+<!ENTITY recovery.label "Recupero connessione">
+<!ENTITY network.label "Timeout rete (in secondi, tra 1 e 600)">
+<!ENTITY network.tip "Controlla quanto tempo aspettare per una risposta dal server">
+<!ENTITY keepalivemode.label "Mantieni aperta la connessione anche se inattivo">
+<!ENTITY timeout.label "Se disconnesso, ritenta la connessione">
+<!ENTITY retryd.label "Tempo di attesa prima del tentativo (in secondi, da 1 a 600)">
+<!ENTITY retryd.tip "Secondi tra i tentativi di riconnessione">
+<!ENTITY retrya.label "Tentativi di riconnessione">
+<!ENTITY retrya.tip "Numero di tentativi da effettuare">
+<!ENTITY downup.label "Download/Upload">
+<!ENTITY transfercaption.label "Quando si trasferiscono i file usare:">
+<!ENTITY automatic.label "Modalità automatica">
+<!ENTITY automatic.tip "Sceglie automaticamente tra modalità &apos;binaria&apos; e modalità &apos;ASCII&apos;">
+<!ENTITY binary.label "Modalità binaria">
+<!ENTITY ascii.label "Modalità ASCII">
+<!ENTITY asciifiles.label "File ASCII:">
+<!ENTITY asciifiles.tip "Lista di estensioni che dovrebbero essere riconosciute come file ASCII">
+<!ENTITY add.label "Aggiungi">
+<!ENTITY remove.label "Rimuovi">
+<!ENTITY extras.label "Extra (se abilitati sul server)">
+<!ENTITY usecompression.label "Usa compressione">
+<!ENTITY synctimestamps.label "Mantieni sincronizzati i timestamp">
+<!ENTITY integritymode.label "Verfica l'integrità dei file trasferiti (XMD5, XSHA1)">
+<!ENTITY duplicates.label "File duplicati">
+<!ENTITY timer.label "Disattiva il conto alla rovescia nella finestra di sovrascrittura">
+<!ENTITY nopromptmode.label "Sovrascrivi senza mostrare alcuna richiesta di conferma">
+<!ENTITY credits.label "Ringraziamenti">
+<!ENTITY thanks.label "Grazie a:">
+<!ENTITY allothers.label "Tutti gli altri che hanno inviato un aiuto o segnalato un bug">
+<!ENTITY special.label "Un ringraziamento speciale a tutti quelli che hanno contribuito con una donazione!">

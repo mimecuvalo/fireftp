@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Apri link in FireFTP">
+<!ENTITY viewFireFTP "Visualizza questa pagina in FireFTP">
+<!ENTITY accountlist.label "(Scegli un account)">
+<!ENTITY edit.label "Modifica...">
+<!ENTITY abort.label "Annulla">
+<!ENTITY logtab.label "Log/Coda">
+<!ENTITY ltab.label "Log">
+<!ENTITY qtab.label "Coda">
+<!ENTITY search.access "C">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Avanzate">
+<!ENTITY search.label "Cerca/Filtro">
+<!ENTITY diff.label "Sincronizzazione cartelle...">
+<!ENTITY recdiff.label "Sincronizza cartelle e sotto-cartelle…">
+<!ENTITY custom.label "Comando personalizzato...">
+<!ENTITY import.label "Importa...">
+<!ENTITY export.label "Esporta...">
+<!ENTITY preferencestab.label "Preferenze">
+<!ENTITY diff.access "D">
+<!ENTITY recdiff.access "S">
+<!ENTITY custom.access "P">
+<!ENTITY import.access "I">
+<!ENTITY export.access "o">
+<!ENTITY prefbutton.access "r">
+<!ENTITY help.label "Aiuto">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Vai alla cartella superiore">
+<!ENTITY refresh.tip "Aggiorna cartella">
+<!ENTITY localpath.tip "Percorso locale">
+<!ENTITY remotepath.tip "Percorso remoto">
+<!ENTITY browse.label "Sfoglia">
+<!ENTITY change.label "Cambia">
+<!ENTITY name.label "Nome">
+<!ENTITY size.label "Dimensione">
+<!ENTITY date.label "Data">
+<!ENTITY type.label "Tipo">
+<!ENTITY attr.label "Attributi">
+<!ENTITY source.label "Sorgente">
+<!ENTITY dest.label "Destinazione">
+<!ENTITY bytes.label "Byte">
+<!ENTITY status.label "Stato">
+<!ENTITY retry.label "Riprova">
+<!ENTITY cancel.label "Annulla">
+<!ENTITY cancelAll.label "Annulla tutto">
+<!ENTITY type.tip "Cambia metodo di trasferimento (raccomandato: auto)">
+<!ENTITY bytes.tip "Byte scaricati / Byte totali">
+<!ENTITY timeela.tip "Tempo trascorso">
+<!ENTITY timerem.tip "Tempo rimanente">
+<!ENTITY download.tip "Velocità download">
+<!ENTITY percent.tip "Percentuale completata">
+<!ENTITY auto.label "Auto">
+<!ENTITY binary.label "Binario">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Apri la cartella contenitrice">
+<!ENTITY upload.label "Upload">
+<!ENTITY download.label "Download">
+<!ENTITY open.label "Apri">
+<!ENTITY openwith.label "Apri con">
+<!ENTITY extractHere.label "Estrai qui">
+<!ENTITY extractTo.label "Estrai nella cartella">
+<!ENTITY viewweb.label "Visualizza nel web">
+<!ENTITY copyUrl.label "Copia URL">
+<!ENTITY copyUrlLogin.label "FTP con accesso">
+<!ENTITY cut.label "Taglia">
+<!ENTITY copy.label "Copia">
+<!ENTITY paste.label "Incolla">
+<!ENTITY makedir.label "Crea cartella">
+<!ENTITY makefile.label "Crea file">
+<!ENTITY symlink.label "Crea link simbolico">
+<!ENTITY delete.label "Elimina">
+<!ENTITY rename.label "Rinomina">
+<!ENTITY properties.label "Proprietà">
+<!ENTITY rproperties.label "Proprietà (incl. contenuti)">
+<!ENTITY searchButton.label "Cerca">
+<!ENTITY searchLocal.label "Locale">
+<!ENTITY searchRemote.label "Remoto">
+<!ENTITY searchOptions.label "Opzioni">
+<!ENTITY searchFrom.label "Da:">
+<!ENTITY searchTo.label "A:">
+<!ENTITY searchSubdir.label "Cerca nelle sotto-cartelle">
+<!ENTITY searchMatch.label "Distingui maiuscole/minuscole">
+<!ENTITY searchRegexp.label "Espressione regolare">
+<!ENTITY searchDates.label "Specifica date">
+<!ENTITY searchSubdir.access "r">
+<!ENTITY searchMatch.access "D">
+<!ENTITY searchRegexp.access "E">
+<!ENTITY searchDates.access "d">
+<!ENTITY edit.access "M">
+<!ENTITY abort.access "A">
+<!ENTITY advanced.access "v">
+<!ENTITY helpbutton.access "u">
+<!ENTITY browsebutton.access "S">
+<!ENTITY changebutton.access "m">
+<!ENTITY searchButton.access "C">
+<!ENTITY searchLocal.access "a">
+<!ENTITY searchRemote.access "m">
+<!ENTITY searchOptions.access "O">
+<!ENTITY mozilla.quote "Ed, <html:em>ecco!</html:em>, dall&apos;<html:em>oscurità</html:em> emersero: degli ospiti amici per <html:em>aiutare</html:em> la Bestia rinata nel suo intento di <html:em>reclamare</html:em> la terra. Insieme <html:em>estesero</html:em> il potere della Bestia e <html:em>sparsero</html:em> la buona notizia del suo ritorno. Uno ad uno i seguaci di <html:em>Mammona</html:em> furono convertiti e i loro cuori furono <html:em>accesi</html:em>.">
+<!ENTITY mozilla.from "dal <html:strong>Libro di Mozilla</html:strong>, 8:2">

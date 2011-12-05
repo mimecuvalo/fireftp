@@ -7,6 +7,7 @@
 <!ENTITY account.label "Όνομα λογαριασμού:">
 <!ENTITY account.tip "Παράδειγμα: Ο FTP ιστότοπος μου">
 <!ENTITY folder.label "Κατηγορία:">
+<!ENTITY optional.label "(προαιρετικά)">
 <!ENTITY host.label "Κεντρικός υπολογιστής:">
 <!ENTITY host.tip "Παράδειγμα: ftp.debian.org">
 <!ENTITY login.label "Όνομα χρήστη:">

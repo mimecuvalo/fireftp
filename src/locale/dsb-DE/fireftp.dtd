@@ -1,0 +1,99 @@
+<!ENTITY openFireFTP "Wótkaz w FireFTP wócyniś">
+<!ENTITY viewFireFTP "Toś ten bok se w FireFTP wobglědaś">
+<!ENTITY accountlist.label "(Konto wubraś)">
+<!ENTITY edit.label "Wobźěłaś">
+<!ENTITY abort.label "Pśetergnuś">
+<!ENTITY logtab.label "Protokol/Cakański rěd">
+<!ENTITY ltab.label "Protokol">
+<!ENTITY qtab.label "Cakański rěd">
+<!ENTITY search.access "P">
+<!ENTITY logbutton.access "R">
+<!ENTITY advanced.label "Rědy">
+<!ENTITY search.label "Pytaś/Filtrowaś">
+<!ENTITY diff.label "Zapise synchronizěrowaś...">
+<!ENTITY recdiff.label "Zapise a pódzapise synchronizěrowaś...">
+<!ENTITY custom.label "Swójski pśikaz...">
+<!ENTITY import.label "Importěrowaś...">
+<!ENTITY export.label "Eksportěrowaś...">
+<!ENTITY preferencestab.label "Nastajenja...">
+<!ENTITY diff.access "Z">
+<!ENTITY recdiff.access "d">
+<!ENTITY custom.access "S">
+<!ENTITY import.access "I">
+<!ENTITY export.access "E">
+<!ENTITY prefbutton.access "o">
+<!ENTITY help.label "Pomoc">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY parentdir.tip "Do nadrědowanego zpisa pśejś">
+<!ENTITY refresh.tip "Zapis aktualizěrowaś">
+<!ENTITY localpath.tip "Lokalna sćažka">
+<!ENTITY remotepath.tip "Zdalona sćažka">
+<!ENTITY browse.label "Pśepytaś">
+<!ENTITY change.label "Změniś">
+<!ENTITY name.label "Mě">
+<!ENTITY size.label "Wjelikosć">
+<!ENTITY date.label "Datum">
+<!ENTITY type.label "Typ">
+<!ENTITY attr.label "Atributy">
+<!ENTITY source.label "Žrědło">
+<!ENTITY dest.label "Cel">
+<!ENTITY bytes.label "Bajty">
+<!ENTITY status.label "Status">
+<!ENTITY retry.label "Hyšći raz wopytaś">
+<!ENTITY cancel.label "Pśetergnuś">
+<!ENTITY cancelAll.label "Wšykno pśetergnuś">
+<!ENTITY type.tip "Metodu pśenjasenja změniś (prućujo se: Awtomatiski spóznaś)">
+<!ENTITY bytes.tip "Ześěgnjone bajty/Bajty dogromady">
+<!ENTITY timeela.tip "Pśejśony cas">
+<!ENTITY timerem.tip "Zbytny cas">
+<!ENTITY download.tip "Malsnosć pśenjasenja">
+<!ENTITY percent.tip "Póstup">
+<!ENTITY auto.label "Awtomatiski">
+<!ENTITY binary.label "Binarny">
+<!ENTITY ascii.label "ASCII">
+<!ENTITY openContaining.label "Zarědnik z wopśimjeśim wócyniś">
+<!ENTITY upload.label "Nagraś">
+<!ENTITY download.label "Ześěgnuś">
+<!ENTITY open.label "Wócyniś">
+<!ENTITY openwith.label "Wócyniś z">
+<!ENTITY extractHere.label "How ekstrahěrowaś">
+<!ENTITY extractTo.label "Do zarědnika ekstrahěrowaś">
+<!ENTITY viewweb.label "W seśi se wobglědaś">
+<!ENTITY copyUrl.label "URL kopěrowaś">
+<!ENTITY copyUrlLogin.label "FTP z pśizjawjenim">
+<!ENTITY cut.label "Wurězaś">
+<!ENTITY copy.label "Kopěrowaś">
+<!ENTITY paste.label "Zasunuś">
+<!ENTITY makedir.label "Zapis napóraś">
+<!ENTITY makefile.label "Dataju napóraś">
+<!ENTITY symlink.label "Sytemowy wótkaz napóraś">
+<!ENTITY delete.label "Wulašowaś">
+<!ENTITY rename.label "Pśemjeniś">
+<!ENTITY properties.label "Kakosći">
+<!ENTITY rproperties.label "Kakosći (inkl. wopśimjeśe)">
+<!ENTITY searchButton.label "Pytaś">
+<!ENTITY searchLocal.label "Lokalny">
+<!ENTITY searchRemote.label "Zdalony">
+<!ENTITY searchOptions.label "Nastajenja">
+<!ENTITY searchFrom.label "Wót:">
+<!ENTITY searchTo.label "Do:">
+<!ENTITY searchSubdir.label "W pódzapisach pytaś">
+<!ENTITY searchMatch.label "Na wjelikopisanje źiwaś">
+<!ENTITY searchRegexp.label "Regularny wuraz">
+<!ENTITY searchDates.label "Datumy pódaś">
+<!ENTITY searchSubdir.access "z">
+<!ENTITY searchMatch.access "N">
+<!ENTITY searchRegexp.access "R">
+<!ENTITY searchDates.access "D">
+<!ENTITY edit.access "W">
+<!ENTITY abort.access "P">
+<!ENTITY advanced.access "R">
+<!ENTITY helpbutton.access "m">
+<!ENTITY browsebutton.access "P">
+<!ENTITY changebutton.access "Z">
+<!ENTITY searchButton.access "P">
+<!ENTITY searchLocal.access "L">
+<!ENTITY searchRemote.access "o">
+<!ENTITY searchOptions.access "N">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
+<!ENTITY mozilla.from "z <html:strong>The Book of Mozilla</html:strong>, 8:2">

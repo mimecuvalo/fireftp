@@ -5,13 +5,13 @@
 <!ENTITY abort.label "Usuń">
 <!ENTITY logtab.label "Dziennik/Kolejka">
 <!ENTITY ltab.label "Log">
-<!ENTITY qtab.label "Queue">
+<!ENTITY qtab.label "Kolejka">
 <!ENTITY search.access "S">
 <!ENTITY logbutton.access "z">
 <!ENTITY advanced.label "Narzędzia">
-<!ENTITY search.label "Search/Filter">
+<!ENTITY search.label "Wyszukiwanie/Filtr">
 <!ENTITY diff.label "Porównaj katalogi">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY recdiff.label "Synchronizuj katalogi i subkatalogi…">
 <!ENTITY custom.label "Polecenia użytkownika">
 <!ENTITY import.label "Import…">
 <!ENTITY export.label "Eksport…">
@@ -35,13 +35,13 @@
 <!ENTITY date.label "Data">
 <!ENTITY type.label "Typ">
 <!ENTITY attr.label "Atrybuty">
-<!ENTITY source.label "Source">
-<!ENTITY dest.label "Destination">
-<!ENTITY bytes.label "Bytes">
+<!ENTITY source.label "Źródło">
+<!ENTITY dest.label "Miejsce docelowe">
+<!ENTITY bytes.label "Bajtów">
 <!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY retry.label "Ponów próbę">
+<!ENTITY cancel.label "Anuluj">
+<!ENTITY cancelAll.label "Anuluj wszystko">
 <!ENTITY type.tip "Zmień metodę transferu (auto - zalecane)">
 <!ENTITY bytes.tip "Pobrane bajty / Wszystkie bajty">
 <!ENTITY timeela.tip "Czas pobierania">
@@ -49,18 +49,18 @@
 <!ENTITY download.tip "Prędkość pobierania">
 <!ENTITY percent.tip "Procent wykonania">
 <!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binary">
+<!ENTITY binary.label "Binarne">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY openContaining.label "Otwórz folder zawierający">
 <!ENTITY upload.label "Wyślij">
 <!ENTITY download.label "Pobierz">
 <!ENTITY open.label "Otwórz">
 <!ENTITY openwith.label "Otwórz za pomocą">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY extractHere.label "Wypakuj tutaj">
+<!ENTITY extractTo.label "Wypakuj do folderu">
 <!ENTITY viewweb.label "Zobacz w internecie">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY copyUrl.label "Kopiuj URL">
+<!ENTITY copyUrlLogin.label "FTP z loginem">
 <!ENTITY cut.label "Wytnij">
 <!ENTITY copy.label "Kopiuj">
 <!ENTITY paste.label "Wstaw">
@@ -71,19 +71,19 @@
 <!ENTITY rename.label "Zmień nazwę">
 <!ENTITY properties.label "Właściwości">
 <!ENTITY rproperties.label "Właściwości (zawierają zawartość)">
-<!ENTITY searchButton.label "Search">
-<!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
-<!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
-<!ENTITY searchSubdir.access "s">
-<!ENTITY searchMatch.access "c">
-<!ENTITY searchRegexp.access "x">
+<!ENTITY searchButton.label "Szukaj">
+<!ENTITY searchLocal.label "Lokalne">
+<!ENTITY searchRemote.label "Zdalne">
+<!ENTITY searchOptions.label "Opcje">
+<!ENTITY searchFrom.label "Z:">
+<!ENTITY searchTo.label "Do:">
+<!ENTITY searchSubdir.label "Szukaj w subkatalogach">
+<!ENTITY searchMatch.label "Uwzględniaj wielkość znaków">
+<!ENTITY searchRegexp.label "Wyrażenie regularne">
+<!ENTITY searchDates.label "Określ daty">
+<!ENTITY searchSubdir.access "e">
+<!ENTITY searchMatch.access "e">
+<!ENTITY searchRegexp.access "u">
 <!ENTITY searchDates.access "d">
 <!ENTITY edit.access "E">
 <!ENTITY abort.access "U">
