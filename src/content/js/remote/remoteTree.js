@@ -459,7 +459,10 @@ var remoteTree = {
 
     this.editType   = "create";
     this.editParent = gRemotePath.value;
-    setTimeout("gRemoteTree.startEditing(remoteTree.rowCount - 1, gRemoteTree.columns['remotename'])", 0);
+    var func = function() {
+      gRemoteTree.startEditing(remoteTree.rowCount - 1, gRemoteTree.columns['remotename']);
+    };
+    setTimeout(func, 0);
   },
 
   remove : function() {
@@ -553,7 +556,10 @@ var remoteTree = {
             error(gStrbundle.getString("renameFail"));
             this.displayData[row].leafName = val;
             this.treebox.invalidateRow(row);
-            setTimeout("gRemoteTree.startEditing(" + row + ", gRemoteTree.columns['remotename'])", 0);
+            var func = function() {
+              gRemoteTree.startEditing(row, gRemoteTree.columns['remotename']);
+            };
+            setTimeout(func, 0);
             return;
           }
         }
@@ -578,7 +584,10 @@ var remoteTree = {
         this.updateViewCallback = renameCallback;
 
         var errorCallback = function() {
-          setTimeout("gRemoteTree.startEditing(" + row + ", gRemoteTree.columns['remotename'])", 0);
+          var func = function() {
+            gRemoteTree.startEditing(row, gRemoteTree.columns['remotename']);
+          };
+          setTimeout(func, 0);
         };
 
         this.displayData[row].leafName = val;
@@ -597,7 +606,10 @@ var remoteTree = {
             }
             this.displayData[row].leafName = val;
             this.treebox.invalidateRow(row);
-            setTimeout("gRemoteTree.startEditing(" + row + ", gRemoteTree.columns['remotename'])", 0);
+            var func = function() {
+              gRemoteTree.startEditing(row, gRemoteTree.columns['remotename']);
+            };
+            setTimeout(func, 0);
             return;
           }
         }
@@ -615,7 +627,10 @@ var remoteTree = {
         this.updateViewCallback = createCallback;
 
         var errorCallback = function() {
-          setTimeout("gRemoteTree.startEditing(remoteTree.rowCount - 1, gRemoteTree.columns['remotename'])", 0);
+          var func = function() {
+            gRemoteTree.startEditing(remoteTree.rowCount - 1, gRemoteTree.columns['remotename']);
+          };
+          setTimeout(func, 0);
         };
 
         this.displayData[row].leafName = val;

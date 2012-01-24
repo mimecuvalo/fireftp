@@ -50,5 +50,9 @@ function selfClose(sec) {
     return;
   }
 
-  setTimeout("selfClose(" + (sec - 1) + ")", 1000);
+  var func = function() {
+    selfClose(sec - 1);
+  };
+
+  setTimeout(func, 1000);
 }

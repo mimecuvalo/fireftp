@@ -47,7 +47,8 @@ ftpDataSocketMozilla.prototype = {
       if (activeTransport) {
         this.dataTransport = activeTransport;
       } else {
-        var proxyInfo = this.proxyType == "" ? null : this.proxyService.newProxyInfo(this.proxyType, this.proxyHost, this.proxyPort, 0, 30, null);
+        var proxyInfo = this.proxyType == "" ? null : this.proxyService.newProxyInfo(this.proxyType, this.proxyHost, this.proxyPort,
+                                                        Components.interfaces.nsIProxyInfo.TRANSPARENT_PROXY_RESOLVES_HOST, 30, null);
 
         if (this.security) {
           this.dataTransport = this.transportService.createTransport(["ssl"], 1, this.host, this.port, proxyInfo);

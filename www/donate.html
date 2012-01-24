@@ -5,6 +5,22 @@
     <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="favicon.png" type="image/png"/>
+    <style>
+      #donations th,
+      #donations td {
+        vertical-align: top;
+      }
+      #donations th,
+      #donations td {
+        padding: 0 10px;
+      }
+      #total td {
+        font-weight: bold;
+      }
+      #total td {
+        border-top: 3px double black;
+      }
+    </style>
   </head>
 
   <body>
@@ -27,15 +43,15 @@
 
     <script>
       if (window.location.href.indexOf('?installed=true') != -1) {
-        document.write('<div id="installed"><img src="images/check.png">&nbsp;You\'ve successfully installed FireFTP!</div>')
+        document.write('<div id="installed"><img src="images/check.png"><div id="installed-msg">&nbsp;You\'ve successfully installed FireFTP!<br /><strong>&nbsp;You can find it under Tools-&gt;Web Developer or right-click on the toolbar and Customize.</strong></div><div class="clear"></div></div>')
       }
     </script>
 
     <div id="content">
       <div id="sidebar">
-        <img id="donate-pic" alt="m and s" src="images/m_and_s.jpg"/>
         <table id="donate" width="304">
           <tr><td style="text-align:center">
+            <img src="images/lgbt.png" style="margin: 10px 0">
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="F4TTN7EZS7AN4">
@@ -47,12 +63,11 @@
       </div>
       <h1>FireFTP Charity Project</h1>
       <h3>Where does this money go?</h3>
-        <i><b>Half of all proceeds</b></i> go towards helping various orphanages in <a href="http://en.wikipedia.org/wiki/Sarajevo">Sarajevo</a>, Bosnia &amp; Herzegovina and in Vukovar, Croatia.  I spend my summers with these little guys and they are seriously the best kids in the world.  (My family and I have even been fortunate enough to adopt one as well.  He's the cute little kid in the photo to the right.)  Your donation goes towards making this world that these little brothers and sisters of mine are living in a better place.<br><br>
-        <i><b>The other half of your donation</b></i> goes towards helping support <a href="http://en.wikipedia.org/wiki/Portal:LGBT">LGBT</a> rights.  With your kind help, we can assist in making <a href="http://www.itgetsbetter.org/">things get better</a>.  In particular, donations will go to supporting support gay rights groups in the U.S, Croatia, and Bosnia &amp; Herzegovina.<br/>
+        <i><b>All proceeds</b></i> go towards helping support worldwide <a href="http://en.wikipedia.org/wiki/LGBT">LGBT</a> rights.  With your kind help, we can assist in making <a href="http://www.itgetsbetter.org/">things get better</a>.  In particular, donations will go to supporting support gay rights groups in the U.S, Croatia, and Bosnia &amp; Herzegovina.  In addition, this years proceeds will also benefit a domestic violence shelter in Portland, Oregon.<br/>
       <h3>What's a reasonable donation?</h3>
         Even $1 is enough to show your appreciation - give what you can.  Most FTP programs run about $40 US dollars, so you are getting quite a bargain here... :-)  If you are a business, using FireFTP for professional endeavors, you should consider donating at least $20.  If you are using several copies of the program in your company you should perhaps pay an additional $5 for each copy.  In the end, pay what you feel is fair.<br/>
       <h3>I have no money right now - what else can I do?</h3>
-        I help kids in Sarajevo, for example, because I know them personally - but you, yes <b>you</b>, can be just as much a positive influence, if not more.  How, you ask?  Right where you are, in your local community.<br/><br/>
+        You, yes <b>you</b>, can be just a positive influence, if not more by helping out right where you are, in your local community.<br/><br/>
         
         <i>Suggestions on different ways of being awesome:</i><br/>
         Volunteer.  Somewhere.  Anywhere.<br/>
@@ -74,6 +89,26 @@
       <h3>Is this tax-deductible on my income taxes?</h3>
         While donations are not U.S. tax deductible as charitable contribution, they may be deductible as an operating expense, and if someone is so inclined, they should ask for the advice of their accountant. The same applies to other countries, where corporations can make deductible donations under the terms of "Good Will".  I specifically am not a non-profit organization, as that would limit the nationalities that I could spend such money in.
         <br/>        
+      <h3>Business Transparency: how much has the FireFTP project been able to raise over the years?</h3>
+      Here's how much support the project has gotten over the years.  Thank you to all who donated over the years - I very much appreciate it!<br><br>
+
+      <table id="donations">
+        <tr><th>Year</th> <th>Donations<br><span style="font-size: 10px">(after paypal fees and taxes)</span></th> <th>to Charity<br><span style="font-size: 10px">(2005-2010 went to orphanages<br>in Sarajevo and Vukovar)</span></th> <th>to Self</th></tr>
+        <tr><td>2004<br><span style="font-size: 10px">(no donations taken this year)</span></td> <td>$0</td> <td>= $0</td> <td>+ $0</td></tr>
+        <tr><td>2005<br><span style="font-size: 10px">(before having a post-install<br>screen asking for donations)</span></td> <td>$1,000</td> <td>= $1,000</td> <td>+ $0</td></tr>
+        <tr><td>2006</td> <td>$14,280</td> <td>= $7,350</td> <td>+ $6,930</td></tr>
+        <tr><td>2007</td> <td>$26,835</td> <td>= $13,700</td> <td>+ $13,135</td></tr>
+        <tr><td>2008</td> <td>$25,043</td> <td>= $13,000</td> <td>+ $12,043</td></tr>
+        <tr><td>2009</td> <td>$20,341</td> <td>= $13,000</td> <td>+ $7,341</td></tr>
+        <tr><td>2010</td> <td>$21,610</td> <td>= $13,000</td> <td>+ $8,610</td></tr>
+        <tr id="total"><td>after 7 years of work</td> <td>$109,109</td> <td>= $61,050</td> <td>+ $48,059</td></tr>
+      </table><br>
+      Downloads: <strong>~20,000,000</strong><br>
+      Donators: 15,000 (0.075% of downloaders)<br>
+      Price per download: <strong>$0.005</strong><br>
+      Haha, I'm obviously a crappy businessman - I should've maybe charged $1 per download =]<br>
+      Next time, I should write a Minecraft-like game ;)
+      <br/>
     </div>
 
     <div id="footer">

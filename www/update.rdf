@@ -19,7 +19,7 @@
         <em:maxVersion>10.*</em:maxVersion>
         <em:updateLink>https://addons.mozilla.org/firefox/downloads/latest/684</em:updateLink>
         <em:updateHash>
-          md5:390943cf42cdc74318bebc38860cfd30
+          md5:ba403b558fad0e3a6f071c014c5aa5d8
         </em:updateHash>
       </Description>
     </em:targetApplication>

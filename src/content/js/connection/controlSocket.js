@@ -41,7 +41,8 @@ ftpMozilla.prototype = {
       var self      = this;
 
       if (this.proxyType != "") {                                                // use a proxy
-        proxyInfo = this.proxyService.newProxyInfo(this.proxyType, this.proxyHost, this.proxyPort, 0, 30, null);
+        proxyInfo = this.proxyService.newProxyInfo(this.proxyType, this.proxyHost, this.proxyPort,
+                      Components.interfaces.nsIProxyInfo.TRANSPARENT_PROXY_RESOLVES_HOST, 30, null);
       }
 
       if (this.security == "ssl") {                                              // thanks to Scott Bentley. he's a good man, Jeffrey. and thorough.

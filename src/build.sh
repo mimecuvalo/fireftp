@@ -14,3 +14,6 @@ source build_helper.sh
 FIREFTP_LANG=all
 FIREFTP_MASTER=1
 source build_helper.sh
+
+# alternatively, do proxies:
+# https://developer.mozilla.org/en/Setting_up_extension_development_environment#Firefox_extension_proxy_file

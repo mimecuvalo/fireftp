@@ -97,14 +97,17 @@ function startup() {
   gCmdlogBody.scrollTop = 0;
 
   onAccountChange(gDefaultAccount);
-  setTimeout("gAccountField.focus()", 0);
+  var func = function() {
+    gAccountField.focus();
+  };
+  setTimeout(func, 0);
 
   //tipJar();
 
   setTimeout(doResizeHack, 0);
 
   if (gLoadUrl) {
-    setTimeout("externalLink()", 1000);
+    setTimeout(externalLink, 1000);
   }
 }
 

@@ -7,7 +7,11 @@ function init() {
   gStrbundle = $("strings");
   gArgs      = window.arguments[0];
 
-  setTimeout("$('properties').getButton('accept').focus()", 0);
+  var func = function() {
+    $('properties').getButton('accept').focus();
+  };
+
+  setTimeout(func, 0);
 
   if (gArgs.multipleFiles) {
     $('thumbrow').collapsed = true;
@@ -150,7 +154,7 @@ function init() {
       //$('imagebox').collapsed = true;
       //var win = $('hiddenBrowser').contentWindow;
       //win.addEventListener("load", browserLoad, false);
-      //setTimeout("browserLoad()", 1000);
+      //setTimeout(browserLoad, 1000);
       //$('hiddenBrowser').loadURI((gArgs.isLocal ? ("file:///" + gArgs.path) : (gArgs.webHost + webPath)), null, null);
     } else {
       $('thumbrow').collapsed = true;

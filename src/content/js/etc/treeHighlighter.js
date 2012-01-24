@@ -59,7 +59,10 @@ var treeHighlighter = {
 
     if (gCmdlogDoc) {
       gCmdlogDoc.getElementById('mousePressed').innerHTML = "true";
-      setTimeout("treeHighlighter.totalHack()", 100);
+      var func = function() {
+        treeHighlighter.totalHack();
+      };
+      setTimeout(func, 100);
     }
   },
 
@@ -125,7 +128,10 @@ var treeHighlighter = {
     this.selection.rangedSelect(this.mouseDownRow, this.treeBoxObject.getFirstVisibleRow(), false);
 
     if (this.mouseDownPressed) {
-      setTimeout("treeHighlighter.extendSelectionUpwards()", 100);
+      var func = function() {
+        treeHighlighter.extendSelectionUpwards();
+      };
+      setTimeout(func, 100);
     }
   },
 
@@ -143,7 +149,10 @@ var treeHighlighter = {
     this.selection.rangedSelect(this.mouseDownRow, this.treeBoxObject.getLastVisibleRow(), false);
 
     if (this.mouseDownPressed) {
-      setTimeout("treeHighlighter.extendSelectionDownwards()", 100);
+      var func = function() {
+        treeHighlighter.extendSelectionDownwards();
+      };
+      setTimeout(func, 100);
     }
   },
                                                                // TOTAL HACK XXX - this sucks!
@@ -161,7 +170,10 @@ var treeHighlighter = {
         this.mouseMove(null, newMousePos + this.boxObject.y);
       }
 
-      setTimeout("treeHighlighter.totalHack()", 100);
+      var func = function() {
+        treeHighlighter.totalHack();
+      };
+      setTimeout(func, 100);
     }
   }
 };

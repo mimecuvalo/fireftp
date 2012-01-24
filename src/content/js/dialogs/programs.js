@@ -21,9 +21,15 @@ function init() {
   disableAll();
 
   if (index == -1 && gArgs[0].extension != "") {
-    setTimeout("initHelper()", 0);
+    var func = function() {
+      initHelper();
+    };
+    setTimeout(func, 0);
   } else if (gArgs[0].extension != "") {
-    setTimeout("initHelper2(" + index + ")", 0);
+    var func = function() {
+      initHelper2(index);
+    };
+    setTimeout(func, 0);
   }
 }
 

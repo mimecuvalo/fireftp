@@ -385,7 +385,10 @@ var localTree = {
       if (skipDelay) {
         this.updateView();
       } else {
-        setTimeout("localTree.updateView()", 1000);                                             // update localTree, after a little bit
+        var func = function() {
+          localTree.updateView();
+        };
+        setTimeout(func, 1000);                                                                 // update localTree, after a little bit
       }
     }
   },
@@ -577,7 +580,10 @@ var localTree = {
 
     this.editType   = "create";
     this.editParent = gLocalPath.value;
-    setTimeout("gLocalTree.startEditing(localTree.rowCount - 1, gLocalTree.columns['localname'])", 0);
+    var func = function() {
+      gLocalTree.startEditing(localTree.rowCount - 1, gLocalTree.columns['localname']);
+    };
+    setTimeout(func, 0);
   },
 
   remove : function() {
@@ -670,7 +676,10 @@ var localTree = {
       } else {
         this.displayData[row].leafName = val;
         this.treebox.invalidateRow(row);
-        setTimeout("gLocalTree.startEditing(" + row + ", gLocalTree.columns['localname'])", 0);
+        var func = function() {
+          gLocalTree.startEditing(row, gLocalTree.columns['localname']);
+        };
+        setTimeout(func, 0);
       }
     } else if (this.editType == "create") {
       if (val) {
@@ -688,7 +697,10 @@ var localTree = {
           this.data[row].leafName        = val;
           this.displayData[row].leafName = val;
           this.treebox.invalidateRow(row);
-          setTimeout("gLocalTree.startEditing(localTree.rowCount - 1, gLocalTree.columns['localname'])", 0);
+          var func = function() {
+            gLocalTree.startEditing(localTree.rowCount - 1, gLocalTree.columns['localname']);
+          };
+          setTimeout(func, 0);
         }
       } else {
         --this.rowCount;
