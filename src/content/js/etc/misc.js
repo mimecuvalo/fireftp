@@ -140,18 +140,30 @@ function displayWelcomeMessage(msg) {
   }
 }
 
-function custom() {
+function showCustom(show) {
+  $('customToolbar').setAttribute("collapsed", !show);
+
+  if (show) {
+    gCustomCmd.focus();
+    gPrefs.setBoolPref("logmode", true);
+    gCmdlogBody.scrollTop = gCmdlogBody.scrollHeight - gCmdlogBody.clientHeight;  // scroll to bottom
+    gConnection.changeWorkingDirectory(gRemotePath.value);
+  }
+}
+
+function customExecute() {
   if (!gConnection.isConnected || !isReady()) {
     return;
   }
 
-  var cmd = window.prompt(gStrbundle.getString("command"), "", gStrbundle.getString("customCommand"));
+  var cmd = gCustomCmd.value;
+  gCustomCmd.value = '';
 
   if (!cmd) {
     return;
   }
 
-  gConnection.changeWorkingDirectory(gRemotePath.value);
+  gFormHistory.addEntry(gCustomCmd.getAttribute("autocompletesearchparam"), cmd);
   gConnection.custom(cmd);
 }
 

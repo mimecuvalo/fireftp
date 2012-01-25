@@ -8,6 +8,7 @@ function startup() {
   gStrbundle             = $("strings");
   gConnectButton         = $('connectbutton');
   gAccountField          = $('account');
+  gCustomCmd             = $('customCmd');
   gFolderField           = $('folder');
   gLocalPath             = $('localpath');
   gLocalTree             = $('localtree');

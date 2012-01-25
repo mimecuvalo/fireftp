@@ -1,8 +1,8 @@
 var logging = {
-  DEBUG : 10,
-  INFO : 20,
-  WARNING : 30,
-  ERROR : 40,
+  DEBUG    : 10,
+  INFO     : 20,
+  WARNING  : 30,
+  ERROR    : 40,
   CRITICAL : 50,
 
   log : function(level, msg) {
@@ -15,10 +15,10 @@ var logging = {
     }
   }
 };
-DEBUG = logging.DEBUG;
-INFO = logging.INFO;
-WARNING = logging.WARNING;
-ERROR = logging.ERROR;
+DEBUG    = logging.DEBUG;
+INFO     = logging.INFO;
+WARNING  = logging.WARNING;
+ERROR    = logging.ERROR;
 CRITICAL = logging.CRITICAL;
 
 function appendLog(message, css, type, trusted) {

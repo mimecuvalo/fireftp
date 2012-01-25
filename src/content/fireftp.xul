@@ -213,7 +213,7 @@
       <menuitem oncommand="diff(false)"                         label="&diff.label;"                accesskey="&diff.access;"       id="diffMenuItem"/>
       <menuitem oncommand="diff(true)"                          label="&recdiff.label;"             accesskey="&recdiff.access;"    id="recDiffMenuItem"/>
       <menuseparator/>
-      <menuitem oncommand="custom()"                            label="&custom.label;"              accesskey="&custom.access;"     id="customMenuItem"/>
+      <menuitem oncommand="showCustom(true)"                    label="&custom.label;"              accesskey="&custom.access;"     id="customMenuItem"/>
       <menuseparator/>
       <menuitem oncommand="importSites()"                       label="&import.label;"              accesskey="&import.access;"     id="importMenuItem"/>
       <menuitem oncommand="exportSites()"                       label="&export.label;"              accesskey="&export.access;"     id="exportMenuItem"/>
@@ -476,6 +476,24 @@
     </hbox>
     <image      id="searchStatusIcon"/>
     <label      id="searchStatus"/>
+  </toolbar>
+
+  <!-- :::::::::::::::::::::::::::: custom toolbar :::::::::::::::::::::::::::: -->
+
+  <toolbar      id="customToolbar"  align="center" collapsed="true">
+    <toolbarbutton id="customClosebutton" oncommand="showCustom(false);"/>
+    <hbox id="customContainer" flex="1">
+      <textbox  id="customCmd"
+                flex="1"
+                onkeypress="if (event.keyCode == 27) showCustom(false); else if (event.keyCode == 13) customExecute()"
+                type                    = "autocomplete"
+                tabscrolling            = "true"
+                enablehistory           = "true"
+                autocompletepopup       = "PopupAutoComplete"
+                autocompletesearch      = "form-history"
+                autocompletesearchparam = "customcommands" />
+    </hbox>
+    <toolbarspacer />
   </toolbar>
 
   <!-- :::::::::::::::::::::::::::::: status bar :::::::::::::::::::::::::::::: -->
