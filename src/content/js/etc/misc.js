@@ -144,10 +144,16 @@ function showCustom(show) {
   $('customToolbar').setAttribute("collapsed", !show);
 
   if (show) {
+    gCustomCmd.value = '';
     gCustomCmd.focus();
     gPrefs.setBoolPref("logmode", true);
     gCmdlogBody.scrollTop = gCmdlogBody.scrollHeight - gCmdlogBody.clientHeight;  // scroll to bottom
-    gConnection.changeWorkingDirectory(gRemotePath.value);
+
+    if (gConnection.protocol == 'ftp') {
+      gConnection.changeWorkingDirectory(gRemotePath.value);
+    } else {
+      gConnection.startCustomShell();
+    }
   }
 }
 

@@ -8,12 +8,15 @@ function ssh2Mozilla(observer) {
 
 ssh2Mozilla.prototype = {
   // override base class variables
-  protocol : 'ssh2',
+  protocol      : 'ssh2',
 
-  transport : null,
-  client : null,
-  sftp_client : null,
-  privatekey   : "",                                                             // private key for sftp connections
+  transport     : null,
+  client        : null,
+  refreshRate   : 10,
+  sftp_client   : null,
+  privatekey    : "",                                                            // private key for sftp connections
+  customSession : null,
+  customBuffer  : "",
 
   connect : function(reconnect) {
     this.setupConnect(reconnect);
@@ -121,6 +124,16 @@ ssh2Mozilla.prototype = {
 
   cleanup : function(isAbort) {
     this._cleanup();
+
+    if (this.customSession) {
+      try {
+        this.customSession.close();
+      } catch(ex) {
+        this.observer.onDebug("Error closing custom session: " + ex);
+      }
+      this.customSession = null;
+      this.customBuffer = "";
+    }
   },
 
   sendQuitCommand : function(legitClose) {                                       // called when shutting down the connection
@@ -617,7 +630,101 @@ ssh2Mozilla.prototype = {
     this.writeControlWrapper();
   },
 
-  custom                 : function(cmd) { alert('NOT_IMPLEMENTED'); },
+  startCustomShell : function(callback) {
+    if (!this.customSession || this.customSession.closed) {
+      try {
+        var self = this;
+        var on_success = function(chan) {
+          self.observer.onDebug('Connected! Shell open.');
+          chan.invoke_shell();
+          self.customSession = chan;
+          self.customInput();
+          self.custom('cd ' + self.currentWorkingDir);
+          self.custom('pwd');
+
+          if (callback) {
+            callback();
+          }
+        };
+        var chan = this.transport.open_session(on_success);
+      } catch (ex) {
+        this.observer.onDebug(ex);
+        this.observer.onError(gStrbundle.getString("errorConn"));
+      }
+    } else {
+      this.custom('cd ' + this.currentWorkingDir);
+      this.custom('pwd');
+    }
+  },
+
+  customInput : function() {
+    try {
+      if (!this.customSession || this.customSession.closed) {
+        return;
+      }
+      var stdin = this.customSession.recv(65536);
+    } catch(ex if ex instanceof paramikojs.ssh_exception.WaitException) {
+      this.customCheckStderr();
+      return;
+    }
+    if (stdin) {
+      this.observer.onAppendLog(stdin, 'input custom', 'info');
+    }
+    this.customCheckStderr();
+  },
+
+  customCheckStderr : function() {
+    try {
+      var stderr = this.customSession.recv_stderr(65536);
+    } catch(ex if ex instanceof paramikojs.ssh_exception.WaitException) {
+      setTimeout(this.customInput.bind(this), this.refreshRate);
+      return;
+    }
+    if (stderr) {
+      this.observer.onError(stderr, 'error custom', 'error');
+    }
+
+    setTimeout(this.customInput.bind(this), this.refreshRate);
+  },
+
+  custom : function(out) {
+    if (!this.customSession || this.customSession.closed) {
+      var self = this;
+      var callback = function() {
+        self.custom(out);
+      };
+      this.startCustomShell(callback);
+      return;
+    }
+
+    this.observer.onAppendLog("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + out, 'output custom', 'info');
+    this.customBuffer += out + '\n';
+    this.sendCustomOutput();
+  },
+
+  sendCustomOutput : function() {
+    while (this.customBuffer.length > 0) {
+      if (!this.customSession || this.customSession.closed) {
+        return;
+      }
+
+      try {
+        var n = this.customSession.send(this.customBuffer);
+      } catch(ex if ex instanceof paramikojs.ssh_exception.WaitException) {
+        var self = this;
+        var wait_callback = function() {
+          self.sendCustomOutput();
+        }
+        setTimeout(wait_callback, this.refreshRate);
+        return;
+      }
+      if (n <= 0) { // eof
+        break;
+      }
+      this.customBuffer = this.customBuffer.substring(n);
+    }
+    //setTimeout(this.sendCustomOutput.bind(this), this.refreshRate);
+  },
 
   list                   : function(path, callback, skipCache, recursive, fxp, eventualGoalPath) {
     if (!this.sftp_client) {                                                     // did abort, waiting for reboot of channel

@@ -486,6 +486,7 @@
       <textbox  id="customCmd"
                 flex="1"
                 onkeypress="if (event.keyCode == 27) showCustom(false); else if (event.keyCode == 13) customExecute()"
+                onblur="showCustom(false);"
                 type                    = "autocomplete"
                 tabscrolling            = "true"
                 enablehistory           = "true"

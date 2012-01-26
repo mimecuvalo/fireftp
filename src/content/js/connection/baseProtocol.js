@@ -546,7 +546,7 @@ baseProtocol.prototype = {
     if (success) {
       this.currentWorkingDir = parameter;
 
-      this.observer.onChangeDir(parameter, options.dontUpdateView);            // else navigate to the directory
+      this.observer.onChangeDir(parameter, options.dontUpdateView);              // else navigate to the directory
 
       if (callback) {
         callback(true);

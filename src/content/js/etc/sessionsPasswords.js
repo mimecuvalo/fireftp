@@ -431,7 +431,7 @@ function connectedButtonsDisabler() {
   $('searchRemote').disabled =                            !isConnected;
   $('diffMenuItem').setAttribute(             "disabled", !isConnected);
   $('recDiffMenuItem').setAttribute(          "disabled", !isConnected);
-  $('customMenuItem').setAttribute(           "disabled", !isConnected || protocol != "ftp");
+  $('customMenuItem').setAttribute(           "disabled", !isConnected);
   $('localUpload').setAttribute(              "disabled", !isConnected);
   $('remoteOpenCont').setAttribute(           "disabled", !isConnected);
   $('remoteDownload').setAttribute(           "disabled", !isConnected);
@@ -455,6 +455,7 @@ function connectedButtonsDisabler() {
     $('quickMenuItem').setAttribute(          "disabled",  isConnected);
   }
   $('remotepath').setAttribute("disconnected",            !isConnected);
+  $('customCmd').setAttribute("autocompletesearchparam",  "customcommands" + protocol);
   remoteDirTree.treebox.invalidate();
   remoteTree.treebox.invalidate();
 
