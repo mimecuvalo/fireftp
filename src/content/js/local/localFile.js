@@ -185,60 +185,147 @@ var localFile = {
     }
   },
 
+  // This is a reimplementation of plat_other.py with reference to the
+  // freedesktop.org trash specification:
+  //   [1] http://www.freedesktop.org/wiki/Specifications/trash-spec
+  //   [2] http://www.ramendik.ru/docs/trashspec.html
+  // See also:
+  //   [3] http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
+  //
+  // For external volumes this implementation will raise an exception if it can't
+  // find or create the user's trash directory.
   removeLinux : function(file) {
-    const CANDIDATES = ['.local/share/Trash/files', '.Trash'];
-    const EXTERNAL_CANDIDATES = ['.Trash-1000/files', '.Trash/files', '.Trash-1000', '.Trash'];
+    const FILES_DIR   = 'files';
+    const INFO_DIR    = 'info';
+    const INFO_SUFFIX = '.trashinfo';
 
-    var self = this;
-    // move to a unique place in Trash
-    function move_without_conflict(file, dst) {
-      var counter = 0;
-      var leafName = file.leafName.substring(0, file.leafName.lastIndexOf('.'));
-      var ext = file.leafName.substring(file.leafName.lastIndexOf('.') + 1);
-      var newLeafName = file.leafName;
-      var newFile = self.init(dst + '/' + newLeafName);
+    // Default of ~/.local/share [3]
+    var env = Components.classes["@mozilla.org/process/environment;1"].getService(Components.interfaces.nsIEnvironment);
+    var home = Components.classes["@mozilla.org/file/directory_service;1"].createInstance(Components.interfaces.nsIProperties)
+                         .get("Home", Components.interfaces.nsILocalFile).path;
+    const XDG_DATA_HOME = env.get('XDG_DATA_HOME') || (home + '/.local/share');
+    const HOMETRASH = XDG_DATA_HOME + '/' + 'Trash';
 
-      while (newFile.exists()) {
-        ++counter;
-        newLeafName = leafName + ' ' + counter + '.' + ext;
-        newFile.leafName = newLeafName;
+    try {
+      // open libc so that we can use lstat! hooray for complicated code!
+      var libc = ctypes.open("libc.so.6");
+
+      var timespec = new ctypes.StructType("timespec", [{"tv_sec": ctypes.unsigned_long}, {"tv_nsec": ctypes.unsigned_long}]);
+      // XXX: wtf? why does declaring the long/shorts of the stat struct type not seem to match up with what's declared in /usr/include/bits/stat.h ?
+      var stat = new ctypes.StructType("stat", [
+         { "st_dev":     ctypes.unsigned_long },  // ID of device containing file
+         { "st_ino":     ctypes.unsigned_long },  // inode number
+         { "st_mode":    ctypes.unsigned_short }, // protection
+         { "st_nlink":   ctypes.unsigned_short }, // number of hard links
+         { "st_uid":     ctypes.unsigned_short }, // user ID of owner
+         { "st_gid":     ctypes.unsigned_short }, // group ID of owner
+         { "st_rdev":    ctypes.unsigned_long },  // device ID (if special file)
+         { "st_size":    ctypes.unsigned_long },  // total size, in bytes
+         { "st_blksize": ctypes.unsigned_long },  // blocksize for filesystem I/O
+         { "st_blocks":  ctypes.unsigned_long },  // number of blocks allocated
+         { "st_atime":   timespec },              // time of last access
+         { "st_mtime":   timespec },              // time of last modification
+         { "st_ctime":   timespec },              // time of last status change
+         { "unused":     ctypes.unsigned_long },  // number of blocks allocated
+      ]);
+
+      // declare __lxstat
+      var lstat = libc.declare("__lxstat",    // function name
+                         ctypes.default_abi,  // call ABI
+                         ctypes.int,          // return type
+                         ctypes.int,          // argument type
+                         ctypes.char.ptr,     // argument type
+                         stat.ptr);           // argument type
+
+      // declare getuid
+      var getuid = libc.declare("getuid",           // function name
+                                ctypes.default_abi, // call ABI
+                                ctypes.int);        // return type
+
+      var uid = getuid();
+
+      const TOPDIR_TRASH    = '.Trash';
+      const TOPDIR_FALLBACK = '.Trash-' + uid;
+      var self = this;
+
+      function is_parent(parent, path) {
+        var pathFile   = self.init(path);
+        var parentFile = self.init(parent);
+        // mime: the file has already been os.rename'd so checking for symlink doesn't work here
+        // path   = pathFile.isSymlink()   ? pathFile.target   : path;  // In case it's a symlink
+        parent = parentFile.isSymlink() ? parentFile.target : parent;
+
+        return path.indexOf(parent) == 0;
       }
 
-      var destDir = self.init(dst);
-      file.moveTo(destDir, newLeafName);
-    }
+      function format_date(date) {
+        return date.toISOString().slice(0, -5);
+      }
 
-    function find_mount_point(path) {
-      try {
-        // open libc so that we can use lstat! hooray for complicated code!
-        var libc = ctypes.open("libc.so.6");
-        var timespec = new ctypes.StructType("timespec", [{"tv_sec": ctypes.unsigned_long}, {"tv_nsec": ctypes.unsigned_long}]);
-        // XXX: wtf? why does declaring the long/shorts of the stat struct type not seem to match up with what's declared in /usr/include/bits/stat.h ?
-        var stat = new ctypes.StructType("stat", [
-           { "st_dev":     ctypes.unsigned_long },  /* ID of device containing file */
-           { "st_ino":     ctypes.unsigned_long },  /* inode number */
-           { "st_mode":    ctypes.unsigned_short }, /* protection */
-           { "st_nlink":   ctypes.unsigned_short }, /* number of hard links */
-           { "st_uid":     ctypes.unsigned_short }, /* user ID of owner */
-           { "st_gid":     ctypes.unsigned_short }, /* group ID of owner */
-           { "st_rdev":    ctypes.unsigned_long },  /* device ID (if special file) */
-           { "st_size":    ctypes.unsigned_long },  /* total size, in bytes */
-           { "st_blksize": ctypes.unsigned_long },  /* blocksize for filesystem I/O */
-           { "st_blocks":  ctypes.unsigned_long },  /* number of blocks allocated */
-           { "st_atime":   timespec },              /* time of last access */
-           { "st_mtime":   timespec },              /* time of last modification */
-           { "st_ctime":   timespec },              /* time of last status change */
-           { "unused":     ctypes.unsigned_long },  /* number of blocks allocated */
-        ]);
+      function info_for(src, topdir) {
+        // ...it MUST not include a ".."" directory, and for files not "under" that
+        // directory, absolute pathnames must be used. [2]
+        if (!topdir || !is_parent(topdir, src)) {
+          src = src;  // abspath by default on firefox
+        } else {
+          src = src.substring(topdir.length + 1);
+        }
 
+        var info = "[Trash Info]\n";
+        info += "Path=" + escape(src) + "\n";
+        info += "DeletionDate=" + format_date(new Date()) + "\n";
+        return info;
+      }
 
-        // declare __lxstat
-        var lstat = libc.declare("__lxstat", /* function name */
-                           ctypes.default_abi, /* call ABI */
-                           ctypes.int, /* return type */
-                           ctypes.int, /* argument type */
-                           ctypes.char.ptr, /* argument type */
-                           stat.ptr /* argument type */ );
+      function check_create(dir) {
+        // use 0700 for paths [3]
+        var dirFile = self.init(dir);
+        if (!dirFile.exists()) {
+          dirFile.create(Components.interfaces.nsILocalFile.DIRECTORY_TYPE, 0700);
+        }
+      }
+
+      function trash_move(src, dst, topdir) {
+        var filename  = src.substring(src.lastIndexOf('/') + 1);
+        var filespath = dst + '/' + FILES_DIR;
+        var infopath  = dst + '/' + INFO_DIR;
+        var base_name = filename.substring(0, filename.lastIndexOf('.'));
+        var ext       = filename.substring(filename.lastIndexOf('.'));
+
+        var counter = 0;
+        var destname = filename;
+        while (true) {
+          var destFile = self.init(filespath + '/' + destname);
+          var infoFile = self.init(infopath + '/' + destname + INFO_SUFFIX);
+
+          if (!destFile.exists() && !infoFile.exists()) {
+            break;
+          }
+
+          ++counter;
+          destname = base_name + ' ' + counter + ext;
+        }
+
+        check_create(filespath);
+        check_create(infopath);
+
+        var srcFile = self.init(src);
+        var fileFile = self.init(filespath);
+        srcFile.moveTo(fileFile, destname);
+
+        var infoFile = self.init(infopath + '/' + destname + INFO_SUFFIX);
+        var foutstream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
+        foutstream.init(infoFile, 0x04 | 0x08 | 0x20, 0644, 0);
+        var data = info_for(src, topdir);
+        foutstream.write(data, data.length);
+        foutstream.close();
+      }
+
+      function find_mount_point(path) {
+        // Even if something's wrong, "/" is a mount point, so the loop will exit.
+        // Use realpath in case it's a symlink
+        var pathFile = self.init(path);
+        path = pathFile.isSymlink() ? pathFile.target : path;
 
         // transcoded from Python's standard library: os.path.ismount
         function ismount(mountPath) {
@@ -246,8 +333,8 @@ var localFile = {
           var s2 = new stat;
 
           var returnCode = lstat(1, mountPath, s1.address());
-          var returnCode = lstat(1, mountPath + '/..', s2.address());
-          if (returnCode != 0 || returnCode != 0) {  // It doesn't exist -- so not a mount point :-)
+          var returnCode2 = lstat(1, mountPath + '/..', s2.address());
+          if (returnCode != 0 || returnCode2 != 0) {  // It doesn't exist -- so not a mount point :-)
             return false;
           }
 
@@ -265,40 +352,99 @@ var localFile = {
           path = path.substring(0, path.lastIndexOf('/'));
           path = path ? path : '/';
         }
-      } catch(ex) {
-        path = "/";
-      } finally {
-        libc.close();
+
+        return path;
       }
 
-      return path;
-    }
+      function find_ext_volume_global_trash(volume_root) {
+        // from [2] Trash directories (1) check for a .Trash dir with the right
+        // permissions set.
 
-    function find_volume_trash(trash_root) {
-      var candidates = trash_root == '/' ? CANDIDATES : EXTERNAL_CANDIDATES;
-      if (trash_root == '/') {
-        trash_root = Components.classes["@mozilla.org/file/directory_service;1"].createInstance(Components.interfaces.nsIProperties)
-                         .get("Home", Components.interfaces.nsILocalFile).path;
-      }
-      for (var x = 0; x < candidates.length; ++x) {
-        var candidate_path = trash_root + '/' + candidates[x];
-        var file = self.init(candidate_path);
-        if (file.exists()) {
-          return candidate_path;
+        var trash_dir = volume_root + '/' + TOPDIR_TRASH;
+        var trashFile = self.init(trash_dir);
+        if (!trashFile.exists()) {
+          return null;
         }
+
+        var s1 = new stat;
+        var returnCode = lstat(1, trash_dir, s1.address());
+        var mode = parseInt(s1.st_mode);
+        // vol/.Trash must be a directory, cannot be a symlink, and must have the
+        // sticky bit set.
+        if (!trash_dir.isDirectory() || trash_dir.isSymlink() || mode & 512) { // 512 == stat.S_ISVTX
+          return null;
+        }
+
+        trash_dir = trash_dir + '/' + uid;
+        try {
+          check_create(trash_dir);
+        } catch (ex) {
+          return null;
+        }
+
+        return trash_dir;
       }
 
-      // Something's wrong here. Screw that, just create a .Trash folder
-      var trash_path = trash_root + '/' + '.local/share/Trash/files';
-      var dir = self.init(trash_path);
-      dir.create(Components.interfaces.nsILocalFile.DIRECTORY_TYPE, 0755);
-      return trash_path;
-    }
+      function find_ext_volume_fallback_trash(volume_root) {
+        // from [2] Trash directories (1) create a .Trash-$uid dir.
+        var trash_dir = volume_roto + '/' + TOPDIR_FALLBACK;
+        // Try to make the directory, if we can't the OSError exception will escape
+        // be thrown out of send2trash.
+        check_create(trash_dir);
+        return trash_dir;
+      }
 
-    var path = file.path;
-    var mount_point = find_mount_point(path);
-    var dest_trash = find_volume_trash(mount_point);
-    move_without_conflict(file, dest_trash);
+      function find_ext_volume_trash(volume_root) {
+        var trash_dir = find_ext_volume_global_trash(volume_root);
+        if (!trash_dir) {
+          trash_dir = find_ext_volume_fallback_trash(volume_root);
+        }
+        return trash_dir;
+      }
+
+      // Pull this out so it's easy to stub (to avoid stubbing lstat itself)
+      function get_dev(path) {
+        var s1 = new stat;
+        var returnCode = lstat(1, path, s1.address());
+        return parseInt(s1.st_dev);
+      }
+
+      // finally, send2trash
+      var path = file.path;
+      if (!file.exists()) {
+        throw "File not found: " + path;
+      }
+      // ...should check whether the user has the necessary permissions to delete
+      // it, before starting the trashing operation itself. [2]
+      // if not os.access(path, os.W_OK):
+      //  raise OSError("Permission denied: %s" % path)
+      // if the file to be trashed is on the same device as HOMETRASH we
+      // want to move it there.
+      var path_dev = get_dev(path);
+
+      // If XDG_DATA_HOME or HOMETRASH do not yet exist we need to stat the
+      // home directory, and these paths will be created further on if needed.
+      var trash_dev = get_dev(home);
+
+      var topdir;
+      var dest_trash;
+      if (path_dev == trash_dev) {
+        topdir = XDG_DATA_HOME;
+        dest_trash = HOMETRASH;
+      } else {
+        topdir = find_mount_point(path);
+        trash_dev = get_dev(topdir);
+        if (trash_dev != path_dev) {
+          throw "Couldn't find mount point for " + path;
+        }
+        dest_trash = find_ext_volume_trash(topdir);
+      }
+      trash_move(path, dest_trash, topdir);
+    } catch (ex) {
+      throw ex;
+    } finally {
+      libc.close();
+    }
   },
 
   // end transcoded Python from http://hg.hardcoded.net/send2trash
