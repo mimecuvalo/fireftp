@@ -1,6 +1,6 @@
 <!ENTITY title "Confirmer le remplacement">
-<!ENTITY existing.label "Existing File:">
-<!ENTITY new.label "New File:">
+<!ENTITY existing.label "Fichier existant :">
+<!ENTITY new.label "Nouveau fichier :">
 <!ENTITY overwrite.label "Remplacer">
 <!ENTITY overwriteall.label "Tout remplacer">
 <!ENTITY skip.label "Passer">

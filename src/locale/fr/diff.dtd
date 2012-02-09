@@ -4,14 +4,14 @@
 <!ENTITY action.label "Action">
 <!ENTITY download.label "Télécharger">
 <!ENTITY upload.label "Envoyer">
-<!ENTITY delete.label "Delete">
+<!ENTITY delete.label "Supprimer">
 <!ENTITY nothing.label "Ne rien faire">
 <!ENTITY defaults.label "Régler les options par défaut">
 <!ENTITY local.label "Pour les fichiers locaux manquants :">
 <!ENTITY remote.label "Pour les fichiers distants manquants :">
 <!ENTITY diff.label "Pour des tailles de fichier différentes :">
-<!ENTITY newer.label "For newer local files:">
-<!ENTITY older.label "For newer remote files:">
+<!ENTITY newer.label "Pour les fichiers locaux les plus récents :">
+<!ENTITY older.label "Pour les fichiers distants les plus récents :">
 <!ENTITY lDownload.access "T">
 <!ENTITY lDelete.access "e">
 <!ENTITY lNothing.access "N">

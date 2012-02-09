@@ -6,18 +6,18 @@
 <!ENTITY logtab.label "Journal / file">
 <!ENTITY ltab.label "Log">
 <!ENTITY qtab.label "Queue">
-<!ENTITY search.access "S">
+<!ENTITY search.access "H">
 <!ENTITY logbutton.access "J">
 <!ENTITY advanced.label "Outils">
-<!ENTITY search.label "Search/Filter">
-<!ENTITY diff.label "Comparaison de répertoires…">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY search.label "Chercher/Filtrer">
+<!ENTITY diff.label "Synchroniser les répertoires…">
+<!ENTITY recdiff.label "Synchroniser répertoires et sous-répertoires…">
 <!ENTITY custom.label "Commande personnalisée…">
 <!ENTITY import.label "Importer…">
 <!ENTITY export.label "Exporter…">
 <!ENTITY preferencestab.label "Options…">
 <!ENTITY diff.access "c">
-<!ENTITY recdiff.access "D">
+<!ENTITY recdiff.access "S">
 <!ENTITY custom.access "o">
 <!ENTITY import.access "I">
 <!ENTITY export.access "E">
@@ -37,50 +37,50 @@
 <!ENTITY attr.label "Attributs">
 <!ENTITY source.label "Source">
 <!ENTITY dest.label "Destination">
-<!ENTITY bytes.label "Bytes">
-<!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
-<!ENTITY type.tip "Modifier la méthode de transfert («auto» recommandé)">
+<!ENTITY bytes.label "Octets">
+<!ENTITY status.label "Statut">
+<!ENTITY retry.label "Réessayer">
+<!ENTITY cancel.label "Annuler">
+<!ENTITY cancelAll.label "Tout annuler">
+<!ENTITY type.tip "Modifier la méthode de transfert (« auto » recommandé)">
 <!ENTITY bytes.tip "Octets téléchargés / octets totaux">
 <!ENTITY timeela.tip "Temps écoulé">
 <!ENTITY timerem.tip "Temps restant">
 <!ENTITY download.tip "Vitesse de transfert">
 <!ENTITY percent.tip "Progression">
 <!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binary">
+<!ENTITY binary.label "Binaire">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY openContaining.label "Ouvrir le dossier conteneur">
 <!ENTITY upload.label "Envoyer">
 <!ENTITY download.label "Télécharger">
 <!ENTITY open.label "Ouvrir">
 <!ENTITY openwith.label "Ouvrir avec">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY extractHere.label "Extraire ici">
+<!ENTITY extractTo.label "Extraire vers le dossier">
 <!ENTITY viewweb.label "Voir sur le Web">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY copyUrl.label "Copier l'URL">
+<!ENTITY copyUrlLogin.label "FTP avec identification">
 <!ENTITY cut.label "Couper">
 <!ENTITY copy.label "Copier">
 <!ENTITY paste.label "Coller">
 <!ENTITY makedir.label "Créer un répertoire">
 <!ENTITY makefile.label "Créer un fichier">
-<!ENTITY symlink.label "Create Symlink">
+<!ENTITY symlink.label "Créer un lien symbolique">
 <!ENTITY delete.label "Supprimer">
 <!ENTITY rename.label "Renommer">
 <!ENTITY properties.label "Propriétés">
 <!ENTITY rproperties.label "Propriétés récursives">
-<!ENTITY searchButton.label "Search">
+<!ENTITY searchButton.label "Recherche">
 <!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
+<!ENTITY searchRemote.label "Distant">
 <!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchFrom.label "De :">
+<!ENTITY searchTo.label "À :">
+<!ENTITY searchSubdir.label "Chercher dans les sous-répertoires">
+<!ENTITY searchMatch.label "Tenir compte de la casse">
+<!ENTITY searchRegexp.label "Expression régulière">
+<!ENTITY searchDates.label "Préciser les dates">
 <!ENTITY searchSubdir.access "s">
 <!ENTITY searchMatch.access "c">
 <!ENTITY searchRegexp.access "x">
@@ -91,9 +91,9 @@
 <!ENTITY helpbutton.access "i">
 <!ENTITY browsebutton.access "P">
 <!ENTITY changebutton.access "n">
-<!ENTITY searchButton.access "S">
+<!ENTITY searchButton.access "R">
 <!ENTITY searchLocal.access "L">
-<!ENTITY searchRemote.access "R">
+<!ENTITY searchRemote.access "D">
 <!ENTITY searchOptions.access "O">
 <!ENTITY mozilla.quote "Et <html:em>voilà</html:em> que des <html:em>ténèbres</html:em> ils surgirent : une foule de fidèles pour <html:em>assister</html:em> la bête renaissante dans sa quête pour <html:em>reconquérir</html:em> la terre. Ensemble ils <html:em>accrurent</html:em> le pouvoir de la bête et <html:em>annoncèrent</html:em> la bonne nouvelle de son retour. Un à un les adeptes de <html:em>Mammon</html:em> furent convertis et leurs cœurs devinrent <html:em>ardents</html:em>.">
-<!ENTITY mozilla.from "d&apos;après <html:strong>Le Livre de Mozilla</html:strong>, 8:2">
+<!ENTITY mozilla.from "d'après <html:strong>Le Livre de Mozilla</html:strong>, 8:2">

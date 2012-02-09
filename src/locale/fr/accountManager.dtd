@@ -6,8 +6,8 @@
 <!ENTITY id "Identification">
 <!ENTITY account.label "Compte :">
 <!ENTITY account.tip "Exemple : Mon site FTP">
-<!ENTITY folder.label "Category:">
-<!ENTITY optional.label "(optional)">
+<!ENTITY folder.label "Categorie :">
+<!ENTITY optional.label "(facultatif)">
 <!ENTITY host.label "Hôte :">
 <!ENTITY host.tip "Exemple : ftp.debian.org">
 <!ENTITY login.label "Identifiant :">
@@ -22,29 +22,29 @@
 <!ENTITY authssl.label "Chiffrement SSL explicite (mieux)">
 <!ENTITY implicit.label "Chiffrement SSL implicite (bonne)">
 <!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Key:">
-<!ENTITY pkbrowse.label "Browse...">
-<!ENTITY pkconvert.label "Convert...">
+<!ENTITY privatekey.label "Clé privée :">
+<!ENTITY pkbrowse.label "Parcourir…">
+<!ENTITY pkconvert.label "Convertir…">
 <!ENTITY initialdir "Répertoires sources">
 <!ENTITY download "Options de téléchargement">
-<!ENTITY upload "Options d&apos;envoi">
+<!ENTITY upload "Options d'envoi">
 <!ENTITY localdir.label "Local :">
 <!ENTITY remotedir.label "Distant :">
 <!ENTITY current.label "Utiliser le répertoire courant">
 <!ENTITY treesync.label "Synchroniser les dossiers lors de la navigation">
-<!ENTITY webhost "Hôte Web (utilisé avec &apos;Voir sur le Web&apos;)">
+<!ENTITY webhost "Hôte Web (utilisé avec 'Voir sur le Web')">
 <!ENTITY webhost.tip "Exemple : http://www.exemple.com">
 <!ENTITY prefix.label "Préfixe :">
-<!ENTITY prefix.tip "Préfixe à enlever de la partie FTP de l&apos;url, ex : /public_html">
+<!ENTITY prefix.tip "Préfixe à enlever de la partie FTP de l'url, ex : /public_html">
 <!ENTITY caseleave.label "Seul (priorité absolue)">
 <!ENTITY caselower.label "En haute priorité">
 <!ENTITY caseupper.label "En basse priorité">
-<!ENTITY timezone.label "Timezone Offset">
-<!ENTITY hours.label "Hours:">
-<!ENTITY minutes.label "Minutes:">
+<!ENTITY timezone.label "Décalage horaire">
+<!ENTITY hours.label "Heures :">
+<!ENTITY minutes.label "Minutes :">
 <!ENTITY notes.label "Notes">
-<!ENTITY encoding.label "Server Encoding">
-<!ENTITY charset.label "Character Set:">
+<!ENTITY encoding.label "Encodage du serveur :">
+<!ENTITY charset.label "Jeu de caractères :">
 <!ENTITY account.access "C">
 <!ENTITY folder.access "e">
 <!ENTITY host.access "H">
@@ -55,7 +55,7 @@
 <!ENTITY port.access "o">
 <!ENTITY security.access "S">
 <!ENTITY privatekey.access "i">
-<!ENTITY pkbrowse.access "B">
+<!ENTITY pkbrowse.access "P">
 <!ENTITY pkconvert.access "S">
 <!ENTITY localdir.access "L">
 <!ENTITY remotedir.access "D">
