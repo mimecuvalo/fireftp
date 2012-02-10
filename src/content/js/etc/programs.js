@@ -142,11 +142,11 @@ function launchProgram(extensionIndex, programIndex, file, remoteFile) {
           continue;
         }
 
-        if (extensionIndex == null) {
-          if (remoteFile && gPlatform == 'mac') {
-						localFile.overrideOSXQuarantine(file.path);
-          }
+        if (remoteFile && gPlatform == 'mac') {
+          localFile.overrideOSXQuarantine(file.path);
+        }
 
+        if (extensionIndex == null) {
           localFile.launch(file);
         } else {
           var program = localFile.init(gPrograms[extensionIndex].programs[programIndex].executable);
