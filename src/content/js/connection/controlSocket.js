@@ -1150,7 +1150,7 @@ ftpMozilla.prototype = {
 
     this.addEventQueue("transferBegin", "", null, { id: id });
 
-    this.addEventQueue(  "CWD",  remotePath.substring(0, remotePath.lastIndexOf('/') ? remotePath.lastIndexOf('/') : 1), null, { 'dontUpdateView': true });
+    this.addEventQueue(  "CWD",  remotePath.substring(0, remotePath.lastIndexOf('/') ? remotePath.lastIndexOf('/') : 1), null, { 'dontUpdateView': true, isUploading: file != null });
 
     var leafName = remotePath.substring(remotePath.lastIndexOf('/') + 1);
 

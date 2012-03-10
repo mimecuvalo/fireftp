@@ -552,6 +552,19 @@ baseProtocol.prototype = {
         callback(true);
       }
     } else {                                                                     // if it's not a directory
+      if (options.isUploading) {
+        while (this.eventQueue.length) {
+          if (this.eventQueue[0].cmd == "transferEnd") {
+            this.observer.onRemoveQueue(this.eventQueue[0].options.id);
+            this.observer.onTransferFail(this.eventQueue[0].options, buffer);
+            this.eventQueue.shift();
+            break;
+          }
+
+          this.eventQueue.shift();
+        }
+      }
+
       if (callback) {
         callback(false);
       } else if (this.type == 'transfer') {
