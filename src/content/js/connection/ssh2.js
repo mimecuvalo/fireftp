@@ -828,7 +828,7 @@ ssh2Mozilla.prototype = {
 
     this.addEventQueue("transferBegin", "", null, { id: id });
 
-    this.addEventQueue(  "cd",  cd_path, null, { 'dontUpdateView': true }, cd_exec);
+    this.addEventQueue(  "cd",  cd_path, null, { 'dontUpdateView': true, isUploading: file != null }, cd_exec);
 
     this.addEventQueue(resume ? "reput" : "put", '"' + put_localpath + '" "' + put_remotepath + '"', null, { localPath: localPath, remotePath: put_remotepath, remoteSize: remoteSize, remoteEditCallback: callback, errorCallback: errorCallback }, put_exec);
 
