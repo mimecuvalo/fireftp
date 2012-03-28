@@ -52,7 +52,7 @@ function editSite() {
     }
 
     try {                                                            // delete old password from list
-      var recordedHost = (oldSite.host.indexOf("ftp.") == 0 ? '' : "ftp.") + oldSite.host;
+      var recordedHost = (oldSite.host.indexOf("ftp.") == 0 ? '' : "ftp.") + oldSite.host + ':' + oldSite.port;
       var logins       = gLoginManager.findLogins({}, recordedHost, "FireFTP", null);
       for (var x = 0; x < logins.length; ++x) {
         if (logins[x].username == oldSite.login) {
@@ -77,7 +77,7 @@ function deleteSite(site) {
   for (var x = 0; x < gSiteManager.length; ++x) {                    // delete the account
     if (gSiteManager[x].account == site.account) {
       try {                                                          // delete password from list
-        var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host;
+        var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
         var logins       = gLoginManager.findLogins({}, recordedHost, "FireFTP", null);
         for (var y = 0; y < logins.length; ++y) {
           if (logins[y].username == gSiteManager[x].login) {
@@ -142,34 +142,25 @@ function externalLink() {                                            // opened u
   if (uri.username) {
     site.login     = unescape(uri.username);
     site.password  = unescape(uri.password);
-    site.anonymous = site.login ? false : true;
-  }
-
-  if (uri.username && !uri.password) {
-    try {
-      var logins = gLoginManager.findLogins({}, 'ftp://' + site.login + '@' + uri.host, "FireFTP", null);
-      for (var x = 0; x < logins.length; ++x) {
-        if (logins[x].username == site.login) {
-          site.password = logins[x].password;
-          break;
-        }
-      }
-    } catch (ex) { }
-  }
-
-  if (!uri.username && !uri.password) {
-    try {
-      var logins = gLoginManager.findLogins({}, 'ftp://' + uri.host, "FireFTP", null);
-      for (var x = 0; x < logins.length; ++x) {
-        site.login    = logins[x].username;
-        site.password = logins[x].password;
-        break;
-      }
-    } catch (ex) { }
+    site.anonymous = site.login && site.login != "anonymous" ? false : true;
   }
 
   site.host = uri.host;
   site.port = uri.port == -1 ? (uri.schemeIs("sftp") ? 22 : 21) : uri.port;
+
+  try {
+    var recordedHost = (site.host.indexOf("ftp.") == 0 ? '' : "ftp.") + site.host + ':' + site.port;
+    var logins = gLoginManager.findLogins({}, recordedHost, "FireFTP", null);
+    for (var x = 0; x < logins.length; ++x) {
+      if (uri.username && logins[x].username != site.login) {
+        continue;
+      }
+
+      site.login = logins[x].username;
+      site.password = logins[x].password;
+      break;
+    }
+  } catch (ex) { }
 
   if (uri.schemeIs("sftp")) {
     site.security = "sftp";
@@ -211,7 +202,7 @@ function externalLink() {                                            // opened u
 function accountHelper(site) {
   if (gPasswordMode && site.password) {
     try {                                                            // save username & password
-      var recordedHost = (site.host.indexOf("ftp.") == 0 ? '' : "ftp.") + site.host;
+      var recordedHost = (site.host.indexOf("ftp.") == 0 ? '' : "ftp.") + site.host + ':' + site.port;
       var loginInfo    = new gLoginInfo(recordedHost, "FireFTP", null, site.login, site.password, "", "");
       gLoginManager.addLogin(loginInfo);
     } catch (ex) { }
@@ -627,7 +618,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
 
           if (gPasswordMode && tempSiteManager[x].password) {
             try {                                                    // save username & password
-              var recordedHost = (tempSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + tempSiteManager[x].host;
+              var recordedHost = (tempSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + tempSiteManager[x].host + ':' + tempSiteManager[x].port;
               var loginInfo    = new gLoginInfo(recordedHost, "FireFTP", null, tempSiteManager[x].login, tempSiteManager[x].password, "", "");
               gLoginManager.addLogin(loginInfo);
             } catch (ex) { }
@@ -643,7 +634,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       if (gPasswordMode) {
         for (var x = 0; x < gSiteManager.length; ++x) {              // retrieve passwords from passwordmanager
           try {
-            var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host, "FireFTP", null);
+            var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port, "FireFTP", null);
             var found  = false;
             for (var y = 0; y < logins.length; ++y) {
               if (logins[y].username == gSiteManager[x].login) {
@@ -652,22 +643,19 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
                 break;
               }
             }
-            if (!found) {                                            // firefox 2 -> 3 growing pains, yay...
-              var logins = gLoginManager.findLogins({}, 'http://' + (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host, "FireFTP", null);
+            if (!found) {                                            // fireftp growing pains: older versions didn't include port #
+              var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host, "FireFTP", null);
               for (var y = 0; y < logins.length; ++y) {
                 if (logins[y].username == gSiteManager[x].login) {
                   gSiteManager[x].password = logins[y].password;
+
+                  // migrate
+                  gLoginManager.removeLogin(logins[y]);                  
+                  var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
+                  var loginInfo    = new gLoginInfo(recordedHost, "FireFTP", null, gSiteManager[x].login, gSiteManager[x].password, "", "");
+                  gLoginManager.addLogin(loginInfo);
+
                   found = true;
-                  break;
-                }
-              }
-            }
-            if (!found) {                                            // firefox 2 -> 3 growing pains, yay...
-              var logins = gLoginManager.findLogins({}, (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host, null,
-                                                        (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host);
-              for (var y = 0; y < logins.length; ++y) {
-                if (logins[y].username == gSiteManager[x].login) {
-                  gSiteManager[x].password = logins[y].password;
                   break;
                 }
               }
@@ -683,7 +671,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
         for (var x = gSiteManager.length - 1; x >= 0; --x) {
           if (gSiteManager[x].temporary) {
             try {                                                    // delete password from list
-              var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host;
+              var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
               var logins       = gLoginManager.findLogins({}, recordedHost, "FireFTP", null);
               for (var y = 0; y < logins.length; ++y) {
                 if (logins[y].username == gSiteManager[x].login) {
