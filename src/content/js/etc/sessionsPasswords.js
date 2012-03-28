@@ -158,6 +158,7 @@ function externalLink() {                                            // opened u
 
       site.login = logins[x].username;
       site.password = logins[x].password;
+      site.anonymous = site.login && site.login != "anonymous" ? false : true;
       break;
     }
   } catch (ex) { }
@@ -670,16 +671,6 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       if (pruneTemp) {
         for (var x = gSiteManager.length - 1; x >= 0; --x) {
           if (gSiteManager[x].temporary) {
-            try {                                                    // delete password from list
-              var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
-              var logins       = gLoginManager.findLogins({}, recordedHost, "FireFTP", null);
-              for (var y = 0; y < logins.length; ++y) {
-                if (logins[y].username == gSiteManager[x].login) {
-                  gLoginManager.removeLogin(logins[y]);
-                }
-              }
-            } catch (ex) { }
-
             gSiteManager.splice(x, 1);
           }
         }
