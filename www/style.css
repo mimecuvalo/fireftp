@@ -14,11 +14,11 @@ html, body {
 }
 
 a, a:visited {
-  color: #03c;
+  color: #EEAA00;
 }
 
 a:hover {
-  color: #00f;
+  color: #EDff00;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 #nav > a, #nav > a:hover, #nav > a:visited {
-  color: #03c;
+  color: #EEAA00;
   text-decoration     : none;
   display: block;
   float: left;
@@ -41,11 +41,11 @@ body {
 }
 
 #nav > a:hover {
-  color: #03f;
+  color: #EDff00;
 }
 
 #nav > a.selected {
-  color: #03f;
+  color: #EDff00;
 }
 
 #nav > #logo {

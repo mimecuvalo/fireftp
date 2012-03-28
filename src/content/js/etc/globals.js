@@ -1,6 +1,6 @@
 var gConnections = [];          // array of all our ftp connections
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "2.0.1";  // version of FireFTP we're using
+var gVersion  = "2.0.4";  // version of FireFTP we're using
 var gSlash;                     // holds '/' or '\\' depending on local system
 var gPlatform;                  // holds what platform we're on
 var gTransferTypes;             // holds 'Auto', 'Binary', 'ASCII'
@@ -36,6 +36,9 @@ var gPrevRate = 0;              // keep track of general rate of progress
 var gPrevTotal = 0;             // keep track of general total of progress
 var gPrevTransferred = 0;       // keep track of general total of progress
 var gActiveCurrentPort = -1;    // if user specified a range of ports, this is the current port we're using
+
+// XXX this is some crap but it'll work for now. see rsakey.js for more details
+var gRsaKeyWorkerJs = 'chrome://fireftp/content/js/connection/paramikojs/sign_ssh_data_worker.js';
 
 var gSearchFound;               // search: did we find any results?
 var gSearchRunning = false;     // search: is search running?
