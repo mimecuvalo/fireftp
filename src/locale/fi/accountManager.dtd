@@ -32,7 +32,7 @@
 <!ENTITY remotedir.label "Etä:">
 <!ENTITY current.label "Käytä nykyistä">
 <!ENTITY treesync.label "Pidä hakemistot tahdistettuina">
-<!ENTITY webhost "Verkkoisäntä(Käytetään 'Näytä verkossa' ominaisuudessa)">
+<!ENTITY webhost "Verkkoisäntä(Käytetään \'Näytä verkossa\' ominaisuudessa)">
 <!ENTITY webhost.tip "Esimerkki: http://www.example.com">
 <!ENTITY prefix.label "Etuliite:">
 <!ENTITY prefix.tip "Poistettava etuliite FTP-osoitteista, esim. /public_html">
