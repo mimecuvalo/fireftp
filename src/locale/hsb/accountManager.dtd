@@ -1,0 +1,66 @@
+<!ENTITY title "Kontowy zrjadowak">
+<!ENTITY main "Zakładne nastajenja">
+<!ENTITY connections "Zwisk">
+<!ENTITY advanced "Rozšěrjeny">
+<!ENTITY maindetails "Hłowne podrobnosće">
+<!ENTITY id "ID">
+<!ENTITY account.label "Kontowe mjeno:">
+<!ENTITY account.tip "Přikład: Moje FTP-sydło">
+<!ENTITY folder.label "Kategorija:">
+<!ENTITY optional.label "(opcionalny)">
+<!ENTITY host.label "Host:">
+<!ENTITY host.tip "Přikład: ftp.debian.org">
+<!ENTITY login.label "Wužiwarske mjeno:">
+<!ENTITY password.label "Hesło:">
+<!ENTITY anonymous.label "Anonymny">
+<!ENTITY connection "Zwiskowy typ">
+<!ENTITY port.label "Port:">
+<!ENTITY pasv.label "Pasiwny modus">
+<!ENTITY security.label "Wěstota:">
+<!ENTITY none.label "Žadyn">
+<!ENTITY authtls.label "Auth TLS (najlěpši)">
+<!ENTITY authssl.label "Auth SSL (lěpši)">
+<!ENTITY implicit.label "Implicit SSL (dobry)">
+<!ENTITY sftp.label "SFTP">
+<!ENTITY privatekey.label "Priwatny kluč:">
+<!ENTITY pkbrowse.label "Přepytać…">
+<!ENTITY pkconvert.label "Konwertować…">
+<!ENTITY initialdir "Startowe zapisy">
+<!ENTITY download "Sćehnjenske opcije">
+<!ENTITY upload "Nahrawanske opcije">
+<!ENTITY localdir.label "Lokalny:">
+<!ENTITY remotedir.label "Zdaleny:">
+<!ENTITY current.label "Aktualny wužiwać">
+<!ENTITY treesync.label "Zapisy za nawigowanje synchrone wobchować">
+<!ENTITY webhost "Webhost (wužiwa so z funkciju \'Sej we webje wobhladać\')">
+<!ENTITY webhost.tip "Přikład: http://www.přikład.de">
+<!ENTITY prefix.label "Prefiks:">
+<!ENTITY prefix.tip "Prefiks za wotstronjenje FTP-dźěla z URL, na př. /public.html">
+<!ENTITY caseleave.label "Pisanje njezměnjene wostajić">
+<!ENTITY caselower.label "Do małopisanja konwertować">
+<!ENTITY caseupper.label "Do wulkopisanja konwertować">
+<!ENTITY timezone.label "Wotchilenje časoweho pasma">
+<!ENTITY hours.label "Hodźin:">
+<!ENTITY minutes.label "Mjeńšin:">
+<!ENTITY notes.label "Přispomnjenki">
+<!ENTITY encoding.label "Kodowanje serwera">
+<!ENTITY charset.label "Znamješkowa sadźba:">
+<!ENTITY account.access "K">
+<!ENTITY folder.access "e">
+<!ENTITY host.access "O">
+<!ENTITY login.access "M">
+<!ENTITY password.access "H">
+<!ENTITY anonymous.access "n">
+<!ENTITY pasv.access "p">
+<!ENTITY port.access "o">
+<!ENTITY security.access "W">
+<!ENTITY privatekey.access "r">
+<!ENTITY pkbrowse.access "E">
+<!ENTITY pkconvert.access "K">
+<!ENTITY localdir.access "L">
+<!ENTITY remotedir.access "Z">
+<!ENTITY currentl.access "a">
+<!ENTITY currentr.access "u">
+<!ENTITY treesync.access "s">
+<!ENTITY webhost.access "h">
+<!ENTITY prefix.access "f">

@@ -74,6 +74,7 @@ then
 		locale/gl-ES \
 		locale/he \
 		locale/hr-HR \
+		locale/hsb \
 		locale/hsb-DE \
 		locale/hu \
 		locale/hu-HU \

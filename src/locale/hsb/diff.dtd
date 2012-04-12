@@ -1,0 +1,24 @@
+<!ENTITY title "Zapisy synchronizować">
+<!ENTITY file.label "Dataja">
+<!ENTITY reason.label "Přičina">
+<!ENTITY action.label "Akcija">
+<!ENTITY download.label "Sćahnyć">
+<!ENTITY upload.label "Nahrać">
+<!ENTITY delete.label "Zhašeć">
+<!ENTITY nothing.label "Ničo nječinić">
+<!ENTITY defaults.label "Wuběr změnić">
+<!ENTITY local.label "Za falowace lokalne dataje:">
+<!ENTITY remote.label "Za falowace zdalene dataje:">
+<!ENTITY diff.label "Za rozdźělne datajowe wulkosće:">
+<!ENTITY newer.label "Za nowšě lokalne dataje:">
+<!ENTITY older.label "Za nowše zdalene dataje:">
+<!ENTITY lDownload.access "S">
+<!ENTITY lDelete.access "z">
+<!ENTITY lNothing.access "i">
+<!ENTITY rUpload.access "N">
+<!ENTITY rDelete.access "a">
+<!ENTITY rNothing.access "o">
+<!ENTITY dDownload.access "h">
+<!ENTITY dUpload.access "r">
+<!ENTITY dNothing.access "e">
+<!ENTITY diff.note "Kedźbu: Tuta funkcija njepřirunuje datajowy wobsah, ale hlada za tym, kotre dataje w zapisach, kotrež maja so přirunować,  eksistuja abo njeeksistuja a kak so datajowe wulkosće rozeznawaja. Časowe kołki so přirunuja, jeli nastajenja \'Časowe kołki synchrone wobchować\' je zmóžnjene.">

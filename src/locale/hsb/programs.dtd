@@ -1,0 +1,22 @@
+<!ENTITY title "Programy">
+<!ENTITY add.label "Přidać">
+<!ENTITY remove.label "Wotstronić">
+<!ENTITY extensions.label "Rozšěrjenja">
+<!ENTITY programs.label "Programy">
+<!ENTITY details.label "Programowe podrobnosće">
+<!ENTITY name.label "Mjeno">
+<!ENTITY exec.label "Šćežka">
+<!ENTITY browse.label "Přepytać">
+<!ENTITY args.label "Argumenty">
+<!ENTITY argshelp1.label "Hdyž polo \'Argumenty\'  je prózdne, so standardnje dataja sama jako argument přepoda.">
+<!ENTITY argshelp2.label "Wužijće w swójskich argumentach &#37;file&#37;, zo byšće dataju woznamjenił, kotraž so ma přepodać.">
+<!ENTITY apply.label "Nałožić">
+<!ENTITY adde.accesskey "p">
+<!ENTITY removee.accesskey "t">
+<!ENTITY addp.accesskey "d">
+<!ENTITY removep.accesskey "s">
+<!ENTITY name.accesskey "M">
+<!ENTITY exec.accesskey "U">
+<!ENTITY browse.accesskey "y">
+<!ENTITY args.accesskey "r">
+<!ENTITY apply.accesskey "n">
