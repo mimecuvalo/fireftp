@@ -302,7 +302,7 @@ function onAccountChange(account) {
     if (found == -1) {
       gFolderField.value = "";
       onFolderChange();
-      return;
+      return false;
     }
 
     gFolderField.value  = gSiteManager[x].folder;
@@ -322,6 +322,8 @@ function onAccountChange(account) {
   if (gAccountField.value) {
     accountButtonsDisabler(false);
   }
+
+  return true;
 }
 
 var gDidParamikoCredit = false;
@@ -384,6 +386,10 @@ function accountChangeHelper(site) {
       gRemotePath.value = site.remotedir;
     } else {
       gRemotePath.value = "/";
+    }
+
+    if (window.location.protocol == 'chrome:') {
+      window.location.hash = generateArgs({ 'account': gAccount }).substring(1);
     }
   }
 

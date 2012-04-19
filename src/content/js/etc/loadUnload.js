@@ -97,7 +97,13 @@ function startup() {
       + "</span><br style='font-size:5pt'/><br style='font-size:5pt'/>", 'blue', "info", true);
   gCmdlogBody.scrollTop = 0;
 
-  onAccountChange(gDefaultAccount);
+  var hashUsed = false;
+  if (!gLoadUrl && window.location.protocol == 'chrome:' && window.location.hash) {
+    gDefaultAccount = getArgument('?' + window.location.hash.substring(1), 'account');
+    hashUsed = true;
+  }
+
+  var accountFound = onAccountChange(gDefaultAccount);
   var func = function() {
     gAccountField.focus();
   };
@@ -109,6 +115,8 @@ function startup() {
 
   if (gLoadUrl) {
     setTimeout(externalLink, 1000);
+  } else if (hashUsed && accountFound) {
+    setTimeout(connect, 1000);
   }
 }
 
