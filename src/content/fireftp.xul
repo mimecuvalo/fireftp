@@ -263,6 +263,8 @@
       <toolbarbutton id="editMenuItem"  label="&edit.label;"           accesskey="&edit.access;"       oncommand="editSite()"/>
       <toolbarbutton id="abortbutton"   label="&abort.label;"          accesskey="&abort.access;"      oncommand="doAbort()"/>
       <toolbarspacer flex="1"/>
+          <toolbarbutton id="createAccountButtonLeftSide" label="&addaccount.label;" accesskey="&addaccount.access;"  oncommand="newSite()" />
+          <toolbarbutton id="quickMenuItem" label="&qc.label;" accesskey="&qc.access;" oncommand="quickConnect()" />
       <toolbarbutton id="logbutton"     label="&logtab.label;"         accesskey="&logbutton.access;"  oncommand="showLog()" type="checkbox" persist="checked"  autoCheck="false" />
       <toolbarbutton id="advmenu"       label="&advanced.label;"       accesskey="&advanced.access;"   popup="advancedpopup"/>
       <toolbarbutton id="helpbutton"    label="&help.label;"           accesskey="&helpbutton.access;"
