@@ -259,7 +259,7 @@ function onFolderChange(dontSelect, click) {
   if (!gSiteManager.length) {
     gAccountField.setAttribute("label", gStrbundle.getString("createAccount"));
   }
-
+/*
   gAccountField.appendItem(gStrbundle.getString("createAccount"), "");
   gAccountField.firstChild.lastChild.setAttribute("oncommand", "newSite()");
   gAccountField.appendItem(gStrbundle.getString("quickConnectMenu"), "");
@@ -269,7 +269,7 @@ function onFolderChange(dontSelect, click) {
   if (gSiteManager.length) {
     gAccountField.firstChild.appendChild(document.createElement("menuseparator"));
   }
-
+*/
   for (var x = 0; x < gSiteManager.length; ++x) {
     if (gSiteManager[x].folder == gFolderField.value || (!gSiteManager[x].folder && gFolderField.value == "")) {
       gAccountField.appendItem(gSiteManager[x].account, gSiteManager[x].account);
