@@ -3,6 +3,12 @@
 
 <!ENTITY accountlist.label    "(Choose an account)">
 
+<!ENTITY addaccount.label    "Add Account...">
+<!ENTITY addaccount.access	  "A">
+
+<!ENTITY qc.label            "QuickConnect...">
+<!ENTITY qc.access           "Q">
+
 <!ENTITY edit.label           "Edit">
 <!ENTITY abort.label          "Abort">
 
