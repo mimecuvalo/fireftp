@@ -2,6 +2,14 @@ function ssh2Mozilla(observer) {
   inherit(this, new baseProtocol());
   this.observer = observer;
   this.observer.version = this.version;
+  
+  this.transferProgress = {
+    id : '',
+    timeStart : 0,
+    bytesPartial : 0,
+    bytesTransferred : 0,
+    bytesTotal : 0
+  };
 
   setTimeout(this.keepAlive.bind(this), 60000);
 }
@@ -847,14 +855,6 @@ ssh2Mozilla.prototype = {
     this.writeControlWrapper();
 
     return id;
-  },
-
-  transferProgress : {
-    id : '',
-    timeStart : 0,
-    bytesPartial : 0,
-    bytesTransferred : 0,
-    bytesTotal : 0
   },
 
   transferProgressCallback : function(size) {
