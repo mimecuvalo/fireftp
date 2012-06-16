@@ -387,10 +387,6 @@ function accountChangeHelper(site) {
     } else {
       gRemotePath.value = "/";
     }
-
-    if (window.location.protocol == 'chrome:') {
-      window.location.hash = generateArgs({ 'account': gAccount }).substring(1);
-    }
   }
 
   if (site.account) {

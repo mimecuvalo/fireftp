@@ -125,6 +125,10 @@ function beforeUnload() {
 }
 
 function unload() {
+  if (window.location.protocol == 'chrome:') {
+    window.location.hash = '';
+  }
+
   if (gPrefsService instanceof Components.interfaces.nsIPrefBranchInternal) {
     gPrefsService.removeObserver("fireftp", prefsObserver, false);
   }

@@ -42,6 +42,10 @@ baseObserver.prototype = {
     if (!gDisableFavicon) {
       $('page-proxy-favicon').src = (gWebHost ? gWebHost : "http://" + gConnection.host) + "/favicon.ico";
     }
+
+    if (window.location.protocol == 'chrome:') {
+      window.location.hash = generateArgs({ 'account': gAccount }).substring(1);
+    }
   },
 
   onLoginAccepted : function(newHost) {
@@ -61,6 +65,10 @@ baseObserver.prototype = {
 
   onDisconnected : function(attemptingReconnect) {
     try {
+      if (window.location.protocol == 'chrome:') {
+        window.location.hash = '';
+      }
+
       if (connectedButtonsDisabler) {                                       // connectedButtonsDisabler could be gone b/c we're disposing
         connectedButtonsDisabler();
         setConnectButton(true);
