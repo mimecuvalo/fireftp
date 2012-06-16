@@ -1,31 +1,31 @@
-<!ENTITY title "Properties">
-<!ENTITY path "Path:">
-<!ENTITY webpath "Web Path:">
-<!ENTITY size "Size:">
-<!ENTITY date "Date:">
-<!ENTITY contains "Contains:">
-<!ENTITY user "User:">
-<!ENTITY groupl "Group:">
-<!ENTITY attr "Attributes:">
-<!ENTITY hash "Hashes:">
-<!ENTITY perm "Permissions:">
-<!ENTITY reado "Read-only">
-<!ENTITY hidden "Hidden">
-<!ENTITY owner "Owner">
-<!ENTITY group "Group">
+<!ENTITY title "Proprietăți">
+<!ENTITY path "Cale:">
+<!ENTITY webpath "Cale web:">
+<!ENTITY size "Dimensiune:">
+<!ENTITY date "Dată:">
+<!ENTITY contains "Conținut:">
+<!ENTITY user "Utilizator:">
+<!ENTITY groupl "Grup:">
+<!ENTITY attr "Atribute:">
+<!ENTITY hash "Sume hash:">
+<!ENTITY perm "Permisiuni:">
+<!ENTITY reado "Doar în-citire">
+<!ENTITY hidden "Ascuns">
+<!ENTITY owner "Proprietar">
+<!ENTITY group "Grup">
 <!ENTITY public "Public">
-<!ENTITY read "Read">
-<!ENTITY write "Write">
-<!ENTITY exec "Execute">
-<!ENTITY manual "Manual:">
+<!ENTITY read "Citire">
+<!ENTITY write "Scriere">
+<!ENTITY exec "Executare">
+<!ENTITY manual "Cod permisiuni:">
 <!ENTITY suid "SUID">
 <!ENTITY guid "SGID">
-<!ENTITY sticky "Sticky">
-<!ENTITY applyto "Apply to:">
-<!ENTITY thisprop "This folder">
-<!ENTITY folderprop "All Contained Folders">
-<!ENTITY filesprop "All Contained Files">
-<!ENTITY thumbnail "Thumbnail">
-<!ENTITY loading "Loading...">
-<!ENTITY view.label "View">
+<!ENTITY sticky "Sticky bit">
+<!ENTITY applyto "Se aplică pentru:">
+<!ENTITY thisprop "Acest dosar">
+<!ENTITY folderprop "Toate dosarele conținute">
+<!ENTITY filesprop "Toate fișierele conținute">
+<!ENTITY thumbnail "Miniatură">
+<!ENTITY loading "Încărcare…">
+<!ENTITY view.label "Vizualizează">
 <!ENTITY view.accesskey "V">

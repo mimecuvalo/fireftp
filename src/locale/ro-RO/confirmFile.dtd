@@ -1,13 +1,13 @@
-<!ENTITY title "Confirm Overwrite">
-<!ENTITY existing.label "Existing File:">
-<!ENTITY new.label "New File:">
-<!ENTITY overwrite.label "Overwrite">
-<!ENTITY overwriteall.label "Overwrite All">
-<!ENTITY skip.label "Skip">
-<!ENTITY skipall.label "Skip All">
-<!ENTITY resume.label "Resume">
-<!ENTITY overwrite.access "O">
-<!ENTITY overwriteall.access "A">
-<!ENTITY skip.access "S">
-<!ENTITY skipall.access "K">
+<!ENTITY title "Confirmare înlocuire">
+<!ENTITY existing.label "Fișier existent:">
+<!ENTITY new.label "Fișier nou:">
+<!ENTITY overwrite.label "Înlocuiește">
+<!ENTITY overwriteall.label "Înlocuiește total">
+<!ENTITY skip.label "Ignoră">
+<!ENTITY skipall.label "Ignoră total">
+<!ENTITY resume.label "Reia">
+<!ENTITY overwrite.access "l">
+<!ENTITY overwriteall.access "a">
+<!ENTITY skip.access "I">
+<!ENTITY skipall.access "t">
 <!ENTITY resume.access "R">

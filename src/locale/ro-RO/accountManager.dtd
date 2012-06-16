@@ -1,66 +1,66 @@
-<!ENTITY title "Account Manager">
-<!ENTITY main "Main">
-<!ENTITY connections "Connection">
-<!ENTITY advanced "Advanced">
-<!ENTITY maindetails "Main Details">
-<!ENTITY id "ID">
-<!ENTITY account.label "Account Name:">
-<!ENTITY account.tip "Example: My FTP Site">
-<!ENTITY folder.label "Category:">
-<!ENTITY optional.label "(optional)">
-<!ENTITY host.label "Host:">
-<!ENTITY host.tip "Example: ftp.debian.org">
-<!ENTITY login.label "Login:">
-<!ENTITY password.label "Password:">
-<!ENTITY anonymous.label "Anonymous">
-<!ENTITY connection "Connection Type">
+<!ENTITY title "Gestionar de conturi">
+<!ENTITY main "General">
+<!ENTITY connections "Conexiune">
+<!ENTITY advanced "Complex">
+<!ENTITY maindetails "Informații principale">
+<!ENTITY id "Identificare">
+<!ENTITY account.label "Denumire cont:">
+<!ENTITY account.tip "Exemplu: Saitul meu FTP">
+<!ENTITY folder.label "Categorie:">
+<!ENTITY optional.label "(opțional)">
+<!ENTITY host.label "Server:">
+<!ENTITY host.tip "Exemplu: ftp.mozilla.org">
+<!ENTITY login.label "Utilizator:">
+<!ENTITY password.label "Parolă:">
+<!ENTITY anonymous.label "Anonim">
+<!ENTITY connection "Tip conexiune">
 <!ENTITY port.label "Port:">
-<!ENTITY pasv.label "Passive Mode">
-<!ENTITY security.label "Security:">
-<!ENTITY none.label "None">
-<!ENTITY authtls.label "Auth TLS (Best)">
-<!ENTITY authssl.label "Auth SSL (Better)">
-<!ENTITY implicit.label "Implicit SSL (Good)">
-<!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Key:">
-<!ENTITY pkbrowse.label "Browse...">
-<!ENTITY pkconvert.label "Convert...">
-<!ENTITY initialdir "Initial Directories">
-<!ENTITY download "Download Options">
-<!ENTITY upload "Upload Options">
+<!ENTITY pasv.label "Mod pasiv">
+<!ENTITY security.label "Securitate:">
+<!ENTITY none.label "Niciuna">
+<!ENTITY authtls.label "Autentificare TLS (cea mai bună)">
+<!ENTITY authssl.label "Autentificare SSL explicită (mai bună)">
+<!ENTITY implicit.label "Autentificare SSL implicită (bună)">
+<!ENTITY sftp.label "Secure FTP">
+<!ENTITY privatekey.label "Cheie privată:">
+<!ENTITY pkbrowse.label "Răsfoiește...">
+<!ENTITY pkconvert.label "Convertește...">
+<!ENTITY initialdir "Dosare inițiale">
+<!ENTITY download "Opțiuni de descărcare">
+<!ENTITY upload "Opțiuni de încărcare">
 <!ENTITY localdir.label "Local:">
-<!ENTITY remotedir.label "Remote:">
-<!ENTITY current.label "Use Current">
-<!ENTITY treesync.label "Keep directories in sync while navigating">
-<!ENTITY webhost "Web host (used with 'View on the Web' feature)">
-<!ENTITY webhost.tip "Example: http://www.example.com">
+<!ENTITY remotedir.label "La distanță:">
+<!ENTITY current.label "Dosarul curent">
+<!ENTITY treesync.label "Menține sincronizarea dosarelor în timpul navigării">
+<!ENTITY webhost "Adresă web (folosită cu facilitatea &quot;Vezi pe web&quot;)">
+<!ENTITY webhost.tip "Exemplu: http://www.exemplu.ro">
 <!ENTITY prefix.label "Prefix:">
-<!ENTITY prefix.tip "Prefix to remove of the FTP part of the url, e.g. /public_html">
-<!ENTITY caseleave.label "Leave case alone">
-<!ENTITY caselower.label "Convert to lower case">
-<!ENTITY caseupper.label "Convert to upper case">
-<!ENTITY timezone.label "Timezone Offset">
-<!ENTITY hours.label "Hours:">
-<!ENTITY minutes.label "Minutes:">
-<!ENTITY notes.label "Notes">
-<!ENTITY encoding.label "Server Encoding">
-<!ENTITY charset.label "Character Set:">
-<!ENTITY account.access "A">
-<!ENTITY folder.access "e">
-<!ENTITY host.access "H">
-<!ENTITY login.access "G">
+<!ENTITY prefix.tip "Prefixul care se elimină din partea FTP a adresei, ex: /public_html">
+<!ENTITY caseleave.label "Nu transforma caracterele">
+<!ENTITY caselower.label "Transformă în minuscule">
+<!ENTITY caseupper.label "Transformă în majuscule">
+<!ENTITY timezone.label "Diferență de fus orar">
+<!ENTITY hours.label "Ore:">
+<!ENTITY minutes.label "Minute:">
+<!ENTITY notes.label "Notițe">
+<!ENTITY encoding.label "Codare server">
+<!ENTITY charset.label "Set de caractere:">
+<!ENTITY account.access "c">
+<!ENTITY folder.access "t">
+<!ENTITY host.access "S">
+<!ENTITY login.access "U">
 <!ENTITY password.access "P">
-<!ENTITY anonymous.access "n">
+<!ENTITY anonymous.access "A">
 <!ENTITY pasv.access "v">
-<!ENTITY port.access "o">
+<!ENTITY port.access "P">
 <!ENTITY security.access "S">
-<!ENTITY privatekey.access "i">
-<!ENTITY pkbrowse.access "B">
-<!ENTITY pkconvert.access "S">
+<!ENTITY privatekey.access "h">
+<!ENTITY pkbrowse.access "R">
+<!ENTITY pkconvert.access "o">
 <!ENTITY localdir.access "L">
-<!ENTITY remotedir.access "R">
+<!ENTITY remotedir.access "d">
 <!ENTITY currentl.access "c">
 <!ENTITY currentr.access "u">
-<!ENTITY treesync.access "y">
-<!ENTITY webhost.access "t">
+<!ENTITY treesync.access "M">
+<!ENTITY webhost.access "S">
 <!ENTITY prefix.access "x">

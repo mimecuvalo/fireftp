@@ -1,24 +1,24 @@
-<!ENTITY title "Sync Directories">
-<!ENTITY file.label "File">
-<!ENTITY reason.label "Reason">
-<!ENTITY action.label "Action">
-<!ENTITY download.label "Download">
-<!ENTITY upload.label "Upload">
-<!ENTITY delete.label "Delete">
-<!ENTITY nothing.label "Do Nothing">
-<!ENTITY defaults.label "Change Selection">
-<!ENTITY local.label "For missing local files:">
-<!ENTITY remote.label "For missing remote files:">
-<!ENTITY diff.label "For different file sizes:">
-<!ENTITY newer.label "For newer local files:">
-<!ENTITY older.label "For newer remote files:">
+<!ENTITY title "Sincronizare dosare">
+<!ENTITY file.label "Fișier">
+<!ENTITY reason.label "Motiv">
+<!ENTITY action.label "Acțiune">
+<!ENTITY download.label "Descărcare">
+<!ENTITY upload.label "Încărcare">
+<!ENTITY delete.label "Ștergere">
+<!ENTITY nothing.label "Nicio acțiune">
+<!ENTITY defaults.label "Acțiuni implicite">
+<!ENTITY local.label "Pentru fișierele locale lipsă:">
+<!ENTITY remote.label "Pentru fișierele de la distanță lipsă:">
+<!ENTITY diff.label "Pentru fișiere de mărimi diferite:">
+<!ENTITY newer.label "Pentru fișiere locale noi:">
+<!ENTITY older.label "Pentru fișiere de la distanță noi:">
 <!ENTITY lDownload.access "D">
-<!ENTITY lDelete.access "e">
+<!ENTITY lDelete.access "t">
 <!ENTITY lNothing.access "N">
-<!ENTITY rUpload.access "U">
-<!ENTITY rDelete.access "l">
-<!ENTITY rNothing.access "t">
-<!ENTITY dDownload.access "w">
-<!ENTITY dUpload.access "p">
-<!ENTITY dNothing.access "h">
-<!ENTITY diff.note "Note: This diffing feature does not actually compare file content.  Rather it looks at which files are present or not present in the directories being compared and also at differing file sizes.  Timestamps are compared if the 'Keep timestamps in sync' preference is enabled.">
+<!ENTITY rUpload.access "c">
+<!ENTITY rDelete.access "g">
+<!ENTITY rNothing.access "a">
+<!ENTITY dDownload.access "s">
+<!ENTITY dUpload.access "r">
+<!ENTITY dNothing.access "u">
+<!ENTITY diff.note "Notă: Această facilitate nu compară de fapt conținutul fișierelor, ci verifică doar prezența lor în dosarele comparate precum și mărimea lor. Amprentele temporale sunt comparate dacă este activată opțiunea „Păstrează amprentele temporale”.">

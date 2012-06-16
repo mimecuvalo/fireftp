@@ -1,99 +1,99 @@
-<!ENTITY openFireFTP "Open Link in FireFTP">
-<!ENTITY viewFireFTP "View This Page in FireFTP">
-<!ENTITY accountlist.label "(Choose an account)">
-<!ENTITY edit.label "Edit">
-<!ENTITY abort.label "Abort">
-<!ENTITY logtab.label "Log/Queue">
-<!ENTITY ltab.label "Log">
-<!ENTITY qtab.label "Queue">
-<!ENTITY search.access "S">
+<!ENTITY openFireFTP "Deschide legătura în FireFTP">
+<!ENTITY viewFireFTP "Vizualizează pagina în FireFTP">
+<!ENTITY accountlist.label "(Alege un cont)">
+<!ENTITY edit.label "Editează…">
+<!ENTITY abort.label "Anulează">
+<!ENTITY logtab.label "Jurnal/Coadă de așteptare">
+<!ENTITY ltab.label "Jurnal">
+<!ENTITY qtab.label "Coadă de așteptare">
+<!ENTITY search.access "C">
 <!ENTITY logbutton.access "L">
-<!ENTITY advanced.label "Tools">
-<!ENTITY search.label "Search/Filter">
-<!ENTITY diff.label "Sync Directories...">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
-<!ENTITY custom.label "Custom Command...">
-<!ENTITY import.label "Import...">
-<!ENTITY export.label "Export...">
-<!ENTITY preferencestab.label "Options...">
+<!ENTITY advanced.label "Unelte">
+<!ENTITY search.label "Căutare/Filtrare">
+<!ENTITY diff.label "Sincronizare dosare">
+<!ENTITY recdiff.label "Sincronizare dosare și subdosare">
+<!ENTITY custom.label "Comandă personalizată">
+<!ENTITY import.label "Import…">
+<!ENTITY export.label "Export…">
+<!ENTITY preferencestab.label "Opțiuni…">
 <!ENTITY diff.access "S">
-<!ENTITY recdiff.access "D">
-<!ENTITY custom.access "C">
+<!ENTITY recdiff.access "i">
+<!ENTITY custom.access "p">
 <!ENTITY import.access "I">
-<!ENTITY export.access "x">
+<!ENTITY export.access "E">
 <!ENTITY prefbutton.access "O">
-<!ENTITY help.label "Help">
+<!ENTITY help.label "Ajutor">
 <!ENTITY help.url "http://fireftp.mozdev.org/help.html">
-<!ENTITY parentdir.tip "Change to parent directory">
-<!ENTITY refresh.tip "Refresh Directory">
-<!ENTITY localpath.tip "Local Path">
-<!ENTITY remotepath.tip "Remote Path">
-<!ENTITY browse.label "Browse">
-<!ENTITY change.label "Change">
-<!ENTITY name.label "Name">
-<!ENTITY size.label "Size">
-<!ENTITY date.label "Date">
-<!ENTITY type.label "Type">
-<!ENTITY attr.label "Attributes">
-<!ENTITY source.label "Source">
-<!ENTITY dest.label "Destination">
-<!ENTITY bytes.label "Bytes">
-<!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
-<!ENTITY type.tip "Change method of transfers (auto recommended)">
-<!ENTITY bytes.tip "Bytes Downloaded / Total Bytes">
-<!ENTITY timeela.tip "Time Elapsed">
-<!ENTITY timerem.tip "Time Remaining">
-<!ENTITY download.tip "Transfer Rate">
-<!ENTITY percent.tip "Progress">
-<!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binary">
+<!ENTITY parentdir.tip "Mergi la dosarul părinte">
+<!ENTITY refresh.tip "Reîmprospătează dosarul">
+<!ENTITY localpath.tip "Amplasare locală">
+<!ENTITY remotepath.tip "Amplasare la distanță">
+<!ENTITY browse.label "Răsfoiește">
+<!ENTITY change.label "Schimbă">
+<!ENTITY name.label "Denumire">
+<!ENTITY size.label "Dimensiune">
+<!ENTITY date.label "Dată">
+<!ENTITY type.label "Tip">
+<!ENTITY attr.label "Atribute">
+<!ENTITY source.label "Sursă">
+<!ENTITY dest.label "Destinație">
+<!ENTITY bytes.label "Octeți">
+<!ENTITY status.label "Stare">
+<!ENTITY retry.label "Reîncearcă">
+<!ENTITY cancel.label "Renunță">
+<!ENTITY cancelAll.label "Renunță complet">
+<!ENTITY type.tip "Schimbă modul de transfer (recomandat automat)">
+<!ENTITY bytes.tip "Octeți descărcați/Total octeți">
+<!ENTITY timeela.tip "Timp scurs">
+<!ENTITY timerem.tip "Timp rămas">
+<!ENTITY download.tip "Rată descărcare">
+<!ENTITY percent.tip "Progres">
+<!ENTITY auto.label "Automat">
+<!ENTITY binary.label "Binar">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
-<!ENTITY upload.label "Upload">
-<!ENTITY download.label "Download">
-<!ENTITY open.label "Open">
-<!ENTITY openwith.label "Open With">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
-<!ENTITY viewweb.label "View on the Web">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
-<!ENTITY cut.label "Cut">
-<!ENTITY copy.label "Copy">
-<!ENTITY paste.label "Paste">
-<!ENTITY makedir.label "Create Directory">
-<!ENTITY makefile.label "Create File">
-<!ENTITY symlink.label "Create Symlink">
-<!ENTITY delete.label "Delete">
-<!ENTITY rename.label "Rename">
-<!ENTITY properties.label "Properties">
-<!ENTITY rproperties.label "Properties (incl. contents)">
-<!ENTITY searchButton.label "Search">
+<!ENTITY openContaining.label "Deschide dosarul conținător">
+<!ENTITY upload.label "Încarcă">
+<!ENTITY download.label "Descarcă">
+<!ENTITY open.label "Deschide">
+<!ENTITY openwith.label "Deschide cu">
+<!ENTITY extractHere.label "Extrage aici">
+<!ENTITY extractTo.label "Extrage în dosar">
+<!ENTITY viewweb.label "Vezi pe web">
+<!ENTITY copyUrl.label "Copiază adresa">
+<!ENTITY copyUrlLogin.label "FTP cu autentificare">
+<!ENTITY cut.label "Decupează">
+<!ENTITY copy.label "Copiază">
+<!ENTITY paste.label "Lipește">
+<!ENTITY makedir.label "Creează un dosar">
+<!ENTITY makefile.label "Creează un fișier">
+<!ENTITY symlink.label "Creează o legătură simbolică (Symlink)">
+<!ENTITY delete.label "Șterge">
+<!ENTITY rename.label "Redenumește">
+<!ENTITY properties.label "Proprietăți">
+<!ENTITY rproperties.label "Proprietăți recursive">
+<!ENTITY searchButton.label "Caută">
 <!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
-<!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchRemote.label "La distanță">
+<!ENTITY searchOptions.label "Opțiuni">
+<!ENTITY searchFrom.label "De la:">
+<!ENTITY searchTo.label "Până la:">
+<!ENTITY searchSubdir.label "Căutare în subdosare">
+<!ENTITY searchMatch.label "Sensibil la majuscule și minuscule">
+<!ENTITY searchRegexp.label "Expresie regulată">
+<!ENTITY searchDates.label "Specificare dată">
 <!ENTITY searchSubdir.access "s">
-<!ENTITY searchMatch.access "c">
+<!ENTITY searchMatch.access "C">
 <!ENTITY searchRegexp.access "x">
 <!ENTITY searchDates.access "d">
 <!ENTITY edit.access "E">
 <!ENTITY abort.access "A">
-<!ENTITY advanced.access "T">
-<!ENTITY helpbutton.access "H">
-<!ENTITY browsebutton.access "B">
-<!ENTITY changebutton.access "n">
-<!ENTITY searchButton.access "S">
+<!ENTITY advanced.access "U">
+<!ENTITY helpbutton.access "j">
+<!ENTITY browsebutton.access "R">
+<!ENTITY changebutton.access "S">
+<!ENTITY searchButton.access "C">
 <!ENTITY searchLocal.access "L">
-<!ENTITY searchRemote.access "R">
+<!ENTITY searchRemote.access "d">
 <!ENTITY searchOptions.access "O">
-<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land.  Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return.  One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
-<!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">
+<!ENTITY mozilla.quote "Și, <html:em>iată</html:em>, din <html:em>întuneric</html:em> a ieșit o mulțime de credincioși pentru a <html:em>ajuta</html:em> fiara renăscută în încercarea ei de a <html:em>recuceri</html:em> pământul. Împreună, ei au <html:em>crescut</html:em> puterea fiarei și au <html:em>răspândit</html:em> vestea bună a reîntoarcerii acesteia. Unul câte unul, adepții lui <html:em>Mamona</html:em> au fost convertiți, iar inimile lor au devenit <html:em>arzătoare</html:em>.">
+<!ENTITY mozilla.from "din <html:strong>Cartea Mozillei</html:strong>, 8:2">
