@@ -165,6 +165,8 @@ function externalLink() {                                            // opened u
 
   if (uri.schemeIs("sftp")) {
     site.security = "sftp";
+
+    site.privatekey = getArgument('?' + window.location.hash.substring(1), 'pkey');
   } else if (uri.schemeIs("ftps")) {
     site.security = "authtls";
   }
@@ -172,6 +174,10 @@ function externalLink() {                                            // opened u
   site.protocol = uri.schemeIs("sftp") ? "ssh2" : "ftp";
 
   var prefBranch   = gPrefsService.getBranch("browser.");
+
+  // get rid of the hash, e.g. when using #pkey=<file>
+  uri.path = uri.path.substring(0, uri.path.lastIndexOf('#'));
+
   // test to see if the path is a file or directory, rudimentary test to see if slash is at the end
   gLoadUrl         = uri.path.charAt(uri.path.length - 1) == '/' ? "" : unescape(uri.path);
 
