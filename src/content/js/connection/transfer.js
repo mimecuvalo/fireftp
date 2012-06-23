@@ -110,14 +110,6 @@ transfer.prototype = {
         }
       }
 
-      if (download && files[x].fileSize >= 4294967296) {
-        error(gStrbundle.getFormattedString("tooBig", [files[x].leafName]));
-        continue;
-      } else if (!download && files[x].fileSize >= 2147483648) {
-        error(gStrbundle.getFormattedString("tooBigUpload", [files[x].leafName]));
-        continue;
-      }
-
       if (this.skipAll && file.exists() && !file.isDirectory()) {
         var maybeResume = file.fileSize < files[x].fileSize && (gConnection.protocol != 'ftp' || gConnection.detectAscii(remotePath) != 'A');
         if (!this.prompt || !maybeResume) {

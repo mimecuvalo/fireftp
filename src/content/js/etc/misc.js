@@ -330,7 +330,7 @@ function parseArguments(args) {
 
 function getArgument(args, field) {
   var parsedArgs = parseArguments(args);
-  return parsedArgs[field];
+  return parsedArgs[field] || '';
 }
 
 function generateArgs(args) {
