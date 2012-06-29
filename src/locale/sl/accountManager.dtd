@@ -7,7 +7,7 @@
 <!ENTITY account.label "Ime računa:">
 <!ENTITY account.tip "Primer: Moj FTP">
 <!ENTITY folder.label "Kategorija:">
-<!ENTITY optional.label "(optional)">
+<!ENTITY optional.label "(neobvezno)">
 <!ENTITY host.label "Gostitelj:">
 <!ENTITY host.tip "Primer: ftp.debian.org">
 <!ENTITY login.label "Uporabniško ime:">
@@ -31,8 +31,8 @@
 <!ENTITY localdir.label "Krajevna:">
 <!ENTITY remotedir.label "Oddaljena:">
 <!ENTITY current.label "Uporabi trenutno">
-<!ENTITY treesync.label "Keep directories in sync">
-<!ENTITY webhost "Spletni gostitelj (uporabljeno z možnostjo 'Pokaži na spletu')">
+<!ENTITY treesync.label "Ohrani mape sinhrone med krmarjenjem">
+<!ENTITY webhost "Spletni gostitelj (uporabljeno z možnostjo \'Pokaži na spletu\')">
 <!ENTITY webhost.tip "Primer: http://www.primer.si">
 <!ENTITY prefix.label "Predpona:">
 <!ENTITY prefix.tip "Predpona, ki jo odstranite od dela FTP naslova url, npr. /javni_html">
@@ -61,6 +61,6 @@
 <!ENTITY remotedir.access "O">
 <!ENTITY currentl.access "t">
 <!ENTITY currentr.access "e">
-<!ENTITY treesync.access "y">
+<!ENTITY treesync.access "s">
 <!ENTITY webhost.access "l">
 <!ENTITY prefix.access "p">

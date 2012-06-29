@@ -2,23 +2,23 @@
 <!ENTITY file.label "Datoteka">
 <!ENTITY reason.label "Razlog">
 <!ENTITY action.label "Dejanje">
-<!ENTITY download.label "Download">
-<!ENTITY upload.label "Upload">
+<!ENTITY download.label "Prenesi s strežnika">
+<!ENTITY upload.label "Prenesi na strežnik">
 <!ENTITY delete.label "Izbriši">
-<!ENTITY nothing.label "Do Nothing">
-<!ENTITY defaults.label "Set Defaults">
-<!ENTITY local.label "For missing local files:">
-<!ENTITY remote.label "For missing remote files:">
-<!ENTITY diff.label "For different file sizes:">
+<!ENTITY nothing.label "Ne naredi ničesar">
+<!ENTITY defaults.label "Spremeni izbor">
+<!ENTITY local.label "Za manjkajoče krajevne datoteke:">
+<!ENTITY remote.label "Za manjkajoče oddaljene datoteke:">
+<!ENTITY diff.label "Za različne velikosti datotek:">
 <!ENTITY newer.label "Za novejše krajevne datoteke:">
 <!ENTITY older.label "Za novejše oddaljene datoteke:">
-<!ENTITY lDownload.access "D">
+<!ENTITY lDownload.access "P">
 <!ENTITY lDelete.access "z">
 <!ENTITY lNothing.access "N">
-<!ENTITY rUpload.access "U">
+<!ENTITY rUpload.access "n">
 <!ENTITY rDelete.access "b">
-<!ENTITY rNothing.access "t">
-<!ENTITY dDownload.access "w">
-<!ENTITY dUpload.access "p">
-<!ENTITY dNothing.access "h">
-<!ENTITY diff.note "Opomba: ta opis razlike v resnici ne primerja vsebin datotek. Namesto tega preveri prisotne datoteke v primerjanih mapah in njihove velikosti.">
+<!ENTITY rNothing.access "č">
+<!ENTITY dDownload.access "s">
+<!ENTITY dUpload.access "n">
+<!ENTITY dNothing.access "č">
+<!ENTITY diff.note "Opomba: ta opis razlike v resnici ne primerja vsebin datotek. Namesto tega preveri prisotne datoteke v primerjanih mapah in njihove velikosti. Časovni žigi se primerjajo, če je omogočena možnost \'Ohrani časovne žige sinhrone\'.">

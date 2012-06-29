@@ -3,26 +3,26 @@
 <!ENTITY accountlist.label "(izberite račun)">
 <!ENTITY edit.label "Uredi ...">
 <!ENTITY abort.label "Prekini">
-<!ENTITY logtab.label "Dnevnik">
+<!ENTITY logtab.label "Dnevnik/vrsta">
 <!ENTITY ltab.label "Dnevnik">
 <!ENTITY qtab.label "Vrsta">
 <!ENTITY search.access "S">
 <!ENTITY logbutton.access "D">
 <!ENTITY advanced.label "Napredno">
-<!ENTITY search.label "Search/Filter">
-<!ENTITY diff.label "Razlika v mapah">
-<!ENTITY recdiff.label "Sinhroniziraj mape in podmape ...">
-<!ENTITY custom.label "Po meri ...">
-<!ENTITY import.label "Uvozi ...">
-<!ENTITY export.label "Izvozi ...">
-<!ENTITY preferencestab.label "Nastavitve">
+<!ENTITY search.label "Najdi/filtriraj">
+<!ENTITY diff.label "Uskladi mape …">
+<!ENTITY recdiff.label "Uskladi mape in podmape …">
+<!ENTITY custom.label "Ukazi po meri …">
+<!ENTITY import.label "Uvozi …">
+<!ENTITY export.label "Izvozi …">
+<!ENTITY preferencestab.label "Nastavitve …">
 <!ENTITY diff.access "R">
 <!ENTITY recdiff.access "S">
 <!ENTITY custom.access "m">
 <!ENTITY import.access "U">
 <!ENTITY export.access "I">
 <!ENTITY prefbutton.access "N">
-<!ENTITY help.label "P">
+<!ENTITY help.label "Pomoč">
 <!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY parentdir.tip "Spremeni v vrhnjo mapo">
 <!ENTITY refresh.tip "Osveži mapo">
@@ -49,36 +49,36 @@
 <!ENTITY download.tip "Hitrost prenosa">
 <!ENTITY percent.tip "Odstotki končanega prenosa">
 <!ENTITY auto.label "samodejno">
-<!ENTITY binary.label "binarno">
+<!ENTITY binary.label "dvojiško">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
-<!ENTITY upload.label "Prenesi na strežnik           Enter">
-<!ENTITY download.label "Prenesi s strežnika      Enter">
+<!ENTITY openContaining.label "Odpri vsebujočo mapo">
+<!ENTITY upload.label "Prenesi na strežnik">
+<!ENTITY download.label "Prenesi s strežnika">
 <!ENTITY open.label "Odpri">
-<!ENTITY openwith.label "Odpri z ...">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY openwith.label "Odpri z …">
+<!ENTITY extractHere.label "Izlušči sem">
+<!ENTITY extractTo.label "Izlušči v mapo">
 <!ENTITY viewweb.label "Prikaži na spletu">
 <!ENTITY copyUrl.label "Kopiraj URL">
 <!ENTITY copyUrlLogin.label "FTP s prijavo">
-<!ENTITY cut.label "Izreži                           Ctrl+X">
-<!ENTITY copy.label "Kopiraj                        Ctrl+C">
-<!ENTITY paste.label "Prilepi                       Ctrl+V">
-<!ENTITY makedir.label "Ustvari imenik         Ctrl+M">
+<!ENTITY cut.label "Izreži">
+<!ENTITY copy.label "Kopiraj">
+<!ENTITY paste.label "Prilepi">
+<!ENTITY makedir.label "Ustvari mapo">
 <!ENTITY makefile.label "Ustvari datoteko">
-<!ENTITY symlink.label "Create Symlink">
-<!ENTITY delete.label "Izbriši                       Del">
-<!ENTITY rename.label "Preimenuj                    F2">
-<!ENTITY properties.label "Lastnosti                 Ctrl+P">
-<!ENTITY rproperties.label "Rekurzivne lastnosti">
-<!ENTITY searchButton.label "Search">
+<!ENTITY symlink.label "Ustvari sim. povezavo">
+<!ENTITY delete.label "Izbriši">
+<!ENTITY rename.label "Preimenuj">
+<!ENTITY properties.label "Lastnosti">
+<!ENTITY rproperties.label "Lastnosti (vklj. vsebino)">
+<!ENTITY searchButton.label "Najdi">
 <!ENTITY searchLocal.label "Krajevno">
 <!ENTITY searchRemote.label "Oddaljeno">
 <!ENTITY searchOptions.label "Možnosti">
 <!ENTITY searchFrom.label "Od:">
 <!ENTITY searchTo.label "Do:">
 <!ENTITY searchSubdir.label "Išči v podmapah">
-<!ENTITY searchMatch.label "Match case">
+<!ENTITY searchMatch.label "Ujemanje malih/velikih črk">
 <!ENTITY searchRegexp.label "Regularni izraz">
 <!ENTITY searchDates.label "Določi datume">
 <!ENTITY searchSubdir.access "m">
@@ -95,5 +95,5 @@
 <!ENTITY searchLocal.access "r">
 <!ENTITY searchRemote.access "d">
 <!ENTITY searchOptions.access "M">
-<!ENTITY mozilla.quote "In, <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>vendar</html:em>, iz <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>teme</html:em> so prišli: peščica zvestih, da bi <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>pomagali</html:em> ponovno rojeni zveri v njenem pohodu <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>ponovnega zavzetja</html:em> dežele.  Skupaj so <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>krepili</html:em> moč zveri in <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>širili</html:em> dobre novice o njeni vrnitvi.  Nekateri častilci <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>Mamona</html:em> so bili spreobrnjeni in njih srca so bila <html:em style=';;;;;font-size:1.3em;line-height:0;';;;;;>v ognju</html:em>.">
+<!ENTITY mozilla.quote "In, <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>vendar</html:em>, iz <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>teme</html:em> so prišli: peščica zvestih, da bi <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>pomagali</html:em> ponovno rojeni zveri v njenem pohodu <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>ponovnega zavzetja</html:em> dežele.  Skupaj so <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>krepili</html:em> moč zveri in <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>širili</html:em> dobre novice o njeni vrnitvi.  Nekateri častilci <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>Mamona</html:em> so bili spreobrnjeni in njih srca so bila <html:em style=\';;;;;font-size:1.3em;line-height:0;\';;;;;>v ognju</html:em>.">
 <!ENTITY mozilla.from "iz <html:strong>Knjige Mozille</html:strong>, 8:2">

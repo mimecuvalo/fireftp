@@ -7,7 +7,7 @@
 <!ENTITY user "Uporabnik:">
 <!ENTITY groupl "Skupina:">
 <!ENTITY attr "Atributi:">
-<!ENTITY hash "Ustvari hashe:">
+<!ENTITY hash "Ustvari nadzorne vsote:">
 <!ENTITY perm "Dovoljenja:">
 <!ENTITY reado "samo za branje">
 <!ENTITY hidden "skrito">
@@ -26,6 +26,6 @@
 <!ENTITY folderprop "vse vsebovane mape">
 <!ENTITY filesprop "vse vsebovane datoteke">
 <!ENTITY thumbnail "Prikaz sličic">
-<!ENTITY loading "Nalaganje ...">
+<!ENTITY loading "Nalaganje …">
 <!ENTITY view.label "Pogled">
 <!ENTITY view.accesskey "P">
