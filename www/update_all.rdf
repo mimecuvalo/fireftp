@@ -2,22 +2,22 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <Description RDF:about="rdf:#$n3ZCH1"
+  <Description RDF:about="rdf:#$o5TtN3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0b1"
-                   em:maxVersion="13.*"
+                   em:maxVersion="15.*"
                    em:updateLink="http://downloads.mozdev.org/fireftp/fireftp_all.xpi"
-                   em:updateHash="md5:ada8a67d1c7db510ae10d0aa09d44493" />
+                   em:updateHash="md5:12e10e439885e6e828d0fe60d4b64ee5" />
   <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAAvLHVpv5l/6MjEZ0opaFUPx7a+8Wmg4GdsquQxSs4yOVZTA97jud6MhtH5Z7I8te8BTmf6On+dWzk4VSflLY7ldrMyAoL11NQa4zNs3byPftIeWQT7hAuwLeFqF/M4ob5a6qD0SxPYKAqsEOjfRkJ1Xw9tx48QCoCpY7kA17aVM">
-    <em:updates RDF:resource="rdf:#$k3ZCH1"/>
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAF/y+Oc++fLAvF7owFHSlwOmH/rLdfZebBPbQbDb6hCiUFtFYJcg2lxTWwI8Jq0SVumDSqvOg9xn7X3Ocr+3zbwyWFFQrq8e5ITTC++x0z0h9AvwuGCWjyYdmeTcT3EDtduiDqvUJ8qYZFrfbiQJn6p3/aQATX1SLfnkFSBZRvWm">
+    <em:updates RDF:resource="rdf:#$l5TtN3"/>
   </RDF:Description>
-  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.4"
-                   em:version="2.0.4"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAGsbi1szMxbbQMjss9BeZnkFthK/S3OnIFmEyV07D/R9OGCjEtdpqJr/Z9Y1pq+DFtrxtmq7qlQfAIOg8EJmW8zMZVjPrxnYr7oxJRZugIuUV0fRdRIe88BG2KQzdEB7Q2OmCbUS0jhuxxE/upZh7pO4uZasZLSjf+aj2rSSvb9D">
-    <em:targetApplication RDF:resource="rdf:#$n3ZCH1"/>
+  <RDF:Description RDF:about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.5"
+                   em:version="2.0.5"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFHRt2zDQV4we4ws5TaqUGHSHweQ3UvcdbuQrKt3LIv8m1i4p5lxKgg4QOLi9iYD3rfI7FNDiqcriDtN4WpERqb2T3MPCHMkJMAm9gWVDt8ZQOWycE8877Nwfdzl10R8L0DhNPVjWOt0C+hI0tO4KQEtQQp57PkXawWEAXd773sW">
+    <em:targetApplication RDF:resource="rdf:#$o5TtN3"/>
   </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$k3ZCH1">
-    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.4"/>
+  <RDF:Seq RDF:about="rdf:#$l5TtN3">
+    <RDF:li RDF:resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.5"/>
   </RDF:Seq>
 </RDF:RDF>

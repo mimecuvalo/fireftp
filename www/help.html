@@ -331,7 +331,12 @@
 
       <h4 class="display">What is a Private Key?</h4>
       <div class="stretcher">
-        This is something if you select "SFTP" under Security.  Some SFTP servers require a <a href="http://en.wikipedia.org/wiki/Private_key">private key</a> to access them.  So in this field point to where the private key is stored on your computer.  These files are usually stored ~/.ssh/id_dsa or ~/.ssh/id_rsa.  Here are some tips on <a href="http://help.github.com/key-setup-redirect">generating SSH keys</a>.  FireFTP also understands PuTTY files (usually having a .ppk extension).
+        This is something if you select "SFTP" under Security.  Some SFTP servers require a <a href="http://en.wikipedia.org/wiki/Private_key">private key</a> to access them.  So in this field point to where the private key is stored on your computer.  These files are usually stored ~/.ssh/id_dsa or ~/.ssh/id_rsa.  Here are some tips on <a href="http://help.github.com/key-setup-redirect">generating SSH keys</a>.  FireFTP also understands PuTTY files (usually having a .ppk extension).<br><br>
+        For l33t users: you can add the private key to the url by doing sftp://username:password@hostname:port/#pkey=<urlencoded-file-path-to-private-key><br>
+        For example: sftp://blah@yomama.com/#pkey=%2FUsers%2Fmama%2F.ssh%2Fid_rsa<br>
+        or: C:\ssh-keys\mykey should be C:%5Cssh-keys%5Cmykey<br>
+        %2F == '/'<br>
+        %5C == '\'
         <br/><br/>
       </div>
 
