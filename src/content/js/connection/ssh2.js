@@ -122,7 +122,12 @@ ssh2Mozilla.prototype = {
       };
 
       var write = function(out) {
-        self.controlOutstream.write(out, out.length);
+        try {
+          self.controlOutstream.write(out, out.length);
+        } catch(ex) {
+          self.observer.onDebug(ex);
+          self.observer.onError(self.errorConnectStr);
+        }
       };
 
       this.transport = this.client.connect(this.observer, write, auth_success,
