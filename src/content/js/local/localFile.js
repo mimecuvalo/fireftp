@@ -63,19 +63,19 @@ var localFile = {
 
     try {
       ++gProcessing;
-      // this is the old method that permanently deletes the file
-      //var innerEx = gFireFTPUtils.removeFile(file);
       if (gPlatform == "windows") {
         this.removeWindows(file);
       } else if (gPlatform == "mac") {
         this.removeMac(file);
       } else if (gPlatform == "linux") {
         this.removeLinux(file);
+      } else {
+        // this is the old method that permanently deletes the file
+        var innerEx = gFireFTPUtils.removeFile(file);
+        if (innerEx) {
+          throw innerEx;
+        }
       }
-
-      //if (innerEx) {
-      //  throw innerEx;
-      //}
     } catch (ex) {
       debug(ex);
       error(gStrbundle.getString("delFail"));

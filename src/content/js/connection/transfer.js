@@ -301,6 +301,10 @@ transfer.prototype = {
       return 'mac';
     }
 
-    return 'windows';
+    if (platform.indexOf('win') != -1) {
+      return 'windows';
+    }
+
+    return 'other';
   }
 };

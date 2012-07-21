@@ -277,7 +277,11 @@ function getPlatform() {
     return 'mac';
   }
 
-  return 'windows';
+  if (platform.indexOf('win') != -1) {
+    return 'windows';
+  }
+
+  return 'other';
 }
 
 function doResizeReverseHack() {        // bah, humbug - we have to do all this crap to get the horizontal scroll on dir. views
