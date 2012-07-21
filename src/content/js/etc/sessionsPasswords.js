@@ -176,7 +176,9 @@ function externalLink() {                                            // opened u
   var prefBranch   = gPrefsService.getBranch("browser.");
 
   // get rid of the hash, e.g. when using #pkey=<file>
-  uri.path = uri.path.substring(0, uri.path.lastIndexOf('#'));
+  if (uri.path.indexOf('#') != -1) {
+    uri.path = uri.path.substring(0, uri.path.lastIndexOf('#'));
+  }
 
   // test to see if the path is a file or directory, rudimentary test to see if slash is at the end
   gLoadUrl         = uri.path.charAt(uri.path.length - 1) == '/' ? "" : unescape(uri.path);
