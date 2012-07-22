@@ -522,12 +522,12 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
 
       if (localTree.getExtension(file.leafName) == "xml") {
         siteData = importFileZilla(siteData);
-        siteData = siteData.toSource();
+        siteData = JSON.stringify(siteData);
       }
 
       if (importFile) {
         try {
-          var tempSiteManager = eval(siteData);
+          var tempSiteManager = jsonParseWithToSourceConversion(siteData);
         } catch (ex) {
           error(gStrbundle.getString("badImport"));
           sstream.close();
@@ -639,7 +639,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
           gSiteManager.push(tempSiteManager[x]);
         }
       } else {
-        gSiteManager = eval(siteData);
+        gSiteManager = jsonParseWithToSourceConversion(siteData);
       }
 
       if (gPasswordMode) {
@@ -783,7 +783,8 @@ function saveSiteManager(exportFile) {
     var foutstream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
     foutstream.init(file, 0x04 | 0x08 | 0x20, 0644, 0);
     tempSiteManagerArray.sort(compareAccount);
-    foutstream.write(tempSiteManagerArray.toSource(), tempSiteManagerArray.toSource().length);
+    var data = JSON.stringify(tempSiteManagerArray);
+    foutstream.write(data, data.length);
     foutstream.close();
   } catch (ex) {
     debug(ex);

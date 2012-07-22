@@ -17,7 +17,7 @@ function loadPrograms() {
         str          = sstream.read(-1);
       }
 
-      gPrograms = eval(programData);
+      gPrograms = jsonParseWithToSourceConversion(programData);
       cleanupPrograms();
 
       sstream.close();
@@ -38,7 +38,8 @@ function savePrograms() {
     file.append("fireFTPprograms.dat");
     var foutstream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
     foutstream.init(file, 0x04 | 0x08 | 0x20, 0644, 0);
-    foutstream.write(gPrograms.toSource(), gPrograms.toSource().length);
+    var data = JSON.stringify(gPrograms);
+    foutstream.write(data, data.length);
     foutstream.close();
   } catch (ex) {
     debug(ex);
