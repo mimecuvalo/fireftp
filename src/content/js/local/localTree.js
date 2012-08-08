@@ -951,7 +951,8 @@ var localTree = {
 
     var accelKey = testAccelKey(event);
 
-    if (event.keyCode == 13 && this.selection.count != 0) {                                     // enter
+    if (event.keyCode == 13 && this.selection.count != 0 ||
+        (gPlatform == 'mac' && accelKey && event.keyCode == 40)) {                              // enter, or cmd-down on mac
       if (!localFile.verifyExists(this.data[this.selection.currentIndex])) {
         return;
       }
