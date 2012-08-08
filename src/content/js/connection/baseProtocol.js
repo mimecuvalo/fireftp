@@ -552,7 +552,7 @@ baseProtocol.prototype = {
         callback(true);
       }
     } else {                                                                     // if it's not a directory
-      if (options.isUploading) {
+      if (this.type != 'transfer' && options.isUploading) {
         while (this.eventQueue.length) {
           if (this.eventQueue[0].cmd == "transferEnd") {
             this.observer.onRemoveQueue(this.eventQueue[0].options.id);
