@@ -55,7 +55,7 @@ then
 		locale/cs \
 		locale/da \
 		locale/de \
-		locale/dsb-DE \
+		locale/dsb \
 		locale/el \
 		locale/en-US \
 		locale/eo \
@@ -75,7 +75,6 @@ then
 		locale/he \
 		locale/hr-HR \
 		locale/hsb \
-		locale/hsb-DE \
 		locale/hu \
 		locale/hu-HU \
 		locale/id \
