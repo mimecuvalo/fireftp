@@ -495,7 +495,7 @@ ssh2Mozilla.prototype = {
 
     var self = this;
     var mkdir_exec = function() {
-      self.sftp_client.mkdir(mkdir_path, 0755, self.readControl.bind(self));
+      self.sftp_client.mkdir(mkdir_path, 0777, self.readControl.bind(self));
     };
     var cd_exec = function() {
       self.sftp_client.chdir(cd_path, self.readControl.bind(self));
