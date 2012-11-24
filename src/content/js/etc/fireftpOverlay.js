@@ -33,7 +33,7 @@ function loadFireFTP() {
       var wuri = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
       wuri.data = "chrome://fireftp/content/";
       sa.AppendElement(wuri);
-      var win = ww.openWindow(null, "chrome://browser/content/browser.xul", "FireFTP", null, sa);
+      var win = ww.openWindow(null, getBrowserURL(), "FireFTP", null, sa);
     }
   }
 }

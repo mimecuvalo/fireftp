@@ -2,6 +2,7 @@ content fireftp                                  jar:chrome/fireftp.jar!/content
 locale  fireftp __l10n__                         jar:chrome/fireftp.jar!/locale/__l10n__/
 skin    fireftp classic/1.0                      jar:chrome/fireftp.jar!/skin/
 overlay chrome://browser/content/browser.xul         chrome://fireftp/content/fireftpOverlay.xul
+overlay chrome://navigator/content/navigator.xul     chrome://fireftp/content/fireftpOverlay.xul
 style   chrome://global/content/customizeToolbar.xul chrome://fireftp/skin/overlay.css
 style   chrome://fireftp/content/fireftp.xul chrome://fireftp/skin/mac.css os=Darwin
 interfaces components/nsIFireFTPUtils.xpt

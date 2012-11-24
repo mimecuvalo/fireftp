@@ -13,7 +13,7 @@ locale  fireftp ca-AD                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp cs                               jar:chrome/fireftp.jar!/locale/cs/
 locale  fireftp da                               jar:chrome/fireftp.jar!/locale/da/
 locale  fireftp de                               jar:chrome/fireftp.jar!/locale/de/
-locale  fireftp dsb-DE                           jar:chrome/fireftp.jar!/locale/dsb-DE/
+locale  fireftp dsb                              jar:chrome/fireftp.jar!/locale/dsb/
 locale  fireftp el                               jar:chrome/fireftp.jar!/locale/el/
 locale  fireftp en-US                            jar:chrome/fireftp.jar!/locale/en-US/
 locale  fireftp eo                               jar:chrome/fireftp.jar!/locale/eo/
@@ -32,7 +32,7 @@ locale  fireftp ga-IE                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp gl-ES                            jar:chrome/fireftp.jar!/locale/gl-ES/
 locale  fireftp he                               jar:chrome/fireftp.jar!/locale/he/
 locale  fireftp hr-HR                            jar:chrome/fireftp.jar!/locale/hr-HR/
-locale  fireftp hsb-DE                           jar:chrome/fireftp.jar!/locale/hsb-DE/
+locale  fireftp hsb                              jar:chrome/fireftp.jar!/locale/hsb/
 locale  fireftp hu                               jar:chrome/fireftp.jar!/locale/hu/
 locale  fireftp hu-HU                            jar:chrome/fireftp.jar!/locale/hu-HU/
 locale  fireftp id                               jar:chrome/fireftp.jar!/locale/id/
@@ -65,6 +65,7 @@ locale  fireftp zh-CN                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp zh-TW                            jar:chrome/fireftp.jar!/locale/zh-TW/
 skin    fireftp classic/1.0                      jar:chrome/fireftp.jar!/skin/
 overlay chrome://browser/content/browser.xul         chrome://fireftp/content/fireftpOverlay.xul
+overlay chrome://navigator/content/navigator.xul     chrome://fireftp/content/fireftpOverlay.xul
 style   chrome://global/content/customizeToolbar.xul chrome://fireftp/skin/overlay.css
 style   chrome://fireftp/content/fireftp.xul chrome://fireftp/skin/mac.css os=Darwin
 interfaces components/nsIFireFTPUtils.xpt
