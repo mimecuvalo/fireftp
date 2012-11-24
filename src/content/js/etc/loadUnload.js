@@ -111,7 +111,11 @@ function startup() {
 
   //tipJar();
 
-  setTimeout(doResizeHack, 0);
+  // only do this if in tab mode; window mode causes this problem:
+  // https://www.mozdev.org/bugs/show_bug.cgi?id=24935
+  if (gLoadMode == 1) {
+    setTimeout(doResizeHack, 0);
+  }
 
   if (gLoadUrl) {
     setTimeout(externalLink, 1000);

@@ -9,6 +9,7 @@ function readPreferences() {
     gDonated                 = gPrefs.getBoolPref("donated");
     gErrorMode               = gPrefs.getBoolPref("errormode");
     gInterfaceMode           = gPrefs.getIntPref ("interfacemode");
+    gLoadMode                = gPrefs.getIntPref ("loadmode");
     gLogErrorMode            = gPrefs.getBoolPref("logerrormode");
     gLogMode                 = gPrefs.getBoolPref("logmode");
     gLogQueueMode            = gPrefs.getIntPref ("logqueue");

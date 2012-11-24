@@ -285,6 +285,12 @@ function getPlatform() {
 }
 
 function doResizeReverseHack() {        // bah, humbug - we have to do all this crap to get the horizontal scroll on dir. views
+  // only do this if in tab mode; window mode causes this problem:
+  // https://www.mozdev.org/bugs/show_bug.cgi?id=24935
+  if (gLoadMode != 1) {
+    return;
+  }
+
   //$('localdirtree').setAttribute(    'flex', '1');
   //$('remotedirtree').setAttribute(   'flex', '1');
   $('localview').setAttribute(       'flex', '1');
