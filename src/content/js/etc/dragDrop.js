@@ -35,6 +35,15 @@ var dragObserver = {
       this.externalFiles = new Array();
 
       var transObj = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
+      // init() was added to nsITransferable in FF16 for Private Browsing Mode
+      // see https://bugzilla.mozilla.org/show_bug.cgi?id=722872 for more info
+      if ('init' in trans) {
+        var privacyContext = document.commandDispatcher.focusedWindow.
+          QueryInterface(Components.interfaces.nsIInterfaceRequestor).
+          getInterface(Components.interfaces.nsIWebNavigation).
+          QueryInterface(Components.interfaces.nsILoadContext);
+        trans.init(privacyContext);
+      }
       transObj.addDataFlavor("application/x-moz-file");       // only look at files
 
       for (var x = 0; x < dragSession.numDropItems; ++x) {    // iterate through dragged items getting any files
@@ -53,19 +62,19 @@ var dragObserver = {
       }
 
       this.origin         = "external";
-			if (dragSession.dataTransfer) {
-	      dragSession.dataTransfer.effectAllowed = "all";
-			}
+      if (dragSession.dataTransfer) {
+        dragSession.dataTransfer.effectAllowed = "all";
+      }
     } else if (gConnection && !gConnection.isConnected && flavour.contentType == "application/x-moz-file") {
       this.origin         = null;
-			if (dragSession.dataTransfer) {
-	      dragSession.dataTransfer.effectAllowed = "none";
-			}
+      if (dragSession.dataTransfer) {
+        dragSession.dataTransfer.effectAllowed = "none";
+      }
     }
 
-		if (!dragSession.dataTransfer) {
-			return;
-		}
+    if (!dragSession.dataTransfer) {
+      return;
+    }
 
     if (((this.origin == 'remotetreechildren' || this.origin == 'localtreechildren') && targetID == 'localtreechildren')
     ||  ((this.origin == 'localtreechildren' || this.origin == "external" || this.origin == 'remotetreechildren') && targetID == 'remotetreechildren')) {
