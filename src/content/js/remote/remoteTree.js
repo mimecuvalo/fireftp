@@ -484,7 +484,9 @@ var remoteTree = {
       }
     }
 
-    var last  = true;
+    var last = true;
+    var indexOfFileBeforeDeleted = null;
+    var self = this;
 
     gConnection.beginCmdBatch();
 
@@ -493,8 +495,20 @@ var remoteTree = {
         if (last) {
           gConnection.changeWorkingDirectory(gRemotePath.value);
         }
+        if (indexOfFileBeforeDeleted === null) {
+          indexOfFileBeforeDeleted = Math.max(0, x - 1);
+        }
 
-        var removeCallback = function() { remoteTree.refresh(); };
+        var removeCallback = function() {
+          var refreshCallback = function() {
+            if (self.rowCount) {
+              self.selection.select(indexOfFileBeforeDeleted);
+              self.treebox.ensureRowIsVisible(indexOfFileBeforeDeleted);
+            }
+          };
+          self.updateViewCallback = refreshCallback;
+          remoteTree.refresh();
+        };
 
         gConnection.remove(this.data[x].isDirectory(),
                     this.data[x].path,

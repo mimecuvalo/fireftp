@@ -593,6 +593,7 @@ var localTree = {
 
     var count = this.selection.count;
     var files = new Array();
+    var indexOfFileBeforeDeleted = null;
 
     for (var x = 0; x < this.rowCount; ++x) {
       if (this.selection.isSelected(x)) {
@@ -600,6 +601,9 @@ var localTree = {
           continue;
         }
 
+        if (indexOfFileBeforeDeleted === null) {
+          indexOfFileBeforeDeleted = Math.max(0, x - 1);
+        }
         files.push(this.data[x]);
       }
     }
@@ -617,6 +621,11 @@ var localTree = {
 
     if (origParent == gLocalPath.value) {                                                       // since we're deleting on a separate thread make sure we're in the same directory on refresh
       this.refresh(false, true);
+
+      if (this.rowCount) {
+        this.selection.select(indexOfFileBeforeDeleted);
+        this.treebox.ensureRowIsVisible(indexOfFileBeforeDeleted);
+      }
     } else {
       localDirTree.addDirtyList(origParent);
     }
