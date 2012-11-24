@@ -32,6 +32,10 @@
                    accesskey="F"           insertafter="downloadmgr"
                    class="menuitem-iconic"/>
   </menupopup>
+  <statusbar       id="status-bar">
+    <statusbarpanel id="fireftp-button2"   label="FireFTP"       oncommand="loadFireFTP()" onclick="if (event.button == 1) loadFireFTP()"
+                    class="statusbarpanel-iconic"                tooltiptext="FireFTP"/>
+  </statusbar>
 
   <menupopup       id="contentAreaContextMenu">
     <menuitem      id="fireftpcontentarea" label="&viewFireFTP;" oncommand="loadFireFTPFromContentArea()"
