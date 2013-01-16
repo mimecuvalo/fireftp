@@ -1,6 +1,6 @@
 var gConnections = [];          // array of all our ftp connections
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "2.0.7";  // version of FireFTP we're using
+var gVersion  = "2.0.8";  // version of FireFTP we're using
 var gSlash;                     // holds '/' or '\\' depending on local system
 var gPlatform;                  // holds what platform we're on
 var gTransferTypes;             // holds 'Auto', 'Binary', 'ASCII'
@@ -67,6 +67,7 @@ var gDisableFavicon;            // from prefs: hidden pref if we want to disable
 var gDonated;                   // from prefs: donated or not
 var gErrorMode;                 // from prefs: show error msgs or not
 var gInterfaceMode;             // from prefs: show local view, remote view, or both
+var gLoadMode;                  // from prefs: which way to load fireftp: tab or window or window group
 var gLoadUrl;                   // from prefs: ftp url to open onload
 var gLogErrorMode;              // from prefs: show only errors in log or not
 var gLogMode;                   // from prefs: show log window or not

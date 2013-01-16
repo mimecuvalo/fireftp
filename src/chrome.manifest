@@ -65,6 +65,7 @@ locale  fireftp zh-CN                            jar:chrome/fireftp.jar!/locale/
 locale  fireftp zh-TW                            jar:chrome/fireftp.jar!/locale/zh-TW/
 skin    fireftp classic/1.0                      jar:chrome/fireftp.jar!/skin/
 overlay chrome://browser/content/browser.xul         chrome://fireftp/content/fireftpOverlay.xul
+overlay chrome://navigator/content/navigator.xul     chrome://fireftp/content/fireftpOverlay.xul
 style   chrome://global/content/customizeToolbar.xul chrome://fireftp/skin/overlay.css
 style   chrome://fireftp/content/fireftp.xul chrome://fireftp/skin/mac.css os=Darwin
 interfaces components/nsIFireFTPUtils.xpt
