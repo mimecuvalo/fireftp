@@ -5,23 +5,23 @@ function loadPrograms() {
 
     if (file.exists()) {
       var fstream = Components.classes["@mozilla.org/network/file-input-stream;1"].createInstance(Components.interfaces.nsIFileInputStream);
-      var sstream = Components.classes["@mozilla.org/scriptableinputstream;1"].createInstance(Components.interfaces.nsIScriptableInputStream);
+      var cstream = Components.classes["@mozilla.org/intl/converter-input-stream;1"].createInstance(Components.interfaces.nsIConverterInputStream);
       fstream.init(file, 1, 0, false);
-      sstream.init(fstream);
+      cstream.init(fstream, "UTF-8", 0, 0);
 
       var programData = "";
-      var str = sstream.read(-1);
-
-      while (str.length > 0) {
-        programData += str;
-        str          = sstream.read(-1);
+      let (str = {}) {
+        let read = 0;
+        do { 
+          read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
+          programData += str.value;
+        } while (read != 0);
       }
+      cstream.close();
 
       gPrograms = jsonParseWithToSourceConversion(programData);
       cleanupPrograms();
 
-      sstream.close();
-      fstream.close();
     } else {
       gPrograms = new Array({ extension: "*.*", programs: new Array() });
       savePrograms();
@@ -39,8 +39,11 @@ function savePrograms() {
     var foutstream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
     foutstream.init(file, 0x04 | 0x08 | 0x20, 0644, 0);
     var data = JSON.stringify(gPrograms);
-    foutstream.write(data, data.length);
-    foutstream.close();
+    var converter = Components.classes["@mozilla.org/intl/converter-output-stream;1"].
+                createInstance(Components.interfaces.nsIConverterOutputStream);
+    converter.init(foutstream, "UTF-8", 0, 0);
+    converter.writeString(data);
+    converter.close();
   } catch (ex) {
     debug(ex);
   }

@@ -317,8 +317,11 @@ var localFile = {
         var foutstream = Components.classes["@mozilla.org/network/file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);
         foutstream.init(infoFile, 0x04 | 0x08 | 0x20, 0644, 0);
         var data = info_for(src, topdir);
-        foutstream.write(data, data.length);
-        foutstream.close();
+        var converter = Components.classes["@mozilla.org/intl/converter-output-stream;1"].
+                createInstance(Components.interfaces.nsIConverterOutputStream);
+        converter.init(foutstream, "UTF-8", 0, 0);
+        converter.writeString(data);
+        converter.close();
       }
 
       function find_mount_point(path) {
