@@ -1021,13 +1021,19 @@ baseProtocol.prototype = {
     if (this.sessionsMode) {
       try {                                                                      // put in cache
         var cacheSession = this.cacheService.createSession("fireftp", 1, true);
-        var cacheDesc    = cacheSession.openCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
-                                                       Components.interfaces.nsICache.ACCESS_WRITE, false);
-        var cacheOut     = cacheDesc.openOutputStream(0);
-        var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
-        cacheOut.write(cacheData, cacheData.length);
-        cacheOut.close();
-        cacheDesc.close();
+        cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+            Components.interfaces.nsICache.ACCESS_WRITE,
+            {
+              onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+                if (cacheDesc) {
+                  var cacheOut     = cacheDesc.openOutputStream(0);
+                  var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
+                  cacheOut.write(cacheData, cacheData.length);
+                  cacheOut.close();
+                  cacheDesc.close();
+                }
+              }
+            });
       } catch (ex) {
         this.observer.onDebug(ex);
       }
@@ -1039,46 +1045,59 @@ baseProtocol.prototype = {
   cacheHit : function(path, callback) {
     try {                                                                        // check the cache first
       var cacheSession   = this.cacheService.createSession("fireftp", 1, true);
-      var cacheDesc      = cacheSession.openCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
-                                                       Components.interfaces.nsICache.ACCESS_READ, false);
+      var self = this;
+      cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+          Components.interfaces.nsICache.ACCESS_READ,
+          {
+            onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+              if (!cacheDesc) {
+                callback(false);
+                return;
+              }
 
-      if (cacheDesc.dataSize) {
-        var cacheIn       = cacheDesc.openInputStream(0);
-        var cacheInstream = Components.classes["@mozilla.org/binaryinputstream;1"].createInstance(Components.interfaces.nsIBinaryInputStream);
-        cacheInstream.setInputStream(cacheIn);
-        this.listData     = cacheInstream.readBytes(cacheInstream.available());
-        this.listData     = JSON.parse(decodeURIComponent(escape(this.listData)));
-        for (var x = 0; x < this.listData.length; ++x) {                         // these functions get lost when encoding in JSON
-          this.listData[x].isDirectory = function() { return this.isDir };
-          this.listData[x].isSymlink   = function() { return this.symlink != "" };
-        }
-        cacheInstream.close();
-        cacheDesc.close();
+              try {
+                if (cacheDesc.predictedDataSize) {
+                  var cacheIn       = cacheDesc.openInputStream(0);
+                  var cacheInstream = Components.classes["@mozilla.org/binaryinputstream;1"].createInstance(Components.interfaces.nsIBinaryInputStream);
+                  cacheInstream.setInputStream(cacheIn);
+                  self.listData     = cacheInstream.readBytes(cacheInstream.available());
+                  self.listData     = JSON.parse(decodeURIComponent(escape(self.listData)));
+                  for (var x = 0; x < self.listData.length; ++x) {                         // these functions get lost when encoding in JSON
+                    self.listData[x].isDirectory = function() { return self.isDir };
+                    self.listData[x].isSymlink   = function() { return self.symlink != "" };
+                  }
+                  cacheInstream.close();
+                  cacheDesc.close();
 
-        this.observer.onDebug(this.listData.toSource().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/, {/g, ',\n{')
-                                             .replace(/, isDirectory:\(function \(\) {return this.isDir;}\), isSymlink:\(function \(\) {return this.symlink != "";}\)/g, ''),
-                                             "DEBUG-CACHE");
+                  self.observer.onDebug(self.listData.toSource().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/, {/g, ',\n{')
+                               .replace(/, isDirectory:\(function \(\) { return self.isDir }\), isSymlink:\(function \(\) { return self.symlink != "" }\)/g, ''),
+                                                       "DEBUG-CACHE");
+                }
 
-        if (callback) {
-          callback();                                                            // send off list data to whoever wanted it
-        }
-
-        return true;
-      }
-
-      cacheDesc.close();
-    } catch (ex) { }
-
-    return false;
+                callback(true);
+              } catch(ex) {
+                callback(false);
+              }
+            }
+          });
+    } catch (ex) {
+      callback(false);
+    }
   },
 
   removeCacheEntry : function(path) {
     try {
       var cacheSession = this.cacheService.createSession("fireftp", 1, true);
-      var cacheDesc    = cacheSession.openCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
-                                                     Components.interfaces.nsICache.ACCESS_WRITE, false);
-      cacheDesc.doom();
-      cacheDesc.close();
+      cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+          Components.interfaces.nsICache.ACCESS_WRITE,
+          {
+            onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+              if (cacheDesc) {
+                cacheDesc.doom();
+                cacheDesc.close();
+              }
+            }
+          });
     } catch (ex) {
       this.observer.onDebug(ex);
     }

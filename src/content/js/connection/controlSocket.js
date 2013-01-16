@@ -1054,46 +1054,56 @@ ftpMozilla.prototype = {
   },
 
   list : function(path, callback, skipCache, recursive, fxp, eventualGoalPath) {
-    if (!skipCache && this.sessionsMode) {
-      if (this.cacheHit(path, callback)) {
+    var self = this;
+    var cacheCallback = function(cacheSuccess) {
+      if (cacheSuccess) {
+        if (callback) {
+          callback();
+        }
         return;
       }
-    }
 
-    var options = { 'isFxpListing': fxp };
-    var listOptions = { 'isFxpListing': fxp, 'eventualGoalPath': eventualGoalPath };
+      var options = { 'isFxpListing': fxp };
+      var listOptions = { 'isFxpListing': fxp, 'eventualGoalPath': eventualGoalPath };
 
-    if (recursive) {
-      this.unshiftEventQueue(  "LIST", path, callback, listOptions);
-      this.unshiftEventQueue(  "PASV",   "", null,     options);
-      this.unshiftEventQueue(  "CWD",  path, null,     options);
+      if (recursive) {
+        self.unshiftEventQueue(  "LIST", path, callback, listOptions);
+        self.unshiftEventQueue(  "PASV",   "", null,     options);
+        self.unshiftEventQueue(  "CWD",  path, null,     options);
 
-      if (this.security) {
-        this.unshiftEventQueue("PROT",  "P", null,     options);
+        if (self.security) {
+          self.unshiftEventQueue("PROT",  "P", null,     options);
+        }
+
+        self.unshiftEventQueue(  "MODE",  self.useCompression && self.featModeZ ? "Z" : "S", null, options);
+        self.unshiftEventQueue(  "TYPE",  "A", null,      options);
+        if (!self.security && self.featStat) {
+          self.unshiftEventQueue("STAT",  path, callback, options);
+        }
+      } else {
+        if (!self.security && self.featStat) {
+          self.addEventQueue(    "STAT",  path, callback, options);
+        }
+        self.addEventQueue(      "TYPE",  "A", null,      options);
+        self.addEventQueue(      "MODE",  self.useCompression && self.featModeZ ? "Z" : "S", null, options);
+
+        if (self.security) {
+          self.addEventQueue(    "PROT",  "P", null,      options);
+        }
+
+        self.addEventQueue(      "CWD",  path, null,      options);
+        self.addEventQueue(      "PASV",   "", null,      options);
+        self.addEventQueue(      "LIST", path, callback,  options);
       }
 
-      this.unshiftEventQueue(  "MODE",  this.useCompression && this.featModeZ ? "Z" : "S", null, options);
-      this.unshiftEventQueue(  "TYPE",  "A", null,      options);
-      if (!this.security && this.featStat) {
-        this.unshiftEventQueue("STAT",  path, callback, options);
-      }
+      self.writeControlWrapper();
+    };
+
+    if (!skipCache && this.sessionsMode) {
+      this.cacheHit(path, cacheCallback);
     } else {
-      if (!this.security && this.featStat) {
-        this.addEventQueue(    "STAT",  path, callback, options);
-      }
-      this.addEventQueue(      "TYPE",  "A", null,      options);
-      this.addEventQueue(      "MODE",  this.useCompression && this.featModeZ ? "Z" : "S", null, options);
-
-      if (this.security) {
-        this.addEventQueue(    "PROT",  "P", null,      options);
-      }
-
-      this.addEventQueue(      "CWD",  path, null,      options);
-      this.addEventQueue(      "PASV",   "", null,      options);
-      this.addEventQueue(      "LIST", path, callback,  options);
+      cacheCallback(false);
     }
-
-    this.writeControlWrapper();
   },
 
   download : function(remotePath, localPath, remoteSize, resume, localSize, isSymlink, callback, remoteFile) {

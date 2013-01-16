@@ -753,32 +753,41 @@ ssh2Mozilla.prototype = {
       return;
     }
 
-    if (!skipCache && this.sessionsMode) {
-      if (this.cacheHit(path, callback)) {
+    var self = this;
+    var cacheCallback = function(cacheSuccess) {
+      if (cacheSuccess) {
+        if (callback) {
+          callback();
+        }
         return;
       }
-    }
 
-    var self = this;
-    var cd_exec = function() {
-      self.sftp_client.chdir(path, self.readControl.bind(self));
+      var cd_exec = function() {
+        self.sftp_client.chdir(path, self.readControl.bind(self));
+      };
+      var ls_exec = function() {
+        self.sftp_client.listdir(path, self.readControl.bind(self));
+      };
+
+      var options = { };
+      var listOptions = { 'eventualGoalPath': eventualGoalPath };
+
+      if (recursive) {
+        self.unshiftEventQueue("ls", path, callback, listOptions, ls_exec);
+        self.unshiftEventQueue("cd", path, null,     null, cd_exec);
+      } else {
+        self.addEventQueue(    "cd", path, null,     null, cd_exec);
+        self.addEventQueue(    "ls", path, callback, options, ls_exec);
+      }
+
+      self.writeControlWrapper();
     };
-    var ls_exec = function() {
-      self.sftp_client.listdir(path, self.readControl.bind(self));
-    };
 
-    var options = { };
-    var listOptions = { 'eventualGoalPath': eventualGoalPath };
-
-    if (recursive) {
-      this.unshiftEventQueue("ls", path, callback, listOptions, ls_exec);
-      this.unshiftEventQueue("cd", path, null,     null, cd_exec);
+    if (!skipCache && this.sessionsMode) {
+      this.cacheHit(path, cacheCallback);
     } else {
-      this.addEventQueue(    "cd", path, null,     null, cd_exec);
-      this.addEventQueue(    "ls", path, callback, options, ls_exec);
+      cacheCallback(false);
     }
-
-    this.writeControlWrapper();
   },
 
   download               : function(remotePath, localPath, remoteSize, resume, localSize, isSymlink, callback, remoteFile) {
