@@ -40,6 +40,9 @@ var gActiveCurrentPort = -1;    // if user specified a range of ports, this is t
 // XXX this is some crap but it'll work for now. see rsakey.js for more details
 var gRsaKeyWorkerJs = 'chrome://fireftp/content/js/connection/paramikojs/sign_ssh_data_worker.js';
 
+// Override Firefox's default Crypto class
+function crypto() {}
+
 var gSearchFound;               // search: did we find any results?
 var gSearchRunning = false;     // search: is search running?
 var gSearchCallbacks;           // search: local callbacks
