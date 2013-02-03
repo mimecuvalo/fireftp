@@ -1,4 +1,4 @@
-window.setInterval("UIUpdate()", 500);                                              // update twice a second
+window.setInterval(UIUpdate, 500);                                              // update twice a second
 
 function UIUpdate() {
   queueTree.updateView();
