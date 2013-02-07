@@ -5,13 +5,13 @@
   <RDF:Description about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}">
     <em:updates>
       <RDF:Seq>
-        <RDF:li resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.8.1"/>
+        <RDF:li resource="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.9"/>
       </RDF:Seq>
     </em:updates>
   </RDF:Description>
 
-  <RDF:Description about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.8.1">
-    <em:version>2.0.8.1</em:version>
+  <RDF:Description about="urn:mozilla:extension:{a7c6cf7f-112c-4500-a7ea-39801a327e5f}:2.0.9">
+    <em:version>2.0.9</em:version>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
@@ -19,7 +19,7 @@
         <em:maxVersion>20.*</em:maxVersion>
         <em:updateLink>https://addons.mozilla.org/firefox/downloads/latest/684</em:updateLink>
         <em:updateHash>
-          md5:71d92adf84c888a3c684c3ee829bf299
+          md5:0aef4440d0d1d6ee4615e180030bc39a
         </em:updateHash>
       </Description>
     </em:targetApplication>

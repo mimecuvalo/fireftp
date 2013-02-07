@@ -1,6 +1,6 @@
 var gConnections = [];          // array of all our ftp connections
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "2.0.8.1";  // version of FireFTP we're using
+var gVersion  = "2.0.9";  // version of FireFTP we're using
 var gSlash;                     // holds '/' or '\\' depending on local system
 var gPlatform;                  // holds what platform we're on
 var gTransferTypes;             // holds 'Auto', 'Binary', 'ASCII'
