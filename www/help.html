@@ -646,10 +646,19 @@
         </ul><br/>
       </div>
 
-      <h4 class="display">Uploading causes crashes!</h4>
+      <h4 class="display">I can't add accounts - all of my accounts are again and I'm seeing an error saying gSiteManager is undefined</h4>
       <div class="stretcher">
-        This is a problem that should be fixed in version 0.92 and up.<br/><br/>
+Sorry that you've run into this issue. The newer versions of FireFTP are doing migration of an old account format to a new one. Unfortunately, there are some illegal characters that make it difficult to upgrade to the new format that Mozilla now requires. (specifically, the combination of trying to convert international characters and the '%' character creates problems).<br><br>
+
+If 2.0.9 isn't working for you, you can try the following:<br>
+- find your profile folder, here are instructions: <a href="http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data">http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data</a> (if you're on a Mac it'll be under: ~/Library/Application Support/Firefox/Profiles)<br>
+- find the file in your profile folder called fireFTPsites.dat<br>
+- remove the '%' characters found in the file.<br>
+- install version 2.0.9 and readd the % characters back in later as needed. (not directly into the file, but via the regular FireFTP interface).<br><br>
+
+The same applies for the files you're trying to import. If you have further issues, email me mimecuvalo@gmail.com and I'll help further.<br><br>
       </div>
+ 
 
       <h4 class="display">I get a "Secure Connection Failed!" when trying to connect securely to my site!</h4>
       <div class="stretcher">
