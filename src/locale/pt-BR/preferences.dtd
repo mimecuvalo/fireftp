@@ -9,7 +9,7 @@
 <!ENTITY rememberd.label "Lembrar listas de pastas">
 <!ENTITY fileview.label "Exibição de arquivos">
 <!ENTITY autorefresh.label "Atualizar automaticamente">
-<!ENTITY refresh.tip "Atualiza a lista de pasta remota após alguma mudança (ao transferir)">
+<!ENTITY refresh.tip "Atualizar a pasta após a vista remota ser alterada (durante transferências)">
 <!ENTITY hidden.label "Exibir arquivos ocultos">
 <!ENTITY bytesmode.label "Exibir número de bytes no tamanho de arquivos">
 <!ENTITY interface.label "Interface">
@@ -46,14 +46,14 @@
 <!ENTITY network.tip "Determina quanto tempo esperar por uma resposta do servidor">
 <!ENTITY keepalivemode.label "Manter a conexão ativa enquanto estiver ocioso">
 <!ENTITY timeout.label "Se desconectar, tentar conectar novamente">
-<!ENTITY retryd.label "Atraso antes de tentar novamente (em segundos, entre 1 e 600)">
+<!ENTITY retryd.label "Espera antes de tentar novamente (em segundos, entre 1 e 600)">
 <!ENTITY retryd.tip "Segundos entre tentativas de reconexão">
 <!ENTITY retrya.label "Número de tentativas">
 <!ENTITY retrya.tip "Número de tentativas a serem feitas">
 <!ENTITY downup.label "Downloads/Envios">
 <!ENTITY transfercaption.label "Ao transferir arquivos, usar:">
 <!ENTITY automatic.label "Modo automático">
-<!ENTITY automatic.tip "Escolhe automaticamente entre os modos 'Binário' e 'ASCII'">
+<!ENTITY automatic.tip "Escolhe automaticamente entre os modos \'Binário\' e \'ASCII\'">
 <!ENTITY binary.label "Modo binário">
 <!ENTITY ascii.label "Modo ASCII">
 <!ENTITY asciifiles.label "Arquivos ASCII:">
@@ -62,7 +62,7 @@
 <!ENTITY remove.label "Remover">
 <!ENTITY extras.label "Extras (se habilitado no servidor)">
 <!ENTITY usecompression.label "Usar compressão">
-<!ENTITY synctimestamps.label "Manter data sincronizada">
+<!ENTITY synctimestamps.label "Manter datas sincronizadas">
 <!ENTITY integritymode.label "Verificar integridade de transferências de arquivos (XMD5, XSHA1)">
 <!ENTITY duplicates.label "Arquivos duplicados">
 <!ENTITY timer.label "Desabilitar timer na janela de substituição">

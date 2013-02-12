@@ -32,7 +32,7 @@
 <!ENTITY remotedir.label "Remoto:">
 <!ENTITY current.label "Usar o atual">
 <!ENTITY treesync.label "Manter pastas sincronizadas enquanto navegar">
-<!ENTITY webhost "Servidor web (usado na opção 'Exibir na web')">
+<!ENTITY webhost "Servidor web (usado na opção \'Exibir na web\')">
 <!ENTITY webhost.tip "Exemplo: http://www.exemplo.com.br">
 <!ENTITY prefix.label "Prefixo:">
 <!ENTITY prefix.tip "Prefixo a remover da parte FTP do endereço. Exemplo: /public_html">
