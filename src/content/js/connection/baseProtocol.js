@@ -1063,14 +1063,14 @@ baseProtocol.prototype = {
                   self.listData     = cacheInstream.readBytes(cacheInstream.available());
                   self.listData     = JSON.parse(decodeURIComponent(escape(self.listData)));
                   for (var x = 0; x < self.listData.length; ++x) {                         // these functions get lost when encoding in JSON
-                    self.listData[x].isDirectory = function() { return self.isDir };
-                    self.listData[x].isSymlink   = function() { return self.symlink != "" };
+                    self.listData[x].isDirectory = function() { return this.isDir };
+                    self.listData[x].isSymlink   = function() { return this.symlink != "" };
                   }
                   cacheInstream.close();
                   cacheDesc.close();
 
                   self.observer.onDebug(self.listData.toSource().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/, {/g, ',\n{')
-                               .replace(/, isDirectory:\(function \(\) { return self.isDir }\), isSymlink:\(function \(\) { return self.symlink != "" }\)/g, ''),
+                               .replace(/, isDirectory:\(function \(\) { return this.isDir }\), isSymlink:\(function \(\) { return this.symlink != "" }\)/g, ''),
                                                        "DEBUG-CACHE");
                 }
 
