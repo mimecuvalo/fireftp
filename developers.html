@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FireFTP - The Free FTP Client for Mozilla Firefox</title>
+    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png" type="image/png"/>
+  </head>
+
+  <body>
+    <div id="nav">
+      <a id="logo" href="http://fireftp.mozdev.org"><img alt="logo" title="FireFTP Home" src="images/logo64.png"/></a>
+      <a href="features.html">features</a>
+      <a href="donate.html">donate</a>
+      <a href="help.html">support</a>
+      <a href="developers.html" class="selected">developers</a>
+
+      <div id="ad">
+        <div id="ad-inner">
+          <a href="http://www.site5.com/in.php?id=9264">
+            <strong>Unlimited Storage</strong> and <strong>Unlimited Bandwidth</strong>, $4.95/mo!
+          </a>
+        </div>
+        <span>Ads by Meeeeee</span>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="sidebar">
+        <div class="info">
+          <h2>Source Code</h2>
+          <ul id="get-the-src">
+            <li><a href="https://github.com/mimecuvalo/fireftp">Browse on the web</a></li>
+            <li>SSH source code is found <a href="https://github.com/mimecuvalo/paramikojs">here</a></li>
+            <li>Check out the source using git:
+              <pre style="font-size: 7pt">
+git clone https://github.com/mimecuvalo/fireftp.git
+git submodule init
+git submodule update</pre>
+<!--cvs -d :pserver:guest@mozdev.org:/cvs login
+cvs -z3 -d :pserver:guest@mozdev.org:/cvs co fireftp-->
+            </li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <h2>Bugs</h2>
+          <ul>
+            <li>Enter a <a href="https://github.com/mimecuvalo/fireftp/issues">new bug</a> for fireftp</li>
+            <li>View <a href="https://www.mozdev.org/bugs/buglist.cgi?bug_file_loc=&bug_file_loc_type=allwordssubstr&bug_id=&bugidtype=include&chfieldfrom=&chfieldto=Now&chfieldvalue=&email1=&email2=&emailassigned_to1=1&emailassigned_to2=1&emailcc2=1&emailreporter2=1&emailtype1=substring&emailtype2=substring&field-1-0-0=product&field0-0-0=noop&keywords=&keywords_type=allwords&long_desc=&long_desc_type=allwordssubstr&product=fireftp&query_format=advanced&remaction=&short_desc=&short_desc_type=allwordssubstr&type-1-0-0=anyexact&type0-0-0=noop&value-1-0-0=fireftp&value0-0-0=&votes=&order=bugs.bug_id&query_based_on=">all
+bugs</a></li>
+            <li>See all <a href="https://www.mozdev.org/bugs/buglist.cgi?bug_file_loc=&bug_file_loc_type=allwordssubstr&bug_id=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&bugidtype=include&chfieldfrom=&chfieldto=Now&chfieldvalue=&email1=&email2=&emailassigned_to1=1&emailassigned_to2=1&emailcc2=1&emailreporter2=1&emailtype1=substring&emailtype2=substring&field-1-0-0=product&field-1-1-0=bug_status&field-1-2-0=resolution&field0-0-0=noop&keywords=&keywords_type=allwords&long_desc=&long_desc_type=allwordssubstr&product=fireftp&query_format=advanced&remaction=&resolution=LATER&resolution=---&short_desc=&short_desc_type=allwordssubstr&type-1-0-0=anyexact&type-1-1-0=anyexact&type-1-2-0=anyexact&type0-0-0=noop&value-1-0-0=fireftp&value-1-1-0=UNCONFIRMED%2CNEW%2CASSIGNED%2CREOPENED%2CRESOLVED&value-1-2-0=LATER%2C---&value0-0-0=&votes=&order=bugs.bug_id&query_based_on=">open
+bugs</a></li>
+            <li>Search by Keyword
+              <form action="http://www.mozdev.org/bugs/buglist.cgi" method="get">
+                <input type="hidden" value="specific" name="query_format">
+                <input type="hidden" value="relevance desc" name="order">
+                <input type="hidden" value="__all__" name="bug_status">
+                <input type="hidden" value="fireftp" name="product">
+                <div>
+                  <input style="font-size: 8pt" size="6" name="content"/> &nbsp;&nbsp;<input type="submit" value="Search" style="font-size: 8pt"/>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info">
+          <h2>FireFTP Beta</h2>
+          <div class="download" style="padding-left: 15px; padding-top: 0px">
+            <a href="http://www.nightlight.ws/static/fireftp.xpi"><b>Download</b></a><br/>
+            <span class="smaller"><em>(beta version, here be (potential) dragons)</em></span><br/>
+          </div>
+        </div>
+      </div>
+
+      <h1>Developer Information</h1>
+
+      <div class="smaller">
+        <h2>release notes 2.0</h2>
+
+        version 2.0 <a href="http://www.youtube.com/watch?v=ekCvBztYs_A">'nature boy'</a> (November 26th, 2011) - firefox 4+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        not much difference from 1.99 actually - the relatively new SSH module (written natively in javascript) needed time before it felt stable enough for a 2.0 release<br/><br/>
+        fixed more utf8 issues<br/>
+        fixed bug when exporting not all passwords saved<br/>
+        allow terminal access when using SFTP (2.0.1 feature)<br/>
+        fixed DNS leaking when using proxies (2.0.1 fix)<br/>
+        improved custom commands ui (2.0.1 fix)<br/>
+        improved trashing items on linux (2.0.2 fix)<br/>
+        fixed bug with permissions on mac when remote editing with a custom program (2.0.3 fix)<br/>
+        fixed edge case bug when editing file (2.0.4 fix)<br/>
+        fixed saving passwords based on port # (2.0.4 fix)<br/>
+        added ability for accounts to be bookmarkable (2.0.5 feature)<br/>
+        added pkey to ssh:// url, e.g. ssh://blah@yourserver.com/#pkey=%2FUsers%2Fblahuser%2F.ssh%2Fid_rsa (2.0.5 feature)<br/>
+        added support for transferring files over 4GB (finally!) (2.0.5 feature)<br/>
+        fixed support for deleting files on OS/2 and SunOS (2.0.6 fix)<br/>
+        fixed regression with navigating to directories via ftp:// links (2.0.6 fix)<br/>
+        fixed regression of having missing directories when concurrent transfers enabled (2.0.6 fix)<br/>
+        fixed regression of migration of some accounts from previous eval() method (2.0.7 fix)<br/>
+        added Seamonkey support! (thanks, Lewis!) (2.0.9 feature)<br/>
+        create directories using 0777 to respect umask (2.0.9 feature)<br/>
+        fix bug with not being able to add UTF-8/international characters to accounts (2.0.9 fix)<br/>
+        fix bug with directories not working when cached (2.0.10 fix)<br/>
+        fix bug with dragging files from outside of FireFTP (2.0.11 fix)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 1.99</h2>
+
+        version 1.99 <a href="http://www.youtube.com/watch?v=Uh_8j8k39y0">'young folks'</a> (March 6th, 2011) - firefox 4+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        SSH written natively in javascript! (translated from <a href="http://www.lag.net/paramiko/">paramiko</a>)<br/>
+        led to the <a href="http://firessh.mozdev.org/">FireSSH</a> project, an SSH terminal client using the same code!<br/>
+        fixed browse button (1.99.1 fix)<br/>
+        fixed issue with directory listing of some servers (1.99.2 fix)<br/>
+        fixed issue with more directory listings related to STAT command (1.99.3 fix)<br/>
+        fixed handling of errors in SFTP to be handled more elegantly (1.99.4 fix)<br/>
+        fixed/improved resuming of files in SFTP mode (1.99.5 fix)<br/>
+        improved SFTP for better stability, support for timestamp syncing, utf8 characters (1.99.5 fix)<br/>
+        more locales (1.99.6 fix)<br/>
+        fix typo introduced into locale-only build which caused it sometimes not to show the first entry in directory listing (1.99.7 fix)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 1.0</h2>
+
+        version 1.0 <a href="http://www.trht.net/artist/The+Beta+Band">'human being'</a> (July 12th, 2008) - firefox 3.0+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        now with moar bukkits and cheezburgers<br/><br/>
+
+        fixed issue with permissions on directories in Linux (1.0.1 fix)<br/>
+        fixed issue with number formatting for i18n (1.0.1 fix)<br/>
+        fixed javascript error caused by 1.0.1 fix (1.0.2 fix)<br/>
+        updated for firefox 3.1 (1.0.3 fix)<br/>
+        fixed security issue (1.0.4 fix)<br/>
+        fixed various bugs (1.0.4 fix)<br/>
+        fixed various bugs (1.0.5 fix, updated for Firefox 3.5)<br/>
+        fixed security vulnerability with quotes (") in SFTP listings not being escaped properly (1.0.6 fix, <a href="http://vuln.sg/fireftp105-DF4YT3L-en.html">details</a>)<br/>
+        fixed various bugs (1.0.6 fix)<br/>
+        mac os x optimizations (1.0.7 fix)<br/>
+        fixed various bugs (1.0.8 fix)<br/>
+        fixed conflict with FireGPG (1.0.8 fix)<br/>
+        added sftp:// protocol support (1.0.8 feature)<br/>
+        added 'delete' option to Syncing (1.0.8 feature)<br/>
+        changed statusbar to show cumulative % left in queue (1.0.8 feature)<br/>
+        fixed various bugs (1.0.9 fix)<br/>
+        fixed issue with extra carriage returns at buffer boundaries when in ASCII mode (1.0.10 fix)<br/>
+        fixed issue with damaged files if REST command fails (1.0.10 fix)<br/>
+        <br/>
+        I'm back on summer vacation in Croatia so I thought it appropriate to finish version 1.0 at the place where I began all this madness...Back in 2004, I had heard about this crazy, newfangled browser that was coming out soon called Firebird (today known as Firefox).  It was my summer vacation, I was bored out of my mind - I had just graduated with my brand spanking new computer science degree in hand and I felt like doing something useful with it.  Et voil&#224;!  FireFTP is the result.<br/><br/>It's been no cake walk - developing for Mozilla is tough stuff, there's like a jazillion languages to learn to do it and I realized just how little school had prepared me for real world programming (thanks a freakin' lot, alma mater!)  Anyway, I released my first version after a couple months of tinkering (0.82 - "Sir Prize" - by the way if you haven't noticed the pattern by now - I name each version after the name of a song with a person in its title from bands that I love).  It worked, kinda.  To be honest, back then, I thought I was pretty much done with thing right then and there - it's fine the way it is, right?  Good enough, right?  Hah, oh, how wrong I was.<br/><br/>Four years later (off and on) of development though, FireFTP has grown as a program, I've grown as a programmer and I think it's safe to say FireFTP is pretty decent now :)  I'll be the first one to admit it, really - FireFTP didn't honestly even start being a good program until mid-2006 - that's just how long it's taken.  There were just so many obstacles and so much I had to learn about Mozilla and programming in general (p.s. thanks Assaf! thanks MDG!) that it ended up taking two years.  But hey, you have to rely on patience and the whole "Try, try again" thing.  Plus, once I start something I just can't stop until I'm absolutely finished with it or as my dad would say "Kad radi&#353; ne&#353;to, radi da valja" which is Croatian for "When you do something, do it right."  Thanks, Pops!  Good advice.<br/><br/>It's both a great joy and great frustration programming FireFTP but I love doin' it and I love that it's useful for so many people.
+        
+        <br/><br/>My sincere thanks to everyone who's helped over the years, especially: Devin Pohly, Scott Bentley, Tyler Sticka, all the translators, Simon Tatham, Patrick Brunschwig, my supportive family (Tata i Mama, Andja, Stipo), all others who submitted bugs, gave feedback, and/or sent encouraging emails.  Special thanks to everyone who has donated!
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.99</h2>
+
+        version 0.99preview release <a href="http://www.trht.net/artist/The+Bird+and+the+Bee">'fucking boyfriend'</a> (June 17th, 2008) - firefox 3.0+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        sftp!<br/>
+        fixed security vulnerability with not scrubbing '..' out of FTP listings (<a href="http://vuln.sg/fireftp0971-en.html">details</a>)<br/><br/>
+
+        fixed issue with security certificates (0.99.1 fix)<br/>
+        fixed another issue with security certificates (0.99.2 fix)<br/>
+        added 'create file' for remote side (0.99.2 change)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.98</h2>
+
+        version 0.98beta <a href="http://www.trht.net/artist/Nedelle">'poor little city boy/ex-priest'</a> (December 30th, 2007) - firefox 3.0+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        updated for Firefox 3<br/>
+        added sftp (w00t!) (experimental, use at your own risk)<br/>
+        added concurrent transfers (make up to 10 separate simultaneous transfers to the server)<br/>
+        added mode z compression<br/>
+        added FXP<br/>
+        added ability to specify dates with search<br/>
+        <strike>added separate threads for intensive tasks: hashing, extracting archives, copying, deleting, recursive properties, search, transfering (keeps the UI from freezing up)</strike> (had to revert this b/c it was causing crashes)<br/>
+        added a queue (now quit bothering me to add one! :-)  i hadn't added one previously b/c to me a queue is micromanagement)<br/>
+        added ability to import from FileZilla (versions 2 and 3)<br/>
+        added category field to account manager<br/>
+        added timezone offset to account manager<br/>
+        added notes field to account manager<br/>
+        added md5 and sha1 to remote properties<br/>
+        added ability to copy multiple url's at the same time<br/>
+        added preference whether to transfer or open file on double-click/pressing enter<br/>
+        added horizontal scrollbars to the directory trees (yay! it's a hack - but, hey, it works)<br/>
+        improved renaming, creating new directories and files by making them inline changes<br/>
+        improved remote editing by making it auto-save the file<br/>
+        improved security exception dialogs to go with new security flows of firefox 3<br/>
+        removed upload/download case mode from account manager (old accounts should still behave properly - the UI is gone however to configure new accounts)<br/>
+        fixed bug with not being able to open up multiple files at the same time<br/>
+        fixed ascii mode to work properly<br/>
+        fixed other minor bugs<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.97</h2>
+
+        version 0.97beta <a href="http://www.modestmouse.com/">'cowboy dan'</a> (June 26th, 2007) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        added search/filter (<a href="http://icanhascheezburger.com/">i can has qweries?</a>)<br/>
+        added support for transfer integrity checks (for servers that support XMD5 or XSHA1)<br/>
+        fixed issues with permissions on Mac OS X<br/>
+        fixed other minor bugs<br/><br/>
+        
+        fixed issue with open with... not working properly with custom arguments (0.97.1 fix)<br/>
+        fixed issue with FEAT response not always being fully read (0.97.1 fix)<br/>
+        international versions should update correctly now (0.97.1 fix)<br/><br/>
+        
+        fixed security vulnerability with not scrubbing '..' out of FTP listings (0.97.2) (<a href="http://vuln.sg/fireftp0971-en.html">details</a>)<br/>
+        fixed regression caused by 0.97.2 with files that legitimally have .. in them - scrub out / and \ instead (0.97.3)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.96</h2>
+
+        version 0.96beta <a href="http://www.mybloodyvalentine.net/">'loomer'</a> (April 19th, 2007) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        added unicode (UTF-8) support - it's sweeet :)<br/>
+        changed export to save out encrypted passwords as well<br/>
+        fixed problem with incorrect directory changes if hidden mode enabled<br/>
+        fixed problem with downloads of external links not working<br/><br/>
+        added support for almost any encoding (major props to <a href="http://ccpp0.org/">ccpp0</a>! look under an account's settings-&gt;advanced-&gt;server encoding; 0.96.4 change)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.95</h2>
+
+        version 0.95beta <a href="http://www.nousnonplus.com/">'lawnmower boy'</a> (March 17th, 2007) - firefox 1.5+ only<br/><br/>
+
+        <b>new features</b><br/>
+        added recursive directory diff<br/>
+        added open with... menu to remote files<br/>
+        added ability to extract .zip, .jar, .xpi files (locally)<br/>
+        added copy url to remote context menu (at the request of many, many bloggers)<br/>
+        added preference to keep timestamps in sync<br/>
+        added preference to limit ports in active mode<br/>
+        added ability to avoid recursing into directories if not necessary (if the Intial Remote Directory is set or if the directory is chrooted); some users had parent directories that were huge, e.g. a student account at a university<br/>
+        added support for MLSD command (more standardized directory listings)<br/>
+        changed hotkey for create directory... from ctrl-m -&gt; ctrl-d, makes more sense to me<br/>
+        changed look of remote view if disconnected - now there is a visual cue that you aren't connected<br/>
+        improved error messages to include filename (so you can tell during a mass transfer which file it was that screwed up)<br/>
+        improved logging to not remove error messages (before the log kept a history of only 200 messages for memory/cpu usage sake)<br/><br/>
+        and a new logo, baby! (by the masterful work of <a href="http://www.tylersticka.com/">tyler sticka</a>)<br/><br/>
+
+        <b>fixed bugs</b><br/>
+        fixed 2 bugs causing memory leaks (thanks to gerard talbot for the heads up!)<br/>
+        fixed bug with open with... menu not opening<br/>
+        fixed bug with directories that have files over 2gb in linux not being accessible (unfortunately, the large files themselves are still unaccessible - this is a firefox issue)<br/>
+        fixed bug with 'overwrite all' not working if dragging from external file manager<br/>
+        fixed several bugs with directory navigation<br/>
+        fixed various other minor bugs<br/><br/>
+
+        fixed problem with remote files not showing up if "Show Hidden Files" option is enabled (0.95.1 fix)<br/>
+        fixed problem incorrect parsing of MLSD listings (0.95.2 fix)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.94</h2>
+
+        version 0.94beta <a href="http://www.thedittybops.com/">'sister kate'</a> (June 6th, 2006) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        added ability to keep directories in sync (look under account manager-&gt;connections-&gt;initial directories)<br/><br/>
+
+        greatly improved directory diff (has much better UI now)<br/>
+        greatly improved drag and drop support (now you can drag here and there and everywhere)<br/>
+        greatly improved cut and paste operations (it was kind of wonky before - it's cleaned up now)<br/><br/>
+
+        just in general, greatly improved :)<br/><br/>
+
+        fix bug with importing (0.94.2 change)<br/>
+        fix bug with incorrectly displayed remote ms-dos servers (0.94.2 change)<br/>
+        fix bug with symlinks (0.94.2 change)<br/><br/>
+
+        fix various bugs, better connection recovery handling (0.94.3 change)<br/><br/>
+
+        empty files not uploading correctly (again) (0.94.4 change)<br />
+        fix various minor bugs (0.94.4 change)<br/><br/>
+
+        fixed small problem w/ non-modal account mgr. (0.94.5)<br/>
+        fixed windows<->linux conversion with importing accounts (0.94.5)<br/>
+        fixed problem with two directories having same name but different case (0.94.5)<br/><br/>
+
+        fixed regression that caused Firefox to crash (0.94.6)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.93</h2>
+
+        version 0.93beta <a href="http://www.royksopp.com/">'poor leno'</a> (May 30th, 2006) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        added support for IPv6 connections (kind of experimental at this point but it seems to work well)<br/><br/>
+
+        fixed bug with active mode - this was broken in the major rewrite of FireFTP during version 0.91 - sorry! :(<br/>
+        fixed infinite loop with accessing hidden directory while not in hidden mode<br/>
+        added data timeout protection (will recognize stale network while transfering and restart)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.92</h2>
+
+        version 0.92beta <a href="http://www.thenewpornographers.com/">'mass romantic'</a> (May 25th, 2006) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        well, 0.91 was short-lived, wasn't it?<br/>
+        this version, by all looks of it, fixes the crashes that happened on uploading files (on all platforms: windows, linux, and mac).
+        the crashing had been a problem for two years now. <i>two years!</i> if it annoyed the hell out of my users, you can believe
+        it freakin' drove me nuts.  anyway, i finally made a breakthrough after i got a tip from one of my co-workers
+        over at <a href="http://www.mozdevgroup.com/">mozdev group</a> and now all is well under the sun :)<br/><br/>
+
+        also in 0.92...<br/>
+        tweaked to remember last account<br/>
+        changed alert dialog to accept multiple alerts so you don't have a bazillion dialogs popup<br/>
+        optimized how often TYPE and CWD commands are sent to the server<br/>
+        tweaked to work for bon echo alpha 2<br/>
+        fixed problem with being able to close preferences window on mac<br/>
+        fixed problem with paths like 'c:\.foo' in local path not working<br/>
+        fixed display problems with new toolbar button<br/>
+        and fixed some other minor regressions caused by the whole rewrite of FireFTP in 0.91<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.91</h2>
+
+        version 0.91beta <a href="http://www.ofmontreal.net">'nicki lighthouse'</a> (May 20th, 2006) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        did a <i>complete</i> rewrite of FireFTP.  made it more object-oriented and reusable for other mozilla apps<br/><br/>
+
+        added md5, sha1, sha256, sha384, sha512 hash computation for local files (in local Properties)<br/>
+        added save temporary account<br/>
+        added export/import<br/>
+        added toolbar button<br/>
+        added active mode option for temporary connections<br/>
+        added create file for local listing<br/>
+        fixed crashing on uploads bug (for windows at least; linux is still having problems)<br/>
+        fixed problem with '.' in local paths (0.91.2 change)<br/>
+        and, as always, many more bug fixes<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.90</h2>
+
+        version 0.90beta <a href="http://www.sleater-kinney.com">'modern girl'</a>  (November 29th, 2005) - firefox 1.5+ only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        added SSL/TLS!<br/>
+        added a site manager!<br/>
+        added integration of ftp links from the firefox browser!<br/>
+        added open with (program manager) for local files!<br/>
+        added view as web page feature for remote files!<br/>
+        added multiple file selection in properties window (recursive as well!) so you can find out total number of bytes for a number of files!!<br/>
+        added ability to perform CHMOD change on a selection of files, folders, subfolders and subfiles and to filter that the CHMOD only happens to files or folders or both!! (this is remote only for now; local chmod on linux is kind of funky through mozilla, specifically suid, guid, and sticky bits - don't say i didn't warn you - hey, what's brown and sticky? a stick! ...ah, that joke never gets old)<br/>
+        added diffing of directories!<br/>
+        added thumbnails for pictures and web pages! (thumbnail and filmstrip view will be coming in the future)<br/>
+        added permissions for local linux files!<br/>
+        added custom commands!<br/>
+        added option to change case of downloads/uploads!<br/>
+        added pause button!<br/>
+        added new preferences (keep alive function, log filter, overwrite disable, show bytes instead of kilobytes)<br/>
+        added ability to change read-only property for local files<br/>
+        added drag and drop ability from os (thanks to scott)<br/>
+        added help button (help files still need to be written though :)<br/>
+        added simple skin<br/>
+        added new columns for file types<br/>
+        better performance - should be faster ui, faster downloads!!<br/>
+        better log control (filter out only errors and it only keeps like the last 200 lines around (otherwise memory gets hogged))<br/>
+        better proxy interface<br/>
+        and again, lots of bug fixes (it's almost perfect, folks - it's getting there)<br/>
+        <br/>
+        skipped version number .89 and went straight to .90 because this one kicks just that much more ass<br/>
+        some software bloat by about 20KB.  yes, painful, i know.  but look above, you punk - that's like 1KB per feature!  ah, i loves my fox.<br/>
+        probably no more features will be added before 1.0 although i would have liked to have solved the things listed <a href="todo.html">here</a><br/>
+        changed fireFTP to FireFTP - looks more official i guess, more sophisticated. it's almost all growns up
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.88</h2>
+
+        version 0.88beta <a href="http://www.radiohead.com">'paranoid android'</a> (May 6th, 2005) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed even more bugs created by 0.88 - what can i say? i'm a moron (0.88.3)<br/>
+        fixed problems with chrooted directories and directories with spaces in them (again - sorry everybody)(0.88.2)<br/>
+        active mode was broken in 0.88 (0.88.1)<br/>
+        code restructuring, clean up - cleaner, faster, more readable<br/>
+        bugs, fixed so many bugs<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.87</h2>
+
+        version 0.87beta <a href="http://www.blur.co.uk">'ernold same'</a> (January 20th, 2005) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        uploading works! properly!<br/>
+        fixed some other minor bugs<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.86</h2>
+
+        version 0.86beta <a href="http://www.gorillaz.com">'clint eastwood'</a> (November 20th, 2004) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed some bugs, log window gone (.86.2 change)<br/>
+        fixed "failed to save file '' locally" problem (.86.1 change)<br/>
+        fixed credits link (.86.1 change)<br/>
+        added os/2 server support (.86.1 change)<br/>
+        added support for aix servers (.86.1 change)<br/>
+        ctrl-t wasn't working (b/c of preventDefault) - fixed (.86.1 change)<br/>
+        uploading an empty file (0 KB) now works (.86.1 change)<br/>
+        proxy support - aw, dizzle (limited, though - SOCKS only)<br/>
+        fixed CHMOD (changed to "SITE CHMOD")<br/>
+        added suid, guid, and sticky bits to properties (aw, now i can't put that great sticky joke in anymore)<br/>
+        now shows hidden files in the remote view as well (when option is selected)<br/>
+        clears remote window on close now<br/>
+        other shtuff as well :)<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.85</h2>
+
+        version 0.85beta <a href="http://www.sweetadeline.net/">'sweet adeline'</a> (November 4th, 2004) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed problem with themes (0.85.1 fix)<br/>
+        ui gets a little nip/tuck (are those protocols real?)<br/>
+        passive/active modes! (come on, you'd be excited too if you were working on this for days)<br/>
+        access to chrooted directories!<br/>
+        fixed bug with dragging and dropping in tab mode<br/>
+        fixed problem with caching and multiple users<br/>
+        localizations in turkish and french<br/>
+        other bug fixes<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.84</h2>
+
+        version 0.84beta <a href="http://www.whitestripes.com/">'suzy lee'</a> (October 19th, 2004) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed bug with collapsed folder view - <a href="http://mozdev.org/bugs/show_bug.cgi?id=7731">7731</a> (0.84.3 change)<br/>
+        fixed bug with linux interface - <a href="http://mozdev.org/bugs/show_bug.cgi?id=7603">7603</a> (0.84.2 change)<br/>
+        fixed bug <a href="http://bugzilla.mozdev.org/show_bug.cgi?id=7700">7700</a> (0.84.1 change)<br/>
+        fixed lots of minor bugs<br/>
+        better ascii file interface<br/>
+        made fireftp charityware<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.83</h2>
+
+        version 0.83beta <a href="http://www.bunglefever.com/">'golem ii - the bionic vapour boy'</a> (October 8th, 2004) - firefox only<br/><br/>
+
+        <b>what's new/changes</b><br/>
+        fixed bug when overwriting local files (0.83.3 change)<br/>
+        timeout had problem with uploads - made workaround (0.83.2 change)<br/>
+        bug in ASCII file list (0.83.2 change)<br/>
+        added support for servers that give full path for filename (0.83.2 change)<br/>
+        a lot more ftp servers are supported (thanks to devin)<br/>
+        now works on os x! (thanks to jason clark)<br/>
+        fixed important upload bug (thanks to bob henson)<br/>
+        ability to launch files from fireftp<br/>
+        remote symbolic links work<br/>
+        support for ascii files (notepad users rejoice!)<br/>
+        ability to load fireFTP in a tab<br/>
+        got rid of . and .. in directory listings<br/>
+        tweaked favicon support<br/>
+        changed homepage<br/>
+        fixed minor problems with column sorting<br/>
+        if a directory is deleted, it is now removed from the cache<br/>
+        other minor bug fixes<br/>
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>release notes 0.82</h2>
+
+        version 0.82alpha <a href="http://www.starlightmints.com/">'sir prize'</a> (September 20th, 2004)<br/>
+        initial release  (firefox only)<br/><br/>
+
+        operating systems tested:	   windows xp<br/>
+        operating systems untested:  linux, mac, os/2, others?<br/>
+        ftp servers tested:          unix style, ms-dos style<br/>
+        ftp servers unsupported:     mac, os/2, others?<br/><br/>
+
+        known issues<br/>
+        &nbsp;- turning off auto-refresh, then uploading, then uploading the same file again will overwrite no matter what<br/>
+        &nbsp;- moving folder splitters before moving center splitters causes center to jump (solutions, anyone?)<br/>
+        &nbsp;- ssl: methinks i implemented it right - anyone care to validate this?<br/>
+        &nbsp;- known issue: when refreshing the remote view either by use of the button or automatically<br/>
+        &nbsp;&nbsp;&nbsp;through the program the remote folder view is temporarily 'messed up' as it redraws itself.<br/>
+        &nbsp;&nbsp;&nbsp;yes, i am aware of the api calls begin/endUpdateBatch(). these seem to cause more problems<br/>
+        &nbsp;&nbsp;&nbsp;than they're worth - either that or i'm just not implementing it right.<br/><br/>
+        although i've tried to eradicate most of the bugs in this program (john goodman style), i am almost positive there are still some lurking about. so, as with any 'alpha' piece of software don't come cryin' if your computer starts singing 'it's a small world after all' over and over again or wants to join the peace corps. seriously, though, i have tested the 'delete' functions pretty thoroughly so at least they won't screw up. ('deleting', by the way, is not eco-friendly. it does not recycle - maybe i'll find a way to implement this in the future.)
+      </div>
+
+      <div class="padded hr"><hr /></div>
+
+      <div class="smaller">
+        <h2>license block</h2>
+
+        The contents of this file are subject to the Mozilla Public License<br/>
+        Version 1.1 (the "License"); you may not use this file except in<br/>
+        compliance with the License. You may obtain a copy of the License at<br/>
+        http://www.mozilla.org/MPL/<br/><br/>
+
+        Software distributed under the License is distributed on an "AS IS" basis,<br/>
+        WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License<br/>
+        for the specific language governing rights and limitations under the<br/>
+        License.<br/><br/>
+
+        The Original Code is fireftp<br/><br/>
+
+        The Initial Developer of the Original Code is Mime &#268;uvalo<br/>
+        Portions created by the Initial Developer are Copyright (C) 2011<br/>
+        the Initial Developer. All Rights Reserved.<br/><br/>
+
+        Contributor(s):<br/>
+        Mime &#268;uvalo, <a href="about_mozilla.xhtml">mimecuvalo@gmail.com</a>, original author<br/><br/>
+
+        Alternatively, the contents of this file may be used under the<br/>
+        terms of the GNU Public License (the "GPL"), in which case the<br/>
+        provisions of the GPL are applicable instead of those above.<br/>
+        If you wish to allow use of your version of this file only<br/>
+        under the terms of the GPL and not to allow others to use your<br/>
+        version of this file under the MPL, indicate your decision by<br/>
+        deleting the provisions above and replace them with the notice<br/>
+        and other provisions required by the GPL.  If you do not delete<br/>
+        the provisions above, a recipient may use your version of this<br/>
+        file under either the MPL or the GPL.<br/><br/>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      a <a href="http://www.nightlight.ws/">nightlight</a> production<br/>
+      hosted by <a href="http://www.mozdev.org">mozdev.org</a>
+      <a href="http://www.mozdev.org/copyright.html">&copy;</a> 2004-2011 FireFTP :
+      <a href="http://www.mozdev.org/community/terms.html">Terms of Use</a><br/>
+      <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
+    </div>
+
+  </body>
+</html>
