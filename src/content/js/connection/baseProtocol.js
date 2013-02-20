@@ -1025,13 +1025,15 @@ baseProtocol.prototype = {
             Components.interfaces.nsICache.ACCESS_WRITE,
             {
               onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
-                if (cacheDesc) {
-                  var cacheOut     = cacheDesc.openOutputStream(0);
-                  var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
-                  cacheOut.write(cacheData, cacheData.length);
-                  cacheOut.close();
-                  cacheDesc.close();
-                }
+                try {
+                  if (cacheDesc) {
+                    var cacheOut     = cacheDesc.openOutputStream(0);
+                    var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
+                    cacheOut.write(cacheData, cacheData.length);
+                    cacheOut.close();
+                    cacheDesc.close();
+                  }
+                } catch (ex) {}
               }
             });
       } catch (ex) {

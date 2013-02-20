@@ -37,12 +37,12 @@ var dragObserver = {
       var transObj = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
       // init() was added to nsITransferable in FF16 for Private Browsing Mode
       // see https://bugzilla.mozilla.org/show_bug.cgi?id=722872 for more info
-      if ('init' in trans) {
+      if ('init' in transObj) {
         var privacyContext = document.commandDispatcher.focusedWindow.
           QueryInterface(Components.interfaces.nsIInterfaceRequestor).
           getInterface(Components.interfaces.nsIWebNavigation).
           QueryInterface(Components.interfaces.nsILoadContext);
-        trans.init(privacyContext);
+        transObj.init(privacyContext);
       }
       transObj.addDataFlavor("application/x-moz-file");       // only look at files
 
