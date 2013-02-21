@@ -32,7 +32,7 @@
 <!ENTITY custom.access "C">
 <!ENTITY prefbutton.access "r">
 <!ENTITY help.label "راهنما">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "رفتن به دایرکتوری بالاتر">
 <!ENTITY refresh.tip "بارکذاری مجدد دایرکتوری">
 <!ENTITY localpath.tip "آدرس روی کامپیوتر">

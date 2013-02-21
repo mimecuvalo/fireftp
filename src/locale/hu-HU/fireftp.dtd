@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "B">
 <!ENTITY help.label "Súgó">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Visszalépés a szülőkönyvtárba">
 <!ENTITY refresh.tip "Könyvtár-lista frissítése">
 <!ENTITY localpath.tip "Helyi útvonal">

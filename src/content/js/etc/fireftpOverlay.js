@@ -105,7 +105,7 @@ function fireFTPInitListener(event) {
 
     var windowContent = window.getBrowser();
     window.setTimeout(function() {
-      windowContent.selectedTab = windowContent.addTab("http://fireftp.mozdev.org/donate.html?installed=true");
+      windowContent.selectedTab = windowContent.addTab("http://fireftp.net/donate.html?installed=true");
     }, 0);
   }
 }

@@ -30,7 +30,7 @@
 <!ENTITY custom.access "C">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "Help">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Change to parent directory">
 <!ENTITY refresh.tip "Refresh Directory">
 <!ENTITY localpath.tip "Local Path">

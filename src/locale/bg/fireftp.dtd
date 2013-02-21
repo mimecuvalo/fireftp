@@ -23,7 +23,7 @@
 <!ENTITY export.access "с">
 <!ENTITY prefbutton.access "т">
 <!ENTITY help.label "Помощ">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html?locale=bg-BG">
+<!ENTITY help.url "http://fireftp.net/help.html?locale=bg-BG">
 <!ENTITY parentdir.tip "Смени с горната директория">
 <!ENTITY refresh.tip "Презареди съдържанието на директорията">
 <!ENTITY localpath.tip "Път локално">

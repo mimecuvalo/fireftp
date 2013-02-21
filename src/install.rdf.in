@@ -8,7 +8,7 @@
     <em:contributor>Devin Pohly</em:contributor>
     <em:contributor>Scott Bentley</em:contributor>
     <em:description>FTP client for Mozilla Firefox.</em:description>
-    <em:homepageURL>http://fireftp.mozdev.org</em:homepageURL>
+    <em:homepageURL>http://fireftp.net</em:homepageURL>
     <em:name>FireFTP</em:name>
     <em:version>__VERSION__</em:version>
     <em:id>{a7c6cf7f-112c-4500-a7ea-39801a327e5f}</em:id>

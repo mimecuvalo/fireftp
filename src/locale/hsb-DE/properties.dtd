@@ -1,0 +1,31 @@
+<!ENTITY title "Kajkosće">
+<!ENTITY path "Šćežka:">
+<!ENTITY webpath "Webšćežka:">
+<!ENTITY size "Wulkosć:">
+<!ENTITY date "Datum:">
+<!ENTITY contains "Wobsahuje:">
+<!ENTITY user "Wužiwar:">
+<!ENTITY groupl "Skupina:">
+<!ENTITY attr "Atributy:">
+<!ENTITY hash "Hašowe hódnoty:">
+<!ENTITY perm "Prawa:">
+<!ENTITY reado "Jenož čitajomny">
+<!ENTITY hidden "Schowany">
+<!ENTITY owner "Wobsedźer">
+<!ENTITY group "Skupina">
+<!ENTITY public "Zjawny">
+<!ENTITY read "Čitać">
+<!ENTITY write "Pisać">
+<!ENTITY exec "Wuwjesć">
+<!ENTITY manual "Manuelny:">
+<!ENTITY suid "SUID">
+<!ENTITY guid "SGID">
+<!ENTITY sticky "Připinjeny">
+<!ENTITY applyto "Nałožić na:">
+<!ENTITY thisprop "Tutón rjadowak">
+<!ENTITY folderprop "Wšě wobsahowane rjadowaki">
+<!ENTITY filesprop "Wšě wobsahowane dataje">
+<!ENTITY thumbnail "Přehladowy wobrazk">
+<!ENTITY loading "Začituje so…">
+<!ENTITY view.label "Napohlad">
+<!ENTITY view.accesskey "N">

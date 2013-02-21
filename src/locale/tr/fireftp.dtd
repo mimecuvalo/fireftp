@@ -23,7 +23,7 @@
 <!ENTITY export.access "V">
 <!ENTITY prefbutton.access "S">
 <!ENTITY help.label "Yardım">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Üst dizine geç">
 <!ENTITY refresh.tip "Dizini yenile">
 <!ENTITY localpath.tip "Yerel Konum">

@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "r">
 <!ENTITY help.label "도움말">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "상위 디렉토리로 이동">
 <!ENTITY refresh.tip "디렉토리 새로 고침">
 <!ENTITY localpath.tip "로컬 경로">

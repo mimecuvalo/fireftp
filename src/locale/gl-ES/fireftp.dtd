@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "f">
 <!ENTITY help.label "Axuda">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Ir ao directorio superior">
 <!ENTITY refresh.tip "Anovar directorio">
 <!ENTITY localpath.tip "Local">

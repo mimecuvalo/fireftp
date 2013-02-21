@@ -23,7 +23,7 @@
 <!ENTITY export.access "E">
 <!ENTITY prefbutton.access "n">
 <!ENTITY help.label "Hjælp">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Et niveau op">
 <!ENTITY refresh.tip "Genindlæs mappe">
 <!ENTITY localpath.tip "Lokal sti">

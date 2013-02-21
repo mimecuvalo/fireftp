@@ -30,7 +30,7 @@
 <!ENTITY custom.access "a">
 <!ENTITY prefbutton.access "r">
 <!ENTITY help.label "Help">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Map omhoog">
 <!ENTITY refresh.tip "Map vernieuwen">
 <!ENTITY localpath.tip "Lokaal pad">

@@ -23,7 +23,7 @@
 <!ENTITY export.access "X">
 <!ENTITY prefbutton.access "y">
 <!ENTITY help.label "Trợ giúp">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Chuyển tới thư mục mẹ">
 <!ENTITY refresh.tip "Làm tươi Thư mục">
 <!ENTITY localpath.tip "Đường dẫn Trong máy">

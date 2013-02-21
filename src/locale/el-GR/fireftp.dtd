@@ -30,7 +30,7 @@
 <!ENTITY custom.access "Π">
 <!ENTITY prefbutton.access "Ε">
 <!ENTITY help.label "Βοήθεια">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Μετάβαση στο γονικό κατάλογο">
 <!ENTITY refresh.tip "Ανανέωση καταλόγου">
 <!ENTITY localpath.tip "Τοπική διαδρομή">

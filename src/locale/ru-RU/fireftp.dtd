@@ -30,7 +30,7 @@
 <!ENTITY custom.access "я">
 <!ENTITY prefbutton.access "Н">
 <!ENTITY help.label "Помощь">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "На уровень выше">
 <!ENTITY refresh.tip "Обновить">
 <!ENTITY localpath.tip "Локальный адрес">

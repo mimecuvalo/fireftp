@@ -23,7 +23,7 @@
 <!ENTITY export.access "X">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "帮助">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "转到上级目录">
 <!ENTITY refresh.tip "刷新目录">
 <!ENTITY localpath.tip "本地路径">

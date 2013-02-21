@@ -9,7 +9,7 @@
 <!ENTITY folder.label "Category:">
 <!ENTITY optional.label "(optional)">
 <!ENTITY host.label "Máy chủ:">
-<!ENTITY host.tip "Ví dụ: vi.mozdev.org">
+<!ENTITY host.tip "Ví dụ: vi.net">
 <!ENTITY login.label "Đăng nhập:">
 <!ENTITY password.label "Mật khẩu:">
 <!ENTITY anonymous.label "Vô danh">
@@ -33,7 +33,7 @@
 <!ENTITY current.label "Dùng thư mục hiện tại">
 <!ENTITY treesync.label "Giữ cho thư mục đồng bộ khi đang duyệt">
 <!ENTITY webhost "Máy chủ web (dùng với tính năng &apos;Xem trên web&apos;)">
-<!ENTITY webhost.tip "Ví dụ: http://vi.mozdev.org">
+<!ENTITY webhost.tip "Ví dụ: http://vi.net">
 <!ENTITY prefix.label "Tiền tố:">
 <!ENTITY prefix.tip "Tiền tố được bỏ khỏi phần FTP của url, vd. /public_html">
 <!ENTITY caseleave.label "Giữ nguyên HOA-thường">

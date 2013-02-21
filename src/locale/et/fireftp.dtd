@@ -23,7 +23,7 @@
 <!ENTITY export.access "X">
 <!ENTITY prefbutton.access "r">
 <!ENTITY help.label "Abi. Tõlkis: Aigar Vals">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Change to parent directory">
 <!ENTITY refresh.tip "Uuenda Kausta">
 <!ENTITY localpath.tip "Lokaalne Rada">

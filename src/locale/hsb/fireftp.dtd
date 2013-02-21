@@ -23,7 +23,7 @@
 <!ENTITY export.access "e">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "Pomoc">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Do nadrjadowaneho zapisa změnić přeńć">
 <!ENTITY refresh.tip "Zapis aktualizować">
 <!ENTITY localpath.tip "Lokalna šćežka">

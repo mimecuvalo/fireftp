@@ -214,7 +214,7 @@ function runInFirefox(path) {
 function tipJar() {
   if (!gDonated) {
     gPrefs.setBoolPref("donated", true);
-    runInFirefox("http://fireftp.mozdev.org/donate.html");
+    runInFirefox("http://fireftp.net/donate.html");
   }
 }
 

@@ -23,7 +23,7 @@
 <!ENTITY export.access "V">
 <!ENTITY prefbutton.access "A">
 <!ENTITY help.label "Ohje">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Näytä ylähakemisto">
 <!ENTITY refresh.tip "Päivitä hakemisto">
 <!ENTITY localpath.tip "Paikallinen polku">

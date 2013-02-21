@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "P">
 <!ENTITY help.label "說明">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "上一層資料夾">
 <!ENTITY refresh.tip "重新整理">
 <!ENTITY localpath.tip "本機路徑">

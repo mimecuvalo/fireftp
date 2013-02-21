@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "Помощ">
-<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
+<!ENTITY help.url "http://fireftp.net/help.html">
 <!ENTITY parentdir.tip "Отиване към по-горната директория">
 <!ENTITY refresh.tip "Обновяване на директорията">
 <!ENTITY localpath.tip "Локален път">

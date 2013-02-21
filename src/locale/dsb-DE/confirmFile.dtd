@@ -1,0 +1,13 @@
+<!ENTITY title "Pśepisanje wobkšuśiś">
+<!ENTITY existing.label "Ekstistěrujuca dataja:">
+<!ENTITY new.label "Nowa dataja:">
+<!ENTITY overwrite.label "Pśepisaś">
+<!ENTITY overwriteall.label "Wšykno pśepisaś">
+<!ENTITY skip.label "Pśeskócyś">
+<!ENTITY skipall.label "Wšykne pśeskócyś">
+<!ENTITY resume.label "Pókšacowaś">
+<!ENTITY overwrite.access "P">
+<!ENTITY overwriteall.access "W">
+<!ENTITY skip.access "s">
+<!ENTITY skipall.access "k">
+<!ENTITY resume.access "c">
