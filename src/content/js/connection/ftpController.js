@@ -62,6 +62,10 @@ function connect(noAccountChange, showPassDialog) {
   for (var x = 0; x < gSiteManager.length; ++x) {                           // print out debug info; help me help you
     if (gSiteManager[x].account == gAccount) {
       var debugSite = new cloneObject(gSiteManager[x]);
+      debugSite.account = "";
+      debugSite.host = "";
+      debugSite.login = "";
+      debugSite.port = "";
       debugSite.password = "";
       debug(debugSite.toSource(), "DEBUG");
       break;
