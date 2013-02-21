@@ -33,6 +33,18 @@
       var rate    = 82000 / 7 / 24 / 60 / 60;
       var count   = 8020000 + (curDate - preDate) * rate;
     </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-360163-5']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
 
   <body>
@@ -63,8 +75,8 @@
         <noscript id="download-link">
           <div>
             <h1><a href="https://addons.mozilla.org/firefox/downloads/latest/fireftp"><b>Download FireFTP</b></a></h1>
-            <span class="smaller">__VERSION__, English (300kb)</span><br/>
-            <a class="smaller" href="features.html">Learn More</a> - <a class="smaller" href="all.html">Other Languages and Versions</a>
+            <span class="smaller">__VERSION__</span><br/>
+            <a class="smaller" href="features.html">Learn More</a>
           </div>
         </noscript>
         <script type="text/javascript">
@@ -93,18 +105,6 @@
       a <a href="http://www.nightlight.ws/">nightlight</a> production<br/><br/>
       <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
     </div>
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-360163-5']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
 
   </body>
 </html>
