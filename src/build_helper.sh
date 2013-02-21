@@ -159,30 +159,5 @@ then
 	exit
 fi
 
-if [ $FIREFTP_LANG = "en-US" ]
-then
-	FIREFTP_MD5=`md5 -q ../downloads/fireftp.xpi`
 
-	sed -e s#http:\/\/downloads.mozdev.org\/fireftp\/fireftp___l10n__.xpi#https:\/\/addons.mozilla.org\/firefox\/downloads\/latest\/684#g \
-			-e s/__VERSION__/$FIREFTP_VER/g \
-			-e s/__MINVERSION__/$FIREFTP_MIN/g \
-			-e s/__MAXVERSION__/$FIREFTP_MAX/g \
-			-e s/__MD5__/$FIREFTP_MD5/g \
-			../www/update.rdf.in > ../www/update.rdf
-
-	sed -e s/__VERSION__/$FIREFTP_VER/g \
-			../www/index.html.in > ../www/index.html
-else
-	FIREFTP_MD5=`md5 -q ../downloads/fireftp_$FIREFTP_LANG.xpi`
-
-	sed -e s/__l10n__/$FIREFTP_LANG/g \
-			-e s/__VERSION__/$FIREFTP_VER/g \
-			-e s/__MINVERSION__/$FIREFTP_MIN/g \
-			-e s/__MAXVERSION__/$FIREFTP_MAX/g \
-			-e s/__MD5__/$FIREFTP_MD5/g \
-			../www/update.rdf.in > ../www/update_$FIREFTP_LANG.rdf
-
-	# See https://bugzilla.mozilla.org/show_bug.cgi?id=396525#c8
-	# See mccoy_cmdline_xuluwarrior.patch in http://www.mozdev.org/source/browse/fireftp/src/ written by Adrian Williams
-	/Applications/McCoy.app/Contents/MacOS/mccoy -command update -updateRDF /Users/Mime/Sites/fireftp/fireftp/www/update_$FIREFTP_LANG.rdf -key fireftp
-fi
+sed -e s/__VERSION__/$FIREFTP_VER/g	../../../website-fireftp/index.html.in > ../../../website-fireftp/index.html
