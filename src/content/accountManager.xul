@@ -264,17 +264,7 @@
                   <menupopup>
                   </menupopup>
                 </menu>
-                <menu label="&charsetMenuUnicode.label;" accesskey="&charsetMenuUnicode.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserUnicodeCharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
+                <menuitem id="UTF-8" label="Unicode (UTF-8)"/>
               </menupopup>
             </button>
           </groupbox>
