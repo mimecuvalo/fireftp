@@ -19,20 +19,11 @@ then
 			-e s/__MAXVERSION__/$FIREFTP_MAX/g \
 			install.rdf.master > install.rdf
 else
-	if [ $FIREFTP_LANG = "en-US" ]
-	then
-		sed -e s/__l10n__/$FIREFTP_LANG/g \
-				-e s/__VERSION__/$FIREFTP_VER/g \
-				-e s/__MINVERSION__/$FIREFTP_MIN/g \
-				-e s/__MAXVERSION__/$FIREFTP_MAX/g \
-				install.rdf.in > install.rdf
-	else
-		sed -e s/__l10n__/$FIREFTP_LANG/g \
-				-e s/__VERSION__/$FIREFTP_VER/g \
-				-e s/__MINVERSION__/$FIREFTP_MIN/g \
-				-e s/__MAXVERSION__/$FIREFTP_MAX/g \
-				install.rdf.l10n > install.rdf
-	fi
+  sed -e s/__l10n__/$FIREFTP_LANG/g \
+	  	-e s/__VERSION__/$FIREFTP_VER/g \
+			-e s/__MINVERSION__/$FIREFTP_MIN/g \
+			-e s/__MAXVERSION__/$FIREFTP_MAX/g \
+			install.rdf.in > install.rdf
 fi
 
 sed -e s/__VERSION__/$FIREFTP_VER/g content/js/etc/globals.js.in > content/js/etc/globals.js
@@ -158,6 +149,3 @@ then
 	osascript debug.scpt
 	exit
 fi
-
-
-sed -e s/__VERSION__/$FIREFTP_VER/g	../../../website-fireftp/index.html.in > ../../../website-fireftp/index.html

@@ -100,7 +100,5 @@
     </em:targetApplication>
     <em:optionsURL>chrome://fireftp/content/preferences.xul</em:optionsURL>
     <em:iconURL>chrome://fireftp/skin/icons/logo32.png</em:iconURL>
-    <em:updateURL>http://fireftp.mozdev.org/update___l10n__.rdf</em:updateURL>
-    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJxzrZEmFqv8jXt5LLgjCNGZDJbbkqs7cf6DGzgWvJbVX1QIm1LbFc5Grsi3zqNSRWbs3qyvZtKd0pSYARIm8xWp2uGBdHzmIQLLSxOYCm1oM8ceg+omMlYQloY3C5g8ujsg2WiYN3hYwcC4jHDBWXeOkAW4/Y/Pzpqv6I8bUkKQIDAQAB</em:updateKey>
   </Description>
 </RDF>
