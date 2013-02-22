@@ -16,9 +16,6 @@
         onmousemove   = "treeHighlighter.mouseMove(event)"
         onmousedown   = "treeHighlighter.mouseDown(event)"
         onmouseup     = "treeHighlighter.mouseUp  (event)"
-        ondraggesture = "nsDragAndDrop.startDrag  (event, dragObserver)"
-        ondragover    = "nsDragAndDrop.dragOver   (event, dragObserver)"
-        ondrop        = "nsDragAndDrop.drop       (event, dragObserver)"
         onload        = "startup()"
         onunload      = "unload()"
         onresize      = "doResizeReverseHack()"
@@ -110,8 +107,6 @@
 
   <script type="application/x-javascript" src="chrome://fireftp/content/js/remote/remoteTree.js"/>
   <script type="application/x-javascript" src="chrome://fireftp/content/js/remote/remoteDirTree.js"/>
-
-  <script type="application/x-javascript" src="chrome://global/content/nsDragAndDrop.js"/>
 
   <stringbundle id="strings" src="chrome://fireftp/locale/strings.properties"/>
 
@@ -303,7 +298,9 @@
             <treecols>
               <treecol    id="localdirname" flex="1" primary="true" persist="width ordinal hidden"/>
             </treecols>
-            <treechildren id="localdirtreechildren" class="dirTree" context="localdirmenu"/>
+            <treechildren id="localdirtreechildren" class="dirTree" context="localdirmenu"
+                          ondragover="dragObserver.onDragOver(event)"
+                          ondrop="dragObserver.onDrop(event);"/>
           </tree>
           <splitter id="localsplitter" persist="state" collapse="before">
             <grippy/>
@@ -322,7 +319,11 @@
             </treecols>
             <treechildren id="localtreechildren" class="fileTree" context="localmenu"
                           ondblclick="localTree.dblClick(event)"
-                          onclick   ="localTree.click(event)"/>
+                          onclick   ="localTree.click(event)"
+                          draggable="true"
+                          ondragstart="dragObserver.onDragStart(event)"
+                          ondragover="dragObserver.onDragOver(event)"
+                          ondrop="dragObserver.onDrop(event);"/>
           </tree>
         </hbox>
       </vbox>
@@ -385,7 +386,9 @@
             <treecols>
               <treecol    id="remotedirname" flex="1" primary="true" persist="width ordinal hidden"/>
             </treecols>
-            <treechildren id="remotedirtreechildren" class="dirTree" context="remotedirmenu"/>
+            <treechildren id="remotedirtreechildren" class="dirTree" context="remotedirmenu"
+                          ondragover="dragObserver.onDragOver(event)"
+                          ondrop="dragObserver.onDrop(event);"/>
           </tree>
           <splitter id="remotesplitter" collapse="before" persist="state">
             <grippy/>
@@ -404,7 +407,11 @@
             </treecols>
             <treechildren id="remotetreechildren" class="fileTree" context="remotemenu"
                           ondblclick="remoteTree.dblClick(event)"
-                          onclick   ="remoteTree.click(event)"/>
+                          onclick   ="remoteTree.click(event)"
+                          draggable="true"
+                          ondragstart="dragObserver.onDragStart(event)"
+                          ondragover="dragObserver.onDragOver(event)"
+                          ondrop="dragObserver.onDrop(event);"/>
           </tree>
         </hbox>
       </vbox>
@@ -441,7 +448,9 @@
               <splitter                   class="tree-splitter"/>
               <treecol id="queuestatus"  label="&status.label;" flex="1" persist="width ordinal hidden"/>
             </treecols>
-            <treechildren id="queuetreechildren" class="fileTree" context="queuemenu"/>
+            <treechildren id="queuetreechildren" class="fileTree" context="queuemenu"
+                          ondragover="dragObserver.onDragOver(event)"
+                          ondrop="dragObserver.onDrop(event);"/>
           </tree>
         </tabpanel>
       </tabpanels>

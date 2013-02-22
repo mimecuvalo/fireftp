@@ -3,13 +3,6 @@ var dragObserver = {
   overName      : false,
   externalFiles : new Array(),
 
-  getSupportedFlavours : function() {
-    var flavours = new FlavourSet();
-    flavours.appendFlavour("application/x-moz-file", "nsILocalFile");
-    flavours.appendFlavour("text/unicode");
-    return flavours;
-  },
-
   onDragStart : function (event, dragData, dragAction) {
     var targetID  = event.target.getAttribute('id');
     this.origin   = null;
@@ -20,65 +13,31 @@ var dragObserver = {
     }
 
     if (targetID == 'localtreechildren' || targetID == 'remotetreechildren') {
-      dragData.data = new TransferData();
-      dragData.data.addDataForFlavour("text/unicode", targetID);
       this.origin = targetID;
+      event.dataTransfer.setData('text/plain', targetID);
+      event.dataTransfer.effectAllowed = 'move';
     }
   },
 
-  onDragOver : function (event, flavour, dragSession) {
+  onDragOver : function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+
     var targetID = event.target.getAttribute('id');
     var row = { }; var col = { }; var child = { };
 
-    if (gConnection && gConnection.isConnected && flavour.contentType == "application/x-moz-file"
+    if (gConnection && gConnection.isConnected && event.dataTransfer.types.contains('application/x-moz-file')
                          && (targetID == 'remotetreechildren' || targetID == 'remotedirtreechildren' || targetID == 'queuetreechildren')) {
-      this.externalFiles = new Array();
-
-      var transObj = Components.classes["@mozilla.org/widget/transferable;1"].createInstance(Components.interfaces.nsITransferable);
-      // init() was added to nsITransferable in FF16 for Private Browsing Mode
-      // see https://bugzilla.mozilla.org/show_bug.cgi?id=722872 for more info
-      if ('init' in transObj) {
-        var privacyContext = document.commandDispatcher.focusedWindow.
-          QueryInterface(Components.interfaces.nsIInterfaceRequestor).
-          getInterface(Components.interfaces.nsIWebNavigation).
-          QueryInterface(Components.interfaces.nsILoadContext);
-        transObj.init(privacyContext);
-      }
-      transObj.addDataFlavor("application/x-moz-file");       // only look at files
-
-      for (var x = 0; x < dragSession.numDropItems; ++x) {    // iterate through dragged items getting any files
-        try {
-          dragSession.getData(transObj, x);
-          var dataObj     = new Object();
-          var dropSizeObj = new Object();
-          transObj.getTransferData("application/x-moz-file", dataObj, dropSizeObj);
-
-          var droppedFile = dataObj.value.QueryInterface(Components.interfaces.nsILocalFile);
-          this.externalFiles.push(droppedFile);
-        } catch (ex) {
-          debug(ex);
-          continue;
-        }
-      }
-
       this.origin         = "external";
-      if (dragSession.dataTransfer) {
-        dragSession.dataTransfer.effectAllowed = "all";
-      }
-    } else if (gConnection && !gConnection.isConnected && flavour.contentType == "application/x-moz-file") {
+      event.dataTransfer.effectAllowed = "all";
+    } else if (gConnection && !gConnection.isConnected && event.dataTransfer.types.contains('application/x-moz-file')) {
       this.origin         = null;
-      if (dragSession.dataTransfer) {
-        dragSession.dataTransfer.effectAllowed = "none";
-      }
-    }
-
-    if (!dragSession.dataTransfer) {
-      return;
+      event.dataTransfer.effectAllowed = "none";
     }
 
     if (((this.origin == 'remotetreechildren' || this.origin == 'localtreechildren') && targetID == 'localtreechildren')
     ||  ((this.origin == 'localtreechildren' || this.origin == "external" || this.origin == 'remotetreechildren') && targetID == 'remotetreechildren')) {
-      dragSession.dataTransfer.effectAllowed = "all";
+      event.dataTransfer.effectAllowed = "all";
 
       var x = { }; var y = { }; var width = { }; var height = { };
 
@@ -104,16 +63,16 @@ var dragObserver = {
         gRemoteDirTree.treeBoxObject.getCellAt(event.pageX, event.pageY, row, col, child);
       }
 
-      dragSession.dataTransfer.effectAllowed = row.value != -1 ? "all" : "none";
+      event.dataTransfer.effectAllowed = row.value != -1 ? "all" : "none";
     } else if ((this.origin == 'localtreechildren' || this.origin == "remotetreechildren" || this.origin == "external") && targetID == 'queuetreechildren') {
-      dragSession.dataTransfer.effectAllowed = "all";
+      event.dataTransfer.effectAllowed = "all";
     } else if (targetID == 'localtreechildren' || targetID == 'remotetreechildren') {
-      dragSession.dataTransfer.effectAllowed = "all";
+      event.dataTransfer.effectAllowed = "all";
     } else {
-      dragSession.dataTransfer.effectAllowed = "none";
+      event.dataTransfer.effectAllowed = "none";
     }
 
-    if (dragSession.dataTransfer.effectAllowed == "none") {
+    if (event.dataTransfer.effectAllowed == "none") {
       return;
     }
 
@@ -141,15 +100,29 @@ var dragObserver = {
       targetTree = queueTree;
       targetTreeElement = gQueueTree;
     } else {
-      dragSession.dataTransfer.effectAllowed = "none";
+      event.dataTransfer.effectAllowed = "none";
       return;
     }
 
     targetTreeElement.treeBoxObject.getCellAt(event.pageX, event.pageY, row, col, child);
-    dragSession.dataTransfer.effectAllowed = targetTree.canDrop(row.value, 0) ? "all" : "none";
+    event.dataTransfer.effectAllowed = targetTree.canDrop(row.value, 0) ? "all" : "none";
   },
 
-  onDrop: function (event, dragData, dragSession) {
+  onDrop: function (event) {
     event.preventDefault();
+
+    if (gConnection && gConnection.isConnected && this.origin == 'external') {
+      this.externalFiles = new Array();
+
+      for (var x = 0; x < event.dataTransfer.files.length; ++x) {    // iterate through dragged items getting any files
+        try {
+          var droppedFile = localFile.init(event.dataTransfer.files[x].mozFullPath);
+          this.externalFiles.push(droppedFile);
+        } catch (ex) {
+          debug(ex);
+          continue;
+        }
+      }
+    }
   }
 };
