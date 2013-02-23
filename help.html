@@ -24,7 +24,6 @@
 
       input {
         border              : 1px solid #999;
-        font                : 10px verdana, arial, helvetica, sans-serif !important;
       }
 
       #search {
@@ -140,22 +139,23 @@
 
       <div class="info">
         <div style="padding-left: 10px;">
-          <b>Search this page:</b>
+          <h2>Start here!</h2>
+          <h3 style="margin-top:0">Search this page:</h3>
         </div>
-        <div style="padding: 10px; text-align: center">
-          <input id="query"  size="25" type="text" value="" oninput="filterTimer()">
-          <input id="search" type="submit" value="Filter" onclick="filter()">
+        <div style="padding: 10px; font-size: 20px">
+          <input id="query"  size="25" type="text" value="" oninput="filterTimer()" style="font-size: 15px">
+          <input id="search" type="submit" value="Search" onclick="filter()">
         </div>
       </div>
 
       <div style="padding-left: 25px;">
+        <a href="#trouble">Troubleshooting</a><br/>
         <a href="#installation">Installation</a><br/>
         <a href="#general">General Usage</a><br/>
         <a href="#acct">Account Manager</a><br/>
         <a href="#props">Properties</a><br/>
         <a href="#prefs">Options</a><br/>
         <a href="#adv">Tools</a><br/>
-        <a href="#trouble">Troubleshooting</a><br/>
         <a href="#misc">Miscellaneous Questions</a><br/><br/>
         <a href="http://en.flossmanuals.net/firefox/ch028_fireftp/">Walkthrough for Beginners by Floss Manuals</a><br/>
         <a href="http://graphiceyedea.co.uk/wp/upload-via-ftp-in-firefox-fireftp/">A Walkthrough for Beginners by Prisca Schmarsow</a><br/>
@@ -164,6 +164,143 @@
       <div class="padded hr"><hr /></div>
 
       <h3 id="noAnswers" style="display:none">No answers matched your search.</h3>
+
+      
+      <h3 class="header"><a name="trouble">Troubleshooting</a></h3>
+
+      <h4 class="display">I'm having a hard time connecting!</h4>
+      <div class="stretcher">
+        <ul>
+          <li>Do you have the latest versions of FireFTP and Firefox? The latest version can be found here: <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp">https://addons.mozilla.org/en-US/firefox/addon/fireftp</a></li>
+          <li>Make sure your username and password are typed in correctly.  Passwords are usually cAsE-sEnSiTiVe!</a></li>
+          <li>
+            Are you behind a firewall?  Try turning it off temporarily to see if it is the source of your problem.  If so, you might have to configure your software to allow FireFTP to access the Internet.<br/>
+          </li>
+          <li>Does your server allow only active mode? Try turning off "Passive Mode" in FireFTP under your account's configuration options.  This is found on the "Account Manager" dialog, under the Connection tab.  Turning off Passive Mode is also known as Active Mode.</li>
+          <li>Do you use a proxy? Try setting the proxy under Tools-&gt;Options-&gt;Connections.</li>
+          <li>Have you been able to connect with other FTP clients?  Please check to see if the problem is reproducible with other FTP clients.</li>
+          <li>Have you tried connecting to other servers?  Please check to see if the problem is only specific to a certain server.</li>
+          <li>Have you tried using another computer?  If possible, try another computer to see if the problem is the same.</li>
+          <li>Are you using a router?  Go into your router control panel and turn on port forwarding for ports 20-21 and for the port that your server uses (14147 for FileZilla), then set them to forward to your IP address (usually something like 192.168.1.100).</li>
+          <li>If all else fails, you just might have to use an alternative FTP client.  I recommend using <a href="http://filezilla.sourceforge.net/">FileZilla</a> or <a href="http://www.smartftp.com/">SmartFTP</a>. Hopefully, I'll be able to resolve your particular issue in future versions.</li>
+        </ul><br/>
+      </div>
+
+      <h4 class="display">I can't add accounts - all of my accounts are again and I'm seeing an error saying gSiteManager is undefined</h4>
+      <div class="stretcher">
+Sorry that you've run into this issue. The newer versions of FireFTP are doing migration of an old account format to a new one. Unfortunately, there are some illegal characters that make it difficult to upgrade to the new format that Mozilla now requires. (specifically, the combination of trying to convert international characters and the '%' character creates problems).<br><br>
+
+If 2.0.9 isn't working for you, you can try the following:<br>
+- find your profile folder, here are instructions: <a href="http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data">http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data</a> (if you're on a Mac it'll be under: ~/Library/Application Support/Firefox/Profiles)<br>
+- find the file in your profile folder called fireFTPsites.dat<br>
+- remove the '%' characters found in the file.<br>
+- remove any characters that begin with '\x'.<br>
+- remove any characters that might have umlauts (like ä)<br>
+- install version 2.0.9 and readd the % characters back in later as needed. (not directly into the file, but via the regular FireFTP interface).<br><br>
+
+The same applies for the files you're trying to import. If you have further issues, email me mimecuvalo@gmail.com and I'll help further.<br><br>
+      </div>
+ 
+
+      <h4 class="display">I get a "Secure Connection Failed!" when trying to connect securely to my site!</h4>
+      <div class="stretcher">
+        When setting up a secure connection to any site (FTP or any regular website), Firefox checks something called a certificate to verify the identity of the site being accessed.  Any old site, including malicious ones, can easily set up a secure connection but it's not as easy to create a fake identity.  So just because your connection to a site is encrypted that doesn't mean the data you're transferring is going to a good place.  Checking a certificate is like checking the site's ID - it makes sure that they are who they say they are.<br/><br/>
+        That being said, sometimes a certificate identifying a site isn't configured correctly for a site.  For example, a common way to get to a website is www.mysite.com.  However, you can also get to the site usually by going to just mysite.com (without the 'www').  A certificate might be configured to be valid for 'www.mysite.com' but for a website to be correctly configured you would need to get a separate certificate (or ID) for 'mysite.com' - even though really it's the same site, just by a slightly different name.  Because getting a certificate is a bit pricey (usually around $100 these days) a lot of websites will go the cheap route and just reuse the same certificate for several sites even though it's not technically correct.  This then creates a problem for Firefox in trying to figure out which sites are just misconfigured and which ones are out to get you...<br/><br/>
+        So, when you get a "Secure Connection Failed!" warning you are given the option to "Add an exception..." to the rule.  But you should only do this if you completely trust the site you are connecting to and/or have verified with the server administrators that this is normal behavior for their servers.<br/><br/>
+        If Firefox says "No Information Available", you can try adding the "https://" prefix in front of URL - this seems to fix it usually.  Hopefully in the future this will be more automatic.
+        <br/><br/>
+      </div>
+
+      <h4 class="display">I'm having problems on my Mac with firewall enabled and using Passive mode!</h4>
+      <div class="stretcher">
+        You can t to ry temporarily disabling the firewall to see if that's the issue in the first place.  If it is the issue, you should turn off Passive Mode (Account Options-&gt;Connection-&gt; and uncheck Passive Mode).
+        <br/><br/>
+      </div>
+
+      <h4 class="display">There are no horizontal scrollbars&nbsp;&ndash; I can't see my files!</h4>
+      <div class="stretcher">
+        This is available in versions 0.98 and up.<br/><br/>
+      </div>
+
+      <h4 class="display">I'm using a proxy and it's not working!</h4>
+      <div class="stretcher">
+        Support for proxies is limited still.  Hopefully, support for proxies will improve in future versions.  Try using <a href="http://www.analogx.com/CONTENTS/download/network/proxy.htm">AnalogX's proxy</a> - it seems to work well.  If you're using Squid, see <a href="http://wiki.squid-cache.org/SquidFaq/InnerWorkings?highlight=%28regular+ftp%29#head-cc52368a9a961fcf8f7f5a4df2e8ff0da8becb16">this note</a>.  Proxy with authentication does not currently work - it's a technical issue with Firefox that will be hopefully be resolved in a future version.<br/><br/>
+      </div>
+
+      <h4 class="display">When using SFTP, it's telling me the server key is unknown when I remember already caching the key.</h4>
+      <div class="stretcher">
+        The newest version of FireFTP uses a different underlying engine to access SFTP servers.  As such, it looks at a different known_hosts file which stores known keys to SSH servers that you trust.  I apologize for the slight confusion and inconvenience.<br/><br/>
+      </div>
+
+      <h4 class="display">I don't have permission to view a parent directory of a directory I'm trying to access!</h4>
+      <div class="stretcher">
+        If you are getting "Permission denied." errors when trying to login to your site you can try setting Account Manager-&gt;Connection-&gt;Initial Directories-&gt;Remote to the initial directory that you wish to view.<br/><br/>
+      </div>
+
+      <h4 class="display">Why is uploading slower than downloading?</h4>
+      <div class="stretcher">
+        FireFTP is usually on par with other FTP clients as far as speed goes.  The reason uploading is slower is because your internet service provider (e.g. Comcast, Qwest) will usually give you a much higher download speed than upload speed for your internet connection.<br/><br/>
+      </div>
+
+      <h4 class="display">When transferring, my files end up corrupt!</h4>
+      <div class="stretcher">
+        You probably accidently enabled ASCII mode.  Go to Tools-&gt;Options-&gt;Downloads/Uploads and select either Binary Mode or Auto Mode.  You can also set this on the status bar near the bottom right where it might say "ASCII".<br/><br/>
+      </div>
+
+      <h4 class="display">I can't see my .htaccess files!</h4>
+      <div class="stretcher">
+        Files with a period in front of them are considered 'hidden' in the FTP world.  To display these files go to Tools-&gt;Options-&gt;Show Hidden Files<br/><br/>
+      </div>
+
+      <h4 class="display">Why can't I download files that have strange/special characters (multi-byte character languages like Chinese, Japanese, Russian, Unicode; e.g. No such file or directory or 550 The system cannot find the file specified)</h4>
+      <div class="stretcher">
+        You might have to change the encoding you are working with to download the file.  Go to Account Manager-&gt;Advanced-&gt;Server Encoding and perhaps try West European-&gt;Western (ISO-8859-1) or whatever region the server might be located in (e.g. Chinese servers tend to use East Asian-&gt;Chinese Simplified (GB18030))<br/><br/>
+      </div>
+
+      <h4 class="display">Why can't I connect with VMS, IBM servers?</h4>
+      <div class="stretcher">
+        FireFTP doesn't currently support these types of servers.  It's on the todo list though.<br/><br/>
+      </div>
+
+      <h4 class="display">Why can't I access network folders?</h4>
+      <div class="stretcher">
+        FireFTP cannot access network folders - it's a technical issue with Firefox that will be hopefully be resolved in a future version.  For now the workaround is to map your network drive to a letter and that will make it work.  Also, you can try dragging the file from Windows Explorer. (you can't drag <i>to</i> however)<br/><br/>
+      </div>
+
+      <h4 class="display">Why can't my large files (over 2 GB or 4 GB) be transferred?</h4>
+      <div class="stretcher">
+        FireFTP cannot download files over 4 GB, or upload files that are over 2 GB - it's a technical issue with Firefox that will be hopefully be resolved in a future version.<br/><br/>
+      </div>
+
+      <h4 class="display">I can't get it to work on Windows Vista/Windows 7!</h4>
+      <div class="stretcher">
+        Support for Windows Vista/7 is currently experimental so there might be issues with it working.  For now, you can try this tip sent in from FireFTP user Noel Briggs:<br/>
+        "Playing with my FF config, I came across the following setting: network.dns.disableIPv6 . Setting this from its default of 'false' to 'true' allows FireFTP to work on Vista. For those who don't know how to change this, just type about:config into your browser. Find the network.dns.disableIPv6 setting, double-click it and it should change the value from 'false' to 'true'. If it doesn't, you'll just need to type it in (depends on your FF version)."<br/>
+        Another alternative from <a href="http://help.lockergnome.com/vista/FTP-Trouble-Vista-ftopict37638.html">this thread</a>:<br/>
+        Copy and paste the following into an elevated CMD prompt: netsh int tcp set global autotuninglevel=disabled
+        <br/><br/>
+      </div>
+
+      <h4 class="display">I'm on a Mac - how do I do anything?!</h4>
+      <div class="stretcher">
+        Because most Mac users only have a single click mouse you have to do a Ctrl-click to access functions like Rename, Delete, Properties, etc.<br/><br/>
+      </div>
+
+      <h4 class="display">Why don't the timestamps on the files on the server match the dates on my local files?</h4>
+      <div class="stretcher">
+        To keep timestamps in sync go to Tools-&gt;Options-&gt;Downloads/Uploads-&gt;Keep timestamps in sync<br/><br/>
+      </div>
+
+      <h4 class="display">I'm having various issues on OS/2!</h4>
+      <div class="stretcher">
+        OS/2 support is rather experimental at this point.  Hopefully I'll be able to resolve the issues in future versions of FireFTP.<br/><br/>
+      </div>
+
+      <h4 class="display">I'm at my rope's end!  FireFTP just doesn't seem to work for me because of a bug or another issue.</h4>
+      <div class="stretcher">
+        While I am continually trying to improve the program, I realize that there are limits to what my program can do.  For alternative FTP clients, I recommend using <a href="http://filezilla.sourceforge.net/">FileZilla</a> or <a href="http://www.smartftp.com/">SmartFTP</a>.  Hopefully, I'll be able to resolve your particular issue in future versions.<br/><br/>
+      </div>
+
 
       <h3 class="header"><a name="installation">Installation</a></h3>
 
@@ -624,140 +761,6 @@
       <h4 class="display">What does Import/Export do?</h4>
       <div class="stretcher">
         You can use Export to export your current list of FTP sites, let's say, from your work computer and then Import them to a different computer, e.g. your home computer.  As far as other FTP clients go, you can only currently import from Filezilla.  Passwords are stored using encryption (although encrypted, it is best to dispose of the exported file once you're done with it).  Importing is smart about not copying duplicate accounts into your current list of FTP sites.  It will merge your current list with the list you are importing.<br/><br/>
-      </div>
-
-      <h3 class="header"><a name="trouble">Troubleshooting</a></h3>
-
-      <h4 class="display">I'm having a hard time connecting!</h4>
-      <div class="stretcher">
-        <ul>
-          <li>Do you have the latest versions of FireFTP and Firefox? The latest version can be found here: <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp">https://addons.mozilla.org/en-US/firefox/addon/fireftp</a></li>
-          <li>Make sure your username and password are typed in correctly.  Passwords are usually cAsE-sEnSiTiVe!</a></li>
-          <li>
-            Are you behind a firewall?  Try turning it off temporarily to see if it is the source of your problem.  If so, you might have to configure your software to allow FireFTP to access the Internet.<br/>
-          </li>
-          <li>Does your server allow only active mode? Try turning off "Passive Mode" in FireFTP under your account's configuration options.  This is found on the "Account Manager" dialog, under the Connection tab.  Turning off Passive Mode is also known as Active Mode.</li>
-          <li>Do you use a proxy? Try setting the proxy under Tools-&gt;Options-&gt;Connections.</li>
-          <li>Have you been able to connect with other FTP clients?  Please check to see if the problem is reproducible with other FTP clients.</li>
-          <li>Have you tried connecting to other servers?  Please check to see if the problem is only specific to a certain server.</li>
-          <li>Have you tried using another computer?  If possible, try another computer to see if the problem is the same.</li>
-          <li>Are you using a router?  Go into your router control panel and turn on port forwarding for ports 20-21 and for the port that your server uses (14147 for FileZilla), then set them to forward to your IP address (usually something like 192.168.1.100).</li>
-          <li>If all else fails, you just might have to use an alternative FTP client.  I recommend using <a href="http://filezilla.sourceforge.net/">FileZilla</a> or <a href="http://www.smartftp.com/">SmartFTP</a>. Hopefully, I'll be able to resolve your particular issue in future versions.</li>
-        </ul><br/>
-      </div>
-
-      <h4 class="display">I can't add accounts - all of my accounts are again and I'm seeing an error saying gSiteManager is undefined</h4>
-      <div class="stretcher">
-Sorry that you've run into this issue. The newer versions of FireFTP are doing migration of an old account format to a new one. Unfortunately, there are some illegal characters that make it difficult to upgrade to the new format that Mozilla now requires. (specifically, the combination of trying to convert international characters and the '%' character creates problems).<br><br>
-
-If 2.0.9 isn't working for you, you can try the following:<br>
-- find your profile folder, here are instructions: <a href="http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data">http://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data</a> (if you're on a Mac it'll be under: ~/Library/Application Support/Firefox/Profiles)<br>
-- find the file in your profile folder called fireFTPsites.dat<br>
-- remove the '%' characters found in the file.<br>
-- remove any characters that begin with '\x'.<br>
-- install version 2.0.9 and readd the % characters back in later as needed. (not directly into the file, but via the regular FireFTP interface).<br><br>
-
-The same applies for the files you're trying to import. If you have further issues, email me mimecuvalo@gmail.com and I'll help further.<br><br>
-      </div>
- 
-
-      <h4 class="display">I get a "Secure Connection Failed!" when trying to connect securely to my site!</h4>
-      <div class="stretcher">
-        When setting up a secure connection to any site (FTP or any regular website), Firefox checks something called a certificate to verify the identity of the site being accessed.  Any old site, including malicious ones, can easily set up a secure connection but it's not as easy to create a fake identity.  So just because your connection to a site is encrypted that doesn't mean the data you're transferring is going to a good place.  Checking a certificate is like checking the site's ID - it makes sure that they are who they say they are.<br/><br/>
-        That being said, sometimes a certificate identifying a site isn't configured correctly for a site.  For example, a common way to get to a website is www.mysite.com.  However, you can also get to the site usually by going to just mysite.com (without the 'www').  A certificate might be configured to be valid for 'www.mysite.com' but for a website to be correctly configured you would need to get a separate certificate (or ID) for 'mysite.com' - even though really it's the same site, just by a slightly different name.  Because getting a certificate is a bit pricey (usually around $100 these days) a lot of websites will go the cheap route and just reuse the same certificate for several sites even though it's not technically correct.  This then creates a problem for Firefox in trying to figure out which sites are just misconfigured and which ones are out to get you...<br/><br/>
-        So, when you get a "Secure Connection Failed!" warning you are given the option to "Add an exception..." to the rule.  But you should only do this if you completely trust the site you are connecting to and/or have verified with the server administrators that this is normal behavior for their servers.<br/><br/>
-        If Firefox says "No Information Available", you can try adding the "https://" prefix in front of URL - this seems to fix it usually.  Hopefully in the future this will be more automatic.
-        <br/><br/>
-      </div>
-
-      <h4 class="display">I'm having problems on my Mac with firewall enabled and using Passive mode!</h4>
-      <div class="stretcher">
-        You can t to ry temporarily disabling the firewall to see if that's the issue in the first place.  If it is the issue, you should turn off Passive Mode (Account Options-&gt;Connection-&gt; and uncheck Passive Mode).
-        <br/><br/>
-      </div>
-
-      <h4 class="display">There are no horizontal scrollbars&nbsp;&ndash; I can't see my files!</h4>
-      <div class="stretcher">
-        This is available in versions 0.98 and up.<br/><br/>
-      </div>
-
-      <h4 class="display">I'm using a proxy and it's not working!</h4>
-      <div class="stretcher">
-        Support for proxies is limited still.  Hopefully, support for proxies will improve in future versions.  Try using <a href="http://www.analogx.com/CONTENTS/download/network/proxy.htm">AnalogX's proxy</a> - it seems to work well.  If you're using Squid, see <a href="http://wiki.squid-cache.org/SquidFaq/InnerWorkings?highlight=%28regular+ftp%29#head-cc52368a9a961fcf8f7f5a4df2e8ff0da8becb16">this note</a>.  Proxy with authentication does not currently work - it's a technical issue with Firefox that will be hopefully be resolved in a future version.<br/><br/>
-      </div>
-
-      <h4 class="display">When using SFTP, it's telling me the server key is unknown when I remember already caching the key.</h4>
-      <div class="stretcher">
-        The newest version of FireFTP uses a different underlying engine to access SFTP servers.  As such, it looks at a different known_hosts file which stores known keys to SSH servers that you trust.  I apologize for the slight confusion and inconvenience.<br/><br/>
-      </div>
-
-      <h4 class="display">I don't have permission to view a parent directory of a directory I'm trying to access!</h4>
-      <div class="stretcher">
-        If you are getting "Permission denied." errors when trying to login to your site you can try setting Account Manager-&gt;Connection-&gt;Initial Directories-&gt;Remote to the initial directory that you wish to view.<br/><br/>
-      </div>
-
-      <h4 class="display">Why is uploading slower than downloading?</h4>
-      <div class="stretcher">
-        FireFTP is usually on par with other FTP clients as far as speed goes.  The reason uploading is slower is because your internet service provider (e.g. Comcast, Qwest) will usually give you a much higher download speed than upload speed for your internet connection.<br/><br/>
-      </div>
-
-      <h4 class="display">When transferring, my files end up corrupt!</h4>
-      <div class="stretcher">
-        You probably accidently enabled ASCII mode.  Go to Tools-&gt;Options-&gt;Downloads/Uploads and select either Binary Mode or Auto Mode.  You can also set this on the status bar near the bottom right where it might say "ASCII".<br/><br/>
-      </div>
-
-      <h4 class="display">I can't see my .htaccess files!</h4>
-      <div class="stretcher">
-        Files with a period in front of them are considered 'hidden' in the FTP world.  To display these files go to Tools-&gt;Options-&gt;Show Hidden Files<br/><br/>
-      </div>
-
-      <h4 class="display">Why can't I download files that have strange/special characters (multi-byte character languages like Chinese, Japanese, Russian, Unicode; e.g. No such file or directory or 550 The system cannot find the file specified)</h4>
-      <div class="stretcher">
-        You might have to change the encoding you are working with to download the file.  Go to Account Manager-&gt;Advanced-&gt;Server Encoding and perhaps try West European-&gt;Western (ISO-8859-1) or whatever region the server might be located in (e.g. Chinese servers tend to use East Asian-&gt;Chinese Simplified (GB18030))<br/><br/>
-      </div>
-
-      <h4 class="display">Why can't I connect with VMS, IBM servers?</h4>
-      <div class="stretcher">
-        FireFTP doesn't currently support these types of servers.  It's on the todo list though.<br/><br/>
-      </div>
-
-      <h4 class="display">Why can't I access network folders?</h4>
-      <div class="stretcher">
-        FireFTP cannot access network folders - it's a technical issue with Firefox that will be hopefully be resolved in a future version.  For now the workaround is to map your network drive to a letter and that will make it work.  Also, you can try dragging the file from Windows Explorer. (you can't drag <i>to</i> however)<br/><br/>
-      </div>
-
-      <h4 class="display">Why can't my large files (over 2 GB or 4 GB) be transferred?</h4>
-      <div class="stretcher">
-        FireFTP cannot download files over 4 GB, or upload files that are over 2 GB - it's a technical issue with Firefox that will be hopefully be resolved in a future version.<br/><br/>
-      </div>
-
-      <h4 class="display">I can't get it to work on Windows Vista/Windows 7!</h4>
-      <div class="stretcher">
-        Support for Windows Vista/7 is currently experimental so there might be issues with it working.  For now, you can try this tip sent in from FireFTP user Noel Briggs:<br/>
-        "Playing with my FF config, I came across the following setting: network.dns.disableIPv6 . Setting this from its default of 'false' to 'true' allows FireFTP to work on Vista. For those who don't know how to change this, just type about:config into your browser. Find the network.dns.disableIPv6 setting, double-click it and it should change the value from 'false' to 'true'. If it doesn't, you'll just need to type it in (depends on your FF version)."<br/>
-        Another alternative from <a href="http://help.lockergnome.com/vista/FTP-Trouble-Vista-ftopict37638.html">this thread</a>:<br/>
-        Copy and paste the following into an elevated CMD prompt: netsh int tcp set global autotuninglevel=disabled
-        <br/><br/>
-      </div>
-
-      <h4 class="display">I'm on a Mac - how do I do anything?!</h4>
-      <div class="stretcher">
-        Because most Mac users only have a single click mouse you have to do a Ctrl-click to access functions like Rename, Delete, Properties, etc.<br/><br/>
-      </div>
-
-      <h4 class="display">Why don't the timestamps on the files on the server match the dates on my local files?</h4>
-      <div class="stretcher">
-        To keep timestamps in sync go to Tools-&gt;Options-&gt;Downloads/Uploads-&gt;Keep timestamps in sync<br/><br/>
-      </div>
-
-      <h4 class="display">I'm having various issues on OS/2!</h4>
-      <div class="stretcher">
-        OS/2 support is rather experimental at this point.  Hopefully I'll be able to resolve the issues in future versions of FireFTP.<br/><br/>
-      </div>
-
-      <h4 class="display">I'm at my rope's end!  FireFTP just doesn't seem to work for me because of a bug or another issue.</h4>
-      <div class="stretcher">
-        While I am continually trying to improve the program, I realize that there are limits to what my program can do.  For alternative FTP clients, I recommend using <a href="http://filezilla.sourceforge.net/">FileZilla</a> or <a href="http://www.smartftp.com/">SmartFTP</a>.  Hopefully, I'll be able to resolve your particular issue in future versions.<br/><br/>
       </div>
 
       <h3 class="header"><a name="misc">Miscellaneous Questions</a></h3>
