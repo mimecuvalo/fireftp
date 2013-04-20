@@ -74,30 +74,41 @@ var localTree = {
     this.sort();
   },
 
+  setProperty: function(prop, value) {
+    if (prop) {
+      prop.AppendElement(this._getAtom(value));
+      return "";
+    } else {
+      return " " + value;
+    }
+  },
+
   getCellProperties : function(row, col, props)   {
+    let properties = "";
     if (row >= 0 && row < this.data.length && this.data[row]) {
       if (col.id == "localname") {
         if (this.displayData[row].isDirectory) {
-          props.AppendElement(gAtomService.getAtom("isFolder"));
+          properties += this.setProperty(props, "isFolder");
         } else if (this.displayData[row].isSymlink) {
-          props.AppendElement(gAtomService.getAtom("isLink"));
+          properties += this.setProperty(props, "isLink");
         }
 
-        props.AppendElement(gAtomService.getAtom("nameCol"));
+        properties += this.setProperty(props, "nameCol");
       }
 
       if (dragObserver.overName && this.displayData[row].isDirectory) {
-        props.AppendElement(gAtomService.getAtom("overName"));
+        properties += this.setProperty(props, "overName");
       }
 
       if (this.displayData[row].isHidden) {
-        props.AppendElement(gAtomService.getAtom("hidden"));
+        properties += this.setProperty(props, "hidden");
       }
 
       if (this.displayData[row].isCut) {
-        props.AppendElement(gAtomService.getAtom("cut"));
+        properties += this.setProperty(props, "cut");
       }
     }
+    return properties;
   },
 
   // ****************************************************** updateView ***************************************************
