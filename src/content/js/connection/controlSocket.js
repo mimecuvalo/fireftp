@@ -822,7 +822,7 @@ ftpMozilla.prototype = {
           if (!(cmd == "MKD" && this.eventQueue.length)) {
             this.observer.onError(buffer + ": " + this.constructPath(this.currentWorkingDir, parameter));
           } else {
-            this.observer.onDebug(buffer);  
+            this.observer.onDebug(buffer);
           }
 
           if (options.errorCallback) {
@@ -889,7 +889,8 @@ ftpMozilla.prototype = {
               } else if (feat.indexOf("XMD5") == 0 && !this.featXCheck) {
                 this.featXCheck = "XMD5";
               } else if (feat.indexOf("UTF8") == 0 && this.encoding == "UTF-8") {
-                this.unshiftEventQueue("OPTS", "UTF8 ON");
+                // no need to request this option if the server reports UTF-8 support
+                //this.unshiftEventQueue("OPTS", "UTF8 ON");
                 featUTF8 = true;
               } else if (feat.indexOf("CLNT") == 0) {
                 featCLNT = true;
