@@ -4,14 +4,14 @@
 <!ENTITY action.label "動作">
 <!ENTITY download.label "ダウンロード">
 <!ENTITY upload.label "アップロード">
-<!ENTITY delete.label "Delete">
+<!ENTITY delete.label "削除">
 <!ENTITY nothing.label "無視">
 <!ENTITY defaults.label "初期設定">
 <!ENTITY local.label "ローカル側に存在しない時:">
 <!ENTITY remote.label "リモート側に存在しない時:">
 <!ENTITY diff.label "ファイルサイズに違いがある時:">
-<!ENTITY newer.label "For newer local files:">
-<!ENTITY older.label "For newer remote files:">
+<!ENTITY newer.label "ローカル側のファイルが新しい時:">
+<!ENTITY older.label "リモート側のファイルが新しい時:">
 <!ENTITY lDownload.access "D">
 <!ENTITY lDelete.access "e">
 <!ENTITY lNothing.access "N">

@@ -6,13 +6,13 @@
 <!ENTITY id "ID">
 <!ENTITY account.label "表示名:">
 <!ENTITY account.tip "例: My FTP Site">
-<!ENTITY folder.label "Category:">
-<!ENTITY optional.label "(オプション)">
+<!ENTITY folder.label "カテゴリ:">
+<!ENTITY optional.label "(入力は任意です)">
 <!ENTITY host.label "ホスト:">
 <!ENTITY host.tip "例: ftp.debian.org">
 <!ENTITY login.label "ユーザー名:">
 <!ENTITY password.label "パスワード:">
-<!ENTITY anonymous.label "Anonymous">
+<!ENTITY anonymous.label "匿名のユーザー (Anonymous)">
 <!ENTITY connection "接続方式">
 <!ENTITY port.label "ポート:">
 <!ENTITY pasv.label "パッシブモード">
@@ -20,31 +20,31 @@
 <!ENTITY none.label "なし">
 <!ENTITY authtls.label "Auth TLS (Best)">
 <!ENTITY authssl.label "Auth SSL (Better)">
-<!ENTITY implicit.label "Implicit SSL (Good)">
+<!ENTITY implicit.label " SSL (Good)">
 <!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Key:">
-<!ENTITY pkbrowse.label "Browse...">
-<!ENTITY pkconvert.label "Convert...">
-<!ENTITY initialdir "起動時の表示ディレクトリ">
+<!ENTITY privatekey.label "秘密鍵:">
+<!ENTITY pkbrowse.label "参照...">
+<!ENTITY pkconvert.label "変換...">
+<!ENTITY initialdir "起動時に表示したディレクトリ">
 <!ENTITY download "ダウンロード オプション">
 <!ENTITY upload "アップロード オプション">
 <!ENTITY localdir.label "ローカル:">
 <!ENTITY remotedir.label "リモート:">
 <!ENTITY current.label "現在を使用">
 <!ENTITY treesync.label "常にディレクトリを同期">
-<!ENTITY webhost "ウェブホスト ('ウェブで表示' 機能で使用します)">
+<!ENTITY webhost "ウェブホスト (&apos;ウェブで表示&apos; 機能で使用します)">
 <!ENTITY webhost.tip "例: http://www.example.com">
 <!ENTITY prefix.label "接頭辞:">
 <!ENTITY prefix.tip "URL の FTP パート内にある接頭辞を削除します。例えば /public_html">
 <!ENTITY caseleave.label "無変換">
 <!ENTITY caselower.label "小文字に変換">
 <!ENTITY caseupper.label "大文字に変換">
-<!ENTITY timezone.label "Timezone Offset">
-<!ENTITY hours.label "Hours:">
-<!ENTITY minutes.label "Minutes:">
-<!ENTITY notes.label "Notes">
-<!ENTITY encoding.label "Server Encoding">
-<!ENTITY charset.label "Character Set:">
+<!ENTITY timezone.label "タイムゾーンの調整">
+<!ENTITY hours.label "時:">
+<!ENTITY minutes.label "分:">
+<!ENTITY notes.label "メモ">
+<!ENTITY encoding.label "エンコーディング">
+<!ENTITY charset.label "文字エンコーディング:">
 <!ENTITY account.access "A">
 <!ENTITY folder.access "e">
 <!ENTITY host.access "H">

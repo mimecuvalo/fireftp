@@ -14,14 +14,14 @@
 <!ENTITY bytesmode.label "ファイルサイズの単位を常にバイトで表示">
 <!ENTITY interface.label "インターフェイス">
 <!ENTITY startup.label "FireFTP の表示方法:">
-<!ENTITY windowopen.label "新しいウィンドウ">
+<!ENTITY windowopen.label "アプリケーションとして開く">
 <!ENTITY tabopen.label "新しいタブ">
-<!ENTITY groupopen.label "ウィンドウグループ">
+<!ENTITY groupopen.label "新しいウィンドウ">
 <!ENTITY integrateftplnk.label "Firefox で FTP のリンクがクリックされた場合、自動的に FireFTP を使用する">
 <!ENTITY temppasvmode.label "接続にパッシブモードを使用">
-<!ENTITY open.label "Double-clicking/pressing enter:">
-<!ENTITY download.label "transfers a file">
-<!ENTITY exec.label "opens a file">
+<!ENTITY open.label "ダブルクリック/Enter キー:">
+<!ENTITY download.label "ファイルをダウンロード">
+<!ENTITY exec.label "ファイルを開く">
 <!ENTITY both.tip "ローカル / リモート両方のファイルを表示します。">
 <!ENTITY local.tip "ローカルのファイルのみ表示します。">
 <!ENTITY remote.tip "リモートのファイルのみ表示します。">
@@ -35,12 +35,12 @@
 <!ENTITY direct.label "直接接続">
 <!ENTITY host.label "ホスト:">
 <!ENTITY port.label "ポート:">
-<!ENTITY active.label "Active Mode">
-<!ENTITY limitPorts.label "Limit ports">
-<!ENTITY from.label "From:">
-<!ENTITY to.label "To:">
-<!ENTITY concurrent.label "Concurrent Transfers">
-<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
+<!ENTITY active.label "アクティブモード">
+<!ENTITY limitPorts.label "使用ポート">
+<!ENTITY from.label "開始:">
+<!ENTITY to.label "終了:">
+<!ENTITY concurrent.label "同時転送数">
+<!ENTITY simtransfers.label "一度に転送するファイルの上限 (1-10)">
 <!ENTITY recovery.label "再接続">
 <!ENTITY network.label "切断までの待ち時間 (1 から 600秒の間で設定)">
 <!ENTITY network.tip "サーバからの応答待ち時間">
@@ -50,7 +50,7 @@
 <!ENTITY retryd.tip "再接続の間隔を秒単位で設定">
 <!ENTITY retrya.label "再接続回数">
 <!ENTITY retrya.tip "リトライの回数">
-<!ENTITY downup.label "ダウンロード / アップロード">
+<!ENTITY downup.label "ダウンロードとアップロード">
 <!ENTITY transfercaption.label "ファイルの転送モード:">
 <!ENTITY automatic.label "自動モード">
 <!ENTITY automatic.tip "拡張子により転送モードを自動的に切り替えます。">
@@ -60,10 +60,10 @@
 <!ENTITY asciifiles.tip "ASCII ファイルとして扱われるファイル拡張子のリスト">
 <!ENTITY add.label "追加">
 <!ENTITY remove.label "削除">
-<!ENTITY extras.label "Extras (if enabled on server)">
-<!ENTITY usecompression.label "Use compression">
-<!ENTITY synctimestamps.label "Keep timestamps in sync">
-<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY extras.label "解凍 (サーバ側で有効にされている場合のみ)">
+<!ENTITY usecompression.label "圧縮を使用">
+<!ENTITY synctimestamps.label "同期時にタイムスタンプを維持">
+<!ENTITY integritymode.label "転送されるファイルの整合性を確認 (XMD5, XSHA1) ">
 <!ENTITY duplicates.label "ファイルの上書き">
 <!ENTITY timer.label "上書きダイアログのタイマーを無効">
 <!ENTITY nopromptmode.label "上書き確認ダイアログを表示しない">

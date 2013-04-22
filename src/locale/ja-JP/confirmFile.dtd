@@ -1,6 +1,6 @@
 <!ENTITY title "上書きの確認">
-<!ENTITY existing.label "Existing File:">
-<!ENTITY new.label "New File:">
+<!ENTITY existing.label "現在のファイル:">
+<!ENTITY new.label "新しいファイル:">
 <!ENTITY overwrite.label "上書き">
 <!ENTITY overwriteall.label "すべて上書き">
 <!ENTITY skip.label "無視">

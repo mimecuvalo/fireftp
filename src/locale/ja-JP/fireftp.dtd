@@ -4,14 +4,14 @@
 <!ENTITY edit.label "編集">
 <!ENTITY abort.label "中止">
 <!ENTITY logtab.label "ログ/キュー">
-<!ENTITY ltab.label "Log">
-<!ENTITY qtab.label "Queue">
+<!ENTITY ltab.label "ログ">
+<!ENTITY qtab.label "キュー">
 <!ENTITY search.access "S">
 <!ENTITY logbutton.access "L">
 <!ENTITY advanced.label "ツール">
-<!ENTITY search.label "Search/Filter">
+<!ENTITY search.label "検索/フィルター">
 <!ENTITY diff.label "ディレクトリの同期...">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
+<!ENTITY recdiff.label "ディレクトリとサブディレクトリの同期...">
 <!ENTITY custom.label "カスタマイズ">
 <!ENTITY import.label "インポート...">
 <!ENTITY export.label "エクスポート...">
@@ -23,7 +23,7 @@
 <!ENTITY export.access "x">
 <!ENTITY prefbutton.access "O">
 <!ENTITY help.label "ヘルプ">
-<!ENTITY help.url "http://fireftp.net/help.html">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY parentdir.tip "上の階層のディレクトリへ移動">
 <!ENTITY refresh.tip "最新の情報に更新">
 <!ENTITY localpath.tip "ローカルパス">
@@ -35,52 +35,52 @@
 <!ENTITY date.label "更新日時">
 <!ENTITY type.label "拡張子">
 <!ENTITY attr.label "属性">
-<!ENTITY source.label "Source">
-<!ENTITY dest.label "Destination">
-<!ENTITY bytes.label "Bytes">
-<!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY source.label "転送元">
+<!ENTITY dest.label "転送先">
+<!ENTITY bytes.label "容量">
+<!ENTITY status.label "状態">
+<!ENTITY retry.label "もう一度">
+<!ENTITY cancel.label "キャンセル">
+<!ENTITY cancelAll.label "すべてキャンセル">
 <!ENTITY type.tip "転送方法を変更します。（自動を推奨）">
 <!ENTITY bytes.tip "ダウンロード済みのサイズ / トータルサイズ">
 <!ENTITY timeela.tip "経過時間">
 <!ENTITY timerem.tip "残り時間">
 <!ENTITY download.tip "通信速度">
 <!ENTITY percent.tip "進捗状況">
-<!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binary">
+<!ENTITY auto.label "自動">
+<!ENTITY binary.label "バイナリ">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY openContaining.label "フォルダを開く">
 <!ENTITY upload.label "アップロード">
 <!ENTITY download.label "ダウンロード">
 <!ENTITY open.label "開く">
 <!ENTITY openwith.label "アプリケーションで開く">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY extractHere.label "解凍">
+<!ENTITY extractTo.label "フォルダへ解凍">
 <!ENTITY viewweb.label "ウェブで表示">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY copyUrl.label "URL をコピー">
+<!ENTITY copyUrlLogin.label "FTP でログイン">
 <!ENTITY cut.label "切り取り">
 <!ENTITY copy.label "コピー">
 <!ENTITY paste.label "貼り付け">
 <!ENTITY makedir.label "ディレクトリを作成">
 <!ENTITY makefile.label "ファイルを作成">
-<!ENTITY symlink.label "Symlink を作成">
+<!ENTITY symlink.label "シンボリックリンクを作成">
 <!ENTITY delete.label "削除">
 <!ENTITY rename.label "名前の変更">
 <!ENTITY properties.label "プロパティ">
 <!ENTITY rproperties.label "再帰プロパティ">
-<!ENTITY searchButton.label "Search">
-<!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
-<!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchButton.label "検索">
+<!ENTITY searchLocal.label "ローカル">
+<!ENTITY searchRemote.label "リモート">
+<!ENTITY searchOptions.label "オプション">
+<!ENTITY searchFrom.label "日付:">
+<!ENTITY searchTo.label "から">
+<!ENTITY searchSubdir.label "サブディレクトリも含める">
+<!ENTITY searchMatch.label "大文字と小文字を区別">
+<!ENTITY searchRegexp.label "正規表現">
+<!ENTITY searchDates.label "日付指定">
 <!ENTITY searchSubdir.access "s">
 <!ENTITY searchMatch.access "c">
 <!ENTITY searchRegexp.access "x">
