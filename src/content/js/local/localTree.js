@@ -76,7 +76,7 @@ var localTree = {
 
   setProperty: function(prop, value) {
     if (prop) {
-      prop.AppendElement(this._getAtom(value));
+      prop.AppendElement(gAtomService.getAtom(value));
       return "";
     } else {
       return " " + value;
