@@ -10,7 +10,7 @@
     <em:description>FTP client for Mozilla Firefox.</em:description>
     <em:homepageURL>http://fireftp.net</em:homepageURL>
     <em:name>FireFTP</em:name>
-    <em:version>2.0.12</em:version>
+    <em:version>2.0.14</em:version>
     <em:id>{a7c6cf7f-112c-4500-a7ea-39801a327e5f}</em:id>
     <em:file>
       <Description about="urn:mozilla:extension:file:fireftp.jar">
@@ -86,8 +86,8 @@
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>18.0</em:minVersion>
-        <em:maxVersion>20.*</em:maxVersion>
+        <em:minVersion>21.0</em:minVersion>
+        <em:maxVersion>22*</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- SeaMonkey -->

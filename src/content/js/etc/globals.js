@@ -1,6 +1,6 @@
 var gConnections = [];          // array of all our ftp connections
 var gConnection;                // the main connection - where the magic happens
-var gVersion  = "2.0.12";  // version of FireFTP we're using
+var gVersion  = "2.0.14";  // version of FireFTP we're using
 var gSlash;                     // holds '/' or '\\' depending on local system
 var gPlatform;                  // holds what platform we're on
 var gTransferTypes;             // holds 'Auto', 'Binary', 'ASCII'
@@ -39,9 +39,6 @@ var gActiveCurrentPort = -1;    // if user specified a range of ports, this is t
 
 // XXX this is some crap but it'll work for now. see rsakey.js for more details
 var gRsaKeyWorkerJs = 'chrome://fireftp/content/js/connection/paramikojs/sign_ssh_data_worker.js';
-
-// Override Firefox's default Crypto class
-function crypto() {}
 
 var gSearchFound;               // search: did we find any results?
 var gSearchRunning = false;     // search: is search running?
