@@ -57,12 +57,23 @@ var queueTree = {
 
   cycleHeader : function(col) { },
 
+  setProperty: function(prop, value) {
+    if (prop) {
+      prop.AppendElement(gAtomService.getAtom(value));
+      return "";
+    } else {
+      return " " + value;
+    }
+  },
+
   getCellProperties : function(row, col, props)   {
+    let properties = "";
     if (row >= 0 && row < this.data.length && this.data[row]) {
       if (col.id == "queuesource") {
-        props.AppendElement(gAtomService.getAtom("nameCol"));
+        properties += this.setProperty(props, "nameCol");
       }
     }
+    return properties;
   },
 
   getProgressMode : function(row, col) {
