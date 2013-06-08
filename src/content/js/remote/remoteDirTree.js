@@ -19,16 +19,27 @@ var remoteDirTree = {
   isSorted            : function(row)               { return false; },
   setTree             : function(treebox)           { this.treebox = treebox; },
 
+  setProperty: function(prop, value) {
+    if (prop) {
+      prop.AppendElement(gAtomService.getAtom(value));
+      return "";
+    } else {
+      return " " + value;
+    }
+  },
+
   getCellProperties : function(row, col, props)   {
+    let properties = "";
     if (row >= 0 && row < this.data.length && this.data[row]) {
       if (!gConnection.isConnected) {
-        props.AppendElement(gAtomService.getAtom("disconnected"));
+        properties += this.setProperty(props, "disconnected");
       }
 
       if (this.data[row].isHidden) {
-        props.AppendElement(gAtomService.getAtom("hidden"));
+        properties += this.setProperty(props, "hidden");
       }
     }
+    return properties;
   },
 
   toggleOpenState     : function(row, suppressChange) {
