@@ -8,7 +8,7 @@
 <!ENTITY exec.label "Polku">
 <!ENTITY browse.label "Selaa">
 <!ENTITY args.label "Parametrit">
-<!ENTITY argshelp1.label "Jättämällä &apos;Parametrit&apos; kentän tyhjäksi, tiedostoa käytetään oletusparametrina.">
+<!ENTITY argshelp1.label "Jättämällä 'Parametrit' kentän tyhjäksi tiedostoa käytetään oletusparametrina.">
 <!ENTITY argshelp2.label "Käytä &#37;file&#37; -tunnistetta kuvaamaan käytettävää tiedostoa erikoiskomennoissa.">
 <!ENTITY apply.label "Käytä">
 <!ENTITY adde.accesskey "L">

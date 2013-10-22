@@ -5,9 +5,9 @@
 <!ENTITY maindetails "Yleistiedot">
 <!ENTITY id "Tunnisteet">
 <!ENTITY account.label "Tilin nimi:">
-<!ENTITY account.tip "Esimerkki: FTP palvelimeni">
+<!ENTITY account.tip "Esimerkki: Minun FTP-palvelimeni">
 <!ENTITY folder.label "Luokka:">
-<!ENTITY optional.label "(optional)">
+<!ENTITY optional.label "(vapaaehtoinen)">
 <!ENTITY host.label "Isäntä:">
 <!ENTITY host.tip "Esimerkki: ftp.debian.org">
 <!ENTITY login.label "Käyttäjätunnus:">
@@ -15,24 +15,24 @@
 <!ENTITY anonymous.label "Nimetön">
 <!ENTITY connection "Yhteystyyppi">
 <!ENTITY port.label "Portti:">
-<!ENTITY pasv.label "Passiivi tila">
-<!ENTITY security.label "Turvallisuus">
+<!ENTITY pasv.label "Passiivitila">
+<!ENTITY security.label "Turvallisuus:">
 <!ENTITY none.label "Tyhjä">
-<!ENTITY authtls.label "Varmennettu TLS(paras)">
-<!ENTITY authssl.label "Varmennettu SSL(parempi)">
-<!ENTITY implicit.label "Implisiittinen SSL(hyvä)">
+<!ENTITY authtls.label "Varmennettu TLS (paras)">
+<!ENTITY authssl.label "Varmennettu SSL (parempi)">
+<!ENTITY implicit.label "Epäsuora SSL (hyvä)">
 <!ENTITY sftp.label "SFTP">
 <!ENTITY privatekey.label "Yksityinen avain:">
 <!ENTITY pkbrowse.label "Selaa...">
 <!ENTITY pkconvert.label "Muunna...">
 <!ENTITY initialdir "Aloitushakemisto">
-<!ENTITY download "Lataus asetukset">
-<!ENTITY upload "Lähetys asetukset">
+<!ENTITY download "Latausasetukset">
+<!ENTITY upload "Lähetysasetukset">
 <!ENTITY localdir.label "Paikallinen:">
 <!ENTITY remotedir.label "Etä:">
 <!ENTITY current.label "Käytä nykyistä">
 <!ENTITY treesync.label "Pidä hakemistot tahdistettuina">
-<!ENTITY webhost "Verkkoisäntä(Käytetään \'Näytä verkossa\' ominaisuudessa)">
+<!ENTITY webhost "Verkkoisäntä (Käytetään \'Näytä verkossa\' ominaisuudessa)">
 <!ENTITY webhost.tip "Esimerkki: http://www.example.com">
 <!ENTITY prefix.label "Etuliite:">
 <!ENTITY prefix.tip "Poistettava etuliite FTP-osoitteista, esim. /public_html">

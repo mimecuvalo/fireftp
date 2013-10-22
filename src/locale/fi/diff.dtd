@@ -6,7 +6,7 @@
 <!ENTITY upload.label "Lähetys">
 <!ENTITY delete.label "Poista">
 <!ENTITY nothing.label "Ei mikään">
-<!ENTITY defaults.label "Massa muutos">
+<!ENTITY defaults.label "Muuta valintaa">
 <!ENTITY local.label "Puuttuville paikallisille tiedostoille:">
 <!ENTITY remote.label "Puuttuville etätiedostoille:">
 <!ENTITY diff.label "Erikokoisille tiedostoille:">
@@ -21,4 +21,4 @@
 <!ENTITY dDownload.access "a">
 <!ENTITY dUpload.access "ä">
 <!ENTITY dNothing.access "t">
-<!ENTITY diff.note "Huomaa, ettei vertailuominaisuus tarkastele tiedostojen sisältöä. Ominaisuus tarkastelee vain tiedostojen olemassaoloa ja niiden kokoa. Aikaleimoja vertaillaan jos &apos;Pidä aikaleimat tahdistettuna&apos; asetus on käytössä.">
+<!ENTITY diff.note "Huomaa, ettei vertailuominaisuus tarkastele tiedostojen sisältöä. Ominaisuus tarkastelee vain tiedostojen olemassaoloa ja niiden kokoa. Aikaleimoja vertaillaan jos 'Pidä aikaleimat tahdistettuna' asetus on käytössä.">

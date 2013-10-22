@@ -25,7 +25,7 @@
 <!ENTITY thisprop "Tämä kansio">
 <!ENTITY folderprop "Kaikki kansiot">
 <!ENTITY filesprop "Kaikki tiedostot">
-<!ENTITY thumbnail "Ikoni">
+<!ENTITY thumbnail "Esikatselukuva">
 <!ENTITY loading "Lataa...">
 <!ENTITY view.label "Näytä">
 <!ENTITY view.accesskey "N">

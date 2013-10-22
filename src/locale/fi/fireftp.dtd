@@ -23,7 +23,7 @@
 <!ENTITY export.access "V">
 <!ENTITY prefbutton.access "A">
 <!ENTITY help.label "Ohje">
-<!ENTITY help.url "http://fireftp.net/help.html">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY parentdir.tip "Näytä ylähakemisto">
 <!ENTITY refresh.tip "Päivitä hakemisto">
 <!ENTITY localpath.tip "Paikallinen polku">
@@ -48,8 +48,8 @@
 <!ENTITY timerem.tip "Aikaa jäljellä">
 <!ENTITY download.tip "Latausnopeus">
 <!ENTITY percent.tip "Prosenttia valmiina">
-<!ENTITY auto.label "Auto">
-<!ENTITY binary.label "Binaarinen">
+<!ENTITY auto.label "Automaattinen">
+<!ENTITY binary.label "Binäärinen">
 <!ENTITY ascii.label "ASCII">
 <!ENTITY openContaining.label "Avaa kyseinen kansio">
 <!ENTITY upload.label "Lähetys">
@@ -66,7 +66,7 @@
 <!ENTITY paste.label "Liitä">
 <!ENTITY makedir.label "Luo hakemisto">
 <!ENTITY makefile.label "Luo tiedosto">
-<!ENTITY symlink.label "Create Symlink">
+<!ENTITY symlink.label "Luo symbolinen linkki">
 <!ENTITY delete.label "Poista">
 <!ENTITY rename.label "Nimeä uudelleen">
 <!ENTITY properties.label "Ominaisuudet">
