@@ -1,4 +1,5 @@
 Components.utils.import("resource://gre/modules/ctypes.jsm");
+Components.utils.import("resource://gre/modules/FormHistory.jsm");
 
 function $(el) {
   return document.getElementById(el);

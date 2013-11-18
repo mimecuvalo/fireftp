@@ -169,7 +169,8 @@ function customExecute() {
     return;
   }
 
-  gFormHistory.addEntry(gCustomCmd.getAttribute("autocompletesearchparam"), cmd);
+  FormHistory.update({ 'op': 'remove', 'fieldname': gCustomCmd.getAttribute("autocompletesearchparam"), value: cmd });
+  FormHistory.update({ 'op': 'add', 'fieldname': gCustomCmd.getAttribute("autocompletesearchparam"), value: cmd });
   gConnection.custom(cmd);
 }
 

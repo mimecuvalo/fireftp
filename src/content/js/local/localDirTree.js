@@ -429,7 +429,8 @@ var localDirTree = {
         if (gLocalPath.value == this.data[x].path
             || (gSlash == "\\" && gLocalPath.value.toLowerCase() == this.data[x].path.toLowerCase())) {
           gLocalPathFocus = gLocalPath.value;                                                      // directory approved
-          gFormHistory.addEntry(gLocalPath.getAttribute("autocompletesearchparam"), gLocalPath.value);
+          FormHistory.update({ 'op': 'remove', 'fieldname': gLocalPath.getAttribute("autocompletesearchparam"), value: gLocalPath.value });
+          FormHistory.update({ 'op': 'add', 'fieldname': gLocalPath.getAttribute("autocompletesearchparam"), value: gLocalPath.value });
           var sString  = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
           sString.data = gLocalPath.value;
           gPrefs.setComplexValue("folder", Components.interfaces.nsISupportsString, sString);      // remember last directory

@@ -369,7 +369,8 @@ var remoteDirTree = {
           return;
         } else if (gRemotePath.value == this.data[x].path) {
           gRemotePathFocus = gRemotePath.value;                                                    // directory approved
-          gFormHistory.addEntry(gRemotePath.getAttribute("autocompletesearchparam"), gRemotePath.value);
+          FormHistory.update({ 'op': 'remove', 'fieldname': gRemotePath.getAttribute("autocompletesearchparam"), value: gRemotePath.value });
+          FormHistory.update({ 'op': 'add', 'fieldname': gRemotePath.getAttribute("autocompletesearchparam"), value: gRemotePath.value });
 
           if (!this.data[x].open && !this.data[x].empty && x == 0) {
             this.updateViewAfter = true;
