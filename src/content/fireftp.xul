@@ -328,7 +328,6 @@
       </vbox>
 
       <splitter   id="leftsplitter"   collapse="before" resizebefore="closest" resizeafter="farthest" oncommand="setInterfaceMode()">
-        <grippy/>
       </splitter>
       <vbox       pack="center">
         <box      id="retrbutton">
@@ -339,7 +338,6 @@
         </box>
       </vbox>
       <splitter   id="rightsplitter"  collapse="after" resizebefore="farthest" resizeafter="closest" oncommand="setInterfaceMode()">
-        <grippy/>
       </splitter>
 
       <vbox id="remoteview" flex="1">
