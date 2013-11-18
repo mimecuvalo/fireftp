@@ -177,11 +177,15 @@
             <rows>
               <row align="center">
                 <label   value="&host.label;"   accesskey="&webhost.access;" control="webhost" tooltiptext="&webhost.tip;"/>
-                <textbox id="webhost" flex="1"  tooltiptext="&webhost.tip;"/>
+                <textbox id="webhost" flex="1"  tooltiptext="&webhost.tip;" onkeyup="webPreview()"/>
               </row>
               <row align="center">
                 <label   value="&prefix.label;" accesskey="&prefix.access;"  control="prefix"  tooltiptext="&prefix.tip;"/>
-                <textbox id="prefix" flex="1"   tooltiptext="&prefix.tip;"/>
+                <textbox id="prefix" flex="1"   tooltiptext="&prefix.tip;" onkeyup="webPreview()"/>
+              </row>
+              <row align="center">
+                <label   value="" />
+                <label   id="webpreview" />
               </row>
             </rows>
           </grid>

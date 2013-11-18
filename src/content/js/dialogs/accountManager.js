@@ -49,6 +49,7 @@ function init() {
 
   onPassiveChange();
   onSftpChange();
+  webPreview();
 
   initialDirChange();
 
@@ -198,6 +199,12 @@ function doDelete() {
   gCallback(gSite);
 
   $('accountManager8').cancelDialog();
+}
+
+function webPreview() {
+  var exampleFile = $('prefix').value + '/example/file.txt';
+  $('webpreview').value = exampleFile + ' -> ' +
+      $('webhost').value + exampleFile.substring($('prefix').value.length);
 }
 
 function doOk() {
