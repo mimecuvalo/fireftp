@@ -19,55 +19,75 @@ function directorySort2(a, b) {
 }
 
 function compareName(a, b) {
-  if (!a.isDirectory() && b.isDirectory())
-    return 1;
-  if (a.isDirectory() && !b.isDirectory())
-    return -1;
-  if (a.leafName.toLowerCase() < b.leafName.toLowerCase())
-    return -1;
-  if (a.leafName.toLowerCase() > b.leafName.toLowerCase())
-    return 1;
-  return 0;
+  try {
+    if (!a.isDirectory() && b.isDirectory())
+      return 1;
+    if (a.isDirectory() && !b.isDirectory())
+      return -1;
+    if (a.leafName.toLowerCase() < b.leafName.toLowerCase())
+      return -1;
+    if (a.leafName.toLowerCase() > b.leafName.toLowerCase())
+      return 1;
+    return 0;
+  } catch (ex) {
+    return 0;
+  }
 }
 
 function compareSize(a, b) {
-  if (!a.isDirectory() && b.isDirectory())
-    return 1;
-  if (a.isDirectory() && !b.isDirectory())
-    return -1;
-  return a.fileSize - b.fileSize;
+  try {
+    if (!a.isDirectory() && b.isDirectory())
+      return 1;
+    if (a.isDirectory() && !b.isDirectory())
+      return -1;
+    return a.fileSize - b.fileSize;
+  } catch (ex) {
+    return 0;
+  }
 }
 
 function compareType(a, b) {
-  if (!a.isDirectory() && b.isDirectory())
-    return 1;
-  if (a.isDirectory() && !b.isDirectory())
-    return -1;
-  if (localTree.getExtension(a.leafName.toLowerCase()) < localTree.getExtension(b.leafName.toLowerCase()))
-    return -1;
-  if (localTree.getExtension(a.leafName.toLowerCase()) > localTree.getExtension(b.leafName.toLowerCase()))
-    return 1;
-  return 0;
+  try {
+    if (!a.isDirectory() && b.isDirectory())
+      return 1;
+    if (a.isDirectory() && !b.isDirectory())
+      return -1;
+    if (localTree.getExtension(a.leafName.toLowerCase()) < localTree.getExtension(b.leafName.toLowerCase()))
+      return -1;
+    if (localTree.getExtension(a.leafName.toLowerCase()) > localTree.getExtension(b.leafName.toLowerCase()))
+      return 1;
+    return 0;
+  } catch (ex) {
+    return 0;
+  }
 }
 
 function compareDate(a, b) {
-  if (!a.isDirectory() && b.isDirectory())
-    return 1;
-  if (a.isDirectory() && !b.isDirectory())
-    return -1;
-  return a.lastModifiedTime - b.lastModifiedTime;
+  try {
+    if (!a.isDirectory() && b.isDirectory())
+      return 1;
+    if (a.isDirectory() && !b.isDirectory())
+      return -1;
+    return a.lastModifiedTime - b.lastModifiedTime;
+  } catch (ex) {
+    return 0;
+  }
 }
 
 function compareLocalAttr(a, b) {
-  if (!a.isDirectory() && b.isDirectory())
-    return 1;
-  if (a.isDirectory() && !b.isDirectory())
-    return -1;
-  if (localTree.convertPermissions(a.isHidden(), a.permissions) < localTree.convertPermissions(b.isHidden(), b.permissions))
-    return -1;
-  if (localTree.convertPermissions(a.isHidden(), a.permissions) > localTree.convertPermissions(b.isHidden(), b.permissions))
-    return 1;
-  return 0;
+  try {
+    if (!a.isDirectory() && b.isDirectory())
+      return 1;
+    if (a.isDirectory() && !b.isDirectory())
+      return -1;
+    if (localTree.convertPermissions(a.isHidden(), a.permissions) < localTree.convertPermissions(b.isHidden(), b.permissions))
+      return -1;
+    if (localTree.convertPermissions(a.isHidden(), a.permissions) > localTree.convertPermissions(b.isHidden(), b.permissions))
+      return 1;
+    return 0;
+  } catch (ex) {
+    return 0;
+  }
 }
 
 function compareRemoteAttr(a, b) {
