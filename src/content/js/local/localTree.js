@@ -260,6 +260,20 @@ var localTree = {
     var start = files ? this.data.length - files.length : 0;
 
     for (var row = start; row < this.data.length; ++row) {
+      if (!localFile.testSize(this.data[row])) {
+        this.displayData.push({ leafName    : this.data[row].leafName,
+                                fileSize    : '',
+                                date        : '',
+                                extension   : '',
+                                attr        : '',
+                                icon        : "moz-icon://" + this.data[row].leafName + "?size=16",
+                                path        : this.data[row].path,
+                                isDirectory : false,
+                                isSymlink   : false,
+                                isHidden    : false });
+        continue;
+      }
+
       this.displayData.push({ leafName    : this.data[row].leafName,
                               fileSize    : this.getFormattedFileSize(row),
                               date        : this.getFormattedDate(row),
