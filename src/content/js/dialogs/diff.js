@@ -2,6 +2,7 @@ var gStrbundle;
 var gArgs;
 var gDiffTree;
 var gRecursive;
+var gCallback;
 var gIos = Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService);
 
 function init() {
@@ -11,6 +12,7 @@ function init() {
   gArgs      = window.arguments;
   gDiffTree  = $('diffTree');
   gRecursive = gArgs[6];
+  gCallback  = gArgs[7];
   $('diff3').getButton("accept").label = gStrbundle.getString("diffSyncBtn");
 
   for (var x = 0; x < gArgs[0].length; ++x) {
@@ -123,6 +125,7 @@ function parseList() {
     gArgs[4][x].action = $("older"   + x).getAttribute('choice');
   }
 
+  gCallback();
   return true;
 }
 

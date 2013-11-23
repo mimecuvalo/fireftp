@@ -168,85 +168,87 @@ function finalDiffCallback(recursive) {
   }
 
   var result = { value : false };
-  window.openDialog("chrome://fireftp/content/diff.xul", "diff", "chrome,modal,dialog,resizable,centerscreen",
-                    gMissingLocalFiles, gMissingRemoteFiles, gDifferentFiles, gNewerFiles, gOlderFiles, result, recursive);
+  var dialogCallback = function() {
+    if (result.value) {
+      gConnection.beginCmdBatch();
 
-  if (result.value) {
-    gConnection.beginCmdBatch();
+      var transferObj           = new transfer();
+      transferObj.prompt        = false;
+      transferObj.localRefresh  = gLocalPath.value;
+      transferObj.remoteRefresh = gRemotePath.value;
 
-    var transferObj           = new transfer();
-    transferObj.prompt        = false;
-    transferObj.localRefresh  = gLocalPath.value;
-    transferObj.remoteRefresh = gRemotePath.value;
+      for (var x = 0; x < gMissingLocalFiles.length;  ++x) {
+        if (gMissingLocalFiles[x].action  == "delete") {
+          remoteDirTree.addDirtyList(gMissingLocalFiles[x].file.parent.path);
+          gConnection.remove(gMissingLocalFiles[x].file.isDirectory(),
+                      gMissingLocalFiles[x].file.path,
+                      "");
+          gConnection.remoteRefreshLater = gRemotePath.value;
+        } else if (gMissingLocalFiles[x].action  != "nothing") {
+          transferObj.start(gMissingLocalFiles[x].action  == "download", gMissingLocalFiles[x].file,
+                            gMissingLocalFiles[x].localParent, gMissingLocalFiles[x].remoteParent);
+        }
 
-    for (var x = 0; x < gMissingLocalFiles.length;  ++x) {
-      if (gMissingLocalFiles[x].action  == "delete") {
-        remoteDirTree.addDirtyList(gMissingLocalFiles[x].file.parent.path);
-        gConnection.remove(gMissingLocalFiles[x].file.isDirectory(),
-                    gMissingLocalFiles[x].file.path,
-                    "");
-        gConnection.remoteRefreshLater = gRemotePath.value;
-      } else if (gMissingLocalFiles[x].action  != "nothing") {
-        transferObj.start(gMissingLocalFiles[x].action  == "download", gMissingLocalFiles[x].file,
-                          gMissingLocalFiles[x].localParent, gMissingLocalFiles[x].remoteParent);
+        if (transferObj.cancel) {
+          return;
+        }
       }
 
-      if (transferObj.cancel) {
-        return;
+      for (var x = 0; x < gMissingRemoteFiles.length; ++x) {
+        if (gMissingRemoteFiles[x].action  == "delete") {
+          localDirTree.addDirtyList(gMissingRemoteFiles[x].file.parent.path);
+          localFile.remove(gMissingRemoteFiles[x].file, false, 1);
+          gConnection.localRefreshLater = gLocalPath.value;
+        } else if (gMissingRemoteFiles[x].action != "nothing") {
+          transferObj.start(gMissingRemoteFiles[x].action == "download", gMissingRemoteFiles[x].file,
+                            gMissingRemoteFiles[x].localParent, gMissingRemoteFiles[x].remoteParent);
+        }
+
+        if (transferObj.cancel) {
+          return;
+        }
       }
+
+      for (var x = 0; x < gDifferentFiles.length; ++x) {
+        if (gDifferentFiles[x].action != "nothing") {
+          transferObj.start(gDifferentFiles[x].action == "download",
+                            gDifferentFiles[x].action == "download" ? gDifferentFiles[x].remoteFile : gDifferentFiles[x].localFile,
+                            gDifferentFiles[x].localParent, gDifferentFiles[x].remoteParent);
+        }
+
+        if (transferObj.cancel) {
+          return;
+        }
+      }
+
+      for (var x = 0; x < gNewerFiles.length; ++x) {
+        if (gNewerFiles[x].action != "nothing") {
+          transferObj.start(gNewerFiles[x].action == "download",
+                            gNewerFiles[x].action == "download" ? gNewerFiles[x].remoteFile : gNewerFiles[x].localFile,
+                            gNewerFiles[x].localParent, gNewerFiles[x].remoteParent);
+        }
+
+        if (transferObj.cancel) {
+          return;
+        }
+      }
+
+      for (var x = 0; x < gOlderFiles.length; ++x) {
+        if (gOlderFiles[x].action != "nothing") {
+          transferObj.start(gOlderFiles[x].action == "download",
+                            gOlderFiles[x].action == "download" ? gOlderFiles[x].remoteFile : gOlderFiles[x].localFile,
+                            gOlderFiles[x].localParent, gOlderFiles[x].remoteParent);
+        }
+
+        if (transferObj.cancel) {
+          return;
+        }
+      }
+
+      gConnection.endCmdBatch();
     }
+  };
 
-    for (var x = 0; x < gMissingRemoteFiles.length; ++x) {
-      if (gMissingRemoteFiles[x].action  == "delete") {
-        localDirTree.addDirtyList(gMissingRemoteFiles[x].file.parent.path);
-        localFile.remove(gMissingRemoteFiles[x].file, false, 1);
-        gConnection.localRefreshLater = gLocalPath.value;
-      } else if (gMissingRemoteFiles[x].action != "nothing") {
-        transferObj.start(gMissingRemoteFiles[x].action == "download", gMissingRemoteFiles[x].file,
-                          gMissingRemoteFiles[x].localParent, gMissingRemoteFiles[x].remoteParent);
-      }
-
-      if (transferObj.cancel) {
-        return;
-      }
-    }
-
-    for (var x = 0; x < gDifferentFiles.length; ++x) {
-      if (gDifferentFiles[x].action != "nothing") {
-        transferObj.start(gDifferentFiles[x].action == "download",
-                          gDifferentFiles[x].action == "download" ? gDifferentFiles[x].remoteFile : gDifferentFiles[x].localFile,
-                          gDifferentFiles[x].localParent, gDifferentFiles[x].remoteParent);
-      }
-
-      if (transferObj.cancel) {
-        return;
-      }
-    }
-
-    for (var x = 0; x < gNewerFiles.length; ++x) {
-      if (gNewerFiles[x].action != "nothing") {
-        transferObj.start(gNewerFiles[x].action == "download",
-                          gNewerFiles[x].action == "download" ? gNewerFiles[x].remoteFile : gNewerFiles[x].localFile,
-                          gNewerFiles[x].localParent, gNewerFiles[x].remoteParent);
-      }
-
-      if (transferObj.cancel) {
-        return;
-      }
-    }
-
-    for (var x = 0; x < gOlderFiles.length; ++x) {
-      if (gOlderFiles[x].action != "nothing") {
-        transferObj.start(gOlderFiles[x].action == "download",
-                          gOlderFiles[x].action == "download" ? gOlderFiles[x].remoteFile : gOlderFiles[x].localFile,
-                          gOlderFiles[x].localParent, gOlderFiles[x].remoteParent);
-      }
-
-      if (transferObj.cancel) {
-        return;
-      }
-    }
-
-    gConnection.endCmdBatch();
-  }
+  window.openDialog("chrome://fireftp/content/diff.xul", "diff", "chrome,dialog,resizable,centerscreen",
+                    gMissingLocalFiles, gMissingRemoteFiles, gDifferentFiles, gNewerFiles, gOlderFiles, result, recursive, dialogCallback);
 }
