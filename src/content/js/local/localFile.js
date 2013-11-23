@@ -211,23 +211,47 @@ var localFile = {
       var libc = ctypes.open("libc.so.6");
 
       var timespec = new ctypes.StructType("timespec", [{"tv_sec": ctypes.unsigned_long}, {"tv_nsec": ctypes.unsigned_long}]);
-      // XXX: wtf? why does declaring the long/shorts of the stat struct type not seem to match up with what's declared in /usr/include/bits/stat.h ?
-      var stat = new ctypes.StructType("stat", [
-         { "st_dev":     ctypes.unsigned_long },  // ID of device containing file
-         { "st_ino":     ctypes.unsigned_long },  // inode number
-         { "st_mode":    ctypes.unsigned_short }, // protection
-         { "st_nlink":   ctypes.unsigned_short }, // number of hard links
-         { "st_uid":     ctypes.unsigned_short }, // user ID of owner
-         { "st_gid":     ctypes.unsigned_short }, // group ID of owner
-         { "st_rdev":    ctypes.unsigned_long },  // device ID (if special file)
-         { "st_size":    ctypes.unsigned_long },  // total size, in bytes
-         { "st_blksize": ctypes.unsigned_long },  // blocksize for filesystem I/O
-         { "st_blocks":  ctypes.unsigned_long },  // number of blocks allocated
-         { "st_atime":   timespec },              // time of last access
-         { "st_mtime":   timespec },              // time of last modification
-         { "st_ctime":   timespec },              // time of last status change
-         { "unused":     ctypes.unsigned_long },  // number of blocks allocated
-      ]);
+      var stat;
+      // http://code.woboq.org/linux/linux/arch/x86/include/uapi/asm/stat.h.html
+      if (navigator.userAgent.indexOf('x86_64') != -1) {
+        stat = new ctypes.StructType("stat", [
+           { "st_dev":     ctypes.unsigned_long },  // ID of device containing file
+           { "st_ino":     ctypes.unsigned_long },  // inode number
+           { "st_nlink":   ctypes.unsigned_long },  // number of hard links
+           { "st_mode":    ctypes.unsigned_int },   // protection
+           { "st_uid":     ctypes.unsigned_int },   // user ID of owner
+           { "st_gid":     ctypes.unsigned_int },   // group ID of owner
+           { "__pad0":     ctypes.unsigned_int },
+           { "st_rdev":    ctypes.unsigned_long },  // device ID (if special file)
+           { "st_size":    ctypes.long },           // total size, in bytes
+           { "st_blksize": ctypes.long },           // blocksize for filesystem I/O
+           { "st_blocks":  ctypes.long },           // number of blocks allocated
+           { "st_atime":   timespec },              // time of last access
+           { "st_mtime":   timespec },              // time of last modification
+           { "st_ctime":   timespec },              // time of last status change
+           { "unused":     ctypes.long },           // number of blocks allocated
+           { "unused2":     ctypes.long },          // number of blocks allocated
+           { "unused3":     ctypes.long },          // number of blocks allocated
+        ]);
+      } else {
+        stat = new ctypes.StructType("stat", [
+           { "st_dev":     ctypes.unsigned_long },  // ID of device containing file
+           { "st_ino":     ctypes.unsigned_long },  // inode number
+           { "st_mode":    ctypes.unsigned_short }, // protection
+           { "st_nlink":   ctypes.unsigned_short }, // number of hard links
+           { "st_uid":     ctypes.unsigned_short }, // user ID of owner
+           { "st_gid":     ctypes.unsigned_short }, // group ID of owner
+           { "st_rdev":    ctypes.unsigned_long },  // device ID (if special file)
+           { "st_size":    ctypes.unsigned_long },  // total size, in bytes
+           { "st_blksize": ctypes.unsigned_long },  // blocksize for filesystem I/O
+           { "st_blocks":  ctypes.unsigned_long },  // number of blocks allocated
+           { "st_atime":   timespec },              // time of last access
+           { "st_mtime":   timespec },              // time of last modification
+           { "st_ctime":   timespec },              // time of last status change
+           { "unused4":    ctypes.unsigned_long },  // number of blocks allocated
+           { "unused5":    ctypes.unsigned_long },  // number of blocks allocated
+        ]);
+      }
 
       // declare __lxstat
       var lstat = libc.declare("__lxstat",    // function name
