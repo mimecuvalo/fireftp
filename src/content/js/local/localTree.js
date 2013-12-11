@@ -1115,6 +1115,17 @@ var localTree = {
 
         var newFile = localFile.init(this.constructPath(newDir.path, zeFiles[x].leafName));
 
+ 
+        if (!this.isCut && zeFiles[x].leafName==newFile.leafName /* is always 1 */ &&
+            newDir.path==currentDir.path) {
+          var newFile_tmp;
+          for (var i = 1; !localFile.verifyExists(newFile_tmp); ++i)
+            newFile_tmp = newFile . "_(" . i . ")"; 
+          newFile= newFile_tmp;   
+        }
+
+
+
         if (newFile.exists() && skipAll) {
           continue;
         }
