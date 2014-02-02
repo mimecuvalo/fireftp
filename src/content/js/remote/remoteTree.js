@@ -1222,6 +1222,10 @@ var remoteTree = {
         }
       }
 
+      if (exists && this.pasteFiles[x].parent.path == newParent) {
+        continue;
+      }
+
       if (exists && skipAll) {
         continue;
       }

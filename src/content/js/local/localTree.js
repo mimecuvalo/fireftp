@@ -1095,6 +1095,7 @@ var localTree = {
     }
 
     var newParent = dest ? dest : gLocalPath.value;
+    var currentDir = dest ? this.oldParent : newParent;
 
     if (!localFile.verifyExists(zeFiles[0])) {
       return;
@@ -1128,6 +1129,16 @@ var localTree = {
         }
 
         var newFile = localFile.init(this.constructPath(newDir.path, zeFiles[x].leafName));
+
+        if (this.isCut && newFile.exists() && zeFiles[x].parent.path == newDir.path) {
+          continue;
+        }
+
+        var counter = 1;
+        while (!this.isCut && newFile.exists() && zeFiles[x].parent.path == newDir.path) {
+          newFile = localFile.init(this.constructPath(newDir.path, counter + '_' + zeFiles[x].leafName));
+          ++counter;
+        }
 
         if (newFile.exists() && skipAll) {
           continue;
@@ -1163,7 +1174,7 @@ var localTree = {
           }
         }
 
-        var innerEx = gFireFTPUtils.cutCopy(this.isCut, zeFiles[x], newFile, newDir, null);
+        var innerEx = gFireFTPUtils.cutCopy(this.isCut, zeFiles[x], newFile, newDir, newFile.leafName);
 
         if (innerEx) {
           throw innerEx;
@@ -1175,8 +1186,6 @@ var localTree = {
     } finally {
       --gProcessing;
     }
-
-    var currentDir = dest ? this.oldParent : newParent;
 
     if (this.isCut && anyFolders) {
       var refreshIndex = dest ? localDirTree.indexOfPath(newParent) : localDirTree.indexOfPath(this.oldParent);
