@@ -2,7 +2,7 @@
 <!ENTITY asciiTitle "ASCII-Dateitypen">
 <!ENTITY general.label "Allgemein">
 <!ENTITY messages.label "Meldungen">
-<!ENTITY welcome.label "Willkommensmeldung anzeigen">
+<!ENTITY welcome.label "Willkommensmeldung des FTP-Servers beim Anmelden anzeigen">
 <!ENTITY error.label "Fehlermeldungen anzeigen">
 <!ENTITY sessions.label "Sitzungen">
 <!ENTITY rememberp.label "Passwörter speichern">

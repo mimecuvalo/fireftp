@@ -1,4 +1,4 @@
-<!ENTITY title "Beheren van accounts">
+<!ENTITY title "Accountbeheer">
 <!ENTITY main "Algemeen">
 <!ENTITY connections "Verbinding">
 <!ENTITY advanced "Geavanceerd">
@@ -22,7 +22,7 @@
 <!ENTITY authssl.label "Auth SSL (Beter)">
 <!ENTITY implicit.label "Impliciete SSL (Goed)">
 <!ENTITY sftp.label "SFTP">
-<!ENTITY privatekey.label "Private Sleutel:">
+<!ENTITY privatekey.label "Private sleutel:">
 <!ENTITY pkbrowse.label "Bladeren…">
 <!ENTITY pkconvert.label "Omzetten…">
 <!ENTITY initialdir "Beginmap">
@@ -32,19 +32,19 @@
 <!ENTITY remotedir.label "Op server:">
 <!ENTITY current.label "Huidige gebruiken">
 <!ENTITY treesync.label "Mappen gesynchroniseerd houden tijdens navigatie">
-<!ENTITY webhost "Webserver (gebruikt door de 'Online bekijken'-mogelijkheid)">
+<!ENTITY webhost "Webserver (gebruikt door de functie ‘Online bekijken’)">
 <!ENTITY webhost.tip "Voorbeeld: http://www.voorbeeld.com">
 <!ENTITY prefix.label "Prefix:">
 <!ENTITY prefix.tip "Te verwijderen prefix van het FTP-deel van de URL, bijv. /public_html">
 <!ENTITY caseleave.label "Lettergrootte ongewijzigd houden">
 <!ENTITY caselower.label "Omzetten naar kleine letters">
 <!ENTITY caseupper.label "Omzetten naar hoofdletters">
-<!ENTITY timezone.label "Tijdzone verschil">
+<!ENTITY timezone.label "Tijdzoneverschil">
 <!ENTITY hours.label "Uren:">
 <!ENTITY minutes.label "Minuten:">
-<!ENTITY notes.label "Nota's">
-<!ENTITY encoding.label "Server encodering">
-<!ENTITY charset.label "Karakterset:">
+<!ENTITY notes.label "Opmerkingen">
+<!ENTITY encoding.label "Servercodering">
+<!ENTITY charset.label "Tekenset:">
 <!ENTITY account.access "A">
 <!ENTITY folder.access "e">
 <!ENTITY host.access "S">

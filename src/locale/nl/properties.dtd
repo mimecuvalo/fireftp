@@ -7,8 +7,8 @@
 <!ENTITY user "Gebruiker:">
 <!ENTITY groupl "Groep:">
 <!ENTITY attr "Attributen:">
-<!ENTITY hash "Hashcodes genereren:">
-<!ENTITY perm "Permissies:">
+<!ENTITY hash "Hashes:">
+<!ENTITY perm "Toegang:">
 <!ENTITY reado "Alleen-lezen">
 <!ENTITY hidden "Verborgen">
 <!ENTITY owner "Eigenaar">

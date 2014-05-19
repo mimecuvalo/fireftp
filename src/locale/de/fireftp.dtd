@@ -23,7 +23,7 @@
 <!ENTITY export.access "E">
 <!ENTITY prefbutton.access "E">
 <!ENTITY help.label "Hilfe (engl.)">
-<!ENTITY help.url "http://fireftp.net/help.html">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY parentdir.tip "Eine Ebene nach oben wechseln">
 <!ENTITY refresh.tip "Ordnerliste aktualisieren">
 <!ENTITY localpath.tip "Lokaler Pfad">
@@ -95,5 +95,5 @@
 <!ENTITY searchLocal.access "L">
 <!ENTITY searchRemote.access "E">
 <!ENTITY searchOptions.access "E">
-<!ENTITY mozilla.quote "And, <html:em style=\'font-size:1.3em;line-height:0;\'>lo</html:em>, from the <html:em style=\'font-size:1.3em;line-height:0;\'>darkness</html:em> they emerged: a host of the faithful to <html:em style=\'font-size:1.3em;line-height:0;\'>aide</html:em> the reborn beast in its quest to <html:em style=\'font-size:1.3em;line-height:0;\'>reclaim</html:em> the land.  Together they <html:em style=\'font-size:1.3em;line-height:0;\'>extended</html:em> the power of the beast and <html:em style=\'font-size:1.3em;line-height:0;\'>spread</html:em> the good news of its return.  One by one the followers of <html:em style=\'font-size:1.3em;line-height:0;\'>Mammon</html:em> were converted and their hearts were set <html:em style=\'font-size:1.3em;line-height:0;\'>aflame</html:em>.">
+<!ENTITY mozilla.quote "And, <html:em>lo</html:em>, from the <html:em>darkness</html:em> they emerged: a host of the faithful to <html:em>aide</html:em> the reborn beast in its quest to <html:em>reclaim</html:em> the land. Together they <html:em>extended</html:em> the power of the beast and <html:em>spread</html:em> the good news of its return. One by one the followers of <html:em>Mammon</html:em> were converted and their hearts were set <html:em>aflame</html:em>.">
 <!ENTITY mozilla.from "from <html:strong>The Book of Mozilla</html:strong>, 8:2">

@@ -1,14 +1,14 @@
-<!ENTITY title "Programma's">
+<!ENTITY title "Programma’s">
 <!ENTITY add.label "Toevoegen">
 <!ENTITY remove.label "Verwijderen">
 <!ENTITY extensions.label "Extensies">
-<!ENTITY programs.label "Programma's">
-<!ENTITY details.label "Details programma">
+<!ENTITY programs.label "Programma’s">
+<!ENTITY details.label "Programmadetails">
 <!ENTITY name.label "Naam">
 <!ENTITY exec.label "Pad">
 <!ENTITY browse.label "Bladeren">
 <!ENTITY args.label "Argumenten">
-<!ENTITY argshelp1.label "Als bij 'Argumenten' niets wordt ingevuld, dan wordt de bestandsnaam als argument doorgegeven.">
+<!ENTITY argshelp1.label "Als bij ‘Argumenten’ niets wordt ingevuld, dan wordt de bestandsnaam als argument doorgegeven.">
 <!ENTITY argshelp2.label "Gebruik &#37;file&#37; om het door te geven bestand aan te duiden in speciale argumenten.">
 <!ENTITY apply.label "Toepassen">
 <!ENTITY adde.accesskey "T">
