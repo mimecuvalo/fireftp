@@ -13,6 +13,10 @@ html, body {
   clear: both;
 }
 
+img {
+  border: 0;
+}
+
 a, a:visited {
   color: #EEAA00;
 }
@@ -50,10 +54,6 @@ body {
 
 #nav > #logo {
   padding: 0;
-}
-
-#logo img {
-  border: 0;
 }
 
 #content,
@@ -250,4 +250,43 @@ div.hr hr {
 #ad span {
   font-size: 0.7em;
   color: #999;
+}
+
+/*donate*/
+#donations th,
+#donations td {
+  vertical-align: top;
+}
+#donations th,
+#donations td {
+  padding: 0 10px;
+}
+#total td {
+  font-weight: bold;
+}
+#total td {
+  border-top: 3px double black;
+}
+
+
+/*help*/
+h4 {
+  margin: 5px 0;
+  color: #0066cc;
+  cursor: pointer;
+}
+
+.stretcher {
+  margin: 0 0 0 20px;
+  display: none;
+}
+
+#search {
+  background-color: #00ccff;
+  border: 1px solid #999;
+}
+
+
+.strike {
+  text-decoration: line-through;
 }
