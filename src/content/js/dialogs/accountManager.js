@@ -246,7 +246,7 @@ function doOk() {
   gSite.login            = $('login').value.trim();
   gSite.password         = $('password').value;
   gSite.anonymous        = $('anonymous').checked;
-	gSite.protocol         = $('security').value == 'sftp' ? 'ssh2' : 'ftp';
+  gSite.protocol         = $('security').value == 'sftp' ? 'ssh2' : 'ftp';
   gSite.security         = $('security').value;
   gSite.pasvmode         = $('pasvmode').checked;
   gSite.ipmode           = $('ipmode').checked;

@@ -57,8 +57,8 @@ baseProtocol.prototype = {
   controlTransport     : null,
   controlInstream      : null,
   controlOutstream     : null,
-  dataSocket           : null,           // only used with (*ahem* lame *ahem*) protocols like FTP that need a second socket 
-  
+  dataSocket           : null,           // only used with (*ahem* lame *ahem*) protocols like FTP that need a second socket
+
   doingCmdBatch        : false,
 
   connectedHost        : "",             // name of the host we connect to plus username

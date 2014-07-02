@@ -78,7 +78,7 @@ function showLog() {
 
 function logQueueMode() {
   gPrefs.setIntPref("logqueue", $('logQueueTabs').selectedIndex);
-	queueTree.updateView();
+  queueTree.updateView();
 }
 
 function filter(display, type) {

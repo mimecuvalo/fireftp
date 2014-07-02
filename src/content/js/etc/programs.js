@@ -12,7 +12,7 @@ function loadPrograms() {
       var programData = "";
       let (str = {}) {
         let read = 0;
-        do { 
+        do {
           read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
           programData += str.value;
         } while (read != 0);

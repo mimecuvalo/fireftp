@@ -2,7 +2,7 @@ function ssh2Mozilla(observer) {
   inherit(this, new baseProtocol());
   this.observer = observer;
   this.observer.version = this.version;
-  
+
   this.transferProgress = {
     id : '',
     timeStart : 0,
@@ -435,7 +435,7 @@ ssh2Mozilla.prototype = {
     }
 
     if (success) {
-      this.observer.onAppendLog("ok", 'input', "info");  // todo 
+      this.observer.onAppendLog("ok", 'input', "info");  // todo
     }
 
     if (this.sftp_client) {

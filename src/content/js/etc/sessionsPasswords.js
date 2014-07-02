@@ -515,7 +515,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
       var siteData = "";
       let (str = {}) {
         let read = 0;
-        do { 
+        do {
           read = cstream.readString(0xffffffff, str); // read as much as we can and put it in str.value
           siteData += str.value;
         } while (read != 0);
@@ -657,7 +657,7 @@ function loadSiteManager(pruneTemp, importFile) {             // read gSiteManag
                   gSiteManager[x].password = logins[y].password;
 
                   // migrate
-                  gLoginManager.removeLogin(logins[y]);                  
+                  gLoginManager.removeLogin(logins[y]);
                   var recordedHost = (gSiteManager[x].host.indexOf("ftp.") == 0 ? '' : "ftp.") + gSiteManager[x].host + ':' + gSiteManager[x].port;
                   var loginInfo    = new gLoginInfo(recordedHost, "FireFTP", null, gSiteManager[x].login, gSiteManager[x].password, "", "");
                   gLoginManager.addLogin(loginInfo);
