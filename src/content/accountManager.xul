@@ -6,7 +6,7 @@
 <!DOCTYPE dialog [
 <!ENTITY % acctDTD SYSTEM "chrome://fireftp/locale/accountManager.dtd" >
 %acctDTD;
-<!ENTITY % charsetDTD SYSTEM "chrome://global/locale/charsetOverlay.dtd" >
+<!ENTITY % charsetDTD SYSTEM "chrome://global/locale/charsetMenu.dtd" >
 %charsetDTD;
 ]>
 <!-- Careful: if the id of the dialog is updated you have to update accountManager.js -->
@@ -205,70 +205,12 @@
           <groupbox orient="horizontal" align="center" flex="1">
             <caption label="&encoding.label;"/>
             <label   value="&charset.label;" control="encoding"/>
-            <button id           = "encoding"
-                    type         = "menu"
-                    label        = "UTF-8"
-                    datasources  = "rdf:charset-menu"
-                    ref          = "NC:BrowserCharsetMenuRoot"
-                    onpopupshown = "createMenu('more-menu');"
-                    oncommand    = "chooseCharset(event)">   <!-- modified from browser.xul -->
+            <button id             = "encoding"
+                    type           = "menu"
+                    label          = "UTF-8"
+                    onpopupshowing = "CharsetMenu.build(event.target, false, false);"
+                    oncommand      = "chooseCharset(event)">   <!-- modified from browser.xul -->
               <menupopup>
-                <menu label="&charsetMenuMore1.label;" accesskey="&charsetMenuMore1.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore1CharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
-                <menu label="&charsetMenuMore2.label;" accesskey="&charsetMenuMore2.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore2CharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
-                <menu label="&charsetMenuMore3.label;" accesskey="&charsetMenuMore3.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore3CharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
-                <menu label="&charsetMenuMore4.label;" accesskey="&charsetMenuMore4.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore4CharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
-                <menu label="&charsetMenuMore5.label;" accesskey="&charsetMenuMore5.accesskey;" datasources="rdf:charset-menu" ref="NC:BrowserMore5CharsetMenuRoot">
-                  <template>
-                    <rule>
-                      <menupopup>
-                        <menuitem uri="..." label="rdf:http://home.netscape.com/NC-rdf#Name"/>
-                      </menupopup>
-                    </rule>
-                  </template>
-                  <menupopup>
-                  </menupopup>
-                </menu>
-                <menuitem id="UTF-8" label="Unicode (UTF-8)"/>
               </menupopup>
             </button>
           </groupbox>

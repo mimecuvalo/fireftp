@@ -8,6 +8,13 @@ var gCancelCallback;
 var gAutoAccount = false;
 var gOrigAccount;
 
+let Ci = Components.interfaces;
+let Cu = Components.utils;
+
+Cu.import("resource://gre/modules/XPCOMUtils.jsm");
+XPCOMUtils.defineLazyModuleGetter(this, "CharsetMenu",
+    "resource://gre/modules/CharsetMenu.jsm");
+
 function init() {
   setTimeout(window.sizeToContent, 0);
 
@@ -183,8 +190,8 @@ function chooseCharset(event) {
   var fromUTF8 = Components.classes["@mozilla.org/intl/scriptableunicodeconverter"].getService(Components.interfaces.nsIScriptableUnicodeConverter);
 
   try {
-    fromUTF8.charset = node.getAttribute('id');
-    $('encoding').setAttribute("label", node.getAttribute('id'));
+    fromUTF8.charset = node.getAttribute('charset');
+    $('encoding').setAttribute("label", node.getAttribute('charset'));
   } catch (ex) {
     $('encoding').setAttribute("label", "UTF-8");
   }
