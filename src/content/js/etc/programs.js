@@ -221,12 +221,8 @@ function remoteLaunchProgram(extensionIndex, programIndex, fileIndex) {
 
         let remoteFile = remoteTree.data[x];
 
-        var func = function() {
-          var subFunc = function() { launchProgram(extensionIndex, programIndex, tmpFile, remoteFile); };
-          setTimeout(subFunc, 0);                                                                     // let the queue finish up
-        };
-
-        gConnection.download(remoteFile.path, tmpFile.path, remoteFile.fileSize, false, 0, false, func, remoteFile);
+        gConnection.download(remoteFile.path, tmpFile.path, remoteFile.fileSize, false, 0, false, null, remoteFile);
+        launchProgram(extensionIndex, programIndex, tmpFile, remoteFile);
       }
     }
   } catch (ex) {
