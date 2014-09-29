@@ -12,13 +12,8 @@
     <em:name>FireFTP</em:name>
     <em:version>__VERSION__</em:version>
     <em:id>{a7c6cf7f-112c-4500-a7ea-39801a327e5f}</em:id>
-    <em:file>
-      <Description about="urn:mozilla:extension:file:fireftp.jar">
-        <em:package>content/</em:package>
-        <em:locale>locale/__l10n__/</em:locale>
-        <em:skin>skin/</em:skin>
-      </Description>
-    </em:file>
+    <em:unpack>true</em:unpack>
+    <em:type>2</em:type>
     <!-- Firefox -->
     <em:targetApplication>
       <Description>
