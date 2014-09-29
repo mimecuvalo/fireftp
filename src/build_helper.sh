@@ -11,20 +11,11 @@ fi
 
 cp -R icons chrome/icons
 
-if [ $FIREFTP_MASTER -eq 1 ]
-then
-  sed -e s/__l10n__/$FIREFTP_LANG/g \
-      -e s/__VERSION__/$FIREFTP_VER/g \
-      -e s/__MINVERSION__/$FIREFTP_MIN/g \
-      -e s/__MAXVERSION__/$FIREFTP_MAX/g \
-      install.rdf.master > install.rdf
-else
-  sed -e s/__l10n__/$FIREFTP_LANG/g \
-      -e s/__VERSION__/$FIREFTP_VER/g \
-      -e s/__MINVERSION__/$FIREFTP_MIN/g \
-      -e s/__MAXVERSION__/$FIREFTP_MAX/g \
-      install.rdf.in > install.rdf
-fi
+sed -e s/__l10n__/$FIREFTP_LANG/g \
+    -e s/__VERSION__/$FIREFTP_VER/g \
+    -e s/__MINVERSION__/$FIREFTP_MIN/g \
+    -e s/__MAXVERSION__/$FIREFTP_MAX/g \
+    install.rdf.in > install.rdf
 
 sed -e s/__VERSION__/$FIREFTP_VER/g content/js/etc/globals.js.in > content/js/etc/globals.js
 
