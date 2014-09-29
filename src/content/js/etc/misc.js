@@ -329,7 +329,7 @@ function parseArguments(args) {
     return {};
   }
   args = args[1].split('&');
-  
+
   var parsedArgs = {};
   for (var x = 0; x < args.length; ++x) {
     var split = args[x].split('=');

@@ -5,7 +5,7 @@ function readPreferences() {
     gConcurrent              = gPrefs.getIntPref ("concurrent");
     gDebugMode               = gPrefs.getBoolPref("debugmode");
     gDisableDestructMode     = gPrefs.getBoolPref("destructmode");
-		gDisableFavicon          = gPrefs.getBoolPref("disablefavicon");
+    gDisableFavicon          = gPrefs.getBoolPref("disablefavicon");
     gDonated                 = gPrefs.getBoolPref("donated");
     gErrorMode               = gPrefs.getBoolPref("errormode");
     gInterfaceMode           = gPrefs.getIntPref ("interfacemode");

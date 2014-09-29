@@ -8,7 +8,7 @@
         title          = "&title;"
         width          = "850"
         height         = "500"
-				persist        = "screenX screenY width height"
+        persist        = "screenX screenY width height"
         xmlns          = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         buttons        = "accept, cancel"
         onload         = "init()"
@@ -66,21 +66,21 @@
           <label  value="&diff.label;"/>
           <button label="&download.label;" accesskey="&dDownload.access;" oncommand="setDefault(2, 'diff',    'download')"/>
           <button label="&upload.label;"   accesskey="&dUpload.access;"   oncommand="setDefault(2, 'diff',    'upload')"/>
-					<spacer />
+          <spacer />
           <button label="&nothing.label;"  accesskey="&dNothing.access;"  oncommand="setDefault(2, 'diff',    'nothing')"/>
         </row>
         <row align="center" id="newerRow">
           <label  value="&newer.label;"/>
           <button label="&download.label;"                                oncommand="setDefault(3, 'newer',   'download')"/>
           <button label="&upload.label;"                                  oncommand="setDefault(3, 'newer',   'upload')"/>
-					<spacer />
+          <spacer />
           <button label="&nothing.label;"                                 oncommand="setDefault(3, 'newer',   'nothing')"/>
         </row>
         <row align="center" id="olderRow">
           <label  value="&older.label;"/>
           <button label="&download.label;"                                oncommand="setDefault(4, 'older',   'download')"/>
           <button label="&upload.label;"                                  oncommand="setDefault(4, 'older',   'upload')"/>
-					<spacer />
+          <spacer />
           <button label="&nothing.label;"                                 oncommand="setDefault(4, 'older',   'nothing')"/>
         </row>
       </rows>

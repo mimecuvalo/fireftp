@@ -76,7 +76,7 @@ ChromeExtensionHandler.prototype = {
   },
 
   QueryInterface : XPCOMUtils.generateQI([Components.interfaces.nsIProtocolHandler, Components.interfaces.nsISupports, Components.interfaces.nsIObserver]),
-	observe: function(){}
+  observe: function(){}
 };
 
 var components = [ChromeExtensionHandler];                                                                // register components

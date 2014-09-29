@@ -28,7 +28,7 @@ FireFTPUtils.prototype = {
   contractID        : "@nightlight.ws/fireftputils;1",
   _xpcom_categories : [{ category: 'FireFTP Utilities', service: true }],
   QueryInterface    : XPCOMUtils.generateQI([Components.interfaces.nsIFireFTPUtils, Components.interfaces.nsISupports, Components.interfaces.nsIObserver]),
-	observe: function(){},
+  observe: function(){},
 
   hiddenMode        : false,
 

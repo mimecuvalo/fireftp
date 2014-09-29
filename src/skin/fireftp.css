@@ -42,7 +42,7 @@ textbox[type="number"][hidespinbuttons="true"] {
 /*----------------[ fireftp.xul ]-----------------*/
 
 toolbar {
-	-moz-appearance     : none;
+  -moz-appearance     : none;
 }
 
 toolbarbutton {
@@ -299,7 +299,7 @@ treechildren[search="true"] {
   border-top                : 2px solid;
   -moz-border-top-colors    : ThreeDShadow ThreeDHighlight !important;
   border-bottom             : 1px solid;
-  -moz-border-bottom-colors : transparent;  
+  -moz-border-bottom-colors : transparent;
 }
 
 #searchClosebutton,
@@ -376,7 +376,7 @@ treechildren[search="true"] {
   -moz-border-top-colors    : ThreeDShadow    ThreeDDarkShadow;
   -moz-border-right-colors  : ThreeDHighlight ThreeDLightShadow;
   -moz-border-bottom-colors : ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors   : ThreeDShadow    ThreeDDarkShadow;  
+  -moz-border-left-colors   : ThreeDShadow    ThreeDDarkShadow;
 }
 
 /* Popup Icons */
@@ -479,7 +479,7 @@ image.isMultiple {
 
 .textfield {
   -moz-appearance     : none;
-	background-color    : transparent;
+  background-color    : transparent;
   border              : 0px;
   margin              : 0px;
   width               : 400px;

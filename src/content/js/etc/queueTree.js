@@ -49,7 +49,7 @@ var queueTree = {
     }
 
     return 0;
-  }, 
+  },
 
   getImageSrc : function(row, col)  {
     return row >= 0 && row < this.data.length && col.id == "queuesource" && this.data[row].icon ? this.data[row].icon : "";
