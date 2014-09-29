@@ -221,6 +221,30 @@ var queueTree = {
 
       var index = -1;
 
+      var nextTransferEndCommandIndex = -1;
+      for (var y = 0; y < gConnections[x].eventQueue.length; ++y) {
+        if (y > 5) {
+          // We only check near the beginning of the queue.
+          break;
+        }
+        if (gConnections[x].eventQueue[y].cmd == 'transferEnd') {
+          nextTransferEndCommandIndex = y;
+          break;
+        }
+      }
+
+      var nextFXPTransferEndCommandIndex = -1;
+      for (var y = 0; y < gConnection.eventQueue.length; ++y) {
+        if (y > 5) {
+          // We only check near the beginning of the queue.
+          break;
+        }
+        if (gConnection.eventQueue[y].cmd == 'transferEnd') {
+          nextFXPTransferEndCommandIndex = y;
+          break;
+        }
+      }
+
       if (gConnections[x].dataSocket && gConnections[x].dataSocket.id) {
         for (var y = 0; y < this.data.length; ++y) {
           if (this.data[y].id == gConnections[x].dataSocket.id) {
@@ -228,9 +252,9 @@ var queueTree = {
             break;
           }
         }
-      } else if (gConnections[x].protocol == 'ssh2' && gConnections[x].eventQueue.length > 1 && gConnections[x].eventQueue[1].cmd == "transferEnd") {
+      } else if (gConnections[x].protocol == 'ssh2' && nextTransferEndCommandIndex != -1) {
         for (var y = 0; y < this.data.length; ++y) {
-          if (this.data[y].id == gConnections[x].eventQueue[1].options.id) {
+          if (this.data[y].id == gConnections[x].eventQueue[nextTransferEndCommandIndex].options.id) {
             index = y;
             break;
           }
@@ -242,7 +266,7 @@ var queueTree = {
       }
 
       if ((gConnections[x].dataSocket && gConnections[x].dataSocket.id == this.data[index].id && this.data[index].typeAct == "upload" && gConnections[x].dataSocket.progressEventSink.compressStream)
-       || (this.data[index].typeO == 'fxp'  && gConnection.eventQueue.length > 1 && gConnection.eventQueue[1].cmd == "transferEnd" && gConnection.eventQueue[1].options.id == this.data[index].id)) {
+       || (this.data[index].typeO == 'fxp' && nextFXPTransferEndCommandIndex != -1 && gConnection.eventQueue[nextFXPTransferEndCommandIndex].options.id == this.data[index].id)) {
         var encryptedLabel       = gConnections[x].security ? ", "
           + (gConnections[x].protocol != "ftp" || gConnections[x].securityMode == "P" ? gStrbundle.getString("dataEncrypted")
                                                                                       : gStrbundle.getString("dataNotEncrypted")) : "";
