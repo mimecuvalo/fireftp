@@ -51,22 +51,22 @@ toolbarbutton {
 
 #retrieveButton {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 16px 16px 0px);
+  -moz-image-region   : rect(0 16px 16px 0);
 }
 #retrieveButton:not([disabled="true"]):hover,
 #retrieveButton[buttonover="true"] {
-  -moz-image-region  : rect(16px 16px 32px 0px);
+  -moz-image-region  : rect(16px 16px 32px 0);
 }
 #retrieveButton[disabled="true"] {
-  -moz-image-region  : rect(32px 16px 48px 0px);
+  -moz-image-region  : rect(32px 16px 48px 0);
 }
 #retrieveButton:not([disabled="true"]):hover:active {
-  -moz-image-region  : rect(48px 16px 64px 0px);
+  -moz-image-region  : rect(48px 16px 64px 0);
 }
 
 #storeButton {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 32px 16px 16px);
+  -moz-image-region   : rect(0 32px 16px 16px);
 }
 #storeButton:not([disabled="true"]):hover,
 #storeButton[buttonover="true"] {
@@ -81,7 +81,7 @@ toolbarbutton {
 
 .upButton {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 48px 16px 32px);
+  -moz-image-region   : rect(0 48px 16px 32px);
 }
 .upButton:not([disabled="true"]):hover,
 .upButton[buttonover="true"] {
@@ -96,7 +96,7 @@ toolbarbutton {
 
 .refreshButton {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 64px 16px 48px);
+  -moz-image-region   : rect(0 64px 16px 48px);
 }
 .refreshButton:not([disabled="true"]):hover,
 .refreshButton[buttonover="true"] {
@@ -115,19 +115,19 @@ treechildren::-moz-tree-image(nameCol) {
 
 .fileTree::-moz-tree-image(isFolder), .dirTree::-moz-tree-image(closed) {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 79px 16px 64px);
+  -moz-image-region   : rect(0 79px 16px 64px);
   margin-right        : 2px;
 }
 
 .dirTree::-moz-tree-image(open) {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 96px 16px 80px);
+  -moz-image-region   : rect(0 96px 16px 80px);
   margin-right        : 1px;
 }
 
 .fileTree::-moz-tree-image(isLink) {
   list-style-image    : url("chrome://fireftp/skin/icons/fireftp.png");
-  -moz-image-region   : rect(0px 112px 16px 96px);
+  -moz-image-region   : rect(0 112px 16px 96px);
 }
 
 .fileTree::-moz-tree-cell-text(hidden), .fileTree::-moz-tree-cell-text(cut), .dirTree::-moz-tree-cell-text(hidden) {
@@ -138,7 +138,7 @@ treechildren::-moz-tree-image(nameCol) {
   margin-left         : 3px;
   margin-right        : 3px;
   -moz-box-pack       : center;
-  min-width           : 0px;
+  min-width           : 0;
 }
 
 #localsize, #remotesize, #queuebytes, #queueela, #queuerem, #queuerate, #queuepercent {
@@ -171,12 +171,12 @@ statusbarpanel {
 }
 
 #statusmeterpanel {
-  padding             : 0px 4px;
+  padding             : 0 4px;
 }
 
 #statusmeter {
   min-width           : 96px;
-  margin              : 1px 0px;
+  margin              : 1px 0;
 }
 
 #remotepath[disconnected="true"] {
@@ -184,7 +184,7 @@ statusbarpanel {
 }
 
 #localdirtree treecols, #remotedirtree treecols {
-  height              : 0px;
+  height              : 0;
 }
 
 treechildren::-moz-tree-cell-text(dropBefore, nameCol, overName) {
@@ -246,23 +246,22 @@ treechildren[search="true"] {
 #page-proxy-deck, #page-proxy-favicon, #page-proxy-button {
   width               : 16px;
   height              : 16px;
-  margin              : 0px;
-  padding             : 0px;
+  margin              : 0;
+  padding             : 0;
 }
 
 #localpath, #remotepath {
   width: 7em;
   min-width: 7em;
   -moz-appearance: none;
-  border: 0;
   box-shadow: 0 1px rgba(255, 255, 255, 0.2);
   margin: 3px 4px;
   padding: 0;
   border-radius: 3px;
   min-height: 22px;
   border: 1px solid transparent;
-  background: -moz-linear-gradient(#D6D6D6, #D6D6D6 1px, #F7F7F7 1px, #F7F7F7 2px, #FFF 2px, #FFF),
-              -moz-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2));
+  background-image: -moz-linear-gradient(#D6D6D6, #D6D6D6 1px, #F7F7F7 1px, #F7F7F7 2px, #FFF 2px, #FFF),
+                    -moz-linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2));
   background-origin: padding-box, border-box;
   background-clip: padding-box, border-box;
 }
@@ -308,41 +307,41 @@ treechildren[search="true"] {
   padding             : 3px 2px 4px 2px !important;
   list-style-image    : url("chrome://fireftp/skin/icons/close.png");
   -moz-appearance     : none;
-  -moz-image-region   : rect(0px, 16px, 16px, 0px);
+  -moz-image-region   : rect(0, 16px, 16px, 0);
 }
 
 #searchClosebutton > .toolbarbutton-icon,
 #customClosebutton > .toolbarbutton-icon {
-  -moz-margin-end     : 0px !important;
+  -moz-margin-end     : 0 !important;
   -moz-padding-end    : 2px !important;
   -moz-padding-start  : 2px !important;
 }
 
 #searchClosebutton:hover,
 #customClosebutton:hover {
-  -moz-image-region   : rect(0px, 32px, 16px, 16px);
+  -moz-image-region   : rect(0, 32px, 16px, 16px);
 }
 
 #searchClosebutton:hover:active,
 #customClosebutton:hover:active {
-  -moz-image-region   : rect(0px, 48px, 16px, 32px);
+  -moz-image-region   : rect(0, 48px, 16px, 32px);
 }
 
 #searchStatusIcon {
   list-style-image    : none;
   margin-top          : 2px;
-  margin-bottom       : 0px;
+  margin-bottom       : 0;
   -moz-margin-start   : 12px;
-  -moz-margin-end     : 0px;
+  -moz-margin-end     : 0;
   width               : 16px;
   height              : 16px;
 }
 
 #searchStatus {
-  margin-top          : 0px;
-  margin-bottom       : 0px;
+  margin-top          : 0;
+  margin-bottom       : 0;
   -moz-margin-start   : 3px;
-  -moz-margin-end     : 0px;
+  -moz-margin-end     : 0;
   padding             : 2px;
 }
 
@@ -354,7 +353,7 @@ treechildren[search="true"] {
 #customCmd {
   -moz-appearance     : none;
   border              : none;
-  margin              : 0px;
+  margin              : 0;
 }
 
 #searchFile[status="notfound"] {
@@ -368,7 +367,7 @@ treechildren[search="true"] {
 }
 
 #lqtabs {
-  padding             : 0px;
+  padding             : 0;
 }
 
 #cmdlog {
@@ -385,15 +384,15 @@ treechildren[search="true"] {
   width: 64px;
   padding: 0;
   list-style-image: url("chrome://fireftp/skin/icons/identity.png");
-  -moz-image-region: rect(0px, 64px, 64px, 0px);
+  -moz-image-region: rect(0, 64px, 64px, 0);
 }
 
 #identity-popup.verifiedDomain > #identity-popup-container > #identity-popup-icon {
-  -moz-image-region: rect(64px, 64px, 128px, 0px);
+  -moz-image-region: rect(64px, 64px, 128px, 0);
 }
 
 #identity-popup.verifiedIdentity > #identity-popup-container > #identity-popup-icon {
-  -moz-image-region: rect(128px, 64px, 192px, 0px);
+  -moz-image-region: rect(128px, 64px, 192px, 0);
 }
 
 /* Popup Body Text */
@@ -450,8 +449,8 @@ menuitem[defaultAction="true"] {
 #fileBox {
   border-top          : 1px solid black;
   border-bottom       : 1px solid black;
-  margin              : 5px 0px 5px 0px;
-  padding             : 5px 0px 5px 0px;
+  margin              : 5px 0;
+  padding             : 5px 0;
 }
 
 /*----------------[ diff.xul ]-----------------*/
@@ -464,24 +463,24 @@ menuitem[defaultAction="true"] {
 
 image.isFolder {
   list-style-image    : url("chrome://fireftp/skin/icons/properties.png");
-  -moz-image-region   : rect(0px 32px 32px 0px);
+  -moz-image-region   : rect(0 32px 32px 0);
 }
 
 image.isLink {
   list-style-image    : url("chrome://fireftp/skin/icons/properties.png");
-  -moz-image-region   : rect(32px 32px 64px 0px);
+  -moz-image-region   : rect(32px 32px 64px 0);
 }
 
 image.isMultiple {
   list-style-image    : url("chrome://fireftp/skin/icons/properties.png");
-  -moz-image-region   : rect(64px 32px 96px 0px);
+  -moz-image-region   : rect(64px 32px 96px 0);
 }
 
 .textfield {
   -moz-appearance     : none;
   background-color    : transparent;
-  border              : 0px;
-  margin              : 0px;
+  border              : 0;
+  margin              : 0;
   width               : 400px;
 }
 
@@ -494,13 +493,13 @@ image.isMultiple {
 
 #canvas {
   position            : absolute;
-  top                 : 0px;
-  left                : 0px;
+  top                 : 0;
+  left                : 0;
 }
 
 #viewButton {
   -moz-box-pack       : center;
-  min-width           : 0px;
+  min-width           : 0;
 }
 
 #hashrow {
@@ -510,7 +509,7 @@ image.isMultiple {
 /*----------------[ welcome.xul ]-----------------*/
 
 #thegoodbook {
-  background          : maroon;
+  background-color    : maroon;
   color               : white;
   font-style          : italic;
 }
