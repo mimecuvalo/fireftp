@@ -2,14 +2,14 @@
 <html>
   <head>
     <title>FireFTP - The Free FTP Client for Mozilla Firefox</title>
-    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
     <div id="nav">
-      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png"/></a>
+      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png" width="64" height="64"></a>
       <a href="features.html">features</a>
       <a href="donate.html">donate</a>
       <a href="help.html">support</a>
@@ -38,7 +38,7 @@
         <div class="info">
           <h2>Bugs</h2>
           <ul>
-            <li>View <a href="https://github.com/mimecuvalo/fireftp/issues?page=1&state=closed">bugs</a></li>
+            <li>View <a href="https://github.com/mimecuvalo/fireftp/issues?page=1&amp;state=closed">bugs</a></li>
           </ul>
         </div>
       </div>
@@ -131,7 +131,7 @@
         fixed issue with damaged files if REST command fails (1.0.10 fix)<br/>
         <br/>
         I'm back on summer vacation in Croatia so I thought it appropriate to finish version 1.0 at the place where I began all this madness...Back in 2004, I had heard about this crazy, newfangled browser that was coming out soon called Firebird (today known as Firefox).  It was my summer vacation, I was bored out of my mind - I had just graduated with my brand spanking new computer science degree in hand and I felt like doing something useful with it.  Et voil&#224;!  FireFTP is the result.<br/><br/>It's been no cake walk - developing for Mozilla is tough stuff, there's like a jazillion languages to learn to do it and I realized just how little school had prepared me for real world programming (thanks a freakin' lot, alma mater!)  Anyway, I released my first version after a couple months of tinkering (0.82 - "Sir Prize" - by the way if you haven't noticed the pattern by now - I name each version after the name of a song with a person in its title from bands that I love).  It worked, kinda.  To be honest, back then, I thought I was pretty much done with thing right then and there - it's fine the way it is, right?  Good enough, right?  Hah, oh, how wrong I was.<br/><br/>Four years later (off and on) of development though, FireFTP has grown as a program, I've grown as a programmer and I think it's safe to say FireFTP is pretty decent now :)  I'll be the first one to admit it, really - FireFTP didn't honestly even start being a good program until mid-2006 - that's just how long it's taken.  There were just so many obstacles and so much I had to learn about Mozilla and programming in general (p.s. thanks Assaf! thanks MDG!) that it ended up taking two years.  But hey, you have to rely on patience and the whole "Try, try again" thing.  Plus, once I start something I just can't stop until I'm absolutely finished with it or as my dad would say "Kad radi&#353; ne&#353;to, radi da valja" which is Croatian for "When you do something, do it right."  Thanks, Pops!  Good advice.<br/><br/>It's both a great joy and great frustration programming FireFTP but I love doin' it and I love that it's useful for so many people.
-        
+
         <br/><br/>My sincere thanks to everyone who's helped over the years, especially: Devin Pohly, Scott Bentley, Tyler Sticka, all the translators, Simon Tatham, Patrick Brunschwig, my supportive family (Tata i Mama, Andja, Stipo), all others who submitted bugs, gave feedback, and/or sent encouraging emails.  Special thanks to everyone who has donated!
       </div>
 
@@ -165,7 +165,7 @@
         added mode z compression<br/>
         added FXP<br/>
         added ability to specify dates with search<br/>
-        <strike>added separate threads for intensive tasks: hashing, extracting archives, copying, deleting, recursive properties, search, transfering (keeps the UI from freezing up)</strike> (had to revert this b/c it was causing crashes)<br/>
+        <span class="strike">added separate threads for intensive tasks: hashing, extracting archives, copying, deleting, recursive properties, search, transfering (keeps the UI from freezing up)</span> (had to revert this b/c it was causing crashes)<br/>
         added a queue (now quit bothering me to add one! :-)  i hadn't added one previously b/c to me a queue is micromanagement)<br/>
         added ability to import from FileZilla (versions 2 and 3)<br/>
         added category field to account manager<br/>
@@ -196,11 +196,11 @@
         added support for transfer integrity checks (for servers that support XMD5 or XSHA1)<br/>
         fixed issues with permissions on Mac OS X<br/>
         fixed other minor bugs<br/><br/>
-        
+
         fixed issue with open with... not working properly with custom arguments (0.97.1 fix)<br/>
         fixed issue with FEAT response not always being fully read (0.97.1 fix)<br/>
         international versions should update correctly now (0.97.1 fix)<br/><br/>
-        
+
         fixed security vulnerability with not scrubbing '..' out of FTP listings (0.97.2) (<a href="http://vuln.sg/fireftp0971-en.html">details</a>)<br/>
         fixed regression caused by 0.97.2 with files that legitimally have .. in them - scrub out / and \ instead (0.97.3)<br/>
       </div>
@@ -280,7 +280,7 @@
         fix various minor bugs (0.94.4 change)<br/><br/>
 
         fixed small problem w/ non-modal account mgr. (0.94.5)<br/>
-        fixed windows<->linux conversion with importing accounts (0.94.5)<br/>
+        fixed windows&lt;-&gt;linux conversion with importing accounts (0.94.5)<br/>
         fixed problem with two directories having same name but different case (0.94.5)<br/><br/>
 
         fixed regression that caused Firefox to crash (0.94.6)<br/>
@@ -504,7 +504,7 @@
         version 0.82alpha <a href="http://www.starlightmints.com/">'sir prize'</a> (September 20th, 2004)<br/>
         initial release  (firefox only)<br/><br/>
 
-        operating systems tested:	   windows xp<br/>
+        operating systems tested:    windows xp<br/>
         operating systems untested:  linux, mac, os/2, others?<br/>
         ftp servers tested:          unix style, ms-dos style<br/>
         ftp servers unsupported:     mac, os/2, others?<br/><br/>
@@ -563,7 +563,7 @@
       <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
     </div>
 
-    <script type="text/javascript">
+    <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-360163-5']);
       _gaq.push(['_trackPageview']);

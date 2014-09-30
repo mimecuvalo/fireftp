@@ -2,38 +2,13 @@
 <html>
   <head>
     <title>FireFTP - The Free FTP Client for Mozilla Firefox</title>
-    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png" type="image/png"/>
-
-    <style type="text/css" media="screen">
-      h4 {
-        margin              : 5px 0px;
-        color               : #0066cc;
-        cursor              : pointer;
-      }
-
-      div.stretcher {
-        margin              : 0px 0px 0px 20px;
-        display             : none;
-      }
-
-      ul {
-        margin              : 0px;
-      }
-
-      input {
-        border              : 1px solid #999;
-      }
-
-      #search {
-        background-color    : #00ccff;
-      }
-    </style>
-    <script type="text/javascript" src="js/prototype.lite.js"></script>
-    <script type="text/javascript" src="js/moo.fx.js">        </script>
-    <script type="text/javascript" src="js/moo.fx.pack.js">   </script>
-    <script type="text/javascript">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/prototype.lite.js"></script>
+    <script src="js/moo.fx.js"></script>
+    <script src="js/moo.fx.pack.js"></script>
+    <script>
       var gAccordion;
       var gFilterTimeout;
 
@@ -117,7 +92,7 @@
 
   <body>
     <div id="nav">
-      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png"/></a>
+      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png" width="64" height="64"></a>
       <a href="features.html">features</a>
       <a href="donate.html">donate</a>
       <a href="help.html" class="selected">support</a>
@@ -165,14 +140,14 @@
 
       <h3 id="noAnswers" style="display:none">No answers matched your search.</h3>
 
-      
-      <h3 class="header"><a name="trouble">Troubleshooting</a></h3>
+
+      <h3 class="header"><a id="trouble">Troubleshooting</a></h3>
 
       <h4 class="display">I'm having a hard time connecting!</h4>
       <div class="stretcher">
         <ul>
           <li>Do you have the latest versions of FireFTP and Firefox? The latest version can be found here: <a href="https://addons.mozilla.org/en-US/firefox/addon/fireftp">https://addons.mozilla.org/en-US/firefox/addon/fireftp</a></li>
-          <li>Make sure your username and password are typed in correctly.  Passwords are usually cAsE-sEnSiTiVe!</a></li>
+          <li>Make sure your username and password are typed in correctly.  Passwords are usually cAsE-sEnSiTiVe!</li>
           <li>
             Are you behind a firewall?  Try turning it off temporarily to see if it is the source of your problem.  If so, you might have to configure your software to allow FireFTP to access the Internet.<br/>
           </li>
@@ -194,7 +169,7 @@ Sorry that you've run into this issue. The newer versions of FireFTP are doing m
 function fixBS() {
   document.getElementById('result').href =
       // Forces a download
-      'data:application/force-download;charset=utf-8;base64,' + 
+      'data:application/force-download;charset=utf-8;base64,' +
       // base64-encode
       btoa(
           // forces utf-8
@@ -213,7 +188,7 @@ Step 5: Replace the original file with the one just downloaded.<br><br>
 
 If you have further issues, email me mimecuvalo@gmail.com and I'll help further.<br><br>
       </div>
- 
+
 
       <h4 class="display">I get a "Secure Connection Failed!" when trying to connect securely to my site!</h4>
       <div class="stretcher">
@@ -315,13 +290,13 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
       </div>
 
 
-      <h3 class="header"><a name="installation">Installation</a></h3>
+      <h3 class="header"><a id="installation">Installation</a></h3>
 
       <h4 class="display">How do I install FireFTP?</h4>
       <div class="stretcher">
         <ul>
           <li>First of all, you need Firefox to run FireFTP.  It was not created as a standalone program, but as an extension to the Firefox browser.
-          <script type="text/javascript"><!--
+          <script><!--
             if (navigator.userAgent.indexOf("Firefox") == -1) {
               google_ad_client = "pub-2033664521367391";
               google_ad_output = "textlink";
@@ -363,7 +338,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         To uninstall go to Tools-&gt;Addons, select FireFTP and then click Uninstall.<br/><br/>
       </div>
 
-      <h3 class="header"><a name="general">General Usage</a></h3>
+      <h3 class="header"><a id="general">General Usage</a></h3>
 
       <h4 class="display">What is FTP?</h4>
       <div class="stretcher">
@@ -455,7 +430,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         For more information and to educate yourself about the risks involved in the FXP operation please read the <a href="http://en.wikipedia.org/wiki/File_eXchange_Protocol">Wikipedia article</a>.  Both servers involved with the transfer have to have FXP enabled in order for the operation to work.<br/><br/>
       </div>
 
-      <h3 class="header"><a name="acct">Account Manager</a></h3>
+      <h3 class="header"><a id="acct">Account Manager</a></h3>
 
       <h4 class="display">What is Category?</h4>
       <div class="stretcher">
@@ -482,7 +457,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
       <h4 class="display">What is a Private Key?</h4>
       <div class="stretcher">
         This is something if you select "SFTP" under Security.  Some SFTP servers require a <a href="http://en.wikipedia.org/wiki/Private_key">private key</a> to access them.  So in this field point to where the private key is stored on your computer.  These files are usually stored ~/.ssh/id_dsa or ~/.ssh/id_rsa.  Here are some tips on <a href="http://help.github.com/key-setup-redirect">generating SSH keys</a>.  FireFTP also understands PuTTY files (usually having a .ppk extension).<br><br>
-        For l33t users: you can add the private key to the url by doing sftp://username:password@hostname:port/#pkey=<urlencoded-file-path-to-private-key><br>
+        For l33t users: you can add the private key to the url by doing sftp://username:password@hostname:port/#pkey=&lt;urlencoded-file-path-to-private-key&gt;<br>
         For example: sftp://blah@yomama.com/#pkey=%2FUsers%2Fmama%2F.ssh%2Fid_rsa<br>
         or: C:\ssh-keys\mykey should be C:%5Cssh-keys%5Cmykey<br>
         %2F == '/'<br>
@@ -585,7 +560,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         QuickConnect allows you to make a temporary account for an FTP server that you wish to connect to.  The account information is simply tossed when you close FireFTP.  Why have temporary accounts in the first place?  Well, because sometimes you just visit an FTP server once just to get one file.  To prevent your list of accounts from getting cluttered with sites that you'll never visit again, FireFTP makes them just temporary.  If you decide in the middle of your QuickConnect session that you actually want to keep the account saved you can select "Save Temporary Account".<br/><br/>
       </div>
 
-      <h3 class="header"><a name="props">Properties</a></h3>
+      <h3 class="header"><a id="props">Properties</a></h3>
 
       <h4 class="display">What are Permissions under Properties?</h4>
       <div class="stretcher">
@@ -603,7 +578,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         What "Properties (incl. contents)" does differently than the normal, vanilla "Properties" is it looks at the folder(s) selected and also the contents of the folder(s).  The reason that this has to be separate from just regular "Properties" in FireFTP for now is because doing something like this can be a bit time consuming and hard for the computer to do (depending on if there are a lot of things that a folder contains).  But it is definitely useful because it lets you know how many files and folders a folder contains and what the total size of the folder ends up being when adding up all its contents.<br/><br/>
       </div>
 
-      <h3 class="header"><a name="prefs">Options</a></h3>
+      <h3 class="header"><a id="prefs">Options</a></h3>
 
       <h4 class="display">What is "Show welcome message"?</h4>
       <div class="stretcher">
@@ -721,7 +696,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
       <div class="stretcher">
         This is useful, let's say, for web developers - I know my local copy of my file is going to be newer than the copy that's on the server so I don't want to be bothered being asked "Do I want to overwrite the file?" every time - just freakin' do it.  But then again, I live dangerously, so :)  For most users, it is recommended to leave this unchecked.<br/><br/>
       </div>
-      
+
       <h4 class="display">What is "Use compression"?</h4>
       <div class="stretcher">
         If enabled, FireFTP will use compression (MODE Z) to make transfers and retrieval of directory listings faster.  This can make for a substantial speed up in file transfers if you're on a slow network (especially text files).  (The FTP server must be configured to allow the MODE Z command for this option to work.)<br/><br/>
@@ -737,7 +712,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         If enabled, FireFTP will do a hash check after a file transfer.  This is used to verify that every bit of the file has transfered correctly.  Although rare, sometimes a file can be corrupted when downloaded or uploaded, and a bit can change or could be lost.  A hash of a file gives you a short string of characters that uniquely identifies a file.  If the FTP server's hash of the file and FireFTP's hash match then splendid, all is well - if they don't match, then your file is corrupted and you should transfer it again.  (The FTP server must be configured to allow the XMD5 or XSHA1 command for this option to work.)<br/><br/>
       </div>
 
-      <h3 class="header"><a name="adv">Tools</a></h3>
+      <h3 class="header"><a id="adv">Tools</a></h3>
 
       <h4 class="display">How does the Search/Filter feature work?</h4>
       <div class="stretcher">
@@ -776,7 +751,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
         You can use Export to export your current list of FTP sites, let's say, from your work computer and then Import them to a different computer, e.g. your home computer.  As far as other FTP clients go, you can only currently import from Filezilla.  Passwords are stored using encryption (although encrypted, it is best to dispose of the exported file once you're done with it).  Importing is smart about not copying duplicate accounts into your current list of FTP sites.  It will merge your current list with the list you are importing.<br/><br/>
       </div>
 
-      <h3 class="header"><a name="misc">Miscellaneous Questions</a></h3>
+      <h3 class="header"><a id="misc">Miscellaneous Questions</a></h3>
 
       <h4 class="display">How do I view my saved passwords?</h4>
       <div class="stretcher">
@@ -861,7 +836,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
       <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 
-    <script type="text/javascript">
+    <script>
       init();
       filter();
     </script>
@@ -871,7 +846,7 @@ If you have further issues, email me mimecuvalo@gmail.com and I'll help further.
       <em>If you're havin' IE problems, I feel bad for you, son - I got 99 problems but a browser ain't one.</em>  - DJ Danger Mime
     </div>
 
-    <script type="text/javascript">
+    <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-360163-5']);
       _gaq.push(['_trackPageview']);

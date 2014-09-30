@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>FireFTP - The Free FTP Client for Mozilla Firefox</title>
-    <meta http-equiv="Content-Type" content="text/HTML; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="favicon.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script>
       function commas(num) {
         num = num.toString();
@@ -32,9 +32,8 @@
       var preDate = ((new Date(2008, 7, 26)) / 1000).toFixed(0);
       var rate    = 82000 / 7 / 24 / 60 / 60;
       var count   = 2800000 + (curDate - preDate) * rate;
-    </script>
 
-    <script type="text/javascript">
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-360163-5']);
       _gaq.push(['_trackPageview']);
@@ -49,7 +48,7 @@
 
   <body>
     <div id="nav">
-      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png"/></a>
+      <a id="logo" href="http://fireftp.net"><img alt="logo" title="FireFTP Home" src="images/logo64.png" width="64" height="64"></a>
       <a href="features.html">features</a>
       <a href="donate.html">donate</a>
       <a href="help.html">support</a>
@@ -67,7 +66,7 @@
 
     <div id="content" class="index">
       <div id="sidebar">
-        <img id="thumbnail" title="FireFTP" alt="seahorse" src="images/header.jpg"/></a>
+        <img id="thumbnail" title="FireFTP" alt="seahorse" src="images/header.jpg" width="422" height="288">
       </div>
 
       FireFTP is a <b>free, secure, cross-platform FTP/SFTP client</b> for Mozilla Firefox which provides easy and intuitive access to FTP/SFTP servers.<br/><br/>
@@ -78,7 +77,7 @@
             <a class="smaller" href="features.html">Learn More</a>
           </div>
         </noscript>
-        <script type="text/javascript">
+        <script>
           if (navigator.userAgent.indexOf("Firefox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
           } else {
@@ -87,14 +86,14 @@
           }
         </script>
         <div style="clear: left"></div>
-        <script type="text/javascript">
+        <script>
           document.writeln("<div id=\"counter\">Downloaded <strong>" + commas(count.toFixed(0)) + "</strong> times!<\/div>");
           setTimeout(updateCounter, 1000);
         </script>
       </div>
 
       <div class="info" style="width: 270px; line-height: 32px">
-        <a href="http://firessh.net/"><img src="http://firessh.net/images/logo64.png" border="0" style="margin-right: 10px"></a>
+        <a href="http://firessh.net/"><img src="http://firessh.net/images/logo64.png" style="margin-right: 10px" alt="FireSSH logo" width="64" height="64"></a>
         Check out my new project, <a href="http://firessh.net/">FireSSH</a>!
       </div>
       <div style="clear: both"></div>
