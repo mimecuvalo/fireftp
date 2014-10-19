@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://fireftp/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://fireftp/locale/fireftp.dtd">
+<overlay id    = "fireftpOverlay"
+         xmlns = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://fireftp/content/js/etc/fireftpOverlay-pm.js"/>
+
+  <!-- Firefox Tools menu -->
+  <menupopup       id="menu_ToolsPopup">
+    <menuitem      id="fireftptoolsmenu"   label="FireFTP"       oncommand="loadFireFTP()"
+                   accesskey="F"           insertafter="devToolsSeparator" class="menuitem-iconic"/>
+  </menupopup>
+
+  <!-- Firefox Tools -> WebDeveloper menu -->
+  <menupopup id="menuWebDeveloperPopup">
+    <menuitem      id="menu_webDeveloper_fireftp"   label="FireFTP"       oncommand="loadFireFTP()"
+                   accesskey="F"           insertbefore="webConsole"         class="menuitem-iconic"/>
+  </menupopup>
+
+  <!-- Firefox 4 Web Developer menu -->
+  <menupopup id="appmenu_webDeveloper_popup">
+    <menuitem      id="appmenu_fireftp"   label="FireFTP"       oncommand="loadFireFTP()"
+                   accesskey="F"           insertbefore="appmenu_webConsole"  class="menuitem-iconic" iconic="true" />
+    <menuseparator insertbefore="appmenu_webConsole" />
+  </menupopup>
+
+  <!-- SeaMonkey -->
+  <menupopup       id="taskPopup">
+    <menuitem      id="fireftptoolsmenu"   label="FireFTP"       oncommand="loadFireFTP()"
+                   accesskey="F"           insertafter="downloadmgr"
+                   class="menuitem-iconic"/>
+  </menupopup>
+
+  <menupopup       id="contentAreaContextMenu">
+    <menuitem      id="fireftpcontentarea" label="&viewFireFTP;" oncommand="loadFireFTPFromContentArea()"
+                   class="menuitem-iconic" />
+    <menuitem      id="fireftpcontextmenu" label="&openFireFTP;" oncommand="loadFireFTPFromContext()"
+                   class="menuitem-iconic" position="3"/>
+  </menupopup>
+
+  <toolbarpalette  id="BrowserToolbarPalette">
+    <toolbarbutton id="fireftp-button"     label="FireFTP"       oncommand="loadFireFTP()" onclick="if (event.button == 1) loadFireFTP()"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional" tooltiptext="FireFTP"/>
+  </toolbarpalette>
+
+</overlay>
