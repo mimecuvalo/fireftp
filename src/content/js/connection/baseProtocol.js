@@ -1,13 +1,6 @@
 // if you're actually interested in reusing this class for your app
 // it'd be a good idea to get in contact with me, Mime Cuvalo: mimecuvalo@gmail.com
 
-let {LoadContextInfo} = Components.utils.import(
-  "resource://gre/modules/LoadContextInfo.jsm", {}
-);
-let {PrivateBrowsingUtils} = Components.utils.import(
-  "resource://gre/modules/PrivateBrowsingUtils.jsm", {}
-);
-
 function baseProtocol() {
   this.eventQueue = [];             // commands to be sent
   this.trashQueue = [];             // once commands are read, throw them away here b/c we might have to recycle these if there is an error
@@ -48,7 +41,7 @@ baseProtocol.prototype = {
   // read-only variables
   transportService     : Components.classes["@mozilla.org/network/socket-transport-service;1"].getService(Components.interfaces.nsISocketTransportService),
   proxyService         : Components.classes["@mozilla.org/network/protocol-proxy-service;1"].getService  (Components.interfaces.nsIProtocolProxyService),
-  cacheService         : Components.classes["@mozilla.org/netwerk/cache-storage-service;1"].getService   (Components.interfaces.nsICacheStorageService),
+  cacheService         : Components.classes["@mozilla.org/network/cache-service;1"].getService           (Components.interfaces.nsICacheService),
   toUTF8               : Components.classes["@mozilla.org/intl/utf8converterservice;1"].getService       (Components.interfaces.nsIUTF8ConverterService),
   fromUTF8             : Components.classes["@mozilla.org/intl/scriptableunicodeconverter"].getService   (Components.interfaces.nsIScriptableUnicodeConverter),
   isAttemptingConnect  : false,
@@ -64,8 +57,8 @@ baseProtocol.prototype = {
   controlTransport     : null,
   controlInstream      : null,
   controlOutstream     : null,
-  dataSocket           : null,           // only used with (*ahem* lame *ahem*) protocols like FTP that need a second socket
-
+  dataSocket           : null,           // only used with (*ahem* lame *ahem*) protocols like FTP that need a second socket 
+  
   doingCmdBatch        : false,
 
   connectedHost        : "",             // name of the host we connect to plus username
@@ -1027,29 +1020,22 @@ baseProtocol.prototype = {
 
     if (this.sessionsMode) {
       try {                                                                      // put in cache
-        var storage = this.cacheService.memoryCacheStorage(
-          // Note: make sure |window| is the window you want
-          LoadContextInfo.fromLoadContext(PrivateBrowsingUtils.privacyContextFromWindow(window, false)), false
-        );
-        storage.asyncOpenURI(
-          this.makeURI(this.protocol + "://" + this.version + this.connectedHost + path),
-          "",
-          Components.interfaces.nsICacheStorage.OPEN_TRUNCATE,
-          {
-            onCacheEntryCheck: function (entry, appcache) {
-              return Components.interfaces.nsICacheEntryOpenCallback.ENTRY_WANTED;
-            },
-            onCacheEntryAvailable: function (cacheDesc, isnew, appcache, status) {
-              try {
-                if (cacheDesc) {
-                  var cacheOut     = cacheDesc.openOutputStream(0);
-                  var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
-                  cacheOut.write(cacheData, cacheData.length);
-                  cacheOut.close();
-                }
-              } catch (ex) {}
-            }
-          });
+        var cacheSession = this.cacheService.createSession("fireftp", 1, true);
+        cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+            Components.interfaces.nsICache.ACCESS_WRITE,
+            {
+              onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+                try {
+                  if (cacheDesc) {
+                    var cacheOut     = cacheDesc.openOutputStream(0);
+                    var cacheData    = unescape(encodeURIComponent(JSON.stringify(items)));
+                    cacheOut.write(cacheData, cacheData.length);
+                    cacheOut.close();
+                    cacheDesc.close();
+                  }
+                } catch (ex) {}
+              }
+            });
       } catch (ex) {
         this.observer.onDebug(ex);
       }
@@ -1060,49 +1046,42 @@ baseProtocol.prototype = {
 
   cacheHit : function(path, callback) {
     try {                                                                        // check the cache first
-      var storage = this.cacheService.memoryCacheStorage(
-        // Note: make sure |window| is the window you want
-        LoadContextInfo.fromLoadContext(PrivateBrowsingUtils.privacyContextFromWindow(window, false)), false
-      );
+      var cacheSession   = this.cacheService.createSession("fireftp", 1, true);
       var self = this;
-      storage.asyncOpenURI(
-        this.makeURI(this.protocol + "://" + this.version + this.connectedHost + path),
-        "",
-        Components.interfaces.nsICacheStorage.OPEN_PRIORITY,
-        {
-          onCacheEntryCheck: function (entry, appcache) {
-            return Components.interfaces.nsICacheEntryOpenCallback.ENTRY_WANTED;
-          },
-          onCacheEntryAvailable: function (cacheDesc, isNew, appcache, status) {
-            if (isNew) {
-              callback(false);
-              return;
-            }
-
-            try {
-              var cacheIn       = cacheDesc.openInputStream(0);
-              var cacheInstream = Components.classes["@mozilla.org/binaryinputstream;1"].createInstance(Components.interfaces.nsIBinaryInputStream);
-              cacheInstream.setInputStream(cacheIn);
-
-              self.listData     = cacheInstream.readBytes(cacheInstream.available());
-              self.listData     = JSON.parse(decodeURIComponent(escape(self.listData)));
-              for (var x = 0; x < self.listData.length; ++x) {                         // these functions get lost when encoding in JSON
-                self.listData[x].isDirectory = function() { return this.isDir };
-                self.listData[x].isSymlink   = function() { return this.symlink != "" };
+      cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+          Components.interfaces.nsICache.ACCESS_READ,
+          {
+            onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+              if (!cacheDesc) {
+                callback(false);
+                return;
               }
-              cacheInstream.close();
 
-              self.observer.onDebug(self.listData.toSource().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/, {/g, ',\n{')
-                           .replace(/, isDirectory:\(function \(\) { return this.isDir }\), isSymlink:\(function \(\) { return this.symlink != "" }\)/g, ''),
-                                                   "DEBUG-CACHE");
+              try {
+                if (cacheDesc.predictedDataSize) {
+                  var cacheIn       = cacheDesc.openInputStream(0);
+                  var cacheInstream = Components.classes["@mozilla.org/binaryinputstream;1"].createInstance(Components.interfaces.nsIBinaryInputStream);
+                  cacheInstream.setInputStream(cacheIn);
+                  self.listData     = cacheInstream.readBytes(cacheInstream.available());
+                  self.listData     = JSON.parse(decodeURIComponent(escape(self.listData)));
+                  for (var x = 0; x < self.listData.length; ++x) {                         // these functions get lost when encoding in JSON
+                    self.listData[x].isDirectory = function() { return this.isDir };
+                    self.listData[x].isSymlink   = function() { return this.symlink != "" };
+                  }
+                  cacheInstream.close();
+                  cacheDesc.close();
 
-              callback(true);
-            } catch(ex) {
-              callback(false);
+                  self.observer.onDebug(self.listData.toSource().replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/, {/g, ',\n{')
+                               .replace(/, isDirectory:\(function \(\) { return this.isDir }\), isSymlink:\(function \(\) { return this.symlink != "" }\)/g, ''),
+                                                       "DEBUG-CACHE");
+                }
+
+                callback(true);
+              } catch(ex) {
+                callback(false);
+              }
             }
-          }
-        }
-      );
+          });
     } catch (ex) {
       callback(false);
     }
@@ -1110,24 +1089,17 @@ baseProtocol.prototype = {
 
   removeCacheEntry : function(path) {
     try {
-      var storage = this.cacheService.memoryCacheStorage(
-        // Note: make sure |window| is the window you want
-        LoadContextInfo.fromLoadContext(PrivateBrowsingUtils.privacyContextFromWindow(window, false)), false
-      );
-      storage.asyncOpenURI(
-        this.makeURI(this.protocol + "://" + this.version + this.connectedHost + path),
-        "",
-        Components.interfaces.nsICacheStorage.OPEN_PRIORITY,
-        {
-          onCacheEntryCheck: function (entry, appcache) {
-            return Components.interfaces.nsICacheEntryOpenCallback.ENTRY_WANTED;
-          },
-          onCacheEntryAvailable: function (cacheDesc, isnew, appcache, status) {
-            if (cacheDesc) {
-              cacheDesc.asyncDoom(null);
+      var cacheSession = this.cacheService.createSession("fireftp", 1, true);
+      cacheSession.asyncOpenCacheEntry(this.protocol + "://" + this.version + this.connectedHost + path,
+          Components.interfaces.nsICache.ACCESS_WRITE,
+          {
+            onCacheEntryAvailable : function(cacheDesc, accessGranted, status) {
+              if (cacheDesc) {
+                cacheDesc.doom();
+                cacheDesc.close();
+              }
             }
-          }
-        });
+          });
     } catch (ex) {
       this.observer.onDebug(ex);
     }
@@ -1178,11 +1150,6 @@ baseProtocol.prototype = {
     }
 
     return result;
-  },
-  makeURI : function(aURL, aOriginCharset, aBaseURI) {
-    var ioService = Components.classes["@mozilla.org/network/io-service;1"]
-                    .getService(Components.interfaces.nsIIOService);
-    return ioService.newURI(aURL, aOriginCharset, aBaseURI);
   }
 };
 
