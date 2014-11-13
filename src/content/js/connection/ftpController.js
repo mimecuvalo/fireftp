@@ -30,7 +30,7 @@ function connect(noAccountChange, showPassDialog) {
     return;
   }
 
-  if (!gConnection.login || !gConnection.password || showPassDialog) {      // get a password if needed
+  if (!gConnection.login || (!gConnection.password && !(gConnection.protocol == "ssh2" && gConnection.privatekey)) || showPassDialog) {      // get a password if needed
     var passwordObject       = new Object();
     passwordObject.login     = gConnection.login;
     passwordObject.password  = gConnection.password;
