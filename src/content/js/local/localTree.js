@@ -1174,7 +1174,9 @@ var localTree = {
           }
         }
 
-        var innerEx = gFireFTPUtils.cutCopy(this.isCut, zeFiles[x], newFile, newDir, newFile.leafName);
+        // XXX Firefox doesn't send UTF8 across component boundary correctly.
+        // So we encodeURI on the leafName to fix that. Woo.
+        var innerEx = gFireFTPUtils.cutCopy(this.isCut, zeFiles[x], newFile, newDir, encodeURI(newFile.leafName));
 
         if (innerEx) {
           throw innerEx;

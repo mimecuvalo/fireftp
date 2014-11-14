@@ -166,6 +166,8 @@ FireFTPUtils.prototype = {
           newFile.remove(true);
         }
 
+        newName = decodeURI(newName);                                                           // XXX Firefox doesn't send UTF8 across component boundary correctly.
+
         if (isCut) {
           file.moveTo(newDir, newName);                                                         // cut
         } else {
