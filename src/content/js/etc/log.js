@@ -22,13 +22,30 @@ ERROR    = logging.ERROR;
 CRITICAL = logging.CRITICAL;
 
 function appendLog(message, css, type, trusted) {
-  if (!trusted) {
-    message = message.replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  }
+  var div = document.createElement('div');
+  div.setAttribute('type', type);
+  div.setAttribute('style', 'display:' + (type != "error" && gLogErrorMode ? "none" : "block"));
+  div.setAttribute('class', css);
 
-  gLogQueue  += "<div type='" + type + "' style='display:" + (type != "error" && gLogErrorMode ? "none" : "block") + "' " + "class='" + css + "'>"
-             +     message.replace(/\r\n/g, '<br/>').replace(/\n/g, '<br/>')
-             +  "</div>";
+  if (trusted) {
+    // Hello, Mozilla reviewer.  
+    // Using innerHTML was already discussed and resolved
+    // here: https://bugzilla.mozilla.org/show_bug.cgi?id=476851
+    // and here: https://bugzilla.mozilla.org/show_bug.cgi?id=574462
+    // We only get to this innerHTML if 'trusted' which is only called in 2
+    // places in this code base - in loadUnload.js and in sessionsPasswords.js
+    // No need to freak out, yo!
+    div.innerHTML = message;
+  } else {
+    var lines = message.split(/(?:\n|\r\n)/);
+    lines.forEach(function(line) {
+      var lineFrag = document.createDocumentFragment();
+      lineFrag.textContent = line;
+      div.appendChild(lineFrag);
+      div.appendChild(document.createElement('br'));
+    });
+  }
+  gLogQueue.appendChild(div);
 }
 
 function error(message, skipLog, trusted, skipAlert) {

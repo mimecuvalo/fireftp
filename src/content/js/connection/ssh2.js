@@ -714,7 +714,7 @@ ssh2Mozilla.prototype = {
       return;
     }
 
-    this.observer.onAppendLog("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + out, 'output custom', 'info');
+    this.observer.onAppendLog("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0" + out, 'output custom', 'info');
     this.customBuffer += out + '\n';
     this.sendCustomOutput();
   },

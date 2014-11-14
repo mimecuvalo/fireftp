@@ -84,7 +84,7 @@ function startup() {
   loadPrograms();
 
   var trht = 'http://www.youtube.com/watch?v=ekCvBztYs_A';
-  appendLog("<span id='opening' style='line-height:16px'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://fireftp.mozdev.org/donate.html','FireFTP');\">"
+  appendLog("<span id='opening' style='line-height:16px'><span style='cursor:pointer;text-decoration:underline;color:blue;' onclick=\"window.open('http://fireftp.net/donate.html','FireFTP');\">"
       + "FireFTP</span> <span>" + gVersion
       + "  '</span><span style='cursor:pointer;text-decoration:underline;' onclick=\"window.open('" + trht + "','trht');\">"
       + "Nature Boy</span>'"

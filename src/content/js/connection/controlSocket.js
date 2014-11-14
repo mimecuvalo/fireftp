@@ -115,7 +115,7 @@ ftpMozilla.prototype = {
   sendQuitCommand : function(legitClose) {
     try {
       this.controlOutstream.write("QUIT\r\n", 6);
-      this.observer.onAppendLog("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "QUIT", 'output', "info");
+      this.observer.onAppendLog("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0" + "QUIT", 'output', "info");
     } catch(ex) { }
   },
 

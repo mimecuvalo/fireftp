@@ -10,6 +10,10 @@
         font                : 8pt verdana, arial, sans-serif;
       }
 
+      span {
+        display             : inline; /* wat. */
+      }
+
       .error {
         color               : red;
         font-weight         : bold;
@@ -49,9 +53,9 @@
     </style>
   </head>
 
-  <body onmousemove = "document.getElementById('mouseY').innerHTML       =  event.screenY;"
-        onmousedown = "document.getElementById('mousePressed').innerHTML = 'true'"
-        onmouseup   = "document.getElementById('mousePressed').innerHTML = 'false'">
+  <body onmousemove = "document.getElementById('mouseY').textContent       =  event.screenY;"
+        onmousedown = "document.getElementById('mousePressed').textContent = 'true'"
+        onmouseup   = "document.getElementById('mousePressed').textContent = 'false'">
     <span id="mousePressed" style="display: none">false</span>
     <span id="mouseY"       style="display: none"></span>
   </body>

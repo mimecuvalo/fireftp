@@ -526,9 +526,9 @@ baseProtocol.prototype = {
       if (commandInfo.skipLog) {
         // do nothing
       } else if (!commandInfo.isPrivate) {
-        this.observer.onAppendLog("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + outputData, 'output', "info");
+        this.observer.onAppendLog("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0" + outputData, 'output', "info");
       } else {
-        this.observer.onAppendLog("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + cmd + " " + this.passNotShown, 'output', "info");
+        this.observer.onAppendLog("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0" + cmd + " " + this.passNotShown, 'output', "info");
       }
 
     } catch(ex) {

@@ -4,7 +4,7 @@ var gVersion  = "2.0.21";  // version of FireFTP we're using
 var gSlash;                     // holds '/' or '\\' depending on local system
 var gPlatform;                  // holds what platform we're on
 var gTransferTypes;             // holds 'Auto', 'Binary', 'ASCII'
-var gLogQueue = "";             // buffers log data
+var gLogQueue = document.createDocumentFragment();             // buffers log data
 var gAlertWindow;               // reference to the alertDialog
 var gWelcomeWindow;             // reference to the welcomeDialog
 var gPrograms = new Array();    // programs in our open with list

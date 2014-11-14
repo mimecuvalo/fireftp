@@ -58,7 +58,7 @@ var treeHighlighter = {
     }
 
     if (gCmdlogDoc) {
-      gCmdlogDoc.getElementById('mousePressed').innerHTML = "true";
+      gCmdlogDoc.getElementById('mousePressed').textContent = "true";
       var func = function() {
         treeHighlighter.totalHack();
       };
@@ -74,7 +74,7 @@ var treeHighlighter = {
     if (hack) {                                                // XXX we need 'hack' to get mouse events from the log window
       event = { pageY: hack, pageX: 0 };
     } else if (gCmdlogDoc) {
-      gCmdlogDoc.getElementById('mouseY').innerHTML = this.previousMousePos;
+      gCmdlogDoc.getElementById('mouseY').textContent = this.previousMousePos;
     }
 
     if (this.mouseDownPressed && !event.ctrlKey && !event.shiftKey && !this.dragSessionEnabled) {
@@ -110,7 +110,7 @@ var treeHighlighter = {
 
     this.mouseDownPressed = false;
     if (gCmdlogDoc) {
-      gCmdlogDoc.getElementById('mousePressed').innerHTML = "false";
+      gCmdlogDoc.getElementById('mousePressed').textContent = "false";
     }
   },
 
@@ -158,12 +158,12 @@ var treeHighlighter = {
                                                                // TOTAL HACK XXX - this sucks!
   totalHack : function() {                                     // sigh, we need mouse move events to be received
     if (this.mouseDownPressed) {                               // from the log window for treehighlighting
-      if (gCmdlogDoc.getElementById('mousePressed').innerHTML == "false") {
+      if (gCmdlogDoc.getElementById('mousePressed').textContent == "false") {
         this.mouseUp(null);
         return;
       }
 
-      var newMousePos = parseInt(gCmdlogDoc.getElementById('mouseY').innerHTML);
+      var newMousePos = parseInt(gCmdlogDoc.getElementById('mouseY').textContent);
 
       if (newMousePos && this.previousMousePos != newMousePos) {
         this.previousMousePos = newMousePos;

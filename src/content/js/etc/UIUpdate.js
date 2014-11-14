@@ -162,9 +162,9 @@ function updateStatusBar() {
 function updateLog() {
   if (gLogQueue && gLogMode) {
     var scrollLog = gCmdlogBody.scrollTop + 50 >= gCmdlogBody.scrollHeight - gCmdlogBody.clientHeight;
-    gCmdlogBody.innerHTML += gLogQueue;                                             // update log
+    gCmdlogBody.appendChild(gLogQueue);                                             // update log
 
-    gLogQueue = "";
+    gLogQueue = document.createDocumentFragment();
 
     var nodeList = gCmdlogDoc.getElementsByTagName("div");                          // don't keep too much log data or it will slow down things
     var count    = 0;
