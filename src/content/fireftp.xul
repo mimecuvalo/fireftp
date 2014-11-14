@@ -306,7 +306,7 @@
           <splitter id="localsplitter" persist="state" collapse="before">
             <grippy/>
           </splitter>
-          <tree        id="localtree" class="plain" flex="2" enableColumnDrag="true" onkeypress="localTree.keyPress(event)" editable="true">
+          <tree        id="localtree" class="plain" flex="2" enableColumnDrag="true" onkeydown="localTree.keyDown(event)" onkeypress="localTree.keyPress(event)" editable="true">
             <treecols>
               <treecol id="localname" label="&name.label;" flex="2" persist="width ordinal hidden sortDirection" sortDirection="ascending"/>
               <splitter                class="tree-splitter"/>
@@ -392,7 +392,7 @@
           <splitter id="remotesplitter" collapse="before" persist="state">
             <grippy/>
           </splitter>
-          <tree        id="remotetree" class="plain" flex="2" enableColumnDrag="true" onkeypress="remoteTree.keyPress(event)" editable="true">
+          <tree        id="remotetree" class="plain" flex="2" enableColumnDrag="true" onkeydown="remoteTree.keyDown(event)" onkeypress="remoteTree.keyPress(event)" editable="true">
             <treecols>
               <treecol id="remotename" label="&name.label;" flex="2" persist="width ordinal hidden sortDirection" sortDirection="ascending"/>
               <splitter                 class="tree-splitter"/>

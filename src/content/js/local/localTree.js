@@ -964,6 +964,13 @@ var localTree = {
 
   // ************************************************* keyEvent *****************************************************
 
+  keyDown : function(event) {
+    var accelKey = testAccelKey(event);
+    if (accelKey && (event.keyCode == 38 || event.keyCode == 40)) {
+      this.keyPress(event);
+    }
+  },
+
   keyPress : function(event) {
     if (gLocalTree.editingRow != -1) {
       if (event.keyCode == 27) {
@@ -985,8 +992,8 @@ var localTree = {
 
     var accelKey = testAccelKey(event);
 
-    if (event.keyCode == 13 && this.selection.count != 0) {                              // enter, or cmd-down on mac
-      // XXX buggy on Mac: (gPlatform == 'mac' && accelKey && event.keyCode == 40)
+    if ((event.keyCode == 13 ||
+        (accelKey && event.keyCode == 40)) && this.selection.count != 0) {                      // enter, or cmd-down
       if (!localFile.verifyExists(this.data[this.selection.currentIndex])) {
         return;
       }
@@ -1006,6 +1013,9 @@ var localTree = {
     } else if (event.ctrlKey && event.keyCode == 32 && this.selection.count != 0) {             // ctrl-space, select or deselect
       this.selection.toggleSelect(this.selection.currentIndex);
     } else if (event.keyCode  == 8) {                                                           // backspace
+      event.preventDefault();
+      localDirTree.cdup();
+    } else if (accelKey && event.keyCode == 38) {                                               // accel-up
       event.preventDefault();
       localDirTree.cdup();
     } else if (event.keyCode  == 116) {                                                         // F5
