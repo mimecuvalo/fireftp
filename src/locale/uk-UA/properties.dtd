@@ -5,7 +5,7 @@
 <!ENTITY date "Дата:">
 <!ENTITY contains "Містить:">
 <!ENTITY user "Користувач:">
-<!ENTITY groupl "Грапа:">
+<!ENTITY groupl "Група:">
 <!ENTITY attr "Властивості:">
 <!ENTITY hash "Хеш:">
 <!ENTITY perm "Права:">
@@ -21,11 +21,11 @@
 <!ENTITY suid "SUID">
 <!ENTITY guid "SGID">
 <!ENTITY sticky "Незрозумілий">
-<!ENTITY applyto "Затосувати до:">
+<!ENTITY applyto "Застосувати до:">
 <!ENTITY thisprop "Цієї теки">
 <!ENTITY folderprop "Всіх підтек">
 <!ENTITY filesprop "Всіх файлів всередині">
 <!ENTITY thumbnail "Зображення">
-<!ENTITY loading "Завантаження...">
+<!ENTITY loading "Завантаження…">
 <!ENTITY view.label "Перегляд">
-<!ENTITY view.accesskey "V">
+<!ENTITY view.accesskey "П">

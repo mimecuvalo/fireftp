@@ -5,23 +5,23 @@
 <!ENTITY welcome.label "Показувати привітання">
 <!ENTITY error.label "Показувати помилки">
 <!ENTITY sessions.label "Сесії">
-<!ENTITY rememberp.label "Запам&apos;ятовувати паролі">
-<!ENTITY rememberd.label "Запам&apos;ятовувати список тек">
+<!ENTITY rememberp.label "Запам\'ятовувати паролі">
+<!ENTITY rememberd.label "Запам\'ятовувати список тек">
 <!ENTITY fileview.label "Перегляд файлів">
 <!ENTITY autorefresh.label "Автоматичне оновлення">
 <!ENTITY refresh.tip "Якщо щось змінилося (при передачі, перейменування і т.д.) оновити список тек">
 <!ENTITY hidden.label "Показувати приховані файли">
-<!ENTITY bytesmode.label "Показувати розмір файла в байтах">
+<!ENTITY bytesmode.label "Показувати розмір файлу в байтах">
 <!ENTITY interface.label "Зовнішній вигляд">
 <!ENTITY startup.label "Запускати FireFTP:">
 <!ENTITY windowopen.label "у новому вікні">
 <!ENTITY tabopen.label "у новій вкладці">
-<!ENTITY groupopen.label "in a window grouping">
+<!ENTITY groupopen.label "у вікні угрупування">
 <!ENTITY integrateftplnk.label "Нехай FTP-посилання у Firefox використовують FireFTP">
-<!ENTITY temppasvmode.label "Використовувати пасивний режим для цих з&apos;єднань">
-<!ENTITY open.label "Double-clicking/pressing enter:">
-<!ENTITY download.label "transfers a file">
-<!ENTITY exec.label "opens a file">
+<!ENTITY temppasvmode.label "Використовувати пасивний режим для цих з'єднань">
+<!ENTITY open.label "Подвійне клацання/натискання Enter:">
+<!ENTITY download.label "передати файл">
+<!ENTITY exec.label "відкрити файл">
 <!ENTITY both.tip "Показувати і локальні і мережеві файли">
 <!ENTITY local.tip "Показувати лише локальні файли">
 <!ENTITY remote.tip "Показувати лише мережеві файли">
@@ -29,41 +29,41 @@
 <!ENTITY logmode.label "Показувати звіт у головному вікні">
 <!ENTITY logerrormode.label "У звіті показувати лише помилки">
 <!ENTITY debug.label "Показувати інформацію обробника">
-<!ENTITY connect.label "З&apos;днання">
+<!ENTITY connect.label "З'єднання">
 <!ENTITY proxy.label "Проксі">
 <!ENTITY none.label "Без">
 <!ENTITY direct.label "Пряме">
 <!ENTITY host.label "Хост:">
 <!ENTITY port.label "Порт:">
-<!ENTITY active.label "Active Mode">
+<!ENTITY active.label "Активний режим">
 <!ENTITY limitPorts.label "Limit ports">
-<!ENTITY from.label "From:">
-<!ENTITY to.label "To:">
-<!ENTITY concurrent.label "Concurrent Transfers">
-<!ENTITY simtransfers.label "Max. simultaneous transfers (1-10)">
-<!ENTITY recovery.label "Відновлення з&apos;єдання">
+<!ENTITY from.label "Від:">
+<!ENTITY to.label "До:">
+<!ENTITY concurrent.label "Паралельні передачі">
+<!ENTITY simtransfers.label "Макс. одночасних передач (1-10)">
+<!ENTITY recovery.label "Відновлення з\'єдання">
 <!ENTITY network.label "Очікування мережі (1-600 сек.)">
 <!ENTITY network.tip "Як довго очікувати відповіді сервера">
-<!ENTITY keepalivemode.label "Утримувати з&apos;єднання навіть якщо ви неативні">
-<!ENTITY timeout.label "Якщо від&apos;єднано - спробувати під&apos;єднатись">
-<!ENTITY retryd.label "Перерва при з&apos;єднанні (1-600 сек.)">
-<!ENTITY retryd.tip "Час між сусідніми спробами з&apos;єднання">
-<!ENTITY retrya.label "Кількість спроб з&apos;єднання">
-<!ENTITY retrya.tip "Кількість спроб, після яких FireFTP припинить намагання з&apos;єднатись">
+<!ENTITY keepalivemode.label "Утримувати з\'єднання навіть якщо ви неативні">
+<!ENTITY timeout.label "Якщо від\'єднано - спробувати під\'єднатись">
+<!ENTITY retryd.label "Перерва при з\'єднанні (1-600 сек.)">
+<!ENTITY retryd.tip "Час між сусідніми спробами з\'єднання">
+<!ENTITY retrya.label "Кількість спроб з'єднання">
+<!ENTITY retrya.tip "Кількість спроб, після яких FireFTP припинить намагання з'єднатись">
 <!ENTITY downup.label "Завантаження/Передача">
 <!ENTITY transfercaption.label "Під час обміну файлами використовувати">
 <!ENTITY automatic.label "Автоматичний режим">
-<!ENTITY automatic.tip "Автоматично вибрати між &apos;Двійковим&apos; і &apos;ASCII&apos;">
-<!ENTITY binary.label "Двійковий режим">
+<!ENTITY automatic.tip "Автоматично вибрати між \'Двійковим\' і \'ASCII\'">
+<!ENTITY binary.label "Бінарний режим">
 <!ENTITY ascii.label "ASCII режим">
 <!ENTITY asciifiles.label "ASCII-файли">
 <!ENTITY asciifiles.tip "Файли таких розширень вважатимуться ASCII-файлами">
 <!ENTITY add.label "Додати">
 <!ENTITY remove.label "Видалити">
-<!ENTITY extras.label "Extras (if enabled on server)">
-<!ENTITY usecompression.label "Use compression">
-<!ENTITY synctimestamps.label "Keep timestamps in sync">
-<!ENTITY integritymode.label "Check integrity of file transfers (XMD5, XSHA1) ">
+<!ENTITY extras.label "Додатково (якщо дозволено на сервері)">
+<!ENTITY usecompression.label "Використовувати стиснення">
+<!ENTITY synctimestamps.label "Тримати часові мітки при синхронізації">
+<!ENTITY integritymode.label "Перевірити цілісність передачі файлів (XMD5, XSHA1)">
 <!ENTITY duplicates.label "Копії файлів">
 <!ENTITY timer.label "Вимкнути таймер у підтвердженні перезапису">
 <!ENTITY nopromptmode.label "Перезаписати не запитуючи">

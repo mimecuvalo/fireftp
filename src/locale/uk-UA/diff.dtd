@@ -4,21 +4,21 @@
 <!ENTITY action.label "Дія">
 <!ENTITY download.label "Завантажити">
 <!ENTITY upload.label "Передати">
-<!ENTITY delete.label "Delete">
+<!ENTITY delete.label "Вилучити">
 <!ENTITY nothing.label "Не робити нічого">
 <!ENTITY defaults.label "Масова заміна">
-<!ENTITY local.label "Для відсутніх локальних файлів">
-<!ENTITY remote.label "Для відсутніх мережевих файлів">
+<!ENTITY local.label "Для відсутніх локальних файлів:">
+<!ENTITY remote.label "Для відсутніх мережевих файлів:">
 <!ENTITY diff.label "Якщо різняться розмірами">
-<!ENTITY newer.label "For newer local files:">
-<!ENTITY older.label "For newer remote files:">
-<!ENTITY lDownload.access "D">
-<!ENTITY lDelete.access "e">
-<!ENTITY lNothing.access "N">
-<!ENTITY rUpload.access "U">
-<!ENTITY rDelete.access "l">
-<!ENTITY rNothing.access "t">
-<!ENTITY dDownload.access "w">
-<!ENTITY dUpload.access "p">
-<!ENTITY dNothing.access "h">
+<!ENTITY newer.label "Для більш нових локальних файлів:">
+<!ENTITY older.label "Для більш нових вилучених файлів:">
+<!ENTITY lDownload.access "З">
+<!ENTITY lDelete.access "и">
+<!ENTITY lNothing.access "Н">
+<!ENTITY rUpload.access "В">
+<!ENTITY rDelete.access "л">
+<!ENTITY rNothing.access "ч">
+<!ENTITY dDownload.access "а">
+<!ENTITY dUpload.access "к">
+<!ENTITY dNothing.access "і">
 <!ENTITY diff.note "Увага: Ця можливість насправді не порівнює вміст файлів. Вона перевіряє їх присутність в теках і різницю в розмірах. Час створення перевіряється якщо це дозволено у налаштуваннях.">
