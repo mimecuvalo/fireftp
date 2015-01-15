@@ -334,18 +334,9 @@ function onAccountChange(account) {
   return true;
 }
 
-var gDidParamikoCredit = false;
 function accountChangeHelper(site) {
   if (!gConnection.isConnected) {
     setProtocol(site.protocol);
-
-    if (site.protocol == "ssh2" && !gDidParamikoCredit) {
-      try {
-        appendLog(gStrbundle.getFormattedString("paramiko", ["1.7.7.1"])
-          + "<br style='font-size:5pt'/><br style='font-size:5pt'/>", 'blue', "info", true);
-      } catch(ex) {}  // if we haven't had it translated yet
-      gDidParamikoCredit = true;
-    }
   }
 
   for (var x = 0; x < gMaxCon; ++x) {

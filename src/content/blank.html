@@ -50,6 +50,10 @@
       #opening span, #opening img {
         vertical-align      : middle;
       }
+
+      br {
+        display: block;
+      }
     </style>
   </head>
 
@@ -58,5 +62,28 @@
         onmouseup   = "document.getElementById('mousePressed').textContent = 'false'">
     <span id="mousePressed" style="display: none">false</span>
     <span id="mouseY"       style="display: none"></span>
+
+    <div class="blue" style="display:block" type="info">
+      <span style="line-height:16px" id="opening">
+        <span onclick="window.open('http://fireftp.net/donate.html','FireFTP');" style="cursor:pointer;text-decoration:underline;color:blue;">FireFTP</span>
+        <span id="version"></span>
+        <span onclick="window.open('http://www.youtube.com/watch?v=ekCvBztYs_A','trht');" style="cursor:pointer;text-decoration:underline;">'Nature Boy'</span>
+        <span style="color:orange">designed by </span>
+        <span onclick="window.open('http://www.nightlight.ws','nightlight');" style="cursor:pointer;text-decoration:underline;color:orange">Mime Čuvalo</span>
+        <span style="color:orange"> in </span>
+        <span onclick="window.open('http://en.wikipedia.org/wiki/Croatia','croatia');" style="cursor:pointer;text-decoration:underline;color:orange">Croatia</span>
+      </span>
+      <br style="font-size:5pt">
+      <br style="font-size:5pt">
+    </div>
+    <div class="blue" style="display:block" type="info">
+      SSH component is ported from
+      <span onclick="window.open('http://www.lag.net/paramiko/','Paramiko');" style="cursor:pointer;text-decoration:underline;color:blue">Paramiko</span>
+      1.7.7.1,
+      <span style="color:orange">created by </span>
+      <span onclick="window.open('http://robey.lag.net/','rp');" style="cursor:pointer;text-decoration:underline;color:orange">Robey Pointer</span>
+      <br style="font-size:5pt">
+      <br style="font-size:5pt">
+    </div>
   </body>
 </html>

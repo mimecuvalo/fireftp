@@ -21,36 +21,25 @@ WARNING  = logging.WARNING;
 ERROR    = logging.ERROR;
 CRITICAL = logging.CRITICAL;
 
-function appendLog(message, css, type, trusted) {
+function appendLog(message, css, type) {
   var div = document.createElement('div');
   div.setAttribute('type', type);
   div.setAttribute('style', 'display:' + (type != "error" && gLogErrorMode ? "none" : "block"));
   div.setAttribute('class', css);
 
-  if (trusted) {
-    // Hello, Mozilla reviewer.  
-    // Using innerHTML was already discussed and resolved
-    // here: https://bugzilla.mozilla.org/show_bug.cgi?id=476851
-    // and here: https://bugzilla.mozilla.org/show_bug.cgi?id=574462
-    // We only get to this innerHTML if 'trusted' which is only called in 2
-    // places in this code base - in loadUnload.js and in sessionsPasswords.js
-    // No need to freak out, yo!
-    div.innerHTML = message;
-  } else {
-    var lines = message.split(/(?:\n|\r\n)/);
-    lines.forEach(function(line) {
-      var lineFrag = document.createDocumentFragment();
-      lineFrag.textContent = line;
-      div.appendChild(lineFrag);
-      div.appendChild(document.createElement('br'));
-    });
-  }
+  var lines = message.split(/(?:\n|\r\n)/);
+  lines.forEach(function(line) {
+    var lineFrag = document.createDocumentFragment();
+    lineFrag.textContent = line;
+    div.appendChild(lineFrag);
+    div.appendChild(document.createElement('br'));
+  });
   gLogQueue.appendChild(div);
 }
 
 function error(message, skipLog, trusted, skipAlert) {
   if (!skipLog) {
-    appendLog(message, 'error', "error", trusted);
+    appendLog(message, 'error', "error");
   }
 
   if (gErrorMode && !skipAlert) {
@@ -85,7 +74,7 @@ function detailedError(msg, url, linenumber) {
 
 function debug(ex, level, trusted) {
   if (gDebugMode) {
-    appendLog((level ? level : "Debug") + ": " + (ex.stack ? (ex.message + '\n' + ex.stack) : (ex.message ? ex.message : ex)), 'debug', "debug", trusted);
+    appendLog((level ? level : "Debug") + ": " + (ex.stack ? (ex.message + '\n' + ex.stack) : (ex.message ? ex.message : ex)), 'debug', "debug");
   }
 }
 
