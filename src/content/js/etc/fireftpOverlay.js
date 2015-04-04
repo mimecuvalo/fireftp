@@ -116,7 +116,7 @@ function fireFTPCheckForcedListener(event) {
   var prefBranch        = prefService.getBranch("fireftp.");
   var integrateftplinks = prefBranch.getBoolPref("integrateftplinks");
 
-  var framed = event.originalTarget && window._content && window._content.document && (window._content.document != event.originalTarget);
+  var framed = event.originalTarget && window.content && window.content.document && (window.content.document != event.originalTarget);
 
   if (!integrateftplinks || framed) {
     return;
@@ -130,7 +130,7 @@ function fireFTPCheckForcedListener(event) {
     }
 
     var sString  = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
-    sString.data = window._content.document.documentURI;
+    sString.data = window.content.document.documentURI;
     prefBranch.setComplexValue("loadurl", Components.interfaces.nsISupportsString, sString);
 
     doc.location.href = "chrome://fireftp/content/fireftp.xul";
