@@ -22,17 +22,17 @@ ERROR    = logging.ERROR;
 CRITICAL = logging.CRITICAL;
 
 function appendLog(message, css, type) {
-  var div = document.createElement('div');
+  var div = gCmdlogDoc.createElement('div');
   div.setAttribute('type', type);
   div.setAttribute('style', 'display:' + (type != "error" && gLogErrorMode ? "none" : "block"));
   div.setAttribute('class', css);
 
   var lines = message.split(/(?:\n|\r\n)/);
   lines.forEach(function(line) {
-    var lineFrag = document.createDocumentFragment();
+    var lineFrag = gCmdlogDoc.createDocumentFragment();
     lineFrag.textContent = line;
     div.appendChild(lineFrag);
-    div.appendChild(document.createElement('br'));
+    div.appendChild(gCmdlogDoc.createElement('br'));
   });
   gLogQueue.appendChild(div);
 }

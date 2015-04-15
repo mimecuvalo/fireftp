@@ -22,6 +22,7 @@ function startup() {
   gRemoteDirTreeChildren = $('remotedirtreechildren');
   gCmdlogDoc             = $('cmdlog').contentWindow.document;
   gCmdlogBody            = $('cmdlog').contentWindow.document.body;
+  gLogQueue              = gCmdlogDoc.createDocumentFragment();
   gQueueTree             = $('queuetree');
   gQueueTreeChildren     = $('queuetreechildren');
   gStatusBytes           = $('statusbytes');

@@ -164,7 +164,7 @@ function updateLog() {
     var scrollLog = gCmdlogBody.scrollTop + 50 >= gCmdlogBody.scrollHeight - gCmdlogBody.clientHeight;
     gCmdlogBody.appendChild(gLogQueue);                                             // update log
 
-    gLogQueue = document.createDocumentFragment();
+    gLogQueue = gCmdlogDoc.createDocumentFragment();
 
     var nodeList = gCmdlogDoc.getElementsByTagName("div");                          // don't keep too much log data or it will slow down things
     var count    = 0;
