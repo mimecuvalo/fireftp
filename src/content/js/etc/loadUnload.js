@@ -99,7 +99,7 @@ function startup() {
   };
   setTimeout(func, 0);
 
-  //tipJar();
+  tipJar();
 
   // only do this if in tab mode; window mode causes this problem:
   // https://www.mozdev.org/bugs/show_bug.cgi?id=24935
