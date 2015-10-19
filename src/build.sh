@@ -6,10 +6,6 @@ FIREFTP_MAX=35.*
 FIREFTP_MASTER=0
 FIREFTP_DEBUG=0
 
-# build English-only
-FIREFTP_LANG=en-US
-source build_helper.sh
-
 # build all locales
 FIREFTP_LANG=all
 FIREFTP_MASTER=1
