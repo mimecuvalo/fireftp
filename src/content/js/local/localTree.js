@@ -622,7 +622,7 @@ var localTree = {
 
     for (var x = 0; x < this.rowCount; ++x) {
       if (this.selection.isSelected(x)) {
-        if (!localFile.verifyExists(this.data[x])) {
+        if (!this.data[x].path || !localFile.verifyExists(this.data[x])) {
           continue;
         }
 

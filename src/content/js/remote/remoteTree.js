@@ -502,7 +502,7 @@ var remoteTree = {
     gConnection.beginCmdBatch();
 
     for (var x = 0; x < this.rowCount; ++x) {
-      if (this.selection.isSelected(x)) {
+      if (this.selection.isSelected(x) && this.data[x].path) {
         if (last) {
           gConnection.changeWorkingDirectory(gRemotePath.value);
         }
