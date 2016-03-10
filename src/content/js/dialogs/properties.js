@@ -1,7 +1,7 @@
 var gInitialPermissions;
 var gStrbundle;
 var gArgs;
-var gFireFTPUtils = Components.classes['@nightlight.ws/fireftputils;1'].getService(Components.interfaces.nsIFireFTPUtils);
+var gFireFTPUtils = Components.classes['@nite-lite.net/fireftputils;1'].getService(Components.interfaces.nsIFireFTPUtils);
 
 function init() {
   gStrbundle = $("strings");

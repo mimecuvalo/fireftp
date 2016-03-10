@@ -25,7 +25,7 @@ function FireFTPUtils() { };                                                    
 FireFTPUtils.prototype = {
   classDescription  : "FireFTP Utilities",
   classID           : Components.ID("{42bd5782-5c3e-11dc-8314-0800200c9a66}"),
-  contractID        : "@nightlight.ws/fireftputils;1",
+  contractID        : "@nite-lite.net/fireftputils;1",
   _xpcom_categories : [{ category: 'FireFTP Utilities', service: true }],
   QueryInterface    : XPCOMUtils.generateQI([Components.interfaces.nsIFireFTPUtils, Components.interfaces.nsISupports, Components.interfaces.nsIObserver]),
   observe: function(){},

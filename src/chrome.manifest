@@ -71,8 +71,8 @@ style   chrome://fireftp/content/fireftp.xul chrome://fireftp/skin/mac.css os=Da
 interfaces components/nsIFireFTPUtils.xpt
 
 component {42bd5782-5c3e-11dc-8314-0800200c9a66} components/nsIFireFTPUtils.js
-contract @nightlight.ws/fireftputils;1 {42bd5782-5c3e-11dc-8314-0800200c9a66}
-category profile-after-change FireFTPUtils @nightlight.ws/fireftputils;1
+contract @nite-lite.net/fireftputils;1 {42bd5782-5c3e-11dc-8314-0800200c9a66}
+category profile-after-change FireFTPUtils @nite-lite.net/fireftputils;1
 
 component {8ca39389-a7a8-43f1-a502-bf9ce9fdada9} components/sftpProtocol.js
 contract @mozilla.org/network/protocol;1?name=sftp {8ca39389-a7a8-43f1-a502-bf9ce9fdada9}

@@ -271,7 +271,7 @@
         <tabpanel id="creditstab" orient="vertical">
           <hbox pack="center">
             <label id="version" value="FireFTP 0.9999999999999   "/>
-            <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nightlight.ws')"  class="textLink"/>
+            <label value="Mime &#268;uvalo"          onclick="runInFirefox('http://www.nite-lite.net')"  class="textLink"/>
           </hbox>
           <box pack="center">
             <label value="http://fireftp.net" onclick="runInFirefox('http://fireftp.net')" class="textLink"/>

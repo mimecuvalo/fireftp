@@ -49,7 +49,7 @@
       gAtomService           = Components.classes["@mozilla.org/atom-service;1"].getService            (Components.interfaces.nsIAtomService);
       gIos                   = Components.classes["@mozilla.org/network/io-service;1"].getService      (Components.interfaces.nsIIOService);
       gPrefsService          = Components.classes["@mozilla.org/preferences-service;1"].getService     (Components.interfaces.nsIPrefService);
-      gFireFTPUtils          = Components.classes['@nightlight.ws/fireftputils;1'].getService          (Components.interfaces.nsIFireFTPUtils);
+      gFireFTPUtils          = Components.classes['@nite-lite.net/fireftputils;1'].getService          (Components.interfaces.nsIFireFTPUtils);
       gFormHistory           = Components.classes["@mozilla.org/satchel/form-history;1"].getService    (Components.interfaces.nsIFormHistory ?
                                                                                                         Components.interfaces.nsIFormHistory :
                                                                                                         Components.interfaces.nsIFormHistory2);

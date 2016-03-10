@@ -43,7 +43,7 @@ function startup() {
   gIos                   = Components.classes["@mozilla.org/network/io-service;1"].getService      (Components.interfaces.nsIIOService);
   gPromptService         = Components.classes["@mozilla.org/embedcomp/prompt-service;1"].getService(Components.interfaces.nsIPromptService);
   gPrefsService          = Components.classes["@mozilla.org/preferences-service;1"].getService     (Components.interfaces.nsIPrefService);
-  gFireFTPUtils          = Components.classes['@nightlight.ws/fireftputils;1'].getService          (Components.interfaces.nsIFireFTPUtils);
+  gFireFTPUtils          = Components.classes['@nite-lite.net/fireftputils;1'].getService          (Components.interfaces.nsIFireFTPUtils);
   gLoginInfo             = new Components.Constructor("@mozilla.org/login-manager/loginInfo;1",     Components.interfaces.nsILoginInfo, "init");
 
   gPrefs                 = gPrefsService.getBranch("fireftp.");
