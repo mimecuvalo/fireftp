@@ -1,21 +1,21 @@
 <!ENTITY openFireFTP "Ferwizing yn FireFTP iepenje">
 <!ENTITY viewFireFTP "Dizze side yn FireFTP besjen">
 <!ENTITY accountlist.label "(In account kieze)">
-<!ENTITY edit.label "Bewurkje...">
+<!ENTITY edit.label "Bewurkje…">
 <!ENTITY abort.label "Annulearje">
-<!ENTITY logtab.label "Loch">
-<!ENTITY ltab.label "Log">
+<!ENTITY logtab.label "Loch/Queue">
+<!ENTITY ltab.label "Loch">
 <!ENTITY qtab.label "Queue">
 <!ENTITY search.access "S">
-<!ENTITY logbutton.access "g">
-<!ENTITY advanced.label "Avansearre">
-<!ENTITY search.label "Search/Filter">
+<!ENTITY logbutton.access "L">
+<!ENTITY advanced.label "Ark">
+<!ENTITY search.label "Sykje/Filter">
 <!ENTITY diff.label "Mappen fergelykje">
-<!ENTITY recdiff.label "Sync Directories &amp; Subdirectories...">
-<!ENTITY custom.label "Aangepast">
-<!ENTITY import.label "Ymportearje...">
-<!ENTITY export.label "Eksportearje...">
-<!ENTITY preferencestab.label "Foararren">
+<!ENTITY recdiff.label "Sync mappen &amp; submappen…">
+<!ENTITY custom.label "Oanpast">
+<!ENTITY import.label "Ymportearje…">
+<!ENTITY export.label "Eksportearje…">
+<!ENTITY preferencestab.label "Foarkarren…">
 <!ENTITY diff.access "f">
 <!ENTITY recdiff.access "D">
 <!ENTITY custom.access "a">
@@ -23,64 +23,64 @@
 <!ENTITY export.access "k">
 <!ENTITY prefbutton.access "r">
 <!ENTITY help.label "Help">
-<!ENTITY help.url "http://fireftp.net/help.html">
+<!ENTITY help.url "http://fireftp.mozdev.org/help.html">
 <!ENTITY parentdir.tip "Map omheech">
 <!ENTITY refresh.tip "Map fernije">
 <!ENTITY localpath.tip "Lokaal paad">
 <!ENTITY remotepath.tip "Paad op tsinner">
 <!ENTITY browse.label "Blêdzje">
-<!ENTITY change.label "Feroarje">
+<!ENTITY change.label "Wizigje">
 <!ENTITY name.label "Namme">
 <!ENTITY size.label "Grutte">
 <!ENTITY date.label "Datum">
 <!ENTITY type.label "Type">
 <!ENTITY attr.label "Attributen">
-<!ENTITY source.label "Source">
-<!ENTITY dest.label "Destination">
+<!ENTITY source.label "Boarne">
+<!ENTITY dest.label "Bestimming">
 <!ENTITY bytes.label "Bytes">
-<!ENTITY status.label "Status">
-<!ENTITY retry.label "Retry">
-<!ENTITY cancel.label "Cancel">
-<!ENTITY cancelAll.label "Cancel All">
+<!ENTITY status.label "Steat">
+<!ENTITY retry.label "Opnij probearje">
+<!ENTITY cancel.label "Annulearje">
+<!ENTITY cancelAll.label "Alle annulearje">
 <!ENTITY type.tip "Transfermetoade wizigje (auto oanrikkemandearre)">
-<!ENTITY bytes.tip "Ynladen bytes / Totaal oantal bytes">
+<!ENTITY bytes.tip "Downloaden bytes / Totaal oantal bytes">
 <!ENTITY timeela.tip "Ferstrutsen tiid">
 <!ENTITY timerem.tip "Restearjende tiid">
-<!ENTITY download.tip "Ynlaadsnelheid">
-<!ENTITY percent.tip "Persintage foltôge">
+<!ENTITY download.tip "Downloadfaasje">
+<!ENTITY percent.tip "Persintaazje foltôge">
 <!ENTITY auto.label "Auto">
 <!ENTITY binary.label "Binary">
 <!ENTITY ascii.label "ASCII">
-<!ENTITY openContaining.label "Open Containing Folder">
+<!ENTITY openContaining.label "Map iepenje">
 <!ENTITY upload.label "Oplade">
-<!ENTITY download.label "Ynlade">
+<!ENTITY download.label "Downloade">
 <!ENTITY open.label "Iepenje">
 <!ENTITY openwith.label "Iepenje mei">
-<!ENTITY extractHere.label "Extract Here">
-<!ENTITY extractTo.label "Extract To Folder">
+<!ENTITY extractHere.label "Hjir útpakke">
+<!ENTITY extractTo.label "Utpakke nei map">
 <!ENTITY viewweb.label "Online besjen">
-<!ENTITY copyUrl.label "Copy URL">
-<!ENTITY copyUrlLogin.label "FTP with login">
+<!ENTITY copyUrl.label "URL kopiearje">
+<!ENTITY copyUrlLogin.label "FTP mei oanmelde">
 <!ENTITY cut.label "Knippe">
 <!ENTITY copy.label "Kopiearje">
 <!ENTITY paste.label "Plakke">
 <!ENTITY makedir.label "Map meitsje">
 <!ENTITY makefile.label "Bestân meitsje">
-<!ENTITY symlink.label "Create Symlink">
+<!ENTITY symlink.label "Symlink meitsje">
 <!ENTITY delete.label "Fuortsmite">
-<!ENTITY rename.label "Werneame">
+<!ENTITY rename.label "Omneame">
 <!ENTITY properties.label "Eigenskippen">
 <!ENTITY rproperties.label "Rekursieve eigenskippen">
-<!ENTITY searchButton.label "Search">
-<!ENTITY searchLocal.label "Local">
-<!ENTITY searchRemote.label "Remote">
-<!ENTITY searchOptions.label "Options">
-<!ENTITY searchFrom.label "From:">
-<!ENTITY searchTo.label "To:">
-<!ENTITY searchSubdir.label "Look in subdirectories">
-<!ENTITY searchMatch.label "Match case">
-<!ENTITY searchRegexp.label "Regular expression">
-<!ENTITY searchDates.label "Specify dates">
+<!ENTITY searchButton.label "Sykje">
+<!ENTITY searchLocal.label "Lokaal">
+<!ENTITY searchRemote.label "Op ôfstân">
+<!ENTITY searchOptions.label "Opsjes">
+<!ENTITY searchFrom.label "Fan:">
+<!ENTITY searchTo.label "Nei:">
+<!ENTITY searchSubdir.label "Sjoch yn submappen">
+<!ENTITY searchMatch.label "Haadlettergefoelich">
+<!ENTITY searchRegexp.label "Reguliere ekspresje">
+<!ENTITY searchDates.label "Datums spesifisearje">
 <!ENTITY searchSubdir.access "s">
 <!ENTITY searchMatch.access "c">
 <!ENTITY searchRegexp.access "x">
@@ -95,5 +95,5 @@
 <!ENTITY searchLocal.access "L">
 <!ENTITY searchRemote.access "R">
 <!ENTITY searchOptions.access "O">
-<!ENTITY mozilla.quote "And, <html:em style=';;font-size:1.3em;line-height:0;';;>lo</html:em>, from the <html:em style=';;font-size:1.3em;line-height:0;';;>darkness</html:em> they emerged: a host of the faithful to <html:em style=';;font-size:1.3em;line-height:0;';;>aide</html:em> the reborn beast in its quest to <html:em style=';;font-size:1.3em;line-height:0;';;>reclaim</html:em> the land.  Together they <html:em style=';;font-size:1.3em;line-height:0;';;>extended</html:em> the power of the beast and <html:em style=';;font-size:1.3em;line-height:0;';;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=';;font-size:1.3em;line-height:0;';;>Mammon</html:em> were converted and their hearts were set <html:em style=';;font-size:1.3em;line-height:0;';;>aflame</html:em>.">
+<!ENTITY mozilla.quote "And, <html:em style=\';;font-size:1.3em;line-height:0;\';;>lo</html:em>, from the <html:em style=\';;font-size:1.3em;line-height:0;\';;>darkness</html:em> they emerged: a host of the faithful to <html:em style=\';;font-size:1.3em;line-height:0;\';;>aide</html:em> the reborn beast in its quest to <html:em style=\';;font-size:1.3em;line-height:0;\';;>reclaim</html:em> the land.  Together they <html:em style=\';;font-size:1.3em;line-height:0;\';;>extended</html:em> the power of the beast and <html:em style=\';;font-size:1.3em;line-height:0;\';;>spread</html:em> the good news of its return.  One by one the followers of <html:em style=\';;font-size:1.3em;line-height:0;\';;>Mammon</html:em> were converted and their hearts were set <html:em style=\';;font-size:1.3em;line-height:0;\';;>aflame</html:em>.">
 <!ENTITY mozilla.from "út <html:strong>The Book of Mozilla</html:strong>, 8:2">

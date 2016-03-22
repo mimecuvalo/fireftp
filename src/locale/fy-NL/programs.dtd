@@ -1,14 +1,14 @@
-<!ENTITY title "Programma&apos;s">
+<!ENTITY title "Programma\'s">
 <!ENTITY add.label "Tafoegje">
 <!ENTITY remove.label "Fuortsmite">
-<!ENTITY extensions.label "Utwreidings">
-<!ENTITY programs.label "Programma&apos;s">
+<!ENTITY extensions.label "Utwreidingen">
+<!ENTITY programs.label "Programma\'s">
 <!ENTITY details.label "Details programma">
 <!ENTITY name.label "Namme">
 <!ENTITY exec.label "Paad">
 <!ENTITY browse.label "Blêdzje">
 <!ENTITY args.label "Arguminten">
-<!ENTITY argshelp1.label "As by &apos;Arguminten&apos; neat ynfold wurdt, dan wurdt de bestânsnamme as argumint trochjûn.">
+<!ENTITY argshelp1.label "As by \'Arguminten\' neat ynfold wurdt, dan wurdt de bestânsnamme as argumint trochjûn.">
 <!ENTITY argshelp2.label "Brûkt &#37;file&#37; om it troch te jaan bestân oan te duidzjen.">
 <!ENTITY apply.label "Tapasse">
 <!ENTITY adde.accesskey "T">

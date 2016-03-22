@@ -1,6 +1,6 @@
 <!ENTITY title "Eigenskippen">
 <!ENTITY path "Boarne:">
-<!ENTITY webpath "Webstee:">
+<!ENTITY webpath "Website:">
 <!ENTITY size "Grutte:">
 <!ENTITY date "Datum:">
 <!ENTITY contains "Befettet:">
@@ -26,6 +26,6 @@
 <!ENTITY folderprop "Alle ûnderlizzende mappen">
 <!ENTITY filesprop "Alle ûnderlizzende bestannen">
 <!ENTITY thumbnail "Foarbyld">
-<!ENTITY loading "Ynlade...">
+<!ENTITY loading "Lade…">
 <!ENTITY view.label "Besjen">
 <!ENTITY view.accesskey "B">

@@ -1,6 +1,6 @@
-<!ENTITY title "Oerskriuwe befestigje">
-<!ENTITY existing.label "Existing File:">
-<!ENTITY new.label "New File:">
+<!ENTITY title "Oerskriuwe befêstigje">
+<!ENTITY existing.label "Besteand bestân:">
+<!ENTITY new.label "Nij bestân:">
 <!ENTITY overwrite.label "Oerskriuwe">
 <!ENTITY overwriteall.label "Alles oerskriuwe">
 <!ENTITY skip.label "Oerslaan">
