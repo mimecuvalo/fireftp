@@ -319,7 +319,7 @@ var securityCallbacks = {
         return;
       }
 
-      var params = { location : targetSite, exceptionAdded : false };
+      var params = { location : targetSite, exceptionAdded : false, sslStatus : status };
       window.openDialog('chrome://pippki/content/exceptionDialog.xul', '', 'chrome,centerscreen,modal', params);
 
       if (params.exceptionAdded) {
