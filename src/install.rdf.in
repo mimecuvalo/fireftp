@@ -31,6 +31,14 @@
         <em:maxVersion>2.41.*</em:maxVersion>
       </Description>
     </em:targetApplication>
+    <!-- Pale Moon -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+        <em:minVersion>27.0.0a1</em:minVersion>
+        <em:maxVersion>29.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
     <em:optionsURL>chrome://fireftp/content/preferences.xul</em:optionsURL>
     <em:iconURL>chrome://fireftp/skin/icons/logo32.png</em:iconURL>
   </Description>
