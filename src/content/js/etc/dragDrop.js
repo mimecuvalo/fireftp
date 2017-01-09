@@ -26,11 +26,11 @@ var dragObserver = {
     var targetID = event.target.getAttribute('id');
     var row = { }; var col = { }; var child = { };
 
-    if (gConnection && gConnection.isConnected && event.dataTransfer.types.contains('application/x-moz-file')
+    if (gConnection && gConnection.isConnected && event.dataTransfer.types.includes('application/x-moz-file')
                          && (targetID == 'remotetreechildren' || targetID == 'remotedirtreechildren' || targetID == 'queuetreechildren')) {
       this.origin         = "external";
       event.dataTransfer.effectAllowed = "all";
-    } else if (gConnection && !gConnection.isConnected && event.dataTransfer.types.contains('application/x-moz-file')) {
+    } else if (gConnection && !gConnection.isConnected && event.dataTransfer.types.includes('application/x-moz-file')) {
       this.origin         = null;
       event.dataTransfer.effectAllowed = "none";
     }
