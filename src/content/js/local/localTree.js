@@ -687,6 +687,19 @@ var localTree = {
   },
 
   setCellText : function(row, col, val) {
+    // XXX Firefox 51 has a regression that calls setCellText immediately
+    // upon calling startEditing. Hacks below to see if startEditing is in the
+    // call stack.
+    if (col && !val) {
+      try {
+        throw Error('blah');
+      } catch(ex) {
+        if (ex.stack && ex.stack.indexOf('startEditing') != -1) {
+          return;
+        }
+      }
+    }
+
     if (!this.isEditing || this.editParent != gLocalPath.value) {                               // for some reason, this is called twice - so we prevent this
       return;
     }

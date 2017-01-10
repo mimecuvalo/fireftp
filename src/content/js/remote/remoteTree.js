@@ -560,6 +560,18 @@ var remoteTree = {
   },
 
   setCellText : function(row, col, val) {
+    // XXX Firefox 51 has a regression that calls setCellText immediately
+    // upon calling startEditing
+    if (col && !val) {
+      try {
+        throw Error('blah');
+      } catch(ex) {
+        if (ex.stack && ex.stack.indexOf('startEditing') != -1) {
+          return;
+        }
+      }
+    }
+
     if (!this.isEditing || this.editParent != gRemotePath.value) {                              // for some reason, this is called twice - so we prevent this
       return;
     }
