@@ -96,10 +96,6 @@ function fireFTPInitListener(event) {
     menu.addEventListener("popupshowing", fireFTPContextListener, false);
   }
 
-  if (appcontent) {
-    appcontent.addEventListener("load", fireFTPLoadListener, true);
-  }
-
   if (!donated) {
     prefBranch.setBoolPref("donated", true);
 
@@ -107,33 +103,6 @@ function fireFTPInitListener(event) {
     window.setTimeout(function() {
       windowContent.selectedTab = windowContent.addTab("http://fireftp.net/donate.html?installed=true");
     }, 0);
-  }
-}
-
-function fireFTPCheckForcedListener(event) {
-  var doc               = event.originalTarget;
-  var prefService       = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-  var prefBranch        = prefService.getBranch("fireftp.");
-  var integrateftplinks = prefBranch.getBoolPref("integrateftplinks");
-
-  var framed = event.originalTarget && window.content && window.content.document && (window.content.document != event.originalTarget);
-
-  if (!integrateftplinks || framed) {
-    return;
-  }
-
-  if (doc.location && doc.location.href && doc.location.href.toLowerCase().indexOf("ftp://") == 0) {
-    var ws = gBrowser.docShell.QueryInterface(Components.interfaces.nsIRefreshURI);
-
-    if (ws) {
-      ws.cancelRefreshURITimers();
-    }
-
-    var sString  = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
-    sString.data = window.content.document.documentURI;
-    prefBranch.setComplexValue("loadurl", Components.interfaces.nsISupportsString, sString);
-
-    doc.location.href = "chrome://fireftp/content/fireftp.xul";
   }
 }
 
@@ -148,24 +117,4 @@ function fireFTPContextListener(event) {
   document.getElementById("fireftpcontextmenu").hidden = !gContextMenu.onLink || uri.toLowerCase().indexOf("ftp://") != 0;
 }
 
-function fireFTPLoadListener(event) {
-  var doc               = event.originalTarget;
-  var prefService       = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-  var prefBranch        = prefService.getBranch("fireftp.");
-  var integrateftplinks = prefBranch.getBoolPref("integrateftplinks");
-
-  if (!integrateftplinks || !doc || !doc.getElementsByTagName) {
-    return;
-  }
-
-  var links = doc.getElementsByTagName('a');
-
-  for (var x = 0; x < links.length; ++x) {
-    if (links[x] && links[x].href && links[x].href.toLowerCase().indexOf("ftp://") == 0) {
-      links[x].addEventListener('click', loadFireFTPFromLink, true);
-    }
-  }
-}
-
 window.addEventListener("load",             fireFTPInitListener,        false);
-window.addEventListener("DOMContentLoaded", fireFTPCheckForcedListener, false);

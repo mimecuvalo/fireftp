@@ -74,10 +74,6 @@ component {42bd5782-5c3e-11dc-8314-0800200c9a66} components/nsIFireFTPUtils.js
 contract @nite-lite.net/fireftputils;1 {42bd5782-5c3e-11dc-8314-0800200c9a66}
 category profile-after-change FireFTPUtils @nite-lite.net/fireftputils;1
 
-component {8ca39389-a7a8-43f1-a502-bf9ce9fdada9} components/sftpProtocol.js
-contract @mozilla.org/network/protocol;1?name=sftp {8ca39389-a7a8-43f1-a502-bf9ce9fdada9}
-category profile-after-change FireFTPSftp @mozilla.org/network/protocol;1?name=sftp
-
-component {c8a55d80-be3c-11df-851a-0800200c9a66} components/ftpsProtocol.js
-contract @mozilla.org/network/protocol;1?name=ftps {c8a55d80-be3c-11df-851a-0800200c9a66}
-category profile-after-change FireFTPFtps @mozilla.org/network/protocol;1?name=ftps
+contract @fireftp.net/startup;1 {6f12497c-6491-417c-82ba-83200feeff3c}
+component {6f12497c-6491-417c-82ba-83200feeff3c} components/fireftp-service.js
+category profile-after-change fireftp-startup @fireftp.net/startup;1

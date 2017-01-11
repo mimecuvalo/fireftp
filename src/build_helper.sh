@@ -88,8 +88,7 @@ zip -q -r9 ../downloads/fireftp_$FIREFTP_LANG.xpi \
   chrome/icons/default/fireftp-main-window.xpm \
   components/nsIFireFTPUtils.xpt \
   components/nsIFireFTPUtils.js \
-  components/sftpProtocol.js \
-  components/ftpsProtocol.js \
+  components/fireftp-service.js \
   defaults/preferences/fireftp.js \
   chrome.manifest \
   install.rdf \

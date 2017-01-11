@@ -110,13 +110,13 @@
               <radio label="&tabopen.label;"    value="1"/>
               <radio label="&groupopen.label;"  value="0"/>
             </radiogroup>
-            <spacer style="height:5px"/>
+            <!--<spacer style="height:5px"/>
             <hbox align="start">
               <checkbox preference="integrateftplinkspref" id="integrateftplinks" label="&integrateftplnk.label;" oncommand="integrateChange()"/>
             </hbox>
             <hbox align="center" class="indent">
               <checkbox preference="temppasvmodepref"      id="temppasvmode"      label="&temppasvmode.label;"/>
-            </hbox>
+            </hbox>-->
           </groupbox>
           <groupbox>
             <caption label="&open.label;"/>
