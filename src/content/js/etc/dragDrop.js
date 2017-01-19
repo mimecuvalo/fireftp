@@ -25,12 +25,13 @@ var dragObserver = {
 
     var targetID = event.target.getAttribute('id');
     var row = { }; var col = { }; var child = { };
+    var hasFunction = event.dataTransfer.types.includes || event.dataTransfer.types.contains;
 
-    if (gConnection && gConnection.isConnected && event.dataTransfer.types.includes('application/x-moz-file')
+    if (gConnection && gConnection.isConnected && hasFunction('application/x-moz-file')
                          && (targetID == 'remotetreechildren' || targetID == 'remotedirtreechildren' || targetID == 'queuetreechildren')) {
       this.origin         = "external";
       event.dataTransfer.effectAllowed = "all";
-    } else if (gConnection && !gConnection.isConnected && event.dataTransfer.types.includes('application/x-moz-file')) {
+    } else if (gConnection && !gConnection.isConnected && hasFunction('application/x-moz-file')) {
       this.origin         = null;
       event.dataTransfer.effectAllowed = "none";
     }
