@@ -1,3 +1,12 @@
-#fireftp-button, #fireftp-button2, #fireftptoolsmenu, #fireftpcontentarea, #fireftpcontextmenu, #appmenu_fireftp, #menu_webDeveloper_fireftp {
+toolbar[iconsize="small"] #fireftp-button,
+#fireftptoolsmenu, #fireftpcontentarea, #fireftpcontextmenu, #appmenu_fireftp, #menu_webDeveloper_fireftp {
+  list-style-image    : url("chrome://fireftp/skin/icons/logo.png");
+}
+
+#fireftp-button {
   list-style-image    : url("chrome://fireftp/skin/icons/logo32.png");
+}
+
+toolbar[iconsize="large"] #fireftp-button {
+  list-style-image    : url("chrome://fireftp/skin/icons/logo24.png");
 }
