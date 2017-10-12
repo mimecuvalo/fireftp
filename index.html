@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FireFTP - The Free FTP Client for Mozilla Firefox</title>
+    <title>FireFTP - The Free FTP Client for Waterfox</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -61,6 +61,10 @@
       </div>
 
       FireFTP is a <b>free, secure, cross-platform FTP/SFTP client</b> for Mozilla Firefox which provides easy and intuitive access to FTP/SFTP servers.<br/><br/>
+      After 13 years, Firefox has officially removed FireFTP and FireSSH support from the browser.
+      Thus, I've ended support / development of the addons.
+      I recommend switching to <a href="https://www.waterfoxproject.org">Waterfox</a> to continue using the addons.<br/>
+      
       <div class="info" style="width: 270px">
         <noscript id="download-link">
           <div>
@@ -69,11 +73,11 @@
           </div>
         </noscript>
         <script>
-          if (navigator.userAgent.indexOf("Firefox") != -1) {
+          if (navigator.userAgent.indexOf("Waterfox") != -1) {
             document.writeln(document.getElementById('download-link').innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>'));
           } else {
-            document.writeln("<span class=\"smaller\">You need Firefox to use FireFTP.<\/span><br\/>");
-            document.writeln("<a href=\"http:\/\/www.firefox.com\"><b>Download Firefox<\/b><\/a><br\/>");
+            document.writeln("<span class=\"smaller\">You need Waterfox to use FireFTP.<\/span><br\/>");
+            document.writeln("<a href=\"http:\/\/www.waterfoxproject.com\"><b>Download Waterfox<\/b><\/a><br\/>");
           }
         </script>
         <div style="clear: left"></div>
@@ -83,7 +87,7 @@
         </script>
       </div>
 
-      <div class="info" style="width: 270px; line-height: 32px">
+      <div class="info" style="width: 270px; line-height: 32px; float: right; margin-right: 8px">
         <a href="http://firessh.net/"><img src="http://firessh.net/images/logo64.png" style="margin-right: 10px" alt="FireSSH logo" width="64" height="64"></a>
         Check out my new project, <a href="http://firessh.net/">FireSSH</a>!
       </div>
