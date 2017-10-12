@@ -5,45 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script>
-      function commas(num) {
-        num = num.toString();
-
-        if (num.search(/\d{4}$/) == -1) {
-          return num;
-        }
-
-        num = num.replace(/\d{3}$/, ",$&");
-
-        while (num.search(/\d{4}\x2C/) != -1) {
-          num = num.replace(/\d{3}\x2C/, ",$&");
-        }
-
-        return num;
-      }
-
-      function updateCounter() {
-        count += rate;
-        document.getElementById('counter').innerHTML = "Downloaded <strong>" + commas(count.toFixed(0)) + "</strong> times!";
-        setTimeout(updateCounter, 1000);
-      }
-
-      var curDate = ((new Date()) / 1000).toFixed(0);
-      var preDate = ((new Date(2008, 7, 26)) / 1000).toFixed(0);
-      var rate    = 52000 / 7 / 24 / 60 / 60;
-      var count   = 2800000 + (curDate - preDate) * rate;
-
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-360163-5']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
   </head>
 
   <body>
@@ -61,7 +22,7 @@
       </div>
 
       FireFTP is a <b>free, secure, cross-platform FTP/SFTP client</b> for Mozilla Firefox which provides easy and intuitive access to FTP/SFTP servers.<br/><br/>
-      After 13 years, Firefox has officially removed FireFTP and FireSSH support from the browser.
+      After 13 years and 25 million downloads later, Firefox has officially removed FireFTP and FireSSH support from the browser.
       Thus, I've ended support / development of the addons.
       I recommend switching to <a href="https://www.waterfoxproject.org">Waterfox</a> to continue using the addons.<br/>
       
@@ -79,11 +40,6 @@
             document.writeln("<span class=\"smaller\">You need Waterfox to use FireFTP.<\/span><br\/>");
             document.writeln("<a href=\"http:\/\/www.waterfoxproject.com\"><b>Download Waterfox<\/b><\/a><br\/>");
           }
-        </script>
-        <div style="clear: left"></div>
-        <script>
-          document.writeln("<div id=\"counter\">Downloaded <strong>" + commas(count.toFixed(0)) + "</strong> times!<\/div>");
-          setTimeout(updateCounter, 1000);
         </script>
       </div>
 
